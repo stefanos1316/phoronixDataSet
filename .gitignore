@@ -1,0 +1,6 @@
+ubuntu_installer.retry
+*.swp
+*.swo
+tasks/aio-stress/aio-stress
+tasks/aobench/aobench
+
