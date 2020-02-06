@@ -1,0 +1,15 @@
+---
+ - hosts: 127.0.0.1
+   connection: local
+   become: yes
+
+   tasks:
+    - name: Install list of package
+      apt: 
+        name: ['systemtap-sdt-dev','build-essential', 'gcc', 'curl', 'automake', 'libtool', 'm4', 'stress-ng', 'mesa-utils', 'libaio-dev', 'libssl-dev', 'ethtool']
+        state: present
+
+    - name: Install dependencies for aircrack
+      apt:
+        name: ['build-essential', 'autoconf', 'automake', 'libtool', 'pkg-config', 'libnl-3-dev', 'libnl-genl-3-dev', 'libssl-dev', 'ethtool', 'shtool', 'rfkill', 'zlib1g-dev', 'libpcap-dev', 'libsqlite3-dev', 'libpcre3-dev', 'libhwloc-dev', 'libcmocka-dev', 'hostapd', 'wpasupplicant', 'tcpdump', 'screen', 'iw', 'usbutils']
+        state: present
