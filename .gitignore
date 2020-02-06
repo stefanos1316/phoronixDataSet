@@ -3,4 +3,6 @@ ubuntu_installer.retry
 *.swo
 tasks/aio-stress/aio-stress
 tasks/aobench/aobench
-
+inputs/linux-5.5.2.tar.xz
+inputs/tmp_linux-5.5.2.tar.xz.bz2
+inputs/*

@@ -1,3 +1,4 @@
++ ab -n 1000000 -c 100 http://localhost:80/
 Completed 100000 requests
 Completed 200000 requests
 Completed 300000 requests
@@ -10,6 +11,6 @@ Completed 900000 requests
 Completed 1000000 requests
 Finished 1000000 requests
 
-real	0m56,790s
-user	0m8,499s
-sys	0m47,250s
+real	1m4,499s
+user	0m9,824s
+sys	0m52,735s

@@ -18,3 +18,7 @@
       apt:
         name: ['apache2-utils', 'perl', 'libpcre3', 'libpcre3-dev', 'libapr1-dev', 'libaprutil1-dev']
         state: present
+
+    - name: Install dependencies for apitrace
+      apt:
+        name: ['cmake', '32bit-compatibility', 'p7zip']

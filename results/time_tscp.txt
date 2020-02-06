@@ -1,0 +1,5 @@
++ ../tasks/tscp/tscp
+
+real	0m43,304s
+user	0m43,088s
+sys	0m0,152s
