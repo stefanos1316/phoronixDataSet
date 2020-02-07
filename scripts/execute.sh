@@ -2,9 +2,9 @@
 
 # tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "crafty bench quit" "tscp" \
 # 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-4.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
-# 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones")
+# 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../tasks/dcraw/DSC_50*")
 
-tasks=("fhourstones")
+tasks=("dcraw ../tasks/dcraw/DSC_50*")
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
 	if [ $1 == "apache" ]; then
@@ -28,9 +28,11 @@ function getTimeInSeconds {
 function dumpGarbage {
 	if [ -f temp ] || [ -f ao.ppm ] || [ -f game.001 ] || [ -f log.001 ] \
 	|| [ -f ../inputs/tmp_linux-4.3.tar.gz.bz2 ] || [ -f ../inputs/zstd_test ] \
-	|| [ -f ../inputs/tmp_xz.txt.xz ] || [ -f *.tmp] ; then
+	|| [ -f ../inputs/tmp_xz.txt.xz ] || [ -f *.tmp] || [ -f RES-multiply-* ] \
+	|| [ -f ../tasks/dcraw/*.ppm ]; then
 		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp
-		rm ../inputs/tmp_linux-4.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst; rm ../inputs/tmp_xz.txt.xz
+		rm ../inputs/tmp_linux-4.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst
+		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../tasks/dcraw/*.ppm 
 	fi
 }
 
@@ -70,11 +72,14 @@ for task in "${tasks[@]}"; do
 		("xz")
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
 			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
-		byte*)
-			echo "Here" 
-			cd ../tasks/byte/
+		("gmpbench")
+			cd ../tasks/gmpbench
 			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts/ ;;
+			cd ../../scripts ;;
+		byte*)
+			cd ../tasks/byte
+			time (./${task}) 2> ../../results/time_${taskName}.txt
+			cd ../../scripts ;;
 		(*) time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
 	esac
 

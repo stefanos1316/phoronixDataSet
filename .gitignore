@@ -8,3 +8,4 @@ inputs/tmp_linux-5.5.2.tar.xz.bz2
 inputs/*
 results/*
 tasks/scimark2/*.o
+tasks/dcraw/*.NEF
