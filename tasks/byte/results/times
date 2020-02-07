@@ -1,11 +1,11 @@
-TEST|Arithmetic Test (type = register)
+TEST|Arithmetic Test (type = float)
 FLAVOR|BSD
+0 loops
+        10.00 real        10.00 user        0.00 sys
 0 loops
         10.00 real        9.99 user        0.00 sys
 0 loops
         10.00 real        10.00 user        0.00 sys
-0 loops
-        10.00 real        9.98 user        0.00 sys
 0 loops
         10.00 real        9.99 user        0.00 sys
 0 loops

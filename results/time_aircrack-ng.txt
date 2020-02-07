@@ -1,5 +1,4 @@
-+ ../tasks/aircrack-ng/aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap
 
-real	0m47,016s
-user	5m32,713s
-sys	0m16,050s
+real	0m48,491s
+user	5m36,076s
+sys	0m16,191s

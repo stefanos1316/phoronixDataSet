@@ -1,5 +1,4 @@
-+ ../tasks/aobench/aobench
 
-real	0m47,699s
-user	0m47,641s
-sys	0m0,048s
+real	0m49,681s
+user	0m49,566s
+sys	0m0,096s

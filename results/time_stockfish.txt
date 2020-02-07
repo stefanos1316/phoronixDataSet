@@ -1,4 +1,3 @@
-+ ../tasks/stockfish/stockfish bench
 
 Position: 1/42
 
@@ -85,9 +84,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3637
+Total time (ms) : 3024
 Nodes searched  : 5023629
-Nodes/second    : 1381256
+Nodes/second    : 1661252
 
 Position: 1/42
 
@@ -174,9 +173,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3724
+Total time (ms) : 3188
 Nodes searched  : 5023629
-Nodes/second    : 1348987
+Nodes/second    : 1575793
 
 Position: 1/42
 
@@ -263,9 +262,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3821
+Total time (ms) : 3189
 Nodes searched  : 5023629
-Nodes/second    : 1314741
+Nodes/second    : 1575299
 
 Position: 1/42
 
@@ -352,9 +351,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3544
+Total time (ms) : 3215
 Nodes searched  : 5023629
-Nodes/second    : 1417502
+Nodes/second    : 1562559
 
 Position: 1/42
 
@@ -441,9 +440,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3942
+Total time (ms) : 3273
 Nodes searched  : 5023629
-Nodes/second    : 1274385
+Nodes/second    : 1534869
 
 Position: 1/42
 
@@ -530,9 +529,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3976
+Total time (ms) : 3163
 Nodes searched  : 5023629
-Nodes/second    : 1263488
+Nodes/second    : 1588248
 
 Position: 1/42
 
@@ -619,9 +618,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3826
+Total time (ms) : 3103
 Nodes searched  : 5023629
-Nodes/second    : 1313023
+Nodes/second    : 1618958
 
 Position: 1/42
 
@@ -708,9 +707,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3744
+Total time (ms) : 3129
 Nodes searched  : 5023629
-Nodes/second    : 1341781
+Nodes/second    : 1605506
 
 Position: 1/42
 
@@ -797,9 +796,9 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3760
+Total time (ms) : 3144
 Nodes searched  : 5023629
-Nodes/second    : 1336071
+Nodes/second    : 1597846
 
 Position: 1/42
 
@@ -886,10 +885,10 @@ Position: 41/42
 Position: 42/42
 
 ===========================
-Total time (ms) : 3783
+Total time (ms) : 3184
 Nodes searched  : 5023629
-Nodes/second    : 1327948
+Nodes/second    : 1577772
 
-real	0m37,828s
-user	0m37,726s
-sys	0m0,084s
+real	0m31,682s
+user	0m31,562s
+sys	0m0,100s
