@@ -9,3 +9,4 @@ inputs/*
 results/*
 tasks/scimark2/*.o
 tasks/dcraw/*.NEF
+tasks/minions/test_instances/*
