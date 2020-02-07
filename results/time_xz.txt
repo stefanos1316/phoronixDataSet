@@ -1,5 +1,5 @@
-+ ../tasks/xz/xz ../inputs/xz_test_tmp
+../tasks/xz/xz: ../inputs/xz_test_tmp.txt: No such file or directory
 
-real	0m31,795s
-user	0m31,435s
-sys	0m0,284s
+real	0m0,002s
+user	0m0,001s
+sys	0m0,000s

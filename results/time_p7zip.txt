@@ -1,5 +1,4 @@
-+ ../tasks/p7zip/p7zip b
 
-real	1m3,866s
-user	6m45,980s
-sys	0m3,160s
+real	0m55,716s
+user	6m27,441s
+sys	0m2,418s

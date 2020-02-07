@@ -4,19 +4,29 @@
    become: yes
 
    tasks:
-    - name: Install list of package
+    - name: Install list of essential package
       apt: 
-        name: ['systemtap-sdt-dev','build-essential', 'gcc', 'curl', 'automake', 'libtool', 'm4', 'stress-ng', 'mesa-utils', 'libaio-dev', 'libssl-dev', 'ethtool']
+        name: > 
+          ['systemtap-sdt-dev','build-essential', 'gcc', 'curl', 'automake',
+          'libtool','m4', 'stress-ng', 'mesa-utils', 'libaio-dev', 'libssl-dev',
+          'ethtool']
         state: present
 
     - name: Install dependencies for aircrack
       apt:
-        name: ['build-essential', 'autoconf', 'automake', 'libtool', 'pkg-config', 'libnl-3-dev', 'libnl-genl-3-dev', 'libssl-dev', 'ethtool', 'shtool', 'rfkill', 'zlib1g-dev', 'libpcap-dev', 'libsqlite3-dev', 'libpcre3-dev', 'libhwloc-dev', 'libcmocka-dev', 'hostapd', 'wpasupplicant', 'tcpdump', 'screen', 'iw', 'usbutils']
+        name: >
+          ['build-essential', 'autoconf', 'automake', 'libtool', 'pkg-config',
+          'libnl-3-dev', 'libnl-genl-3-dev', 'libssl-dev', 'ethtool', 'shtool',
+          'rfkill', 'zlib1g-dev', 'libpcap-dev', 'libsqlite3-dev', 'libpcre3-dev',
+          'libhwloc-dev', 'libcmocka-dev', 'hostapd', 'wpasupplicant', 'tcpdump',
+          'screen', 'iw', 'usbutils']
         state: present
 
     - name: Install dependencies for apache
       apt:
-        name: ['apache2-utils', 'perl', 'libpcre3', 'libpcre3-dev', 'libapr1-dev', 'libaprutil1-dev']
+        name: >
+          ['apache2-utils', 'perl', 'libpcre3', 'libpcre3-dev', 'libapr1-dev',
+          'libaprutil1-dev']
         state: present
 
     - name: Install dependencies for apitrace

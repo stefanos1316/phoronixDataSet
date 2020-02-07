@@ -1,6 +1,5 @@
-+ ../tasks/bzip2/bzip2 ../inputs/tmp_linux-5.5.2.tar.xz -v
   ../inputs/tmp_linux-5.5.2.tar.xz:  0.996:1,  8.036 bits/byte, -0.44% saved, 110702092 in, 111193507 out.
 
-real	0m18,871s
-user	0m18,714s
-sys	0m0,136s
+real	0m11,877s
+user	0m11,802s
+sys	0m0,076s

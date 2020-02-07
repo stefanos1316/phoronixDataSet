@@ -1,5 +1,4 @@
-+ ../tasks/crafty/crafty bench quit
 
-real	0m35,628s
-user	0m35,922s
-sys	0m0,036s
+real	0m27,183s
+user	0m27,384s
+sys	0m0,044s
