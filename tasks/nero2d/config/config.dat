@@ -1,0 +1,51 @@
+# Configuration file for the Nero solver.  Feel free to add comment
+# anywhere you want, but do not use keywords (the words in CAPITALS)
+# and do not change their order (unless you want Nero to die painfully)
+# Do not write anything between the keyword and the value.
+# The use of '#' has no effect, except for clarity.
+
+# Output process
+OUTPUT_PROCESS		0
+
+# Precision parameters
+QORDER			10
+SEGMENT_LENGTH          0.1
+OVERSHOOT		0
+
+# Fmm Parameters
+
+MINIMAL_BOX_SIZE	0.25
+X_DIST			2.5
+FMM_PRECISION		1e-5
+MAX_FMM_LEVEL		1000
+
+# Aggregation Parameters
+
+AGGREGATION_MATRICES	COMPRESSED
+
+# Interpolation Method
+
+INTERPOLATION_METHOD	MIXED
+MINIMAL_BLIF_LOCALITY	16.0
+
+# Iterative solving parameters
+
+SOLUTION_FROM_DISC	0
+ITERATIVE_METHOD	TFQMR
+ITERATIVE_PRECISION	1e-5
+MAX_ITERATIONS		10000
+TRUENORMPARAMETER	10
+RESTARTPARAMETER	1
+BLOCKJACOBI_LEVEL	3
+
+# Parallelization parameters
+
+SPACE_FILLING_CURVE	HILBERT
+PACKAGE_SIZE		5000
+BENCHMARK_MODE		0
+
+# Output parameters
+MAX_OUTPUT_SIZE		100000000
+WRITE_Z_MATRIX		0
+WRITE_B_VECTOR		0
+WRITE_X_VECTOR		0

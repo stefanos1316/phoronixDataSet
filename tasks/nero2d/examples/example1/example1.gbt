@@ -1,0 +1,33 @@
+wxGBT	4
+Frequency	2000000000	0	0
+Polarization	1	0
+Background	1	0	1	0
+Number_of_geometry	3
+Number_of_excitation	2
+Number_of_output	1
+C
+1
+D
+2	0	1	0
+0	0.5	0
+C
+0.5
+D
+8	0	1	0
+2	0	0
+P
+4
+-1	-1
+1	-1
+1	1
+-1	1
+P
+2	0	1	0
+1	-2	0
+P
+1	0	3	1
+P
+1	0	0	0.5
+P
+-2	-4	4	2	512
+RCS	0

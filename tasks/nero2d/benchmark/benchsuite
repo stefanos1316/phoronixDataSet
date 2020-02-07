@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# LAM MPI
+
+echo 'Performing benchmarks for LAM MPI'
+./benchlam standardPEC.igf pec
+./benchlam standardDIEL.igf diel
+./benchlam standard4DIEL.igf diel4
+./benchlam standard9DIEL.igf diel9
+./benchlam standard16DIEL.igf diel16
+
+# Open MPI
+
+# echo 'Performing benchmarks for Open MPI'
+# ./benchom standardPEC.igf pec
+# ./benchom standardDIEL.igf diel
+# ./benchom standard4DIEL.igf diel4
+# ./benchom standard9DIEL.igf diel9
+# ./benchom standard16DIEL.igf diel16

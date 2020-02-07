@@ -1,0 +1,42 @@
+
+
+Sudokut
+Version 0.4
+
+Sudokut is a solver of sudoku puzzles. It is a command line tool,
+so there is no graphic interface: it is executed as a comand from a
+terminal window. Basically, you give it a sudoku string or a sudoku file as
+an argument and it returns the solution. If a sudoku does not have a unique
+solution, it returns all the possible solutions.
+
+Sudokut is a script that you execute from the shell. It is written
+internally in Tcl (the Tool Command Language), so it should work on any
+platform (Unix, Mac OS X, Windows) provided a Tcl interpeter is installed
+(this is normally the case by default on Unix and Mac OS X). You do not 
+have to know anything about the language: just execute the command in a 
+terminal window.
+
+Sudokut is fast: it takes approximately 0.2 second to solve a
+medium force sudoku; in rare cases, some very difficult ones can take up to
+2-3 seconds. It uses an efficient algorithm which guarantees to find all
+the solutions.
+
+The sudokut command accepts many options which implement various
+features (detailed solving process, validity check, suggestions, probing,
+level rating, diff, etc.). The help file coming with the script contains a
+complete description of the syntax and lots of examples. You can also 
+read the doc online <http://perso.orange.fr/bdesgraupes/DocHTML/sudokut.html>.
+
+sudokut is a free software. It is distributed under a BSD
+License: see the file License_terms in the distribution or the
+Open Source Initiative site. <http://www.opensource.org/licenses/bsd-license>
+
+
+Please e-mail me any problem you encounter with this software:
+ <bdesgraupes@users.sourceforge.net>
+
+(c) Copyright: Bernard Desgraupes, 2007
+ All rights reserved.
+
+----------------------------------------------------------------------
+Last update 2007-08-27 09:40:44

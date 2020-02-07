@@ -1,0 +1,57 @@
+#!/bin/sh
+
+np=1
+
+lamhalt
+lamboot mflam4
+while [ $np -le 4 ]
+do
+	mpirun -np $np ./nero2d $1
+	cp benchmark.dat $2"$np".dat
+	np=`expr $np + 1`
+done
+
+lamhalt
+lamboot mflam8
+while [ $np -le 8 ]
+do
+	mpirun -np $np ./nero2d $1
+	cp benchmark.dat $2"$np".dat
+	np=`expr $np + 1`
+done
+
+lamhalt
+lamboot mflam12
+while [ $np -le 12 ]
+do
+	mpirun -np $np ./nero2d $1
+	cp benchmark.dat $2"$np".dat
+	np=`expr $np + 1`
+done
+
+lamhalt
+lamboot mflam16
+while [ $np -le 16 ]
+do
+	mpirun -np $np ./nero2d $1
+	cp benchmark.dat $2"$np".dat
+	np=`expr $np + 1`
+done
+
+lamhalt
+lamboot mflam20
+while [ $np -le 20 ]
+do
+	mpirun -np $np ./nero2d $1
+	cp benchmark.dat $2"$np".dat
+	np=`expr $np + 1`
+done
+
+lamhalt
+lamboot mflam24
+while [ $np -le 24 ]
+do
+	mpirun -np $np ./nero2d $1
+	cp benchmark.dat $2"$np".dat
+	np=`expr $np + 1`
+done

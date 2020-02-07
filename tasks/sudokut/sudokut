@@ -1,0 +1,2557 @@
+#!/bin/bash
+# the next line restarts using tclsh \
+exec tclsh "$0" "$@"
+
+# ===========================================================================
+# File: "sudokut"
+#                        Created: 2005-11-21 14:47:04
+#              Last modification: 2007-08-26 10:48:08
+# Author: Bernard Desgraupes
+# e-mail: <bdesgraupes@users.sourceforge.net>
+# www: <http://sudokut.sourceforge.net/>
+# (c) Copyright: Bernard Desgraupes 2005-2007
+# All rights reserved.
+# ===========================================================================
+
+
+namespace eval sudoku {}
+
+# This is for generating the doc
+unset -nocomplain sudp sudt
+
+# Initializations
+# ---------------
+set sudp(version)		"0.4"
+set sudp(checkValid)	0
+set sudp(counting)		0
+set sudp(displayGrid)	0
+set sudp(candidates)	0
+set sudp(explain)		0
+set sudp(fromFile)		0
+set sudp(rawResult)		0
+set sudp(backtracking)	1
+set sudp(suggestion)	0
+set sudp(probing)		0
+set sudp(verbosity)		1
+set sudp(technique)		""
+set sudp(ignoredCodes)	""
+set sudp(oneSolution)	0
+set sudp(unicity)		0
+set sudp(rating)		0
+set sudp(solCount)		0
+set sudp(buffer)		""
+set sudp(tempSol)		""
+set sudp(currCode)		""
+set sudp(0)				"row"
+set sudp(1)				"column"
+set sudp(2)				"block"
+
+array set sudt {
+	ns nakedSingleReduction
+	hs hiddenSingleReduction
+	br blockToRowColReduction
+	bb blockToBlockReduction
+	np nakedPairReduction
+	hp hiddenPairReduction
+	nt nakedTripletReduction
+	ht hiddenTripletReduction
+	nq nakedQuadrupletReduction
+	hq hiddenQuadrupletReduction
+	xw xwingReduction
+	sf swordfishReduction
+}
+# # tg tetragridReduction
+
+
+# Main proc
+proc sudoku::execute {args} {
+	global sudp
+	set len [llength $args]
+	# Handle the -h (help) option
+	if {$len == 1 && [regexp -- "^-h" $args]} {
+		sudoku::usage 
+		return
+	} 
+	# Handle the -v (version) option
+	if {$len == 1 && [regexp -- "^-v" $args]} {
+		puts "$sudp(version)"
+		return
+	} 
+	# Handle the -d (diff) option
+	if {$len == 3 && [regexp -- "^-d" [lindex $args 0]]} {
+		sudoku::handleDiff [lindex $args 1] [lindex $args 2]
+		return
+	} 
+	# Handle the -m (modify) option
+	if {[lindex $args 0] eq "-m"} {
+		eval sudoku::handleModify [lrange $args 1 end]
+		return
+	} 
+	# Retrieve the last argument
+	set lastarg [lindex $args end]
+	
+	# Parse the options
+	if {$len == 0 || $len > 14} {
+		exitError "wrong number of arguments"
+	} 
+	incr len -1
+
+	for {set i 0} {$i < $len} {incr i} {
+		set elem [lindex $args $i]
+		switch -- $elem {
+			"-c" {
+				set sudp(counting) 1
+			}
+			"-e" {
+				set sudp(explain) 1
+			}
+			"-f" {
+				set sudp(fromFile) 1
+			}
+			"-g" {
+				set sudp(displayGrid) 1
+			}
+			"-i" {
+				incr i
+				if {$i < $len} {
+					set sudp(ignoredCodes) [lindex $args $i]
+				} else {
+					exitError "missing value after option '-i'"
+				}
+			}
+			"-k" {
+				set sudp(candidates) 1
+			}
+			"-l" {
+				set sudp(rating) 1
+				set sudp(verbosity) 0
+			}
+			"-m" {
+				# In case the -m option has not been intercepted yet
+				exitError "option '-m' must be used alone"
+			}
+			"-n" {
+				set sudp(backtracking) 0
+			}
+			"-o" {
+				set sudp(oneSolution) 1
+			}
+			"-p" {
+				incr i
+				if {$i < $len} {
+					set sudp(probes) [lindex $args $i]
+					set sudp(probing) 1
+				} else {
+					exitError "missing value after option '-p'"
+				}
+			}
+			"-q" {
+				set sudp(verbosity) 0
+			}
+			"-r" {
+				set sudp(rawResult) 1
+			}
+			"-s" {
+				set sudp(suggestion) 1
+			}
+			"-t" {
+				set sudp(checkValid) 1
+			}
+			"-u" {
+				set sudp(counting) 1
+				set sudp(unicity) 1
+			}
+			"-v" {
+				incr i
+				if {$i < $len} {
+					set verb [lindex $args $i]
+					if {![string is integer $verb]} {
+						exitError "option '-v' should have integer value"
+					} else {
+						set sudp(verbosity) $verb
+					}
+				} else {
+					exitError "missing value after option '-v'"
+				}
+			}
+			default {
+				exitError "unknown option $elem"
+			}
+		}
+	} 
+	
+	# If only counting solutions, set verbosity to 0
+	if {$sudp(counting)} {
+		set sudp(verbosity) 0
+		set sudp(backtracking) 1
+		set sudp(oneSolution) 0
+	}
+	# If only probing or looking for suggestion, set verbosity to at least 2
+	if {$sudp(suggestion) || $sudp(probing)} {
+		if {$sudp(verbosity) < 2} {
+			set sudp(verbosity) 2
+		} 
+		set sudp(backtracking) 0
+	}
+	# Explanatory mode sets verbosity to at least 2
+	if {$sudp(explain)} {
+		if {$sudp(verbosity) < 2} {
+			set sudp(verbosity) 2
+		} 
+	}
+	# If rating the sudoku, set verbosity to 0, enable backtracking and
+	# force to stop if multiple solutions are detected
+	if {$sudp(rating)} {
+		global sudcost
+		set sudp(backtracking) 1
+		set sudp(unicity) 1
+		# Array of coefficients for rating
+		set sudp(maxCost) 1
+		array set sudcost {
+			ns 1.0
+			hs 5.2
+			br 5.9
+			bb 6.0
+			np 6.5
+			hp 6.8
+			nt 7.2
+			ht 7.5
+			xw 7.6
+			nq 7.8
+			hq 7.9
+			sf 7.9
+			bt 8
+		}
+		foreach tech [array names sudcost] {
+			if {$sudcost($tech) > $sudp(maxCost)} {
+				set sudp(maxCost) $sudcost($tech)
+			} 
+		} 
+	}
+
+	if {$sudp(fromFile)} {
+		if {$lastarg eq ""} {
+			exitError "no file specified"
+		} 
+		set srcfile [file normalize $lastarg]
+		if {![file exists $srcfile]} {
+			# Not an absolute path, look in the current directory
+			set srcfile [file normalize [file join [pwd] $lastarg]]
+			if {![file exists $srcfile]} {
+				error "'$srcfile' no such file or directory."
+			}
+		} 		
+		processFile $srcfile
+	} elseif {$lastarg eq "-"} {
+		sudoku::processChannel stdin
+	} else {
+		processString $lastarg
+	}
+}
+
+
+proc sudoku::processFile {infile} {
+	global sudp
+	set sudp(fid) [open $infile]
+	# Read line by line
+	sudoku::processChannel $sudp(fid)
+	close $sudp(fid)
+}
+
+
+proc sudoku::processChannel {fileId} {
+	set cnt 1
+	# Read line by line
+	while {![eof $fileId]} {
+		gets $fileId line
+		# Ignore comments (lines starting with a diaesis) and empty lines
+		if {[string range $line 0 0] eq "#" || [string length $line] == 0} {
+			continue
+		} 
+		writeToLog "# Sudoku $cnt\n" 0
+		if {[catch {processString $line} res]} {
+			puts $res
+		} 
+		incr cnt
+	}
+}
+
+
+proc sudoku::processChannel {fileId} {
+	set cnt 1
+	set linenum 0
+	# Read line by line
+	while {![eof $fileId]} {
+		gets $fileId line
+		incr linenum
+		# Ignore comments (lines starting with a diaesis) and empty lines
+		if {[string range $line 0 0] eq "#" || [string length $line] == 0} {
+			continue
+		} 
+		set msg "# Sudoku $cnt"
+		if {$cnt != $linenum} {
+			append msg " (line $linenum)"
+		} 
+		writeToLog "$msg\n" 0
+		if {[catch {processString $line} res]} {
+			puts $res
+		} 
+		incr cnt
+	}
+}
+
+
+proc sudoku::processString {sud} {
+	global sudp
+	set sud [sudoku::normalize $sud]
+	if {$sudp(displayGrid)} {
+		puts [sudoku::display $sud]
+		return
+	}
+
+	# Validity check
+	set invalid [catch {sudoku::checkSudoku $sud} res]
+	if {$invalid} {
+		if {$sudp(checkValid)} {
+			puts $res
+		} else {
+			error $res
+		}
+	} else {
+		if {$sudp(checkValid)} {
+			puts "sudoku is valid"
+		} elseif {$sudp(candidates)} {
+			initSudoku $sud
+			displayCandidates $sud
+		} else {
+			if {$sudp(suggestion)} {
+				sudoku::suggest $sud
+			} elseif {$sudp(probing)} {
+				sudoku::probe $sud
+			} else {
+				set initime [clock clicks -milliseconds]
+				sudoku::solve $sud
+				set millisecs [expr {([clock clicks -milliseconds] - $initime)}]
+				writeToLog "Elapsed time [eval expr {$millisecs.0/1000}] seconds\n" 1
+			}
+		}
+	}
+}
+
+
+# Sudoku solver procs
+# -------------------
+
+proc sudoku::solve {sud} {
+	global sudp
+	
+	initSudoku $sud
+	# Initial info
+	set sudp(given) [regexp -all {[1-9]} $sud]
+	if {!$sudp(rating)} {
+		writeToLog "[sudoku::display $sudp(curr)]\n"
+		writeToLog "$sudp(given) given values, [expr {81 - $sudp(given)}] to find\n\n" 2
+		writeToLog "Solving...\n"
+	} 
+	
+	applyReductions
+
+	if {![isSolved $sudp(curr)]} {
+		if {$sudp(backtracking)} {
+			global sudso
+			# Update the solution array
+			sudoku::stringToArray $sudp(curr) sudso
+			sudoku::solveExactCover
+		}
+	} else {
+		addSolution $sudp(curr)
+	}
+	
+	displayResult
+}
+
+
+proc sudoku::suggest {sud} {
+	global sudp sudva
+	
+	initSudoku $sud	
+	set found 0
+	set hint 0
+	while {1} {
+		if {[nakedSingleReduction] \
+		  || [hiddenSingleReduction]} {
+			set found 1
+			break
+		} elseif {$hint} {
+			# No second pass through reduction techniques
+			break
+		}
+		# Found no singles, try reduction techniques
+		if {[blockToRowColReduction] \
+		  || [blockToBlockReduction] \
+		  || [nakedPairReduction] \
+		  || [hiddenPairReduction] \
+		  || [nakedTripletReduction] \
+		  || [hiddenTripletReduction] \
+		  || [nakedQuadrupletReduction] \
+		  || [hiddenQuadrupletReduction] \
+		  || [xwingReduction] \
+		  || [swordfishReduction] \
+		  || [tetragridReduction]} {
+			set hint 1
+			# Successful reductions, look for singles again
+			continue
+		} else {
+			break
+		}
+	}
+	
+	if {$found} {
+		writeToLog "[currentString]\n"
+	} elseif {!$hint} {
+		writeToLog "couldn't find any suggestion, sorry\n"
+	}
+}
+
+
+proc sudoku::probe {sud} {
+	global sudp sudt
+	
+	initSudoku $sud	
+	set count 0
+	foreach tech $sudp(probes) {
+		switch -- $tech {
+			"ns" - "lc" {
+				incr count [nakedSingleReduction]
+			}
+			"hs" - "uc" {
+				incr count [hiddenSingleReduction]
+			}
+			"np" - "hp" - "nt" 
+			- "ht" - "nq" - "hq" 
+			- "br" - "bb" - "xw" 
+			- "sf" {eval $sudt($tech)}
+			"tg" {tetragridReduction}
+			default {
+				exitError "unknown technique code '$tech' with option '-p'"
+			}
+		}
+	} 
+	if {$count} {
+		writeToLog "[currentString]\n"
+	} 
+}
+
+
+proc sudoku::initSudoku {sud} {
+	global sudp sudso sudva
+	# Initialize
+	set sudp(curr) $sud
+	# Reset
+	set sudp(tempSol) ""
+	set sudp(solCount) 0
+	unset -nocomplain sudso sudva
+	array unset sudp "reduc-*"
+	sudoku::stringToArray $sud sudso
+	buildAllowables $sudp(curr) sudva
+}
+
+
+proc sudoku::applyReductions {} {
+	global sudp sudt 
+	set found 1
+	set pass 2
+	set codeList [list br bb np hp nt ht nq hq xw sf]
+	foreach tech $sudp(ignoredCodes) {
+		set idx [lsearch $codeList $tech]
+		if {$idx != -1} {
+			set codeList [lreplace $codeList $idx $idx]
+		} 
+	} 
+
+	while {$found && $pass} {
+		set count 0
+		set subcount 0
+		if {![isSolved $sudp(curr)]} {
+			writeToLog "* Looking for naked singles...\n" 2
+			incr count [nakedSingleReduction]
+		} 
+		
+		if {![isSolved $sudp(curr)]} {
+			writeToLog "* Looking for hidden singles...\n" 2
+			incr count [hiddenSingleReduction]
+		} 
+		
+		# Try other reduction techniques only if backtracking has been
+		# disabled or if explanatory mode is enabled. Otherwise we just
+		# want a fast solution.
+		if {![isSolved $sudp(curr)] && (!$sudp(backtracking) || $sudp(explain) || $sudp(rating)) } {
+			if {$pass > 1 || $count > 0} {
+				foreach code $codeList {
+					if {![isSolved $sudp(curr)]} {
+						set sudp(currCode) $code
+						set tech $sudt($code)
+						regsub -all {([a-z])([A-Z])} $tech {\1 \2} txt
+						writeToLog "* Trying [string tolower $txt]...\n" 2
+						set res [$tech]
+						if {$res} {
+							incr subcount $res
+							incr subcount [nakedSingleReduction]
+						} 
+					} 
+				}
+			} 
+		} else {
+			break
+		}
+		
+		incr count $subcount
+		set found [expr {$count > 0}]
+		if {$subcount == 0} {
+			incr pass -1
+		} 
+	}	
+}
+
+
+# Reduction procs
+# ===============
+
+# Naked single reduction
+# ----------------------
+# It is often the case that a cell can only possibly take a single value,
+# when the contents of the other cells in the same row, column and block are
+# considered.
+proc sudoku::nakedSingleReduction {} {
+	global sudp sudva
+	set count 0
+	set sudp(currCode) "ns"
+
+	while {1} {
+		set subcount 0
+		foreach cell [lsort [array names sudva]] {
+			set solved [isCellSolved $cell]
+			if {$solved && ($sudp(suggestion) || $sudp(probing))} {
+				flushBuffer
+				return 1
+			}
+			incr subcount $solved
+		} 
+		if {$subcount} {
+			sudoku::adjustCount count $subcount ""
+			updateAllowables
+		} else {
+			break
+		}		
+	}
+
+	return $count
+}
+
+
+# Hidden single reduction
+# -----------------------
+# If a cell is the only one in a row, column or block that can take a
+# particular value, then it must have that value.
+# Note that the [info exists sudva] is needed because, in the case of
+# impossible sudokus, different values go to an unique cell, so sudva will
+# have been unset for the first value and will throw an error with
+# the following ones.
+proc sudoku::hiddenSingleReduction {} {
+	global sudp sudva 
+	set count 0
+	set sudp(currCode) "hs"
+
+	while {1} {
+		set subcount 0
+		for {set k 0} {$k < 3} {incr k} {
+			for {set i 0} {$i < 9} {incr i} {
+				set indices [getIndicesForUnit $i $sudp($k)]
+				foreach idx $indices {
+					if {![info exists sudva($idx)]} {
+						continue
+					} 
+					foreach v $sudva($idx) {
+						ensureSetArray temp $v $idx
+					}
+				}
+
+				foreach v [array names temp] {
+					if {[llength $temp($v)] == 1} {
+						if {[info exists sudva([set temp($v)])]} {
+							incr subcount
+							set sudp(curr) [eval setValueAtPos $sudp(curr) [split $temp($v) ""] $v]
+							if {$sudp(rating)} {
+								set len [llength $sudva([set temp($v)])]
+								updateRating $len
+							}
+							# Delete the key. 
+							unset sudva([set temp($v)])
+							writeToLog "Cell [printPosForKey $temp($v)] alone in $sudp($k) [expr {$i+1}] can have value $v\n" 2
+							writeToLog "\tinsert value $v at position [printPosForKey $temp($v)]\n" 2
+							if {$sudp(suggestion) || $sudp(probing)} {
+								return 1
+							}
+						} 
+					} 
+				}
+				unset -nocomplain temp
+			}
+			if {$subcount} {
+				incr count $subcount
+				updateAllowables
+			} 
+		}
+		if {!$subcount} {
+			break
+		}		
+	}
+		
+	return $count
+}
+
+
+# Block to row/col reduction
+# --------------------------
+# When you examine a block, if a certain number must be in a specific row
+# or column of this block, then you can eliminate this candidate number  
+# from the cells of the other blocks in the same row or column.
+proc sudoku::blockToRowColReduction {} {
+	global sudp sudva
+	set count 0
+	
+	for {set b 0} {$b < 9} {incr b} {
+		set indices [getIndicesForUnit $b "block"]
+		
+		# Handle successively rows (k=0) and columns (k=1)
+		for {set k 0} {$k < 2} {incr k} {
+			unset -nocomplain arval
+			foreach idx $indices {
+				# Build an array mapping the values to the units where it
+				# appears as a candidate
+				if {![info exists sudva($idx)]} {
+					continue
+				} 
+				foreach v $sudva($idx) {
+					ensureSetArray arval $v [string index $idx $k]
+				}
+			}
+			# Look for unique units
+			foreach v [array names arval] {
+				set arval($v) [lsort -unique $arval($v)]
+				if {[llength $arval($v)] == 1} {
+					set msg "Value $v for block [expr {$b + 1}] can only be in $sudp($k) [expr {$arval($v) + 1}]\n"
+					set subcount [removeFromUnitInOtherBlocks $v $k $arval($v) $b]
+					sudoku::adjustCount count $subcount $msg
+				}
+				if {$sudp(suggestion) && $count} {
+					return 1
+				}
+			}
+		}
+	} 
+	
+	return $count
+}
+
+
+# Block to block reduction
+# ------------------------
+# If a number appears as candidate for only two cells in two different
+# blocks, but both cells are in the same column or row, it is possible to
+# remove that number as a candidate for other cells in that column or row.
+proc sudoku::blockToBlockReduction {} {
+	global sudva sudp
+	set count 0
+	for {set b 0} {$b < 9} {incr b} {
+		set indices [getIndicesForUnit $b "block"]
+		# Build 9 value/cells arrays
+		foreach idx $indices {
+			if {![info exists sudva($idx)]} {
+				continue
+			} 
+			foreach v $sudva($idx) {
+				ensureSetArray temp$b $v $idx
+			}
+		}
+	}
+
+	for {set b1 0} {$b1 < 9} {incr b1} {
+		for {set b2 [expr {$b1 + 1}]} {$b2 < 9} {incr b2} {
+			# Check relative position of blocks: on same horizontal
+			# (dir=0) or vertical (dir=1)
+			if {[expr {$b1 / 3}] == [expr {$b2 / 3}]} {
+				set dir 0
+			} elseif {[expr {$b1 % 3}] == [expr {$b2 % 3}]} {
+				set dir 1
+			} else {
+				continue
+			}
+			
+			for {set v 1} {$v <= 9} {incr v} {
+				if {[info exists temp${b1}($v)] && [info exists temp${b2}($v)] && \
+				  [llength [set temp${b1}($v)]] == 2 && [llength [set temp${b2}($v)]] == 2 } {
+					set a [string index [lindex [set temp${b1}($v)] 0] $dir]
+					set b [string index [lindex [set temp${b2}($v)] 0] $dir]
+					set c [string index [lindex [set temp${b1}($v)] 1] $dir]
+					set d [string index [lindex [set temp${b2}($v)] 1] $dir]
+					if {$a == $b && $c == $d} {
+						if {$dir} {
+							set b3 [expr {(2*$b2 - $b1) % 9}]					
+						} else {
+							set b3 [expr {$b1/3*3 + ((2*$b2 - $b1) % 3)}]
+						}
+						set msg "Only two cells for value $v in $sudp($dir)s "
+						append msg "[expr {$a + 1}] and [expr {$c + 1}] of blocks [expr {$b1 + 1}] and [expr {$b2 + 1}]\n" 
+						if {$sudp(verbosity) > 2} {
+							if {![sudoku::valueExistsInBlock $b3 $v]} {
+								append msg "candidate $v can be removed from $sudp($dir)s [expr {$a + 1}] and [expr {$c + 1}] " 
+								append msg "in block [expr {$b3 + 1}]\n" 
+							} 
+						} 
+						set subcount 0
+						
+						# Remove candidate v from third block in same rows or cols
+						if {[info exists temp${b3}($v)]} {
+							foreach cell [set temp${b3}($v)] {
+								if {[string index $cell $dir] == $a || [string index $cell $dir] == $c} {
+									incr subcount [removeCandidateFromCell $v $cell]
+								} 
+							} 
+						} 
+						sudoku::adjustCount count $subcount $msg
+						if {$sudp(suggestion) && $count} {
+							return 1
+						}
+					} 
+				} 
+			}
+		}
+	}
+	return $count
+}
+
+
+# Naked pair
+# ----------
+# If two cells in the same row, column or block have only the same two
+# candidates, then those candidates can be removed from the candidates of
+# the other cells in that row, column or block.
+proc sudoku::nakedPairReduction {} {
+	global sudp sudva
+	set count 0
+	
+	# Handle successively rows (k=0), columns (k=1), and blocks (k=2)
+	for {set k 0} {$k < 3} {incr k} {
+		for {set i 0} {$i < 9} {incr i} {
+			set indices [getIndicesForUnit $i $sudp($k)]
+			if {[countUnsolvedInList $indices] <= 2} {
+				continue
+			} 
+			foreach c1 $indices {
+				if {[info exists sudva($c1)] && [llength [set sudva($c1)]] == 2} {
+					foreach c2 $indices {					
+						if {$c2 > $c1 && [info exists sudva($c2)] && [llength [set sudva($c2)]] == 2} {
+							if {[set sudva($c1)] eq [set sudva($c2)]} {
+								if {$k != 2 || ( ![sudoku::inSameUnit 0 [list $c1 $c2]] 
+											  && ![sudoku::inSameUnit 1 [list $c1 $c2]] )} {
+									# In a block, cells in a same row or col have already been handled
+									set msg "Cells [printPosForKey $c1] and [printPosForKey $c2] "
+									append msg "in $sudp($k) [expr {$i + 1}] "
+									append msg "have only the same two values [join $sudva($c1) ", "]:\n"
+									set subcount 0
+									foreach v [set sudva($c1)] {
+										incr subcount [removeFromUnitInOtherCells $v $indices [list $c1 $c2]]
+									} 
+									sudoku::adjustCount count $subcount $msg
+									if {$sudp(suggestion) && $count} {
+										return 1
+									}
+								}
+							} 
+						}
+					}
+				}
+			}
+		}
+	} 
+	
+	return $count
+}
+
+
+# Hidden pair
+# -----------
+# If there are two cells, with two candidates between them that don't appear
+# elsewhere in the same row, column or block, then any other candidates for
+# those cells can be eliminated.
+proc sudoku::hiddenPairReduction {} {
+	global sudp sudva
+	set count 0
+	
+	# Handle successively rows (k=0), columns (k=1), and blocks (k=2)
+	for {set k 0} {$k < 3} {incr k} {
+		for {set i 0} {$i < 9} {incr i} {
+			# Build a value/cells array
+			unset -nocomplain temp
+			set indices [getIndicesForUnit $i $sudp($k)]
+			
+			foreach idx $indices {
+				if {![info exists sudva($idx)]} {
+					continue
+				} 
+				foreach v $sudva($idx) {
+					ensureSetArray temp $v $idx
+				}
+			}
+			for {set v1 1} {$v1 <= 9} {incr v1} {
+				if {[info exists temp($v1)] && [llength [set temp($v1)]] == 2} {
+					for {set v2 [expr {$v1 + 1}]} {$v2 <= 9} {incr v2} {
+						if {[info exists temp($v2)] && [llength [set temp($v2)]] == 2} {
+							if {[set temp($v1)] eq [set temp($v2)]} {
+								set c1 [lindex [set temp($v1)] 0]
+								set c2 [lindex [set temp($v1)] 1]
+								if {$k != 2 || ( ![sudoku::inSameUnit 0 [list $c1 $c2]] 
+											  && ![sudoku::inSameUnit 1 [list $c1 $c2]] )} {
+									# In a block, cells in a same row or col have already been handled
+									set msg "Cells [printPosForKey $c1] and [printPosForKey $c2] "
+									append msg "alone in $sudp($k) [expr {$i + 1}] "
+									append msg "share values $v1 and $v2\n"
+									set res [list $v1 $v2]
+									set subcount 0
+									foreach cell [set temp($v1)] {
+										foreach val $sudva($cell) {
+											if {[lsearch $res $val] == -1} {
+												incr subcount [removeCandidateFromCell $val $cell]
+											} 
+										} 
+									} 
+									sudoku::adjustCount count $subcount $msg
+								} 
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+	if {$sudp(suggestion) && $count} {
+		return 1
+	}
+	
+	return $count
+}
+
+
+# Naked triplet
+# -------------
+# If three cells in the same row, column or block have only the same three
+# candidates, then those candidates can be removed from the candidates of
+# the other cells in that row, column or block.
+proc sudoku::nakedTripletReduction {} {
+	global sudp sudva
+	set count 0
+	
+	# Handle successively rows (k=0), columns (k=1), and blocks (k=2)
+	for {set k 0} {$k < 3} {incr k} {
+		for {set i 0} {$i < 9} {incr i} {
+			set indices [getIndicesForUnit $i $sudp($k)]
+			if {[countUnsolvedInList $indices] <= 3} {
+				continue
+			} 
+			foreach c1 $indices {
+				if {[info exists sudva($c1)] && [llength [set sudva($c1)]] <= 3} {
+					foreach c2 $indices {					
+						if {$c2 > $c1 && [info exists sudva($c2)] && [llength [set sudva($c2)]] <= 3} {
+							set temp [lsort -unique [concat $sudva($c1) $sudva($c2)]]
+							if {[llength $temp] <= 3} {
+								foreach c3 $indices {					
+									if {$c3 > $c2 && [info exists sudva($c3)]} {
+										set candidates [lsort -unique [concat $temp $sudva($c3)]]
+										if {[llength $candidates] == 3} {
+											if {$k != 2 || ( ![sudoku::inSameUnit 0 [list $c1 $c2 $c3]] 
+														  && ![sudoku::inSameUnit 1 [list $c1 $c2 $c3]] )} {
+												# In a block, cells in a same row or col have already been handled
+												set msg "Cells [printPosForKey $c1], [printPosForKey $c2] and [printPosForKey $c3] "
+												append msg "in $sudp($k) [expr {$i + 1}] "
+												append msg "have only the same three values [join $candidates ", "]\n"
+												set subcount 0
+												foreach v $candidates {
+													incr subcount [removeFromUnitInOtherCells $v $indices [list $c1 $c2 $c3]]
+												} 
+												sudoku::adjustCount count $subcount $msg
+												if {$sudp(suggestion) && $count} {
+													return 1
+												}
+											}
+										}
+									}
+								}
+							} 
+						}
+					}
+				}
+			}
+		}
+	} 
+
+	return $count
+}
+
+
+# Hidden triplet
+# --------------
+# If there are three cells, with three candidates between them that don't appear
+# elsewhere in the same row, column or block, then any other candidates for
+# those cells can be eliminated.
+proc sudoku::hiddenTripletReduction {} {
+	global sudp sudva
+	set count 0
+	# Handle successively rows (k=0), columns (k=1), and blocks (k=2)
+	for {set k 0} {$k < 3} {incr k} {
+		for {set i 0} {$i < 9} {incr i} {
+			# Build a value/cells array
+			unset -nocomplain temp
+			set indices [getIndicesForUnit $i $sudp($k)]
+			
+			foreach idx $indices {
+				if {![info exists sudva($idx)]} {
+					continue
+				} 
+				foreach v $sudva($idx) {
+					ensureSetArray temp $v $idx
+				}
+			}
+			for {set v1 1} {$v1 <= 9} {incr v1} {
+				if {[info exists temp($v1)] && [llength [set temp($v1)]] == 3} {
+					for {set v2 [expr {$v1 + 1}]} {$v2 <= 9} {incr v2} {
+						if {[info exists temp($v2)] && [llength [set temp($v2)]] == 3} {
+							if {[set temp($v1)] eq [set temp($v2)]} {
+								for {set v3 [expr {$v2 + 1}]} {$v3 <= 9} {incr v3} {
+									if {[info exists temp($v3)] && [llength [set temp($v3)]] == 3} {
+										if {[set temp($v2)] eq [set temp($v3)]} {
+											set c1 [lindex [set temp($v1)] 0]
+											set c2 [lindex [set temp($v1)] 1]
+											set c3 [lindex [set temp($v1)] 2]
+											if {$k != 2 || ( ![sudoku::inSameUnit 0 [list $c1 $c2 $c3]] 
+														  && ![sudoku::inSameUnit 1 [list $c1 $c2 $c3]] )} {
+												# In a block, cells in a same row or col have already been handled
+												set msg "Cells [printPosForKey $c1], [printPosForKey $c2] and [printPosForKey $c3] "
+												append msg "alone in $sudp($k) [expr {$i + 1}] "
+												append msg "share values $v1, $v2, $v3\n"
+												set subcount 0
+												set res [list $v1 $v2 $v3]
+												foreach cell [set temp($v1)] {
+													foreach val $sudva($cell) {
+														if {[lsearch $res $val] == -1} {
+															incr subcount [removeCandidateFromCell $val $cell]
+														} 
+													} 
+												} 
+												sudoku::adjustCount count $subcount $msg
+											} 
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+	if {$sudp(suggestion) && $count} {
+		return 1
+	}
+	
+	return $count
+}
+
+
+# Naked quadruplet
+# ----------------
+# If four cells in the same row, column or block have only the same four
+# candidates, then those candidates can be removed from the candidates of
+# the other cells in that row, column or block.
+proc sudoku::nakedQuadrupletReduction {} {
+	global sudp sudva
+	set count 0
+	
+	# Handle successively rows (k=0), columns (k=1), and blocks (k=2)
+	for {set k 0} {$k < 3} {incr k} {
+		for {set i 0} {$i < 9} {incr i} {
+			set indices [getIndicesForUnit $i $sudp($k)]
+			if {[countUnsolvedInList $indices] <= 4} {
+				continue
+			} 
+			foreach c1 $indices {
+				if {[info exists sudva($c1)] && [llength [set sudva($c1)]] <= 4} {
+					foreach c2 $indices {					
+						if {$c2 > $c1 && [info exists sudva($c2)] && [llength [set sudva($c2)]] <= 4} {
+							set pair [lsort -unique [concat $sudva($c1) $sudva($c2)]]
+							if {[llength $pair] <= 4} {
+								foreach c3 $indices {					
+									if {$c3 > $c2 && [info exists sudva($c3)]} {
+										set triple [lsort -unique [concat $pair $sudva($c3)]]
+										if {[llength $triple] <= 4} {
+											foreach c4 $indices {					
+												if {$c4 > $c3 && [info exists sudva($c4)]} {
+													set candidates [lsort -unique [concat $triple $sudva($c4)]]
+													if {[llength $candidates] == 4} {
+														if {$k != 2 || ( ![sudoku::inSameUnit 0 [list $c1 $c2 $c3 $c4]] 
+																	  && ![sudoku::inSameUnit 1 [list $c1 $c2 $c3 $c4]] )} {
+															# In a block, cells in a same row or col have already been handled
+															set msg "Cells [printPosForKey $c1], [printPosForKey $c2], [printPosForKey $c3], and [printPosForKey $c4] "
+															append msg "in $sudp($k) [expr {$i + 1}] "
+															append msg "have only the same four values [join $candidates ", "]\n"
+															set subcount 0
+															foreach v $candidates {
+																incr subcount [removeFromUnitInOtherCells $v $indices [list $c1 $c2 $c3 $c4]]
+															} 
+															sudoku::adjustCount count $subcount $msg
+															if {$sudp(suggestion) && $count} {
+																return 1
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							} 
+						}
+					}
+				}
+			}
+		}
+	} 
+	
+	return $count
+}
+
+
+# Hidden quadruplet
+# -----------------
+# If there are four cells, with four candidates between them that don't appear
+# elsewhere in the same row, column or block, then any other candidates for
+# those cells can be eliminated.
+proc sudoku::hiddenQuadrupletReduction {} {
+	global sudp sudva
+	set count 0
+	
+	# Handle successively rows (k=0), columns (k=1), and blocks (k=2)
+	for {set k 0} {$k < 3} {incr k} {
+		for {set i 0} {$i < 9} {incr i} {
+			# Build a value/cells array
+			unset -nocomplain temp
+			set indices [getIndicesForUnit $i $sudp($k)]
+			
+			foreach idx $indices {
+				if {![info exists sudva($idx)]} {
+					continue
+				} 
+				foreach v $sudva($idx) {
+					ensureSetArray temp $v $idx
+				}
+			}
+			for {set v1 1} {$v1 <= 9} {incr v1} {
+				if {[info exists temp($v1)] && [llength [set temp($v1)]] == 4} {
+					for {set v2 [expr {$v1 + 1}]} {$v2 <= 9} {incr v2} {
+						if {[info exists temp($v2)] && [llength [set temp($v2)]] == 4} {
+							if {[set temp($v1)] eq [set temp($v2)]} {
+								for {set v3 [expr {$v2 + 1}]} {$v3 <= 9} {incr v3} {
+									if {[info exists temp($v3)] && [llength [set temp($v3)]] == 4} {
+										if {[set temp($v2)] eq [set temp($v3)]} {
+											for {set v4 [expr {$v3 + 1}]} {$v4 <= 9} {incr v4} {
+												if {[info exists temp($v4)] && [llength [set temp($v4)]] == 4} {
+													if {[set temp($v3)] eq [set temp($v4)]} {
+														set c1 [lindex [set temp($v1)] 0]
+														set c2 [lindex [set temp($v1)] 1]
+														set c3 [lindex [set temp($v1)] 2]
+														set c4 [lindex [set temp($v1)] 3]
+														if {$k != 2 || ( ![sudoku::inSameUnit 0 [list $c1 $c2 $c3 $c4]] 
+																	  && ![sudoku::inSameUnit 1 [list $c1 $c2 $c3 $c4]] )} {
+															# In a block, cells in a same row or col have already been handled
+															set msg "Cells [printPosForKey $c1], [printPosForKey $c2], [printPosForKey $c3] and [printPosForKey $c4] "
+															append msg "alone in $sudp($k) [expr {$i + 1}] "
+															append msg "share values $v1, $v2, $v3, $v4\n"
+															set subcount 0
+															set res [list $v1 $v2 $v3 $v4]
+															foreach cell [set temp($v1)] {
+																foreach val $sudva($cell) {
+																	if {[lsearch $res $val] == -1} {
+																		incr subcount [removeCandidateFromCell $val $cell]
+																	} 
+																} 
+															} 
+															sudoku::adjustCount count $subcount $msg
+														} 
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+	if {$sudp(suggestion) && $count} {
+		return 1
+	}
+	
+	return $count
+}
+
+
+# X-Wing reduction
+# ----------------
+# When two rows (resp columns) have the same candidate only in the same two
+# columns (resp rows), these candidates can be eliminated for the remaining
+# cells of the columns (resp rows).
+proc sudoku::xwingReduction {} {
+	global sudp sudva
+	set count 0
+	
+	for {set u 0} {$u < 2} {incr u} {
+		# Handle successively rows (u=0) and columns (u=1)
+		for {set i 0} {$i < 9} {incr i} {
+			# Build a value/cells array
+			unset -nocomplain temp$i
+		
+			set indices [getIndicesForUnit $i $sudp($u)]
+			foreach idx $indices {
+				if {![info exists sudva($idx)]} {
+					continue
+				} 
+				foreach v $sudva($idx) {
+					ensureSetArray temp$i $v [string index $idx [expr {1 - $u}]]
+				}
+			}
+		}
+
+		for {set v 1} {$v <= 9} {incr v} {
+			for {set i 0} {$i < 9} {incr i} {
+				if {[info exists temp${i}($v)] && [llength [set temp${i}($v)]] == 2} {
+					for {set j [expr {$i + 1}]} {$j < 9} {incr j} {
+						if {[info exists temp${j}($v)] && [llength [set temp${j}($v)]] == 2} {
+							if {[set temp${j}($v)] eq [set temp${i}($v)]} {
+								incr count [sudoku::reduceUnit "X-Wing" $v $u [list $i $j] [set temp${j}($v)]]
+								if {$sudp(suggestion) && $count} {
+									return 1
+								}
+							} 
+						}
+					}
+				} 
+			}
+		}
+	} 
+	
+	return $count
+}
+
+
+# Swordfish reduction
+# -------------------
+# When three rows (resp columns) have the same candidate three times at
+# most and only in the same three columns (resp rows), these candidates can
+# be eliminated for the remaining cells of the columns (resp rows).
+proc sudoku::swordfishReduction {} {
+	global sudp sudva
+	set count 0
+	
+	for {set u 0} {$u < 2} {incr u} {
+		# Handle successively rows (u=0) and columns (u=1)
+		for {set i 0} {$i < 9} {incr i} {
+			# Build a value/cells array
+			unset -nocomplain temp$i
+		
+			set indices [getIndicesForUnit $i $sudp($u)]
+			foreach idx $indices {
+				if {![info exists sudva($idx)]} {
+					continue
+				} 
+				foreach v $sudva($idx) {
+					ensureSetArray temp$i $v [string index $idx [expr {1 - $u}]]
+				}
+			}
+		}
+
+		for {set v 1} {$v <= 9} {incr v} {
+			for {set i 0} {$i < 9} {incr i} {
+				if {[info exists temp${i}($v)] && [llength [set temp${i}($v)]] >= 2 && [llength [set temp${i}($v)]] <= 3} {
+					for {set j [expr {$i + 1}]} {$j < 9} {incr j} {
+						if {[info exists temp${j}($v)] && [llength [set temp${j}($v)]] >= 2 && [llength [set temp${j}($v)]] <= 3} {
+							set merged [lsort -unique [concat [set temp${i}($v)] [set temp${j}($v)]]]
+							if {[llength $merged] == 3} {
+								for {set k [expr {$j + 1}]} {$k < 9} {incr k} {
+									if {[info exists temp${k}($v)] && [llength [set temp${k}($v)]] >= 2 && [llength [set temp${k}($v)]] <= 3} {
+										set merged [lsort -unique [concat $merged [set temp${k}($v)]]]
+										if {[llength $merged] == 3} {
+											incr count [sudoku::reduceUnit "Swordfish" $v $u [list $i $j $k] $merged]
+											if {$sudp(suggestion) && $count} {
+												return 1
+											}
+										}
+									}
+								}
+							} 
+						}
+					}
+				} 
+			}
+		}
+	} 
+	
+	return $count
+}
+
+
+# Tetragrid reduction
+# -------------------
+# When four rows (resp columns) have the same candidate four times at
+# most and only in the same four columns (resp rows), these candidates can
+# be eliminated for the remaining cells of the columns (resp rows).
+proc sudoku::tetragridReduction {} {
+	global sudp sudva
+	set count 0
+	
+	for {set u 0} {$u < 2} {incr u} {
+		# Handle successively rows (u=0) and columns (u=1)
+		for {set i 0} {$i < 9} {incr i} {
+			# Build a value/cells array
+			unset -nocomplain temp$i
+		
+			set indices [getIndicesForUnit $i $sudp($u)]
+			foreach idx $indices {
+				if {![info exists sudva($idx)]} {
+					continue
+				} 
+				foreach v $sudva($idx) {
+					ensureSetArray temp$i $v [string index $idx [expr {1 - $u}]]
+				}
+			}
+		}
+
+		for {set v 1} {$v <= 9} {incr v} {
+			for {set i 0} {$i < 9} {incr i} {
+				if {[info exists temp${i}($v)] && [llength [set temp${i}($v)]] >= 2 && [llength [set temp${i}($v)]] <= 4} {
+					for {set j [expr {$i + 1}]} {$j < 9} {incr j} {
+						if {[info exists temp${j}($v)] && [llength [set temp${j}($v)]] >= 2 && [llength [set temp${j}($v)]] <= 4} {
+							set merged [lsort -unique [concat [set temp${i}($v)] [set temp${j}($v)]]]
+							if {[llength $merged] == 4} {
+								for {set k [expr {$j + 1}]} {$k < 9} {incr k} {
+									if {[info exists temp${k}($v)] && [llength [set temp${k}($v)]] >= 2 && [llength [set temp${k}($v)]] <= 4} {
+										set merged [lsort -unique [concat $merged [set temp${k}($v)]]]
+										if {[llength $merged] == 4} {
+											for {set l [expr {$k + 1}]} {$l < 9} {incr l} {
+												if {[info exists temp${l}($v)] && [llength [set temp${l}($v)]] >= 2 && [llength [set temp${l}($v)]] <= 4} {
+													set merged [lsort -unique [concat $merged [set temp${l}($v)]]]
+													if {[llength $merged] == 4} {
+														incr count [sudoku::reduceUnit "Tetragrid" $v $u [list $i $j $k $l] $merged]
+														if {$sudp(suggestion) && $count} {
+															return 1
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							} 
+						}
+					}
+				} 
+			}
+		}
+	} 
+	
+	return $count
+}
+
+
+proc sudoku::reduceUnit {tech val kind indices pos} {
+	global sudp sudva
+	
+	set count 0
+	set subcount 0
+	set len [llength $indices]
+	for {set idx 0} {$idx < $len} {incr idx} {
+		set s$idx [expr {[lindex $indices $idx] + 1}]
+		set t$idx [expr {[lindex $pos $idx] + 1}]
+		lappend sources [set s$idx]
+		lappend targets [set t$idx]
+	}
+	
+	set msg "$tech with value $val in $sudp($kind)s [join $sources ", "] "
+	append msg "and $sudp([expr {1 - $kind}])s [join $targets ", "]:\n"
+	
+	if {$sudp(verbosity) > 2} {
+		append msg "candidate $val can be removed from other cells in $sudp([expr {1 - $kind}])s [join $targets ", "]\n"
+	}
+	
+	for {set i 0} {$i < $len} {incr i} {
+		set t [lindex $pos $i]
+		for {set j 0} {$j < 9} {incr j} {
+			if {[lsearch $indices $j] == -1} {
+				switch $kind {
+					"0" { set cell $j$t }
+					"1" { set cell $t$j }
+				}
+				incr subcount [removeCandidateFromCell $val $cell]
+			} 
+		}	
+	}
+	sudoku::adjustCount count $subcount $msg
+
+	return $count
+}
+
+
+
+# Sudoku exact cover procs
+# ========================
+
+# ===========================================================================
+# Explanation: 
+#     if the reduction methods have not entirely solved the puzzle, the
+#     last resort is to solve it as an exact-cover problem. The method
+#     relies on D. Knuth's dancing links. They are implemented here using
+#     Tcl arrays instead of pointers.
+# 
+# 
+# The matrix encoding chart below was provided by Daniel Seiler on the 
+# sudoku forum:
+#     http://www.setbb.com/phpbb/viewtopic.php?t=119&highlight=dancing+links&mforum=sudoku
+# 
+# The cover matrix has the following format:
+# 			__________________________________________________________________________________________ 
+# 			|  Cell#  |           1            |           2            |   |            9           | 
+# 			|123...81 |r1...r9 c1...c9 b1...b9 |r1...r9 c1...c9 b1...b9 |...|r1...r9 c1...c9 b1...b9 | 
+# 	________|_________|________________________|________________________|___|________________________| 
+# 	1 -> 1,1| 
+# 	1 -> 1,2| 
+# 	  .     |
+#	  .     |
+#	  .     |
+# 	9 -> 9,9|
+# 
+# Dimensions:
+# Rows:		[number of cells] multiplied by [number of possible digits]
+# 			That makes (9*9) * 9 = 9^3 = 729
+# Columns:	[number of columns + rows + blocks] multiplied by [number of different digits]
+# 			plus
+# 			[number of cells]
+# 			That makes 3 * 9^2  +  9^2  =  324
+# 			
+# 			
+# All indices start from 0
+# Still the possible values in the cells are in the 1-9 range
+# 
+# For a particular triple {v, r, c} (value, row, col), we know exactly which
+# elements of the corresponding row of the matrix have value 1: 
+# 
+# If R and C are the row and the col indices of an element of the cover matrix:
+#   0 <= R < 729
+#   0 <= C < 324
+#   
+#   v = R / 81 + 1
+#   r = ( R % 81 ) / 9
+# 	c = ( R % 81 ) % 9
+# 	b = r/3 * 3 + c/3
+# 	
+#	C_base				(v - 1) * 27 + 81 = R/81 * 27 + 81
+#	cell_constraint		r * 9 + c
+#	row_constraint		C_base + r
+#	col_constraint		C_base + 9 + c
+#	block_constraint	C_base + 18 + b
+#	
+#	If 0 <= C < 81		--->  cell_constraint
+#	Else
+#	v = (C - 81) / 27 + 1
+# 	If 0 <= C % 81 < 8		--->  row_constraint
+# 	If 9 <= C % 81 < 17		--->  col_constraint
+# 	If 18 <= C % 81 < 26	--->  block_constraint
+# 	
+# 	
+# The cover array (ec_cv) has keys only for the non null elements of the matrix. 
+# The ec_ prefix stands for "exact cover".
+# Convention: 
+# 			the key is a four digits number 
+# 				$v$r$c$t
+# 			where v is the value, r the cell row, c the cell column and t
+# 			is 0, 1, 2, or 3 corresponding to cell_constraint,
+# 			row_constraint, col_constraint and block_constraint resp.
+# 		
+#		Row $v$r$c has four 1's: $v$r$c0, $v$r$c1, $v$r$c2 and $v$r$c3
+# 		
+# 		That makes a maximum of 729 * 4 = 2916 keys.
+# 		In fact, this will be less because there is no need to create
+# 		entries for some rows:
+# 			- already determined cells (in sudso array) are skipped
+# 			- non permitted values (not in sudva array) are skipped
+# 			
+# 		A column corresponding to a cell constraint is designated by 
+# 		        0$r$c
+# 		
+# 		A column corresponding to a row, col or block constraint is 
+# 		designated by $v$i$t
+# 			where v is the value, i the (row|col|block)'s index, and t
+# 			is 1, 2, or 3 like above.
+# 			 		
+# 		For each key of the ec_cv array (i-e each 1 in the cover matrix),
+# 		we need to have the left, right, up and down "pointers". They are
+# 		stored in the "ec_lt", "ec_rt", "ec_up" and "ec_dn" arrays
+# 		respectively. Additionally, there must be a linked left-right list
+# 		of column headers: it is also handled by the "ec_lt", "ec_rt",
+# 		"ec_up" and "ec_dn" arrays.
+# 		
+# ===========================================================================
+
+proc sudoku::solveExactCover {} {
+	writeToLog "Exact cover algorithm...\n" 2
+	sudoku::initExactCover
+	sudoku::dancingSearch 0
+}
+
+
+proc sudoku::initExactCover {} {
+	global ec_cv ec_lt ec_rt ec_up ec_dn ec_sz
+	unset -nocomplain ec_cv ec_lt ec_rt ec_up ec_dn ec_sz
+	global sudp sudva
+	set sudp(currCode) "bt"
+	if {$sudp(rating)} {
+		set count 0
+		# Calculate the remaining number of candidates
+		foreach cell [array names sudva] {
+			incr count [llength $sudva($cell)]
+		} 
+		updateRating $count	
+	} 
+	sudoku::createCoverArray
+	sudoku::createLinkArrays
+}
+
+
+proc sudoku::createCoverArray {} {
+	global ec_cv sudso ec_sz 
+	for {set v 1} {$v <= 9} {incr v} {
+		for {set r 0} {$r < 9} {incr r} {
+			for {set c 0} {$c < 9} {incr c} {
+				if {![info exists sudso($r$c)] && [isAllowableValue $r $c $v]} {
+					for {set i 0} {$i < 81} {incr i} {
+						if {[expr {$r * 9 + $c}] == $i} {
+							set ec_cv($v$r${c}0) 1
+							if {[info exists ec_sz(0$r$c)]} {
+								incr ec_sz(0$r$c)
+							} else {
+								set ec_sz(0$r$c) 1
+							}
+						}
+					}
+					set b [expr {$r/3*3 + $c/3}]
+					for {set i 0} {$i < 9} {incr i} {
+						if {$i == $v - 1} {
+							for {set j 0} {$j < 27} {incr j} {
+								if {$j == $r || $j == [expr {9 + $c}] || $j == [expr {18 + $b}]} {
+									# Type t: 1, 2, 3 for row, col, block resp
+									set t [expr {$j/9 + 1}]
+									set ec_cv($v$r$c$t) 1
+									# Build the array of sizes
+									set pos [expr {$j % 9}]
+									if {[info exists ec_sz($v$pos$t)]} {
+										incr ec_sz($v$pos$t)
+									} else {
+										set ec_sz($v$pos$t) 1
+									}
+								} 
+							}
+						} 
+					}
+				}
+			} 
+		}	
+	}
+}
+
+
+proc sudoku::createLinkArrays {} {
+	global ec_cv ec_lt ec_rt ec_up ec_dn ec_sz
+
+	# Create the up and down links arrays
+	foreach col [array names ec_sz] {
+		buildLinkArraysFromList ec_up ec_dn [concat $col [sudoku::colItemsList $col]]
+	} 
+
+	# Create the left and right links arrays
+	foreach row [array names ec_cv *0] {
+		set r [string range $row 0 2]
+		buildLinkArraysFromList ec_lt ec_rt [list ${r}0 ${r}1 ${r}2 ${r}3]
+	} 
+	
+	# Iterate over all the cols to create the linked list of headers
+	buildLinkArraysFromList ec_lt ec_rt [sudoku::colHeadersList]
+}
+
+
+proc sudoku::buildLinkArraysFromList {arr1 arr2 l} {
+	upvar $arr1 a1
+	upvar $arr2 a2
+	set len [llength $l]
+	# Create the up and down arrays
+	for {set i 1} {$i < $len - 1} {incr i} {
+		set a1([lindex $l $i]) [lindex $l [expr $i - 1]]
+		set a2([lindex $l $i]) [lindex $l [expr $i + 1]]
+	}
+	set a1([lindex $l 0]) [lindex $l end]
+	set a2([lindex $l 0]) [lindex $l 1]
+	set a1([lindex $l end]) [lindex $l end-1]
+	set a2([lindex $l end]) [lindex $l 0]
+}
+
+
+proc sudoku::colHeadersList {} {
+	global ec_sz
+	# "chm" is the column headers master
+	set res "chm"
+	# Columns 1 to 81 correspond to the cell_constraint
+	for {set r 0} {$r < 9} {incr r} {
+		for {set c 0} {$c < 9} {incr c} {
+			if {[info exists ec_sz(0$r$c)]} {
+				lappend res 0$r$c
+			}
+		}
+	}	
+	for {set v 1} {$v <= 9} {incr v} {
+		for {set t 1} {$t <= 3} {incr t} {
+			for {set j 0} {$j < 9} {incr j} {
+				if {[info exists ec_sz($v$j$t)]} {
+					lappend res $v$j$t
+				} 
+			}
+		}
+	}
+	return $res
+}
+
+
+# Returns the list of the elements belonging to a column of the cover
+# matrix
+proc sudoku::colItemsList {col} {
+	global ec_cv
+	set res ""
+	set v [string range $col 0 0]
+
+	if {$v == 0} {
+		foreach item [lsort [array names ec_cv *0]] {
+			if {[sudoku::getHeader $item] eq $col} {
+				lappend res $item
+			} 
+		} 
+	} else {
+		set t [string range $col 2 2]
+		foreach item [lsort [array names ec_cv $v*$t]] {
+			if {[sudoku::getHeader $item] eq $col} {
+				lappend res $item
+			} 
+		} 
+	}
+	
+	return $res
+}
+
+
+# ----------------------------------------------------------------------
+# Implements the dancing links algorithm described by D. Knuth. See:
+# http://www-cs-faculty.stanford.edu/~knuth/papers/dancing-color.ps.gz
+# 
+# Description
+# 		If A is empty, the problem is solved; terminate successfully
+# 		Otherwise choose a column, c (deterministically)
+# 		Choose a row r, such that A[r,c] = 1 (nondeterministically)
+# 		Include r in the partial solution
+# 		For each j such that A[r,j] = 1, 
+# 			Delete column j from matrix
+# 			For each i such that A[i,j] = 1,   
+# 				Delete row i from matrix A
+# 		Repeat this algorithm recursively on the reduced matrix A
+# 		
+# Implementation (algorithm search(k))
+# 		If R[h] = h, print the current solution and return
+# 		Otherwise choose a column object c 
+# 		Cover column c 
+# 		For each r <- D[c], D[D[c]],..., while r ­ c,
+# 			set O_k <- r ; 
+# 			for each j <- R[r], R[R[r]],..., while j ­ r,  
+# 				cover column j ; 
+# 				search(k + 1);
+# 				set r <- O_k and c <- C[r];
+# 				for each j <- L[r], L[L[r]],..., while j ­ r, 
+# 					uncover column j 
+# 		Uncover column c and return
+# ----------------------------------------------------------------------
+proc sudoku::dancingSearch {level} {
+	global sudp ec_up ec_dn ec_lt ec_rt sudso
+
+	if {$ec_rt(chm) eq "chm"} {
+		writeToLog "No more cols in cover matrix (reached chm)\n" 3
+		return
+	} 
+	
+	if {$sudp(oneSolution) && $sudp(solCount) > 0} {
+		return
+	} 
+
+	if {$sudp(unicity) && $sudp(solCount) >= 2} {
+		return
+	} 
+
+	writeToLog "Entering level $level\n" 3
+
+	set found [array size sudso]
+	set col [sudoku::chooseColumn]
+	writeToLog "\tCovering chosen column $col\n" 3
+	sudoku::coverColumn $col
+	
+	set cell $ec_dn($col)
+	
+	while {$cell != $col} {
+		set row [string range $cell 0 2]
+		writeToLog "Processing row of $cell found in col $col\n" 3
+		
+		if {$level < [sudoku::solutionTempSize]} {
+			sudoku::solutionTempRemove $level
+		}
+		sudoku::solutionTempAdd $level $row
+		
+		set right $ec_rt($cell)
+
+		while {$right ne $cell} {
+			writeToLog "\tCovering column of $right in row $row\n" 3
+			sudoku::coverColumn [sudoku::getHeader $right]
+			set right $ec_rt($right)
+		}
+		
+		# Recursive invocation one level down
+		sudoku::dancingSearch [expr $level + 1]
+		
+		set left $ec_lt($cell)
+		while {$left ne $cell} {
+			writeToLog "\tUncovering column of $left in row $row\n" 3
+			sudoku::uncoverColumn [sudoku::getHeader $left]
+			set left $ec_lt($left)
+		}
+		set cell $ec_dn($cell);
+		
+		# Store the current solution
+		if {[expr {$level + $found}] == 80} {
+			sudoku::registerNewSolution 
+		} 
+	}
+	
+	writeToLog "\tUncovering column $col\n" 3
+	sudoku::uncoverColumn $col
+
+	writeToLog "Leaving level $level\n" 3
+}
+
+
+# Return the first column in the linked list of headers with the smallest 
+# number of non null items
+proc sudoku::chooseColumn {} {
+	global ec_rt ec_sz
+	
+	set head $ec_rt(chm)
+	set size $ec_sz($head)
+	set res $head
+	
+	while {$head ne "chm"} {
+		if {$ec_sz($head) < $size} {
+			set size $ec_sz($head)
+			set res $head
+		}         
+		set head $ec_rt($head)
+	}      
+	return $res
+}
+
+
+proc sudoku::coverColumn {col} {
+	global ec_up ec_dn ec_lt ec_rt ec_sz
+
+	set ec_lt([set ec_rt($col)]) $ec_lt($col)
+	set ec_rt([set ec_lt($col)]) $ec_rt($col)
+	
+	set down $ec_dn($col)
+	
+	while {$down ne $col} {
+		set right $ec_rt($down)
+		while {$right ne $down} {
+			set ec_up([set ec_dn($right)]) $ec_up($right)
+			set ec_dn([set ec_up($right)]) $ec_dn($right)
+			incr ec_sz([sudoku::getHeader $right]) -1
+			set right $ec_rt($right)
+		}
+		set down $ec_dn($down)
+	}	
+}
+
+
+proc sudoku::uncoverColumn {col} {
+	global ec_up ec_dn ec_lt ec_rt ec_sz
+	
+	set up $ec_up($col)
+	
+	while {$up ne $col} {
+		set left $ec_lt($up)
+		while {$left ne $up} {
+			incr ec_sz([sudoku::getHeader $left])
+			set ec_up([set ec_dn($left)]) $left
+			set ec_dn([set ec_up($left)]) $left
+			set left $ec_lt($left)
+		}
+		set up $ec_up($up)
+	}
+	
+	set ec_lt([set ec_rt($col)]) $col
+	set ec_rt([set ec_lt($col)]) $col
+}
+
+
+proc sudoku::getHeader {item} {
+	if {[string length $item] == 3} {
+		return $item
+	} 
+	set r [string range $item 1 1]
+	set c [string range $item 2 2]
+	set t [string range $item 3 3]
+
+	switch -- $t {
+		"0" {
+			return "0$r$c"
+		}
+		"1" {
+			return [string replace $item 2 2]
+		}
+		"2" {
+			return [string replace $item 1 1]
+			
+		}
+		"3" {
+			set b [rowColToBlock $r $c]
+			return [string replace $item 1 2 $b]
+		}
+	}
+}
+
+
+
+# Sudoku solutions procs
+# ----------------------
+
+# The temporary solution is a list of acceptable rows from the cover matrix
+proc sudoku::solutionTempAdd {idx row} {
+	global sudp
+	set sudp(tempSol) [linsert $sudp(tempSol) $idx $row]
+	writeToLog "Adding row [sudoku::solutionTempGet $idx] at level $idx\n" 3
+}
+
+
+proc sudoku::solutionTempRemove {idx} {
+	global sudp
+	set sudp(tempSol) [lreplace $sudp(tempSol) $idx $idx]
+	writeToLog "Removing row [sudoku::solutionTempGet $idx] at level $idx\n" 3
+}
+
+
+proc sudoku::solutionTempGet {idx} {
+	global sudp
+	return [lindex $sudp(tempSol) $idx]
+}
+
+
+proc sudoku::solutionTempSize {} {
+	global sudp
+	return [llength $sudp(tempSol)]
+}
+
+
+proc sudoku::registerNewSolution {} {
+	global sudp sudso
+	if {!$sudp(counting)} {
+		array set arr [array get sudso]
+		foreach row $sudp(tempSol) {
+			set arr([string range $row 1 2]) [string range $row 0 0]
+		} 
+		# Add to the solutions list
+		if {![catch {sudoku::arrayToString arr} res]} {
+			addSolution $res
+			writeToLog "\tRegistered temp sol: $sudp(tempSol)\n" 3
+		} 
+	} else {
+		incr sudp(solCount)
+	}
+}
+
+
+proc sudoku::addSolution {sud} {
+	global sudp 
+	incr sudp(solCount)
+	if {!$sudp(counting) && !$sudp(rating)} {
+		printSolution $sud
+	} 
+}
+
+
+proc sudoku::printSolution {sud} {
+	global sudp 	
+	writeToLog "Solution $sudp(solCount):\n"
+	if {$sudp(rawResult)} {
+		puts $sud
+	} else {
+		puts [sudoku::display $sud]
+	}
+}
+
+
+proc sudoku::displayResult {} {
+	global sudp sudva
+	
+	set len $sudp(solCount)
+	if {$sudp(rating)} {
+		if {$len > 1} {
+			puts "Level n/a (multiple solutions)"
+		} elseif {$len == 1} {
+			calculateLevel
+		} else {
+			puts "Level n/a (no solution)"
+		}
+		return
+	}
+
+	if {$len == 0} {
+		if {$sudp(backtracking)} {
+			if {$sudp(unicity) || $sudp(counting)} {
+				puts "0"
+			} else {
+				puts "No solution found"
+				foreach cell [lsort [array names sudva]] {
+					if {[llength $sudva($cell)] == 0} {
+						writeToLog "No value for cell [printPosForKey $cell]\n" 1
+					} 
+				} 
+			}
+		} else {
+			writeToLog "Partial solution (don't disable backtracking to get a complete resolution)\n" [expr {!$sudp(counting)}]
+			if {$sudp(rawResult)} {
+				puts $sudp(curr)
+			} else {
+				puts [sudoku::display $sudp(curr)]
+			}
+		}
+	} else {
+		if {$sudp(unicity)} {
+			puts [expr {$len == 1}]
+		} elseif {$sudp(counting)} {
+			puts $len
+		} 
+	}
+}
+
+
+
+# Sudoku accessors procs
+# ======================
+
+proc sudoku::getUnits {sud kind} {
+	set res ""
+	switch -- $kind {
+		"row" {
+			regsub -all {\d{9}} $sud "& " res
+		}
+		"column" {
+			set sud [split $sud ""]
+			for {set i 0} {$i < 9} {incr i} {
+				set line ""
+				for {set j 0} {$j < 9} {incr j} {
+					append line [lindex $sud [expr {($j * 9) + $i}]]
+				}
+				lappend res $line
+			}
+		}
+		"block" {
+			regsub -all {\d{3}} $sud "& " sud
+			for {set k 0} {$k < 3} {incr k} {
+				for {set i 0} {$i < 3} {incr i} {
+					set block ""
+					for {set j 0} {$j < 3} {incr j} {
+						append block [lindex $sud [expr { ($j * 3) + $i + 9 * $k}]]
+					}
+					lappend res $block
+				}
+			}
+		}
+	}
+	return $res
+}
+
+
+proc sudoku::getUnitAtIndex {sud idx kind} {
+	return [lindex [sudoku::getUnits $sud $kind] $idx]
+}
+
+
+proc sudoku::getValueAtPos {sud row col} {
+	return [string index $sud [expr {$row * 9 + $col}]]
+}
+
+
+proc sudoku::setValueAtPos {sud row col val} {
+	set pos [expr {$row * 9 + $col}]
+	return [string replace $sud $pos $pos $val]
+}
+
+
+# Returns the indices ($row$col) of the elements belonging to a particular unit
+proc sudoku::getIndicesForUnit {idx kind} {
+	set res ""
+	switch -- $kind {
+		"row" {
+			for {set i 0} {$i < 9} {incr i} {
+				lappend res $idx$i
+			}
+		}
+		"column" {
+			for {set i 0} {$i < 9} {incr i} {
+				lappend res $i$idx
+			}
+		}
+		"block" {
+			set ridx [expr {($idx / 3) * 3}]
+			set cidx [expr {($idx % 3) * 3}]
+			for {set i 0} {$i < 3} {incr i} {
+				for {set j 0} {$j < 3} {incr j} {
+					lappend res [expr {$ridx + $i}][expr {$cidx + $j}]
+				}
+			}
+			
+		}
+	}
+	return $res
+}
+
+
+proc sudoku::ensureSetArray {arr key val} {
+	upvar $arr a
+	if {![info exists a($key)]} {
+		set a($key) $val
+	} else {
+		lappend a($key) $val
+	}	
+}
+
+
+# Sudoku formatting procs
+# =======================
+
+proc sudoku::normalize {sud} {
+	if {[string length $sud] != 81} {
+		error "invalid sudoku: total length should be 81"
+	} 
+	regsub -all {[^1-9]} $sud "0" sud
+	return $sud
+}
+
+
+proc sudoku::stringToList {sud} {
+	set res ""
+	regsub -all {\d{9}} $sud "& " sud
+	foreach row $sud {
+		lappend res [split $row ""]
+	} 
+	return $res
+}
+
+
+# Undetermined values (zeros in the sudoku chain) are not stored in the
+# array so that one can test the existence of a key to see if a value has
+# been found for this key
+proc sudoku::stringToArray {sud arr} {
+	upvar $arr a
+	set sud [split $sud ""]
+	for {set i 0} {$i < 9} {incr i} {
+		for {set j 0} {$j < 9} {incr j} {
+			set val [lindex $sud [expr {9*$i+$j}]]
+			if {$val} {
+				set a($i$j) $val
+			} 
+		}
+	}
+}
+
+
+proc sudoku::arrayToString {arr {symb 0}} {
+	upvar $arr a
+	set sud ""
+	for {set r 0} {$r < 9} {incr r} {
+		for {set c 0} {$c < 9} {incr c} {
+			if {[info exists a($r$c)]} {
+				append sud $a($r$c)
+			} else {
+				append sud $symb
+			}
+		}
+	}
+	return $sud
+}
+
+
+# Display procs
+# -------------
+
+proc sudoku::display {sud {framed 1}} {
+	set res ""
+	regsub -all "0" $sud "." sud
+	if {$framed} {
+		set horiz [string repeat - 23]
+		regsub -all {[\d.]{3}} $sud "&|" sud
+		lappend res "+$horiz+"
+		for {set i 0} {$i < 9} {incr i} {
+			set line "|"
+			append line [string range $sud [expr {$i * 12}] [expr {($i * 12) + 11}]]
+			lappend res [split $line ""]
+			if {[expr $i % 3] == 2 && $i != 8} {
+				lappend res "|-------|-------|-------|"
+			} 
+		}
+		lappend res "+$horiz+"
+	} else {
+		for {set i 0} {$i < 9} {incr i} {
+			set line [string range $sud [expr {$i * 9}] [expr {($i * 9) + 8}]]
+			lappend res [split $line ""]
+		}
+	}
+	return [join $res "\n"]
+}
+
+
+proc sudoku::displayCandidates {sud} {	
+	global sudva
+	foreach key [lsort [array names sudva]] {
+		puts "[printPosForKey $key]\t[join $sudva($key) ", "]"
+	}
+}
+
+
+proc sudoku::currentString {} {
+	global sudp
+	set res ""
+	regsub -all "0" $sudp(curr) "." res
+	return $res
+}
+
+
+
+# Sudoku utils procs
+# ==================
+
+# Sudoku validation procs
+# -----------------------
+
+proc sudoku::checkSudoku {sud} {
+	foreach kind [list "row" "column" "block"] {
+		sudoku::checkAllForType $sud $kind
+	} 
+}
+
+
+# The 'kind' argument specifies the kind of unit: "row", "column" or
+# "block".
+proc sudoku::checkAllForType {sud kind} {
+	set sequences [sudoku::getUnits $sud $kind]
+	set len [llength $sequences]
+	for {set i 0} {$i < $len} {incr i} {
+		if {[catch {sudoku::checkSequence [lindex $sequences $i]} res]} {
+			error "invalid $kind [expr $i + 1]: $res"
+		} 		
+	}
+}
+
+
+proc sudoku::checkSequence {seq} {
+	# Remove the zeros
+	regsub -all "0" $seq "" seq
+	# Check that it is made up of digits
+	if {![string is integer $seq]} {
+		error "non digit elements"
+	} 
+	set digits [split $seq ""]
+	# Look for multiple digits
+	foreach d $digits {
+		if {[info exists arr($d)]} {
+			error "multiple digit $d"
+		} else {
+			set arr($d) 1
+		}
+	} 
+}
+
+
+proc sudoku::isAllowableValue {row col val} {
+	global sudva
+	return [expr {[lsearch $sudva($row$col) $val] != -1}]
+}
+
+
+proc sudoku::countSolvedCells {sud} {
+	return [regexp -all {[1-9]} $sud] 
+}
+
+
+proc sudoku::isSolved {sud} {
+# 	return [expr [regexp "0" $sud] == 0]
+	return [expr {[string first "0" $sud] == -1}]
+}
+
+
+proc sudoku::countUnsolvedInList {indices} {
+	global sudva
+	set count 0
+	foreach idx $indices {
+		incr count [info exists sudva($idx)]
+	} 
+	return $count
+}
+
+
+# Return whether the indices are in the same row (k=0) or column (k=1) 
+proc sudoku::inSameUnit {kind indices} {
+	set same 1
+	set u [string index [lindex $indices 0] $kind]
+	set len [llength $indices]
+
+	for {set i 1} {$i < $len} {incr i} {
+		if {[string index [lindex $indices $i] $kind] ne $u} {
+			set same 0
+			break
+		} 
+	} 
+	return $same
+}
+
+
+proc sudoku::valueExistsInBlock {idx val} {
+	global sudp
+	set block [sudoku::getUnitAtIndex $sudp(curr) $idx "block"]
+	if {[string first $val $block] != -1} {
+		return 1
+	} 
+	return 0
+}
+											
+											
+											
+# Utility procs
+# -------------
+
+proc sudoku::rowColToBlock {row col} {
+	set lidx [expr $row/3]
+	set cidx [expr $col/3]
+	return [expr {$cidx + 3 * $lidx}]
+}
+
+
+# For each cell, find the allowable values. They are returned in an array
+# specified in the second argument. The keys of the array are the cells,
+# the values are lists of possible values. If the value of a cell is
+# already determined, nothing is stored in the array.
+proc sudoku::buildAllowables {sud arr} {
+	upvar $arr tmp
+	for {set i 0} {$i < 9} {incr i} {
+		for {set j 0} {$j < 9} {incr j} {
+			if {![getValueAtPos $sud $i $j]} {
+				set res [allowableValuesForCell $sud $i $j]
+				if {[llength $res] == 0} {
+					error "no candidate for cell [printPosForKey $i$j]"
+				} else {
+					set tmp($i$j) $res
+				}
+			} 
+		}
+	}
+}
+
+
+# When values have been found and inserted, the array of candidates
+# must be updated. We can't just call sudoku::buildAllowables because it
+# could re-introduce values which have already been eliminated by some
+# other technique.
+proc sudoku::updateAllowables {} {
+	global sudva sudp
+	for {set i 0} {$i < 9} {incr i} {
+		for {set j 0} {$j < 9} {incr j} {
+			if {[info exists sudva($i$j)]} {
+				set res [allowableValuesForCell $sudp(curr) $i $j]
+				set temp ""
+				foreach val $sudva($i$j) {
+					if {[lsearch $res $val] != -1} {
+						lappend temp $val
+					} else {
+						writeToLog "candidate $val removed from cell [printPosForKey $i$j]\n" 3
+					}
+				} 
+				set sudva($i$j) $temp
+			} 
+		}
+	}
+}
+
+
+proc sudoku::allowableValuesForCell {sud row col} {
+	set values [getUnitAtIndex $sud $row "row"]
+	append values [getUnitAtIndex $sud $col "column"]
+	append values [getUnitAtIndex $sud [rowColToBlock $row $col] "block"]
+	regsub -all "0" $values "" values
+	set reject [lsort -uniq [split $values ""]]
+	set res ""
+	for {set v 1} {$v <= 9} {incr v} {
+		if {[lsearch $reject $v] == -1} {
+			lappend res $v
+		} 
+	}
+	return $res
+}
+
+
+proc sudoku::isCellSolved {cell} {
+	global sudp sudva
+	set val $sudva($cell)
+	if {[llength $val] == 1} {		
+		# If only one possibility, insert it in the solution
+		set sudp(curr) [eval setValueAtPos $sudp(curr) [split $cell ""] $val]
+		# Delete the array entry
+		unset sudva($cell)
+		writeToBuffer "Cell [printPosForKey $cell] has unique candidate $val\n" 2
+		writeToBuffer "\tinsert value $val at position [printPosForKey $cell]\n" 2
+		return 1
+	} else {
+		return 0
+	}
+}
+
+
+proc sudoku::removeCandidateFromCell {val cell} {
+	global sudva
+	
+	if {[info exists sudva($cell)]} {
+		set found [lsearch $sudva($cell) $val]
+		if {$found != -1} {
+			set sudva($cell) [lreplace $sudva($cell) $found $found]
+			writeToBuffer "\tremove candidate $val from cell [printPosForKey $cell]\n" 2
+			writeToBuffer "  remaining candidates for cell [printPosForKey $cell]: $sudva($cell)\n" 3
+			return 1
+		} 
+	} 
+	return 0
+}
+
+
+# Remove value from the rest of a particular unit (row/col) in the other
+# two blocks. Kind 0 is a row, kind 1 is a column.
+proc sudoku::removeFromUnitInOtherBlocks {val kind index block} {
+	global sudp sudva
+	set count 0
+	
+	switch $kind {
+		"0" { set bi [expr {$block % 3}] }
+		"1" { set bi [expr {$block / 3}] }
+	}
+
+	for {set i 0} {$i < 9} {incr i} {
+		if {[expr {$i/3 != $bi}]} {
+			switch $kind {
+				"0" { set cell $index$i }
+				"1" { set cell $i$index }
+			}
+			incr count [removeCandidateFromCell $val $cell]
+		} 
+	}
+	
+	return $count
+}
+
+
+proc sudoku::removeFromUnitInOtherCells {val indices skip} {
+	global sudp sudva
+	set count 0
+	foreach cell $indices {
+		if {[lsearch $skip $cell] == -1} {
+			incr count [removeCandidateFromCell $val $cell]
+		} 
+	} 
+	
+	return $count
+}
+
+
+proc sudoku::adjustCount {countVar subcount msg} {
+	global sudp
+	upvar $countVar count
+   if {$subcount || $sudp(verbosity) > 3} {
+	   incr count $subcount
+	   writeToLog $msg 2
+	   flushBuffer
+	   if {$sudp(rating)} {
+		   updateRating $subcount
+	   }
+   } 
+}
+
+
+proc sudoku::updateRating { {count 1} {tech ""}} {
+	global sudp 
+	if {$tech eq ""} {
+		set tech $sudp(currCode)
+	} 
+	writeToLog "$tech technique ($count reductions)\n" 3
+	if {[info exists sudp(reduc-$tech)]} {
+		incr sudp(reduc-$tech) $count
+	} else {
+		set sudp(reduc-$tech) $count
+	}
+}
+
+
+# Level rating 
+# 
+# The resolution process uses various techniques to reduce the number of
+# candidates for every cell until there is only one left. The techniques
+# are more or less sophisticated: they all have a "cost". So, each time a
+# candidate is eliminated by a particular technique, the corresponding cost
+# is added to the bill. This builds a sort of histogram as shown on the
+# figure below. The total cost is the area of the histogram: this area is
+# then divided by the area of the enclosing rectangle. This yields a value
+# between 0 and 1: multiply by 10 to get a value between 0 and 10 and round
+# it to the nearest integer. After a few adjustments, the result is a level
+# between 1 and 9. If backtracking was necessary to solve the sudoku, a plus
+# sign is appended to the level.
+# 
+# 		cost
+# 		|
+# 		|________________________________________
+# 		|                                       |
+# 		|                       *               |
+# 		|        **             *               |
+# 		|     *  **    *      ***               |
+# 		|     *  *******      ***               |
+# 		|     **********      *****             |
+# 		|   ***********************      *******|
+# 		|***************************************|
+# 		--------------------------------------------> # of candidates
+
+proc sudoku::calculateLevel {} {
+	global sudp sudcost
+
+	set totalCost 0
+	set totalReduc 0
+	set techUsed ""
+	foreach tech [lsort [array names sudcost]] {
+		if {[info exists sudp(reduc-$tech)]} {
+			set subCost [expr {$sudp(reduc-$tech) * $sudcost($tech)}]
+			writeToLog "# of $tech reductions: $sudp(reduc-$tech) -> cost: $subCost\n" 3
+			set totalCost [expr $totalCost + $subCost]
+			incr totalReduc $sudp(reduc-$tech)
+			lappend techUsed $tech
+		} 
+	} 
+	if {$totalReduc > 0} {
+		writeToLog "Total reductions: $totalReduc\n" 3
+		writeToLog "Total cost: $totalCost\n" 3
+		writeToLog "Max penalty: $sudp(maxCost)\n" 3
+		writeToLog "Techniques used: [lsort $techUsed]\n" 3
+		set rate [eval expr $totalCost / ($totalReduc * $sudp(maxCost))]
+		writeToLog "Rate $rate\n" 3
+		set level [expr round($rate * 10)]
+		# Adjustments
+		# If only ns and hs techniques used, limit level to 4
+		if {[llength $techUsed] <= 2 && $level > 3} {
+			set level 3
+		} 
+		# For low levels, take the number of given values into account
+		if {$level < 4 && $sudp(given) < 35} {
+			writeToLog "Less than 35 given: level incremented\n" 3
+			incr level
+		} 
+		# If backtracking (bt) necessary, set level to no less than 6 and
+		# append a + sign.
+		if {[info exists sudp(reduc-bt)]} {
+			if {$level <= 5} {
+				writeToLog "Requires backtracking: lifted level to 6\n" 3
+				set level 6
+			} 
+			append level "+"
+		} 
+		puts "Level $level"
+	} 
+}
+
+
+proc sudoku::exitError {msg} {
+	puts "Error: $msg"
+	sudoku::usage
+	exit 1
+}
+
+
+# Log procs
+# ---------
+
+proc sudoku::writeToLog {str {debug 1}} {
+	global sudp
+	if {$sudp(verbosity) >= $debug} {
+		puts -nonewline $str
+	} 
+}
+
+
+proc sudoku::writeToBuffer {str {debug 1}} {
+	global sudp
+	if {$sudp(verbosity) >= $debug} {
+		append sudp(buffer) $str
+	} 
+}
+
+
+proc sudoku::flushBuffer {} {
+	global sudp
+	puts -nonewline $sudp(buffer)
+	set sudp(buffer) ""
+}
+
+
+# This is used for output information. Prints natural positions (starting 
+# from 1, not from 0)
+proc sudoku::printPosForKey {key} {
+	set key [split $key ""]
+	return "([expr {[lindex $key 0] + 1}],[expr {[lindex $key 1] + 1}])"
+}
+
+
+proc sudoku::usage {} {
+	global sudp
+	set script [file tail [info script]]
+	set year [clock format [clock seconds] -format "%Y"]
+	puts "$script, version $sudp(version)"
+	puts "Copyright (c) 2005-$year, Bernard Desgraupes <bdesgraupes@users.sourceforge.net>"
+	##puts "Usage:\n\t$script \[-c\] \[-e\] \[-g\] \[-k\] \[-l\] \[-n\] \[-o\] \[-p <codes>\] \[-q\] \[-r\] \[-s\] \[-t\] \[-u\] \[-v <num>\] (<string> | -f <file>) "
+	puts "Usage:\n\t$script ?options? (<string> | -f <file>)"
+	puts "\t$script -d string1 string2"
+	puts "\t$script -m row col val ?row col val...? string"
+	puts "\t$script (-h|-v)"
+	puts "A sudoku string is 81-chars long (use any symbol other than 1-9 digits for the unsolved cells)."
+	puts "Options:"
+	puts "\t-c\t\tcount solutions"
+	puts "\t-d\t\tdiff between two sudokus"
+	puts "\t-e\t\texplain resolution process"
+	puts "\t-f\t\tread sudoku strings from file (one string per line)"
+	puts "\t-g\t\tdisplay grid"
+	puts "\t-h\t\tusage"
+	puts "\t-i codes\tignore specified techniques. See codes below."
+	puts "\t-k\t\tdisplay candidates"
+	puts "\t-l\t\trate level of difficulty"
+	puts "\t-m\t\tmodify a sudoku"
+	puts "\t-n\t\tno backtracking"
+	puts "\t-o\t\tfind only one solution"
+	puts "\t-p codes\tprobe with specified techniques. See codes below."
+	puts "\t-q\t\tquiet (verbosity = 0)"
+	puts "\t-r\t\traw result (return solutions as raw strings)"
+	puts "\t-s\t\tsuggest something"
+	puts "\t-t\t\ttest validity of sudoku string"
+	puts "\t-u\t\tunicity of solution (returns 1 if unique, 0 otherwise)"
+	puts "\t-v num\t\tverbosity (0 to 3; default 1). If no arg, return version."
+	puts [printTechniques]
+}
+
+
+proc sudoku::printTechniques {} {
+	global sudp sudt
+	puts "Codes for supported techniques (options -i and -p):"	
+	foreach code [lsort [array names sudt]] {
+		regsub -all {([a-z])([A-Z])} $sudt($code) {\1 \2} desc
+		puts "\t$code\t[string tolower $desc]"
+	} 	
+}
+
+
+proc sudoku::handleDiff {string1 string2} {
+	if {[catch {sudoku::diff $string1 $string2} res]} {
+		puts $res
+	} else {
+		set difflen [llength $res]
+		if {$difflen == 0} {
+			puts "Sudokus are identical"
+		} else {
+			puts "Found $difflen differences"
+			puts [join $res "\n"]
+		}
+	}
+}
+	
+
+proc sudoku::diff {sud1 sud2} {
+	set sud1 [sudoku::normalize $sud1]
+	set sud2 [sudoku::normalize $sud2]
+	
+	sudoku::checkSudoku $sud1
+	sudoku::checkSudoku $sud2
+	
+	set res ""
+	for {set i 0} {$i < 81} {incr i} {
+		set lf [string index $sud1 $i]
+		set rt [string index $sud2 $i]
+		if {$lf ne $rt} {
+			set r [expr {$i/9} + 1]
+			set c [expr {$i % 9} + 1]
+			lappend res "($r,$c): $lf <> $rt"
+		} 
+	}
+	return $res
+}
+
+
+proc sudoku::handleModify {args} {
+	set sud [lindex $args end]
+	set args [lreplace $args end end]
+	set len [llength $args]
+	if {[expr $len % 3] != 0} {
+		puts "Wrong number of args: sudokut -m row col val ?row col val...? string"
+		return
+	} else {
+		foreach {row col val} $args {
+			incr row -1
+			incr col -1
+			set sud [eval setValueAtPos $sud $row $col $val]
+		}
+		puts $sud	
+	}
+}
+
+
+# # Execute the command line now
+# # ============================
+
+
+if {[catch {eval sudoku::execute $argv} err]} {
+	if {$sudp(counting)} {
+		puts "0"
+	} else {
+		puts "Error: $err"
+	}
+	# Don't leave pending file refs
+	catch {close sudp(fid)}
+} 

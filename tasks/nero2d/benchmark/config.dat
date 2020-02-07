@@ -1,0 +1,43 @@
+# Configuration file for the Nero solver.  Feel free to add comment
+# anywhere you want, but do not use keywords (the words in CAPITALS)
+# and do not change their order (unless you want Nero to die painfully)
+# Do not write anything between the keyword and the value.
+# The use of '#' has no effect, except for clarity.
+
+# Precision parameters
+QORDER			10
+SEGMENT_LENGTH          0.1
+
+# Fmm Parameters
+
+MINIMAL_BOX_SIZE	0.18
+X_DIST			2.51
+FMM_PRECISION		1e-5
+MAX_FMM_LEVEL		11
+
+# Svd Parameters
+
+USE_SVD			0
+SVD_PRECISION		1e-5
+
+# Iterative solving parameters
+
+ITERATIVE_METHOD	TFQMR
+ITERATIVE_PRECISION	1e-5
+MAX_ITERATIONS		30
+TRUENORMPARAMETER       1000
+RESTARTPARAMETER	5
+BLOCKJACOBI_LEVEL	-1
+
+# Parallelisation parameters
+
+SPACE_FILLING_CURVE	HILBERT
+PACKAGE_SIZE		5000
+BENCHMARK_MODE		1
+ENABLE_SWAP_MEMORY      1
+
+# Output parameters
+MAX_OUTPUT_SIZE         10000
+WRITE_Z_MATRIX          0
+WRITE_B_VECTOR          0
+WRITE_X_VECTOR          0

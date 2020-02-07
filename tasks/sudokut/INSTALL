@@ -1,0 +1,43 @@
+
+
+Sudokut
+Version 0.4
+
+
+1. Installation
+
+The distribution contains several files: you can install it anywhere on
+your machine and execute the script from this location. But it is easier to
+install the sudokut script file in a directory where it will be
+automatically found by the shell (a directory in your PATH environment
+variable).
+
+There is a Makefile which makes this task easier on Unix systems (including
+Mac OS X): unpack the distribution, change directory to the distribution's
+directory and just type:
+
+	make install
+
+This will install sudokut in /usr/local/bin and the manual
+page in /usr/local/man/man1. You must have admin permissions to
+install there, so you might have to type the following and provide an admin
+password:
+
+	sudo make install
+
+
+
+2. Documentation
+
+Detailed instructions can be found in the file sudokut.html.
+
+On a Unix system you can also read the man page. If you installed 
+it successfully in the previous section, just type:
+
+    man sudokut
+
+from the terminal.
+
+
+----------------------------------------------------------------------
+Last update 2007-08-27 09:40:58

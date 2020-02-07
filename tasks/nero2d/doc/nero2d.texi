@@ -1,0 +1,1246 @@
+\input texinfo    @c -*-texinfo-*-
+@comment ================== HEADER ====================
+@setfilename nero2d.info
+@include version.texi
+@settitle Nero2d @value{VERSION}
+@setchapternewpage both
+@c define constant index (ct)
+@defcodeindex ct
+@syncodeindex ct fn
+@syncodeindex vr fn
+@syncodeindex pg fn
+@syncodeindex tp fn
+@c define foreign function index (ff)
+@defcodeindex ff
+@syncodeindex ff cp
+@c define foreign constant index (fc)
+@defcodeindex fc
+@syncodeindex fc cp
+@c define foreign program index (fp)
+@defcodeindex fp
+@syncodeindex fp cp
+
+@iftex
+@paragraphindent 0
+@parskip=@medskipamount
+@end iftex
+
+@macro ONlogN
+@ifinfo
+O(N log N)
+@end ifinfo
+@html
+<i>O</i>(<i>N</i>&nbsp;log&nbsp;<i>N</i>)
+@end html
+@tex
+$O(N \\log N)$
+@end tex
+@end macro
+
+@comment ================== COPYING ====================
+@copying
+This manual is for Nero2d (version @value{VERSION}, @value{UPDATED}).
+
+Copyright @copyright{} 2007, 2008 Jan Fostier.
+Copyright @copyright{} 2007, 2008 Ghent University.
+
+@quotation
+Permission is granted to make and distribute verbatim copies of this
+manual provided the copyright notice and this permission notice are
+preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this
+manual under the conditions for verbatim copying, provided that the
+entire resulting derived work is distributed under the terms of a
+permission notice identical to this one.
+
+Permission is granted to copy and distribute translations of this
+manual into another language, under the above conditions for modified
+versions, except that this permission notice may be stated in a
+translation approved by the Free Software Foundation.
+@end quotation
+@end copying
+
+@comment ================= TITLEPAGE ===================
+@dircategory Texinfo documentation system
+@direntry
+* Nero2d: (Nero2d).	Nero2d User's Manual.
+@end direntry
+
+@titlepage
+@title Nero2d
+@subtitle User Manual
+@subtitle for version @value{VERSION}, @value{UPDATED}
+@author{Jan Fostier}
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@contents
+
+@comment ==================== TOC ======================
+@ifnottex
+@node Top, Introduction, (dir), (dir)
+@top Nero2d User Manual
+@insertcopying
+@end ifnottex
+
+@menu
+* Introduction::                
+* Installation instructions for Nero2d::  
+* Installation instructions for wxGBTool::  
+* Tutorial::                    
+* Acknowledgments::             
+* License and Copyright::       @comment * Index::
+
+@detailmenu
+ --- The Detailed Node Listing ---
+
+Installation instructions for Nero2d
+
+* Installation on GNU/Linux::   
+* Installation on Windows (Cygwin)::  
+* Configure options for Nero2d::  
+
+Installation on GNU/Linux
+
+* Pre-requisitions for Nero2d (GNU/Linux)::  
+* Installation of Nero2d::      
+* Parallel Nero2d::             
+
+Installation on Windows (Cygwin)
+
+* Pre-requisitions for Nero2d (Cygwin)::  
+
+Installation instructions for wxGBTool
+
+* Installation of wxGBTool on GNU/Linux::  
+* Installation of wxGBTool on Windows (Cygwin)::  
+
+Installation of wxGBTool on GNU/Linux
+
+* Pre-requisitions for wxGBTool::  
+* Installation for wxGBTool (GNU/Linux)::  
+
+Installation of wxGBTool on Windows (Cygwin)
+
+* Pre-requisitions for wxGBTool (Cygwin)::  
+* Installation for wxGBTool (Cygwin)::  
+
+Tutorial
+
+* Quickstart::                  
+* Creating a geometry file with the wxGBTool::  
+* Create bitmaps::              
+* The configuration file::      
+* Output files::                
+
+Creating a geometry file with the wxGBTool
+
+* The geometry panel::          
+* The excitation panel::        
+* The output panel::            
+
+@end detailmenu
+@end menu
+
+@comment =================== BODY =====================
+
+@c ************************************************************
+@node Introduction, Installation instructions for Nero2d, Top, Top
+@chapter Introduction
+
+This manual documents version @value{VERSION} of Nero2d, a
+two-and-a-half-dimensional (2.5D), full-wave, scalable parallel electromagnetic solver for scattering at extremely large dielectric and perfectly conducting objects.  Its features include,
+
+@cindex Nero2d features
+@cindex Features
+@itemize @bullet
+@item A portable graphical user interface (GUI) called wxGBTool to specify
+      geometry, illumination and required output.
+
+@item  Support for TM/TE illumination: plane waves, gaussian bundles and
+       line sources.
+
+@item  Support for any number of two dimensional dielectric and/or
+perfectly conducting objects (PEC) of arbitrary shape.  These objects
+can be embedded into other dielectric objects, even recursively.  A
+dielectric object is required to be homogeneous and characterized by
+its complex permittivity and permeability.
+
+@item  As output, Nero2d can calculate the electric and magnetic field
+       components in a given point, in specified points along a line or a
+       circle, or in a rectangle of points which can be used to create
+       bitmaps. Nero2d can also write the Method of Moments system
+       matrices and right hand side and/or solution vectors.
+
+@item  Nero2d uses a very powerful Multilevel Fast Multipole Algorithm
+       (MLFMA) together with an iterative solver to calculate the
+       solution iteratively.  The MLFMA allows for a memory and time
+       complexity of @ONlogN{}.
+
+@item  To allow for the simulation of very large structures, Nero2d
+       can make use of an asynchronous, scalable parallel MLFMA with MPI
+       communication.  It can easily simulate problems of several hundreds of
+       thousands of wavelengths in diameter, accounting for millions of unknowns,
+       provided that a sufficiently large parallel machine is used.
+
+@end itemize
+
+We assume herein that you are familiar with electromagnetic scattering
+theory and that you have a basic knowledge of the Method of Moments
+and the MLFMA.  Please note that our software which might still contain bugs.  Also
+note that we do not take any responsibility for the correctness of our
+results and that we cannot held responsible for any damage our
+software might inflict on your system.  Rest assured however, that we
+would be surprised that this would ever happen.
+
+The Nero2d software project started in 2003 as a Master Thesis by Ignace
+Bogaert and Jurgen De Zaeytijd.  As from 2004, this work was continued by
+Jan Fostier, while working towards his Master Thesis and Ph.D.
+
+@c ************************************************************
+@node Installation instructions for Nero2d, Installation instructions for wxGBTool, Introduction, Top
+@chapter Installation instructions for Nero2d
+
+@menu
+* Installation on GNU/Linux::   
+* Installation on Windows (Cygwin)::  
+* Configure options for Nero2d::  
+@end menu
+
+@node Installation on GNU/Linux, Installation on Windows (Cygwin), Installation instructions for Nero2d, Installation instructions for Nero2d
+@section Installation on GNU/Linux
+
+We have tested Nero2d on Fedora 9 and Debian 4 (Etch) Linux distributions, but in principle, it should work on any Unix or Linux/GNU system.  As Nero2d is written in standard Fortran/C++, it should also compile on any compiler of your choice.  In this section, we describe the installation instructions for the GNU/Linux system as it is a free and stable platform.
+
+@c ------------------------------------------------------------
+@menu
+* Pre-requisitions for Nero2d (GNU/Linux)::  
+* Installation of Nero2d::      
+* Parallel Nero2d::             
+@end menu
+
+@node Pre-requisitions for Nero2d (GNU/Linux), Installation of Nero2d, Installation on GNU/Linux, Installation on GNU/Linux
+@subsection Pre-requisitions for Nero2d (GNU/Linux)
+
+Nero2d is designed to be a performant simulator tool.  Internally, it depends on a few high-performance libraries which are widely available.  As most hardware vendors have their own optimized implementations of these libraries, we strongly recommend using them. It is up to you to find suitable versions which provide you with the maximum performance for your system. The required performance libraries are @code{FFTW}, @code{BLAS} and @code{LAPACK}.  In the next sections, these are discussed in detail.
+
+@subsubsection @code{FFTW}
+
+Nero2d requires the @code{FFTW} library, or the @emph{Fastest Fourier Transform of the West}, version 3.0 or higher.  The library is likely to be present on your system already, if not, it can be installed using your package manager.  If you use @code{yum} to install software (Fedora, Redhat, etc.), you will need to install the @code{fftw}, @code{fftw-devel} and optionally the @code{fftw-static} packages.  If you use @code{aptitude} to install software (Debian, Ubuntu, etc.), you will need the @code{fftw3} and @code{fftw3-dev} packages.
+
+You can also opt to compile @code{FFTW} from source: it can be freely downloaded at @uref{www.fftw.org}.  Nero2d requires the installation of the double precision, non-threaded version of @code{FFTW} (the default installation).  It is recommended to do a global install of @code{FFTW} i.e.@ install @code{FFTW} in the standard location (usually @code{/usr/local}) so that it is accessible to all users.  This will however, require root access to your system.  If you do a local installation (somewhere in your home directory) of the @code{FFTW} library, Nero2d provides a configuration flag to locate it (see @ref{Configure options for Nero2d}).  For a detailed refernce on the @code{FFTW} library, please consult its manual.
+
+@subsubsection @code{BLAS} and @code{LAPACK}
+
+Nero2d also requires the @code{BLAS} library, or the @emph{Basic Linear Algebra Subprograms}, and the @code{LAPACK}, or the @emph{Linear Algebra PACKage}. Most vendors provide optimized libraries for free and you should try to use these in the first place.  The configure script can detect a great number of @code{BLAS} and @code{LAPACK} implementations.  If everything fails however, and no @code{BLAS} or @code{LAPACK} are found on your system, Nero2d can compile the libraries ifself.  This can (and most likely will) result in a poor performance.
+
+Some packages install @code{BLAS} and/or @code{LAPACK} libraries in a non-standard location: Nero2d provides configuration flags to locate them (see @ref{Configure options for Nero2d}).  We specifically support two vendor specific implementations: the @emph{@code{ACML}} from AMD and the @emph{@code{MKL}} from Intel.
+
+@itemize @bullet
+
+@item @emph{AMD users: @code{ACML}}
+
+For people with AMD based systems, the @code{ACML} or @emph{AMD Core Math Library} includes both the @code{BLAS} and the @code{LAPACK} routines.  It can be freely downloaded (after registration) at @uref{http://developer.amd.com}.  Nero2d's configure script has built-in support for the @code{ACML} and will detect them if they are installed.  As a default, @code{ACML} is installed in the @code{/opt/acmlX.X.X/} directory and the libraries are inside @code{/opt/acmlX.X.X/F77/lib} (where F77 is the fortran compiler used to generate the @code{ACML}).  This is a non-default path for libraries and you will need to point out this location to the configure script:
+@example
+./configure --with-blas-dir=/opt/acmlX.X.X/F77/lib
+@end example
+Note that if you want to link against dynamic libraries (@code{.so}), you will first need to set the the @code{LD_LIBRARY_PATH} environment variable before running the configure script and before invoking the nero2d binary.
+@example
+export LD_LIBRARY_PATH=/opt/acmlX.X.X/F77/lib:$LD_LIBRARY_PATH
+@end example
+or
+@example
+setenv LD_LIBRARY_PATH "/opt/acmlX.X.X/F77/lib:$LD_LIBRARY_PATH"
+@end example
+You might want to automate this process by adding this line to the @code{.profile} file.
+
+Optionally, you can copy the content from @code{/opt/acmlX.X.X/F77/lib} to @code{/usr/lib} or @code{/usr/local/lib}.  In this case, there is no need to rename the libraries to @code{libblas} and/or @code{liblapack} and there is no need to set any environment variables.
+
+Note that @code{ACML} fully supports the @code{--enable-blasfunc} if you use the same Fortran compiler to build Nero2d as was used to build @code{ACML} (see @ref{Configure options for Nero2d}).
+
+Please refer to the @code{ACML} manual for (@code{/opt/acmlX.X.X/Doc/acml.pdf}) for a full reference.
+
+@item @emph{Intel users: @code{MKL}}
+
+For people with Intel based systems, the @code{MKL} or @emph{Math Kernel Library} includes both the @code{BLAS} and the @code{LAPACK} routines.  It can be downloaded (free trial download) at @uref{http://www.intel.com}.  Nero2d's configure script has built-in support for the @code{MKL} and will detect them if they are installed.  As a default, @code{MKL} is installed in the @code{/opt/intel/mkl/X.X.X} directory and the libraries are inside @code{/opt/intel/mkl/X.X.X/lib/ARCH} (where @code{ARCH} is @code{32}, @code{64} or @code{em64t} depending on the processor your are using).  This is a non-default path for libraries and you will need to point out this location to the configure script:
+@example
+./configure --with-blas-dir=/opt/intel/mkl/X.X.X/lib/ARCH
+@end example
+Note that if you want to link against dynamic libraries (@code{.so}), you will first need to set the the @code{LD_LIBRARY_PATH} environment variable before running the configure script and before invoking the nero2d binary.
+@example
+export LD_LIBRARY_PATH=/opt/intel/mkl/.../ARCH:$LD_LIBRARY_PATH
+@end example
+or
+@example
+setenv LD_LIBRARY_PATH "/opt/intel/mkl/.../ARCH:$LD_LIBRARY_PATH"
+@end example
+Note that the shell scripts in @code{/opt/intel/mkl/VERSION/tools/environment} can take care of this for you.  You might want to automate this process by adding this line to the @code{.profile} file.
+
+Optionally, you can copy the content from @code{/opt/intel/mkl/VERSION/lib/ARCH} to @code{/usr/lib} or @code{/usr/local/lib}.  In this case, there is no need to rename the libraries to @code{libblas} and/or @code{liblapack} and there is no need to set any environment variables.
+
+Note that @code{MKL} fully supports the @code{--enable-blasfunc} if you use the same Fortran compiler to build Nero2d as was used to build @code{MKL}.  In practice, we have noted (in version 10.0.1) that @code{MKL} supports the @code{g77} Fortran calling conventions and not those of @code{gfortran}.  You are advised to compile Nero2d using the @code{g77} compiler if you can.  However, it appears that the @code{--enable-blasfunc} is fully compatible with the combination of @code{gfortran} and @code{MKL}.  The configure script will issue a warning, but on our test system, everything went smooth.  Be carefull however that this might just be luck.
+
+@item @emph{Compile your own @code{BLAS}/@code{LAPACK}} (not recommended)
+
+If no @code{BLAS} and/or @code{LAPACK} are found on your system, Nero2d will compile these libraries from source.  This can however, result in a poor performance.  Please note that the source files inside the directory @code{src/zofpack/machcons} need to be compiled without any sort of optimization.  This is forced by overriding the @code{$FFLAGS} variable and setting them to empty for that directory.  If you should have a Fortran compiler with default optimization turned on, you will need to edit @code{src/zofpack/machcons/Makefile.am} manually and set the @code{$FFLAGS} to disable this optimization.  You will need to rerun @code{automake} first to regenerate the Makefiles.
+
+@end itemize
+
+@c ------------------------------------------------------------
+@node Installation of Nero2d, Parallel Nero2d, Pre-requisitions for Nero2d (GNU/Linux), Installation on GNU/Linux
+@subsection Installation of Nero2d
+
+Nero2d comes with a @code{configure} script in the GNU style.  Installation can be as simple as:
+
+@example
+./configure
+make
+make install
+@end example
+
+This will build the non-MPI flavor of Nero2d and will install it in the standard place.  This typically requires root privileges.  To specify a different install directory use the @code{--prefix} flag to @code{configure}.
+
+@example
+./configure --prefix=yourinstalldirectory
+@end example
+
+If you have problems during configuration or compilation, you may want to run @code{make clean} before trying again; this ensures that you don't have any files left over from previous compilation attempts.
+
+Nero2d is written in C++ but internally compiles two or more Fortran-77 libraries: @code{AMOS}, @code{PIM} and optionally @code{BLAS} and @code{LAPACK}).  If you link against pre-build (optimized) @code{BLAS} and @code{LAPACK} libaries, you must use a compatible Fortran compiler (including compiler options) with our software as were used to compile @code{BLAS}/@code{LAPACK}.  To specify a specific Fortran compiler use e.g.@ for the @code{g77} compiler
+
+@example
+./configure F77=g77
+@end example
+or
+@example
+./configure F77=gfortran
+@end example
+
+for the @code{gfortran} compiler. 
+
+The configure script will not attempt to set any compiler flags for the Fortran or C++ compiler as this is a bad practice.  Instead, you should do it yourself.
+
+@example
+./configure CXXFLAGS="-O3" FFLAGS="-O3"
+@end example
+
+will set the optimization to level 3 for both the C++ compiler and the Fortran compiler.  In general, it is likely that you do not want to use the default values.  In most cases, you will want to set the installation prefix and both optimization flags as a minimum.
+
+If configure has completed succesfully, it returns a short overview of the settings.  It can for instance look like this (AMD system with @code{gfortran} compiler using gcc version 4.1.2):
+
+@example
+***************************************************************
+  nero2d is now configured for
+
+  Source directory:     .
+  Installation prefix:  /home/jfostier/nero2d
+  C++ compiler:         g++ -O3
+  Fortran compiler:     gfortran -O3
+  Fortran libraries:    -L/usr/lib/gcc/x86_64-linux-gnu/4.1.2
+        -L/usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64
+        -L/lib/../lib64 -L/usr/lib/../lib64 
+        -lgfortranbegin -lgfortran -lm
+  BLAS libraries:       -lacml
+  LAPACK libraries:
+  FFTW libraries:       -lfftw3
+  LIBS:
+  LDFLAGS:
+
+  Type "make" to build the program.
+***************************************************************
+@end example
+
+At this point, the configure script will also issue a warning if no @code{BLAS} and/or @code{LAPACK} library is found, or if a non-compatible Fortran compiler is used.  Please run @code{./configure --help} for more details about options and refer to section @ref{Configure options for Nero2d} for a detailed description.
+
+@c ------------------------------------------------------------
+@node Parallel Nero2d,  , Installation of Nero2d, Installation on GNU/Linux
+@subsection Parallel Nero2d
+
+If you have a parallel machine, and you want to run some large
+simulations or benchmark Nero2d for your machine (it would be greatly
+appreciated if the results of these benchmarks are sent to us) you can
+chose to compile a parallel version of Nero2d.  For communication,
+Nero2d relies on the MPI of Message Passing Interface.
+
+If you do not have MPI installed on your system, you can try use the
+following free MPI implementations: @code{MPICH}, @code{LAM-MPI} and @code{Open-MPI}.  If
+you use @code{MPICH}, try using version 2.0 or higher, as we noticed that
+its performance is considerably higher.  We recommend @code{LAM-MPI} is you
+are using an Gigabit Ethernet interconnect (as we do), because
+its performance is the best of the three.  We recommend for Gigabit
+Ethernet that so-called @emph{jumbo frames} are disabled (MTU=1500).
+@code{Open-MPI} is promising new MPI implementation with many nice options
+and features (like support for multiple Gigabit Ethernet connections
+to a single machine).  At the time of writing, it is however still a
+bit slower than its @code{LAM-MPI} counterpart.
+
+The three MPI implementations can be freely downloaded
+
+@itemize @bullet
+@item @code{LAM-MPI} @uref{www.lam-mpi.org}
+@item @code{MPICH} @uref{www.mcs.anl.gov/mpi/mpich}
+@item @code{Open-MPI} @uref{www.open-mpi.org}
+@end itemize
+
+After installation, add the directory to the MPI compiler scripts to the
+PATH environment (you will need the C++ MPI compiler, usually called mpic++,
+mpicxx or mpiCC).  The configure script will try to detect the correct
+one.  To enable MPI support in Nero2d add the @code{--enable-mpi} flag
+to the configure script.
+
+@example
+    ./configure --enable-mpi
+@end example
+
+As is previously described (see @ref{Tutorial}), Nero2d requires two
+input files, namely the config.dat script and the input geometry file
+(.igf).  In a parallel environment, it is required that all processes
+have access to these files so they can be read in parallel.  Most
+likely, some sort of network file system is mounted on each machine,
+so all the machines @emph{see} the same files.  If this is not the
+case, you must make sure that the two input files are locally
+available on each machine in the same path.  @emph{Make sure that all
+input files are identical!}  If this requirement is not met, Nero2d
+will crash once it starts its iterations.
+
+We have noticed that when using a network file system, it might take a
+few seconds before the changes made to a file on one machine propagate
+to the other machines (most likely some buffering issues).  Future
+versions of Nero2d will communicate a fingerprint of the input files
+to make sure that they are all identical.
+
+If you want to do some serious benchmarking, we suggest using the
+benchmarks which come along with Nero2d and are located in
+@code{/share/benchmark}.  You might want to read the @code{README}
+file first.
+
+Nero2d can also be compiled with MPE support.  Using the MPE library,
+bottlenecks can be detected in a post-mortem fashion.  The MPE library
+is included in @code{MPICH}, but can be downloaded separately
+@uref{www-unix.mcs.anl.gov/perfvis} and used in combination with
+@code{LAM-MPI} and @code{Open-MPI}.  To enable support for MPE in Nero2d, use the
+@code{--enable-mpe} flag
+
+@example
+./configure --enable-mpi --enable-mpe
+@end example
+
+To launch a parallel job, use the mpirun tool
+
+@example
+mpirun -np xx ./nero2d inputfile.igf
+@end example
+
+Change xx by the number of processes you want to use.  To specify
+which machines to use, you most likely want to create a so-called
+machinefile which contains their names or ip-numbers.  We refer to the
+user's guide of your MPI implementation of choice.
+
+@node  Installation on Windows (Cygwin), Configure options for Nero2d, Installation on GNU/Linux, Installation instructions for Nero2d
+@section Installation on Windows (Cygwin)
+
+The installation on Windows is as straightforward as the installation on GNU/Linux thanks to Cygwin.  Cygwin is an environment which emulates Unix or Linux behaviour on Windows.  Only the serial version (one processor) of Nero2d, however, is available under Windows.  Note that the performance under Cygwin can be dramatically lower than on GNU/Linux.  Therefore, we only recommend Windows systems for testing purposes.
+
+@menu
+* Pre-requisitions for Nero2d (Cygwin)::  
+@end menu
+
+@node  Pre-requisitions for Nero2d (Cygwin),  , Installation on Windows (Cygwin), Installation on Windows (Cygwin)
+@subsection Pre-requisitions for Nero2d (Cygwin)
+
+You will need to install Cygwin on your Windows machine first.  We have tested with Windows XP and Cygwin v. 2.573.2.2 but we don't expect any problems on other sytems.  In addition to the base installation, you will need to select the following packages:
+
+Under @code{Devel}
+@itemize
+@item gcc-g++: C++ compiler
+@item gcc-g77: Fortran compiler
+@item make: The GNU version of the `make' utility
+@item libtool: A shared library generation tool
+@end itemize
+
+Under @code{Math}
+@itemize
+@item lapack: Comprehensive FORTRAN library for linear algebra operations.
+@item libfftw3-devel: Discrete Fourier transform library (development)
+@end itemize
+
+Some of these packages will automatically trigger the installation of their dependencies.  This is a good thing.  The installation is then exactly performed in the same manner as described in section @ref{Installation of Nero2d}.
+
+You can still use the configure options as explained in section @ref{Configure options for Nero2d}, except for
+
+@itemize
+@item @code{--enable-mpi} 
+@item @code{--enable-mpe} 
+@item @code{--enable-blasfunc} 
+@end itemize
+
+as the first two involve the use of MPI and the latter doesn't appear to work will with Cygwin.
+
+
+@c ------------------------------------------------------------
+@node Configure options for Nero2d,  , Installation on Windows (Cygwin), Installation instructions for Nero2d
+@section Configure options for Nero2d
+
+The @code{configure} script supports all the standard flags defined by
+the GNU Coding Standards; see the @code{INSTALL} file in Nero2d or
+@uref{http://www.gnu.org/prep/standards_toc.html, the GNU web page}.
+Note especially @code{--help} to list all flags.  The @code{configure}
+script also accepts a few Nero2d-specific flags, particularly:
+
+@itemize @bullet
+
+@item
+@code{--enable-debug} Build Nero2d with some debugging checks turned on.  Note that enabling this setting will alter any compilation flags.  If you want to add for instance @code{"-g3"} to the compiler flags, please change @code{CXXFLAGS} and/or @code{FFLAGS}.
+
+@item
+@code{--enable-mpi} This will compile the MPI version of Nero2d. Note that even for the MPI version of Nero2d, you do not need the MPI version of @code{FFTW}.
+
+@item
+@code{--enable-mpe} This will compile Nero2d with MPE logging support.  If requires the @code{libmpe} and @code{liblmpe} libraries.  The resulting output file can then be examined with jumpshot.  Note that this flag requires also the @code{--enable-mpi} flag to be enabled.
+
+@item
+@code{--enable-blasfunc} By default, Nero2d does not call any @code{BLAS} functions (it does however, call several @code{BLAS} subroutines).  This is because of the fact that different Fortran compilers have different conventions for returning the function's resulting value.  Enabling this flag will force Nero2d to call the @code{BLAS} functions anyway.  This is likely somewhat faster.  In our experience, you can safely use this flag in quality @code{BLAS} implementations (e.g.@ @code{ACML} and @code{MKL}).  The configure script will perform a few tests and warn the user if it suspects any trouble.
+
+@item
+@code{--with-fftw-dir=<DIR>} Use this flag if you have a local installation of the @code{FFTW} library.  Note that you need to provide the base directory in which you install @code{FFTW} (the same directory you used as a prefix when you compiled @code{FFTW}).  The actual @code{FFTW} libraries will then be located in @code{$(basedir)/lib} and the include file (fftw3.h) in @code{$(basedir)/include}.
+
+@item
+@code{--with-blas-dir=<DIR>} Use this flag to specify the directory in which the @code{BLAS} library is located.
+
+@item
+@code{--with-blas=<DIR>} Specify the name of the @code{BLAS} library.  Note that if you use this flag, no other @code{BLAS} libraries will be considered.  This flag can be used to force the compilation of the @code{BLAS} library from source by setting it to an empty value.
+
+@item
+@code{--with-lapack-dir=<DIR>} Use this flag to specify the directory in which the @code{LAPACK} library is located.
+
+@item
+@code{--with-lapack=<LIB>} Specify the name of the @code{LAPACK} library.  Note that if you use this flag, no other @code{LAPACK} libraries will be considered.  This flag can be used to force the compilation of the @code{LAPACK} library from source by setting it to an empty value.
+
+@end itemize
+
+@c ************************************************************
+@node Installation instructions for wxGBTool, Tutorial, Installation instructions for Nero2d, Top
+@chapter Installation instructions for wxGBTool
+
+wxGBTool is a graphical user interface written in C++ that makes use of the wxWidgets programming environment to obtain cross-platform code.  If none of the pre-compiled wxGBTool binaries works for you, you will need to compile wxWidgets for source.
+
+@menu
+* Installation of wxGBTool on GNU/Linux::  
+* Installation of wxGBTool on Windows (Cygwin)::  
+@end menu
+
+@node Installation of wxGBTool on GNU/Linux, Installation of wxGBTool on Windows (Cygwin), Installation instructions for wxGBTool, Installation instructions for wxGBTool
+@section Installation of wxGBTool on GNU/Linux
+
+@c ------------------------------------------------------------
+@menu
+* Pre-requisitions for wxGBTool::  
+* Installation for wxGBTool (GNU/Linux)::  
+@end menu
+
+@node Pre-requisitions for wxGBTool, Installation for wxGBTool (GNU/Linux), Installation of wxGBTool on GNU/Linux, Installation of wxGBTool on GNU/Linux
+@subsection Pre-requisitions for wxGBTool (GNU/Linux)
+
+wxGBTool requires that wxWidgets version 2.6.0 or higher be installed.  The required wxWidgets development packages are often distributed within a GNU/Linux distribution.  It is probably the easiest to install them from there.  For @code{yum}-based systems (Fedora, Red Hat, etc.), this package is called @code{wxGTK-devel}; for @code{aptitude} based systems (Debian, Ubuntu, etc.), this package is called @code{libwxgtk-dev}.
+
+You can also download the source code of wxWidgets from @uref{www.wxwidgets.org} and compile it yourself.  Usually for a GNU/Linux environment, you need the wxGTK version.  Compiling wxWidgets is not too difficult.  We refer to the installation guide for more details.
+
+@c ------------------------------------------------------------
+@node Installation for wxGBTool (GNU/Linux),  , Pre-requisitions for wxGBTool, Installation of wxGBTool on GNU/Linux
+@subsection Installation for wxGBTool (GNU/Linux)
+
+First, unpack the wxGBTool archive
+
+@example
+    tar -xzvf wxgbtool-XXX.tar.gz
+@end example
+
+To compile wxGBTool, simply go
+
+@example
+    ./configure --prefix=`myinstalldir'
+    make
+    make install
+@end example
+
+The installation directory can be the same one as where you installed Nero2d.
+
+The configure script looks for a file called @code{wx-config}.  If you installed wxWidgets in a non-standard place, be sure to add the path to @code{wx-config} (usually @code{wxwidgetsinstalldir/bin}) to the environment.
+
+The installation procedure will yield a single executable binary, namely
+
+@example
+    bin/wxgbtool
+@end example
+
+This file can be launched in a graphical environment like KDE.
+
+@node Installation of wxGBTool on Windows (Cygwin),  , Installation of wxGBTool on GNU/Linux, Installation instructions for wxGBTool
+@section Installation of wxGBTool on Windows (Cygwin)
+
+@menu
+* Pre-requisitions for wxGBTool (Cygwin)::  
+* Installation for wxGBTool (Cygwin)::  
+@end menu
+
+@node  Pre-requisitions for wxGBTool (Cygwin), Installation for wxGBTool (Cygwin), Installation of wxGBTool on Windows (Cygwin), Installation of wxGBTool on Windows (Cygwin)
+@subsection Pre-requisitions for wxGBTool (Cygwin)
+
+Under Cygwin, you will need to compile wxWidgets from source.  In addition to the base installation of Cygwin, you will need to select the following packages (note that you already have these installed if you already compiled Nero2d):
+
+@itemize
+@item gcc-g++
+@item make
+@end itemize
+
+You need wxWidgets version 2.6 or higher.  Download the latest stable MSW flavor of wxWidgets from @url{http://www.wxwidgets.org}.  Unzip the @code{.zip} and compile as follows
+
+@example
+./configure --with-msw --disable-shared --enable-optimized
+make
+make install
+@end example
+
+wxWidgets is now ready for use.
+
+@node  Installation for wxGBTool (Cygwin),  , Pre-requisitions for wxGBTool (Cygwin), Installation of wxGBTool on Windows (Cygwin)
+@subsection Installation for wxGBTool (Cygwin)
+
+Please refer to section @ref{Installation for wxGBTool (GNU/Linux)} as the instructions to compile wxGBTool under Cygwin are identical to those for compiling wxGBTool on the GNU/Linux platform.
+
+@c ************************************************************
+@node Tutorial, Acknowledgments, Installation instructions for wxGBTool, Top
+@chapter Tutorial
+
+Our software consists of two components: the Nero2d program, which is
+the actual solver that is controlled from command line, and wxGBTool,
+which is a graphical user interface (GUI) to construct a scattering geometry
+of choice.
+
+We do not distribute any pre-compiled binaries of the Nero2d program.
+This is because Nero2d makes extensive use of other, widely accepted
+high performance libraries.
+
+For the wxGBTool, pre-compiled binaries can be downloaded at our site
+@uref{openfmm.intec.ugent.be}.  As no actual calculations are performed inside
+the wxGBTool, its performance is non-critical.
+
+Once a certain scene is created with the wxGBTool, it can be saved to
+hard disc.  This produces two files: a *.gbt (geometry building tool)
+file, and a corresponding *.igf (input geometry file).  The *.gbt file
+is for future editing with the wxGBTool program.  In other words, the *.gbt
+file is the save/load file for the wxGBTool.  Every time you save a
+scene to a *.gbt a corresponding (that is, with the same base
+filename) *.igf file is created.  This *.igf file stores the same
+information as its *.gbt counterpart, however in a slightly different
+format.  The *.igf serves as an input file to the Nero2d solver.  After the
+Nero2d solver has processed the *.igf file, one or more output files
+are created which can be further processed with a tool of your choice.
+
+WARNING: The .igf files from previous releases are NOT compatible
+with the current version of Nero2d.  However, you can easily convert them by
+opening an old .gbt file in the current version of the wxGBTool and saving it
+again, which will produce an up to date .igf file.
+
+@menu
+* Quickstart::                  
+* Creating a geometry file with the wxGBTool::  
+* Create bitmaps::              
+* The configuration file::      
+* Output files::                
+@end menu
+
+@node Quickstart, Creating a geometry file with the wxGBTool, Tutorial, Tutorial
+@section Quickstart
+
+In this section, it is assumed that you have installed both the Nero2d
+solver and the wxGBTool.  We refer to @ref{Installation instructions
+for Nero2d} and @ref{Installation instructions for wxGBTool} for a
+detailed discussion about the procedure.
+
+We assume that you have installed both wxGBTool as Nero2d into the
+same folder.  This folder contains a few subdirectories:
+
+@example
+bin/
+lib/
+share/benchmark
+share/examples
+share/info
+share/config
+@end example
+
+The compiled Nero2d and the downloaded/compiled wxGBTool binaries  can
+be found in the @code{bin/} directory.
+
+@example
+bin/nero2d
+bin/wxgbtool
+@end example
+
+It might by useful to add the @code{bin/} directory to the @code{PATH}
+environment, so Nero2d and wxGBTool can be called from other
+directories.
+
+We will start by running a pre-created example:
+
+@example
+cd share/examples/example1
+cp ../../config/config.dat .
+nero2d example1.igf
+@end example
+
+which will invoke the nero2d solver and start the simulations.  After
+a few minutes, the simulation will end.  Congratulations, you have
+just run your first simulation.
+
+The @code{example1.igf} is the so-called input geometry file (.igf)
+which contains the geometrical layout of the scene, the illumination,
+and the required output.  The file is created using the wxGBTool.
+
+Nero2d requires a second input file, namely the configuration
+file which is always called @code{config.dat}. This file contains a set of
+parameters which determine to a great extent, the performance of Nero2d.
+This file needs to be present every time the Nero2d solver is invoked.
+Note that a default @code{config.dat} file in the
+@code{share/config} folder has been created for your convenience.
+This file can serve as a starting point for future modifications.  Its default
+settings are conservative, but they will suffice for non-extreme simulations.
+
+Note that if everything went right, the simulation has generated the
+@code{bitmap0_sc.bdf} and @code{bitmap0_in.bdf} files as output.  These files
+contain the scattered and incoming fields respectively that resulted from
+the simulation.
+
+Before ending this quickstart and starting a more detailed discussion
+about the possibilities of Nero2d and wxGBTool, let us convert this
+output file to a bitmap so that we can have a look at what we have
+just simulated.
+
+Start by launching wxGBTool in a Unix desktop environment like KDE
+
+@example
+bin/wxgbtool
+@end example
+
+Open the @code{example1.gbt} located in the @code{share/examples/example1}
+directory.  Two circles and a rectangle will appear in the leftmost
+screen.
+
+In the `Output box', located on lower right part of the main screen,
+press the `Create BMP' button.  A dialog screen will appear.  Press the
+the `...' button corresponding the `incident field' input file and select the
+@code{bitmap0_in.bdf} file that was generated by nero2d.  Do the same thing
+for the `scattered field'.  As example1 is a TM (Transversal Magnetic)
+simulation, select the output for the Ez component (the electric field
+perpendicular to the desktop screen).  Fill in
+a value of `1500' for `Red' and press the `Create BMP' button.  A
+dialog will appear in which you can enter a filename for the resulting
+output .bmp file, e.g.@ example1.bmp.  This file can then be viewed
+using your image viewer of choice
+
+@example
+display example1.bmp
+@end example
+
+Note that you can repeat the same procedure with the second example
+@code{example2.gbt} and @code{example2.igf} which are located
+inside the @code{bin/examples/example2} directory.  Note that the second 
+example will also produce the @code{bitmap0_in.bdf} and 
+@code{bitmap0_sc.bdf} files.
+
+You can again create a bitmap from the *.bdf file.  Make sure to enter
+a value of `1' for `Red'.
+
+@c ------------------------------------------------------------
+@node Creating a geometry file with the wxGBTool, Create bitmaps, Quickstart, Tutorial
+@section Creating a geometry file with the wxGBTool
+
+The wxGBTool is short hand notation for wxWidgets Geometry Building
+Tool.  wxWidgets is a cross-platform tool for developing graphical
+user interfaces which can be compiled on different platforms without
+having to make many modifications in the source code.
+
+For GTK 2 running in a KDE environment, a screenshot for wxGBTool
+after it first starts up is given below.  Note that on your system,
+the layout may vary, especially if you compiled wxGBTool for another
+toolkit than GTK 2.  The functionality should remain the same, however.
+
+In the black rectangle on the left, the scattering geometry is drawn.
+This window is not interactive and is only intended to visually
+discover geometry errors.  You can not zoom or scroll in the window.
+Perfect conductors are drawn in red, dielectrics are depicted in
+green.
+
+The file menu allows you to open and save *.gbt files, or to start a
+new geometry.
+
+The panel of the right is divided into three sections:
+
+@itemize @bullet
+@item Geometry: Here objects (PEC/dielectrics) of arbitrary shape can
+      be added to the scene.
+@item Excitation: Specify sources for illumination.  Specify the frequency of
+      the incident field and the background parameters.
+@item Output: Specify the outputs the solver should calculate.
+@end itemize
+
+@ifnotinfo
+@center @image{wxgbtool, 15cm}
+@end ifnotinfo
+
+A new geometry, excitation and output can be added to the scene by
+pressing the add button.  A pop-up window will appear in which the
+correct settings can be chosen.  The current geometries, excitations
+and output are listed in the corresponding comboboxes.  The selected
+item can then be edited or deleted by pressing the corresponding
+button.  We believe this is all straightforward.
+
+A selected geometric item can also be duplicated to another location by
+pressing the `duplicate' button.  Enter a list of @code{x ; y} coordinates
+where the objects should be copied to.  An object can not be deleted without
+first deleting the duplicated objects.  When the object is edited, all of its
+duplications are altered accordingly.
+
+In the next section, we will discuss four sections in more detail.
+
+@menu
+* The geometry panel::          
+* The excitation panel::        
+* The output panel::            
+@end menu
+
+@c ------------------------------------------------------------
+@node The geometry panel, The excitation panel, Creating a geometry file with the wxGBTool, Creating a geometry file with the wxGBTool
+@subsection The geometry panel
+
+When the `add' button in the geometry section is pressed, the
+following pop-up screen appears.
+
+@ifnotinfo
+@center @image{geometry, 10cm}
+@end ifnotinfo
+
+All geometries are internally treated as a polygon.  To make it easier
+for the user, wxGBTool has explicit support for three other types:
+Hyperbolic-plano lenses, circular lenses and circles.  By selecting
+the corresponding tab the parameters associated with a certain type is
+geometry appear.
+
+Note that everything is measured in meter (metric).
+
+@itemize
+
+@item HP Lens: Add a hyperbolic-plano lens.
+      @itemize
+      @item Focus: Focal distance of the lens.
+      @item Diameter: Size of the lens.
+      @item Number of segments: number of segments along the curved
+      surface of the lens.  If the number of segments is low, only a
+      poor approximation of the curved surface will be obtained.  The
+      Nero2d solver will further subdivide the segments if they are
+      larger than one tenth of a wavelength.  This will however, not
+      improve the curvature.  If on the other hand, the number of
+      segments is too high, so that a the segments are much smaller
+      than one tenth of a wavelength, much more memory and calculation
+      time will be required by the Nero2d solver.  It is good practice
+      to chose the number of segments so that the segments are
+      approximately half a wavelength in size.  This will yield a
+      smooth curve, and optimal segment sizes inside Nero2d.  Note
+      that you yourself need to calculate the number of segments taken
+      into account the wavelength and the size of the lens.
+      @end itemize
+
+      Note that the actual shape of the lens depends on both the focal
+      distance parameter and the refractive index (epsilon and mu).
+
+@item Circular Lens: Add a circular lens.
+      @itemize
+      @item Diameter: Size of the lens.
+      @item Thickness: Thickness of the lens.
+      @item Radius A: Radius of the left side (can be negative).
+      @item Radius B: Radius of the right side (can be negative).
+      @item Number of segments: See HP Lens.
+      @end itemize
+
+@item Circle: Add a circle
+      @itemize
+      @item Radius: Radius of the circle.
+      @end itemize
+
+@item Polygon: Add a polygon
+      Enter the coordinates of the polygon in a counter clockwise
+      fashion.  The coordinates are entered like this `@code{x ; y}',
+      e.g.@ for a triangle, enter
+
+      @example
+      -1 ; -1
+       1 ; -1
+       0 ;  1
+      @end example
+
+      Any number of points can be added to list.  Take into account
+      however that the objects can not self-intersect and that the
+      points need to traverse the contour in a counter clockwise
+      fashion.  The final point is automatically connected to the
+      first, do not enter it twice.  Also note that the edges of the
+      polygon are automatically subdivided by the Nero2d solver.
+
+@end itemize
+
+In the lower left section you can chose between a PEC or dielectric
+object and you enter the relative permittivity and permeability in the
+same way coordinates are entered @code{real ; imag}.  Note that for
+lens objects, only a dielectrics are possible.
+
+In the lower right section you can enter the position of the object
+and chose a rotation angle (in degrees).
+
+Once a change is made, the object can be pre-viewed by pressing the
+`update' button.  If the `Ok' button is pressed, the object is added
+to scene and is shown in the main window.  Note that objects can be
+embedded into other dielectrics (to simulate for example coatings),
+however, objects can not touch each other of overlap.
+
+@c ------------------------------------------------------------
+@node The excitation panel, The output panel, The geometry panel, Creating a geometry file with the wxGBTool
+@subsection The excitation panel
+
+When the `add' button in the excitation section is pressed, the
+following pop-up screen appears.
+
+@ifnotinfo
+@center @image{excitation, 5cm}
+@end ifnotinfo
+
+There are three types of TM excitations supported: a point source
+(actually a line source in 2d), a Gaussian bundle and a plane wave.
+We discuss in short the properties.
+
+@itemize
+@item The point source
+      @itemize
+      @item Current (complex): the current (in A), @code{real ; imag}.
+      @item Origin: position of the source
+      @end itemize
+@item Gaussian bundle
+      @itemize
+      @item Width a focus: width of the bundle at its smallest point
+      (the focus).
+      @item Position of focus: location of the focus.
+      @item Direction: angle between the positive x-axis and the
+      direction of propagation
+      @item Strength: Intensity of the bundle @code{real ; imag}.
+      @item Order: Order of the gaussion bundle
+      @end itemize
+@item Plane wave
+      @itemize
+      @item Direction (degree): angle between the positive x-axis and
+      the direction of propagation
+      @item Electrical field: Intensity of the plane wave @code{real ;
+      imag}.
+      @end itemize
+@end itemize
+
+Note that the excitations are not visualized in main window.
+Carefully review the settings before running a simulation.
+
+In this panel, the frequency (Hz) can be specified.  Also, the permittivity
+and permeability of the background medium can be entered here.
+
+@c ------------------------------------------------------------
+@node The output panel,  , The excitation panel, Creating a geometry file with the wxGBTool
+@subsection The output panel
+
+When the `add' button in the output section is pressed, the
+following pop-up screen appears.
+
+@ifnotinfo
+@center @image{output, 5cm}
+@end ifnotinfo
+
+There are four types of outputs supported: the longitudinal electrical
+field component along a line, a circle, a grid or the bistatic radar
+cross section (RCS).
+
+@itemize
+    @item Line output
+    @itemize
+        @item Point1: starting point of the line @code{x ; y}.
+        @item Point2: end point of the line @code{x ; y}.
+        @item Number of points: The number of output points along this
+        line, equidistant from each other.
+    @end itemize
+    @item Circle output
+    @itemize
+        @item Centre: centre of the circle @code{x ; y}.
+        @item Radius: radius of the circle.
+        @item Number of points: Number of equidistant points on the
+        circle.  The first point is on the right most side of the
+        circle.  The circle is traversed in a counter clockwise fashion.
+    @end itemize
+    @item Bitmap output
+    @itemize
+        @item Lower left point: Lower left point of the bitmap @code{x ; y}.
+        @item Upper right point: Upper right point of the bitmap @code{x ; y}.
+        @item Resolution X: The number of equidistant points along the
+        x-direction.  Note that the number of equidistant points along
+        the y-direction is automatically calculated, taken the aspect
+        ratio into account.
+    @end itemize
+    @item RCS
+    @itemize
+        @item Number of points: Number of equidistant angles in which
+        the bistatic RCS.
+    @end itemize
+    The RCS output file will only contain meaningful results if a
+    single plane wave with default settings is selected as a excitation.
+@end itemize
+
+Note that when a certain scene is opened, and a bitmap is selected in
+the output combobox, it is possible to create a *.bmp file using the
+`Create BMP' button.  This will invoke a dialog screen that is discussed
+in the next section.
+
+@c ------------------------------------------------------------
+@node Create bitmaps, The configuration file, Creating a geometry file with the wxGBTool, Tutorial
+@section Create bitmaps
+
+As shown in the Quickstart section, it is possible to select a *.bdf file 
+which contains the corresponding field values.  The incident field
+and scattered field files can be selected seperately.  One or both can
+be disabled.  If both are disabled, only the geometry is drawn.
+
+@ifnotinfo
+@center @image{createbmp, 8cm}
+@end ifnotinfo
+
+The field component that is to be drawn can be selected: in a TM 
+simulation, only the Ez, Hx and Hy components will be non-zero.
+Conversely, in a TE simulation, the Hz, Ex and Ey components are
+non-zero.
+
+The `Black' field corresponds with the field strength below
+which the field is represented by a black pixel.  The `Red' field
+corresponds with the field strength above which the field is
+represented by a red pixel.  The field intensities that are comprised
+between black and red are linearly represented by a colormap
+black-blue-green-red.  Note that the magnetic field values are typically
+a factor Z (approx. 370 Ohm) smaller than the corresponding electrical
+field values.
+
+@c ------------------------------------------------------------
+@node The configuration file, Output files, Create bitmaps, Tutorial
+@section The configuration file
+
+In this section we will explain each of the parameters of the
+configuration file in more detail.  Note that Nero2d is distributed
+with two configuration files, one general purpose file located in the
+@code{/share/examples} directory and another in the
+@code{/share/benchmark} example, which is the config file used for
+performing our parallel benchmarks.
+
+The configuration files need to be edited by hand.  We give an
+overview of the parameters
+
+@itemize
+
+@item OUTPUT_PROCESS Process that displays output to the screen.
+Value in [0 ... number of processes -1].  Default value is 0.
+
+@item QORDER The number of Gauss Quadrature Points used for numerical
+integration along a segment.  Note that not every order is supported.
+Do not change unless you know what you are doing.  Default value is
+10.
+
+@item SEGMENT_LENGTH Maximum length of a segment in terms of
+wavelength.  Default value is 0.1.
+
+@item OVERSHOOT Percentage that a segment can protrude from a box.
+This phenomena is taken into account when calculation the number of
+sampling points in the FMM factorization, and when calculation the
+effective X_DIST value at each level.  Default value is 1.4.
+
+@item MINIMAL_BOX_SIZE Size of a box in terms of wavelength at the
+lowest level of the MLFMA tree.  Default value is 0.25.  Any value
+between 0.15 and 0.7 is probably acceptable for you.
+
+@item X_DIST Value in terms of boxsize.  Boxes that are separated
+x_dist*boxSize at a certain level can interact using the
+high-frequency MLFMA.  Default value is 1.9.  Make this value very
+large if you want to solve your system in a classical manner.
+
+@item FMM_PRECISION Relative precision of the FMM factorization in the
+MLFMA algorithm.  Default value is 1e-5 (five digits of accuracy).
+Note that a high precision is necessary in large 2D simulations.
+
+@item MAX_FMM_LEVEL Maximum height of an FMM tree. Default value is 
+1000 (in practice this value means: infinity).
+
+@item AGGREGATION_MATRICES Can be either FULL, COMPACT or COMPRESSED,
+which indicates the degree of symmetry that is to be used.  Default
+value is COMPRESSED.
+
+@item INTERPOLATION_METHOD Can be either FFT, BLIF or MIXED.  Default
+value is MIXED.
+
+@item MINIMAL_BLIF_LOCALITY Indicates the desired ratio of local points
+to boundary points in k-space partioning.  Default value is 16.0.
+
+@item ITERATIVE_METHOD Your iterative solver of choice: can be TFQMR,
+BICGSTAB or RGMRES.  Default of TFQMR.
+
+@item ITERATIVE_PRECISION Stopping criterion for the iterative
+solver.  If the relative residual drops below this value: stop
+iterating.  Default value is 1e-3.
+
+@item MAX_ITERATIONS Maximum number of iterations in the iterative
+solver.  Once this number is reached, the solver is stopped, even
+though the requested precision has not yet been obtained.  Default
+value is 50000.
+
+@item TRUENORMPARAMETER Only meaningful when the TFQMR solver is
+selected.  This parameter determines how often the true residual is
+calculated.  A value of 1 means: every iteration, a value of 2 means:
+every two iterations, etc.  Default is 5.
+
+@item RESTARTPARAMETER Only meaningful when the R-GMRES solver is
+selected.  This is the restart parameter in R-GMRES.  Default is 5.
+
+@item BLOCKJACOBI_LEVEL Size of preconditioner.  A negative
+value means: use no preconditioner.  A value is 0 means, use blocks
+equal to the lowest-level box size.  A higher value often means faster
+convergence, however at a cost of a longer setup stage.  The default
+value is 3.  You may want to raise this number for larger or more
+resonant simulations.
+
+@item SPACE_FILLING_CURVE Choice of space filling curve.  Valid
+options are HILBERT or MORTON.  Default value is HILBERT.
+
+@item PACKAGE_SIZE Size of a package in micro-seconds.  Raising this
+value will reduce overhead, however, the asynchronous progress at
+non-dedicated parallel systems may suffer.  Default is 10000.
+
+@item BENCHMARK_MODE If this value is equal to 1, all output is
+suppressed and the iterations are timed.  Upon completion, a
+benchmark.dat file containing these times is written to disc.  You may
+want to limit the number of iterations (to e.g.@ 30) when performing
+these benchmarks.  Default is 0.
+
+@item MAX_OUTPUT_SIZE This value determines the maximum number
+of elements that are written to disc.  Default value is 100000.
+
+@item WRITE_Z_MATRIX If this value is set to non-zero, the 
+interaction matrix is written to disc, if its size is smaller
+than MAX_OUTPUT_SIZE.  Default value is 0.
+
+@item WRITE_B_VECTOR If this value is set to non-zero, the 
+right hand side vector is written to disc, if its size is smaller
+than MAX_OUTPUT_SIZE.  Default value is 0.
+
+@item WRITE_X_VECTOR If this value is set to non-zero, the 
+solution vector is written to disc, if its size is smaller
+than MAX_OUTPUT_SIZE.  Default value is 0.
+
+@end itemize
+
+@c ------------------------------------------------------------
+@node Output files,  , The configuration file, Tutorial
+@section Output files
+
+As indicated in the tutorial of wxGBTool, Nero2d can generate two
+types of output: either the field components along a
+line, circle or a grid, or the bistatic radar cross section (RCS).
+
+The first type generates a file which contains 12 columns of numbers,
+i.e. the complex Ex, Ey, Ez, Hx, Hy and Hz values.  The real and 
+imaginary parts are placed in consecutive columns, separated
+by a tab.
+
+The values for the incident fields and scattered fields are
+written seperately.  The incident fields' filename contains
+@code{`_in'} in their filename, while the scattered fields'
+filename contains @code{`_sc'} in their filename.
+
+The radar cross section output yields a single column real values.
+
+@itemize @bullet
+
+@item
+For output along a line, the value on the first row corresponds with
+the starting point of the line, while the last row corresponds with
+the final point.  The output filename is lineXX_??.ldf (line data file).
+
+@item
+For output along a circle, the circle is traversed in a
+counter-clockwise fashion, starting a the right-most point of the
+circle.  The output filename is circleXX_??.cdf (circle data file).
+
+@item
+For output along a grid, the output file contains a matrix with resX
+times resY number of complex values. The
+output filename is bitmapXX_??.bdf (bitmap data file) and can be
+processed into a bitmap (.bmp) file using wxGBTool.
+
+@end itemize
+
+The bistatic radar cross section (RCS) can also be calculated.  For
+the output file to contain meaningful results, it is required that the
+incident field be a single plane wave in the positive
+x-direction (the default setting for plane wave).  The output file
+contains a set of double precision values along equidistant angles
+(compare to electrical field along a circle).  The output file is
+rcsXX.rdf (radar cross section data file).
+
+These files can be imported into your favorite tool, e.g.@ Matlab.
+
+
+@c ************************************************************
+@node Acknowledgments, License and Copyright, Tutorial, Top
+@chapter Acknowledgments
+
+Jan Fostier was support by a doctoral grant from the Institute for the Promotion of Innovation through Science and Technology in Flanders (IWT-Vlaanderen).
+
+We thank SourceForge.net for providing us with a reliable SubVersion (SVN) server and a website.  We are especially grateful to the maintainers of SourceForge for helping us out on several occasions.
+
+We are grateful for all the efforts of our system administrator Bert De Vuyst.  His countless interventions saved the day on numerous occasions.
+
+We thank the GNU/Linux community for providing us with the tools we needed in the development of our software.
+
+We thank the creators of the @code{FFTW} software (Steven Johnson and Mateo Frigo), for providing us with a reliable tools for fast calculation of the DFTs.  We are also grateful to them for providing us with a @code{texinfo} template we used for creating this manual.
+
+We thank Steven Johnson for the @code{acx_blas.m4}, @code{acx_lapack.m4} and @code{acx_mpi.m4} macro's.  We thank Jaroslav Hajek for the @code{acx_blas_with_f77_func.m4} macro.  We thank the people from Octave for providing us with inspiration for the @code{configure.in} script.
+
+We thank the authors of the Parallel Iterative Methods of @code{PIM} (Rudnei Dias da Cunha and Tim Hopkins) for their software.
+
+We thank the authors of the @code{AMOS} library (Donald E. Amos) for his library for the calculation of special functions.
+
+We thank the people at the Vrije Universiteit Brussel (VUB) and Katholieke Universiteit Leuven (KUL) for pre-testing our software.
+
+Prof.@ Femke Olyslager stimulated us in creating this software as GNU package to the community.  We are of course, grateful for that.
+
+@c ************************************************************
+@node License and Copyright,  , Acknowledgments, Top
+@chapter License and Copyright
+
+
+Nero2d is Copyright @copyright{} 2006-2008 Jan Fostier, Copyright @copyright{} 2006-2008 Ghent University, department of Information Technology (INTEC).
+
+Nero2d is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.  You can also find the @uref{http://www.gnu.org/copyleft/gpl.html, GPL on the GNU website}.
+
+@c ************************************************************
+
+@c @node Index,  , License and Copyright, Top
+@c @unnumbered Index
+
+@c @printindex cp
+
+@bye
+

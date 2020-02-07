@@ -29,6 +29,7 @@
           'libaprutil1-dev']
         state: present
 
-    - name: Install dependencies for apitrace
-      apt:
-        name: ['cmake', '32bit-compatibility', 'p7zip']
+    - name: Install dependencies for nerod2
+      apt: 
+        name: ['gfortran', 'libfftw3-dev', 'libblas-dev', 'liblapack-dev']
+        state: present
