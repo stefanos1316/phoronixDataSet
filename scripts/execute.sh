@@ -1,12 +1,11 @@
 #!/bin/bash
 
 # tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "crafty bench quit" "tscp" \
-# 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-5.5.2.tar.xz -v" "zstd ../inputs/zstd_test" "xz ../inputs/xz_test_tmp.txt" "byte register"\
-# 		)
+# 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-4.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
+# 		"scimark2")
 
-tasks=("byte register")
-# note: use a single time file and write the taskName with arguments.
-# Check array if more exist with the same name compbine with last argument (testcase)
+tasks=("scimark2")
+# Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
 	if [ $1 == "apache" ]; then
 		sudo /usr/local/apache2/bin/apachectl -k stop
@@ -15,18 +14,31 @@ function startServers {
 	fi
 }
 
+function getTimeInSeconds {
+	local filePath=$1
+	local minutes=`grep real ${filePath} | awk {'print $2'} | awk -F'm' '{print $1}'`
+	local seconds=`grep real ${filePath} | awk {'print $2'} | awk -F'm' '{print $2}' | awk -F',' '{print $1}'`
+	if [ $minutes -ne 0 ]; then
+		minutes=$((minutes * 60))
+	fi
+			
+	totalTime=$((minutes + seconds))
+}
+
 for task in "${tasks[@]}"; do
 
-	taskName=$(echo ${task} | awk '{print $1}')
+	taskName=`echo ${task} | awk '{print $1}'`
+	totalTime=0
 	case "$taskName" in
 		("apache") 
 			startServers $task
-			time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/time_${taskName}.txt ;;
+			time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/time_${taskName}.txt
+			getTimeInSeconds ../results/time_${taskName}.txt ;;
 		("bzip2")
-			cp ../inputs/linux-5.5.2.tar.xz ../inputs/tmp_linux-5.5.2.tar.xz
+			cp ../inputs/linux-4.3.tar.gz ../inputs/tmp_linux-4.3.tar.gz
 			time (../tasks/${taskName}/${task}) 2> ../results/time_${taskName}.txt ;;
 		("xz")
-			cp ../inputs/xz_test ../inputs/xz_test_tmp
+			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
 			time (../tasks/${taskName}/${task}) 2> ../results/time_${taskName}.txt ;;
 		("byte")
 			cd ../tasks/byte/
@@ -35,11 +47,14 @@ for task in "${tasks[@]}"; do
 		(*) time (../tasks/${taskName}/${task}) 2> ../results/time_${taskName}.txt ;;
 	esac
 
+	getTimeInSeconds ../results/time_${taskName}.txt
+	echo "${taskName}		${totalTime}" >> ../results/time.txt
+
 	if [ -f temp ] || [ -f ao.ppm ] || [ -f game.001 ] || [ -f log.001 ] \
-	|| [ -f ../inputs/tmp_linux-5.5.2.tar.xz.bz2 ] || [ -f ../inputs/zstd_test ] \
-	|| [ -f ../inputs/xz_test_tmp.xz ] || [ -f *.tmp] ; then
+	|| [ -f ../inputs/tmp_linux-4.3.tar.gz.bz2 ] || [ -f ../inputs/zstd_test ] \
+	|| [ -f ../inputs/tmp_xz.txt.xz ] || [ -f *.tmp] ; then
 		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp
-		rm ../inputs/tmp_linux-5.5.2.tar.xz.bz2 ; rm ../inputs/zstd_test.zst; rm ../inputs/xz_test_tmp.xz
+		rm ../inputs/tmp_linux-4.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst; rm ../inputs/tmp_xz.txt.xz
 	fi
 done
 
