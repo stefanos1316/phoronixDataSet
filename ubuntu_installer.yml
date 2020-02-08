@@ -38,3 +38,8 @@
       apt: 
         name: ['nasm']
         state: present
+
+    - name: Install dependencies for x264
+      apt: 
+        name: ['libelf-dev']
+        state: present    

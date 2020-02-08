@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd linux-5.3/
+yes "" | make oldconfig
+# make defconfig
+make clean
+sudo make -s -j $(nproc --all)
+cd ../

@@ -1,6 +1,0 @@
-+ ../tasks/bzip2/bzip2 ../inputs/tmp_linux-4.3.tar.gz -v
-  ../inputs/tmp_linux-4.3.tar.gz:  0.997:1,  8.024 bits/byte, -0.29% saved, 131995842 in, 132384980 out.
-
-real	0m18,319s
-user	0m18,199s
-sys	0m0,116s

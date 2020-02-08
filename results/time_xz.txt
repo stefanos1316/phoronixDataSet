@@ -1,5 +1,0 @@
-+ ../tasks/xz/xz ../inputs/tmp_xz.txt
-
-real	0m22,100s
-user	0m21,954s
-sys	0m0,132s
