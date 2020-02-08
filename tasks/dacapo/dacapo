@@ -1,9 +1,8 @@
 #!/bin/bash
 
-
-command=`echo $@ | awk '{first = $1; $1 = ""; print $0, first; }'`
+command=`echo $@ | awk '{first = $1; $1 = ""; print $0; }'`
 for j in {1..5}; do
-	$command
+	eval $command
 done
 
-rm -rf scartch
+rm -rf scratch
