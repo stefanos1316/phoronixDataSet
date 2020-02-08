@@ -12,9 +12,13 @@
 #		"sysbench cpu --cpu-max-prime=20000000 --threads=8 run" "sysbench memory --memory-total-size=100G --threads=8 run" \
 #		"blake2 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" "c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \ 
 #		"cachebench read -r -m 9" "cachebench write -w -m 9" "cachebench mixed -b -m 9" "cachebench memset -s -m 9" "cachebench memcpy -p -m 9" \
-#		)
+#		"cloverleaf" "brlcad run -P $(nproc --all)")
+#tasks=("dacapo eclipse java -jar dacapo.jar -t $(nproc --all) --window 10 eclipse" "dacapo h2 java -jar dacapo.jar -t $(nproc --all) --window 10 h2" \ 
+# "dacapo jython java -jar dacapo.jar -t $(nproc --all) --window 10 jython" "dacapo tradebeans java -jar dacapo.jar -t $(nproc --all) --window 10 tradebeans" \ 
+# "dacapo tradesoap java -jar dacapo.jar -t $(nproc --all) --window 10 tradesoap")
 
-tasks=("cloverleaf" "brlcad run -P $(nproc --all)")
+tasks=("cpp-perf-bench stepanov_abstraction" "cpp-perf-bench stepanov_vector" "cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" \
+		"cpp-perf-bench mathlib" "cpp-perf-bench random_numbers")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -116,6 +120,10 @@ for task in "${tasks[@]}"; do
 		("povrays")
 			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/time_${taskName}.txt ;;
 		("brlcad")
+			cd ../tasks/${benchmark}
+			time (./${task}) 2> ../../results/time_${taskName}.txt
+			cd ../../scripts ;;
+		cpp-perf-bench*)
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;	
