@@ -49,3 +49,14 @@ Beam: radius=6.62831 mm, divergence=0 mm/1mm
 Output file is 'm35.pix.7' 512x512 pixels
 Mode: scanline-per-CPU buffering
 
+SHOT: cpu = 306.45 sec, elapsed = 52.3847 sec
+    parent: 306.4user 0.5sys 0:52real 586% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:52real 0% i+d maxrss +pf csw
+Additional #malloc=1037, #free=554, #realloc=27 (483 retained)
+555012096 solid/ray intersections: 205246080 hits + 349766016 miss
+pruned 37.0%:  0 model RPP, 468984832 dups skipped, 60991744 solid RPP
+Frame  7:     262144 pixels in     38.31 sec =      6843.37 pixels/sec
+Frame  7:   72926336 rays   in     38.31 sec =   1903769.92 rays/sec (RTFM)
+Frame  7:   72926336 rays   in    306.45 sec =    237971.24 rays/CPU_sec
+Frame  7:   72926336 rays   in     52.38 sec =   1392129.23 rays/sec (wallclock)
+
