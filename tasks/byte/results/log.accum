@@ -572,3 +572,39 @@ Arithmetic Test (type = int)|0.0|lps|0.0|1.0|6
 
 End Benchmark Run: Παρ 07 Φεβ 2020 05:23:15 μμ EET
   1 interactive users.
+|  BYTE UNIX Benchmarks (Version 3.11)
+|  System -- Linux sgeorgiou 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+|  Start Benchmark Run: Παρ 07 Φεβ 2020 05:23:15 μμ EET
+|   1 interactive users.
+
+Arithmetic Test (type = float)|0.0|lps|0.0|1.0|6
+
+End Benchmark Run: Παρ 07 Φεβ 2020 05:25:15 μμ EET
+  1 interactive users.
+|  BYTE UNIX Benchmarks (Version 3.11)
+|  System -- Linux sgeorgiou 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+|  Start Benchmark Run: Σαβ 08 Φεβ 2020 10:43:07 πμ EET
+|   1 interactive users.
+
+Arithmetic Test (type = register)|0.0|lps|0.0|1.0|6
+
+End Benchmark Run: Σαβ 08 Φεβ 2020 10:45:07 πμ EET
+  1 interactive users.
+|  BYTE UNIX Benchmarks (Version 3.11)
+|  System -- Linux sgeorgiou 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+|  Start Benchmark Run: Σαβ 08 Φεβ 2020 10:45:07 πμ EET
+|   1 interactive users.
+
+Dhrystone 2 without register variables|10.0|lps|26560759.6|26158612.0|6
+
+End Benchmark Run: Σαβ 08 Φεβ 2020 10:47:07 πμ EET
+  1 interactive users.
+|  BYTE UNIX Benchmarks (Version 3.11)
+|  System -- Linux sgeorgiou 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+|  Start Benchmark Run: Σαβ 08 Φεβ 2020 10:47:07 πμ EET
+|   1 interactive users.
+
+Arithmetic Test (type = int)|0.0|lps|0.0|1.0|6
+
+End Benchmark Run: Σαβ 08 Φεβ 2020 10:49:08 πμ EET
+  1 interactive users.

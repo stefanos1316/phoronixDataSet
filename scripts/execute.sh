@@ -3,9 +3,13 @@
 # tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "crafty bench quit" "tscp" \
 # 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-4.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
 # 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../tasks/dcraw/DSC_50*" \
-#		"nero2d ../inputs/nero2d.igf" "minions ../inputs/minions.minion")
+# 		"nero2d ../inputs/nero2d.igf" "minions ../inputs/minions.minion" "hmmr -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
+# 		"mafft --thread 1 --localpair --maxiterate 1000000 ../inputs/pyruvate_decarboxylase.fasta" \
+# 		"rodinia euler3d_cpu_double ../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
+# 		"rodinia sc_omp 10 30 512 65536 65536 2000 none output.txt $(nproc --all) && rm output.txt")
 
-tasks=("minions ../inputs/minions.minion")
+tasks=("x264  -o /dev/null --slow --threads $(nproc --all) ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m")
+
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
 	if [ $1 == "apache" ]; then
@@ -56,6 +60,8 @@ function checkIfSubstringExistsMoreTimesInArray {
 	fi
 }
 
+sudo bash ../tools/governor.sh pe
+
 for task in "${tasks[@]}"; do
 
 	taskName=`echo ${task} | awk '{print $1}'`
@@ -75,13 +81,17 @@ for task in "${tasks[@]}"; do
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
 			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
 		("gmpbench")
-			cd ../tasks/gmpbench
+			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;
 		("sudokut.sh")
-			cd ../tasks/sudokut
+			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts ;;	
+			cd ../../scripts ;;
+		rodinia*)
+			cd ../tasks/${benchmark}
+			time (./${task}) 2> ../../results/time_${taskName}.txt
+			cd ../../scripts ;;
 		byte*)
 			cd ../tasks/byte
 			time (./${task}) 2> ../../results/time_${taskName}.txt
