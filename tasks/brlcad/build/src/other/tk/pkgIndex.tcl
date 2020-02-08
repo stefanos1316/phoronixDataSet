@@ -1,0 +1,1 @@
+package ifneeded Tk 8.5.19 [list load [file join $dir .. .. "lib" libtk.so] Tk]

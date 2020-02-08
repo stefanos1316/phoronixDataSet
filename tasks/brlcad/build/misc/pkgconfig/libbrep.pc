@@ -1,0 +1,13 @@
+prefix=/usr/brlcad/rel-7.28.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+Name: libbrep
+Description: BRL-CAD NURBS Boundary Representation Library
+Version: 7.28.0
+Requires: libbg libbn libbu
+Libs: -L${libdir} -lbg -lbn -lbu  -lstdc++ -lregex -lm
+Cflags: -I${includedir}/brlcad -I${includedir}

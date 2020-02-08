@@ -1,0 +1,725 @@
+B R L - C A D   B E N C H M A R K
+=================================
+Running /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/benchmark on Σαβ 08 Φεβ 2020 08:33:15 μμ EET
+Logging output to run-18477-benchmark.log
+Linux sgeorgiou 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+Using [/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/rt] for RT
+Using [/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/../share/db] for DB
+Using [/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/../share/pix] for PIX
+Using [/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/../share/pix] for LOG
+Using [/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/pixcmp] for CMP
+Using [/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/elapsed.sh] for ELP
+Using [32] for TIMEFRAME
+Using [300] for MAXTIME
+Using [2] for DEVIATION
+Using [5] for AVERAGE
+
+RT reports the following version information:
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+
+Minimum run time is 3 minutes, 12 seconds
+Maximum run time is 30 minutes
+Estimated time is 9 minutes, 36 seconds
+
+Running the BRL-CAD Benchmark tests... please wait ...
+
++++++ moss
+Frame  0:     304846 rays   in      0.08 sec =   3918473.85 rays/sec (RTFM)
+Frame  1:     623378 rays   in      0.14 sec =   4535534.24 rays/sec (RTFM)
+Frame  5:    9924224 rays   in      2.07 sec =   4805526.91 rays/sec (RTFM)
+Frame  8:   80180224 rays   in     17.98 sec =   4459015.27 rays/sec (RTFM)
+Frame  9:  159378944 rays   in     36.46 sec =   4371362.35 rays/sec (RTFM)
+Frame 10:  160303616 rays   in     35.98 sec =   4455194.41 rays/sec (RTFM)
+Frame 11:  159114240 rays   in     36.67 sec =   4339221.79 rays/sec (RTFM)
+Frame 12:  158987776 rays   in     36.53 sec =   4352455.31 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+moss.pix: answers are RIGHT
++++++ world
+Frame  0:     423026 rays   in      0.23 sec =   1871066.87 rays/sec (RTFM)
+Frame  1:     856282 rays   in      0.45 sec =   1899166.62 rays/sec (RTFM)
+Frame  5:   13679776 rays   in      7.15 sec =   1912270.40 rays/sec (RTFM)
+Frame  6:   27242176 rays   in     14.49 sec =   1879573.11 rays/sec (RTFM)
+Frame  7:   54456832 rays   in     29.03 sec =   1875935.08 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+world.pix: answers are RIGHT
++++++ star
+Frame  0:     268247 rays   in      0.16 sec =   1683278.18 rays/sec (RTFM)
+Frame  1:     537520 rays   in      0.30 sec =   1820118.07 rays/sec (RTFM)
+Frame  5:    8829248 rays   in      4.73 sec =   1867555.75 rays/sec (RTFM)
+Frame  7:   34864768 rays   in     19.34 sec =   1802799.06 rays/sec (RTFM)
+Frame  8:   70022912 rays   in     38.23 sec =   1831811.64 rays/sec (RTFM)
+Frame  9:   69629184 rays   in     37.67 sec =   1848588.33 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+star.pix: answers are RIGHT
++++++ bldg391
+Frame  0:     323263 rays   in      0.23 sec =   1398139.67 rays/sec (RTFM)
+Frame  1:     672376 rays   in      0.43 sec =   1546213.58 rays/sec (RTFM)
+Frame  5:   10438976 rays   in      7.10 sec =   1470663.89 rays/sec (RTFM)
+Frame  6:   21115328 rays   in     14.71 sec =   1435259.28 rays/sec (RTFM)
+Frame  7:   41861376 rays   in     29.70 sec =   1409344.69 rays/sec (RTFM)
+Frame  8:   42000256 rays   in     29.32 sec =   1432457.70 rays/sec (RTFM)
+Frame  9:   42011136 rays   in     29.31 sec =   1433205.46 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+bldg391.pix: answers are RIGHT
++++++ m35
+Frame  0:     582485 rays   in      0.31 sec =   1885262.25 rays/sec (RTFM)
+Frame  1:    1131922 rays   in      0.61 sec =   1844835.32 rays/sec (RTFM)
+Frame  5:   18339328 rays   in      9.60 sec =   1910847.39 rays/sec (RTFM)
+Frame  6:   36844096 rays   in     19.26 sec =   1913316.30 rays/sec (RTFM)
+Frame  7:   73543424 rays   in     38.76 sec =   1897605.09 rays/sec (RTFM)
+pixcmp pixels:   262070 matching,       74 off by 1,        0 off by many
+m35.pix: answers are RIGHT
++++++ sphflake
+Frame  0:    1669345 rays   in      0.78 sec =   2134518.82 rays/sec (RTFM)
+Frame  1:    3290990 rays   in      1.51 sec =   2184219.86 rays/sec (RTFM)
+Frame  4:   26600784 rays   in     11.62 sec =   2288502.93 rays/sec (RTFM)
+Frame  5:   52852096 rays   in     22.70 sec =   2328746.08 rays/sec (RTFM)
+Frame  6:  106081472 rays   in     44.52 sec =   2382844.13 rays/sec (RTFM)
+Frame  7:  105858496 rays   in     44.81 sec =   2362566.98 rays/sec (RTFM)
+Frame  8:  106531520 rays   in     45.57 sec =   2337836.53 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+sphflake.pix: answers are RIGHT
+
+... Done.
+
+Total testing time elapsed: 13 minutes, 29 seconds
+
+The following files have been generated and/or modified:
+  *.log ..... final log files for each individual raytrace test
+  *.pix ..... final pix image files for each individual raytrace test
+  *.log.* ... log files for previous frames and raytrace tests
+  *.pix.* ... pix image files for previous frames and raytrace tests
+  summary ... performance results summary, 2 lines per run
+
+Run '/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/benchmark clean' to remove generated pix files.
+
+Summary:
+Abs  sgeorgiou 4352455.31	1875935.08	1848588.33	1433205.46	1897605.09	2337836.53	2290937.63	Σαβ 08 Φεβ 2020 08:46:44 μμ EET
+*vgr sgeorgiou 31767.42	27973.97	32969.29	26859.17	26844.03	157.73	24428.60	
+
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+Benchmark results indicate an approximate VGR performance metric of 24429
+Logarithmic VGR metric is 4.39  (natural logarithm is 10.10)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+These numbers seem to indicate that this machine is approximately 24429 times
+faster than the reference machine being used for comparison, a VAX 11/780
+running 4.3 BSD named VGR.  These results are in fact approximately 4.39
+orders of magnitude faster than the reference.
+
+Here are some other approximated VGR results for perspective:
+    120 on a 200MHz R5000 running IRIX 6.5
+    250 on a 500 MHz Pentium III running RedHat 7.1
+    550 on a dual 450 MHz UltraSPARC II running SunOS 5.8
+   1000 on a dual 500 MHz G4 PowerPC running Mac OS X 10.2
+   1500 on a dual 1.66 GHz Athlon MP 2000+ running RedHat 7.3
+  52000 on a 4x4 CPU 2.93 GHz Xeon running RHEL Server 5.4
+  65000 on a 512 CPU 400 MHz R12000 Running IRIX 6.5
+
+You are encouraged to submit your benchmark results and system
+configuration information to benchmark@brlcad.org
+                             ~~~~~~~~~~~~~~~~~~~~
+Including additional kernel and hardware information in the log.
+
+Collecting system state information (via /sbin/sysctl)
+===============================================================================
+sysctl: cannot stat /proc/sys/hw: No such file or directory
+sysctl: cannot stat /proc/sys/kern: No such file or directory
+kernel.acct = 4	2	30
+kernel.acpi_video_flags = 0
+kernel.auto_msgmni = 0
+kernel.bootloader_type = 114
+kernel.bootloader_version = 2
+sysctl: permission denied on key 'kernel.cad_pid'
+kernel.cap_last_cap = 37
+kernel.core_pattern = |/usr/share/apport/apport %p %s %c %d %P
+kernel.core_pipe_limit = 0
+kernel.core_uses_pid = 0
+kernel.ctrl-alt-del = 0
+kernel.dmesg_restrict = 0
+kernel.domainname = (none)
+kernel.firmware_config.force_sysfs_fallback = 0
+kernel.firmware_config.ignore_sysfs_fallback = 0
+kernel.ftrace_dump_on_oops = 0
+kernel.ftrace_enabled = 1
+kernel.hardlockup_all_cpu_backtrace = 0
+kernel.hardlockup_panic = 0
+kernel.hostname = sgeorgiou
+kernel.hotplug = 
+kernel.hung_task_check_count = 4194304
+kernel.hung_task_check_interval_secs = 0
+kernel.hung_task_panic = 0
+kernel.hung_task_timeout_secs = 120
+kernel.hung_task_warnings = 10
+kernel.io_delay_type = 1
+kernel.kexec_load_disabled = 0
+kernel.keys.gc_delay = 300
+kernel.keys.maxbytes = 20000
+kernel.keys.maxkeys = 200
+kernel.keys.persistent_keyring_expiry = 259200
+kernel.keys.root_maxbytes = 25000000
+kernel.keys.root_maxkeys = 1000000
+kernel.kptr_restrict = 1
+kernel.max_lock_depth = 1024
+kernel.modprobe = /sbin/modprobe
+kernel.modules_disabled = 0
+kernel.msg_next_id = -1
+kernel.msgmax = 8192
+kernel.msgmnb = 16384
+kernel.msgmni = 32000
+kernel.ngroups_max = 65536
+kernel.nmi_watchdog = 1
+kernel.ns_last_pid = 24865
+kernel.numa_balancing = 0
+kernel.numa_balancing_scan_delay_ms = 1000
+kernel.numa_balancing_scan_period_max_ms = 60000
+kernel.numa_balancing_scan_period_min_ms = 1000
+kernel.numa_balancing_scan_size_mb = 256
+kernel.osrelease = 5.0.0-37-generic
+kernel.ostype = Linux
+kernel.overflowgid = 65534
+kernel.overflowuid = 65534
+kernel.panic = 0
+kernel.panic_on_io_nmi = 0
+kernel.panic_on_oops = 0
+kernel.panic_on_rcu_stall = 0
+kernel.panic_on_unrecovered_nmi = 0
+kernel.panic_on_warn = 0
+kernel.panic_print = 0
+kernel.perf_cpu_time_max_percent = 25
+kernel.perf_event_max_contexts_per_stack = 8
+kernel.perf_event_max_sample_rate = 25000
+kernel.perf_event_max_stack = 127
+kernel.perf_event_mlock_kb = 516
+kernel.perf_event_paranoid = 3
+kernel.pid_max = 32768
+kernel.poweroff_cmd = /sbin/poweroff
+kernel.print-fatal-signals = 0
+kernel.printk = 4	4	1	7
+kernel.printk_delay = 0
+kernel.printk_devkmsg = ratelimit
+kernel.printk_ratelimit = 5
+kernel.printk_ratelimit_burst = 10
+kernel.pty.max = 4096
+kernel.pty.nr = 7
+kernel.pty.reserve = 1024
+kernel.random.boot_id = dd9a3d96-ea4b-477d-b662-90a2bc70e7a2
+kernel.random.entropy_avail = 3858
+kernel.random.poolsize = 4096
+kernel.random.read_wakeup_threshold = 64
+kernel.random.urandom_min_reseed_secs = 60
+kernel.random.uuid = 78de83e1-5685-4456-bccf-d73061004f00
+kernel.random.write_wakeup_threshold = 896
+kernel.randomize_va_space = 2
+kernel.real-root-dev = 0
+kernel.sched_autogroup_enabled = 1
+kernel.sched_cfs_bandwidth_slice_us = 5000
+kernel.sched_child_runs_first = 0
+kernel.sched_domain.cpu0.domain0.busy_factor = 32
+kernel.sched_domain.cpu0.domain0.busy_idx = 0
+kernel.sched_domain.cpu0.domain0.cache_nice_tries = 0
+kernel.sched_domain.cpu0.domain0.flags = 4783
+kernel.sched_domain.cpu0.domain0.forkexec_idx = 0
+kernel.sched_domain.cpu0.domain0.idle_idx = 0
+kernel.sched_domain.cpu0.domain0.imbalance_pct = 110
+kernel.sched_domain.cpu0.domain0.max_interval = 4
+kernel.sched_domain.cpu0.domain0.max_newidle_lb_cost = 14752
+kernel.sched_domain.cpu0.domain0.min_interval = 2
+kernel.sched_domain.cpu0.domain0.name = SMT
+kernel.sched_domain.cpu0.domain0.newidle_idx = 0
+kernel.sched_domain.cpu0.domain0.wake_idx = 0
+kernel.sched_domain.cpu0.domain1.busy_factor = 32
+kernel.sched_domain.cpu0.domain1.busy_idx = 2
+kernel.sched_domain.cpu0.domain1.cache_nice_tries = 1
+kernel.sched_domain.cpu0.domain1.flags = 4655
+kernel.sched_domain.cpu0.domain1.forkexec_idx = 0
+kernel.sched_domain.cpu0.domain1.idle_idx = 0
+kernel.sched_domain.cpu0.domain1.imbalance_pct = 117
+kernel.sched_domain.cpu0.domain1.max_interval = 16
+kernel.sched_domain.cpu0.domain1.max_newidle_lb_cost = 18417
+kernel.sched_domain.cpu0.domain1.min_interval = 8
+kernel.sched_domain.cpu0.domain1.name = MC
+kernel.sched_domain.cpu0.domain1.newidle_idx = 0
+kernel.sched_domain.cpu0.domain1.wake_idx = 0
+kernel.sched_domain.cpu1.domain0.busy_factor = 32
+kernel.sched_domain.cpu1.domain0.busy_idx = 0
+kernel.sched_domain.cpu1.domain0.cache_nice_tries = 0
+kernel.sched_domain.cpu1.domain0.flags = 4783
+kernel.sched_domain.cpu1.domain0.forkexec_idx = 0
+kernel.sched_domain.cpu1.domain0.idle_idx = 0
+kernel.sched_domain.cpu1.domain0.imbalance_pct = 110
+kernel.sched_domain.cpu1.domain0.max_interval = 4
+kernel.sched_domain.cpu1.domain0.max_newidle_lb_cost = 13642
+kernel.sched_domain.cpu1.domain0.min_interval = 2
+kernel.sched_domain.cpu1.domain0.name = SMT
+kernel.sched_domain.cpu1.domain0.newidle_idx = 0
+kernel.sched_domain.cpu1.domain0.wake_idx = 0
+kernel.sched_domain.cpu1.domain1.busy_factor = 32
+kernel.sched_domain.cpu1.domain1.busy_idx = 2
+kernel.sched_domain.cpu1.domain1.cache_nice_tries = 1
+kernel.sched_domain.cpu1.domain1.flags = 4655
+kernel.sched_domain.cpu1.domain1.forkexec_idx = 0
+kernel.sched_domain.cpu1.domain1.idle_idx = 0
+kernel.sched_domain.cpu1.domain1.imbalance_pct = 117
+kernel.sched_domain.cpu1.domain1.max_interval = 16
+kernel.sched_domain.cpu1.domain1.max_newidle_lb_cost = 17379
+kernel.sched_domain.cpu1.domain1.min_interval = 8
+kernel.sched_domain.cpu1.domain1.name = MC
+kernel.sched_domain.cpu1.domain1.newidle_idx = 0
+kernel.sched_domain.cpu1.domain1.wake_idx = 0
+kernel.sched_domain.cpu2.domain0.busy_factor = 32
+kernel.sched_domain.cpu2.domain0.busy_idx = 0
+kernel.sched_domain.cpu2.domain0.cache_nice_tries = 0
+kernel.sched_domain.cpu2.domain0.flags = 4783
+kernel.sched_domain.cpu2.domain0.forkexec_idx = 0
+kernel.sched_domain.cpu2.domain0.idle_idx = 0
+kernel.sched_domain.cpu2.domain0.imbalance_pct = 110
+kernel.sched_domain.cpu2.domain0.max_interval = 4
+kernel.sched_domain.cpu2.domain0.max_newidle_lb_cost = 18057
+kernel.sched_domain.cpu2.domain0.min_interval = 2
+kernel.sched_domain.cpu2.domain0.name = SMT
+kernel.sched_domain.cpu2.domain0.newidle_idx = 0
+kernel.sched_domain.cpu2.domain0.wake_idx = 0
+kernel.sched_domain.cpu2.domain1.busy_factor = 32
+kernel.sched_domain.cpu2.domain1.busy_idx = 2
+kernel.sched_domain.cpu2.domain1.cache_nice_tries = 1
+kernel.sched_domain.cpu2.domain1.flags = 4655
+kernel.sched_domain.cpu2.domain1.forkexec_idx = 0
+kernel.sched_domain.cpu2.domain1.idle_idx = 0
+kernel.sched_domain.cpu2.domain1.imbalance_pct = 117
+kernel.sched_domain.cpu2.domain1.max_interval = 16
+kernel.sched_domain.cpu2.domain1.max_newidle_lb_cost = 22114
+kernel.sched_domain.cpu2.domain1.min_interval = 8
+kernel.sched_domain.cpu2.domain1.name = MC
+kernel.sched_domain.cpu2.domain1.newidle_idx = 0
+kernel.sched_domain.cpu2.domain1.wake_idx = 0
+kernel.sched_domain.cpu3.domain0.busy_factor = 32
+kernel.sched_domain.cpu3.domain0.busy_idx = 0
+kernel.sched_domain.cpu3.domain0.cache_nice_tries = 0
+kernel.sched_domain.cpu3.domain0.flags = 4783
+kernel.sched_domain.cpu3.domain0.forkexec_idx = 0
+kernel.sched_domain.cpu3.domain0.idle_idx = 0
+kernel.sched_domain.cpu3.domain0.imbalance_pct = 110
+kernel.sched_domain.cpu3.domain0.max_interval = 4
+kernel.sched_domain.cpu3.domain0.max_newidle_lb_cost = 13755
+kernel.sched_domain.cpu3.domain0.min_interval = 2
+kernel.sched_domain.cpu3.domain0.name = SMT
+kernel.sched_domain.cpu3.domain0.newidle_idx = 0
+kernel.sched_domain.cpu3.domain0.wake_idx = 0
+kernel.sched_domain.cpu3.domain1.busy_factor = 32
+kernel.sched_domain.cpu3.domain1.busy_idx = 2
+kernel.sched_domain.cpu3.domain1.cache_nice_tries = 1
+kernel.sched_domain.cpu3.domain1.flags = 4655
+kernel.sched_domain.cpu3.domain1.forkexec_idx = 0
+kernel.sched_domain.cpu3.domain1.idle_idx = 0
+kernel.sched_domain.cpu3.domain1.imbalance_pct = 117
+kernel.sched_domain.cpu3.domain1.max_interval = 16
+kernel.sched_domain.cpu3.domain1.max_newidle_lb_cost = 21224
+kernel.sched_domain.cpu3.domain1.min_interval = 8
+kernel.sched_domain.cpu3.domain1.name = MC
+kernel.sched_domain.cpu3.domain1.newidle_idx = 0
+kernel.sched_domain.cpu3.domain1.wake_idx = 0
+kernel.sched_domain.cpu4.domain0.busy_factor = 32
+kernel.sched_domain.cpu4.domain0.busy_idx = 0
+kernel.sched_domain.cpu4.domain0.cache_nice_tries = 0
+kernel.sched_domain.cpu4.domain0.flags = 4783
+kernel.sched_domain.cpu4.domain0.forkexec_idx = 0
+kernel.sched_domain.cpu4.domain0.idle_idx = 0
+kernel.sched_domain.cpu4.domain0.imbalance_pct = 110
+kernel.sched_domain.cpu4.domain0.max_interval = 4
+kernel.sched_domain.cpu4.domain0.max_newidle_lb_cost = 13395
+kernel.sched_domain.cpu4.domain0.min_interval = 2
+kernel.sched_domain.cpu4.domain0.name = SMT
+kernel.sched_domain.cpu4.domain0.newidle_idx = 0
+kernel.sched_domain.cpu4.domain0.wake_idx = 0
+kernel.sched_domain.cpu4.domain1.busy_factor = 32
+kernel.sched_domain.cpu4.domain1.busy_idx = 2
+kernel.sched_domain.cpu4.domain1.cache_nice_tries = 1
+kernel.sched_domain.cpu4.domain1.flags = 4655
+kernel.sched_domain.cpu4.domain1.forkexec_idx = 0
+kernel.sched_domain.cpu4.domain1.idle_idx = 0
+kernel.sched_domain.cpu4.domain1.imbalance_pct = 117
+kernel.sched_domain.cpu4.domain1.max_interval = 16
+kernel.sched_domain.cpu4.domain1.max_newidle_lb_cost = 19676
+kernel.sched_domain.cpu4.domain1.min_interval = 8
+kernel.sched_domain.cpu4.domain1.name = MC
+kernel.sched_domain.cpu4.domain1.newidle_idx = 0
+kernel.sched_domain.cpu4.domain1.wake_idx = 0
+kernel.sched_domain.cpu5.domain0.busy_factor = 32
+kernel.sched_domain.cpu5.domain0.busy_idx = 0
+kernel.sched_domain.cpu5.domain0.cache_nice_tries = 0
+kernel.sched_domain.cpu5.domain0.flags = 4783
+kernel.sched_domain.cpu5.domain0.forkexec_idx = 0
+kernel.sched_domain.cpu5.domain0.idle_idx = 0
+kernel.sched_domain.cpu5.domain0.imbalance_pct = 110
+kernel.sched_domain.cpu5.domain0.max_interval = 4
+kernel.sched_domain.cpu5.domain0.max_newidle_lb_cost = 13552
+kernel.sched_domain.cpu5.domain0.min_interval = 2
+kernel.sched_domain.cpu5.domain0.name = SMT
+kernel.sched_domain.cpu5.domain0.newidle_idx = 0
+kernel.sched_domain.cpu5.domain0.wake_idx = 0
+kernel.sched_domain.cpu5.domain1.busy_factor = 32
+kernel.sched_domain.cpu5.domain1.busy_idx = 2
+kernel.sched_domain.cpu5.domain1.cache_nice_tries = 1
+kernel.sched_domain.cpu5.domain1.flags = 4655
+kernel.sched_domain.cpu5.domain1.forkexec_idx = 0
+kernel.sched_domain.cpu5.domain1.idle_idx = 0
+kernel.sched_domain.cpu5.domain1.imbalance_pct = 117
+kernel.sched_domain.cpu5.domain1.max_interval = 16
+kernel.sched_domain.cpu5.domain1.max_newidle_lb_cost = 12435
+kernel.sched_domain.cpu5.domain1.min_interval = 8
+kernel.sched_domain.cpu5.domain1.name = MC
+kernel.sched_domain.cpu5.domain1.newidle_idx = 0
+kernel.sched_domain.cpu5.domain1.wake_idx = 0
+kernel.sched_domain.cpu6.domain0.busy_factor = 32
+kernel.sched_domain.cpu6.domain0.busy_idx = 0
+kernel.sched_domain.cpu6.domain0.cache_nice_tries = 0
+kernel.sched_domain.cpu6.domain0.flags = 4783
+kernel.sched_domain.cpu6.domain0.forkexec_idx = 0
+kernel.sched_domain.cpu6.domain0.idle_idx = 0
+kernel.sched_domain.cpu6.domain0.imbalance_pct = 110
+kernel.sched_domain.cpu6.domain0.max_interval = 4
+kernel.sched_domain.cpu6.domain0.max_newidle_lb_cost = 11104
+kernel.sched_domain.cpu6.domain0.min_interval = 2
+kernel.sched_domain.cpu6.domain0.name = SMT
+kernel.sched_domain.cpu6.domain0.newidle_idx = 0
+kernel.sched_domain.cpu6.domain0.wake_idx = 0
+kernel.sched_domain.cpu6.domain1.busy_factor = 32
+kernel.sched_domain.cpu6.domain1.busy_idx = 2
+kernel.sched_domain.cpu6.domain1.cache_nice_tries = 1
+kernel.sched_domain.cpu6.domain1.flags = 4655
+kernel.sched_domain.cpu6.domain1.forkexec_idx = 0
+kernel.sched_domain.cpu6.domain1.idle_idx = 0
+kernel.sched_domain.cpu6.domain1.imbalance_pct = 117
+kernel.sched_domain.cpu6.domain1.max_interval = 16
+kernel.sched_domain.cpu6.domain1.max_newidle_lb_cost = 24803
+kernel.sched_domain.cpu6.domain1.min_interval = 8
+kernel.sched_domain.cpu6.domain1.name = MC
+kernel.sched_domain.cpu6.domain1.newidle_idx = 0
+kernel.sched_domain.cpu6.domain1.wake_idx = 0
+kernel.sched_domain.cpu7.domain0.busy_factor = 32
+kernel.sched_domain.cpu7.domain0.busy_idx = 0
+kernel.sched_domain.cpu7.domain0.cache_nice_tries = 0
+kernel.sched_domain.cpu7.domain0.flags = 4783
+kernel.sched_domain.cpu7.domain0.forkexec_idx = 0
+kernel.sched_domain.cpu7.domain0.idle_idx = 0
+kernel.sched_domain.cpu7.domain0.imbalance_pct = 110
+kernel.sched_domain.cpu7.domain0.max_interval = 4
+kernel.sched_domain.cpu7.domain0.max_newidle_lb_cost = 16505
+kernel.sched_domain.cpu7.domain0.min_interval = 2
+kernel.sched_domain.cpu7.domain0.name = SMT
+kernel.sched_domain.cpu7.domain0.newidle_idx = 0
+kernel.sched_domain.cpu7.domain0.wake_idx = 0
+kernel.sched_domain.cpu7.domain1.busy_factor = 32
+kernel.sched_domain.cpu7.domain1.busy_idx = 2
+kernel.sched_domain.cpu7.domain1.cache_nice_tries = 1
+kernel.sched_domain.cpu7.domain1.flags = 4655
+kernel.sched_domain.cpu7.domain1.forkexec_idx = 0
+kernel.sched_domain.cpu7.domain1.idle_idx = 0
+kernel.sched_domain.cpu7.domain1.imbalance_pct = 117
+kernel.sched_domain.cpu7.domain1.max_interval = 16
+kernel.sched_domain.cpu7.domain1.max_newidle_lb_cost = 20411
+kernel.sched_domain.cpu7.domain1.min_interval = 8
+kernel.sched_domain.cpu7.domain1.name = MC
+kernel.sched_domain.cpu7.domain1.newidle_idx = 0
+kernel.sched_domain.cpu7.domain1.wake_idx = 0
+kernel.sched_latency_ns = 24000000
+kernel.sched_migration_cost_ns = 500000
+kernel.sched_min_granularity_ns = 3000000
+kernel.sched_nr_migrate = 32
+kernel.sched_rr_timeslice_ms = 100
+kernel.sched_rt_period_us = 1000000
+kernel.sched_rt_runtime_us = 950000
+kernel.sched_schedstats = 0
+kernel.sched_tunable_scaling = 1
+kernel.sched_wakeup_granularity_ns = 4000000
+kernel.seccomp.actions_avail = kill_process kill_thread trap errno user_notif trace log allow
+kernel.seccomp.actions_logged = kill_process kill_thread trap errno user_notif trace log
+kernel.sem = 32000	1024000000	500	32000
+kernel.sem_next_id = -1
+kernel.sg-big-buff = 32768
+kernel.shm_next_id = -1
+kernel.shm_rmid_forced = 0
+kernel.shmall = 18446744073692774399
+kernel.shmmax = 18446744073692774399
+kernel.shmmni = 4096
+kernel.soft_watchdog = 1
+kernel.softlockup_all_cpu_backtrace = 0
+kernel.softlockup_panic = 0
+kernel.stack_tracer_enabled = 0
+kernel.sysctl_writes_strict = 1
+kernel.sysrq = 176
+kernel.tainted = 0
+kernel.threads-max = 254640
+kernel.timer_migration = 1
+kernel.traceoff_on_warning = 0
+kernel.tracepoint_printk = 0
+kernel.unknown_nmi_panic = 0
+kernel.unprivileged_bpf_disabled = 0
+sysctl: permission denied on key 'kernel.unprivileged_userns_apparmor_policy'
+kernel.unprivileged_userns_clone = 1
+sysctl: permission denied on key 'kernel.usermodehelper.bset'
+sysctl: permission denied on key 'kernel.usermodehelper.inheritable'
+kernel.version = #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019
+kernel.watchdog = 1
+kernel.watchdog_cpumask = 0-7
+kernel.watchdog_thresh = 10
+kernel.yama.ptrace_scope = 1
+
+Collecting system CPU information (via /proc/cpuinfo)
+===============================================================================
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+stepping	: 11
+microcode	: 0xca
+cpu MHz		: 2000.002
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass mds swapgs itlb_multihit
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+stepping	: 11
+microcode	: 0xca
+cpu MHz		: 2000.033
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass mds swapgs itlb_multihit
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+stepping	: 11
+microcode	: 0xca
+cpu MHz		: 2000.045
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass mds swapgs itlb_multihit
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+stepping	: 11
+microcode	: 0xca
+cpu MHz		: 2000.009
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass mds swapgs itlb_multihit
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+stepping	: 11
+microcode	: 0xca
+cpu MHz		: 1999.996
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass mds swapgs itlb_multihit
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+stepping	: 11
+microcode	: 0xca
+cpu MHz		: 2000.022
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass mds swapgs itlb_multihit
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+stepping	: 11
+microcode	: 0xca
+cpu MHz		: 2000.007
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass mds swapgs itlb_multihit
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+stepping	: 11
+microcode	: 0xca
+cpu MHz		: 2000.003
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+bugs		: spectre_v1 spectre_v2 spec_store_bypass mds swapgs itlb_multihit
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+Collecting system CPU information (via /usr/bin/lscpu)
+===============================================================================
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              8
+On-line CPU(s) list: 0-7
+Thread(s) per core:  2
+Core(s) per socket:  4
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               142
+Model name:          Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+Stepping:            11
+CPU MHz:             2000.002
+CPU max MHz:         4600,0000
+CPU min MHz:         400,0000
+BogoMIPS:            3984.00
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            8192K
+NUMA node0 CPU(s):   0-7
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+
+
+Read the benchmark.tr document for more details on the BRL-CAD Benchmark.
+The document should be available in the 'doc' directory of any source
+or complete binary distribution of BRL-CAD.
+
+Output was saved to run-18477-benchmark.log from /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bench
+Benchmark testing complete.

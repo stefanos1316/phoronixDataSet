@@ -1,0 +1,8 @@
+file(GLOB_RECURSE BUILD_DIR_CONTENTS RELATIVE "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/distcheck-odd_pathnames/1 Odd_ build dir ++" "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/distcheck-odd_pathnames/1 Odd_ build dir ++/*")
+if(BUILD_DIR_CONTENTS)
+  message("Files present after distclean in /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/distcheck-odd_pathnames/1 Odd_ build dir ++:")
+  foreach(filename ${BUILD_DIR_CONTENTS})
+    message("${filename}")
+  endforeach(filename ${BUILD_DIR_CONTENTS})
+  message(FATAL_ERROR "distclean failed in /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/distcheck-odd_pathnames/1 Odd_ build dir ++")
+endif(BUILD_DIR_CONTENTS)

@@ -1,0 +1,13 @@
+prefix=/usr/brlcad/rel-7.28.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+Name: libfb
+Description: BRL-CAD Framebuffer Library
+Version: 7.28.0
+Requires: libbu libpkg
+Libs: -L${libdir} -lfb -lbu -lpkg -ltcl8.5 -lX11 -lXext -lXi -lm
+Cflags: -I${includedir}/brlcad -I${includedir}

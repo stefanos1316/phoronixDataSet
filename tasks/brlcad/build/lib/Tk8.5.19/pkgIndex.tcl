@@ -1,0 +1,1 @@
+package ifneeded Tk 8.5.19 [list load [file join $dir "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/lib" libtk.so] Tk]

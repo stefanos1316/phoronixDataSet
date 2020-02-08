@@ -1,0 +1,13 @@
+prefix=/usr/brlcad/rel-7.28.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+Name: libbu
+Description: BRL-CAD Utility Library
+Version: 7.28.0
+Requires:
+Libs: -L${libdir} -lbu -l/usr/lib/x86_64-linux-gnu/libuuid.so -lregex -lm
+Cflags: -I${includedir}/brlcad -I${includedir}

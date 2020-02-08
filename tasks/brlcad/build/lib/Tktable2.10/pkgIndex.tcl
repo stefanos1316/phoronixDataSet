@@ -1,0 +1,1 @@
+package ifneeded Tktable 2.10 [list load [file join $dir "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/lib" libTktable.so] Tktable]

@@ -1,0 +1,62 @@
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+
+Compile-time debug symbols are available
+Running on sgeorgiou
+Planning to run with 8 processors
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/rt -B -M -s512 -H127 -J0 -o world.pix
+opendb /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/../share/db/world.g;
+tree all.g;
+db title:  Colorful version of the Moss World
+DIRBUILD: cpu = 0.000248 sec, elapsed = 0.000501 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=143, #free=128, #realloc=6 (15 retained)
+0x7fdb7638d040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.28.0  The BRL-CAD Optical Shader Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.005059 sec, elapsed = 0.004813 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=1730, #free=1597, #realloc=5 (133 retained)
+
+...................Frame     7...................
+PREP: cpu = 0.000117 sec, elapsed = 0.000178 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=190, #free=96, #realloc=4 (94 retained)
+NUBSP: 70 cut, 71 box (71 empty)
+Tree: 8 solids in 7 regions
+Model: X(-500, 500), Y(-500, 500), Z(-500, 500)
+View: 35 azimuth, 25 elevation off of front view
+Orientation: 0.248097, 0.476591, 0.748097, 0.389435
+Eye_pos: 63.7999, 32.7177, 33.6666
+Size: 157.203mm
+Grid: (0.307036, 0.307036) mm, (512, 512) pixels
+Beam: radius=0.153518 mm, divergence=0 mm/1mm
+Output file is 'world.pix.7' 512x512 pixels
+Mode: scanline-per-CPU buffering
+
+SHOT: cpu = 232.233 sec, elapsed = 33.2094 sec
+    parent: 232.2user 0.4sys 0:33real 700% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:33real 0% i+d maxrss +pf csw
+Additional #malloc=930, #free=556, #realloc=11 (374 retained)
+188881408 solid/ray intersections: 166394880 hits + 22486528 miss
+pruned 88.1%:  0 model RPP, 501525888 dups skipped, 17769728 solid RPP
+Frame  7:     262144 pixels in     29.03 sec =      9030.37 pixels/sec
+Frame  7:   54456832 rays   in     29.03 sec =   1875935.08 rays/sec (RTFM)
+Frame  7:   54456832 rays   in    232.23 sec =    234491.88 rays/CPU_sec
+Frame  7:   54456832 rays   in     33.21 sec =   1639803.62 rays/sec (wallclock)
+

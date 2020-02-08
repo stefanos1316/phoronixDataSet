@@ -1,0 +1,7 @@
+B R L - C A D   B E N C H M A R K
+=================================
+Running ./brlcad on Σαβ 08 Φεβ 2020 08:01:12 μμ EET
+Logging output to run-27734-benchmark.log
+Linux sgeorgiou 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+ERROR:  Could not find the BRL-CAD raytracer

@@ -1,0 +1,2 @@
+/usr/bin/gcc-ar qc ../../lib/libtermio.a  CMakeFiles/libtermio-obj.dir/termio.c.o
+/usr/bin/gcc-ranlib ../../lib/libtermio.a

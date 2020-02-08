@@ -1,0 +1,37 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/src/other/stepcode/src/express/fedex.c" "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/src/other/stepcode/src/express/CMakeFiles/check-express.dir/fedex.c.o"
+  "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/src/other/stepcode/src/express/inithook.c" "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/src/other/stepcode/src/express/CMakeFiles/check-express.dir/inithook.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "HAVE_DECL_FSEEKO"
+  )
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "include/brlcad"
+  "/usr/local/include"
+  "include"
+  "../include"
+  "../src/other/stepcode/include"
+  "src/other/stepcode/include"
+  "src/other/stepcode/src/express"
+  "../src/other/stepcode/src/express"
+  "../src/other/stepcode/src/base"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/src/other/stepcode/src/express/CMakeFiles/express.dir/DependInfo.cmake"
+  "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/src/other/stepcode/src/base/CMakeFiles/base.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

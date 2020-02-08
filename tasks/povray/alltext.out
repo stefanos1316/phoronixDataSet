@@ -1,0 +1,27 @@
+Parser Options
+  Input file: /tmp/pov14159.pov (compatible to version 3.70)
+  Remove bounds........On 
+  Split unions.........Off
+  Library paths:
+    /usr/local/share/povray-3.7/include
+  Clock value:    0.000  (Animation off)
+Image Output Options
+  Image resolution.....512 by 512 (rows 1 to 512, columns 1 to 512).
+  Output file: Disabled
+  Graphic display......Off
+  Mosaic preview.......Off
+  Continued trace......Off
+Information Output Options
+  All Streams to console..........On 
+  Debug Stream to console.........On 
+  Fatal Stream to console.........On 
+  Render Stream to console........On 
+  Statistics Stream to console....On 
+  Warning Stream to console.......On 
+
+
+ Building mesh2: 
+   - vertex_vectors
+   - normal_vectors
+   - uv_vectors
+   - face_indices

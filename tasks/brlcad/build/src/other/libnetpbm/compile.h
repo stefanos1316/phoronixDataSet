@@ -1,0 +1,2 @@
+#define COMPILE_TIME "0000"
+#define COMPILED_BY "BRL-CAD"

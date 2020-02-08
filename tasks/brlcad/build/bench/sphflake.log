@@ -1,0 +1,62 @@
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+
+Compile-time debug symbols are available
+Running on sgeorgiou
+Planning to run with 8 processors
+./../bin/rt -B -M -s512 -H63 -J0 -P 8 -o sphflake.pix
+opendb ./../share/db/sphflake.g;
+tree scene.r;
+db title:  SphereFlake
+DIRBUILD: cpu = 0.001224 sec, elapsed = 0.001235 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=954, #free=941, #realloc=5 (13 retained)
+0x7f5564f80040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.28.0  The BRL-CAD Optical Shader Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.008727 sec, elapsed = 0.017698 sec
+    parent: 0.0user 0.0sys 0:00real 100% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=26417, #free=22218, #realloc=34 (4199 retained)
+
+...................Frame    10...................
+PREP: cpu = 1e-05 sec, elapsed = 0.001646 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=1370, #free=701, #realloc=4 (669 retained)
+NUBSP: 631 cut, 632 box (632 empty)
+Tree: 823 solids in 8 regions
+Model: X(-18202, 18202), Y(-18000, 16914), Z(-10300, 157000)
+View: 352.851 azimuth, 16.905 elevation off of front view
+Orientation: 0.440681, 0.400509, 0.522645, 0.61011
+Eye_pos: 24185, -3328.56, 8489.93
+Size: 25562.8mm
+Grid: (49.9274, 49.9274) mm, (512, 512) pixels
+Beam: radius=24.9637 mm, divergence=0 mm/1mm
+Output file is 'sphflake.pix.10' 512x512 pixels
+Mode: scanline-per-CPU buffering
+
+SHOT: cpu = 364.368 sec, elapsed = 67.1842 sec
+    parent: 364.3user 0.6sys 1:07real 543% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 1:07real 0% i+d maxrss +pf csw
+Additional #malloc=1200, #free=554, #realloc=11 (646 retained)
+1103372928 solid/ray intersections: 269561088 hits + 833811840 miss
+pruned 24.4%:  0 model RPP, 1064617536 dups skipped, 0 solid RPP
+Frame 10:     262144 pixels in     45.55 sec =      5755.58 pixels/sec
+Frame 10:  106040960 rays   in     45.55 sec =   2328214.13 rays/sec (RTFM)
+Frame 10:  106040960 rays   in    364.37 sec =    291026.77 rays/CPU_sec
+Frame 10:  106040960 rays   in     67.18 sec =   1578361.84 rays/sec (wallclock)
+

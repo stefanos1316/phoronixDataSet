@@ -1,0 +1,9 @@
+source /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/regress/mged/regression_resources.tcl
+
+puts "*** Testing 'vrot' command ***"
+
+view quat
+vrot 23 23 -1
+view quat
+
+puts "*** 'vrot' testing completed ***"

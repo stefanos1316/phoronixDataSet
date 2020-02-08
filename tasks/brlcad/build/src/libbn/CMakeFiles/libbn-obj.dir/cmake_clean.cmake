@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/libbn-obj.dir/anim.c.o"
+  "CMakeFiles/libbn-obj.dir/axis.c.o"
+  "CMakeFiles/libbn-obj.dir/complex.c.o"
+  "CMakeFiles/libbn-obj.dir/clip.c.o"
+  "CMakeFiles/libbn-obj.dir/font.c.o"
+  "CMakeFiles/libbn-obj.dir/globals.c.o"
+  "CMakeFiles/libbn-obj.dir/list.c.o"
+  "CMakeFiles/libbn-obj.dir/marker.c.o"
+  "CMakeFiles/libbn-obj.dir/mat.c.o"
+  "CMakeFiles/libbn-obj.dir/msr.c.o"
+  "CMakeFiles/libbn-obj.dir/multipoly.c.o"
+  "CMakeFiles/libbn-obj.dir/noise.c.o"
+  "CMakeFiles/libbn-obj.dir/plane.c.o"
+  "CMakeFiles/libbn-obj.dir/plot3.c.o"
+  "CMakeFiles/libbn-obj.dir/poly.c.o"
+  "CMakeFiles/libbn-obj.dir/qmath.c.o"
+  "CMakeFiles/libbn-obj.dir/rand.c.o"
+  "CMakeFiles/libbn-obj.dir/randmt.c.o"
+  "CMakeFiles/libbn-obj.dir/randsph.c.o"
+  "CMakeFiles/libbn-obj.dir/scale.c.o"
+  "CMakeFiles/libbn-obj.dir/sobolseq.c.o"
+  "CMakeFiles/libbn-obj.dir/sphmap.c.o"
+  "CMakeFiles/libbn-obj.dir/str.c.o"
+  "CMakeFiles/libbn-obj.dir/symbol.c.o"
+  "CMakeFiles/libbn-obj.dir/tabdata.c.o"
+  "CMakeFiles/libbn-obj.dir/tplot.c.o"
+  "CMakeFiles/libbn-obj.dir/ulp.c.o"
+  "CMakeFiles/libbn-obj.dir/vectfont.c.o"
+  "CMakeFiles/libbn-obj.dir/vector.c.o"
+  "CMakeFiles/libbn-obj.dir/vers.c.o"
+  "CMakeFiles/libbn-obj.dir/vert_tree.c.o"
+  "CMakeFiles/libbn-obj.dir/vlist.c.o"
+  "CMakeFiles/libbn-obj.dir/wavelet.c.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/libbn-obj.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -w -m64  -m64 -shared -Wl,-soname,libgdiam.so -o ../../../lib/libgdiam.so CMakeFiles/libgdiam.dir/gdiam.cpp.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: 

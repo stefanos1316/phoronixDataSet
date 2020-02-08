@@ -1,0 +1,1 @@
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/src/tclscripts/mged/color_scheme.tcl

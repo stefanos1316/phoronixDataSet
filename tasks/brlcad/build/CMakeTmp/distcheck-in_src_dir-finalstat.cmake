@@ -1,0 +1,2 @@
+file(GLOB_RECURSE SOURCE_ARCHIVE_CONTENTS RELATIVE "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/distcheck-in_src_dir/brlcad-7.28.0" "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/distcheck-in_src_dir/brlcad-7.28.0/*")
+file(WRITE "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/distcheck-in_src_dir/final_src_contents.txt" "${SOURCE_ARCHIVE_CONTENTS}")

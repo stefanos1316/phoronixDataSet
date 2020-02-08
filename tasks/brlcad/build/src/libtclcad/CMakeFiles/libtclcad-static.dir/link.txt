@@ -1,0 +1,2 @@
+/usr/bin/gcc-ar qc ../../lib/libtclcad.a  CMakeFiles/libtclcad-obj.dir/libfuncs.c.o CMakeFiles/libtclcad-obj.dir/tclcad.c.o CMakeFiles/libtclcad-obj.dir/tclcadAutoPath.c.o CMakeFiles/libtclcad-obj.dir/tclcad_obj.c.o CMakeFiles/libtclcad-obj.dir/tclcad_eval.c.o CMakeFiles/libtclcad-obj.dir/tclcad_init.c.o CMakeFiles/libtclcad-obj.dir/tkImgFmtPIX.c.o CMakeFiles/libtclcad-obj.dir/cmdhist_obj.c.o
+/usr/bin/gcc-ranlib ../../lib/libtclcad.a

@@ -1,0 +1,7 @@
+source /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/regress/mged/regression_resources.tcl
+
+puts "*** Testing 'refresh' command ***"
+
+refresh
+
+puts "*** 'refresh' testing completed ***"

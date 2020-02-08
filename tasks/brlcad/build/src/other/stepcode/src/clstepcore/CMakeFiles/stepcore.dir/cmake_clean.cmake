@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/stepcore.dir/sdaiApplication_instance.cc.o"
+  "CMakeFiles/stepcore.dir/STEPcomplex.cc.o"
+  "CMakeFiles/stepcore.dir/STEPattribute.cc.o"
+  "CMakeFiles/stepcore.dir/STEPattribute.inline.cc.o"
+  "CMakeFiles/stepcore.dir/sdai.cc.o"
+  "CMakeFiles/stepcore.dir/sdaiSelect.cc.o"
+  "CMakeFiles/stepcore.dir/STEPaggregate.cc.o"
+  "CMakeFiles/stepcore.dir/STEPundefined.cc.o"
+  "CMakeFiles/stepcore.dir/STEPattributeList.cc.o"
+  "CMakeFiles/stepcore.dir/SingleLinkList.cc.o"
+  "CMakeFiles/stepcore.dir/SingleLinkList.inline.cc.o"
+  "CMakeFiles/stepcore.dir/Registry.inline.cc.o"
+  "CMakeFiles/stepcore.dir/ExpDict.cc.o"
+  "CMakeFiles/stepcore.dir/ExpDict.inline.cc.o"
+  "CMakeFiles/stepcore.dir/read_func.cc.o"
+  "CMakeFiles/stepcore.dir/collect.cc.o"
+  "CMakeFiles/stepcore.dir/complexlist.cc.o"
+  "CMakeFiles/stepcore.dir/entlist.cc.o"
+  "CMakeFiles/stepcore.dir/multlist.cc.o"
+  "CMakeFiles/stepcore.dir/orlist.cc.o"
+  "CMakeFiles/stepcore.dir/entnode.cc.o"
+  "CMakeFiles/stepcore.dir/non-ors.cc.o"
+  "CMakeFiles/stepcore.dir/match-ors.cc.o"
+  "CMakeFiles/stepcore.dir/trynext.cc.o"
+  "CMakeFiles/stepcore.dir/print.cc.o"
+  "CMakeFiles/stepcore.dir/instmgr.cc.o"
+  "CMakeFiles/stepcore.dir/mgrnode.cc.o"
+  "CMakeFiles/stepcore.dir/mgrnodearray.cc.o"
+  "CMakeFiles/stepcore.dir/mgrnodelist.cc.o"
+  "CMakeFiles/stepcore.dir/dispnode.cc.o"
+  "CMakeFiles/stepcore.dir/dispnodelist.cc.o"
+  "CMakeFiles/stepcore.dir/needFunc.cc.o"
+  "../../../../../lib/libstepcore.pdb"
+  "../../../../../lib/libstepcore.so.2.0.0"
+  "../../../../../lib/libstepcore.so"
+  "../../../../../lib/libstepcore.so.2"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/stepcore.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

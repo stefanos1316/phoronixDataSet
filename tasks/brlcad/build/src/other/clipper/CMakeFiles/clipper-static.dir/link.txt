@@ -1,0 +1,2 @@
+/usr/bin/gcc-ar qc ../../../lib/libclipper.a  CMakeFiles/clipper-static.dir/clipper.cpp.o
+/usr/bin/gcc-ranlib ../../../lib/libclipper.a

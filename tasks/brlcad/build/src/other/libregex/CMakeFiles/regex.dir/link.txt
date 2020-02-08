@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -w -m64  -m64 -shared -Wl,-soname,libregex.so.1 -o ../../../lib/libregex.so.1.0.4 CMakeFiles/regex.dir/regcomp.c.o CMakeFiles/regex.dir/regerror.c.o CMakeFiles/regex.dir/regexec.c.o CMakeFiles/regex.dir/regfree.c.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: 

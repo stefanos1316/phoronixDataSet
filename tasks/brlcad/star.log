@@ -1,0 +1,62 @@
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+
+Compile-time debug symbols are available
+Running on sgeorgiou
+Planning to run with 8 processors
+./build/bench/../bin/rt -B -M -s512 -H255 -J0 -P 8 -o star.pix
+opendb ./build/bench/../share/db/star.g;
+tree all;
+db title:  The Enterprise and Shuttlecraft
+DIRBUILD: cpu = 0.000604 sec, elapsed = 0.000613 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=727, #free=701, #realloc=6 (26 retained)
+0x7feb45e64040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.28.0  The BRL-CAD Optical Shader Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.028008 sec, elapsed = 0.015241 sec
+    parent: 0.0user 0.0sys 0:00real 500% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=15353, #free=13789, #realloc=6 (1564 retained)
+
+...................Frame     8...................
+PREP: cpu = 0.000217 sec, elapsed = 0.000437 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=538, #free=330, #realloc=6 (208 retained)
+NUBSP: 117 cut, 118 box (118 empty)
+Tree: 113 solids in 72 regions
+Model: X(-1e+07, 1e+07), Y(-1e+07, 1e+07), Z(-1e+07, 1e+07)
+View: 58.1641 azimuth, -21.8449 elevation off of front view
+Orientation: 0.403268, 0.723479, 0.559692, 0.0264004
+Eye_pos: 210268, 84555, 29347.1
+Size: 250000mm
+Grid: (488.281, 488.281) mm, (512, 512) pixels
+Beam: radius=244.141 mm, divergence=0 mm/1mm
+Output file is 'star.pix.8' 512x512 pixels
+Mode: scanline-per-CPU buffering
+
+SHOT: cpu = 296.764 sec, elapsed = 39.9677 sec
+    parent: 296.7user 0.2sys 0:39real 743% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:39real 0% i+d maxrss +pf csw
+Additional #malloc=984, #free=554, #realloc=26 (430 retained)
+371540736 solid/ray intersections: 204231936 hits + 167308800 miss
+pruned 55.0%:  0 model RPP, 884551168 dups skipped, 145529344 solid RPP
+Frame  8:     262144 pixels in     37.10 sec =      7066.73 pixels/sec
+Frame  8:   69897472 rays   in     37.10 sec =   1884257.60 rays/sec (RTFM)
+Frame  8:   69897472 rays   in    296.76 sec =    235532.20 rays/CPU_sec
+Frame  8:   69897472 rays   in     39.97 sec =   1748850.61 rays/sec (wallclock)
+

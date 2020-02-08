@@ -1,0 +1,73 @@
+B R L - C A D   B E N C H M A R K
+=================================
+Running ./build/bench/benchmark on Σαβ 08 Φεβ 2020 09:47:14 μμ EET
+Logging output to run-5589-benchmark.log
+Linux sgeorgiou 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+Using [./build/bench/../bin/rt] for RT
+Using [./build/bench/../share/db] for DB
+Using [./build/bench/../share/pix] for PIX
+Using [./build/bench/../share/pix] for LOG
+Using [./build/bench/../bin/pixcmp] for CMP
+Using [./build/bench/../bin/elapsed.sh] for ELP
+Using [32] for TIMEFRAME
+Using [300] for MAXTIME
+Using [2] for DEVIATION
+Using [5] for AVERAGE
+
+RT reports the following version information:
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+
+Minimum run time is 3 minutes, 12 seconds
+Maximum run time is 30 minutes
+Estimated time is 9 minutes, 36 seconds
+
+Running the BRL-CAD Benchmark tests... please wait ...
+
++++++ moss
+Frame  0:     316221 rays   in      0.08 sec =   4105639.85 rays/sec (RTFM)
+Frame  1:     618566 rays   in      0.14 sec =   4434550.31 rays/sec (RTFM)
+Frame  5:    9988576 rays   in      1.96 sec =   5107461.04 rays/sec (RTFM)
+Frame  8:   79188992 rays   in     14.58 sec =   5433030.31 rays/sec (RTFM)
+Frame  9:  160061440 rays   in     29.41 sec =   5442385.69 rays/sec (RTFM)
+Frame 10:  159876608 rays   in     32.41 sec =   4933342.05 rays/sec (RTFM)
+Frame 11:  159210496 rays   in     35.05 sec =   4542510.49 rays/sec (RTFM)
+Frame 12:  159413248 rays   in     34.86 sec =   4573249.21 rays/sec (RTFM)
+Frame 13:  159329280 rays   in     35.39 sec =   4501817.58 rays/sec (RTFM)
+Frame 14:  159349760 rays   in     35.94 sec =   4433520.93 rays/sec (RTFM)
+Frame 15:  159331328 rays   in     35.24 sec =   4520680.81 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+moss.pix: answers are RIGHT
++++++ world
+Frame  0:     420682 rays   in      0.21 sec =   1957237.39 rays/sec (RTFM)
+Frame  1:     857696 rays   in      0.43 sec =   2007956.83 rays/sec (RTFM)
+Frame  5:   13578112 rays   in      7.05 sec =   1926100.68 rays/sec (RTFM)
+Frame  6:   27430464 rays   in     13.99 sec =   1961330.20 rays/sec (RTFM)
+Frame  7:   54732160 rays   in     28.32 sec =   1932591.87 rays/sec (RTFM)
+Frame  8:  109385472 rays   in     57.73 sec =   1894919.56 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+world.pix: answers are RIGHT
++++++ star
+Frame  0:     271926 rays   in      0.15 sec =   1874388.68 rays/sec (RTFM)
+Frame  1:     544878 rays   in      0.28 sec =   1952184.07 rays/sec (RTFM)
+Frame  5:    8697024 rays   in      4.56 sec =   1908904.86 rays/sec (RTFM)
+Frame  7:   34948864 rays   in     18.56 sec =   1883466.44 rays/sec (RTFM)
+Frame  8:   69897472 rays   in     37.10 sec =   1884257.60 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+star.pix: answers are RIGHT
++++++ bldg391
+Frame  0:     330895 rays   in      0.24 sec =   1357440.68 rays/sec (RTFM)
+Frame  1:     657254 rays   in      0.48 sec =   1375550.82 rays/sec (RTFM)
+Frame  5:   10529536 rays   in      7.27 sec =   1448562.03 rays/sec (RTFM)
+Frame  6:   20965888 rays   in     14.68 sec =   1428170.61 rays/sec (RTFM)
+Frame  7:   42005888 rays   in     29.30 sec =   1433577.16 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+bldg391.pix: answers are RIGHT
++++++ m35
+Frame  0:     569323 rays   in      0.31 sec =   1837849.35 rays/sec (RTFM)
+Frame  1:    1136054 rays   in      0.58 sec =   1952309.88 rays/sec (RTFM)
+Frame  5:   18301984 rays   in      9.30 sec =   1968281.62 rays/sec (RTFM)
+Frame  6:   36768704 rays   in     19.35 sec =   1900384.03 rays/sec (RTFM)

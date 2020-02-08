@@ -1,0 +1,1 @@
+package ifneeded Itcl 3.4 [list load [file join $dir .. .. "lib" libitcl.so] Itcl]

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -w -m64  -m64 -shared -Wl,-soname,libstdvds.so.1 -o ../../../lib/libstdvds.so.1.0.1 CMakeFiles/stdvds.dir/stdvds.c.o CMakeFiles/stdvds.dir/stdfold.c.o CMakeFiles/stdvds.dir/stdvis.c.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: -lm 

@@ -1,0 +1,2 @@
+/usr/bin/gcc-ar qc ../../../lib/libvds.a  CMakeFiles/libvds-static.dir/build.c.o CMakeFiles/libvds-static.dir/cluster.c.o CMakeFiles/libvds-static.dir/dynamic.c.o CMakeFiles/libvds-static.dir/render.c.o CMakeFiles/libvds-static.dir/util.c.o CMakeFiles/libvds-static.dir/file.c.o
+/usr/bin/gcc-ranlib ../../../lib/libvds.a

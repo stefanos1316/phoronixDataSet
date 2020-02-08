@@ -1,0 +1,2 @@
+/usr/bin/gcc-ar qc ../../../lib/librply.a  CMakeFiles/rply-static.dir/rply.c.o
+/usr/bin/gcc-ranlib ../../../lib/librply.a

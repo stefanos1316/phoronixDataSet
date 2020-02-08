@@ -1,0 +1,62 @@
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+
+Compile-time debug symbols are available
+Running on sgeorgiou
+Planning to run with 8 processors
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/rt -B -M -s512 -H127 -J0 -o bldg391.pix
+opendb /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/bin/../share/db/bldg391.g;
+tree all.g;
+db title:  Building 391, with mirrored floors
+DIRBUILD: cpu = 0.00071 sec, elapsed = 0.000716 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=1073, #free=1045, #realloc=6 (28 retained)
+0x7f242bfd2040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.28.0  The BRL-CAD Optical Shader Library
+    Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
+    sgeorgiou@sgeorgiou
+Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
+GETTREE: cpu = 0.009903 sec, elapsed = 0.015301 sec
+    parent: 0.0user 0.0sys 0:00real 500% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=14200, #free=12502, #realloc=6 (1698 retained)
+
+...................Frame     9...................
+PREP: cpu = 0.001498 sec, elapsed = 0.001503 sec
+    parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
+Additional #malloc=919, #free=456, #realloc=4 (463 retained)
+NUBSP: 369 cut, 370 box (370 empty)
+Tree: 203 solids in 68 regions
+Model: X(-2100, 1900), Y(-1600, 2400), Z(-2000, 2000)
+View: 35 azimuth, 25 elevation off of front view
+Orientation: 0.248097, 0.476591, 0.748097, 0.389435
+Eye_pos: 634.501, 863.325, 831.077
+Size: 1800mm
+Grid: (3.51562, 3.51562) mm, (512, 512) pixels
+Beam: radius=1.75781 mm, divergence=0 mm/1mm
+Output file is 'bldg391.pix.9' 512x512 pixels
+Mode: scanline-per-CPU buffering
+
+SHOT: cpu = 234.502 sec, elapsed = 35.3709 sec
+    parent: 234.5user 0.2sys 0:35real 663% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:35real 0% i+d maxrss +pf csw
+Additional #malloc=955, #free=554, #realloc=12 (401 retained)
+277136128 solid/ray intersections: 173268096 hits + 103868032 miss
+pruned 62.5%:  0 model RPP, 772434048 dups skipped, 2933120 solid RPP
+Frame  9:     262144 pixels in     29.31 sec =      8943.01 pixels/sec
+Frame  9:   42011136 rays   in     29.31 sec =   1433205.46 rays/sec (RTFM)
+Frame  9:   42011136 rays   in    234.50 sec =    179150.68 rays/CPU_sec
+Frame  9:   42011136 rays   in     35.37 sec =   1187731.17 rays/sec (wallclock)
+

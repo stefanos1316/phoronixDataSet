@@ -1,0 +1,2 @@
+/usr/bin/gcc-ar qc ../../../../lib/libitkstub.a  CMakeFiles/itkstub.dir/generic/itkStubLib.c.o
+/usr/bin/gcc-ranlib ../../../../lib/libitkstub.a

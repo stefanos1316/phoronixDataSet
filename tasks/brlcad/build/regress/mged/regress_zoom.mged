@@ -1,0 +1,9 @@
+source /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/regress/mged/regression_resources.tcl
+
+puts "*** Testing 'zoom' command ***"
+
+size
+zoom 30
+size
+
+puts "*** 'zoom' testing completed ***"

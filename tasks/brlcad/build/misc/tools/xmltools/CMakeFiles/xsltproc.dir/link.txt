@@ -1,0 +1,1 @@
+/usr/bin/cc  -w   -m64 -g -ggdb3 -rdynamic CMakeFiles/xsltproc.dir/xsltproc.c.o  -o ../../../bin/xsltproc -Wl,-rpath,/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/lib ../../../lib/libexslt.so ../../../lib/libxslt.so ../../../lib/libxml.so -ldl -lpthread -lm 
