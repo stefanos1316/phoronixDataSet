@@ -16,9 +16,11 @@
 #		"cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" "cpp-perf-bench mathlib" "cpp-perf-bench random_numbers" \
 #		"dacapo eclipse java -jar dacapo.jar -t $(nproc --all) --window 10 eclipse" "dacapo h2 java -jar dacapo.jar -t $(nproc --all) --window 10 h2" \
 #		"dacapo jython java -jar dacapo.jar -t $(nproc --all) --window 10 jython" "dacapo tradebeans java -jar dacapo.jar -t $(nproc --all) --window 10 tradebeans" \
-#		"dacapo tradesoap java -jar dacapo.jar -t $(nproc --all) --window 10 tradesoap") 
+#		"dacapo tradesoap java -jar dacapo.jar -t $(nproc --all) --window 10 tradesoap" "ebizzy -S 30") 
 
-tasks=("ebizzy -S 30")
+tasks=("glibc-bench bench-ffsll" "glibc-bench bench-ffs" "glibc-bench bench-pthread_once" "glibc-bench bench-tanh" "glibc-bench bench-sqrt" \
+	"glibc-bench bench-sin" "glibc-bench bench-cos" "glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" \
+ 	"glibc-bench bench-sinh" "glibc-bench bench-modf" "glibc-bench bench-exp" "glibc-bench bench-log2")
 
 
 # Check array if more exist with the same name combine with last argument (testcase)
@@ -121,6 +123,10 @@ for task in "${tasks[@]}"; do
 		("povrays")
 			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/time_${taskName}.txt ;;
 		("brlcad")
+			cd ../tasks/${benchmark}
+			time (./${task}) 2> ../../results/time_${taskName}.txt
+			cd ../../scripts ;;
+		glibc-bench*)
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;

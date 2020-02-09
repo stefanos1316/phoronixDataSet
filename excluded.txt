@@ -1,3 +1,5 @@
 audio bench suites
 timedcode compilation
 C/C++ Compiler Test
+geekbench novabench that require licence key for commandlin automation
+

@@ -1,0 +1,13 @@
+Build instructions (note the use of USE_CLOCK_GETTIME=1):
+
+    wget http://ftp.gnu.org/gnu/libc/glibc-2.28.tar.xz
+    unp glibc-2.28.tar.xz
+    cd glibc-2.28
+    mkdir build
+    cd build
+    ../configure
+    make
+    make USE_CLOCK_GETTIME=1 bench-build
+    cd benchtests
+    mkdir glibc-benchmarks
+    for f in *; do [ -x $f -a ! -d $f ] && cp -a $f glibc-benchmarks; done
