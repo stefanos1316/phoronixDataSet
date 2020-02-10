@@ -18,22 +18,22 @@ Planning to run with 8 processors
 opendb ./build/bench/../share/db/moss.g;
 tree all.g;
 db title:  Gary Moss's "World on a Platter"
-DIRBUILD: cpu = 0.000216 sec, elapsed = 0.000438 sec
+DIRBUILD: cpu = 1e-05 sec, elapsed = 0.000417 sec
     parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
 Additional #malloc=117, #free=103, #realloc=6 (14 retained)
-0x7f006c1aa040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+0x7fbc24d7f040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
 BRL-CAD Release 7.28.0  The BRL-CAD Optical Shader Library
     Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
     sgeorgiou@sgeorgiou
 Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
-GETTREE: cpu = 0.002553 sec, elapsed = 0.004725 sec
+GETTREE: cpu = 1e-05 sec, elapsed = 0.004154 sec
     parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
 Additional #malloc=1240, #free=1144, #realloc=5 (96 retained)
 
-...................Frame    15...................
-PREP: cpu = 8.2e-05 sec, elapsed = 0.000165 sec
+...................Frame    12...................
+PREP: cpu = 1e-05 sec, elapsed = 0.000193 sec
     parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
 Additional #malloc=120, #free=61, #realloc=4 (59 retained)
@@ -46,17 +46,17 @@ Eye_pos: 63.7999, 32.7177, 33.6666
 Size: 157.203mm
 Grid: (0.307036, 0.307036) mm, (512, 512) pixels
 Beam: radius=0.153518 mm, divergence=0 mm/1mm
-Output file is 'moss.pix.15' 512x512 pixels
+Output file is 'moss.pix.12' 512x512 pixels
 Mode: scanline-per-CPU buffering
 
-SHOT: cpu = 281.96 sec, elapsed = 39.5776 sec
-    parent: 281.9user 0.3sys 0:39real 713% i+d maxrss +pf csw
-  children: 0.0user 0.0sys 0:39real 0% i+d maxrss +pf csw
-Additional #malloc=853, #free=554, #realloc=10 (299 retained)
-214209536 solid/ray intersections: 144734720 hits + 69474816 miss
-pruned 67.6%:  23053824 model RPP, 138479616 dups skipped, 35219968 solid RPP
-Frame 15:     262144 pixels in     35.24 sec =      7437.77 pixels/sec
-Frame 15:  159331328 rays   in     35.24 sec =   4520680.81 rays/sec (RTFM)
-Frame 15:  159331328 rays   in    281.96 sec =    565085.10 rays/CPU_sec
-Frame 15:  159331328 rays   in     39.58 sec =   4025796.01 rays/sec (wallclock)
+SHOT: cpu = 282.917 sec, elapsed = 41.9505 sec
+    parent: 282.9user 0.1sys 0:41real 674% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:41real 0% i+d maxrss +pf csw
+Additional #malloc=853, #free=554, #realloc=11 (299 retained)
+214891520 solid/ray intersections: 145281536 hits + 69609984 miss
+pruned 67.6%:  22635008 model RPP, 138726400 dups skipped, 35172864 solid RPP
+Frame 12:     262144 pixels in     35.36 sec =      7412.61 pixels/sec
+Frame 12:  159277056 rays   in     35.36 sec =   4503858.30 rays/sec (RTFM)
+Frame 12:  159277056 rays   in    282.92 sec =    562982.29 rays/CPU_sec
+Frame 12:  159277056 rays   in     41.95 sec =   3796783.56 rays/sec (wallclock)
 

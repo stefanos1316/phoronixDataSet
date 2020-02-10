@@ -17,3 +17,6 @@ tasks/scimark2/*.o
 tasks/dcraw/*.NEF
 tasks/minions/test_instances/*
 tasks/dacapo/dacapo.jar
+tasks/gmpbench/RES-*
+tasks/brlcad/*.pix
+tasks/brlcad/*.log

@@ -1,0 +1,2 @@
+Make sure to move the necessary binaries (x/sys in the associated home directory where all the go binaries are found)`:wq
+

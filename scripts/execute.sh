@@ -1,27 +1,28 @@
 #!/bin/bash
 
-# tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "crafty bench quit" "tscp" \
-# 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-5.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
-# 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../tasks/dcraw/DSC_50*" \
-# 		"nero2d ../inputs/nero2d.igf" "minions ../inputs/minions.minion" "hmmr -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
-# 		"mafft --thread 1 --localpair --maxiterate 1000000 ../inputs/pyruvate_decarboxylase.fasta" "povray -benchmark <<< 1" \
-# 		"rodinia euler3d_cpu_double ../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
-# 		"rodinia sc_omp 10 30 512 65536 65536 2000 none output.txt $(nproc --all) && rm output.txt" "openssl speed rsa4096" \
-#		"x264  -o /dev/null --slow --threads $(nproc --all) ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m" \
-# 		"x265 ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  /dev/null" "build-linux-kernel" "build-gcc" "ctx_clock" \
-#		"sysbench cpu --cpu-max-prime=20000000 --threads=8 run" "sysbench memory --memory-total-size=100G --threads=8 run" \
-#		"blake2 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" "c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \ 
-#		"cachebench read -r -m 9" "cachebench write -w -m 9" "cachebench mixed -b -m 9" "cachebench memset -s -m 9" "cachebench memcpy -p -m 9" \
-#		"cloverleaf" "brlcad run -P $(nproc --all)" "cpp-perf-bench stepanov_abstraction" "cpp-perf-bench stepanov_vector" \
-#		"cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" "cpp-perf-bench mathlib" "cpp-perf-bench random_numbers" \
-#		"dacapo eclipse java -jar dacapo.jar -t $(nproc --all) --window 10 eclipse" "dacapo h2 java -jar dacapo.jar -t $(nproc --all) --window 10 h2" \
-#		"dacapo jython java -jar dacapo.jar -t $(nproc --all) --window 10 jython" "dacapo tradebeans java -jar dacapo.jar -t $(nproc --all) --window 10 tradebeans" \
-#		"dacapo tradesoap java -jar dacapo.jar -t $(nproc --all) --window 10 tradesoap" "ebizzy -S 30" "glibc-bench bench-ffsll" "glibc-bench bench-ffs" \
-#		"glibc-bench bench-pthread_once" "glibc-bench bench-tanh" "glibc-bench bench-sqrt" "glibc-bench bench-sin" "glibc-bench bench-cos" \
-#		"glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" "glibc-bench bench-sinh" "glibc-bench bench-modf" \
-#		"glibc-bench bench-exp" "glibc-bench bench-log2") 
-
-tasks=(  )
+stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "crafty bench quit" "tscp" \
+		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-5.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
+		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../tasks/dcraw/DSC_50*" \
+		"nero2d ../inputs/nero2d.igf" "minions ../inputs/minions.minion" "hmmr -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
+		"mafft --thread 1 --localpair --maxiterate 1000000 ../inputs/pyruvate_decarboxylase.fasta"  \
+		"rodinia euler3d_cpu_double ../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
+		"rodinia sc_omp 10 30 512 65536 65536 2000 none output.txt $(nproc --all) && rm output.txt" "openssl speed rsa4096" \
+		"x264  -o /dev/null --slow --threads $(nproc --all) ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m" \
+		"x265 ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  /dev/null"  "ctx_clock" \
+		"sysbench cpu --cpu-max-prime=20000000 --threads=8 run" "sysbench memory --memory-total-size=100G --threads=8 run" \
+		"blake2 100" "c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \ 
+		"cachebench read -r -m 9" "cachebench write -w -m 9" "cachebench mixed -b -m 9" "cachebench memset -s -m 9" "cachebench memcpy -p -m 9" \
+		"cloverleaf" "brlcad run -P $(nproc --all)" "cpp-perf-bench stepanov_abstraction" "cpp-perf-bench stepanov_vector" \
+		"cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" "cpp-perf-bench mathlib" "cpp-perf-bench random_numbers" \
+		"dacapo eclipse java -jar dacapo.jar -t $(nproc --all) --window 10 eclipse" "dacapo h2 java -jar dacapo.jar -t $(nproc --all) --window 10 h2" \
+		"dacapo jython java -jar dacapo.jar -t $(nproc --all) --window 10 jython" "dacapo tradebeans java -jar dacapo.jar -t $(nproc --all) --window 10 tradebeans" \
+		"dacapo tradesoap java -jar dacapo.jar -t $(nproc --all) --window 10 tradesoap" "ebizzy -S 30" "glibc-bench bench-ffsll" "glibc-bench bench-ffs" \
+		"glibc-bench bench-pthread_once" "glibc-bench bench-tanh" "glibc-bench bench-sqrt" "glibc-bench bench-sin" "glibc-bench bench-cos" \
+		"glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" "glibc-bench bench-sinh" "glibc-bench bench-modf" \
+		"glibc-bench bench-exp" "glibc-bench bench-log2" "gobench build go run build.go" "gobench http go run http.go" \
+		"blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5") 
+# timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc")
+tasks=("himeno XL" "hint float" "hint doulbe" "hpcg" "gobench build go run build.go" "gobench http go run http.go")
 
 
 # Check array if more exist with the same name combine with last argument (testcase)
@@ -96,11 +97,7 @@ for task in "${tasks[@]}"; do
 		("xz")
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
 			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
-		("gmpbench")
-			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts ;;
-		("sudokut.sh")
+		("sudokut.sh" | "brlcad" | "gmpbench")
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;
@@ -123,28 +120,8 @@ for task in "${tasks[@]}"; do
 			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
 		("povrays")
 			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/time_${taskName}.txt ;;
-		("brlcad")
+		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* )
 			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts ;;
-		glibc-bench*)
-			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts ;;
-		dacapo*)
-			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts ;;
-		cpp-perf-bench*)
-			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts ;;	
-		rodinia*)
-			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts ;;
-		byte*)
-			cd ../tasks/byte
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;
 		(*) time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
@@ -155,5 +132,5 @@ for task in "${tasks[@]}"; do
 done
 
 dumpGarbage
-
 echo "Done with all"
+exit

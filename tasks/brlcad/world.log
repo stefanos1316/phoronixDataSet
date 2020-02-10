@@ -14,26 +14,26 @@ BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
 Compile-time debug symbols are available
 Running on sgeorgiou
 Planning to run with 8 processors
-./build/bench/../bin/rt -B -M -s512 -H255 -J0 -P 8 -o world.pix
+./build/bench/../bin/rt -B -M -s512 -H127 -J0 -P 8 -o world.pix
 opendb ./build/bench/../share/db/world.g;
 tree all.g;
 db title:  Colorful version of the Moss World
-DIRBUILD: cpu = 0.000492 sec, elapsed = 0.000501 sec
+DIRBUILD: cpu = 1e-05 sec, elapsed = 0.000429 sec
     parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
 Additional #malloc=147, #free=133, #realloc=6 (14 retained)
-0x7ffaa7606040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+0x7f58e2730040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
 BRL-CAD Release 7.28.0  The BRL-CAD Optical Shader Library
     Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
     sgeorgiou@sgeorgiou
 Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
-GETTREE: cpu = 0.001959 sec, elapsed = 0.002047 sec
+GETTREE: cpu = 0.004518 sec, elapsed = 0.004755 sec
     parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
 Additional #malloc=1730, #free=1597, #realloc=5 (133 retained)
 
 ...................Frame     8...................
-PREP: cpu = 0.000124 sec, elapsed = 0.000188 sec
+PREP: cpu = 5e-05 sec, elapsed = 0.000179 sec
     parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
 Additional #malloc=190, #free=96, #realloc=4 (94 retained)
@@ -49,14 +49,14 @@ Beam: radius=0.153518 mm, divergence=0 mm/1mm
 Output file is 'world.pix.8' 512x512 pixels
 Mode: scanline-per-CPU buffering
 
-SHOT: cpu = 461.805 sec, elapsed = 64.9847 sec
-    parent: 461.8user 0.4sys 1:04real 711% i+d maxrss +pf csw
-  children: 0.0user 0.0sys 1:04real 0% i+d maxrss +pf csw
+SHOT: cpu = 225.204 sec, elapsed = 36.7456 sec
+    parent: 225.2user 0.1sys 0:36real 613% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 0:36real 0% i+d maxrss +pf csw
 Additional #malloc=930, #free=556, #realloc=11 (374 retained)
-379523328 solid/ray intersections: 334296576 hits + 45226752 miss
-pruned 88.1%:  0 model RPP, 1006609408 dups skipped, 35725824 solid RPP
-Frame  8:     262144 pixels in     57.73 sec =      4541.20 pixels/sec
-Frame  8:  109385472 rays   in     57.73 sec =   1894919.56 rays/sec (RTFM)
-Frame  8:  109385472 rays   in    461.81 sec =    236864.95 rays/CPU_sec
-Frame  8:  109385472 rays   in     64.98 sec =   1683250.79 rays/sec (wallclock)
+187233024 solid/ray intersections: 164927616 hits + 22305408 miss
+pruned 88.1%:  0 model RPP, 497439744 dups skipped, 17685760 solid RPP
+Frame  8:     262144 pixels in     28.15 sec =      9312.24 pixels/sec
+Frame  8:   53921536 rays   in     28.15 sec =   1915474.60 rays/sec (RTFM)
+Frame  8:   53921536 rays   in    225.20 sec =    239434.32 rays/CPU_sec
+Frame  8:   53921536 rays   in     36.75 sec =   1467426.62 rays/sec (wallclock)
 

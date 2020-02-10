@@ -1,9 +1,9 @@
 |  BYTE UNIX Benchmarks (Version 3.11)
-|  System -- Linux sgeorgiou 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
-|  Start Benchmark Run: Σαβ 08 Φεβ 2020 10:49:08 πμ EET
+|  System -- Linux sgeorgiou 5.3.0-28-generic #30~18.04.1-Ubuntu SMP Fri Jan 17 06:14:09 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+|  Start Benchmark Run: Κυρ 09 Φεβ 2020 11:06:03 μμ EET
 |   1 interactive users.
 
 Arithmetic Test (type = float)|0.0|lps|0.0|1.0|6
 
-End Benchmark Run: Σαβ 08 Φεβ 2020 10:51:08 πμ EET
+End Benchmark Run: Κυρ 09 Φεβ 2020 11:08:03 μμ EET
   1 interactive users.

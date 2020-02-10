@@ -18,22 +18,22 @@ Planning to run with 8 processors
 opendb ./build/bench/../share/db/sphflake.g;
 tree scene.r;
 db title:  SphereFlake
-DIRBUILD: cpu = 0.000699 sec, elapsed = 0.000704 sec
+DIRBUILD: cpu = 0.000706 sec, elapsed = 0.001066 sec
     parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
 Additional #malloc=954, #free=941, #realloc=5 (13 retained)
-0x7f624ad12040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+0x7f140212b040 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
 BRL-CAD Release 7.28.0  The BRL-CAD Optical Shader Library
     Sat, 08 Feb 2020 20:03:25 +0200, Compilation 0
     sgeorgiou@sgeorgiou
 Additional #malloc=2053, #free=5, #realloc=1 (2048 retained)
-GETTREE: cpu = 0.02177 sec, elapsed = 0.014631 sec
-    parent: 0.0user 0.0sys 0:00real 200% i+d maxrss +pf csw
+GETTREE: cpu = 0.017964 sec, elapsed = 0.019503 sec
+    parent: 0.0user 0.0sys 0:00real 100% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
-Additional #malloc=26417, #free=22218, #realloc=33 (4199 retained)
+Additional #malloc=26417, #free=22218, #realloc=34 (4199 retained)
 
-...................Frame     8...................
-PREP: cpu = 0.001514 sec, elapsed = 0.001518 sec
+...................Frame     7...................
+PREP: cpu = 0.001508 sec, elapsed = 0.00151 sec
     parent: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
   children: 0.0user 0.0sys 0:00real 0% i+d maxrss +pf csw
 Additional #malloc=1370, #free=701, #realloc=4 (669 retained)
@@ -46,17 +46,17 @@ Eye_pos: 24185, -3328.56, 8489.93
 Size: 25562.8mm
 Grid: (49.9274, 49.9274) mm, (512, 512) pixels
 Beam: radius=24.9637 mm, divergence=0 mm/1mm
-Output file is 'sphflake.pix.8' 512x512 pixels
+Output file is 'sphflake.pix.7' 512x512 pixels
 Mode: scanline-per-CPU buffering
 
-SHOT: cpu = 352.845 sec, elapsed = 50.3516 sec
-    parent: 352.8user 0.5sys 0:50real 701% i+d maxrss +pf csw
-  children: 0.0user 0.0sys 0:50real 0% i+d maxrss +pf csw
-Additional #malloc=1202, #free=554, #realloc=11 (648 retained)
-1094899136 solid/ray intersections: 267457408 hits + 827441728 miss
-pruned 24.4%:  0 model RPP, 1055344256 dups skipped, 0 solid RPP
-Frame  8:     262144 pixels in     44.11 sec =      5943.55 pixels/sec
-Frame  8:  105206720 rays   in     44.11 sec =   2385336.83 rays/sec (RTFM)
-Frame  8:  105206720 rays   in    352.84 sec =    298167.10 rays/CPU_sec
-Frame  8:  105206720 rays   in     50.35 sec =   2089443.32 rays/sec (wallclock)
+SHOT: cpu = 319.001 sec, elapsed = 98.547 sec
+    parent: 319.0user 0.6sys 1:38real 324% i+d maxrss +pf csw
+  children: 0.0user 0.0sys 1:38real 0% i+d maxrss +pf csw
+Additional #malloc=1200, #free=554, #realloc=10 (646 retained)
+1102671040 solid/ray intersections: 269367360 hits + 833303680 miss
+pruned 24.4%:  0 model RPP, 1063189952 dups skipped, 0 solid RPP
+Frame  7:     262144 pixels in     39.88 sec =      6574.12 pixels/sec
+Frame  7:  105973632 rays   in     39.88 sec =   2657636.40 rays/sec (RTFM)
+Frame  7:  105973632 rays   in    319.00 sec =    332204.55 rays/CPU_sec
+Frame  7:  105973632 rays   in     98.55 sec =   1075361.52 rays/sec (wallclock)
 

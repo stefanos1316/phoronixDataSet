@@ -47,4 +47,9 @@
     - name: Install dependencies for povray
       apt: 
         name: ['libboost-all-dev', 'libpng-dev', 'libjpeg-dev', 'libtiff-dev']
-        state: present  
+        state: present
+
+    - name: Install dependencies for gobench
+      apt: 
+        name: ['golang']
+        state: present 

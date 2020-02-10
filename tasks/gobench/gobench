@@ -1,0 +1,10 @@
+#!/bin/bash
+
+command=`echo $@ | awk '{first = $1; $1 = ""; print $0; }'`
+if [ $1 == "http" ]; then
+	for j in {1..5}; do
+		eval $command
+	done
+else
+	eval $command
+fi
