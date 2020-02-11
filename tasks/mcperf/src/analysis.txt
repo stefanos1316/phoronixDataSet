@@ -1,0 +1,470 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ns/call  ns/call  name    
+ 16.67      0.10     0.10                             core_loop
+ 15.00      0.19     0.09  1000000    90.01   143.59  call_make_req
+ 13.34      0.27     0.08  7000005    11.43    13.57  _ecb_signal
+  6.67      0.31     0.04  3000000    13.34    13.34  _scnprintf
+  6.67      0.35     0.04  1000206    40.00    40.00  event_wait
+  6.67      0.39     0.04  1000000    40.01    90.73  call_recv
+  6.67      0.43     0.04  1000000    40.01    40.01  conn_sendv
+  3.33      0.45     0.02  7000008     2.86     2.86  timer_now
+  3.33      0.47     0.02  2000370    10.00    10.00  timer_now_update
+  3.33      0.49     0.02  1000000    20.00    87.16  call_send
+  3.33      0.51     0.02                             call_recv_stop
+  3.33      0.53     0.02                             issue_call
+  3.33      0.55     0.02                             trigger
+  2.50      0.57     0.02  1999999     7.50     7.50  gen_fire
+  1.67      0.58     0.01  1000000    10.00    10.00  call_get
+  1.67      0.59     0.01  1000000    10.00    10.00  conn_recv
+  1.67      0.60     0.01                             destroyed
+  0.83      0.60     0.01                             gen_tick
+  0.00      0.60     0.00  2000369     0.00    10.00  timer_tick
+  0.00      0.60     0.00  1000163     0.00    87.14  core_send
+  0.00      0.60     0.00  1000001     0.00     0.00  dist_next_deterministic
+  0.00      0.60     0.00  1000000     0.00     0.00  call_start_timer
+  0.00      0.60     0.00  1000000     0.00    90.73  core_recv
+  0.00      0.60     0.00       25     0.00     0.00  _log_stderr
+  0.00      0.60     0.00       25     0.00     0.00  _vscnprintf
+  0.00      0.60     0.00       21     0.00     0.00  _ecb_register
+  0.00      0.60     0.00        3     0.00     2.86  _gen_start
+  0.00      0.60     0.00        3     0.00     0.00  _mcp_alloc
+  0.00      0.60     0.00        3     0.00     0.00  mcp_atod
+  0.00      0.60     0.00        1     0.00     0.00  _mcp_calloc
+  0.00      0.60     0.00        1     0.00     0.00  _mcp_free
+  0.00      0.60     0.00        1     0.00     0.00  _mcp_zalloc
+  0.00      0.60     0.00        1     0.00     0.00  call_init
+  0.00      0.60     0.00        1     0.00     0.00  conn_get
+  0.00      0.60     0.00        1     0.00     0.00  conn_init
+  0.00      0.60     0.00        1     0.00     0.00  conn_put
+  0.00      0.60     0.00        1     0.00     0.00  core_close
+  0.00      0.60     0.00        1     0.00    13.57  core_connect
+  0.00      0.60     0.00        1     0.00     0.00  core_stop
+  0.00      0.60     0.00        1     0.00     0.00  event_add_conn
+  0.00      0.60     0.00        1     0.00     0.00  event_init
+  0.00      0.60     0.00        1     0.00     0.00  mcp_set_linger
+  0.00      0.60     0.00        1     0.00     0.00  mcp_set_nonblocking
+  0.00      0.60     0.00        1     0.00     0.00  mcp_set_rcvbuf
+  0.00      0.60     0.00        1     0.00     0.00  mcp_set_sndbuf
+  0.00      0.60     0.00        1     0.00     0.00  mcp_set_tcpnodelay
+  0.00      0.60     0.00        1     0.00     2.86  stats_dump
+  0.00      0.60     0.00        1     0.00     0.00  stats_rusage_stop
+  0.00      0.60     0.00        1     0.00     2.86  stats_start
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 1.67% of 0.60 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     56.3    0.10    0.24                 core_loop [1]
+                0.00    0.09 1000000/1000000     core_recv [6]
+                0.00    0.09 1000163/1000163     core_send [7]
+                0.04    0.00 1000206/1000206     event_wait [9]
+                0.00    0.02 2000369/2000369     timer_tick [16]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     31.2    0.02    0.17                 issue_call [2]
+                0.09    0.05 1000000/1000000     call_make_req [3]
+                0.01    0.00 1000000/7000005     _ecb_signal [4]
+                0.01    0.00 1000000/1000000     call_get [18]
+-----------------------------------------------
+                0.09    0.05 1000000/1000000     issue_call [2]
+[3]     23.9    0.09    0.05 1000000         call_make_req [3]
+                0.04    0.00 3000000/3000000     _scnprintf [11]
+                0.01    0.00 1000000/7000005     _ecb_signal [4]
+-----------------------------------------------
+                             1000000             _ecb_signal [4]
+                0.00    0.00       1/7000005     core_start [27]
+                0.00    0.00       1/7000005     core_connect [28]
+                0.00    0.00       1/7000005     make_conn [26]
+                0.00    0.00       2/7000005     core_send [7]
+                0.01    0.00 1000000/7000005     call_make_req [3]
+                0.01    0.00 1000000/7000005     issue_call [2]
+                0.02    0.00 2000000/7000005     call_send [8]
+                0.03    0.01 3000000/7000005     call_recv [5]
+[4]     15.8    0.08    0.02 7000005+1000000 _ecb_signal [4]
+                0.02    0.00 1999999/1999999     gen_fire [17]
+                0.00    0.00       1/1           stats_dump [31]
+                0.00    0.00       1/1           core_stop [46]
+                             1000000             _ecb_signal [4]
+-----------------------------------------------
+                0.04    0.05 1000000/1000000     core_recv [6]
+[5]     15.1    0.04    0.05 1000000         call_recv [5]
+                0.03    0.01 3000000/7000005     _ecb_signal [4]
+                0.01    0.00 1000000/1000000     conn_recv [19]
+-----------------------------------------------
+                0.00    0.09 1000000/1000000     core_loop [1]
+[6]     15.1    0.00    0.09 1000000         core_recv [6]
+                0.04    0.05 1000000/1000000     call_recv [5]
+-----------------------------------------------
+                0.00    0.09 1000163/1000163     core_loop [1]
+[7]     14.5    0.00    0.09 1000163         core_send [7]
+                0.02    0.07 1000000/1000000     call_send [8]
+                0.00    0.00       2/7000005     _ecb_signal [4]
+-----------------------------------------------
+                0.02    0.07 1000000/1000000     core_send [7]
+[8]     14.5    0.02    0.07 1000000         call_send [8]
+                0.04    0.00 1000000/1000000     conn_sendv [10]
+                0.02    0.00 2000000/7000005     _ecb_signal [4]
+                0.00    0.00 1000000/1000000     call_start_timer [39]
+-----------------------------------------------
+                0.04    0.00 1000206/1000206     core_loop [1]
+[9]      6.7    0.04    0.00 1000206         event_wait [9]
+-----------------------------------------------
+                0.04    0.00 1000000/1000000     call_send [8]
+[10]     6.7    0.04    0.00 1000000         conn_sendv [10]
+-----------------------------------------------
+                0.04    0.00 3000000/3000000     call_make_req [3]
+[11]     6.7    0.04    0.00 3000000         _scnprintf [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     3.8    0.02    0.00                 call_recv_stop [12]
+                0.00    0.00 1000000/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     3.3    0.02    0.00                 trigger [13]
+                0.00    0.00       1/3           _gen_start [30]
+-----------------------------------------------
+                0.00    0.00       1/2000370     timer_init [29]
+                0.02    0.00 2000369/2000370     timer_tick [16]
+[14]     3.3    0.02    0.00 2000370         timer_now_update [14]
+-----------------------------------------------
+                0.00    0.00       1/7000008     stats_start [32]
+                0.00    0.00       1/7000008     stats_dump [31]
+                0.00    0.00       1/7000008     conn_destroyed [35]
+                0.00    0.00       1/7000008     conn_connected [33]
+                0.00    0.00       1/7000008     conn_connecting [34]
+                0.00    0.00       3/7000008     _gen_start [30]
+                0.00    0.00 1000000/7000008     call_recv_stop [12]
+                0.00    0.00 1000000/7000008     call_send_start [25]
+                0.00    0.00 1000000/7000008     call_issue_start [24]
+                0.01    0.00 2000000/7000008     call_send_stop [22]
+                0.01    0.00 2000000/7000008     call_recv_start [21]
+[15]     3.3    0.02    0.00 7000008         timer_now [15]
+-----------------------------------------------
+                0.00    0.02 2000369/2000369     core_loop [1]
+[16]     3.3    0.00    0.02 2000369         timer_tick [16]
+                0.02    0.00 2000369/2000370     timer_now_update [14]
+-----------------------------------------------
+                0.02    0.00 1999999/1999999     _ecb_signal [4]
+[17]     2.5    0.02    0.00 1999999         gen_fire [17]
+-----------------------------------------------
+                0.01    0.00 1000000/1000000     issue_call [2]
+[18]     1.7    0.01    0.00 1000000         call_get [18]
+                0.00    0.00       2/3           _mcp_alloc [119]
+-----------------------------------------------
+                0.01    0.00 1000000/1000000     call_recv [5]
+[19]     1.7    0.01    0.00 1000000         conn_recv [19]
+-----------------------------------------------
+                                                 <spontaneous>
+[20]     1.7    0.01    0.00                 destroyed [20]
+-----------------------------------------------
+                                                 <spontaneous>
+[21]     1.0    0.00    0.01                 call_recv_start [21]
+                0.01    0.00 2000000/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     1.0    0.00    0.01                 call_send_stop [22]
+                0.01    0.00 2000000/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[23]     0.8    0.01    0.00                 gen_tick [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[24]     0.5    0.00    0.00                 call_issue_start [24]
+                0.00    0.00 1000000/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[25]     0.5    0.00    0.00                 call_send_start [25]
+                0.00    0.00 1000000/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[26]     0.0    0.00    0.00                 make_conn [26]
+                0.00    0.00       1/1           core_connect [28]
+                0.00    0.00       1/7000005     _ecb_signal [4]
+                0.00    0.00       1/1           conn_get [42]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     0.0    0.00    0.00                 core_start [27]
+                0.00    0.00       1/7000005     _ecb_signal [4]
+                0.00    0.00       1/1           stats_start [32]
+-----------------------------------------------
+                0.00    0.00       1/1           make_conn [26]
+[28]     0.0    0.00    0.00       1         core_connect [28]
+                0.00    0.00       1/7000005     _ecb_signal [4]
+                0.00    0.00       1/1           mcp_set_nonblocking [50]
+                0.00    0.00       1/1           mcp_set_linger [49]
+                0.00    0.00       1/1           mcp_set_tcpnodelay [53]
+                0.00    0.00       1/1           mcp_set_sndbuf [52]
+                0.00    0.00       1/1           mcp_set_rcvbuf [51]
+                0.00    0.00       1/1           event_add_conn [47]
+-----------------------------------------------
+                                                 <spontaneous>
+[29]     0.0    0.00    0.00                 timer_init [29]
+                0.00    0.00       1/2000370     timer_now_update [14]
+-----------------------------------------------
+                0.00    0.00       1/3           trigger [13]
+                0.00    0.00       1/3           trigger [36]
+                0.00    0.00       1/3           trigger [37]
+[30]     0.0    0.00    0.00       3         _gen_start [30]
+                0.00    0.00       3/7000008     timer_now [15]
+                0.00    0.00       3/21          _ecb_register [118]
+-----------------------------------------------
+                0.00    0.00       1/1           _ecb_signal [4]
+[31]     0.0    0.00    0.00       1         stats_dump [31]
+                0.00    0.00       1/7000008     timer_now [15]
+                0.00    0.00      25/25          _log_stderr [116]
+                0.00    0.00       1/1           stats_rusage_stop [54]
+-----------------------------------------------
+                0.00    0.00       1/1           core_start [27]
+[32]     0.0    0.00    0.00       1         stats_start [32]
+                0.00    0.00       1/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.0    0.00    0.00                 conn_connected [33]
+                0.00    0.00       1/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[34]     0.0    0.00    0.00                 conn_connecting [34]
+                0.00    0.00       1/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[35]     0.0    0.00    0.00                 conn_destroyed [35]
+                0.00    0.00       1/7000008     timer_now [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[36]     0.0    0.00    0.00                 trigger [36]
+                0.00    0.00       1/3           _gen_start [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[37]     0.0    0.00    0.00                 trigger [37]
+                0.00    0.00       1/3           _gen_start [30]
+-----------------------------------------------
+                0.00    0.00 1000001/1000001     item_size_ticker [87]
+[38]     0.0    0.00    0.00 1000001         dist_next_deterministic [38]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     call_send [8]
+[39]     0.0    0.00    0.00 1000000         call_start_timer [39]
+-----------------------------------------------
+                0.00    0.00       3/3           mcp_get_dist_opt [98]
+[40]     0.0    0.00    0.00       3         mcp_atod [40]
+-----------------------------------------------
+                0.00    0.00       1/1           core_init [66]
+[41]     0.0    0.00    0.00       1         call_init [41]
+-----------------------------------------------
+                0.00    0.00       1/1           make_conn [26]
+[42]     0.0    0.00    0.00       1         conn_get [42]
+                0.00    0.00       1/3           _mcp_alloc [119]
+-----------------------------------------------
+                0.00    0.00       1/1           core_init [66]
+[43]     0.0    0.00    0.00       1         conn_init [43]
+-----------------------------------------------
+                0.00    0.00       1/1           destroyed [70]
+[44]     0.0    0.00    0.00       1         conn_put [44]
+-----------------------------------------------
+                0.00    0.00       1/1           destroyed [70]
+[45]     0.0    0.00    0.00       1         core_close [45]
+-----------------------------------------------
+                0.00    0.00       1/1           _ecb_signal [4]
+[46]     0.0    0.00    0.00       1         core_stop [46]
+                0.00    0.00       1/1           _mcp_free [121]
+-----------------------------------------------
+                0.00    0.00       1/1           core_connect [28]
+[47]     0.0    0.00    0.00       1         event_add_conn [47]
+-----------------------------------------------
+                0.00    0.00       1/1           core_init [66]
+[48]     0.0    0.00    0.00       1         event_init [48]
+                0.00    0.00       1/1           _mcp_zalloc [122]
+                0.00    0.00       1/1           _mcp_calloc [120]
+-----------------------------------------------
+                0.00    0.00       1/1           core_connect [28]
+[49]     0.0    0.00    0.00       1         mcp_set_linger [49]
+-----------------------------------------------
+                0.00    0.00       1/1           core_connect [28]
+[50]     0.0    0.00    0.00       1         mcp_set_nonblocking [50]
+-----------------------------------------------
+                0.00    0.00       1/1           core_connect [28]
+[51]     0.0    0.00    0.00       1         mcp_set_rcvbuf [51]
+-----------------------------------------------
+                0.00    0.00       1/1           core_connect [28]
+[52]     0.0    0.00    0.00       1         mcp_set_sndbuf [52]
+-----------------------------------------------
+                0.00    0.00       1/1           core_connect [28]
+[53]     0.0    0.00    0.00       1         mcp_set_tcpnodelay [53]
+-----------------------------------------------
+                0.00    0.00       1/1           stats_dump [31]
+[54]     0.0    0.00    0.00       1         stats_rusage_stop [54]
+-----------------------------------------------
+                0.00    0.00      25/25          stats_dump [31]
+[116]    0.0    0.00    0.00      25         _log_stderr [116]
+                0.00    0.00      25/25          _vscnprintf [117]
+-----------------------------------------------
+                0.00    0.00      25/25          _log_stderr [116]
+[117]    0.0    0.00    0.00      25         _vscnprintf [117]
+-----------------------------------------------
+                0.00    0.00       1/21          init [84]
+                0.00    0.00       2/21          init [82]
+                0.00    0.00       2/21          init [83]
+                0.00    0.00       3/21          _gen_start [30]
+                0.00    0.00       6/21          init [86]
+                0.00    0.00       7/21          init [85]
+[118]    0.0    0.00    0.00      21         _ecb_register [118]
+-----------------------------------------------
+                0.00    0.00       1/3           conn_get [42]
+                0.00    0.00       2/3           call_get [18]
+[119]    0.0    0.00    0.00       3         _mcp_alloc [119]
+-----------------------------------------------
+                0.00    0.00       1/1           event_init [48]
+[120]    0.0    0.00    0.00       1         _mcp_calloc [120]
+-----------------------------------------------
+                0.00    0.00       1/1           core_stop [46]
+[121]    0.0    0.00    0.00       1         _mcp_free [121]
+-----------------------------------------------
+                0.00    0.00       1/1           event_init [48]
+[122]    0.0    0.00    0.00       1         _mcp_zalloc [122]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [118] _ecb_register          [42] conn_get               [23] gen_tick (mcp_generator.c)
+   [4] _ecb_signal            [43] conn_init               [2] issue_call (mcp_call_generator.c)
+  [30] _gen_start             [44] conn_put               [40] mcp_atod
+ [116] _log_stderr            [19] conn_recv              [49] mcp_set_linger
+ [119] _mcp_alloc             [10] conn_sendv             [50] mcp_set_nonblocking
+ [120] _mcp_calloc            [45] core_close             [51] mcp_set_rcvbuf
+ [121] _mcp_free              [28] core_connect           [52] mcp_set_sndbuf
+ [122] _mcp_zalloc             [1] core_loop              [53] mcp_set_tcpnodelay
+  [11] _scnprintf              [6] core_recv              [31] stats_dump
+ [117] _vscnprintf             [7] core_send              [54] stats_rusage_stop (mcp_stats.c)
+  [18] call_get               [46] core_stop              [32] stats_start
+  [41] call_init              [20] destroyed (mcp_call_generator.c) [15] timer_now
+   [3] call_make_req          [38] dist_next_deterministic (mcp_distribution.c) [14] timer_now_update (mcp_timer.c)
+   [5] call_recv              [47] event_add_conn         [16] timer_tick
+  [12] call_recv_stop (mcp_call_stats.c) [48] event_init  [13] trigger (mcp_call_generator.c)
+   [8] call_send               [9] event_wait
+  [39] call_start_timer (mcp_call.c) [17] gen_fire (mcp_generator.c)

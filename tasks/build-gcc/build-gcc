@@ -7,3 +7,4 @@ make defconfig
 make clean
 make -s -j $(nproc --all)
 cd ../
+rm -rf gcc-8.2.0

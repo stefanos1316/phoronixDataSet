@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/mkl-dnn/src/cpu/jit_utils/jitprofiling/ittnotify_config.h
+stddef.h
+-
+tchar.h
+-
+stdint.h
+-
+wchar.h
+-
+windows.h
+-
+dlfcn.h
+-
+wchar.h
+-
+pthread.h
+-
+ittnotify_types.h
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/mkl-dnn/src/cpu/jit_utils/jitprofiling/ittnotify_types.h
+
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/mkl-dnn/src/cpu/jit_utils/jitprofiling/ittnotify_types.h
+
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/mkl-dnn/src/cpu/jit_utils/jitprofiling/jitprofiling.c
+ittnotify_config.h
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/mkl-dnn/src/cpu/jit_utils/jitprofiling/ittnotify_config.h
+windows.h
+-
+malloc.h
+-
+stdlib.h
+-
+jitprofiling.h
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/mkl-dnn/src/cpu/jit_utils/jitprofiling/jitprofiling.h
+
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/mkl-dnn/src/cpu/jit_utils/jitprofiling/jitprofiling.h
+

@@ -6,3 +6,4 @@ yes "" | make oldconfig
 make clean
 sudo make -s -j $(nproc --all)
 cd ../
+rm -rf ./linux-5.3

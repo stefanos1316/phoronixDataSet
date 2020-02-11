@@ -1,6 +1,6 @@
 #!/bin/bash
 
-stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "crafty bench quit" "tscp" \
+stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-5.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../tasks/dcraw/DSC_50*" \
 		"nero2d ../inputs/nero2d.igf" "minions ../inputs/minions.minion" "hmmr -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
@@ -21,13 +21,23 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" "glibc-bench bench-sinh" "glibc-bench bench-modf" \
 		"glibc-bench bench-exp" "glibc-bench bench-log2" "gobench build go run build.go" "gobench http go run http.go" \
 		"blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" "himeno XL" "hint float" "hint double" "hpcg" \
-		"john-the-ripper bcrypt ./john --test=30 --format=bcrypt" "john-the-ripper md5crypt ./john --test=30 --format=md5crypt" "lammps") 
+		"john-the-ripper bcrypt ./john --test=30 --format=bcrypt" "john-the-ripper md5crypt ./john --test=30 --format=md5crypt" "lammps" \
+		"lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
+		"lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" \
+		"mbw 128 MiB -n 100 -t2" "mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" "mbw 8192 MiB -n 100 -t2" \
+		"mcperf get ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=get" \
+		"mcperf set ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=set" \
+		"mcperf delete ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=delete" \
+		"mcperf add ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=add" \
+		"mcperf replace ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=replace" \
+		"mcperf append ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=append" \
+		"mcperf prepend ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=prepend" \
+		"mkl-dnn conv_all ./benchdnn --mode=p --conv --batch=inputs/conv/conv_all" "mkl-dnn conv_googlenet_v3 ./benchdnn --mode=p --conv --batch=inputs/conv/conv_googlenet_v3" \
+		"mkl-dnn conv_alexnet ./benchdnn --mode=p --conv --batch=inputs/conv/conv_alexnet" "mkl-dnn ip_1d ./benchdnn --mode=p --ip --batch=inputs/ip/ip_1d" \
+		"mkl-dnn ip_all ./benchdnn --mode=p --ip --batch=inputs/ip/ip_all" "mkl-dnn rnn_training ./benchdnn --mode=p --rnn --batch=inputs/rnn/rnn_training" "nginx") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc")
-tasks=("gobench build /usr/local/go/bin/go run build.go" "gobench http /usr/local/go/bin/gogo run http.go" \
-	"lzbench  -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
-	"lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18")
-	
-
+tasks=("gobench build -E /usr/local/go/bin/go run build.go" "gobench http -E /usr/local/go/bin/go run http.go" \
+	 "node-express-loadtest" "numenta-nab")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -35,6 +45,16 @@ function startServers {
 		sudo /usr/local/apache2/bin/apachectl -k stop
 		sudo rm -f /usr/local/apache2/logs/* 
 		sudo /usr/local/apache2/bin/apachectl -k start
+	fi
+
+	if [ $1 == "nginx" ]; then
+		sudo /usr/local/nginx/sbin/nginx -s stop
+		sudo rm -f /usr/local/nginx/logs/* 
+		sudo /usr/local/nginx/sbin/nginx
+	fi
+
+	if [ $1 == "mcperf" ]; then
+		sudo memcached &
 	fi
 }
 
@@ -91,7 +111,7 @@ for task in "${tasks[@]}"; do
 
 	totalTime=0
 	case "$taskName" in
-		("apache") 
+		("apache" | "nginx" ) 
 			startServers $task
 			time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/time_${taskName}.txt
 			getTimeInSeconds ../results/time_${taskName}.txt ;;
@@ -101,23 +121,17 @@ for task in "${tasks[@]}"; do
 		("xz")
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
 			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
-		("sudokut.sh" | "brlcad" | "gmpbench" | "lammps")
-			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
-			cd ../../scripts ;;
 		("build-linux-kernel")
 			tar -xzvf ../inputs/linux-5.3.tar.gz
 			mv ./linux-5.3 ../tasks/${benchmark}
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
-			rm -rf ./linux-5.3
 			cd ../../scripts ;;
 		("build-gcc")
 			tar -xzvf ../inputs/gcc-8.2.0.tar.gz
 			mv ./gcc-8.2.0 ../tasks/${benchmark}
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
-			rm -rf ./gcc-8.2.0
 			cd ../../scripts ;;
 		("cloverleaf")
 			cp ../inputs/clover.in ./
@@ -129,7 +143,11 @@ for task in "${tasks[@]}"; do
 			cd ../../scripts ;;
 		("povrays")
 			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/time_${taskName}.txt ;;
-		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench*)
+		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* \
+		| mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps)
+			if [ $benchmark == "mcperf" ]; then
+				startServers $benchmark
+			fi
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;
