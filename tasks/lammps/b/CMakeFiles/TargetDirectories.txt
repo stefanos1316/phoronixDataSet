@@ -1,0 +1,9 @@
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/install/strip.dir
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/install/local.dir
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/install.dir
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/gitversion.dir
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/install-python.dir
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/lmp.dir
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/edit_cache.dir
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/rebuild_cache.dir
+/home/sgeorgiou/GitHub/phoronixDataSet/tasks/lammps/b/CMakeFiles/list_install_components.dir

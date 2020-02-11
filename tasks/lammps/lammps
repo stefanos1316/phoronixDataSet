@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd bench
+mpirun --allow-run-as-root -np 7 ../b/lmp
+cd ../

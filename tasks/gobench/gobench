@@ -3,8 +3,8 @@
 command=`echo $@ | awk '{first = $1; $1 = ""; print $0; }'`
 if [ $1 == "http" ]; then
 	for j in {1..5}; do
-		eval $command
+		go run http.go
 	done
 else
-	eval $command
+	go run build.go
 fi

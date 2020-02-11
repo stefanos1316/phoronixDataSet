@@ -20,9 +20,13 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"glibc-bench bench-pthread_once" "glibc-bench bench-tanh" "glibc-bench bench-sqrt" "glibc-bench bench-sin" "glibc-bench bench-cos" \
 		"glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" "glibc-bench bench-sinh" "glibc-bench bench-modf" \
 		"glibc-bench bench-exp" "glibc-bench bench-log2" "gobench build go run build.go" "gobench http go run http.go" \
-		"blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5") 
+		"blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" "himeno XL" "hint float" "hint double" "hpcg" \
+		"john-the-ripper bcrypt ./john --test=30 --format=bcrypt" "john-the-ripper md5crypt ./john --test=30 --format=md5crypt" "lammps") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc")
-tasks=("himeno XL" "hint float" "hint doulbe" "hpcg" "gobench build go run build.go" "gobench http go run http.go")
+tasks=("gobench build /usr/local/go/bin/go run build.go" "gobench http /usr/local/go/bin/gogo run http.go" \
+	"lzbench  -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
+	"lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18")
+	
 
 
 # Check array if more exist with the same name combine with last argument (testcase)
@@ -97,7 +101,7 @@ for task in "${tasks[@]}"; do
 		("xz")
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
 			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
-		("sudokut.sh" | "brlcad" | "gmpbench")
+		("sudokut.sh" | "brlcad" | "gmpbench" | "lammps")
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;
@@ -118,9 +122,14 @@ for task in "${tasks[@]}"; do
 		("cloverleaf")
 			cp ../inputs/clover.in ./
 			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
+		("hpcg")
+			cp ../input/hpcg.dat ../tasks/hpcg/
+			cd ../tasks/${benchmark}
+			time (./${task}) 2> ../../results/time_${taskName}.txt
+			cd ../../scripts ;;
 		("povrays")
 			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/time_${taskName}.txt ;;
-		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* )
+		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench*)
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;
