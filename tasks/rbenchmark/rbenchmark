@@ -1,0 +1,3 @@
+#!/bin/bash
+
+Rscript R-benchmark-25/R-benchmark-25.R

@@ -1,0 +1,376 @@
+#________________________________________________________________________
+#
+# barebones/poor-man's configure.sh for FOSS by <botao.org>
+# ( to be replaced by the real gnu autotools' stuff )
+# Apr'2012	adjustments for HP-UX
+# Mar'2012	long-double,pow[fl],librt detection
+# Dec'2010	enhanced environment detection + flag parsing
+#________________________________________________________________________
+#
+PRG=swet
+CFH=config.h
+CLD=curses.ld
+RLD=rt.ld
+TMP=./.conftemp
+#TMP=/tmp/.conftemp
+MYPID=$$
+TCS=$TMP/x${MYPID}.c
+TCO=x${MYPID}.o
+TCX=$TMP/x${MYPID}
+LOG=configure.log
+FAVCC=cc
+ALTCC=gcc
+#___________________________________________________________
+#
+if [ "`basename $SHELL`" = "bash" ]
+then
+	eflg=-e
+else
+	x=`echo "x\c" | od -c | tail -1 | tr -d 0`
+	if [ $x -eq 4 ]
+	then
+		eflg=-e
+	fi
+fi
+#___________________________________________________________
+#
+say () {
+	echo $eflg $*
+	echo $eflg $* >> $LOG
+}
+#___________________________________________________________
+#
+cfg_klog () {
+	[ -f $LOG ] && rm -fr $LOG
+}
+#___________________________________________________________
+#
+cfg_exit () {
+	say "+ cleaning up ... \c"
+	[ -f $CFH ] && echo '#endif  /* _CONFIG_H_ */' >> $CFH
+	[ -d $TMP ] && rm -fr $TMP
+	[ -f a.out ] && rm -f a.out
+	[ -f $TCO ] && rm -f $TCO
+	ec=$1
+	[ "$ec" = "" ] && ec=0
+	say "done"
+	[ $zaplog -eq 1 ] && cfg_klog
+	exit $ec
+}
+#___________________________________________________________
+#
+cfg_wipe () {
+	rm -f *.ld Makefile $CFH
+}
+#___________________________________________________________
+#
+cfg_undo () {
+	say "+ unconfiguring ... \c"
+	cfg_wipe
+	say "done"
+	zaplog=1
+	cfg_exit 0
+}
+#___________________________________________________________
+#
+zaplog=0
+if [ $# -gt 0 ]
+then
+	for a in $*
+	do
+		case $a in
+			-u)
+				cfg_undo
+			;;
+			--gcc|--gnu|-g)
+				FAVCC=gcc
+				ALTCC=cc
+			;;
+		esac
+	done
+fi
+#___________________________________________________________
+#
+cfg_klog
+say "+ configuring for {$PRG} @ `date` on `uname -a`"
+say "+ initializing ... \c"
+[ -d $TMP ] && rm -fr $TMP
+mkdir $TMP
+cfg_wipe
+echo '/* ' "config.h for {${PRG}} @ `date` on `uname -a`" ' */' > $CFH
+echo '#ifndef _CONFIG_H_' >> $CFH
+echo '#define _CONFIG_H_' >> $CFH
+say "done"
+#___________________________________________________________
+#
+if [ "$CC" != "" ]
+then
+	FAVCC=$CC
+	if [ "$CC" != "$ALTCC" ]
+	then
+		ALTCC=$CC
+	fi
+fi
+#___________________________________________________________
+#
+say "+ looking for ${FAVCC} ... \c"
+if type ${FAVCC} > /dev/null 2>&1
+then
+	cc=${FAVCC}
+else
+	say "___ MISSING !"
+	say "+ looking for ${ALTCC} ... \c"
+	if type ${ALTCC} > /dev/null 2>&1
+	then
+		cc=${ALTCC}
+	else
+		say "___ MISSING !"
+	fi
+fi
+if [ "$cc" = "" ]
+then
+	echo "___ no compiler !"
+	cfg_exit 1
+else
+	say "found $cc"
+fi
+#___________________________________________________________
+#
+say "+ checking if $cc works ... \c"
+echo "main(){}" > $TCS
+$cc $TCS -o $TCX > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "yes"
+else
+	say "NO"
+	cfg_exit 1
+fi
+#___________________________________________________________
+#
+say "+ looking for curses ... \c"
+if [ -f /usr/local/include/ncurses/curses.h ]
+then
+	cif=ncurses
+	echo "#define USE_NCURSES" >> $CFH
+	echo "-lncurses" >> $CLD
+elif [ -f /usr/include/ncurses/curses.h ]
+then
+	cif=ncurses
+	echo "#define USE_NCURSES" >> $CFH
+	echo "-lncurses" >> $CLD
+elif [ -f /usr/include/curses.h ]
+then
+	cif=curses
+	echo "#define USE_CURSES" >> $CFH
+	echo "-lcurses" >> $CLD
+else
+	cif=not
+fi
+if [ "$cif" = "not" ]
+then
+	say "___ MISSING !"
+	cfg_exit 1
+else
+	say "found $cif"
+fi
+#___________________________________________________________
+#
+say "+ looking for termio ... \c"
+if [ -f /usr/include/asm/termios.h ]
+then
+	tif=asm/termios
+	echo "#define USE_ASM_TIOS" >> $CFH
+elif [ -f /usr/include/sys/termios.h ]
+then
+	tif=sys/termios
+	echo "#define USE_SYS_TIOS" >> $CFH
+elif [ -f /usr/include/termios.h ]
+then
+	tif=termios
+	echo "#define USE_TIOS" >> $CFH
+else
+	tif=not
+fi
+if [ "$tif" = "not" ]
+then
+	say "___ MISSING !"
+	cfg_exit 1
+else
+	say "found $tif"
+fi
+#___________________________________________________________
+#
+say "+ checking if libm works ... \c"
+echo "main(){float x=sqrt(2.0);}" > $TCS
+$cc $TCS -o $TCX -lm > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "yes"
+else
+	say "NO"
+	cfg_exit 1
+fi
+#___________________________________________________________
+#
+say "+ checking if librt works ... \c"
+echo "main(){}" > $TCS
+$cc $TCS -o $TCX -lrt > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "yes"
+	echo "-lrt" >> $RLD
+else
+	say "NO"
+	echo " " >> $RLD
+fi
+#___________________________________________________________
+#
+say "+ checking for long-double ... \c"
+echo "long double x=2.0;" > $TCS
+$cc $TCS -c > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "good"
+	echo "#define _HAS_LONGDOUBLE_" >> $CFH
+else
+	say "NO"
+fi
+#___________________________________________________________
+#
+say "+ checking for powf() ... \c"
+echo "#include <math.h>" > $TCS
+echo "main(){float b=2.0;float x=powf(b,3.0);}" >> $TCS
+$cc $TCS -o $TCX -lm > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "good"
+	echo "#define _HAS_POWF_" >> $CFH
+else
+	say "NO"
+fi
+#___________________________________________________________
+#
+say "+ checking for powl() ... \c"
+echo "#include <math.h>" > $TCS
+echo "main(){long double b=2.0;long double x=powl(b,3.0);}" >> $TCS
+$cc $TCS -o $TCX -lm > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "good"
+	echo "#define _HAS_POWL_" >> $CFH
+else
+	say "NO"
+fi
+#___________________________________________________________
+#
+say "+ checking for sinl() ... \c"
+echo "#include <math.h>" > $TCS
+echo "main(){long double a=3.0;long double x=sinl(a);}" >> $TCS
+$cc $TCS -o $TCX -lm > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "good"
+	echo "#define _HAS_SINL_" >> $CFH
+else
+	say "NO"
+fi
+#___________________________________________________________
+#
+say "+ checking for logl() ... \c"
+echo "#include <math.h>" > $TCS
+echo "main(){long double a=3.0;long double x=logl(a);}" >> $TCS
+$cc $TCS -o $TCX -lm > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "good"
+	echo "#define _HAS_LOGL_" >> $CFH
+else
+	say "NO"
+fi
+#___________________________________________________________
+#
+say "+ checking for sqrtl() ... \c"
+echo "#include <math.h>" > $TCS
+echo "main(){long double a=3.0;long double x=sqrtl(a);}" >> $TCS
+$cc $TCS -o $TCX -lm > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	say "good"
+	echo "#define _HAS_SQRTL_" >> $CFH
+else
+	say "NO"
+fi
+#___________________________________________________________
+#
+say "+ creating Makefile ... \c"
+echo CC=$cc > Makefile
+cat ${PRG}.Makefile >> Makefile
+say "done"
+#___________________________________________________________
+#
+say "+ o.s.-specific adjustments ... \c"
+os=`uname -s`
+if [ "$os" = "AIX" ]
+then
+	OSVR=`uname -v`.`uname -r`
+	if [ "$OSVR" = "5.3" ]
+	then
+		CPUNAM=`lsdev -Cc processor -F name | head -1`
+		CPUFAM=`lsattr -a type -F value -El $CPUNAM`
+		if [ "$CPUFAM" = "PowerPC_POWER7" ]
+		then
+			echo "#define CF_CPU_FAM \"power7\"" >> $CFH
+		fi
+	fi
+fi
+say "done"
+#___________________________________________________________
+#
+say "+ general adjustments ... \c"
+case $os in
+	CYGWIN*)
+		def="CYGWIN" ; osn=`uname -o` ; cpu=`uname -m` ;
+		osv=`uname -r | cut -d '(' -f 1`
+	;;
+	Linux)
+		def="LINUX" ; osn=$os ; cpu=`uname -m` ;
+		osv=`uname -r | cut -d '-' -f 1`
+	;;
+	FreeBSD)
+		def="FREEBSD" ; osn=$os ; cpu=`uname -m` ; ost="BSD"
+		osv=`uname -r | cut -d '-' -f 1`
+	;;
+	NetBSD)
+		def="NETBSD" ; osn=$os ; cpu=`uname -m` ; ost="BSD"
+		osv=`uname -r | cut -d '-' -f 1`
+	;;
+	OpenBSD)
+		def="OPENBSD" ; osn=$os ; cpu=`uname -m` ; ost="BSD"
+		osv=`uname -r | cut -d '-' -f 1`
+	;;
+	HP-UX)
+		def="HPUX" ; osn=$os ; cpu=`uname -m` ;
+		[ "`echo $cpu | cut -c 1-5`" = "9000/" ] && cpu=parisc ;
+		osv=`uname -r`
+	;;
+	SunOS)
+		def="SUNX" ; osn=$os ; cpu=`uname -p` ; osv=`uname -r`
+	;;
+	AIX)
+		def="AIX" ; osn=$os ; cpu=`uname -p` ; osv=`uname -v`.`uname -r`
+	;;
+esac
+POV="${cpu}_${osn}_${osv}"
+echo "#define CPUMODEL \"${cpu}\"" >> $CFH
+echo "#define OSBRAND  \"${osn}\"" >> $CFH
+echo "#define OSVERS   \"${osv}\"" >> $CFH
+[ "$ost" != "" ] && echo "#define ${ost}" >> $CFH
+echo "#define ${def}`echo $osv | tr -d '[A-Z].'`" >> $CFH
+say "done"
+#___________________________________________________________
+#
+cfg_exit 0
+#________________________________________________________________________
+#
+# vi:nu ts=8

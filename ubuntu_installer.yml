@@ -48,8 +48,43 @@
       apt: 
         name: ['libboost-all-dev', 'libpng-dev', 'libjpeg-dev', 'libtiff-dev']
         state: present
-
-    - name: Install dependencies for gobench
+      
+    - name: Installing dependencies for R
       apt: 
-        name: ['golang']
-        state: present 
+        name: r-base
+        state: present
+
+    - name: Installing dependencies for PHP
+      apt: 
+        name: php
+        state: present
+      
+    - name: Adding nodejs repository key
+      apt_key:
+        url: "{{ item }}"
+      with_items:
+        - "http://deb.nodesource.com/gpgkey/nodesource.gpg.key"
+        - "https://dl.yarnpkg.com/debian/pubkey.gpg"
+
+    - name: Adding nodejs repo
+      apt_repository:
+        repo: "{{ item }}"
+        state: present
+        update_cache: yes
+      with_items:
+        - "deb http://deb.nodesource.com/node_12.x {{ ansible_lsb.codename }} main"
+        - "deb-src http://deb.nodesource.com/node_12.x {{ ansible_lsb.codename }} main"
+        - "deb https://dl.yarnpkg.com/debian/ stable main"
+
+    - name: Installing nodejs
+      apt:
+        name: "{{ item }}"
+        state: "present"
+      with_items:
+        - "nodejs"
+
+    - name: Installing rust by rustup
+      shell: curl https://sh.rustup.rs -sSf | sh -s -- -y
+    
+    - name: Source env
+      shell: source $HOME/.cargo/env

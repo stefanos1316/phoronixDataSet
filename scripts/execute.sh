@@ -19,8 +19,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"dacapo tradesoap java -jar dacapo.jar -t $(nproc --all) --window 10 tradesoap" "ebizzy -S 30" "glibc-bench bench-ffsll" "glibc-bench bench-ffs" \
 		"glibc-bench bench-pthread_once" "glibc-bench bench-tanh" "glibc-bench bench-sqrt" "glibc-bench bench-sin" "glibc-bench bench-cos" \
 		"glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" "glibc-bench bench-sinh" "glibc-bench bench-modf" \
-		"glibc-bench bench-exp" "glibc-bench bench-log2" "gobench build go run build.go" "gobench http go run http.go" \
-		"blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" "himeno XL" "hint float" "hint double" "hpcg" \
+		"glibc-bench bench-exp" "glibc-bench bench-log2" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" "himeno XL" "hint float" "hint double" "hpcg" \
 		"john-the-ripper bcrypt ./john --test=30 --format=bcrypt" "john-the-ripper md5crypt ./john --test=30 --format=md5crypt" "lammps" \
 		"lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
 		"lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" \
@@ -34,28 +33,36 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"mcperf prepend ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=prepend" \
 		"mkl-dnn conv_all ./benchdnn --mode=p --conv --batch=inputs/conv/conv_all" "mkl-dnn conv_googlenet_v3 ./benchdnn --mode=p --conv --batch=inputs/conv/conv_googlenet_v3" \
 		"mkl-dnn conv_alexnet ./benchdnn --mode=p --conv --batch=inputs/conv/conv_alexnet" "mkl-dnn ip_1d ./benchdnn --mode=p --ip --batch=inputs/ip/ip_1d" \
-		"mkl-dnn ip_all ./benchdnn --mode=p --ip --batch=inputs/ip/ip_all" "mkl-dnn rnn_training ./benchdnn --mode=p --rnn --batch=inputs/rnn/rnn_training" "nginx") 
+		"mkl-dnn ip_all ./benchdnn --mode=p --ip --batch=inputs/ip/ip_all" "mkl-dnn rnn_training ./benchdnn --mode=p --rnn --batch=inputs/rnn/rnn_training" "nginx" \
+		"node-express-loadtest" "numenta-nab" "phpbench php phpbench.php -i 1000000" "primesieve 1e12 --quiet --time" "pymongo" \
+		"rbenchmark" "redis get" "redis set" "redis lpush" "redis lpop" "redis sadd" "rust-prime 200000000 8" "scikit" "sockperf under-load --mps=max -m 64 -t 30" \
+		"sockperf ping-pong --mps=max -m 64 -t 30" "sockperf throughput --mps=max -m 64 -t 30" "stress-ng --vecmath 0 --vecmath-ops 200000" \
+		"stress-ng --matrix 0 --matrix-ops 400000" "stress-ng --fork 0 --fork-ops 1000000" \ "stress-ng --msg 0 --msg-ops 100000000" \
+		"stress-ng --sem 0 --sem-ops 20000000" "stress-ng --sock 0 --sock-ops 100000" "stress-ng --switch 0 --switch-ops 40000000" \
+		"stream" "swet -Z" "t-test1 5000" "tensorflow") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc")
-tasks=("gobench build -E /usr/local/go/bin/go run build.go" "gobench http -E /usr/local/go/bin/go run http.go" \
-	 "node-express-loadtest" "numenta-nab")
+tasks=(  "ramspeed -b 3 -l copy" "ramspeed -b 3 -l scale" "ramspeed -b 3 -l add" "ramspeed -b 3 -l triad" \
+		"ramspeed -b 3 -l copy" "ramspeed -b 3 -l scale" "ramspeed -b 3 -l add" "ramspeed -b 6 -l triad" )
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
-	if [ $1 == "apache" ]; then
-		sudo /usr/local/apache2/bin/apachectl -k stop
-		sudo rm -f /usr/local/apache2/logs/* 
-		sudo /usr/local/apache2/bin/apachectl -k start
-	fi
-
-	if [ $1 == "nginx" ]; then
-		sudo /usr/local/nginx/sbin/nginx -s stop
-		sudo rm -f /usr/local/nginx/logs/* 
-		sudo /usr/local/nginx/sbin/nginx
-	fi
-
-	if [ $1 == "mcperf" ]; then
-		sudo memcached &
-	fi
+	case $1 in
+		("apache")
+			sudo /usr/local/apache2/bin/apachectl -k stop
+			sudo rm -f /usr/local/apache2/logs/* 
+			sudo /usr/local/apache2/bin/apachectl -k start ;;
+		("nginx")
+			sudo /usr/local/nginx/sbin/nginx -s stop
+			sudo rm -f /usr/local/nginx/logs/* 
+			sudo /usr/local/nginx/sbin/nginx ;;
+		("mcperf")
+			sudo memcached & ;;
+		("pymongo")
+			sudo systemctl start mongod ;;
+		("sockperf")
+			sudo ../tasks/$1/sockperf server & ;;
+		(*) echo "No rule for $1" ;;
+	esac
 }
 
 function getTimeInSeconds {
@@ -83,7 +90,7 @@ function dumpGarbage {
 	fi
 }
 
-# Caution: for the above to work the alternative scenarios
+# Note: for the above to work the alternative scenarios
 # of the bench suite must be immediatly after the bench's name
 function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
@@ -143,14 +150,19 @@ for task in "${tasks[@]}"; do
 			cd ../../scripts ;;
 		("povrays")
 			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/time_${taskName}.txt ;;
-		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* \
-		| mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps)
-			if [ $benchmark == "mcperf" ]; then
+		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
+		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
+		rbenchmark | redis* | scikit | tensorflow )
+			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ] ; then
 				startServers $benchmark
 			fi
 			cd ../tasks/${benchmark}
 			time (./${task}) 2> ../../results/time_${taskName}.txt
 			cd ../../scripts ;;
+		("sockperf")
+			startServers $benchmark
+			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt
+			pkill sockperf ;;
 		(*) time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
 	esac
 

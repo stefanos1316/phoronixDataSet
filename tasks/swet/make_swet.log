@@ -1,0 +1,74 @@
+make[1]: Entering directory '/home/sgeorgiou/GitHub/phoronixDataSet/tasks/swet'
+cc -Wall -Wextra -D_GNU_SOURCE -DSTRIVE  -o swet swet.c grand.c snout.c zest.c -lm -lpthread `cat curses.ld` `cat rt.ld`
+swet.c: In function ‘swet320’:
+swet.c:1194:15: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register int rd ;
+               ^~
+swet.c: In function ‘swet323’:
+swet.c:1209:15: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register int rd ;
+               ^~
+swet.c: In function ‘swet325’:
+swet.c:1226:15: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register int rd ;
+               ^~
+swet.c: In function ‘swet401’:
+swet.c:1276:15: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register int rd ;
+               ^~
+swet.c: In function ‘swet402’:
+swet.c:1296:21: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register long long rd ;
+                     ^~
+swet.c: In function ‘swet403’:
+swet.c:1316:18: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register double rd ;
+                  ^~
+swet.c: In function ‘swet404’:
+swet.c:1338:23: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register long double rd ;
+                       ^~
+swet.c: In function ‘swet501’:
+swet.c:1489:9: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  double rd ;
+         ^~
+swet.c: In function ‘swet502’:
+swet.c:1504:9: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  double rd ;
+         ^~
+swet.c: In function ‘swet503’:
+swet.c:1519:9: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  double rd ;
+         ^~
+swet.c: In function ‘swet521’:
+swet.c:1538:14: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  long double rd ;
+              ^~
+swet.c: In function ‘swet522’:
+swet.c:1557:14: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  long double rd ;
+              ^~
+swet.c: In function ‘swet523’:
+swet.c:1576:14: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  long double rd ;
+              ^~
+swet.c: In function ‘swet701’:
+swet.c:1615:15: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register int rd ;
+               ^~
+swet.c: In function ‘swet702’:
+swet.c:1627:15: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register int rd ;
+               ^~
+swet.c: In function ‘swet703’:
+swet.c:1639:15: warning: variable ‘rd’ set but not used [-Wunused-but-set-variable]
+  register int rd ;
+               ^~
+zest.c: In function ‘getosvers’:
+zest.c:126:21: warning: ‘.’ directive writing 1 byte into a region of size between 0 and 64 [-Wformat-overflow=]
+   sprintf (tbuf, "%s.%s", unp->version, unp->release) ;
+                     ^
+zest.c:126:3: note: ‘sprintf’ output between 2 and 130 bytes into a destination of size 64
+   sprintf (tbuf, "%s.%s", unp->version, unp->release) ;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: Leaving directory '/home/sgeorgiou/GitHub/phoronixDataSet/tasks/swet'

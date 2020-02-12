@@ -1,0 +1,274 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>swet - sustained workload efficiency test</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#usage">USAGE</a></li>
+	<li><a href="#files">FILES</a></li>
+	<li><a href="#directories">DIRECTORIES</a></li>
+	<li><a href="#examples">EXAMPLES</a></li>
+	<li><a href="#environment">ENVIRONMENT</a></li>
+	<li><a href="#exit_status">EXIT STATUS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#notes">NOTES</a></li>
+	<li><a href="#caveats">CAVEATS</a></li>
+	<li><a href="#bugs">BUGS</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#copyright">COPYRIGHT</a></li>
+	<li><a href="#license">LICENSE</a></li>
+	<li><a href="#support">SUPPORT</a></li>
+	<li><a href="#disclaimer">DISCLAIMER</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>swet - sustained workload efficiency test</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>swet [-options]</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Estimate processing efficiency.</p>
+<p>`swet' is a benchmark for single to multiprocessor/multicore/multithread environments.</p>
+<p>`swet' performs cpu/ram stress tests and emits the computed efficiency.</p>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<pre>
+ basic parameters:</pre>
+<pre>
+ -C Hz     consider given Hz as system clock
+ -d N      spawn N test sets as processes
+ -R N      repeat each test N times
+ -s set    file or string with tests (1) to run
+ -t N      spawn N test sets as threads</pre>
+<pre>
+ detail selection:</pre>
+<pre>
+ -D        show test description
+ -E        show elapsed time
+ -F        show test frequency (ops./sec)
+ -I        show test id
+ -N        show test/thread number (count)</pre>
+<pre>
+ efficiency selection:</pre>
+<pre>
+ -a        absolute(raw) efficiency
+ -c        combined(gross) efficiency
+ -r        relative(specific) efficiency</pre>
+<pre>
+ test selection:</pre>
+<pre>
+ -B        basic test
+ -Q        quick tests
+ -S        slow tests
+ -Z        whole test</pre>
+<pre>
+ footer flags:</pre>
+<pre>
+ -A        report averages
+ -T        report totals
+ -O text   one-liner comment</pre>
+<pre>
+ output flags:</pre>
+<pre>
+ --csv     output in CSV format
+ --frame   output in ASCII-characters framed boxes
+ --ansi    output in ANSI-line-chars. framed boxes
+ --html    output in HTML
+ --border  visible html table border
+ --dash    vertical separators
+ --minut   description minutiae</pre>
+<pre>
+ operation flags:</pre>
+<pre>
+ -h        show host info
+ -H        print headers
+ -i        set session id (processes)
+ -j        join threads until completion
+ -l path   master log file
+ -L        full(long) detail report
+ -n        use nanosecond precision (if available)
+ -o secs   timeout (per test)
+ -V        show version info and exit
+ -v        verbose output
+ -w        wait threads until completion (default)
+ -Y        run each test (2) as a thread
+ --demo    quick check (3)</pre>
+<pre>
+ notes:</pre>
+<pre>
+ (1) space- , tab- , or comma-separated test numbers
+     and/or ranges like first:last</pre>
+<pre>
+ (2) valid only for 'thread-able/-safe' tests</pre>
+<pre>
+ (3) '-s' , '--demo' and '$SWETSET' are mutually exclusive</pre>
+<p>
+</p>
+<hr />
+<h1><a name="usage">USAGE</a></h1>
+<p>Without any options, `swet' performs a full test with basic output.</p>
+<p>`swet' can be interrupted at any time with '^C' (Control+C).</p>
+<p>
+</p>
+<hr />
+<h1><a name="files">FILES</a></h1>
+<pre>
+ swet*.log              per process/thread log file(s)
+ /tmp/swet*.log         swet's log file(s)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="directories">DIRECTORIES</a></h1>
+<pre>
+ /usr/local/bin         swet's default executable path</pre>
+<p>
+</p>
+<hr />
+<h1><a name="examples">EXAMPLES</a></h1>
+<p>Example 1: perform the 'basic' test set with detailed output.</p>
+<pre>
+ $ swet -B</pre>
+<p>Example 2: same thing, with HTML formatting.</p>
+<pre>
+ $ swet -B --html</pre>
+<p>Example 3: spawn two background processes, each one to perform the 'basic' test set.</p>
+<pre>
+ $ swet -B -d 2</pre>
+<p>Example 4: create two threads, each one to perform the 'basic' test set.</p>
+<pre>
+ $ swet -B -t 2</pre>
+<p>Example 5: two processes, each one running two threads, so four 'basic' test sets concurrently.</p>
+<pre>
+ $ swet -B -d 2 -t 2</pre>
+<p>
+</p>
+<hr />
+<h1><a name="environment">ENVIRONMENT</a></h1>
+<pre>
+ TERM           The value of the TERM environment variable may affect
+                the output of `swet'.</pre>
+<p>
+</p>
+<hr />
+<h1><a name="exit_status">EXIT STATUS</a></h1>
+<p>The following exit values are returned:</p>
+<pre>
+ 0                      No errors of any kind.</pre>
+<pre>
+ &gt;0                     An error occurred.</pre>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<pre>
+ ENOMEM         Scant memory to perform some of the tests.</pre>
+<pre>
+ EACCES         Permission denied (POSIX.1)</pre>
+<pre>
+                Search permission is denied for
+                a component of the path prefix
+                of a given &lt;pathname&gt;.</pre>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p><code>opm(1)</code>, <code>vdt(1)</code>.</p>
+<p>
+</p>
+<hr />
+<h1><a name="notes">NOTES</a></h1>
+<p>Ordinarily, `swet' does not require `root' privileges or SUID file permissions.</p>
+<p>The INT, and TERM signals are caught by `swet', allowing for an orderly quit.</p>
+<p>
+</p>
+<hr />
+<h1><a name="caveats">CAVEATS</a></h1>
+<p>The 'quick' tests are considered to run 'quickly' on processor speeds above 1GHz.</p>
+<p>On older hardware, even the 'quick' tests can take quite a few seconds to complete.</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs">BUGS</a></h1>
+<p>A screen with less than 80 columns results in garbled output if full/long detail is selected.</p>
+<p>Not all possibly harmfull/misleading/nonsensical combinations of the options are prevented 
+nor handled in the appropriate manner, 
+and such use possibly may (and most certainly will) cause unpredictable results.</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>The original and current versions of `swet'
+consist of code and documentation written by:</p>
+<pre>
+        Alexandre Botao           <a href="http://botao.org">http://botao.org</a>
+        botao@unix.net 
+        botao@linux.sh            alexandre@botao.org</pre>
+<p>
+</p>
+<hr />
+<h1><a name="copyright">COPYRIGHT</a></h1>
+<pre>
+        Copyright (C) 2011 Alexandre Botao</pre>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>`swet' is `Free and Open Source Software' (FOSS),
+and is licensed under the GNU GENERAL PUBLIC LICENSE
+Version 3 (the &quot;License&quot;);</p>
+<p>You may not use `swet' except in compliance with the License.
+You may obtain a copy of the License at</p>
+<pre>
+        <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a></pre>
+<p>Additionally, a copy of the License is distributed along with `swet'
+in a file called 'LICENSE';</p>
+<p>
+</p>
+<hr />
+<h1><a name="support">SUPPORT</a></h1>
+<pre>
+ Commercial support is NOT available for `swet'.
+ Suggestions and/or bug reports are very welcome.</pre>
+<p>
+</p>
+<hr />
+<h1><a name="disclaimer">DISCLAIMER</a></h1>
+<p>`swet' is distributed on an ``AS IS'' basis, 
+WITHOUT ANY WARRANTY OR CONDITIONS OF ANY KIND, 
+either express or implied. 
+See the License for the specific language 
+governing permissions and limitations under the License.</p>
+
+</body>
+
+</html>

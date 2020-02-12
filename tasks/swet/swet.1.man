@@ -1,0 +1,206 @@
+SWET(1)               Sustained Workload Efficiency Test               SWET(1)
+
+
+
+NNAAMMEE
+       swet - sustained workload efficiency test
+
+SSYYNNOOPPSSIISS
+       swet [-options]
+
+DDEESSCCRRIIPPTTIIOONN
+       Estimate processing efficiency.
+
+       `swet' is a benchmark for single to
+       multiprocessor/multicore/multithread environments.
+
+       `swet' performs cpu/ram stress tests and emits the computed efficiency.
+
+OOPPTTIIOONNSS
+        basic parameters:
+
+        -C Hz     consider given Hz as system clock
+        -d N      spawn N test sets as processes
+        -R N      repeat each test N times
+        -s set    file or string with tests (1) to run
+        -t N      spawn N test sets as threads
+
+        detail selection:
+
+        -D        show test description
+        -E        show elapsed time
+        -F        show test frequency (ops./sec)
+        -I        show test id
+        -N        show test/thread number (count)
+
+        efficiency selection:
+
+        -a        absolute(raw) efficiency
+        -c        combined(gross) efficiency
+        -r        relative(specific) efficiency
+
+        test selection:
+
+        -B        basic test
+        -Q        quick tests
+        -S        slow tests
+        -Z        whole test
+
+        footer flags:
+
+        -A        report averages
+        -T        report totals
+        -O text   one-liner comment
+
+        output flags:
+
+        --csv     output in CSV format
+        --frame   output in ASCII-characters framed boxes
+        --ansi    output in ANSI-line-chars. framed boxes
+        --html    output in HTML
+        --border  visible html table border
+        --dash    vertical separators
+        --minut   description minutiae
+
+        operation flags:
+
+        -h        show host info
+        -H        print headers
+        -i        set session id (processes)
+        -j        join threads until completion
+        -l path   master log file
+        -L        full(long) detail report
+        -n        use nanosecond precision (if available)
+        -o secs   timeout (per test)
+        -V        show version info and exit
+        -v        verbose output
+        -w        wait threads until completion (default)
+        -Y        run each test (2) as a thread
+        --demo    quick check (3)
+
+        notes:
+
+        (1) space- , tab- , or comma-separated test numbers
+            and/or ranges like first:last
+
+        (2) valid only for 'thread-able/-safe' tests
+
+        (3) '-s' , '--demo' and '$SWETSET' are mutually exclusive
+
+UUSSAAGGEE
+       Without any options, `swet' performs a full test with basic output.
+
+       `swet' can be interrupted at any time with '^C' (Control+C).
+
+FFIILLEESS
+        swet*.log              per process/thread log file(s)
+        /tmp/swet*.log         swet's log file(s)
+
+DDIIRREECCTTOORRIIEESS
+        /usr/local/bin         swet's default executable path
+
+EEXXAAMMPPLLEESS
+       Example 1: perform the 'basic' test set with detailed output.
+
+        $ swet -B
+
+       Example 2: same thing, with HTML formatting.
+
+        $ swet -B --html
+
+       Example 3: spawn two background processes, each one to perform the
+       'basic' test set.
+
+        $ swet -B -d 2
+
+       Example 4: create two threads, each one to perform the 'basic' test
+       set.
+
+        $ swet -B -t 2
+
+       Example 5: two processes, each one running two threads, so four 'basic'
+       test sets concurrently.
+
+        $ swet -B -d 2 -t 2
+
+EENNVVIIRROONNMMEENNTT
+        TERM           The value of the TERM environment variable may affect
+                       the output of `swet'.
+
+EEXXIITT SSTTAATTUUSS
+       The following exit values are returned:
+
+        0                      No errors of any kind.
+
+        >0                     An error occurred.
+
+DDIIAAGGNNOOSSTTIICCSS
+        ENOMEM         Scant memory to perform some of the tests.
+
+        EACCES         Permission denied (POSIX.1)
+
+                       Search permission is denied for
+                       a component of the path prefix
+                       of a given <pathname>.
+
+SSEEEE AALLSSOO
+       _o_p_m(1), _v_d_t(1).
+
+NNOOTTEESS
+       Ordinarily, `swet' does not require `root' privileges or SUID file
+       permissions.
+
+       The INT, and TERM signals are caught by `swet', allowing for an orderly
+       quit.
+
+CCAAVVEEAATTSS
+       The 'quick' tests are considered to run 'quickly' on processor speeds
+       above 1GHz.
+
+       On older hardware, even the 'quick' tests can take quite a few seconds
+       to complete.
+
+BBUUGGSS
+       A screen with less than 80 columns results in garbled output if
+       full/long detail is selected.
+
+       Not all possibly harmfull/misleading/nonsensical combinations of the
+       options are prevented nor handled in the appropriate manner, and such
+       use possibly may (and most certainly will) cause unpredictable results.
+
+AAUUTTHHOORR
+       The original and current versions of `swet' consist of code and
+       documentation written by:
+
+               Alexandre Botao           http://botao.org
+               botao@unix.net
+               botao@linux.sh            alexandre@botao.org
+
+CCOOPPYYRRIIGGHHTT
+               Copyright (C) 2011 Alexandre Botao
+
+LLIICCEENNSSEE
+       `swet' is `Free and Open Source Software' (FOSS), and is licensed under
+       the GNU GENERAL PUBLIC LICENSE Version 3 (the "License");
+
+       You may not use `swet' except in compliance with the License.  You may
+       obtain a copy of the License at
+
+               http://www.gnu.org/licenses/
+
+       Additionally, a copy of the License is distributed along with `swet' in
+       a file called 'LICENSE';
+
+SSUUPPPPOORRTT
+        Commercial support is NOT available for `swet'.
+        Suggestions and/or bug reports are very welcome.
+
+DDIISSCCLLAAIIMMEERR
+       `swet' is distributed on an ``AS IS'' basis, WITHOUT ANY WARRANTY OR
+       CONDITIONS OF ANY KIND, either express or implied.  See the License for
+       the specific language governing permissions and limitations under the
+       License.
+
+
+
+AVRB                              2012-04-30                           SWET(1)

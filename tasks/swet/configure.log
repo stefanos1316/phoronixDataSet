@@ -1,0 +1,18 @@
++ configuring for {swet} @ Τετ 12 Φεβ 2020 11:59:44 μμ EET on Linux sgeorgiou 5.3.0-28-generic #30~18.04.1-Ubuntu SMP Fri Jan 17 06:14:09 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
++ initializing ... done
++ looking for cc ... found cc
++ checking if cc works ... yes
++ looking for curses ... found curses
++ looking for termio ... found termios
++ checking if libm works ... yes
++ checking if librt works ... yes
++ checking for long-double ... good
++ checking for powf() ... good
++ checking for powl() ... good
++ checking for sinl() ... good
++ checking for logl() ... good
++ checking for sqrtl() ... good
++ creating Makefile ... done
++ o.s.-specific adjustments ... done
++ general adjustments ... done
++ cleaning up ... done
