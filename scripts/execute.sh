@@ -43,7 +43,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap")
+tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -110,7 +110,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 }
 
 sudo bash ../tools/governor.sh pe
-taskDirectory="tasks_test"
+taskDirectory="tools/tasks_test"
 
 for task in "${tasks[@]}"; do
 
@@ -154,13 +154,13 @@ for task in "${tasks[@]}"; do
 			time (../${taskDirectory}/${benchmark}/${task} <<< 1) 2> ../results/log_${taskName}.txt ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
-		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer | botan* | gnupg)
+		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer | botan* | gnupg | aircrack-ng)
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ] ; then
 				startServers $benchmark
 			fi
 			cd ../${taskDirectory}/${benchmark}
-			time (./${task}) 2> ../../results/log_${taskName}.txt
-			cd ../../scripts ;;
+			time (./${task}) 2> ../../../results/log_${taskName}.txt
+			cd ../../../scripts ;;
 		("sockperf")
 			startServers $benchmark
 			time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt

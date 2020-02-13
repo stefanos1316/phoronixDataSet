@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./botan_bin speed $1 --format=table --msec=10000
+

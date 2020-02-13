@@ -2,22 +2,29 @@
 
 taskDirectory='tasks_test'
 taskScripts='scripts'
+mkdir tasks_test 
 
 echo "-------Downloading and installing aio-stress"
-mkdir aio-stress && cd aio-stress
+mkdir aio-stress
+cd aio-stress
 wget http://fsbench.filesystems.org/bench/aio-stress.c
+ls
 cc -Wall -pthread -o aio-stress aio-stress.c -laio
-cd ../ && mv aio-stress ${taskDirectory}/
+cd ../
+mv aio-stress ${taskDirectory}/
 
 echo "-------Downloading and installing aircrack-ng"
-mkdir aircrack-ng && cd aircrack-ng
+mkdir aircrack-ng
+cd aircrack-ng
 wget https://download.aircrack-ng.org/aircrack-ng-1.3.tar.gz
 tar -zxvf aircrack-ng-1.3.tar.gz && rm aircrack-ng-1.3.tar.gz
-mv aircrack-ng-1.3/* ./ && rm -rf aircrack-ng-1.3/
+mv aircrack-ng-1.3/* ./
+rm -rf aircrack-ng-1.3/
 ./autogen.sh
 make -j $(nproc --all)
 cp ../${taskScripts}/aircrack-ng ./
-cd ../ && mv aircrack-ng ${taskDirectory}/
+cd ../
+mv aircrack-ng ${taskDirectory}/
 
 echo "-------Downloading and install gnupg"
 mkdir gnupg && cd gnupg
@@ -45,6 +52,4 @@ cd ../ && mv gnupg ${taskDirectory}/
 # mv botan botan_bin
 # cd ../../tools
 
-
-mv tasks_test ../
 

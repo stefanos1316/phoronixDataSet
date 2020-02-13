@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd src/
+./aircrack-ng -w ../../../../inputs/aircrack.txt ../../../../inputs/wpa.cap
+cd ../
