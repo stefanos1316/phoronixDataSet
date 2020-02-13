@@ -43,7 +43,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=("apache")
+tasks=("nginx")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -122,7 +122,13 @@ for task in "${tasks[@]}"; do
 	case "$taskName" in
 		("apache" | "nginx" ) 
 			startServers $task
-			time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/log_${taskName}.txt
+			if [ $taskName == "apache" ]; then
+				time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/log_${taskName}.txt
+				sudo /usr/local/apache2/bin/apachectl -k stop
+			else
+				time (ab -n 1000000 -c 100 http://0.0.0.0:80/) 2> ../results/log_${taskName}.txt
+				sudo /usr/local/nginx/sbin/nginx -s stop
+			fi
 			getTimeInSeconds ../results/log_${taskName}.txt ;;
 		("bzip2")
 			cp ../inputs/linux-5.3.tar.gz ../inputs/tmp_linux-5.3.tar.gz

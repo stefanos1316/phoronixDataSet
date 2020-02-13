@@ -30,13 +30,23 @@ cd tasks_test
 # unzip aobench-20180207.zip && rm aobench-20180207.zip
 # cc ao.c -o aobench -lm -O3
 
-echo "-------Downloading and installing apache"
-mkdir apache && cd apache
-wget http://archive.apache.org/dist/httpd/httpd-2.4.29.tar.bz2
-tar -xjvf httpd-2.4.29.tar.bz2 && rm httpd-2.4.29.tar.bz2
-mv httpd-2.4.29/* ./ && rm -rf httpd-2.4.29/
+# echo "-------Downloading and installing apache"
+# mkdir apache && cd apache
+# wget http://archive.apache.org/dist/httpd/httpd-2.4.29.tar.bz2
+# tar -xjvf httpd-2.4.29.tar.bz2 && rm httpd-2.4.29.tar.bz2
+# mv httpd-2.4.29/* ./ && rm -rf httpd-2.4.29/
+# ./configure
+# make --j $(nproc --all)
+# sudo make install
+
+echo "-------Downloading and installing nginx"
+mkdir nginx && cd nginx
+wget http://nginx.org/download/nginx-1.9.9.tar.gz
+tar -zxvf nginx-1.9.9.tar.gz && rm nginx-1.9.9.tar.gz
+mv nginx-1.9.9/* ./ && rm -rf nginx-1.9.9/
 ./configure
-make --j $(nproc --all)
+sed -i 's/\-Werror//g' objs/Makefile
+make -j $(nproc --all)
 sudo make install
 
 # echo "-------Downloading and install gnupg"
