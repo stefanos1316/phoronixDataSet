@@ -39,15 +39,21 @@ cd tasks_test
 # make --j $(nproc --all)
 # sudo make install
 
-echo "-------Downloading and installing nginx"
-mkdir nginx && cd nginx
-wget http://nginx.org/download/nginx-1.9.9.tar.gz
-tar -zxvf nginx-1.9.9.tar.gz && rm nginx-1.9.9.tar.gz
-mv nginx-1.9.9/* ./ && rm -rf nginx-1.9.9/
-./configure
-sed -i 's/\-Werror//g' objs/Makefile
-make -j $(nproc --all)
-sudo make install
+# echo "-------Downloading and installing nginx"
+# mkdir nginx && cd nginx
+# wget http://nginx.org/download/nginx-1.9.9.tar.gz
+# tar -zxvf nginx-1.9.9.tar.gz && rm nginx-1.9.9.tar.gz
+# mv nginx-1.9.9/* ./ && rm -rf nginx-1.9.9/
+# ./configure
+# sed -i 's/\-Werror//g' objs/Makefile
+# make -j $(nproc --all)
+# sudo make install
+
+echo "-------Downloading and installing crafty"
+mkdir crafty && cd crafty
+wget http://craftychess.com/downloads/source/crafty-25.2.zip
+unzip crafty-25.2.zip && rm crafty-25.2.zip
+make unix-gcc
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg
