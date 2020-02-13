@@ -29,6 +29,7 @@ cd tasks_test
 # wget http://phoronix-test-suite.com/benchmark-files/aobench-20180207.zip
 # unzip aobench-20180207.zip && rm aobench-20180207.zip
 # cc ao.c -o aobench -lm -O3
+# cd ../
 
 # echo "-------Downloading and installing apache"
 # mkdir apache && cd apache
@@ -38,6 +39,7 @@ cd tasks_test
 # ./configure
 # make --j $(nproc --all)
 # sudo make install
+# cd ../
 
 # echo "-------Downloading and installing nginx"
 # mkdir nginx && cd nginx
@@ -48,12 +50,23 @@ cd tasks_test
 # sed -i 's/\-Werror//g' objs/Makefile
 # make -j $(nproc --all)
 # sudo make install
+# cd ../
 
-echo "-------Downloading and installing crafty"
-mkdir crafty && cd crafty
-wget http://craftychess.com/downloads/source/crafty-25.2.zip
-unzip crafty-25.2.zip && rm crafty-25.2.zip
-make unix-gcc
+# echo "-------Downloading and installing crafty"
+# mkdir crafty && cd crafty
+# wget http://craftychess.com/downloads/source/crafty-25.2.zip
+# unzip crafty-25.2.zip && rm crafty-25.2.zip
+# make unix-gcc
+# cd ../
+
+echo "-------Downloading and installing tscp"
+mkdir tscp && cd tscp
+wget http://www.phoronix-test-suite.com/benchmark-files/tscp181_pts.tar.bz2
+tar -xjvf tscp181_pts.tar.bz2 && rm tscp181_pts.tar.bz2
+mv tscp181/* ./ && rm -rf tscp181
+cp ../../${taskScripts}/tscp_main.c ./main.c
+cc -O3 *.c -o tscp
+cd ../
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg
