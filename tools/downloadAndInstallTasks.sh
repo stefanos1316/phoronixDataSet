@@ -1,35 +1,37 @@
 #!/bin/bash
 
-taskDirectory='task_test'
+taskDirectory='tasks_test'
 taskScripts='scripts'
 
-echo "-------Downloading aio-stress"
-mkdir -p ../${taskDirectory}/aio-stress
+echo "-------Downloading and installing aio-stress"
+mkdir aio-stress && cd aio-stress
 wget http://fsbench.filesystems.org/bench/aio-stress.c
-mv aio-stress.c/* ../${taskDirectory}/aio-stress/ 
-
-echo "-------Installing aio-stress"
-cd ../${taskDirectory}/aio-stress
 cc -Wall -pthread -o aio-stress aio-stress.c -laio
-cd ../../tools
+cd ../ && mv aio-stress ${taskDirectory}/
 
+echo "-------Downloading and installing aircrack-ng"
+mkdir aircrack-ng && cd aircrack-ng
+wget https://download.aircrack-ng.org/aircrack-ng-1.3.tar.gz
+tar -zxvf aircrack-ng-1.3.tar.gz && rm aircrack-ng-1.3.tar.gz
+mv aircrack-ng-1.3/* ./ && rm -rf aircrack-ng-1.3/
+./autogen.sh
+make -j $(nproc --all)
+cp ../${taskScripts}/aircrack-ng ./
+cd ../ && mv aircrack-ng ${taskDirectory}/
 
-# echo "-------Downloading gnupg"
-# mkdir -p ../${taskDirectory}/gnupg
-# wget http://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.19.tar.bz2
-# tar -jxvf gnupg-2.2.19.tar.bz2 && rm gnupg-2.2.19.tar.bz2
-# mv gnupg-2.2.19/* ../${taskDirectory}/gnupg/ && rm -rf gnupg-2.2.19 
-# cp ${taskScripts}/gnupg ../${taskDirectory}/gnupg/
+echo "-------Downloading and install gnupg"
+mkdir gnupg && cd gnupg
+wget http://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.19.tar.bz2
+tar -jxvf gnupg-2.2.19.tar.bz2 && rm gnupg-2.2.19.tar.bz2
+mv gnupg-2.2.19/* ./ && rm -rf gnupg-2.2.19 
+cp ${taskScripts}/gnupg ./
+./configure --prefix=`pwd`
+make -j $(nproc --all)
+make install
+echo pts-1234567890 > passphrase
+cd ../ && mv gnupg ${taskDirectory}/
 
-# echo "-------Installing gnupg"
-# cd ../${taskDirectory}/gnupg
-# ./configure --prefix=`pwd`
-# make -j $(nproc --all)
-# make install
-# echo pts-1234567890 > passphrase
-# cd ../../tools
-
-# echo "-------Downloading botan"
+# echo "-------Downloading and installing botan"
 # mkdir -p ../${taskDirectory}/botan
 # wget http://botan.randombit.net/releases/Botan-2.8.0.tgz
 # tar -xf Botan-2.8.0.tgz && rm Botan-2.8.0.tgz
@@ -42,4 +44,7 @@ cd ../../tools
 # make -j $(nproc --all)
 # mv botan botan_bin
 # cd ../../tools
+
+
+mv tasks_test ../
 

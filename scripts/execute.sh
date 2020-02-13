@@ -43,7 +43,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=("botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg")
+tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -82,11 +82,11 @@ function dumpGarbage {
 	|| [ -f ../inputs/tmp_linux-5.3.tar.gz.bz2 ] || [ -f ../inputs/zstd_test ] \
 	|| [ -f ../inputs/tmp_xz.txt.xz ] || [ -f *.tmp] || [ -f RES-multiply-* ] \
 	|| [ -f ../${taskDirectory}/dcraw/*.ppm ] || [ -f bitmap0_* ] || [-f blog-* ] \
-	|| [ -f alltext.out ] || [ -f output.ppm ] || [-f clover.* ] ; then
+	|| [ -f alltext.out ] || [ -f output.ppm ] || [-f clover.* ] || [ -f results.txt ] ; then
 		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp
 		rm ../inputs/tmp_linux-5.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst
 		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../${taskDirectory}/dcraw/*.ppm 
-		rm bitmap0_* ; rm -rf blog-* ; rm  alltext.out ; rm output.ppm
+		rm bitmap0_* ; rm -rf blog-* ; rm  alltext.out ; rm output.ppm; rm results.txt
 		rm clover.*
 	fi
 }
@@ -110,7 +110,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 }
 
 sudo bash ../tools/governor.sh pe
-taskDirectory="task_test"
+taskDirectory="tasks_test"
 
 for task in "${tasks[@]}"; do
 
