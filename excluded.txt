@@ -2,4 +2,4 @@ audio bench suites
 timedcode compilation
 C/C++ Compiler Test
 geekbench novabench that require licence key for commandlin automation
-
+spec benchmark and v-ray that needed signing or not free

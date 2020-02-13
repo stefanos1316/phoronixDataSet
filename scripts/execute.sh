@@ -39,10 +39,11 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"sockperf ping-pong --mps=max -m 64 -t 30" "sockperf throughput --mps=max -m 64 -t 30" "stress-ng --vecmath 0 --vecmath-ops 200000" \
 		"stress-ng --matrix 0 --matrix-ops 400000" "stress-ng --fork 0 --fork-ops 1000000" \ "stress-ng --msg 0 --msg-ops 100000000" \
 		"stress-ng --sem 0 --sem-ops 20000000" "stress-ng --sock 0 --sock-ops 100000" "stress-ng --switch 0 --switch-ops 40000000" \
-		"stream" "swet -Z" "t-test1 5000" "tensorflow") 
-# timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc")
-tasks=(  "ramspeed -b 3 -l copy" "ramspeed -b 3 -l scale" "ramspeed -b 3 -l add" "ramspeed -b 3 -l triad" \
-		"ramspeed -b 3 -l copy" "ramspeed -b 3 -l scale" "ramspeed -b 3 -l add" "ramspeed -b 6 -l triad" )
+		"stream" "swet -Z" "t-test1 5000" "tensorflow" "tinymembench" "renderer" "xsbench -t 8 -s large -l 30000000" \
+		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
+		"ramspeed add_float" "ramspeed traid_float" ) 
+# timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
+tasks=(  )
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -103,7 +104,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	done
 
 	if [  $count -gt 1 ]; then
-		task=`echo $2`
+		task=`echo $2 | sed 's/\-\-//g'`
 		taskName=`echo ${taskName}_${task}`
 	fi
 }
@@ -120,53 +121,53 @@ for task in "${tasks[@]}"; do
 	case "$taskName" in
 		("apache" | "nginx" ) 
 			startServers $task
-			time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/time_${taskName}.txt
-			getTimeInSeconds ../results/time_${taskName}.txt ;;
+			time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/log_${taskName}.txt
+			getTimeInSeconds ../results/log_${taskName}.txt ;;
 		("bzip2")
 			cp ../inputs/linux-5.3.tar.gz ../inputs/tmp_linux-5.3.tar.gz
-			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
+			time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 		("xz")
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
-			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
+			time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 		("build-linux-kernel")
 			tar -xzvf ../inputs/linux-5.3.tar.gz
 			mv ./linux-5.3 ../tasks/${benchmark}
 			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
+			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
 		("build-gcc")
 			tar -xzvf ../inputs/gcc-8.2.0.tar.gz
 			mv ./gcc-8.2.0 ../tasks/${benchmark}
 			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
+			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
 		("cloverleaf")
 			cp ../inputs/clover.in ./
-			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
+			time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 		("hpcg")
 			cp ../input/hpcg.dat ../tasks/hpcg/
 			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
+			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
 		("povrays")
-			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/time_${taskName}.txt ;;
+			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/log_${taskName}.txt ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
-		rbenchmark | redis* | scikit | tensorflow )
+		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer)
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ] ; then
 				startServers $benchmark
 			fi
 			cd ../tasks/${benchmark}
-			time (./${task}) 2> ../../results/time_${taskName}.txt
+			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
 		("sockperf")
 			startServers $benchmark
-			time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt
+			time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt
 			pkill sockperf ;;
-		(*) time (../tasks/${benchmark}/${task}) 2> ../results/time_${taskName}.txt ;;
+		(*) time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 	esac
 
-	getTimeInSeconds ../results/time_${taskName}.txt
+	getTimeInSeconds ../results/log_${taskName}.txt
 	echo "${taskName}		${totalTime}" >> ../results/time.txt
 done
 

@@ -86,5 +86,15 @@
     - name: Installing rust by rustup
       shell: curl https://sh.rustup.rs -sSf | sh -s -- -y
     
-    - name: Source env
-      shell: source $HOME/.cargo/env
+    - name: Adding cargo env to bashrc
+      shell: echo "export PATH=$PATH:/home/sgeorgiou/.cargo/bin" >> ~/.bashrc
+
+    - name: Installing dependencies for renderer
+      apt: 
+        name: ['libsdl2-dev', 'libsdl1.2-dev', 'libsdl-image1.2-dev']
+        state: present
+
+    - name: Installing dependencies for gnupg
+      apt: 
+        name: ['libgpg-error-dev', 'libgcrypt-dev', 'libassuan-dev', 'libksba-dev', 'libnpth-dev']
+        state: present
