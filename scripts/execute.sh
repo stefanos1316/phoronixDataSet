@@ -2,7 +2,7 @@
 
 stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-5.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
-		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../tasks/dcraw/DSC_50*" \
+		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"nero2d ../inputs/nero2d.igf" "minions ../inputs/minions.minion" "hmmr -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
 		"mafft --thread 1 --localpair --maxiterate 1000000 ../inputs/pyruvate_decarboxylase.fasta"  \
 		"rodinia euler3d_cpu_double ../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
@@ -41,9 +41,9 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"stress-ng --sem 0 --sem-ops 20000000" "stress-ng --sock 0 --sock-ops 100000" "stress-ng --switch 0 --switch-ops 40000000" \
 		"stream" "swet -Z" "t-test1 5000" "tensorflow" "tinymembench" "renderer" "xsbench -t 8 -s large -l 30000000" \
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
-		"ramspeed add_float" "ramspeed traid_float" ) 
+		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=(  )
+tasks=("botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -61,7 +61,7 @@ function startServers {
 		("pymongo")
 			sudo systemctl start mongod ;;
 		("sockperf")
-			sudo ../tasks/$1/sockperf server & ;;
+			sudo ../${taskDirectory}/$1/sockperf server & ;;
 		(*) echo "No rule for $1" ;;
 	esac
 }
@@ -81,11 +81,11 @@ function dumpGarbage {
 	if [ -f temp ] || [ -f ao.ppm ] || [ -f game.001 ] || [ -f log.001 ] \
 	|| [ -f ../inputs/tmp_linux-5.3.tar.gz.bz2 ] || [ -f ../inputs/zstd_test ] \
 	|| [ -f ../inputs/tmp_xz.txt.xz ] || [ -f *.tmp] || [ -f RES-multiply-* ] \
-	|| [ -f ../tasks/dcraw/*.ppm ] || [ -f bitmap0_* ] || [-f blog-* ] \
+	|| [ -f ../${taskDirectory}/dcraw/*.ppm ] || [ -f bitmap0_* ] || [-f blog-* ] \
 	|| [ -f alltext.out ] || [ -f output.ppm ] || [-f clover.* ] ; then
 		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp
 		rm ../inputs/tmp_linux-5.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst
-		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../tasks/dcraw/*.ppm 
+		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../${taskDirectory}/dcraw/*.ppm 
 		rm bitmap0_* ; rm -rf blog-* ; rm  alltext.out ; rm output.ppm
 		rm clover.*
 	fi
@@ -110,6 +110,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 }
 
 sudo bash ../tools/governor.sh pe
+taskDirectory="task_test"
 
 for task in "${tasks[@]}"; do
 
@@ -125,46 +126,46 @@ for task in "${tasks[@]}"; do
 			getTimeInSeconds ../results/log_${taskName}.txt ;;
 		("bzip2")
 			cp ../inputs/linux-5.3.tar.gz ../inputs/tmp_linux-5.3.tar.gz
-			time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
+			time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 		("xz")
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
-			time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
+			time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 		("build-linux-kernel")
 			tar -xzvf ../inputs/linux-5.3.tar.gz
-			mv ./linux-5.3 ../tasks/${benchmark}
-			cd ../tasks/${benchmark}
+			mv ./linux-5.3 ../${taskDirectory}/${benchmark}
+			cd ../${taskDirectory}/${benchmark}
 			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
 		("build-gcc")
 			tar -xzvf ../inputs/gcc-8.2.0.tar.gz
-			mv ./gcc-8.2.0 ../tasks/${benchmark}
-			cd ../tasks/${benchmark}
+			mv ./gcc-8.2.0 ../${taskDirectory}/${benchmark}
+			cd ../${taskDirectory}/${benchmark}
 			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
 		("cloverleaf")
 			cp ../inputs/clover.in ./
-			time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
+			time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 		("hpcg")
-			cp ../input/hpcg.dat ../tasks/hpcg/
-			cd ../tasks/${benchmark}
+			cp ../input/hpcg.dat ../${taskDirectory}/hpcg/
+			cd ../${taskDirectory}/${benchmark}
 			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
 		("povrays")
-			time (../tasks/${benchmark}/${task} <<< 1) 2> ../results/log_${taskName}.txt ;;
+			time (../${taskDirectory}/${benchmark}/${task} <<< 1) 2> ../results/log_${taskName}.txt ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
-		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer)
+		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer | botan* | gnupg)
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ] ; then
 				startServers $benchmark
 			fi
-			cd ../tasks/${benchmark}
+			cd ../${taskDirectory}/${benchmark}
 			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
 		("sockperf")
 			startServers $benchmark
-			time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt
+			time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt
 			pkill sockperf ;;
-		(*) time (../tasks/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
+		(*) time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 	esac
 
 	getTimeInSeconds ../results/log_${taskName}.txt

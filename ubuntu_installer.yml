@@ -98,3 +98,8 @@
       apt: 
         name: ['libgpg-error-dev', 'libgcrypt-dev', 'libassuan-dev', 'libksba-dev', 'libnpth-dev']
         state: present
+
+    - name: Installing dependencies for mcperf
+      apt: 
+        name: 'memcached'
+        state: present
