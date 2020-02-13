@@ -20,4 +20,4 @@ tasks/dacapo/dacapo.jar
 tasks/gmpbench/RES-*
 tasks/brlcad/*.pix
 tasks/brlcad/*.log
-tools/task_test/*
+tools/tasks_test/*

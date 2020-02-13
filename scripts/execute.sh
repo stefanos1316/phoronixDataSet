@@ -43,7 +43,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng")
+tasks=("apache")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
