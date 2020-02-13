@@ -43,7 +43,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=("tscp" "stockfish bench 128 8 24 default depth")
+tasks=("p7zip b" "bzip2  ../inputs/tmp_linux-5.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -87,7 +87,7 @@ function dumpGarbage {
 		rm ../inputs/tmp_linux-5.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst
 		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../${taskDirectory}/dcraw/*.ppm 
 		rm bitmap0_* ; rm -rf blog-* ; rm  alltext.out ; rm output.ppm; rm results.txt
-		rm clover.*
+		rm clover.*tmp_linux-5.3.tar.gz.bz2
 	fi
 }
 
