@@ -68,6 +68,15 @@ cp ../../${taskScripts}/tscp_main.c ./main.c
 cc -O3 *.c -o tscp
 cd ../
 
+echo "-------Downloading and installing stockfish"
+mkdir stockfish && cd stockfish
+wget http://www.phoronix-test-suite.com/benchmark-files/stockfish-9-src.zip
+unzip stockfish-9-src.zip && rm stockfish-9-src.zip
+cd src
+make build ARCH=x86-64-modern
+cp stockfish ../
+cd ../../
+
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg
 # wget http://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.19.tar.bz2
