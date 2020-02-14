@@ -253,11 +253,17 @@ cd tasks_test
 # cp build/x265 ./
 # cd ../
 
-echo "-------Downloading and installing build-linux-kernel"
-mkdir build-linux-kernel && cd build-linux-kernel
-cp ../../../inputs/linux-5.3.tar.gz ./
-tar -xzvf linux-5.3.tar.gz && rm linux-5.3.tar.gz
-cp ../../$taskScripts/build-linux-kernel ./
+# echo "-------Downloading and installing build-linux-kernel"
+# mkdir build-linux-kernel && cd build-linux-kernel
+# cp ../../../inputs/linux-5.3.tar.gz ./
+# tar -xzvf linux-5.3.tar.gz && rm linux-5.3.tar.gz
+# cp ../../$taskScripts/build-linux-kernel ./
+# cd ../
+
+echo "-------Downloading and installing ctx-clock"
+mkdir ctx_clock && cd ctx_clock
+cp ../../$taskScripts/ctx_clock.c ./
+cc ctx_clock.c -o ctx_clock
 cd ../
 
 # echo "-------Downloading and install gnupg"
