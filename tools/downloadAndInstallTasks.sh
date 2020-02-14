@@ -232,26 +232,26 @@ cd tasks_test
 # cp apps/openssl ./
 # cd ../
 
-echo "-------Downloading and installing X264"
-mkdir x264 && cd x264
-wget http://download.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20180925-2245.tar.bz2
-tar -xjf x264-snapshot-20180925-2245.tar.bz2 && rm x264-snapshot-20180925-2245.tar.bz2
-mv x264-snapshot-20180925-2245/* ./ && rm -rf x264-snapshot-20180925-2245/
-./configure --prefix=./ --disable-opencl  --enable-pic --enable-shared
-make install
-cp bin/x264 ./
-cd ../
+# echo "-------Downloading and installing X264"
+# mkdir x264 && cd x264
+# wget http://download.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20180925-2245.tar.bz2
+# tar -xjf x264-snapshot-20180925-2245.tar.bz2 && rm x264-snapshot-20180925-2245.tar.bz2
+# mv x264-snapshot-20180925-2245/* ./ && rm -rf x264-snapshot-20180925-2245/
+# ./configure --prefix=./ --disable-opencl  --enable-pic --enable-shared
+# make install
+# cp bin/x264 ./
+# cd ../
 
-echo "-------Downloading and installing X265"
-mkdir x265 && cd x265
-wget http://bitbucket.org/multicoreware/x265/downloads/x265_3.1.2.tar.gz
-tar -xzvf x265_3.1.2.tar.gz && rm x265_3.1.2.tar.gz
-mv x265_3.1.2/* ./ && rm -rf x265_3.1.2/ && cd build
-cmake ../source
-make -j $(nproc --all)
-cd ../
-cp build/x265 ./
-cd ../
+# echo "-------Downloading and installing X265"
+# mkdir x265 && cd x265
+# wget http://bitbucket.org/multicoreware/x265/downloads/x265_3.1.2.tar.gz
+# tar -xzvf x265_3.1.2.tar.gz && rm x265_3.1.2.tar.gz
+# mv x265_3.1.2/* ./ && rm -rf x265_3.1.2/ && cd build
+# cmake ../source
+# make -j $(nproc --all)
+# cd ../
+# cp build/x265 ./
+# cd ../
 
 echo "-------Downloading and installing build-linux-kernel"
 mkdir build-linux-kernel && cd build-linux-kernel

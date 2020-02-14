@@ -137,12 +137,6 @@ for task in "${tasks[@]}"; do
 		("xz")
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
 			time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
-		("build-linux-kernel")
-			tar -xzvf ../inputs/linux-5.3.tar.gz
-			mv ./linux-5.3 ../${taskDirectory}/${benchmark}
-			cd ../${taskDirectory}/${benchmark}
-			time (./${task}) 2> ../../results/log_${taskName}.txt
-			cd ../../scripts ;;
 		("build-gcc")
 			tar -xzvf ../inputs/gcc-8.2.0.tar.gz
 			mv ./gcc-8.2.0 ../${taskDirectory}/${benchmark}
@@ -161,7 +155,8 @@ for task in "${tasks[@]}"; do
 			time (../${taskDirectory}/${benchmark}/${task} <<< 1) 2> ../results/log_${taskName}.txt ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
-		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d )
+		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
+		build-linux-kernel )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ] ; then
 				startServers $benchmark
 			fi
