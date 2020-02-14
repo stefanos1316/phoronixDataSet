@@ -6,8 +6,7 @@ taskDirectory="tools/tasks_test"
 stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-5.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
-		"sudokut" "nero2d" "minion" "hmmr -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
-		"mafft --thread 1 --localpair --maxiterate 1000000 ../inputs/pyruvate_decarboxylase.fasta"  \
+		"sudokut" "nero2d" "minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
 		"rodinia euler3d_cpu_double ../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
 		"rodinia sc_omp 10 30 512 65536 65536 2000 none output.txt $(nproc --all) && rm output.txt" "openssl speed rsa4096" \
 		"x264  -o /dev/null --slow --threads $(nproc --all) ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m" \
@@ -46,7 +45,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=("minion ../inputs/minions.minion")
+tasks=("openssl speed rsa4096")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {

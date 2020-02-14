@@ -186,16 +186,50 @@ cd tasks_test
 # cp ../../$taskScripts/nero2d ./
 # cd ../
 
-echo "-------Downloading and installing minion"
-mkdir minion && cd minion
-wget http://constraintmodelling.org/files/2015/06/minion-1.8-linux.tar_.gz
-tar -xzvf minion-1.8-linux.tar_.gz && rm minion-1.8-linux.tar_.gz
-mv minion-1.8/* ./ && rm -rf minion-1.8/
-cd bin/
-cmake -DQUICK=1 ..
-make minion -j $(nproc --all)
-cd ../ && rm -rf minion
-cp bin/minion ./
+# echo "-------Downloading and installing minion"
+# mkdir minion && cd minion
+# wget http://constraintmodelling.org/files/2015/06/minion-1.8-linux.tar_.gz
+# tar -xzvf minion-1.8-linux.tar_.gz && rm minion-1.8-linux.tar_.gz
+# mv minion-1.8/* ./ && rm -rf minion-1.8/
+# cd bin/
+# cmake -DQUICK=1 ..
+# make minion -j $(nproc --all)
+# cd ../ && rm -rf minion
+# cp bin/minion ./
+# cd ../
+
+# echo "-------Downloading and installing hmmer"
+# mkdir hmmer && cd hmmer
+# wget http://www.phoronix-test-suite.com/benchmark-files/hmmer-2.3.2.tar.gz
+# tar -xzvf hmmer-2.3.2.tar.gz && rm hmmer-2.3.2.tar.gz
+# mv hmmer-2.3.2/* ./ && rm -rf hmmer-2.3.2/
+# ./configure --enable-threads
+# make -j $(nproc --all)
+# cp src/hmmpfam ./hmmer
+# wget http://www.phoronix-test-suite.com/benchmark-files/Pfam_ls.gz
+# gunzip Pfam_ls.gz -c > ../../../inputs/Pfam_ls 
+# cd ../
+
+echo "-------Downloading and installing rodinia"
+mkdir rodinia && cd rodinia
+wget http://www.cs.virginia.edu/~kw5na/lava/Rodinia/Packages/Current/rodinia_2.4.tar.bz2
+tar -xvf rodinia_2.4.tar.bz2 && rm rodinia_2.4.tar.bz2
+mv rodinia_2.4/* ./ && rm -rf rodinia_2.4/
+cp ../../$taskScripts/rodinia ./
+cp data/cfd/missile.domn.0.2M ../../../inputs/missile.domn.0.2M
+cd openmp/cfd && make && cp euler3d_cpu_double ../../ && cd ../
+cd lavaMD && make && cp lavaMD ../../ && cd ../
+cd streamcluster && make && cp sc_omp ../../
+cd ../../../
+
+echo "-------Downloading and installing openssl"
+mkdir openssl && cd openssl
+wget http://www.openssl.org/source/old/1.0.1/openssl-1.0.1g.tar.gz
+tar -xzvf openssl-1.0.1g.tar.gz && rm openssl-1.0.1g.tar.gz
+mv openssl-1.0.1g/* ./ && rm -rf openssl-1.0.1g/
+./config no-zlib
+make
+cp apps/openssl ./
 cd ../
 
 # echo "-------Downloading and install gnupg"
