@@ -210,26 +210,54 @@ cd tasks_test
 # gunzip Pfam_ls.gz -c > ../../../inputs/Pfam_ls 
 # cd ../
 
-echo "-------Downloading and installing rodinia"
-mkdir rodinia && cd rodinia
-wget http://www.cs.virginia.edu/~kw5na/lava/Rodinia/Packages/Current/rodinia_2.4.tar.bz2
-tar -xvf rodinia_2.4.tar.bz2 && rm rodinia_2.4.tar.bz2
-mv rodinia_2.4/* ./ && rm -rf rodinia_2.4/
-cp ../../$taskScripts/rodinia ./
-cp data/cfd/missile.domn.0.2M ../../../inputs/missile.domn.0.2M
-cd openmp/cfd && make && cp euler3d_cpu_double ../../ && cd ../
-cd lavaMD && make && cp lavaMD ../../ && cd ../
-cd streamcluster && make && cp sc_omp ../../
-cd ../../../
+# echo "-------Downloading and installing rodinia"
+# mkdir rodinia && cd rodinia
+# wget http://www.cs.virginia.edu/~kw5na/lava/Rodinia/Packages/Current/rodinia_2.4.tar.bz2
+# tar -xvf rodinia_2.4.tar.bz2 && rm rodinia_2.4.tar.bz2
+# mv rodinia_2.4/* ./ && rm -rf rodinia_2.4/
+# cp ../../$taskScripts/rodinia ./
+# cp data/cfd/missile.domn.0.2M ../../../inputs/missile.domn.0.2M
+# cd openmp/cfd && make && cp euler3d_cpu_double ../../ && cd ../
+# cd lavaMD && make && cp lavaMD ../../ && cd ../
+# cd streamcluster && make && cp sc_omp ../../
+# cd ../../../
 
-echo "-------Downloading and installing openssl"
-mkdir openssl && cd openssl
-wget http://www.openssl.org/source/old/1.0.1/openssl-1.0.1g.tar.gz
-tar -xzvf openssl-1.0.1g.tar.gz && rm openssl-1.0.1g.tar.gz
-mv openssl-1.0.1g/* ./ && rm -rf openssl-1.0.1g/
-./config no-zlib
-make
-cp apps/openssl ./
+# echo "-------Downloading and installing openssl"
+# mkdir openssl && cd openssl
+# wget http://www.openssl.org/source/old/1.0.1/openssl-1.0.1g.tar.gz
+# tar -xzvf openssl-1.0.1g.tar.gz && rm openssl-1.0.1g.tar.gz
+# mv openssl-1.0.1g/* ./ && rm -rf openssl-1.0.1g/
+# ./config no-zlib
+# make
+# cp apps/openssl ./
+# cd ../
+
+echo "-------Downloading and installing X264"
+mkdir x264 && cd x264
+wget http://download.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20180925-2245.tar.bz2
+tar -xjf x264-snapshot-20180925-2245.tar.bz2 && rm x264-snapshot-20180925-2245.tar.bz2
+mv x264-snapshot-20180925-2245/* ./ && rm -rf x264-snapshot-20180925-2245/
+./configure --prefix=./ --disable-opencl  --enable-pic --enable-shared
+make install
+cp bin/x264 ./
+cd ../
+
+echo "-------Downloading and installing X265"
+mkdir x265 && cd x265
+wget http://bitbucket.org/multicoreware/x265/downloads/x265_3.1.2.tar.gz
+tar -xzvf x265_3.1.2.tar.gz && rm x265_3.1.2.tar.gz
+mv x265_3.1.2/* ./ && rm -rf x265_3.1.2/ && cd build
+cmake ../source
+make -j $(nproc --all)
+cd ../
+cp build/x265 ./
+cd ../
+
+echo "-------Downloading and installing build-linux-kernel"
+mkdir build-linux-kernel && cd build-linux-kernel
+cp ../../../inputs/linux-5.3.tar.gz ./
+tar -xzvf linux-5.3.tar.gz && rm linux-5.3.tar.gz
+cp ../../$taskScripts/build-linux-kernel ./
 cd ../
 
 # echo "-------Downloading and install gnupg"
