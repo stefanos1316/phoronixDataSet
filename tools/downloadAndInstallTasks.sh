@@ -260,10 +260,21 @@ cd tasks_test
 # cp ../../$taskScripts/build-linux-kernel ./
 # cd ../
 
-echo "-------Downloading and installing ctx-clock"
-mkdir ctx_clock && cd ctx_clock
-cp ../../$taskScripts/ctx_clock.c ./
-cc ctx_clock.c -o ctx_clock
+# echo "-------Downloading and installing ctx-clock"
+# mkdir ctx_clock && cd ctx_clock
+# cp ../../$taskScripts/ctx_clock.c ./
+# cc ctx_clock.c -o ctx_clock
+# cd ../
+
+echo "-------Downloading and installing sysbench"
+mkdir sysbench && cd sysbench
+wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip
+unzip sysbench-20180728.zip && rm sysbench-20180728.zip
+mv sysbench-master/* ./ && rm -rf sysbench-master/ 
+./autogen.sh
+./configure  --without-mysql
+make -j $(nproc --all)
+cp src/sysbench ./
 cd ../
 
 # echo "-------Downloading and install gnupg"
