@@ -122,11 +122,59 @@ cd tasks_test
 # mv Run byte
 # cd ../
 
-echo "-------Downloading and installing scimark2"
-wget http://www.phoronix-test-suite.com/benchmark-files/scimark2_1c.zip
-unzip scimark2_1c.zip -d scimark2 && rm scimark2_1c.zip && cd scimark2
-cc -O3 -o scimark2 *.c -lm
-cd ../
+# echo "-------Downloading and installing scimark2"
+# wget http://www.phoronix-test-suite.com/benchmark-files/scimark2_1c.zip
+# unzip scimark2_1c.zip -d scimark2 && rm scimark2_1c.zip && cd scimark2
+# cc -O3 -o scimark2 *.c -lm
+# cd ../
+
+# echo "-------Downloading and installing fhourstones"
+# mkdir fhourstones && cd fhourstones
+# wget http://www.phoronix-test-suite.com/benchmark-files/Fhourstones.tar.gz
+# tar -xzvf Fhourstones.tar.gz && rm Fhourstones.tar.gz 
+# cp ../../$taskScripts/SearchGame.c ./
+# make -j $(nproc --all)
+# mv SearchGame fhourstones
+# cd ../
+
+# echo "-------Downloading and installing gmpbench"
+# mkdir gmpbench && cd gmpbench
+# wget ftp://ftp.gmplib.org/pub/misc/gmpbench-0.2.tar.bz2
+# tar -xjvf gmpbench-0.2.tar.bz2 && rm gmpbench-0.2.tar.bz2
+# mv gmpbench-0.2/* ./ && rm -rf gmpbench-0.2
+# wget http://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/gexpr.c.tar.gz
+# tar -xvzf gexpr.c.tar.gz && rm gexpr.c.tar.gz 
+# cc -O3 gexpr.c -o gexpr -lm
+# mv runbench ./gmpbench
+# cd ../
+
+# echo "-------Downloading and installing dcraw"
+# mkdir dcraw && cd dcraw
+# wget http://www.phoronix-test-suite.com/benchmark-files/dcraw-test-1.tar.bz2
+# tar -xjvf dcraw-test-1.tar.bz2 && rm dcraw-test-1.tar.bz2
+# cc -o dcraw -O3 dcraw.c -lm -DNO_JPEG -DNO_LCMS
+# cp DSC_5037.NEF DSC_5040.NEF
+# cp DSC_5037.NEF DSC_5041.NEF
+# cp DSC_5037.NEF DSC_5042.NEF
+# cp DSC_5037.NEF DSC_5043.NEF
+# cp DSC_5037.NEF DSC_5044.NEF
+# cp DSC_5037.NEF DSC_5045.NEF
+# cp DSC_5037.NEF DSC_5046.NEF
+# cp DSC_5037.NEF DSC_5047.NEF
+# cp DSC_5037.NEF DSC_5048.NEF
+# cp DSC_5037.NEF DSC_5049.NEF
+# cd ../
+
+# echo "-------Downloading and installing sudokut"
+# mkdir sudokut && cd sudokut
+# wget http://www.phoronix-test-suite.com/benchmark-files/sudokut0.4-1.tar.bz2
+# tar -xjvf sudokut0.4-1.tar.bz2 && rm sudokut0.4-1.tar.bz2
+# mv sudokut0.4/* ./ && rm -rf sudokut0.4/
+# mv sudokut sudokut-bin
+# cp ../../$taskScripts/sudokut.sh ./
+# sed -i 's/sudokut/sudokut\-bin/g' sudokut.sh
+# mv sudokut.sh sudokut
+# cd ../
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg
