@@ -6,7 +6,7 @@ taskDirectory="tools/tasks_test"
 stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-5.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
-		"sudokut" "nero2d ../inputs/nero2d.igf" "minions ../inputs/minions.minion" "hmmr -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
+		"sudokut" "nero2d" "minion" "hmmr -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
 		"mafft --thread 1 --localpair --maxiterate 1000000 ../inputs/pyruvate_decarboxylase.fasta"  \
 		"rodinia euler3d_cpu_double ../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
 		"rodinia sc_omp 10 30 512 65536 65536 2000 none output.txt $(nproc --all) && rm output.txt" "openssl speed rsa4096" \
@@ -46,7 +46,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=("dcraw ../${taskDirectory}/dcraw/DSC_50*" "sudokut")
+tasks=("minion ../inputs/minions.minion")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -162,7 +162,7 @@ for task in "${tasks[@]}"; do
 			time (../${taskDirectory}/${benchmark}/${task} <<< 1) 2> ../results/log_${taskName}.txt ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
-		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer | botan* | gnupg | aircrack-ng | sudokut)
+		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ] ; then
 				startServers $benchmark
 			fi

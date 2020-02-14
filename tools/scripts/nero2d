@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./src/nero2d ../../../inputs/nero2d.igf
