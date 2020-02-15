@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export OMP_NUM_THREADS=8
+
 cd bench
-mpirun --allow-run-as-root -np 7 ../b/lmp
+mpirun --allow-run-as-root -np 8 ../b/lmp
 cd ../

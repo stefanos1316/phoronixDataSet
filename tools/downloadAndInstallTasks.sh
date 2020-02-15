@@ -429,17 +429,65 @@ cd tasks_test
 # cp ../../$taskScripts/john-the-ripper ./
 # cd ../
 
-echo "-------Downloading and installing lammps"
-mkdir lammps && cd lammps
-wget https://github.com/lammps/lammps/archive/patch_9Jan2020.tar.gz
-tar -xzvf patch_9Jan2020.tar.gz && rm patch_9Jan2020.tar.gz
-mv lammps-patch_9Jan2020/* ./ && rm -rf lammps-patch_9Jan2020/
-mkdir b && cd b
-cmake ../cmake/ -DCMAKE_BUILD_TYPE=Release -DPKG_MOLECULE=1 -DPKG_KSPACE=1 -DPKG_RIGID=1 -DPKG_GRANULAR=1 -DPKG_MANYBODY=1
+# echo "-------Downloading and installing lammps"
+# mkdir lammps && cd lammps
+# wget https://github.com/lammps/lammps/archive/patch_9Jan2020.tar.gz
+# tar -xzvf patch_9Jan2020.tar.gz && rm patch_9Jan2020.tar.gz
+# mv lammps-patch_9Jan2020/* ./ && rm -rf lammps-patch_9Jan2020/
+# mkdir b && cd b
+# cmake ../cmake/ -DCMAKE_BUILD_TYPE=Release -DPKG_MOLECULE=1 -DPKG_KSPACE=1 -DPKG_RIGID=1 -DPKG_GRANULAR=1 -DPKG_MANYBODY=1
+# make -j $(nproc --all)
+# cd ../
+# cp ../../$taskScripts/lammps ./
+# cd ../
+
+# echo "-------Downloading and installing lzbench"
+# mkdir lzbench && cd lzbench
+# wget http://www.phoronix-test-suite.com/benchmark-files/lzbench-20170808.zip
+# unzip lzbench-20170808.zip && rm lzbench-20170808.zip
+# mv lzbench/* ./ && rm -rf lzbench/
+# make
+# cd ../
+
+# echo "-------Downloading and installing m-queens"
+# mkdir m-queens && cd m-queens
+# wget http://phoronix-test-suite.com/benchmark-files/m-queens-1.2.tar.gz
+# tar -xzvf m-queens-1.2.tar.gz && rm m-queens-1.2.tar.gz
+# mv m-queens-1.2/* ./ && rm -rf m-queens-1.2/
+# g++ -fopenmp $CFLAGS main.c -o m-queens
+# cd ../
+
+# echo "-------Downloading and installing mbw"
+# mkdir mbw && cd mbw
+# wget http://www.phoronix-test-suite.com/benchmark-files/mbw-20180908.tar.xz
+# tar -xf mbw-20180908.tar.xz && rm mbw-20180908.tar.xz
+# mv mbw/* ./ && rm -rf mbw
+# cc -O3 -march=native -o mbw mbw.c
+# cd ../
+
+# echo "-------Downloading and installing mcperf"
+# mkdir mcperf && cd mcperf
+# wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/twemperf/mcperf-0.1.1.tar.gz
+# tar -xzvf mcperf-0.1.1.tar.gz && rm mcperf-0.1.1.tar.gz
+# mv mcperf-0.1.1/* ./ && rm -rf mcperf-0.1.1
+# ./configure
+# make
+# cp ../../$taskScripts/mcperf ./
+# cd ../
+
+echo "-------Downloading and installing mkl-dnn"
+mkdir mkl-dnn && cd mkl-dnn
+wget https://github.com/intel/mkl-dnn/archive/v1.1.tar.gz
+tar -xf v1.1.tar.gz && rm v1.1.tar.gz
+mv mkl-dnn-1.1/* ./ && rm -rf mkl-dnn-1.1/
+mkdir build && cd build
+CFLAGS="-O3 -march=native" CXXFLAGS="-O3 -march=native" cmake -DCMAKE_BUILD_TYPE=Release MKLDNN_ARCH_OPT_FLAGS="-O3 -march=native" $CMAKE_OPTIONS ..
 make -j $(nproc --all)
+cp tests/benchdnn ../
 cd ../
-cp ../../$taskScripts/lammps ./
+cp ../../$taskScripts/mkl-dnn ./
 cd ../
+
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg
