@@ -368,19 +368,77 @@ cd tasks_test
 # cp ../../$taskScripts/cpp-perf-bench ./
 # cd ../
 
-echo "-------Downloading and installing dacapo"
-mkdir dacapo && cd dacapo
-wget http://sourceforge.mirrorservice.org/d/da/dacapobench/9.12-bach-MR1/dacapo-9.12-MR1-bach.jar
-mv dacapo-9.12-MR1-bach.jar dacapo.jar
-cp ../../$taskScripts/dacapo ./
+# echo "-------Downloading and installing dacapo"
+# mkdir dacapo && cd dacapo
+# wget 'https://downloads.sourceforge.net/project/dacapobench/9.12-bach-MR1/dacapo-9.12-MR1-bach.jar?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdacapobench%2Ffiles%2F9.12-bach-MR1%2Fdacapo-9.12-MR1-bach.jar%2Fdownload%3Fuse_mirror%3Dautoselect&ts=1581797045'
+# mv * dacapo.jar
+# cp ../../$taskScripts/dacapo ./
+# cd ../
+
+# echo "-------Downloading and installing glibc-bench"
+# mkdir glibc-bench && cd glibc-bench
+# wget https://www.phoronix-test-suite.com/benchmark-files/glibc-benchmarks-2.tar.gz
+# tar -xvf glibc-benchmarks-2.tar.gz && rm glibc-benchmarks-2.tar.gz
+# mv glibc-benchmarks/* ./ && rm -rf glibc-benchmarks
+# cp ../../$taskScripts/glibc-bench ./
+# cd ../
+
+# echo "-------Downloading and installing ebizzy"
+# mkdir ebizzy && cd ebizzy
+# wget http://www.phoronix-test-suite.com/benchmark-files/ebizzy-0.3.tar.gz
+# tar -xzvf ebizzy-0.3.tar.gz && rm ebizzy-0.3.tar.gz
+# mv ebizzy-0.3/* ./ && rm -rf ebizzy-0.3
+# cc -pthread -lpthread -O3 -march=native -o ebizzy ebizzy.c
+# cd ../
+
+# echo "-------Downloading and installing himeno"
+# mkdir himeno && cd himeno
+# wget http://www.phoronix-test-suite.com/benchmark-files/himenobmtxpa-2.tar.xz
+# tar -xf himenobmtxpa-2.tar.xz && rm himenobmtxpa-2.tar.xz
+# cc himenobmtxpa.c -O3 -mavx2 -o himeno
+# cd ../
+
+# echo "-------Downloading and installing hint"
+# mkdir hint && cd hint
+# wget http://www.phoronix-test-suite.com/benchmark-files/hint-1.0.tar.gz
+# tar -xzvf hint-1.0.tar.gz && rm hint-1.0.tar.gz
+# mv unix/* ./ && rm -rf unix
+# cc -O3 -march=native hint.c hkernel.c -Dunix -DDOUBLE -DIINT -o double -lm
+# cc -O3 -march=native hint.c hkernel.c -Dunix -DFLOAT -DIINT -o float -lm
+# cp ../../$taskScripts/hint ./
+# cd ../
+
+echo "-------Downloading and installing hpcg"
+mkdir hpcg && cd hpcg
+wget http://www.hpcg-benchmark.org/downloads/hpcg-3.1.tar.gz
+tar -xzvf hpcg-3.1.tar.gz && rm hpcg-3.1.tar.gz
+mv hpcg-3.1/* ./ && rm -rf hpcg-3.1
+make arch=Linux_MPI
+cp ../../$taskScripts/hpcg ./
 cd ../
 
-echo "-------Downloading and installing glib-bench"
-mkdir glib-bench && cd glib-bench
-wget https://www.phoronix-test-suite.com/benchmark-files/glibc-benchmarks-2.tar.gz
-tar -xvf glibc-benchmarks-2.tar.gz && rm glibc-benchmarks-2.tar.gz
-mv glibc-benchmarks/* ./ && rm -rf glibc-benchmarks
-cp ../../$taskScripts/glibc-bench ./
+echo "-------Downloading and installing john-the-ripper"
+mkdir john-the-ripper && cd john-the-ripper
+wget https://www.openwall.com/john/k/john-1.9.0-jumbo-1.tar.gz
+tar -zxvf john-1.9.0-jumbo-1.tar.gz && rm john-1.9.0-jumbo-1.tar.gz
+mv john-1.9.0-jumbo-1/* ./ && rm -rf john-1.9.0-jumbo-1
+cd src/
+CFLAGS="-O3 -march=native -std=gnu89" ./configure --disable-native-tests --disable-opencl
+CFLAGS="-O3 -march=native -std=gnu89" make -j $(nproc --all)
+cp src/ ../ && cd ../
+cp ../../$taskScripts/john-the-ripper ./
+cd ../
+
+echo "-------Downloading and installing lammps"
+mkdir lammps && cd lammps
+wget https://github.com/lammps/lammps/archive/patch_9Jan2020.tar.gz
+tar -xf lammps-patch_9Jan2020.tar.gz && rm lammps-patch_9Jan2020.tar.gz
+mv lammps-patch_9Jan2020/* ./ && rm -rf lammps-patch_9Jan2020/
+mkdir b && cd b
+cmake ../cmake/ -DCMAKE_BUILD_TYPE=Release -DPKG_MOLECULE=1 -DPKG_KSPACE=1 -DPKG_RIGID=1 -DPKG_GRANULAR=1 -DPKG_MANYBODY=1
+make -j $(nproc --all)
+cd ../
+cp ../../$taskScripts/lammps ./
 cd ../
 
 # echo "-------Downloading and install gnupg"
