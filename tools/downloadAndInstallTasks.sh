@@ -292,15 +292,34 @@ cd tasks_test
 # cp unix/povray ./
 # cd ../
 
-echo "-------Downloading and installing blake2s"
-mkdir blake2s && cd blake2s
-wget http://www.phoronix-test-suite.com/benchmark-files/BLAKE2-20170307.tar.xz
-tar -xf BLAKE2-20170307.tar.xz && rm BLAKE2-20170307.tar.xz
-mv BLAKE2-20170307/* ./ && rm -rf BLAKE2-20170307/
-cp ../../$taskScripts/blake2s.c bench/bench.c
-cd bench && make
-cp blake2s ../
-cd ../../
+# echo "-------Downloading and installing blake2s"
+# mkdir blake2s && cd blake2s
+# wget http://www.phoronix-test-suite.com/benchmark-files/BLAKE2-20170307.tar.xz
+# tar -xf BLAKE2-20170307.tar.xz && rm BLAKE2-20170307.tar.xz
+# mv BLAKE2-20170307/* ./ && rm -rf BLAKE2-20170307/
+# cp ../../$taskScripts/blake2s.c bench/bench.c
+# cd bench && make
+# cp blake2s ../
+# cd ../../
+
+# echo "-------Downloading and installing c-ray"
+# mkdir c-ray && cd c-ray
+# wget http://www.phoronix-test-suite.com/benchmark-files/c-ray-1.1.tar.gz
+# tar -xzvf c-ray-1.1.tar.gz && rm c-ray-1.1.tar.gz
+# mv c-ray-1.1/* ./ && rm -rf c-ray-1.1/
+# cc -o c-ray-mt c-ray-mt.c -lm -lpthread -O3
+# mv c-ray-mt c-ray
+# cd ../
+
+echo "-------Downloading and installing blogbench"
+mkdir blogbench && cd blogbench
+wget http://download.pureftpd.org/pub/blogbench/blogbench-1.1.tar.gz
+tar -xzvf blogbench-1.1.tar.gz && rm blogbench-1.1.tar.gz
+mv blogbench-1.1/* ./ && rm -rf blogbench-1.1/
+./configure
+make -j $(nproc --all)
+cp src/blogbench ./
+cd ../
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg
