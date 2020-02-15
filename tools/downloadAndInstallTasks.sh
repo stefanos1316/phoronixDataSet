@@ -266,16 +266,41 @@ cd tasks_test
 # cc ctx_clock.c -o ctx_clock
 # cd ../
 
-echo "-------Downloading and installing sysbench"
-mkdir sysbench && cd sysbench
-wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip
-unzip sysbench-20180728.zip && rm sysbench-20180728.zip
-mv sysbench-master/* ./ && rm -rf sysbench-master/ 
-./autogen.sh
-./configure  --without-mysql
-make -j $(nproc --all)
-cp src/sysbench ./
-cd ../
+# echo "-------Downloading and installing sysbench"
+# mkdir sysbench && cd sysbench
+# wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip
+# unzip sysbench-20180728.zip && rm sysbench-20180728.zip
+# mv sysbench-master/* ./ && rm -rf sysbench-master/ 
+# ./autogen.sh
+# ./configure  --without-mysql
+# make -j $(nproc --all)
+# cp src/sysbench ./
+# cd ../
+
+# echo "-------Downloading and installing povray"
+# mkdir povray && cd povray
+# wget http://www.phoronix-test-suite.com/benchmark-files/povray-3.7.0.7.tar.xz
+# tar -xf povray-3.7.0.7.tar.xz && rm povray-3.7.0.7.tar.xz
+# mv povray-3.7.0.7/* ./ && rm -rf povray-3.7.0.7/ 
+# cd unix
+# autoupdate
+# ./prebuild.sh
+# cd ..
+# automake --add-missing
+# LIBS="-lboost_system" ./configure COMPILED_BY="justarandom@gmail.com" --with-boost-thread=boost_thread
+# make -j $(nproc --all)
+# cp unix/povray ./
+# cd ../
+
+echo "-------Downloading and installing blake2s"
+mkdir blake2s && cd blake2s
+wget http://www.phoronix-test-suite.com/benchmark-files/BLAKE2-20170307.tar.xz
+tar -xf BLAKE2-20170307.tar.xz && rm BLAKE2-20170307.tar.xz
+mv BLAKE2-20170307/* ./ && rm -rf BLAKE2-20170307/
+cp ../../$taskScripts/blake2s.c bench/bench.c
+cd bench && make
+cp blake2s ../
+cd ../../
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg

@@ -12,7 +12,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"x264  -o /dev/null --slow --threads $(nproc --all) ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m" \
 		"x265 ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  /dev/null"  "ctx_clock" \
 		"sysbench cpu --cpu-max-prime=20000000 --threads=8 run" "sysbench memory --memory-total-size=100G --threads=8 run" \
-		"blake2 100" "c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \ 
+		"blake2s 100" "c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \ 
 		"cachebench read -r -m 9" "cachebench write -w -m 9" "cachebench mixed -b -m 9" "cachebench memset -s -m 9" "cachebench memcpy -p -m 9" \
 		"cloverleaf" "brlcad run -P $(nproc --all)" "cpp-perf-bench stepanov_abstraction" "cpp-perf-bench stepanov_vector" \
 		"cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" "cpp-perf-bench mathlib" "cpp-perf-bench random_numbers" \
@@ -44,8 +44,8 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"stream" "swet -Z" "t-test1 5000" "tensorflow" "tinymembench" "renderer" "xsbench -t 8 -s large -l 30000000" \
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
-# timeConsumingTaks=("povray -benchmark <<< 1" "build-linux-kernel" "build-gcc" )
-tasks=("sysbench cpu --cpu-max-prime=20000000 --threads=8 run" "sysbench memory --memory-total-size=100G --threads=8 run")
+# timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc" )
+tasks=("blake2s 100")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -151,7 +151,7 @@ for task in "${tasks[@]}"; do
 			cd ../${taskDirectory}/${benchmark}
 			time (./${task}) 2> ../../results/log_${taskName}.txt
 			cd ../../scripts ;;
-		("povrays")
+		("povray")
 			time (../${taskDirectory}/${benchmark}/${task} <<< 1) 2> ../results/log_${taskName}.txt ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
