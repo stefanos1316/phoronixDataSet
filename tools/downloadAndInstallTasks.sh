@@ -321,30 +321,66 @@ cd tasks_test
 # cp src/blogbench ./
 # cd ../
 
-echo "-------Downloading and installing cachebench"
-mkdir llbench && mkdir cachebench && cd llbench
-wget http://www.phoronix-test-suite.com/benchmark-files/llcbench-20170104.tar.gz
-tar -xzvf llcbench-20170104.tar.gz && rm llcbench-20170104.tar.gz
-mv llcbench/* ./ && rm -rf llcbench/
-cd cachebench
-sed -i '.orig' '/#include <malloc.h>/d' cachebench.c
-cp ../../../$taskScripts/cachebench.c ./
-cd ../
-make linux-mpich
-make cache-bench
-cp -r cachebench/* ../cachebench/
-cd ../
-rm -rf llbench
+# echo "-------Downloading and installing cachebench"
+# mkdir llbench && mkdir cachebench && cd llbench
+# wget http://www.phoronix-test-suite.com/benchmark-files/llcbench-20170104.tar.gz
+# tar -xzvf llcbench-20170104.tar.gz && rm llcbench-20170104.tar.gz
+# mv llcbench/* ./ && rm -rf llcbench/
+# cd cachebench
+# sed -i '.orig' '/#include <malloc.h>/d' cachebench.c
+# cp ../../../$taskScripts/cachebench.c ./
+# cd ../
+# make linux-mpich
+# make cache-bench
+# cp -r cachebench/* ../cachebench/
+# cd ../
+# rm -rf llbench
 
-echo "-------Downloading and installing cloverleaf"
-mkdir cloverleaf && cd cloverleaf
-wget http://phoronix-test-suite.com/benchmark-files/CloverLeaf_OpenMP-20181012.zip
-unzip CloverLeaf_OpenMP-20181012.zip && rm CloverLeaf_OpenMP-20181012.zip
-mv CloverLeaf_OpenMP-master/* ./ && rm -rf CloverLeaf_OpenMP-master/
-COMPILER=GNU make
-mv clover_leaf cloverleaf
-cp InputDecks/clover_bm8192.in ../../../inputs
-cp clover.in ../../../inputs
+# echo "-------Downloading and installing cloverleaf"
+# mkdir cloverleaf && cd cloverleaf
+# wget http://phoronix-test-suite.com/benchmark-files/CloverLeaf_OpenMP-20181012.zip
+# unzip CloverLeaf_OpenMP-20181012.zip && rm CloverLeaf_OpenMP-20181012.zip
+# mv CloverLeaf_OpenMP-master/* ./ && rm -rf CloverLeaf_OpenMP-master/
+# COMPILER=GNU make
+# mv clover_leaf cloverleaf
+# cp InputDecks/clover_bm8192.in ../../../inputs
+# cp clover.in ../../../inputs
+# cd ../
+
+# echo "-------Downloading and installing brlcad"
+# mkdir brlcad && cd brlcad
+# wget https://iweb.dl.sourceforge.net/project/brlcad/BRL-CAD%20Source/7.28.0/brlcad-7.28.0.tar.bz2
+# tar -xf brlcad-7.28.0.tar.bz2 && rm brlcad-7.28.0.tar.bz2
+# mv brlcad-7.28.0/* ./ && rm -rf brlcad-7.28.0/
+# mkdir build && cd build
+# cmake .. -DBRLCAD_ENABLE_STRICT=NO -DBRLCAD_BUNDLED_LIBS=ON -DBRLCAD_OPTIMIZED_BUILD=ON -DCMAKE_BUILD_TYPE=Release
+# make -j $(nproc --all)
+# cd ../
+# cp ../../$taskScripts/brlcad ./
+# cd ../
+
+# echo "-------Downloading and installing cpp-perf-bench"
+# mkdir cpp-perf-bench && cd cpp-perf-bench
+# wget http://phoronix-test-suite.com/benchmark-files/CppPerformanceBenchmarks-9.zip
+# unzip CppPerformanceBenchmarks-9.zip && rm CppPerformanceBenchmarks-9.zip
+# mv CppPerformanceBenchmarks-master/* ./ && rm -rf CppPerformanceBenchmarks-master/
+# make all
+# cp ../../$taskScripts/cpp-perf-bench ./
+# cd ../
+
+echo "-------Downloading and installing dacapo"
+mkdir dacapo && cd dacapo
+wget http://sourceforge.mirrorservice.org/d/da/dacapobench/9.12-bach-MR1/dacapo-9.12-MR1-bach.jar
+mv dacapo-9.12-MR1-bach.jar dacapo.jar
+cp ../../$taskScripts/dacapo ./
+cd ../
+
+echo "-------Downloading and installing glib-bench"
+mkdir glib-bench && cd glib-bench
+wget https://www.phoronix-test-suite.com/benchmark-files/glibc-benchmarks-2.tar.gz
+tar -xvf glibc-benchmarks-2.tar.gz && rm glibc-benchmarks-2.tar.gz
+mv glibc-benchmarks/* ./ && rm -rf glibc-benchmarks
+cp ../../$taskScripts/glibc-bench ./
 cd ../
 
 # echo "-------Downloading and install gnupg"
