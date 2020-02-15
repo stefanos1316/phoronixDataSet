@@ -408,31 +408,31 @@ cd tasks_test
 # cp ../../$taskScripts/hint ./
 # cd ../
 
-echo "-------Downloading and installing hpcg"
-mkdir hpcg && cd hpcg
-wget http://www.hpcg-benchmark.org/downloads/hpcg-3.1.tar.gz
-tar -xzvf hpcg-3.1.tar.gz && rm hpcg-3.1.tar.gz
-mv hpcg-3.1/* ./ && rm -rf hpcg-3.1
-make arch=Linux_MPI
-cp ../../$taskScripts/hpcg ./
-cd ../
+# echo "-------Downloading and installing hpcg"
+# mkdir hpcg && cd hpcg
+# wget http://www.hpcg-benchmark.org/downloads/hpcg-3.1.tar.gz
+# tar -xzvf hpcg-3.1.tar.gz && rm hpcg-3.1.tar.gz
+# mv hpcg-3.1/* ./ && rm -rf hpcg-3.1
+# make arch=Linux_MPI
+# cp ../../$taskScripts/hpcg ./
+# cd ../
 
-echo "-------Downloading and installing john-the-ripper"
-mkdir john-the-ripper && cd john-the-ripper
-wget https://www.openwall.com/john/k/john-1.9.0-jumbo-1.tar.gz
-tar -zxvf john-1.9.0-jumbo-1.tar.gz && rm john-1.9.0-jumbo-1.tar.gz
-mv john-1.9.0-jumbo-1/* ./ && rm -rf john-1.9.0-jumbo-1
-cd src/
-CFLAGS="-O3 -march=native -std=gnu89" ./configure --disable-native-tests --disable-opencl
-CFLAGS="-O3 -march=native -std=gnu89" make -j $(nproc --all)
-cp src/ ../ && cd ../
-cp ../../$taskScripts/john-the-ripper ./
-cd ../
+# echo "-------Downloading and installing john-the-ripper"
+# mkdir john-the-ripper && cd john-the-ripper
+# wget https://www.openwall.com/john/k/john-1.9.0-jumbo-1.tar.gz
+# tar -zxvf john-1.9.0-jumbo-1.tar.gz && rm john-1.9.0-jumbo-1.tar.gz
+# mv john-1.9.0-jumbo-1/* ./ && rm -rf john-1.9.0-jumbo-1
+# cd src/
+# CFLAGS="-O3 -march=native -std=gnu89" ./configure --disable-native-tests --disable-opencl
+# CFLAGS="-O3 -march=native -std=gnu89" make -j $(nproc --all)
+# cd ../
+# cp ../../$taskScripts/john-the-ripper ./
+# cd ../
 
 echo "-------Downloading and installing lammps"
 mkdir lammps && cd lammps
 wget https://github.com/lammps/lammps/archive/patch_9Jan2020.tar.gz
-tar -xf lammps-patch_9Jan2020.tar.gz && rm lammps-patch_9Jan2020.tar.gz
+tar -xzvf patch_9Jan2020.tar.gz && rm patch_9Jan2020.tar.gz
 mv lammps-patch_9Jan2020/* ./ && rm -rf lammps-patch_9Jan2020/
 mkdir b && cd b
 cmake ../cmake/ -DCMAKE_BUILD_TYPE=Release -DPKG_MOLECULE=1 -DPKG_KSPACE=1 -DPKG_RIGID=1 -DPKG_GRANULAR=1 -DPKG_MANYBODY=1
