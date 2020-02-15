@@ -311,14 +311,40 @@ cd tasks_test
 # mv c-ray-mt c-ray
 # cd ../
 
-echo "-------Downloading and installing blogbench"
-mkdir blogbench && cd blogbench
-wget http://download.pureftpd.org/pub/blogbench/blogbench-1.1.tar.gz
-tar -xzvf blogbench-1.1.tar.gz && rm blogbench-1.1.tar.gz
-mv blogbench-1.1/* ./ && rm -rf blogbench-1.1/
-./configure
-make -j $(nproc --all)
-cp src/blogbench ./
+# echo "-------Downloading and installing blogbench"
+# mkdir blogbench && cd blogbench
+# wget http://download.pureftpd.org/pub/blogbench/blogbench-1.1.tar.gz
+# tar -xzvf blogbench-1.1.tar.gz && rm blogbench-1.1.tar.gz
+# mv blogbench-1.1/* ./ && rm -rf blogbench-1.1/
+# ./configure
+# make -j $(nproc --all)
+# cp src/blogbench ./
+# cd ../
+
+echo "-------Downloading and installing cachebench"
+mkdir llbench && mkdir cachebench && cd llbench
+wget http://www.phoronix-test-suite.com/benchmark-files/llcbench-20170104.tar.gz
+tar -xzvf llcbench-20170104.tar.gz && rm llcbench-20170104.tar.gz
+mv llcbench/* ./ && rm -rf llcbench/
+cd cachebench
+sed -i '.orig' '/#include <malloc.h>/d' cachebench.c
+cp ../../../$taskScripts/cachebench.c ./
+cd ../
+make linux-mpich
+make cache-bench
+cp -r cachebench/* ../cachebench/
+cd ../
+rm -rf llbench
+
+echo "-------Downloading and installing cloverleaf"
+mkdir cloverleaf && cd cloverleaf
+wget http://phoronix-test-suite.com/benchmark-files/CloverLeaf_OpenMP-20181012.zip
+unzip CloverLeaf_OpenMP-20181012.zip && rm CloverLeaf_OpenMP-20181012.zip
+mv CloverLeaf_OpenMP-master/* ./ && rm -rf CloverLeaf_OpenMP-master/
+COMPILER=GNU make
+mv clover_leaf cloverleaf
+cp InputDecks/clover_bm8192.in ../../../inputs
+cp clover.in ../../../inputs
 cd ../
 
 # echo "-------Downloading and install gnupg"
