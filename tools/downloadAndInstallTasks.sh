@@ -475,18 +475,69 @@ cd tasks_test
 # cp ../../$taskScripts/mcperf ./
 # cd ../
 
-echo "-------Downloading and installing mkl-dnn"
-mkdir mkl-dnn && cd mkl-dnn
-wget https://github.com/intel/mkl-dnn/archive/v1.1.tar.gz
-tar -xf v1.1.tar.gz && rm v1.1.tar.gz
-mv mkl-dnn-1.1/* ./ && rm -rf mkl-dnn-1.1/
-mkdir build && cd build
-CFLAGS="-O3 -march=native" CXXFLAGS="-O3 -march=native" cmake -DCMAKE_BUILD_TYPE=Release MKLDNN_ARCH_OPT_FLAGS="-O3 -march=native" $CMAKE_OPTIONS ..
+# echo "-------Downloading and installing mkl-dnn"
+# mkdir mkl-dnn && cd mkl-dnn
+# wget https://github.com/intel/mkl-dnn/archive/v1.1.tar.gz
+# tar -xf v1.1.tar.gz && rm v1.1.tar.gz
+# mv mkl-dnn-1.1/* ./ && rm -rf mkl-dnn-1.1/
+# mkdir build && cd build
+# CFLAGS="-O3 -march=native" CXXFLAGS="-O3 -march=native" cmake -DCMAKE_BUILD_TYPE=Release MKLDNN_ARCH_OPT_FLAGS="-O3 -march=native" $CMAKE_OPTIONS ..
+# make -j $(nproc --all)
+# cd ../
+# cp ../../$taskScripts/mkl-dnn ./
+# cd ../
+
+# echo "-------Downloading and installing node-express-loadtest"
+# mkdir node-express-loadtest && cd node-express-loadtest
+# wget http://phoronix-test-suite.com/benchmark-files/NodeRestPerfTest3-20181001.zip
+# unzip NodeRestPerfTest3-20181001.zip && rm NodeRestPerfTest3-20181001.zip
+# export TZ=EST
+# mv NodeRestPerfTest3-master/* ./ && rm -rf NodeRestPerfTest3-master/
+# npm i express
+# npm i loadtest
+# cp ../../$taskScripts/node-express-loadtest ./
+# cd ../
+
+# echo "-------Downloading and installing numenta-nab"
+# mkdir numenta-nab && cd numenta-nab
+# wget http://phoronix-test-suite.com/benchmark-files/NAB-20181109.tar.xz
+# tar -xf NAB-20181109.tar.xz && rm NAB-20181109.tar.xz
+# mv NAB-master/* ./ && rm -rf NAB-master/
+# pip install . --user
+# cp ../../$taskScripts/numenta-nab ./
+# cd ../
+
+# echo "-------Downloading and installing phpbench"
+# mkdir phpbench && cd phpbench
+# wget http://phoronix-test-suite.com/benchmark-files/phpbench-081-patched1.zip
+# unzip phpbench-081-patched1.zip && rm phpbench-081-patched1.zip
+# mv phpbench-0.8.1-patched1/* ./ && rm -rf phpbench-0.8.1-patched1/
+# cp ../../$taskScripts/phpbench ./
+# cd ../
+
+echo "-------Downloading and installing primesieve"
+mkdir primesieve && cd primesieve
+wget http://dl.bintray.com/kimwalisch/primesieve/primesieve-7.4.tar.gz
+tar -xzvf primesieve-7.4.tar.gz && rm primesieve-7.4.tar.gz
+mv primesieve-7.4/* ./ && rm -rf primesieve-7.4/
+cmake . -DBUILD_SHARED_LIBS=OFF
 make -j $(nproc --all)
 cd ../
-cp ../../$taskScripts/mkl-dnn ./
+
+echo "-------Downloading and installing pymongo"
+mkdir pymongo && cd pymongo
+python3 -m pip install pymongo
+cp ../../$taskScripts/pymongo ./
+cp ../../$taskScripts/pymongoInsert.py ./
 cd ../
 
+echo "-------Downloading and installing rbenchmark"
+mkdir rbenchmark && cd rbenchmark
+wget http://www.phoronix-test-suite.com/benchmark-files/rbenchmarks-20160105.tar.bz2
+tar -xjvf rbenchmarks-20160105.tar.bz2 && rm rbenchmarks-20160105.tar.bz2
+mv rbenchmark/* ./ && rm -rf rbenchmark/
+cp ../../$taskScripts/rbenchmark ./
+cd ../
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg

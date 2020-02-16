@@ -46,9 +46,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc" )
-tasks=( "mkl-dnn conv_all ./benchdnn --mode=p --conv --batch=inputs/conv/conv_all" "mkl-dnn conv_googlenet_v3 ./benchdnn --mode=p --conv --batch=inputs/conv/conv_googlenet_v3" \
-		"mkl-dnn conv_alexnet ./benchdnn --mode=p --conv --batch=inputs/conv/conv_alexnet" "mkl-dnn ip_1d ./benchdnn --mode=p --ip --batch=inputs/ip/ip_1d" \
-		"mkl-dnn ip_all ./benchdnn --mode=p --ip --batch=inputs/ip/ip_all" "mkl-dnn rnn_training ./benchdnn --mode=p --rnn --batch=inputs/rnn/rnn_training")
+tasks=( "node-express-loadtest" "numenta-nab" "phpbench php phpbench.php -i 1000000")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+node expressserver.js &
+task=$!
+./node_modules/loadtest/bin/loadtest.js  -n 100000 -c 250 http://localhost:8000
+kill -9 $task
