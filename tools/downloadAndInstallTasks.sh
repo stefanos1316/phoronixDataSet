@@ -859,7 +859,7 @@ cd tasks_test
 # case \$1 in
 # 	(\"1000_Files_1MB_Size\")
 # 		getConfigurations=\"-s 1048576 -n 1000\";;
-# 	(\"1000_Files_1MB_Size_No_Sync/FSync\")
+# 	(\"1000_Files_1MB_Size_No_Sync_FSync\")
 # 		getConfigurations=\"-s 1048576 -n 1000 -S 0\";;
 # 	(\"5000_Files_1MB_Size_4_Threads\")
 # 		getConfigurations=\"-s 1048576 -n 5000 -t 4\";;
@@ -871,16 +871,48 @@ cd tasks_test
 # mkdir scratch
 # cd ../
 
-echo "-------Downloading and installing bork"
-mkdir bork && cd bork
-wget http://www.phoronix-test-suite.com/benchmark-files/bork-1.4.zip
-unzip bork-1.4.zip && rm bork-1.4.zip
-mv bork-1.4/* ./ && rm -rf bork-1.4/
-echo "#!/bin/bash
-dd if=/dev/zero of=encryptfile bs=2048 count=1048576
-BORK_PASSWORD=phoronixtestsuite123 ./bork.sh ./encryptfile
-rm -f encryptfile.bork
-rm -f encryptfile" > bork
-chmod +x bork
-cd ../
+# echo "-------Downloading and installing bork"
+# mkdir bork && cd bork
+# wget http://www.phoronix-test-suite.com/benchmark-files/bork-1.4.zip
+# unzip bork-1.4.zip && rm bork-1.4.zip
+# mv bork-1.4/* ./ && rm -rf bork-1.4/
+# echo "#!/bin/bash
+# dd if=/dev/zero of=encryptfile bs=2048 count=1048576
+# BORK_PASSWORD=phoronixtestsuite123 ./bork.sh ./encryptfile
+# rm -f encryptfile.bork
+# rm -f encryptfile" > bork
+# chmod +x bork
+# cd ../
 
+# echo "-------Downloading and installing ffmpeg"
+# mkdir ffmpeg && cd ffmpeg
+# wget http://ffmpeg.org/releases/ffmpeg-4.0.2.tar.bz2
+# tar -xjvf ffmpeg-4.0.2.tar.bz2 && rm ffmpeg-4.0.2.tar.bz2
+# mv ffmpeg-4.0.2/* ./ && rm -rf ffmpeg-4.0.2/
+# wget http://samples.ffmpeg.org/V-codecs/h264/HD2-h264.ts
+# ./configure --disable-zlib --disable-doc --prefix=`pwd`
+# make -j $(nproc --all)
+# make install
+# echo "#!/bin/bash
+# bin/ffmpeg -i HD2-h264.ts -f rawvideo -threads \$(nproc --all) -y -target ntsc-dv /dev/null" > ffmpeg
+# chmod +x ffmpeg
+# cd ../
+
+echo "-------Downloading and installing encode-flac"
+mkdir encode-flac && cd encode-flac
+wget http://ftp.osuosl.org/pub/xiph/releases/flac/flac-1.3.2.tar.xz
+tar -xJf flac-1.3.2.tar.xz && rm flac-1.3.2.tar.xz
+mv flac-1.3.2/* ./ && rm -rf flac-1.3.2/
+./configure --prefix=`pwd`
+make -j $(nproc --all)
+make install
+wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
+tar -xzvf pts-trondheim-wav-3.tar.gz
+echo "#!/bin/bash
+./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1
+./bin/flac --best pts-trondheim.wav -f -o output 2>&1
+./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1
+./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1
+./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1" > encode-flac
+chmod +x encode-flac
+cd ../
