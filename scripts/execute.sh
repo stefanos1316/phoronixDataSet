@@ -46,7 +46,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc" )
-tasks=( "node-express-loadtest" "numenta-nab" "phpbench php phpbench.php -i 1000000")
+tasks=( "redis get" "redis set" "redis lpush" "redis lpop" "redis sadd" "rust-prime 200000000 8" )
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -54,17 +54,26 @@ function startServers {
 		("apache")
 			sudo /usr/local/apache2/bin/apachectl -k stop
 			sudo rm -f /usr/local/apache2/logs/* 
-			sudo /usr/local/apache2/bin/apachectl -k start ;;
+			sudo /usr/local/apache2/bin/apachectl -k start
+			sleep 10 ;;
 		("nginx")
 			sudo /usr/local/nginx/sbin/nginx -s stop
 			sudo rm -f /usr/local/nginx/logs/* 
-			sudo /usr/local/nginx/sbin/nginx ;;
+			sudo /usr/local/nginx/sbin/nginx
+			sleep 10 ;;
 		("mcperf")
-			memcached & ;;
+			memcached &
+			sleep 10 ;;
 		("pymongo")
-			sudo systemctl start mongod ;;
+			sudo systemctl start mongod
+			sleep 10 ;;
+		("redis")
+			sudo systemctl stop redis
+			../${tasksDirectory}/$1/src/redis-server &
+			sleep 10 ;;
 		("sockperf")
-			sudo ../${taskDirectory}/$1/sockperf server & ;;
+			sudo ../${taskDirectory}/$1/sockperf server &
+			sleep 10 ;;
 		(*) echo "No rule for $1" ;;
 	esac
 }
@@ -158,7 +167,7 @@ for task in "${tasks[@]}"; do
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
 		build-linux-kernel)
-			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ] ; then
+			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] ; then
 				startServers $benchmark
 			fi
 

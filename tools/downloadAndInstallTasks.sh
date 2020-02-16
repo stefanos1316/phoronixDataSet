@@ -535,7 +535,27 @@ echo "-------Downloading and installing rbenchmark"
 mkdir rbenchmark && cd rbenchmark
 wget http://www.phoronix-test-suite.com/benchmark-files/rbenchmarks-20160105.tar.bz2
 tar -xjvf rbenchmarks-20160105.tar.bz2 && rm rbenchmarks-20160105.tar.bz2
-mv rbenchmark/* ./ && rm -rf rbenchmark/
+mv rbenchmarks/* ./ && rm -rf rbenchmarks/
+cp ../../$taskScripts/rbenchmark ./
+cd ../
+
+echo "-------Downloading and installing redis"
+mkdir redis && cd redis
+wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+tar -xzvf redis-5.0.5.tar.gz && rm redis-5.0.5.tar.gz
+mv redis-5.0.5/* ./ && rm -rf redis-5.0.5/
+cd deps/
+make hiredis jemalloc linenoise lua
+cd ../
+make MALLOC=libc -j $(nproc --all)
+cp ../../$taskScripts/rbenchmark ./
+cd ../
+
+echo "-------Downloading and installing rust-prime"
+mkdir rust-prime && cd rust-prime
+wget http://www.phoronix-test-suite.com/benchmark-files/rbenchmarks-20160105.tar.bz2
+tar -xjvf rbenchmarks-20160105.tar.bz2 && rm rbenchmarks-20160105.tar.bz2
+mv rbenchmarks/* ./ && rm -rf rbenchmarks/
 cp ../../$taskScripts/rbenchmark ./
 cd ../
 
