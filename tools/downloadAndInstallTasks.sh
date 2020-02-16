@@ -772,6 +772,52 @@ cd tasks_test
 # chmod +x j2dbench
 # cd ../
 
+# echo "-------Downloading and installing javascimark2"
+# mkdir javascimark2 && cd javascimark2
+# wget http://math.nist.gov/scimark2/scimark2lib.zip
+# unzip scimark2lib.zip && rm scimark2lib.zip
+# echo "#!/bin/sh
+# java jnt.scimark2.commandline
+# echo \$? > ~/test-exit-status" > javascimark2
+# chmod +x javascimark2
+# cd ../
+
+# echo "-------Downloading and installing sunflow"
+# mkdir sunflow && cd sunflow
+# wget  http://ufpr.dl.sourceforge.net/sourceforge/sunflow/sunflow-bin-v0.07.2.zip
+# unzip sunflow-bin-v0.07.2.zip && rm sunflow-bin-v0.07.2.zip
+# mv sunflow/* ./ && rm -rf sunflow
+# echo "#!/bin/sh
+# cd sunflow
+# if [ \$SYS_MEMORY -ge 1280 ] ; then
+# 	JAVA_VM_MEMORY=1024M
+# elif [ \$SYS_MEMORY -ge 768 ] ; then
+# 	JAVA_VM_MEMORY=512M
+# else
+# 	JAVA_VM_MEMORY=256M
+# fi
+# java -server -Xmx\$JAVA_VM_MEMORY -jar sunflow.jar -bench 2>&1" > sunflow
+# chmod +x sunflow
+# cd ../
+
+# echo "-------Downloading and installing sqlitebench"
+# mkdir sqlitebench && cd sqlitebench
+# wget  http://sqlite.org/2019/sqlite-autoconf-3300100.tar.gz
+# tar -xzvf sqlite-autoconf-3300100.tar.gz && rm sqlite-autoconf-3300100.tar.gz
+# mv sqlite-autoconf-3300100/* ./ && rm -rf sqlite-autoconf-3300100/
+# wget http://www.phoronix-test-suite.com/benchmark-files/pts-sqlite-tests-1.tar.gz
+# tar -xzvf pts-sqlite-tests-1.tar.gz && rm pts-sqlite-tests-1.tar.gz
+# ./configure --prefix=`pwd`
+# make -j $(nproc --all)
+# make install
+# echo "
+# #!/bin/sh
+# rm benchmark.db
+# sqlite3 benchmark.db  \"CREATE TABLE pts1 ('I' SMALLINT NOT NULL, 'DT' TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 'F1' VARCHAR(4) NOT NULL, 'F2' VARCHAR(16) NOT NULL);\"
+# cat sqlite-2500-insertions.txt | sqlite3 benchmark.db" > sqlitebench
+# chmod +x sqlitebench
+# cd ../
+
 echo "-------Downloading and installing javascimark2"
 mkdir javascimark2 && cd javascimark2
 wget http://math.nist.gov/scimark2/scimark2lib.zip
