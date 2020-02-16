@@ -617,31 +617,51 @@ cd tasks_test
 # cc -pthread -O3 -o t-test1 t-test1.c
 # cd ../
 
-exit
-echo "-------Downloading and installing tensorflow"
-mkdir tensorflow && cd tensorflow
-wget http://www.phoronix-test-suite.com/benchmark-files/cifar10_tf.tar.gz
-tar -axf cifar10_tf.tar.gz && rm cifar10_tf.tar.gz
-mv cifar10/* ./ && rm -rf cifar10
-pip3 install tensorflow
-cp ../../$taskScripts/tensorflow ./
+# echo "-------Downloading and installing tensorflow"
+# mkdir tensorflow && cd tensorflow
+# wget http://www.phoronix-test-suite.com/benchmark-files/cifar10_tf.tar.gz
+# tar -axf cifar10_tf.tar.gz && rm cifar10_tf.tar.gz
+# mv cifar10/* ./ && rm -rf cifar10
+# pip3 install tensorflow
+# cp ../../$taskScripts/tensorflow ./
+# cd ../
+
+# echo "-------Downloading and installing tinymembench"
+# mkdir tinymembench && cd tinymembench
+# wget http://phoronix-test-suite.com/benchmark-files/tinymembench-20180528.zip
+# unzip tinymembench-20180528.zip && rm tinymembench-20180528.zip
+# mv tinymembench-master/* ./ && rm -rf tinymembench-master
+# make
+# cd ../
+
+# echo "-------Downloading and installing xsbench"
+# mkdir xsbench && cd xsbench
+# wget http://phoronix-test-suite.com/benchmark-files/XSBench-20170808.zip
+# unzip XSBench-20170808.zip && rm XSBench-20170808.zip
+# mv XSBench-master/* ./ && rm -rf XSBench-master/
+# cd src/ && make && cp XSBench ../xsbench
+# cd ../../
+
+echo "-------Downloading and installing ttsiod-renderer"
+mkdir ttsiod-renderer && cd ttsiod-renderer
+wget http://www.phoronix-test-suite.com/benchmark-files/renderer-2.3b.zip
+unzip renderer-2.3b.zip && rm renderer-2.3b.zip
+mv renderer-2.3b/* ./ && rm -rf renderer-2.3b/
+./configure
+make -j $(nproc --all)
+cp ../../${taskScripts}/ttsiod-renderer ./
 cd ../
 
-echo "-------Downloading and installing tinymembench"
-mkdir tinymembench && cd tinymembench
-wget http://phoronix-test-suite.com/benchmark-files/tinymembench-20180528.zip
-unzip tinymembench-20180528.zip && rm tinymembench-20180528.zip
-mv tinymembench-master/* ./ && rm -rf tinymembench-master
-make
+echo "-------Downloading and installing botan"
+mkdir botan && cd botan
+wget http://botan.randombit.net/releases/Botan-2.8.0.tgz
+tar -xf Botan-2.8.0.tgz && rm Botan-2.8.0.tgz
+mv Botan-2.8.0/* ./ && rm -rf Botan-2.8.0 
+python3 ./configure.py
+make -j $(nproc --all)
+mv botan botan_bin
+cp ../../${taskScripts}/botan ./
 cd ../
-
-echo "-------Downloading and installing xsbench"
-mkdir xsbench && cd xsbench
-wget http://phoronix-test-suite.com/benchmark-files/XSBench-20170808.zip
-unzip XSBench-20170808.zip && rm XSBench-20170808.zip
-mv XSBench-master/* ./ && rm -rf XSBench-master/
-cd src/ && make && cp XSBench ../
-cd ../..
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg
@@ -654,19 +674,5 @@ cd ../..
 # make install
 # echo pts-1234567890 > passphrase
 # cd ../ && mv gnupg ${taskDirectory}/
-
-# echo "-------Downloading and installing botan"
-# mkdir -p ../${taskDirectory}/botan
-# wget http://botan.randombit.net/releases/Botan-2.8.0.tgz
-# tar -xf Botan-2.8.0.tgz && rm Botan-2.8.0.tgz
-# mv Botan-2.8.0/* ../${taskDirectory}/botan/ && rm -rf Botan-2.8.0 
-# cp ${taskScripts}/botan ../${taskDirectory}/botan/
-
-# echo "-------Installing botan"
-# cd ../${taskDirectory}/botan
-# python3 ./configure.py
-# make -j $(nproc --all)
-# mv botan botan_bin
-# cd ../../tools
 
 

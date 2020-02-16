@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd 3D-Objects
+OMP_NUM_THREADS=$(nproc --all) SDL_VIDEODRIVER=dummy ../src/renderer -b -n 10000 statue.ply
+cd ../
