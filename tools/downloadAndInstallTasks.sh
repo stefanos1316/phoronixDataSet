@@ -741,9 +741,43 @@ cd tasks_test
 # make -j $(nproc --all)
 # cd ../
 
-echo "-------Downloading and installing jxrend"
-mkdir jxrend && cd jxrend
-wget http://www.phoronix-test-suite.com/benchmark-files/JXRenderMark-1.0.1.zip
-unzip JXRenderMark-1.0.1.zip && rm JXRenderMark-1.0.1.zip
-cc JXRenderMark.c -o jxrend -lX11 -lXrender -O3
+# echo "-------Downloading and installing jxrend"
+# mkdir jxrend && cd jxrend
+# wget http://www.phoronix-test-suite.com/benchmark-files/JXRenderMark-1.0.1.zip
+# unzip JXRenderMark-1.0.1.zip && rm JXRenderMark-1.0.1.zip
+# cc JXRenderMark.c -o jxrend -lX11 -lXrender -O3
+# cd ../
+
+# echo "-------Downloading and installing j2dbench"
+# mkdir j2dbench && cd j2dbench
+# wget http://www.phoronix-test-suite.com/benchmark-files/J2DBench.zip
+# unzip J2DBench.zip && rm J2DBench.zip
+# echo "#!/bin/sh
+# rm -f *.output
+# rm -f *.res
+# case \"\$1\" in
+# \"TEST_ALL\")
+#   TEST_TYPE=all ;;
+# \"TEST_GRAPHICS\")
+#   TEST_TYPE=graphics ;;
+# \"TEST_IMAGES\")
+#   TEST_TYPE=images ;;
+# \"TEST_TEXT\")
+#   TEST_TYPE=text ;;
+# esac
+# java -Dsun.java2d.opengl=True -jar dist/J2DBench.jar \
+# -batch -loadopts \$TEST_TYPE.opt -saveres \$TEST_TYPE.res \
+# -title \$TEST_TYPE -desc \$TEST_TYPE > \$THIS_RUN_TIME.output
+# java -jar dist/J2DAnalyzer.jar \$TEST_TYPE.res > \$LOG_FILE" > j2dbench
+# chmod +x j2dbench
+# cd ../
+
+echo "-------Downloading and installing javascimark2"
+mkdir javascimark2 && cd javascimark2
+wget http://math.nist.gov/scimark2/scimark2lib.zip
+unzip scimark2lib.zip && rm scimark2lib.zip
+echo "#!/bin/sh
+java jnt.scimark2.commandline
+echo \$? > ~/test-exit-status" > javascimark2
+chmod +x javascimark2
 cd ../

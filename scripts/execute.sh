@@ -13,7 +13,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"x265 ../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  /dev/null"  "ctx_clock" \
 		"sysbench cpu --cpu-max-prime=20000000 --threads=8 run" "sysbench memory --memory-total-size=100G --threads=8 run" \
 		"blake2s 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" \
-		"c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \ 
+		"c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" "povray -benchmark" \ 
 		"cachebench read -r -m 9" "cachebench write -w -m 9" "cachebench mixed -b -m 9" "cachebench memset -s -m 9" "cachebench memcpy -p -m 9" \
 		"cloverleaf ../inputs/clover_bm8192.in" "brlcad run -P $(nproc --all)" "cpp-perf-bench stepanov_abstraction" "cpp-perf-bench stepanov_vector" \
 		"cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" "cpp-perf-bench mathlib" "cpp-perf-bench random_numbers" \
@@ -22,7 +22,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"dacapo tradesoap java -jar dacapo.jar -t $(nproc --all) --window 10 tradesoap" "ebizzy -S 30" "glibc-bench bench-ffsll" "glibc-bench bench-ffs" \
 		"glibc-bench bench-pthread_once" "glibc-bench bench-tanh" "glibc-bench bench-sqrt" "glibc-bench bench-sin" "glibc-bench bench-cos" \
 		"glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" "glibc-bench bench-sinh" "glibc-bench bench-modf" \
-		"glibc-bench bench-exp" "glibc-bench bench-log2" "himeno XL" "hint float" "hint double" "hpcg" \
+		"glibc-bench bench-exp" "glibc-bench bench-log2" "himeno XL" "hint float" "hint double" "hpcg" "build-linux-kernel"\
 		"john-the-ripper bcrypt ./john --test=30 --format=bcrypt" "john-the-ripper md5crypt ./john --test=30 --format=md5crypt" "lammps" \
 		"lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
 		"lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" \
@@ -47,9 +47,9 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "build-gcc" \
 		"openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
 		"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
-		"qgears -image" "qgears -render" "qgears -gl" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO") 
-# timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc")
-tasks=( "jxrend")
+		"qgears -image" "qgears -render" "qgears -gl" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend") 
+# timeConsumingTaks=( )
+tasks=( "j2dbench TEST_ALL" "j2dbench TEST_GRAPHICS" "j2dbench TEST_TEXT" "javascimark2")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -163,7 +163,7 @@ for task in "${tasks[@]}"; do
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
-		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* )
+		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] ; then
 				startServers $benchmark
 			fi
