@@ -52,7 +52,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "postmark ../inputs/postmark.pmrc" \
 		"fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" "bork" "ffmpeg" ) 
 # timeConsumingTaks=( )
-tasks=(  )
+tasks=( "encode-mp3" )
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -167,7 +167,7 @@ for task in "${tasks[@]}"; do
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
 		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 | sunflow | \
-		sqlitebench | dbench* | fs-mark* | bork | ffmpeg )
+		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] ; then
 				startServers $benchmark
 			fi

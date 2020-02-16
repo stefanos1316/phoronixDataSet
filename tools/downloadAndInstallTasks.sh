@@ -898,6 +898,23 @@ cd tasks_test
 # chmod +x ffmpeg
 # cd ../
 
+echo "-------Downloading and installing encode-mp3"
+mkdir encode-mp3 && cd encode-mp3
+wget http://ftp.osuosl.org/pub/blfs/conglomeration/lame/lame-3.100.tar.gz
+tar -xzvf lame-3.100.tar.gz && rm lame-3.100.tar.gz
+mv lame-3.100/* ./ && rm -rf lame-3.100/
+autoconf
+./configure --prefix=`pwd` --enable-expopt=full
+make
+make install
+wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
+tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
+echo "#!/bin/bash
+./bin/lame -h pts-trondheim-3.wav" > encode-mp3
+chmod +x encode-mp3
+cd ../
+
+exit
 echo "-------Downloading and installing encode-flac"
 mkdir encode-flac && cd encode-flac
 wget http://ftp.osuosl.org/pub/xiph/releases/flac/flac-1.3.2.tar.xz
@@ -907,7 +924,7 @@ mv flac-1.3.2/* ./ && rm -rf flac-1.3.2/
 make -j $(nproc --all)
 make install
 wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
-tar -xzvf pts-trondheim-wav-3.tar.gz
+tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
 echo "#!/bin/bash
 ./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1
 ./bin/flac --best pts-trondheim.wav -f -o output 2>&1
