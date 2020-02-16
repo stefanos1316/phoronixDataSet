@@ -46,7 +46,8 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc" )
-tasks=( "redis get" "redis set" "redis lpush" "redis lpop" "redis sadd" "rust-prime 200000000 8" )
+tasks=( "rust-prime 200000000 8" "scikit" "sockperf under-load --mps=max -m 64 -t 30" \
+		"sockperf ping-pong --mps=max -m 64 -t 30" "sockperf throughput --mps=max -m 64 -t 30" )
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -69,7 +70,7 @@ function startServers {
 			sleep 10 ;;
 		("redis")
 			sudo systemctl stop redis
-			../${tasksDirectory}/$1/src/redis-server &
+			../${taskDirectory}/$1/src/redis-server &
 			sleep 10 ;;
 		("sockperf")
 			sudo ../${taskDirectory}/$1/sockperf server &

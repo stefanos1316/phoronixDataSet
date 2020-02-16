@@ -515,48 +515,66 @@ cd tasks_test
 # cp ../../$taskScripts/phpbench ./
 # cd ../
 
-echo "-------Downloading and installing primesieve"
-mkdir primesieve && cd primesieve
-wget http://dl.bintray.com/kimwalisch/primesieve/primesieve-7.4.tar.gz
-tar -xzvf primesieve-7.4.tar.gz && rm primesieve-7.4.tar.gz
-mv primesieve-7.4/* ./ && rm -rf primesieve-7.4/
-cmake . -DBUILD_SHARED_LIBS=OFF
-make -j $(nproc --all)
-cd ../
+# echo "-------Downloading and installing primesieve"
+# mkdir primesieve && cd primesieve
+# wget http://dl.bintray.com/kimwalisch/primesieve/primesieve-7.4.tar.gz
+# tar -xzvf primesieve-7.4.tar.gz && rm primesieve-7.4.tar.gz
+# mv primesieve-7.4/* ./ && rm -rf primesieve-7.4/
+# cmake . -DBUILD_SHARED_LIBS=OFF
+# make -j $(nproc --all)
+# cd ../
 
-echo "-------Downloading and installing pymongo"
-mkdir pymongo && cd pymongo
-python3 -m pip install pymongo
-cp ../../$taskScripts/pymongo ./
-cp ../../$taskScripts/pymongoInsert.py ./
-cd ../
+# echo "-------Downloading and installing pymongo"
+# mkdir pymongo && cd pymongo
+# python3 -m pip install pymongo
+# cp ../../$taskScripts/pymongo ./
+# cp ../../$taskScripts/pymongoInsert.py ./
+# cd ../
 
-echo "-------Downloading and installing rbenchmark"
-mkdir rbenchmark && cd rbenchmark
-wget http://www.phoronix-test-suite.com/benchmark-files/rbenchmarks-20160105.tar.bz2
-tar -xjvf rbenchmarks-20160105.tar.bz2 && rm rbenchmarks-20160105.tar.bz2
-mv rbenchmarks/* ./ && rm -rf rbenchmarks/
-cp ../../$taskScripts/rbenchmark ./
-cd ../
+# echo "-------Downloading and installing rbenchmark"
+# mkdir rbenchmark && cd rbenchmark
+# wget http://www.phoronix-test-suite.com/benchmark-files/rbenchmarks-20160105.tar.bz2
+# tar -xjvf rbenchmarks-20160105.tar.bz2 && rm rbenchmarks-20160105.tar.bz2
+# mv rbenchmarks/* ./ && rm -rf rbenchmarks/
+# cp ../../$taskScripts/rbenchmark ./
+# cd ../
 
-echo "-------Downloading and installing redis"
-mkdir redis && cd redis
-wget http://download.redis.io/releases/redis-5.0.5.tar.gz
-tar -xzvf redis-5.0.5.tar.gz && rm redis-5.0.5.tar.gz
-mv redis-5.0.5/* ./ && rm -rf redis-5.0.5/
-cd deps/
-make hiredis jemalloc linenoise lua
-cd ../
-make MALLOC=libc -j $(nproc --all)
-cp ../../$taskScripts/rbenchmark ./
-cd ../
+# echo "-------Downloading and installing redis"
+# mkdir redis && cd redis
+# wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+# tar -xzvf redis-5.0.5.tar.gz && rm redis-5.0.5.tar.gz
+# mv redis-5.0.5/* ./ && rm -rf redis-5.0.5/
+# cd deps/
+# make hiredis jemalloc linenoise lua
+# cd ../
+# make MALLOC=libc -j $(nproc --all)
+# cp ../../$taskScripts/redis ./
+# cd ../
 
 echo "-------Downloading and installing rust-prime"
 mkdir rust-prime && cd rust-prime
-wget http://www.phoronix-test-suite.com/benchmark-files/rbenchmarks-20160105.tar.bz2
-tar -xjvf rbenchmarks-20160105.tar.bz2 && rm rbenchmarks-20160105.tar.bz2
-mv rbenchmarks/* ./ && rm -rf rbenchmarks/
-cp ../../$taskScripts/rbenchmark ./
+wget http://phoronix-test-suite.com/benchmark-files/Prime-Benchmark-20181001.zip
+unzip Prime-Benchmark-20181001.zip && rm Prime-Benchmark-20181001.zip
+mv Prime-Benchmark-master/* ./ && rm -rf Prime-Benchmark-master/
+RUSTFLAGS="-C target-cpu=native" rustc rust/main.rs -C opt-level=3 -o rust-prime
+cd ../
+
+echo "-------Downloading and installing scikit"
+mkdir scikit && cd scikit
+wget https://github.com/scikit-learn/scikit-learn/archive/0.22.1/scikit-learn-0.22.1.tar.gz
+tar -xzvf scikit-learn-0.22.1.tar.gz && rm scikit-learn-0.22.1.tar.gz
+mv scikit-learn-0.22.1/* ./ && rm -rf scikit-learn-0.22.1/
+cp ../../$taskScripts/scikit ./
+cd ../
+
+echo "-------Downloading and installing sockperf"
+mkdir sockperf && cd sockperf
+wget http://phoronix-test-suite.com/benchmark-files/sockperf-3.4.zip
+unzip sockperf-3.4.zip && rm sockperf-3.4.zip
+mv sockperf-3.4/* ./ && rm -rf sockperf-3.4/
+./autogen.sh
+./configure
+make -j $(nproc --all)
 cd ../
 
 # echo "-------Downloading and install gnupg"
