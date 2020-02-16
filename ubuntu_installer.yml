@@ -112,4 +112,9 @@
         apt install -y mongodb-org
         rm /etc/apt/sources.list.d/mongodb-org-4.0.list
       args:
-        warn: false    
+        warn: false
+
+    - name: Installing dependencies for x11perf
+      apt: 
+        name: 'xutils-dev'
+        state: present

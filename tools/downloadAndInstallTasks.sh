@@ -691,18 +691,59 @@ cd tasks_test
 # cp ../../${taskScripts}/openarenaG ./
 # cd ../
 
-echo "-------Downloading and installing urbanterror"
-mkdir urbanterrorG && cd urbanterrorG
-wget http://cdn.urbanterror.info/urt/43/releases/zips/UrbanTerror432_full.zip
-unzip UrbanTerror432_full.zip && rm UrbanTerror432_full.zip
-mv UrbanTerror43/* ./ && rm -rf UrbanTerror43/
-chmod +x Quake3-UrT.app/Contents/MacOS/Quake3-UrT.i386 
-wget http://www.phoronix-test-suite.com/benchmark-files/urbanterror-43-1.zip
-unzip urbanterror-43-1.zip && rm urbanterror-43-1.zip
-rm -f q3ut4/autoexec.cfg
-mv autoexec.cfg q3ut4/
-mkdir q3ut4/demos/
-mv pts-ut43.urtdemo q3ut4/demos/
-cp ../../${taskScripts}/urbanterrorG ./
-chmod +x Quake3-UrT.x86_64
+# echo "-------Downloading and installing urbanterror"
+# mkdir urbanterrorG && cd urbanterrorG
+# wget http://cdn.urbanterror.info/urt/43/releases/zips/UrbanTerror432_full.zip
+# unzip UrbanTerror432_full.zip && rm UrbanTerror432_full.zip
+# mv UrbanTerror43/* ./ && rm -rf UrbanTerror43/
+# chmod +x Quake3-UrT.app/Contents/MacOS/Quake3-UrT.i386 
+# wget http://www.phoronix-test-suite.com/benchmark-files/urbanterror-43-1.zip
+# unzip urbanterror-43-1.zip && rm urbanterror-43-1.zip
+# rm -f q3ut4/autoexec.cfg
+# mv autoexec.cfg q3ut4/
+# mkdir q3ut4/demos/
+# mv pts-ut43.urtdemo q3ut4/demos/
+# cp ../../${taskScripts}/urbanterrorG ./
+# chmod +x Quake3-UrT.x86_64
+# cd ../
+
+# echo "-------Downloading and installing qgears"
+# mkdir qgears && cd qgears
+# wget http://www.phoronix-test-suite.com/benchmark-files/qgears2.tar.bz2
+# tar -jxf qgears2.tar.bz2 && rm qgears2.tar.bz2
+# mv qgears2/* ./ && rm -rf qgears2
+# chmod +w commonrenderer.cpp
+# echo "--- commonrenderer.cpp.orig	2008-11-02 16:19:16.000000000 -0500
+# +++ commonrenderer.cpp	2008-11-02 16:20:33.000000000 -0500
+# @@ -31,6 +31,7 @@
+#  double gear1_rotation = 35;
+#  double gear2_rotation = 24;
+#  double gear3_rotation = 33.5;
+# +int frame_report_count = 0;
+ 
+#  #define LINEWIDTH 3
+ 
+# @@ -83,7 +84,13 @@
+ 
+#      ++frame_cnt;
+#      if (FRAME_COUNT_INTERVAL == frame_cnt)
+# +    {
+#          printFrameRate();
+# +        frame_report_count++;
+# +    }
+# +
+# +    if(frame_report_count == 40)
+# +        exit(0);
+#  }
+ 
+#  QPainterPath CommonRenderer::gearPath(double inner_radius, double outer_radius," | patch -p0
+# qmake
+# make -j $(nproc --all)
+# cd ../
+
+echo "-------Downloading and installing jxrend"
+mkdir jxrend && cd jxrend
+wget http://www.phoronix-test-suite.com/benchmark-files/JXRenderMark-1.0.1.zip
+unzip JXRenderMark-1.0.1.zip && rm JXRenderMark-1.0.1.zip
+cc JXRenderMark.c -o jxrend -lX11 -lXrender -O3
 cd ../

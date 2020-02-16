@@ -45,9 +45,11 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"stream" "swet -Z" "t-test1 5000" "tensorflow" "tinymembench" "ttsiod-renderer" "xsbench -t 8 -s large -l 30000000" \
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "build-gcc" \
-		"openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" ) 
+		"openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
+		"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
+		"qgears -image" "qgears -render" "qgears -gl" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO") 
 # timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc")
-tasks=( "urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440")
+tasks=( "jxrend")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
