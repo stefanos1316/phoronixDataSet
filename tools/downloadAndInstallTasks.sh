@@ -551,31 +551,97 @@ cd tasks_test
 # cp ../../$taskScripts/redis ./
 # cd ../
 
-echo "-------Downloading and installing rust-prime"
-mkdir rust-prime && cd rust-prime
-wget http://phoronix-test-suite.com/benchmark-files/Prime-Benchmark-20181001.zip
-unzip Prime-Benchmark-20181001.zip && rm Prime-Benchmark-20181001.zip
-mv Prime-Benchmark-master/* ./ && rm -rf Prime-Benchmark-master/
-RUSTFLAGS="-C target-cpu=native" rustc rust/main.rs -C opt-level=3 -o rust-prime
+# echo "-------Downloading and installing rust-prime"
+# mkdir rust-prime && cd rust-prime
+# wget http://phoronix-test-suite.com/benchmark-files/Prime-Benchmark-20181001.zip
+# unzip Prime-Benchmark-20181001.zip && rm Prime-Benchmark-20181001.zip
+# mv Prime-Benchmark-master/* ./ && rm -rf Prime-Benchmark-master/
+# RUSTFLAGS="-C target-cpu=native" rustc rust/main.rs -C opt-level=3 -o rust-prime
+# cd ../
+
+# echo "-------Downloading and installing scikit"
+# mkdir scikit && cd scikit
+# wget https://github.com/scikit-learn/scikit-learn/archive/0.22.1/scikit-learn-0.22.1.tar.gz
+# tar -xzvf scikit-learn-0.22.1.tar.gz && rm scikit-learn-0.22.1.tar.gz
+# mv scikit-learn-0.22.1/* ./ && rm -rf scikit-learn-0.22.1/
+# cp ../../$taskScripts/scikit ./
+# cd ../
+
+# echo "-------Downloading and installing sockperf"
+# mkdir sockperf && cd sockperf
+# wget http://phoronix-test-suite.com/benchmark-files/sockperf-3.4.zip
+# unzip sockperf-3.4.zip && rm sockperf-3.4.zip
+# mv sockperf-3.4/* ./ && rm -rf sockperf-3.4/
+# ./autogen.sh
+# ./configure
+# make -j $(nproc --all)
+# cd ../
+
+# echo "-------Downloading and installing stress-ng"
+# mkdir stress-ng && cd stress-ng
+# wget http://www.phoronix-test-suite.com/benchmark-files/stress-ng-0.07.26.tar.gz
+# tar -xzvf stress-ng-0.07.26.tar.gz && rm stress-ng-0.07.26.tar.gz
+# mv stress-ng-0.07.26/* ./ && rm -rf stress-ng-0.07.26/
+# make -j $(nproc --all)
+# cd ../
+
+# echo "-------Downloading and installing stream"
+# mkdir stream && cd stream
+# wget http://www.phoronix-test-suite.com/benchmark-files/stream-2013-01-17.tar.bz2
+# tar -xjvf stream-2013-01-17.tar.bz2 && rm stream-2013-01-17.tar.bz2
+# cc stream.c -DSTREAM_ARRAY_SIZE=100000000 -DNTIMES=100 -O3 -fopenmp -o stream
+# cd ../
+
+# echo "-------Downloading and installing ramspeed"
+# mkdir ramspeed && cd ramspeed
+# wget http://www.phoronix-test-suite.com/benchmark-files/ramsmp-3.5.0.tar.gz
+# tar -xzvf ramsmp-3.5.0.tar.gz && rm ramsmp-3.5.0.tar.gz
+# mv ramsmp-3.5.0/* ./ && rm -rf ramsmp-3.5.0
+# cc -O3 -march=native -o ramsmp fltmark.c fltmem.c intmark.c intmem.c ramsmp.c
+# cp ../../$taskScripts/ramspeed ./
+# cd ../
+
+# echo "-------Downloading and installing swet"
+# mkdir swet && cd swet
+# wget http://www.phoronix-test-suite.com/benchmark-files/swet-1.5.16-src.tar.gz
+# tar -xzvf swet-1.5.16-src.tar.gz && rm swet-1.5.16-src.tar.gz
+# mv swet1/* ./ && rm -rf swet1
+# ./configure
+# make
+# cd ../
+
+# echo "-------Downloading and installing t-test1"
+# mkdir t-test1 && cd t-test1
+# wget http://phoronix-test-suite.com/benchmark-files/t-test1c-20171.zip
+# unzip t-test1c-20171.zip && rm t-test1c-20171.zip
+# cc -pthread -O3 -o t-test1 t-test1.c
+# cd ../
+
+exit
+echo "-------Downloading and installing tensorflow"
+mkdir tensorflow && cd tensorflow
+wget http://www.phoronix-test-suite.com/benchmark-files/cifar10_tf.tar.gz
+tar -axf cifar10_tf.tar.gz && rm cifar10_tf.tar.gz
+mv cifar10/* ./ && rm -rf cifar10
+pip3 install tensorflow
+cp ../../$taskScripts/tensorflow ./
 cd ../
 
-echo "-------Downloading and installing scikit"
-mkdir scikit && cd scikit
-wget https://github.com/scikit-learn/scikit-learn/archive/0.22.1/scikit-learn-0.22.1.tar.gz
-tar -xzvf scikit-learn-0.22.1.tar.gz && rm scikit-learn-0.22.1.tar.gz
-mv scikit-learn-0.22.1/* ./ && rm -rf scikit-learn-0.22.1/
-cp ../../$taskScripts/scikit ./
+echo "-------Downloading and installing tinymembench"
+mkdir tinymembench && cd tinymembench
+wget http://phoronix-test-suite.com/benchmark-files/tinymembench-20180528.zip
+unzip tinymembench-20180528.zip && rm tinymembench-20180528.zip
+mv tinymembench-master/* ./ && rm -rf tinymembench-master
+make
 cd ../
 
-echo "-------Downloading and installing sockperf"
-mkdir sockperf && cd sockperf
-wget http://phoronix-test-suite.com/benchmark-files/sockperf-3.4.zip
-unzip sockperf-3.4.zip && rm sockperf-3.4.zip
-mv sockperf-3.4/* ./ && rm -rf sockperf-3.4/
-./autogen.sh
-./configure
-make -j $(nproc --all)
-cd ../
+echo "-------Downloading and installing xsbench"
+mkdir xsbench && cd xsbench
+wget http://phoronix-test-suite.com/benchmark-files/XSBench-20170808.zip
+unzip XSBench-20170808.zip && rm XSBench-20170808.zip
+mv XSBench-master/* ./ && rm -rf XSBench-master/
+cd src/ && make && cp XSBench ../
+cd ../..
 
 # echo "-------Downloading and install gnupg"
 # mkdir gnupg && cd gnupg
