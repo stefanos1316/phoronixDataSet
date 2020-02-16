@@ -46,17 +46,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg") 
 # timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc" )
-tasks=("lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
-		"lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" \
-		"mbw 128 MiB -n 100 -t2" "mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" "mbw 8192 MiB -n 100 -t2" \
-		"mcperf get ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=get" \
-		"mcperf set ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=set" \
-		"mcperf delete ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=delete" \
-		"mcperf add ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=add" \
-		"mcperf replace ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=replace" \
-		"mcperf append ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=append" \
-		"mcperf prepend ./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=prepend" \
-		"mkl-dnn conv_all ./benchdnn --mode=p --conv --batch=inputs/conv/conv_all" "mkl-dnn conv_googlenet_v3 ./benchdnn --mode=p --conv --batch=inputs/conv/conv_googlenet_v3" \
+tasks=( "mkl-dnn conv_all ./benchdnn --mode=p --conv --batch=inputs/conv/conv_all" "mkl-dnn conv_googlenet_v3 ./benchdnn --mode=p --conv --batch=inputs/conv/conv_googlenet_v3" \
 		"mkl-dnn conv_alexnet ./benchdnn --mode=p --conv --batch=inputs/conv/conv_alexnet" "mkl-dnn ip_1d ./benchdnn --mode=p --ip --batch=inputs/ip/ip_1d" \
 		"mkl-dnn ip_all ./benchdnn --mode=p --ip --batch=inputs/ip/ip_all" "mkl-dnn rnn_training ./benchdnn --mode=p --rnn --batch=inputs/rnn/rnn_training")
 
@@ -72,7 +62,7 @@ function startServers {
 			sudo rm -f /usr/local/nginx/logs/* 
 			sudo /usr/local/nginx/sbin/nginx ;;
 		("mcperf")
-			sudo memcached & ;;
+			memcached & ;;
 		("pymongo")
 			sudo systemctl start mongod ;;
 		("sockperf")

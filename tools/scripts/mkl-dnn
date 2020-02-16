@@ -1,4 +1,5 @@
 #!/bin/bash
 
+cd build/tests/benchdnn
 command=`echo $@ | awk '{first = $1; $1 = ""; print $0; }'`
 eval $command
