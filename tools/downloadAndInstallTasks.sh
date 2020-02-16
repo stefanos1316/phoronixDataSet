@@ -818,12 +818,34 @@ cd tasks_test
 # chmod +x sqlitebench
 # cd ../
 
-echo "-------Downloading and installing javascimark2"
-mkdir javascimark2 && cd javascimark2
-wget http://math.nist.gov/scimark2/scimark2lib.zip
-unzip scimark2lib.zip && rm scimark2lib.zip
-echo "#!/bin/sh
-java jnt.scimark2.commandline
-echo \$? > ~/test-exit-status" > javascimark2
-chmod +x javascimark2
+# echo "-------Downloading and installing iozone"
+# mkdir iozone && cd iozone
+# wget http://iozone.org/src/current/iozone3_465.tar
+# tar -xf iozone3_465.tar && rm iozone3_465.tar
+# mv iozone3_465/* ./ && rm -rf iozone3_465
+# cd src/current/
+# make linux
+# cp iozone ../../
+# cd ../
+
+# echo "-------Downloading and installing dbench"
+# mkdir dbench && cd dbench
+# wget http://samba.org/ftp/tridge/dbench/dbench-4.0.tar.gz
+# tar -xf dbench-4.0.tar.gz && rm dbench-4.0.tar.gz
+# mv dbench-4.0/* ./ && rm -rf dbench-4.0
+# ./autogen.sh
+# ./configure --prefix=`pwd`
+# make -j $(nproc --all)
+# make install
+# cp ../../$taskScripts/dbench ./
+# cd ../
+
+echo "-------Downloading and installing postmark"
+mkdir postmark && cd postmark
+wget http://archive.debian.org/debian/pool/main/p/postmark/postmark_1.51.orig.tar.gz
+tar -xzvf postmark_1.51.orig.tar.gz && rm postmark_1.51.orig.tar.gz
+mv postmark-1.51/* ./ && rm -rf postmark-1.51
+cc -O3 postmark-1.51.c -o postmark
+cp ../../${taskScripts}/postmark.pmrc ./
 cd ../
+

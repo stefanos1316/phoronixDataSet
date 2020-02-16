@@ -1,0 +1,5 @@
+echo "set transactions 2500000000
+set size 5120 5242880
+set number 5000
+run
+quit "

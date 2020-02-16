@@ -47,9 +47,11 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "build-gcc" \
 		"openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
 		"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
-		"qgears -image" "qgears -render" "qgears -gl" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend") 
+		"qgears -image" "qgears -render" "qgears -gl" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" "javascimark2" \
+		"j2dbench" "sunflow" "sqlitebench" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" \
+		"dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" ) 
 # timeConsumingTaks=( )
-tasks=( "sunflow" "sqlitebench")
+tasks=( "dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "postmark ../inputs/postmark.pmrc")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -164,7 +166,7 @@ for task in "${tasks[@]}"; do
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
 		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 | sunflow | \
-		sqlitebench )
+		sqlitebench | dbench* )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] ; then
 				startServers $benchmark
 			fi

@@ -114,7 +114,7 @@
       args:
         warn: false
 
-    - name: Installing dependencies for x11perf
+    - name: Installing dependencies for dbench
       apt: 
-        name: 'xutils-dev'
+        name: 'libpopt-dev'
         state: present
