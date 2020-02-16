@@ -1,0 +1,14 @@
+#!/bin/bash
+
+case $1 in
+	("800x600")
+		getConfigurations="+set r_customWidth 800 +set r_customHeight 600";;
+	("1024x768")
+		getConfigurations="+set r_customWidth 1024 +set r_customHeight 768";;
+	("1920x1080")
+		getConfigurations="+set r_customWidth 1920 +set r_customHeight 1080";;
+	("2560x1440")
+		getConfigurations="+set r_customWidth 2560 +set r_customHeight 1440";;
+esac
+
+./Quake3-UrT.x86_64 +timedemo 1 +set demodone "quit" +set demoloop1 "demo pts-ut43; set nextdemo vstr demodone" +vstr demoloop1 +set com_speeds 1 $getConfigurations

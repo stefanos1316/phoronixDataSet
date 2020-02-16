@@ -679,14 +679,30 @@ cd tasks_test
 # cp ../../${taskScripts}/build-llvm ./
 # cd ../
 
-echo "-------Downloading and installing openarena"
-mkdir openarenaG && cd openarenaG
-wget http://iweb.dl.sourceforge.net/project/oarena/openarena-0.8.8.zip
-unzip openarena-0.8.8.zip && rm openarena-0.8.8.zip
-mv openarena-0.8.8/* ./ && rm -rf openarena-0.8.8 
-wget http://www.phoronix-test-suite.com/benchmark-files/openarena-088-1.zip
-unzip openarena-088-1.zip && rm openarena-088-1.zip
-mv pts-openarena-088.cfg baseoa/
-cp ../../${taskScripts}/openarenaG ./
-cd ../
+# echo "-------Downloading and installing openarena"
+# mkdir openarenaG && cd openarenaG
+# wget http://iweb.dl.sourceforge.net/project/oarena/openarena-0.8.8.zip
+# unzip openarena-0.8.8.zip && rm openarena-0.8.8.zip
+# mv openarena-0.8.8/* ./ && rm -rf openarena-0.8.8 
+# wget http://www.phoronix-test-suite.com/benchmark-files/openarena-088-1.zip
+# unzip openarena-088-1.zip && rm openarena-088-1.zip
+# mv pts-openarena-088.cfg baseoa/
+# chmod +x openarena.x86_64
+# cp ../../${taskScripts}/openarenaG ./
+# cd ../
 
+echo "-------Downloading and installing urbanterror"
+mkdir urbanterrorG && cd urbanterrorG
+wget http://cdn.urbanterror.info/urt/43/releases/zips/UrbanTerror432_full.zip
+unzip UrbanTerror432_full.zip && rm UrbanTerror432_full.zip
+mv UrbanTerror43/* ./ && rm -rf UrbanTerror43/
+chmod +x Quake3-UrT.app/Contents/MacOS/Quake3-UrT.i386 
+wget http://www.phoronix-test-suite.com/benchmark-files/urbanterror-43-1.zip
+unzip urbanterror-43-1.zip && rm urbanterror-43-1.zip
+rm -f q3ut4/autoexec.cfg
+mv autoexec.cfg q3ut4/
+mkdir q3ut4/demos/
+mv pts-ut43.urtdemo q3ut4/demos/
+cp ../../${taskScripts}/urbanterrorG ./
+chmod +x Quake3-UrT.x86_64
+cd ../
