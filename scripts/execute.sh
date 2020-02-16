@@ -44,9 +44,9 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"stress-ng --sem 0 --sem-ops 20000000" "stress-ng --sock 0 --sock-ops 100000" "stress-ng --switch 0 --switch-ops 40000000" \
 		"stream" "swet -Z" "t-test1 5000" "tensorflow" "tinymembench" "ttsiod-renderer" "xsbench -t 8 -s large -l 30000000" \
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
-		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "gnupg" "build-gcc") 
-# timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc" )
-tasks=("ttsiod-renderer" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish")
+		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "build-gcc") 
+# timeConsumingTaks=("povray -benchmark" "build-linux-kernel" "build-gcc")
+tasks=("openarenaG 800x600" "openarenaG 1024x768" "openarenaG 800x600" "openarenaG 800x600")
 
 # Check array if more exist with the same name combine with last argument (testcase)
 function startServers {
@@ -147,12 +147,6 @@ for task in "${tasks[@]}"; do
 		("xz")
 			cp ../inputs/xz.txt ../inputs/tmp_xz.txt
 			time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
-		("build-gcc")
-			tar -xzvf ../inputs/gcc-8.2.0.tar.gz
-			mv ./gcc-8.2.0 ../${taskDirectory}/${benchmark}
-			cd ../${taskDirectory}/${benchmark}
-			time (./${task}) 2> ../../results/log_${taskName}.txt
-			cd ../../scripts ;;
 		("cloverleaf")
 			cp ../inputs/clover.in ./
 			time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
@@ -166,7 +160,7 @@ for task in "${tasks[@]}"; do
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
-		build-linux-kernel)
+		build-linux-kernel | build-gcc | build-llvm | openarena* )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] ; then
 				startServers $benchmark
 			fi

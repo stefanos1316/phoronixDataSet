@@ -19,12 +19,3 @@ rm -rf xzData
 echo "Downloading linux kernel 4.3"
 wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.3.tar.gz
 mv linux-4.3.tar.gz ../inputs
-
-echo "Downloading GCC 8.2"
-wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-8.2.0/gcc-8.2.0.tar.gz
-mv gcc-8.2.0.tar.gz ../inputs
-
-echo "Downloading DaCapo"
-wget http://download2.nust.na/pub4/sourceforge/d/da/dacapobench/9.12-bach-MR1/dacapo-9.12-MR1-bach.jar
-mkdir -p ../tasks/dacapo
-mv dacapo-9.12-MR1-bach.jar ../tasks/dacapo/dacapo.jar 

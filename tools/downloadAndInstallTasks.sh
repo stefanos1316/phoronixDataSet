@@ -642,37 +642,51 @@ cd tasks_test
 # cd src/ && make && cp XSBench ../xsbench
 # cd ../../
 
-echo "-------Downloading and installing ttsiod-renderer"
-mkdir ttsiod-renderer && cd ttsiod-renderer
-wget http://www.phoronix-test-suite.com/benchmark-files/renderer-2.3b.zip
-unzip renderer-2.3b.zip && rm renderer-2.3b.zip
-mv renderer-2.3b/* ./ && rm -rf renderer-2.3b/
-./configure
-make -j $(nproc --all)
-cp ../../${taskScripts}/ttsiod-renderer ./
-cd ../
-
-echo "-------Downloading and installing botan"
-mkdir botan && cd botan
-wget http://botan.randombit.net/releases/Botan-2.8.0.tgz
-tar -xf Botan-2.8.0.tgz && rm Botan-2.8.0.tgz
-mv Botan-2.8.0/* ./ && rm -rf Botan-2.8.0 
-python3 ./configure.py
-make -j $(nproc --all)
-mv botan botan_bin
-cp ../../${taskScripts}/botan ./
-cd ../
-
-# echo "-------Downloading and install gnupg"
-# mkdir gnupg && cd gnupg
-# wget http://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.19.tar.bz2
-# tar -jxvf gnupg-2.2.19.tar.bz2 && rm gnupg-2.2.19.tar.bz2
-# mv gnupg-2.2.19/* ./ && rm -rf gnupg-2.2.19 
-# cp ${taskScripts}/gnupg ./
-# ./configure --prefix=`pwd`
+# echo "-------Downloading and installing ttsiod-renderer"
+# mkdir ttsiod-renderer && cd ttsiod-renderer
+# wget http://www.phoronix-test-suite.com/benchmark-files/renderer-2.3b.zip
+# unzip renderer-2.3b.zip && rm renderer-2.3b.zip
+# mv renderer-2.3b/* ./ && rm -rf renderer-2.3b/
+# ./configure
 # make -j $(nproc --all)
-# make install
-# echo pts-1234567890 > passphrase
-# cd ../ && mv gnupg ${taskDirectory}/
+# cp ../../${taskScripts}/ttsiod-renderer ./
+# cd ../
 
+# echo "-------Downloading and installing botan"
+# mkdir botan && cd botan
+# wget http://botan.randombit.net/releases/Botan-2.8.0.tgz
+# tar -xf Botan-2.8.0.tgz && rm Botan-2.8.0.tgz
+# mv Botan-2.8.0/* ./ && rm -rf Botan-2.8.0 
+# python3 ./configure.py
+# make -j $(nproc --all)
+# mv botan botan_bin
+# cp ../../${taskScripts}/botan ./
+# cd ../
+
+# echo "-------Downloading and installing build-gcc"
+# mkdir build-gcc && cd build-gcc
+# wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-8.2.0/gcc-8.2.0.tar.gz
+# tar -xzvf gcc-8.2.0.tar.gz && rm -rf 
+# mv gcc-8.2.0/* ./ && rm -rf gcc-8.2.0
+# cp ../../${taskScripts}/build-gcc ./
+# cd ../
+
+# echo "-------Downloading and installing build-llvm"
+# mkdir build-llvm && cd build-llvm
+# wget http://releases.llvm.org/6.0.1/llvm-6.0.1.src.tar.xz
+# tar -xf llvm-6.0.1.src.tar.xz && rm llvm-6.0.1.src.tar.xz
+# mv llvm-6.0.1.src/* ./ && rm -rf llvm-6.0.1.src/ 
+# cp ../../${taskScripts}/build-llvm ./
+# cd ../
+
+echo "-------Downloading and installing openarena"
+mkdir openarenaG && cd openarenaG
+wget http://iweb.dl.sourceforge.net/project/oarena/openarena-0.8.8.zip
+unzip openarena-0.8.8.zip && rm openarena-0.8.8.zip
+mv openarena-0.8.8/* ./ && rm -rf openarena-0.8.8 
+wget http://www.phoronix-test-suite.com/benchmark-files/openarena-088-1.zip
+unzip openarena-088-1.zip && rm openarena-088-1.zip
+mv pts-openarena-088.cfg baseoa/
+cp ../../${taskScripts}/openarenaG ./
+cd ../
 
