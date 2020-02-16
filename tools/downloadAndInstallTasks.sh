@@ -840,12 +840,47 @@ cd tasks_test
 # cp ../../$taskScripts/dbench ./
 # cd ../
 
-echo "-------Downloading and installing postmark"
-mkdir postmark && cd postmark
-wget http://archive.debian.org/debian/pool/main/p/postmark/postmark_1.51.orig.tar.gz
-tar -xzvf postmark_1.51.orig.tar.gz && rm postmark_1.51.orig.tar.gz
-mv postmark-1.51/* ./ && rm -rf postmark-1.51
-cc -O3 postmark-1.51.c -o postmark
-cp ../../${taskScripts}/postmark.pmrc ./
+# echo "-------Downloading and installing postmark"
+# mkdir postmark && cd postmark
+# wget http://archive.debian.org/debian/pool/main/p/postmark/postmark_1.51.orig.tar.gz
+# tar -xzvf postmark_1.51.orig.tar.gz && rm postmark_1.51.orig.tar.gz
+# mv postmark-1.51/* ./ && rm -rf postmark-1.51
+# cc -O3 postmark-1.51.c -o postmark
+# cp ../../${taskScripts}/postmark.pmrc ./
+# cd ../
+
+# echo "-------Downloading and installing fs-mark"
+# mkdir fs-mark && cd fs-mark
+# wget http://www.phoronix-test-suite.com/benchmark-files/fs_mark-3.3.tar.gz
+# tar -xzvf fs_mark-3.3.tar.gz && rm fs_mark-3.3.tar.gz
+# mv fs_mark-3.3/* ./ && rm -rf fs_mark-3.3/
+# make -j $(nproc --all)
+# echo "#!/bin/bash
+# case \$1 in
+# 	(\"1000_Files_1MB_Size\")
+# 		getConfigurations=\"-s 1048576 -n 1000\";;
+# 	(\"1000_Files_1MB_Size_No_Sync/FSync\")
+# 		getConfigurations=\"-s 1048576 -n 1000 -S 0\";;
+# 	(\"5000_Files_1MB_Size_4_Threads\")
+# 		getConfigurations=\"-s 1048576 -n 5000 -t 4\";;
+# 	(\"4000_Files_32_Sub_Dirs_1MB_Size\")
+# 		getConfigurations=\"-s 1048576 -n 4000 -D 32\";;
+# esac
+# ./fs_mark -d ./scratch/ \$getConfigurations" > fs-mark
+# chmod +x fs-mark
+# mkdir scratch
+# cd ../
+
+echo "-------Downloading and installing bork"
+mkdir bork && cd bork
+wget http://www.phoronix-test-suite.com/benchmark-files/bork-1.4.zip
+unzip bork-1.4.zip && rm bork-1.4.zip
+mv bork-1.4/* ./ && rm -rf bork-1.4/
+echo "#!/bin/bash
+dd if=/dev/zero of=encryptfile bs=2048 count=1048576
+BORK_PASSWORD=phoronixtestsuite123 ./bork.sh ./encryptfile
+rm -f encryptfile.bork
+rm -f encryptfile" > bork
+chmod +x bork
 cd ../
 
