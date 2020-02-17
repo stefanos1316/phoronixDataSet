@@ -898,38 +898,55 @@ cd tasks_test
 # chmod +x ffmpeg
 # cd ../
 
-echo "-------Downloading and installing encode-mp3"
-mkdir encode-mp3 && cd encode-mp3
-wget http://ftp.osuosl.org/pub/blfs/conglomeration/lame/lame-3.100.tar.gz
-tar -xzvf lame-3.100.tar.gz && rm lame-3.100.tar.gz
-mv lame-3.100/* ./ && rm -rf lame-3.100/
-autoconf
-./configure --prefix=`pwd` --enable-expopt=full
-make
-make install
-wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
-tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
-echo "#!/bin/bash
-./bin/lame -h pts-trondheim-3.wav" > encode-mp3
-chmod +x encode-mp3
-cd ../
+# echo "-------Downloading and installing encode-mp3"
+# mkdir encode-mp3 && cd encode-mp3
+# wget http://ftp.osuosl.org/pub/blfs/conglomeration/lame/lame-3.100.tar.gz
+# tar -xzvf lame-3.100.tar.gz && rm lame-3.100.tar.gz
+# mv lame-3.100/* ./ && rm -rf lame-3.100/
+# autoconf
+# ./configure --prefix=`pwd` --enable-expopt=full
+# make
+# make install
+# wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
+# tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
+# echo "#!/bin/bash
+# ./bin/lame -h pts-trondheim-3.wav" > encode-mp3
+# chmod +x encode-mp3
+# cd ../
 
-exit
-echo "-------Downloading and installing encode-flac"
-mkdir encode-flac && cd encode-flac
-wget http://ftp.osuosl.org/pub/xiph/releases/flac/flac-1.3.2.tar.xz
-tar -xJf flac-1.3.2.tar.xz && rm flac-1.3.2.tar.xz
-mv flac-1.3.2/* ./ && rm -rf flac-1.3.2/
-./configure --prefix=`pwd`
+echo "-------Downloading and installing graphics-magick"
+mkdir graphics-magick && cd graphics-magick
+wget ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/1.3/GraphicsMagick-1.3.33.tar.bz2
+tar -xjf GraphicsMagick-1.3.33.tar.bz2 && rm GraphicsMagick-1.3.33.tar.bz2
+mv GraphicsMagick-1.3.33/* ./ && rm -rf GraphicsMagick-1.3.33/
+./configure --without-perl --prefix=`pwd` --without-png
 make -j $(nproc --all)
 make install
-wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
-tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
-echo "#!/bin/bash
-./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1
-./bin/flac --best pts-trondheim.wav -f -o output 2>&1
-./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1
-./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1
-./bin/flac --best pts-trondheim.wav-3 -f -o output 2>&1" > encode-flac
-chmod +x encode-flac
+wget http://phoronix-test-suite.com/benchmark-files/sample-photo-6000x4000-1.zip
+unzip sample-photo-6000x4000-1.zip && rm -rf sample-photo-6000x4000-1.zip
+./bin/gm convert sample-photo-6000x4000.JPG input.mpc
+chown -R `whoami` ./  
+echo "#!/bin/sh
+./bin/gm benchmark -iterations 300 convert input.mpc -\$1 \$2 output.miff
+output.miff" > graphics-magick
+chmod +x graphics-magick
+cd ../
+
+echo "-------Downloading and installing rocksdb"
+mkdir rocksdb && cd rocksdb
+wget https://github.com/facebook/rocksdb/archive/v6.3.6.tar.gz
+tar -xf v6.3.6.tar.gz && rm v6.3.6.tar.gz
+mv rocksdb-6.3.6/* ./ && rm -rf rocksdb-6.3.6
+mkdir build
+cd build
+export CFLAGS="-O3 -march=native"
+export CXXFLAGS="-O3 -march=native"
+cmake -DCMAKE_BUILD_TYPE=Release  ..
+make -j $(nproc --all)
+make db_bench  
+cd ../
+echo "#!/bin/sh
+cd build/
+./db_bench --benchmarks=\"\$1\" -compression_type \"none\" --threads \$(nproc --all) --duration 30 " > rocksdb
+chmod +x rocksdb
 cd ../
