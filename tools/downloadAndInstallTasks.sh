@@ -942,39 +942,78 @@ cd tasks_test
 # chmod +x rocksdb
 # cd ../
 
-echo "-------Downloading and installing cassandra"
-git clone https://github.com/apache/cassandra.git && cd cassandra
-ant
-echo "#!/bin/bash
-cd bin/
-./cassandra -f -R &
-CASSANDRA_SERVER_PID=\$!
-sleep 10
-cd ../tools/bin
-case \"\$1\" in
-\"write\")
-	./cassandra-stress write n=800K -rate threads=\$(nproc --all) ;;
-\"read\")
-	./cassandra-stress write -rate threads=\$(nproc --all)
-	sleep 2
-	./cassandra-stress read n=800K -rate threads=\$(nproc --all) ;;
-\"mixed_1_1\")
-	./cassandra-stress write -rate threads=\$(nproc --all)
-	sleep 2
-	./cassandra-stress mixed ratio\(write=1,read=1\) n=800K -rate threads=\$(nproc --all) ;;
-\"mixed_1_3\")
-	./cassandra-stress write -rate threads=\$(nproc --all)
-	sleep 2
-	./cassandra-stress mixed ratio\(write=1,read=3\) n=800K -rate threads=\$(nproc --all);;
+# echo "-------Downloading and installing cassandra"
+# git clone https://github.com/apache/cassandra.git && cd cassandra
+# ant
+# echo "#!/bin/bash
+# cd bin/
+# ./cassandra -f -R &
+# CASSANDRA_SERVER_PID=\$!
+# sleep 10
+# cd ../tools/bin
+# case \"\$1\" in
+# \"write\")
+# 	./cassandra-stress write n=400K -rate threads=\$(nproc --all) ;;
+# \"read\")
+# 	./cassandra-stress write -rate threads=\$(nproc --all)
+# 	sleep 2
+# 	./cassandra-stress read n=400K -rate threads=\$(nproc --all) ;;
+# \"mixed_1_1\")
+# 	./cassandra-stress write -rate threads=\$(nproc --all)
+# 	sleep 2
+# 	./cassandra-stress mixed ratio\(write=1,read=1\) n=400K -rate threads=\$(nproc --all) ;;
+# \"mixed_1_3\")
+# 	./cassandra-stress write -rate threads=\$(nproc --all)
+# 	sleep 2
+# 	./cassandra-stress mixed ratio\(write=1,read=3\) n=400K -rate threads=\$(nproc --all);;
+# esac
+# kill \$CASSANDRA_SERVER_PID
+# # while true; do
+# #     processes=\`ps -aux | grep \"cassandra\" | wc -l\`
+# #     if [ \$processes -gt 2 ]; then
+# #      break
+# #     fi
+# #     sleep 1
+# # done
+# sleep 3
+# " > cassandra
+# chmod +x cassandra
+# cd ../
+
+echo "-------Downloading and installing xonotic"
+mkdir xonotic && cd xonotic
+wget http://dl.xonotic.org/xonotic-0.8.2.zip
+unzip xonotic-0.8.2.zip && rm xonotic-0.8.2.zip
+mv Xonotic/* ./ && rm -rf Xonotic
+echo "#!/bin/sh
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+vid_width 800 +vid_height 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+vid_width 1024 +vid_height 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+vid_width 1920 +vid_height 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+vid_width 2560 +vid_height 1440\";;
 esac
-kill \$CASSANDRA_SERVER_PID
-while true; do
-    processes=\`ps -aux | grep \"cassandra\" | wc -l\`
-    if [ \$processes -gt 2 ]; then
-     break
-    fi
-    sleep 1
-done
-" > cassandra
-chmod +x cassandra
+./xonotic-linux64-sdl -nohome -benchmark demos/the-big-keybench +r_glsl 1 \$getConfigurations" > xonotic
+chmod +x xonotic
+cd ../
+
+echo "-------Downloading and installing paraview"
+mkdir paraview && cd paraview
+wget http://www.paraview.org/files/v5.4/ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
+tar -xzvf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz && rm ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
+mv ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit/* ./ && rm -rf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit
+echo "#!/bin/sh
+case \$1 in 
+    (\"manyspheres\")
+        configurations=\"manyspheres.py -s 100 -r 726 -f 30\";;
+    (\"waveletcontour\")
+        configurations=\"waveletcontour.py -d 256 -f 600\";;
+    (\"waveletvolume\")
+        configurations=\"waveletvolume.py -d 256 -f 1200\";;
+esac
+./bin/pvpython lib/python2.7/site-packages/paraview/benchmark/\$configurations" > paraview
+chmod +x paraview
 cd ../

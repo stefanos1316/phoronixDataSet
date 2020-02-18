@@ -52,9 +52,11 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "postmark ../inputs/postmark.pmrc" \
 		"fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" "bork" "ffmpeg" "encode-mp3" \
 		"graphics-magick minify" "graphics-magick gaussian 0x1" "graphics-magick sharpen 0x2.0" "graphics-magick rotate 90" "graphics-magick resize 50%" \
-		"rocksdb fillseq" "rocksdb fillrandom" "rocksdb fillsync" "rocksdb readrandom")
+		"rocksdb fillseq" "rocksdb fillrandom" "rocksdb fillsync" "rocksdb readrandom" "cassandra write" "cassandra read" "cassandra mixed_1_1" "cassandra mixed_1_3" \
+		)
 # timeConsumingTaks=( )
-tasks=( "cassandra write" "cassandra read" "cassandra mixed_1_1" "cassandra mixed_1_3")
+tasks=( "xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" \
+		"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume")
 function startServers {
 	case $1 in
 		("apache")
@@ -172,7 +174,8 @@ for task in "${tasks[@]}"; do
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
 		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 | sunflow | \
-		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassanrda* )
+		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassandra* | \
+		paraview* | xonotic* )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
