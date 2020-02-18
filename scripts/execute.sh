@@ -57,9 +57,10 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" "paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
 		"glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440"  "compilebench initial_create" "compilebench compile" \
 		"compilebench read_compile_tree" "smallpt 128" "build-php" "nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440" \
-		"warsow 800x600" "warsow 1024x768" "warsow 1920x1080" "warsow 2560x1440")
+		"warsow 800x600" "warsow 1024x768" "warsow 1920x1080" "warsow 2560x1440" "inkscape")
 # timeConsumingTaks=( )
-tasks=( )
+tasks=("rawtherapee")
+
 function startServers {
 	case $1 in
 		("apache")
@@ -88,7 +89,6 @@ function startServers {
 		(*) echo "No rule for $1" ;;
 	esac
 }
-
 
 function getTimeInSeconds {
 	local filePath=$1
@@ -179,7 +179,7 @@ for task in "${tasks[@]}"; do
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
 		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 | sunflow | \
 		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassandra* | \
-		paraview* | xonotic* | compilebench* | build-php | nexuiz*)
+		paraview* | xonotic* | compilebench* | build-php | nexuiz* | warsow* | inkscape | rawtherapee)
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark

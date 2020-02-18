@@ -133,3 +133,8 @@
       apt: 
         name: 'libxml2-dev'
         state: present
+
+    - name: Installing dependencies for rawtherapee
+      apt: 
+        name: 'rawtherapee'
+        state: present
