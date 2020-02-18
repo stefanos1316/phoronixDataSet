@@ -118,3 +118,13 @@
       apt: 
         name: 'libpopt-dev'
         state: present
+
+    - name: Installing dependencies for rocksdb
+      apt: 
+        name: 'libgflags-dev'
+        state: present
+
+    - name: Installing dependencies for cassandra
+      apt: 
+        name: 'ant'
+        state: present

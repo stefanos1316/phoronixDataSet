@@ -914,39 +914,67 @@ cd tasks_test
 # chmod +x encode-mp3
 # cd ../
 
-echo "-------Downloading and installing graphics-magick"
-mkdir graphics-magick && cd graphics-magick
-wget ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/1.3/GraphicsMagick-1.3.33.tar.bz2
-tar -xjf GraphicsMagick-1.3.33.tar.bz2 && rm GraphicsMagick-1.3.33.tar.bz2
-mv GraphicsMagick-1.3.33/* ./ && rm -rf GraphicsMagick-1.3.33/
-./configure --without-perl --prefix=`pwd` --without-png
-make -j $(nproc --all)
-make install
-wget http://phoronix-test-suite.com/benchmark-files/sample-photo-6000x4000-1.zip
-unzip sample-photo-6000x4000-1.zip && rm -rf sample-photo-6000x4000-1.zip
-./bin/gm convert sample-photo-6000x4000.JPG input.mpc
-chown -R `whoami` ./  
-echo "#!/bin/sh
-./bin/gm benchmark -iterations 300 convert input.mpc -\$1 \$2 output.miff
-output.miff" > graphics-magick
-chmod +x graphics-magick
-cd ../
+# echo "-------Downloading and installing graphics-magick"
+# mkdir graphics-magick && cd graphics-magick
+# wget ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/1.3/GraphicsMagick-1.3.33.tar.bz2
+# tar -xjf GraphicsMagick-1.3.33.tar.bz2 && rm GraphicsMagick-1.3.33.tar.bz2
+# mv GraphicsMagick-1.3.33/* ./ && rm -rf GraphicsMagick-1.3.33/
+# ./configure --without-perl --prefix=`pwd` --without-png
+# make -j $(nproc --all)
+# make install
+# wget http://phoronix-test-suite.com/benchmark-files/sample-photo-6000x4000-1.zip
+# unzip sample-photo-6000x4000-1.zip && rm -rf sample-photo-6000x4000-1.zip
+# ./bin/gm convert sample-photo-6000x4000.JPG input.mpc
+# chown -R `whoami` ./  
+# echo "#!/bin/sh
+# ./bin/gm benchmark -iterations 300 convert input.mpc -\$1 \$2 output.miff
+# output.miff" > graphics-magick
+# chmod +x graphics-magick
+# cd ../
 
-echo "-------Downloading and installing rocksdb"
-mkdir rocksdb && cd rocksdb
-wget https://github.com/facebook/rocksdb/archive/v6.3.6.tar.gz
-tar -xf v6.3.6.tar.gz && rm v6.3.6.tar.gz
-mv rocksdb-6.3.6/* ./ && rm -rf rocksdb-6.3.6
-mkdir build
-cd build
-export CFLAGS="-O3 -march=native"
-export CXXFLAGS="-O3 -march=native"
-cmake -DCMAKE_BUILD_TYPE=Release  ..
-make -j $(nproc --all)
-make db_bench  
-cd ../
-echo "#!/bin/sh
-cd build/
-./db_bench --benchmarks=\"\$1\" -compression_type \"none\" --threads \$(nproc --all) --duration 30 " > rocksdb
-chmod +x rocksdb
+# echo "-------Downloading and installing rocksdb"
+# mkdir rocksdb && cd rocksdb
+# git clone https://github.com/facebook/rocksdb
+# mv rocksdb/* ./ && rm -rf rocksdb
+# make db_bench  
+# echo "#!/bin/sh
+# ./db_bench --benchmarks=\"\$1\" -compression_type \"none\" --threads \$(nproc --all) --num 2000000" > rocksdb
+# chmod +x rocksdb
+# cd ../
+
+echo "-------Downloading and installing cassandra"
+git clone https://github.com/apache/cassandra.git && cd cassandra
+ant
+echo "#!/bin/bash
+cd bin/
+./cassandra -f -R &
+CASSANDRA_SERVER_PID=\$!
+sleep 10
+cd ../tools/bin
+case \"\$1\" in
+\"write\")
+	./cassandra-stress write n=800K -rate threads=\$(nproc --all) ;;
+\"read\")
+	./cassandra-stress write -rate threads=\$(nproc --all)
+	sleep 2
+	./cassandra-stress read n=800K -rate threads=\$(nproc --all) ;;
+\"mixed_1_1\")
+	./cassandra-stress write -rate threads=\$(nproc --all)
+	sleep 2
+	./cassandra-stress mixed ratio\(write=1,read=1\) n=800K -rate threads=\$(nproc --all) ;;
+\"mixed_1_3\")
+	./cassandra-stress write -rate threads=\$(nproc --all)
+	sleep 2
+	./cassandra-stress mixed ratio\(write=1,read=3\) n=800K -rate threads=\$(nproc --all);;
+esac
+kill \$CASSANDRA_SERVER_PID
+while true; do
+    processes=\`ps -aux | grep \"cassandra\" | wc -l\`
+    if [ \$processes -gt 2 ]; then
+     break
+    fi
+    sleep 1
+done
+" > cassandra
+chmod +x cassandra
 cd ../
