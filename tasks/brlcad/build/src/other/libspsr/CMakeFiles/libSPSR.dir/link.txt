@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -w -m64  -m64 -shared -Wl,-soname,libSPSR.so -o ../../../lib/libSPSR.so CMakeFiles/libSPSR.dir/Src/Factor.cpp.o CMakeFiles/libSPSR.dir/Src/Geometry.cpp.o CMakeFiles/libSPSR.dir/Src/MarchingCubes.cpp.o CMakeFiles/libSPSR.dir/Src/SPSR.cpp.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: 

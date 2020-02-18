@@ -1,8 +1,0 @@
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/primesieve/CMakeFiles/install/strip.dir
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/primesieve/CMakeFiles/install/local.dir
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/primesieve/CMakeFiles/libprimesieve-static.dir
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/primesieve/CMakeFiles/edit_cache.dir
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/primesieve/CMakeFiles/primesieve.dir
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/primesieve/CMakeFiles/rebuild_cache.dir
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/primesieve/CMakeFiles/list_install_components.dir
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/primesieve/CMakeFiles/install.dir

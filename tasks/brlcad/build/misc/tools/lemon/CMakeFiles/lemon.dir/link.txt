@@ -1,1 +1,0 @@
-/usr/bin/cc  -w   -m64 -g -ggdb3 -rdynamic CMakeFiles/lemon.dir/lemon.c.o  -o ../../../bin/lemon 

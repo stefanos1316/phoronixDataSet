@@ -1,1 +1,0 @@
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/src/librt/primitives/tor/tor_shot.cl

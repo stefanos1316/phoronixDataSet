@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -w -m64  -m64 -shared -Wl,-soname,libclipper.so.4 -o ../../../lib/libclipper.so.4.6.0 CMakeFiles/clipper.dir/clipper.cpp.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: 

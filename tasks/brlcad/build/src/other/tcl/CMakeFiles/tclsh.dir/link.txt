@@ -1,1 +1,0 @@
-/usr/bin/cc  -w -m64 -pipe -m64 -DNDEBUG=1 -O2   -m64 -m64 -rdynamic CMakeFiles/tclsh.dir/unix/tclAppInit.c.o  -o ../../../bin/tclsh-8.5 -Wl,-rpath,/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/lib: ../../../lib/libtcl.so.8.5.19 -lm -lpthread -ldl -lpthread 

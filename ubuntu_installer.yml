@@ -152,4 +152,9 @@
     - name: Installing dependencies for gegl
       apt: 
         name: 'gegl'
-        state: present    
+        state: present
+
+    - name: Installing dependencies for java-jhm
+      apt: 
+        name: 'maven'
+        state: present  

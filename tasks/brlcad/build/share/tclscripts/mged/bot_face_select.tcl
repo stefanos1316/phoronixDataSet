@@ -1,1 +1,0 @@
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/src/tclscripts/mged/bot_face_select.tcl

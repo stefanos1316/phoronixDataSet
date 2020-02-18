@@ -1182,18 +1182,44 @@ cd tasks_test
 # chmod +x rsvg
 # cd ../
 
-echo "-------Downloading and installing gegl"
-mkdir gegl && cd gegl
-wget http://phoronix-test-suite.com/benchmark-files/sample-photo-6000x4000-1.zip
-unzip sample-photo-6000x4000-1.zip && rm sample-photo-6000x4000-1.zip
-wget http://www.phoronix-test-suite.com/benchmark-files/stock-photos-jpeg-2018-1.tar.xz
-tar -xf stock-photos-jpeg-2018-1.tar.xz && rm stock-photos-jpeg-2018-1.tar.xz
-wget http://www.phoronix-test-suite.com/benchmark-files/pts-sample-photos-2.tar.bz2
-tar -xf pts-sample-photos-2.tar.bz2 && rm pts-sample-photos-2.tar.bz2
+# echo "-------Downloading and installing gegl"
+# mkdir gegl && cd gegl
+# wget http://phoronix-test-suite.com/benchmark-files/sample-photo-6000x4000-1.zip
+# unzip sample-photo-6000x4000-1.zip && rm sample-photo-6000x4000-1.zip
+# wget http://www.phoronix-test-suite.com/benchmark-files/stock-photos-jpeg-2018-1.tar.xz
+# tar -xf stock-photos-jpeg-2018-1.tar.xz && rm stock-photos-jpeg-2018-1.tar.xz
+# wget http://www.phoronix-test-suite.com/benchmark-files/pts-sample-photos-2.tar.bz2
+# tar -xf pts-sample-photos-2.tar.bz2 && rm pts-sample-photos-2.tar.bz2
+# echo "#!/bin/sh
+# for i in *.JPG
+# do 
+#     gegl -i \$i -o out.png -- \$@
+# done" > gegl
+# chmod +x gegl
+# cd ../
+
+echo "-------Downloading and installing renaissance"
+mkdir renaissance && cd renaissance
+wget https://github.com/renaissance-benchmarks/renaissance/releases/download/v0.9.0/renaissance-mit-0.9.0.jar
 echo "#!/bin/sh
-for i in *.JPG
-do 
-    gegl -i \$i -o out.png -- \$@
-done" > gegl
-chmod +x gegl
+java -jar renaissance-mit-0.9.0.jar -r 1 \$1" > renaissance
+chmod +x renaissance
+cd ../
+
+echo "-------Downloading and installing java-jmh"
+mkdir java-jmh && cd java-jmh
+mvn archetype:generate \
+          -DinteractiveMode=false \
+          -DarchetypeGroupId=org.openjdk.jmh \
+          -DarchetypeArtifactId=jmh-java-benchmark-archetype \
+          -DgroupId=org.sample \
+          -DartifactId=test \
+          -Dversion=1.0
+cd test
+mvn clean install
+cd ../
+echo "#!/bin/sh
+cd test
+java -jar target/benchmarks.jar -t max" > java-jmh
+chmod +x java-jmh
 cd ../

@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC  -w -m64  -m64 -shared -Wl,-soname,librply.so -o ../../../lib/librply.so CMakeFiles/rply.dir/rply.c.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: 

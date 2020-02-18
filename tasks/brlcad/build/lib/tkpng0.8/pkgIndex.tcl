@@ -1,1 +1,0 @@
-package ifneeded tkpng 0.8 [list load [file join $dir "/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/lib" libtkpng.so] tkpng]

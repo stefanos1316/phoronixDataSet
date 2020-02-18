@@ -1,1 +1,0 @@
-#define JVERSION "80"

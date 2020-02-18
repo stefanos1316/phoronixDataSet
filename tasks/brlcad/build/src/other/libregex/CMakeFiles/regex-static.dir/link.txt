@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../../lib/libregex.a  CMakeFiles/regex-static.dir/regcomp.c.o CMakeFiles/regex-static.dir/regerror.c.o CMakeFiles/regex-static.dir/regexec.c.o CMakeFiles/regex-static.dir/regfree.c.o
-/usr/bin/gcc-ranlib ../../../lib/libregex.a

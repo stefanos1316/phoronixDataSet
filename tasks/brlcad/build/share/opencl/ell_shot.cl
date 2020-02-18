@@ -1,1 +1,0 @@
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/src/librt/primitives/ell/ell_shot.cl

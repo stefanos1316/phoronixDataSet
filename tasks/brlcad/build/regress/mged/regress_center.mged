@@ -1,9 +1,0 @@
-source /home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/regress/mged/regression_resources.tcl
-
-puts "*** Testing 'center' command ***"
-
-center
-center 111 2 -300
-center
-
-puts "*** 'center' testing completed ***"

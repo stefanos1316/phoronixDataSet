@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../lib/libcursor.a  CMakeFiles/libcursor-obj.dir/cursor.c.o
-/usr/bin/gcc-ranlib ../../lib/libcursor.a

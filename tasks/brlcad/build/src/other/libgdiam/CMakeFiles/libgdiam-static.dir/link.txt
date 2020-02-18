@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../../lib/libgdiam.a  CMakeFiles/libgdiam-static.dir/gdiam.cpp.o
-/usr/bin/gcc-ranlib ../../../lib/libgdiam.a

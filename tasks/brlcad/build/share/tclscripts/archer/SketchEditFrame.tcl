@@ -1,1 +1,0 @@
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/src/tclscripts/archer/SketchEditFrame.tcl

@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -w -m64  -m64 -shared -Wl,-soname,libbase.so.2 -o ../../../../../lib/libbase.so.2.0.0 CMakeFiles/base.dir/sc_memmgr.cc.o CMakeFiles/base.dir/sc_trace_fprintf.c.o CMakeFiles/base.dir/sc_getopt.cc.o CMakeFiles/base.dir/sc_benchmark.cc.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: 

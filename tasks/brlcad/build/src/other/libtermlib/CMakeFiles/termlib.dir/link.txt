@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC  -w -m64  -m64 -shared -Wl,-soname,libtermlib.so.1 -o ../../../lib/libtermlib.so.1.7.1 CMakeFiles/termlib.dir/termcap.c.o CMakeFiles/termlib.dir/tgoto.c.o CMakeFiles/termlib.dir/tputs.c.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: 

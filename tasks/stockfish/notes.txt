@@ -1,1 +1,0 @@
-To increase the execution time of stockfish change the while loop's count variable found inteh src/uci.cpp 

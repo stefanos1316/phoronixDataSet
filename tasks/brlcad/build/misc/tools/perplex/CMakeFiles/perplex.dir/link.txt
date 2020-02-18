@@ -1,1 +1,0 @@
-/usr/bin/c++   -w   -m64 -g -ggdb3 -rdynamic CMakeFiles/perplex.dir/PERPLEX_parser/parser.c.o CMakeFiles/perplex.dir/scanner.c.o CMakeFiles/perplex.dir/mbo_getopt.cpp.o CMakeFiles/perplex.dir/perplex.cpp.o  -o ../../../bin/perplex 

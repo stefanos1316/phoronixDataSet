@@ -1,3 +1,0 @@
-#!/bin/bash
-
-python run.py -d numenta --detect --skipConfirmation --score

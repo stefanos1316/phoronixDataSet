@@ -1,1 +1,0 @@
-/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/src/archer/plugins/Wizards/tirewizard/TireWizard.tcl

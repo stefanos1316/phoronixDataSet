@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../lib/librtuif.a  CMakeFiles/librtuif-obj.dir/do.c.o CMakeFiles/librtuif-obj.dir/heatgraph.c.o CMakeFiles/librtuif-obj.dir/main.c.o CMakeFiles/librtuif-obj.dir/opt.c.o CMakeFiles/librtuif-obj.dir/scanline.c.o CMakeFiles/librtuif-obj.dir/usage.cpp.o CMakeFiles/librtuif-obj.dir/worker.c.o
-/usr/bin/gcc-ranlib ../../lib/librtuif.a

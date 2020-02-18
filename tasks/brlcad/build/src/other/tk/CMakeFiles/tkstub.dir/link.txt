@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../../lib/libtkstub.a  CMakeFiles/tkstub.dir/generic/tkStubInit.c.o CMakeFiles/tkstub.dir/generic/tkStubLib.c.o CMakeFiles/tkstub.dir/generic/ttk/ttkStubInit.c.o CMakeFiles/tkstub.dir/generic/ttk/ttkStubLib.c.o
-/usr/bin/gcc-ranlib ../../../lib/libtkstub.a

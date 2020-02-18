@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../../lib/libSPSR.a  CMakeFiles/libSPSR-static.dir/Src/Factor.cpp.o CMakeFiles/libSPSR-static.dir/Src/Geometry.cpp.o CMakeFiles/libSPSR-static.dir/Src/MarchingCubes.cpp.o CMakeFiles/libSPSR-static.dir/Src/SPSR.cpp.o
-/usr/bin/gcc-ranlib ../../../lib/libSPSR.a

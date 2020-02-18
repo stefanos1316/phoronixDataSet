@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../../lib/libstdvds.a  CMakeFiles/stdvds-static.dir/stdvds.c.o CMakeFiles/stdvds-static.dir/stdfold.c.o CMakeFiles/stdvds-static.dir/stdvis.c.o
-/usr/bin/gcc-ranlib ../../../lib/libstdvds.a

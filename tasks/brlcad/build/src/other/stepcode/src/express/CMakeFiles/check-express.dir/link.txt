@@ -1,1 +1,0 @@
-/usr/bin/cc  -w -m64   -m64 -rdynamic CMakeFiles/check-express.dir/fedex.c.o CMakeFiles/check-express.dir/inithook.c.o  -o ../../../../../bin/check-express -Wl,-rpath,/home/sgeorgiou/GitHub/phoronixDataSet/tasks/brlcad/build/lib ../../../../../lib/libexpress.so.2.0.0 ../../../../../lib/libbase.so.2.0.0 

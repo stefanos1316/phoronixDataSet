@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../../lib/libp2t.a  CMakeFiles/p2t-static.dir/poly2tri/common/shapes.cc.o CMakeFiles/p2t-static.dir/poly2tri/common/utils.cc.o CMakeFiles/p2t-static.dir/poly2tri/sweep/advancing_front.cc.o CMakeFiles/p2t-static.dir/poly2tri/sweep/cdt.cc.o CMakeFiles/p2t-static.dir/poly2tri/sweep/sweep_context.cc.o CMakeFiles/p2t-static.dir/poly2tri/sweep/sweep.cc.o
-/usr/bin/gcc-ranlib ../../../lib/libp2t.a

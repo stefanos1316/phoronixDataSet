@@ -58,10 +58,12 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440"  "compilebench initial_create" "compilebench compile" \
 		"compilebench read_compile_tree" "smallpt 128" "build-php" "nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440" \
 		"warsow 800x600" "warsow 1024x768" "warsow 1920x1080" "warsow 2560x1440" "inkscape" "rawtherapee" "tjbench" \
-		"darktable masskrug.NEF" "darktable bench.SRW" "darktable server_room.NEF" "rsvg")
+		"darktable masskrug.NEF" "darktable bench.SRW" "darktable server_room.NEF" "rsvg" "gegl rotate-on-center degrees=90" "gegl scale-size x=400 y=400" \
+		"gegl antialias" "gegl cartoon" "gegl color-enhance" "gegl crop x=100 y=100 width=1920 height=1080" "gegl wavelet-blur" "gegl reflect" \
+		"gegl tile-glass tile-width=20 tile-height=20" "renaissance akka-uct" "renaissance reactors" "renaissance als" "renaissance naive-bayes" \
+		"renaissance page-rank" "renaissance db-shootout" "renaissance dotty" "renaissance finagle-chirper")
 # timeConsumingTaks=( )
-tasks=("gegl rotate-on-center degrees=90" "gegl scale-size x=400 y=400" "gegl antialias" "gegl cartoon" "gegl color-enhance" \
-	  	"gegl crop x=100 y=100 width=1920 height=1080" "gegl wavelet-blur" "gegl reflect" "gegl tile-glass tile-width=20 tile-height=20") 
+tasks=(   "java-jmh") 
 
 function startServers {
 	case $1 in
@@ -182,7 +184,7 @@ for task in "${tasks[@]}"; do
 		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 | sunflow | \
 		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassandra* | \
 		paraview* | xonotic* | compilebench* | build-php | nexuiz* | warsow* | inkscape | rawtherapee | tjbench | darktable* | \
-		rsvg | gegl* )
+		rsvg | gegl* | padman* | renaissance* | java-jmh )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark

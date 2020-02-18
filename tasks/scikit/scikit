@@ -1,4 +1,0 @@
-#!/bin/bash
-
-python3 benchmarks/bench_random_projections.py --n-times 20
-

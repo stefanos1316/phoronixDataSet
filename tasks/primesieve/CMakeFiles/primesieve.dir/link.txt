@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/primesieve.dir/src/console/cmdoptions.cpp.o CMakeFiles/primesieve.dir/src/console/help.cpp.o CMakeFiles/primesieve.dir/src/console/main.cpp.o CMakeFiles/primesieve.dir/src/console/test.cpp.o  -o primesieve libprimesieve.a -lpthread 

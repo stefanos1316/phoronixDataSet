@@ -1,8 +1,0 @@
-#!/bin/bash
-
-command=`echo $@ | awk '{first = $1; $1 = ""; print $0; }'`
-for j in {1..5}; do
-	eval $command
-done
-
-rm -rf scratch

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-running=`ps -aux | grep redis | wc -l`
-
-if [ $running -ne 2 ]; then
-	src/redis-server &
-fi
-
-src/redis-benchmark -n 1000000 -P 640000 -q -c 50 --csv $1

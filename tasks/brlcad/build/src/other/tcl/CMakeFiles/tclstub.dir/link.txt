@@ -1,2 +1,0 @@
-/usr/bin/gcc-ar qc ../../../lib/libtclstub.a  CMakeFiles/tclstub.dir/generic/tclStubLib.c.o
-/usr/bin/gcc-ranlib ../../../lib/libtclstub.a

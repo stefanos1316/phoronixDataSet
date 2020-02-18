@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC  -w -m64 -O3 -fPIC  -m64 -shared -Wl,-soname,liblz4.so -o ../../../lib/liblz4.so CMakeFiles/lz4.dir/lz4.c.o CMakeFiles/lz4.dir/lz4frame.c.o CMakeFiles/lz4.dir/lz4hc.c.o CMakeFiles/lz4.dir/xxhash.c.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: 

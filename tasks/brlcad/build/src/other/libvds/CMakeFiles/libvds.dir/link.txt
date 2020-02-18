@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC  -w -m64  -m64 -shared -Wl,-soname,libvds.so.1 -o ../../../lib/libvds.so.1.0.1 CMakeFiles/libvds.dir/build.c.o CMakeFiles/libvds.dir/cluster.c.o CMakeFiles/libvds.dir/dynamic.c.o CMakeFiles/libvds.dir/render.c.o CMakeFiles/libvds.dir/util.c.o CMakeFiles/libvds.dir/file.c.o -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::: -lm 
