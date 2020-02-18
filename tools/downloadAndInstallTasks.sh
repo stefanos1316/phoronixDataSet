@@ -980,40 +980,65 @@ cd tasks_test
 # chmod +x cassandra
 # cd ../
 
-echo "-------Downloading and installing xonotic"
-mkdir xonotic && cd xonotic
-wget http://dl.xonotic.org/xonotic-0.8.2.zip
-unzip xonotic-0.8.2.zip && rm xonotic-0.8.2.zip
-mv Xonotic/* ./ && rm -rf Xonotic
-echo "#!/bin/sh
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"+vid_width 800 +vid_height 600\";;
-	(\"1024x768\")
-		getConfigurations=\"+vid_width 1024 +vid_height 768\";;
-	(\"1920x1080\")
-		getConfigurations=\"+vid_width 1920 +vid_height 1080\";;
-	(\"2560x1440\")
-		getConfigurations=\"+vid_width 2560 +vid_height 1440\";;
-esac
-./xonotic-linux64-sdl -nohome -benchmark demos/the-big-keybench +r_glsl 1 \$getConfigurations" > xonotic
-chmod +x xonotic
-cd ../
+# echo "-------Downloading and installing xonotic"
+# mkdir xonotic && cd xonotic
+# wget http://dl.xonotic.org/xonotic-0.8.2.zip
+# unzip xonotic-0.8.2.zip && rm xonotic-0.8.2.zip
+# mv Xonotic/* ./ && rm -rf Xonotic
+# echo "#!/bin/sh
+# case \$1 in
+# 	(\"800x600\")
+# 		getConfigurations=\"+vid_width 800 +vid_height 600\";;
+# 	(\"1024x768\")
+# 		getConfigurations=\"+vid_width 1024 +vid_height 768\";;
+# 	(\"1920x1080\")
+# 		getConfigurations=\"+vid_width 1920 +vid_height 1080\";;
+# 	(\"2560x1440\")
+# 		getConfigurations=\"+vid_width 2560 +vid_height 1440\";;
+# esac
+# ./xonotic-linux64-sdl -nohome -benchmark demos/the-big-keybench +r_glsl 1 \$getConfigurations" > xonotic
+# chmod +x xonotic
+# cd ../
 
-echo "-------Downloading and installing paraview"
-mkdir paraview && cd paraview
-wget http://www.paraview.org/files/v5.4/ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
-tar -xzvf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz && rm ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
-mv ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit/* ./ && rm -rf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit
+# echo "-------Downloading and installing paraview"
+# mkdir paraview && cd paraview
+# wget http://www.paraview.org/files/v5.4/ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
+# tar -xzvf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz && rm ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
+# mv ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit/* ./ && rm -rf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit
+# echo "#!/bin/sh
+# case \$1 in 
+#     (\"manyspheres\")
+#         configurations=\"manyspheres.py -s 100 -r 726 -f 30\";;
+#     (\"waveletcontour\")
+#         configurations=\"waveletcontour.py -d 256 -f 600\";;
+#     (\"waveletvolume\")
+#         configurations=\"waveletvolume.py -d 256 -f 1200\";;
+# esac
+# ./bin/pvpython lib/python2.7/site-packages/paraview/benchmark/\$configurations" > paraview
+# chmod +x paraview
+# cd ../
+
+# echo "-------Downloading and installing glmark2"
+# mkdir glmark2 && cd glmark2
+# wget http://phoronix-test-suite.com/benchmark-files/glmark2-20170617.tar.gz
+# tar -xzvf glmark2-20170617.tar.gz && rm glmark2-20170617.tar.gz
+# mv glmark2-20170617/* ./ && rm -rf glmark2-20170617
+# ./waf configure --with-flavors=x11-gl --prefix=`pwd`
+# ./waf build
+# ./waf install
+# echo "#!/bin/sh
+# cd bin/
+# ./glmark2 -s \$1" > glmark2
+# chmod +x glmark2
+# cd ../
+
+echo "-------Downloading and installing compilebench"
+mkdir compilebench && cd compilebench
+wget http://www.phoronix-test-suite.com/benchmark-files/compilebench-0.6.tar.bz2
+tar -xjvf compilebench-0.6.tar.bz2 && rm compilebench-0.6.tar.bz2
+mv compilebench-0.6/* ./ && rm -rf compilebench-0.6
+mv compilebench compile-bench
 echo "#!/bin/sh
-case \$1 in 
-    (\"manyspheres\")
-        configurations=\"manyspheres.py -s 100 -r 726 -f 30\";;
-    (\"waveletcontour\")
-        configurations=\"waveletcontour.py -d 256 -f 600\";;
-    (\"waveletvolume\")
-        configurations=\"waveletvolume.py -d 256 -f 1200\";;
-esac
-./bin/pvpython lib/python2.7/site-packages/paraview/benchmark/\$configurations" > paraview
-chmod +x paraview
+python2 compile-bench -D t -i 10 --makej \$1" > compilebench
+chmod +x compilebench
 cd ../
