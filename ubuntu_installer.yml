@@ -138,3 +138,8 @@
       apt: 
         name: 'rawtherapee'
         state: present
+    
+    - name: Installing dependencies for darktable
+      apt: 
+        name: 'darktable'
+        state: present

@@ -1119,15 +1119,50 @@ cd tasks_test
 # chmod +x inkscape
 # cd ../
 
-echo "-------Downloading and installing rawtherapee"
-mkdir rawtherapee && cd rawtherapee
-wget http://www.phoronix-test-suite.com/benchmark-files/benchmarkRT-2.tar.xz
-tar -xf benchmarkRT-2.tar.xz && rm benchmarkRT-2.tar.xz
-mv benchmarkRT/benchmarkRT ./benchmarkRT_bin && rm -rf benchmarkRT
-&& mv benchmarkRT_bin benchmarkRT
+# echo "-------Downloading and installing rawtherapee"
+# mkdir rawtherapee && cd rawtherapee
+# wget http://www.phoronix-test-suite.com/benchmark-files/benchmarkRT-2.tar.xz
+# tar -xf benchmarkRT-2.tar.xz && rm benchmarkRT-2.tar.xz
+# mv benchmarkRT/benchmarkRT ./benchmarkRT_bin && rm -rf benchmarkRT
+# mv benchmarkRT_bin benchmarkRT
+# echo "#!/bin/sh
+# RT_CLI=\`which rawtherapee-cli\`
+# RT_PATH=\`dirname \$RT_CLI\`
+# ./benchmarkRT -e \$RT_PATH -a \$@" > rawtherapee
+# chmod +x rawtherapee
+# cd ../
+
+# echo "-------Downloading and installing tjbench"
+# mkdir tjbench && cd tjbench
+# wget http://ftp.osuosl.org/pub/blfs/conglomeration/libjpeg-turbo/libjpeg-turbo-2.0.2.tar.gz
+# tar -xzvf libjpeg-turbo-2.0.2.tar.gz && rm libjpeg-turbo-2.0.2.tar.gz
+# mv libjpeg-turbo-2.0.2/* ./ && rm -rf libjpeg-turbo-2.0.2
+# wget http://phoronix-test-suite.com/benchmark-files/jpeg-test-1.zip
+# unzip jpeg-test-1.zip && rm jpeg-test-1.zip
+# cp jpeg-test-1.JPG jpeg-test-2.JPG
+# cp jpeg-test-1.JPG jpeg-test-3.JPG
+# cp jpeg-test-1.JPG jpeg-test-4.JPG
+# mkdir build
+# cd build
+# cmake ..
+# make -j $(nproc --all)
+# cd ..
+# echo "#!/bin/sh
+# ./build/tjbench jpeg-test-1.JPG -nowrite
+# ./build/tjbench jpeg-test-2.JPG -nowrite
+# ./build/tjbench jpeg-test-3.JPG -nowrite
+# ./build/tjbench jpeg-test-4.JPG -nowrite" > tjbench
+# chmod +x tjbench
+# cd ../
+
+echo "-------Downloading and installing darktable"
+mkdir darktable && cd darktable
+wget http://www.phoronix-test-suite.com/benchmark-files/darktable-bench-assets-1.tar.bz2
+tar -xjvf darktable-bench-assets-1.tar.bz2 && rm darktable-bench-assets-1.tar.bz2
+wget http://www.phoronix-test-suite.com/benchmark-files/server-rack.tar.xz
+tar -xf server-rack.tar.xz && rm server-rack.tar.xz
 echo "#!/bin/sh
-RT_CLI=\`which rawtherapee-cli\`
-RT_PATH=\`dirname \$RT_CLI\`
-./benchmarkRT -e \$RT_PATH -a \$@" > rawtherapee
-chmod +x rawtherapee
+rm -f output*.jpg
+darktable-cli \$1 output.jpg --core -d perf --disable-opencl" > darktable
+chmod +x darktable
 cd ../
