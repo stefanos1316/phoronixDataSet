@@ -56,9 +56,10 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"cassandra write" "cassandra read" "cassandra mixed_1_1" "cassandra mixed_1_3" \
 		"xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" "paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
 		"glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440"  "compilebench initial_create" "compilebench compile" \
-		"compilebench read_compile_tree" "smallpt 128" "build-php")
+		"compilebench read_compile_tree" "smallpt 128" "build-php" "nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440" \
+		"warsow 800x600" "warsow 1024x768" "warsow 1920x1080" "warsow 2560x1440")
 # timeConsumingTaks=( )
-tasks=( "nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440")
+tasks=( )
 function startServers {
 	case $1 in
 		("apache")
@@ -105,12 +106,13 @@ function dumpGarbage {
 	|| [ -f ../inputs/tmp_linux-5.3.tar.gz.bz2 ] || [ -f ../inputs/zstd_test ] \
 	|| [ -f ../inputs/tmp_xz.txt.xz ] || [ -f *.tmp] || [ -f RES-multiply-* ] \
 	|| [ -f ../${taskDirectory}/dcraw/*.ppm ] || [ -f bitmap0_* ] || [-f blog-* ] \
-	|| [ -f alltext.out ] || [ -f output.ppm ] || [-f clover.* ] || [ -f results.txt ] ; then
+	|| [ -f alltext.out ] || [ -f output.ppm ] || [-f clover.* ] || [ -f results.txt ] \
+	|| [ -f image.ppm]; then
 		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp
 		rm ../inputs/tmp_linux-5.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst
 		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../${taskDirectory}/dcraw/*.ppm 
 		rm bitmap0_* ; rm -rf blog-* ; rm  alltext.out ; rm output.ppm; rm results.txt
-		rm clover.* ; tmp_linux-5.3.tar.gz.bz2
+		rm clover.* ; tmp_linux-5.3.tar.gz.bz2; image.ppm
 	fi
 }
 

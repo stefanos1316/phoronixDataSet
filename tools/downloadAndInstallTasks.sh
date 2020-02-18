@@ -1081,3 +1081,29 @@ esac
 ./nexuiz-linux-glx.sh +exec effects-high.cfg -nohome -benchmark demos/demo2 +r_glsl 1 \$getConfigurations " > nexuiz
 chmod +x nexuiz
 cd ../
+
+echo "-------Downloading and installing warsow"
+mkdir warsow && cd warsow
+wget http://warsow.net/warsow-2.1.2.tar.gz
+tar -xzvf warsow-2.1.2.tar.gz && rm warsow-2.1.2.tar.gz
+mv warsow-2.1.2/* ./ && rm -rf warsow-2.1.2/
+wget http://www.phoronix-test-suite.com/benchmark-files/pts-warsow-15-1.zip
+unzip pts-warsow-15-1.zip && rm pts-warsow-15-1.zip
+chmod +x warsow.*
+mkdir -p basewsw/demos
+cp -f pts1.wdz20 basewsw/demos
+echo "#!/bin/sh
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+vid_customwidth 800 +vid_customheight 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+vid_customwidth 1024 +vid_customheight 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+vid_customwidth 1920 +vid_customheight 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+vid_customwidth 2560 +vid_customheight 1440\";;
+esac
+./warsow.x86_64 +logconsole pts-log +exec profiles/high+.cfg +timedemo 1 \
+ +cg_showFPS 1 +cl_maxfps 999 +cl_checkForUpdate 0 +demo pts1 +next \"quit\" +r_mode -1 \$getConfigurations " > warsow
+chmod +x warsow
+cd ../
