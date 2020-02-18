@@ -1155,14 +1155,45 @@ cd tasks_test
 # chmod +x tjbench
 # cd ../
 
-echo "-------Downloading and installing darktable"
-mkdir darktable && cd darktable
-wget http://www.phoronix-test-suite.com/benchmark-files/darktable-bench-assets-1.tar.bz2
-tar -xjvf darktable-bench-assets-1.tar.bz2 && rm darktable-bench-assets-1.tar.bz2
-wget http://www.phoronix-test-suite.com/benchmark-files/server-rack.tar.xz
-tar -xf server-rack.tar.xz && rm server-rack.tar.xz
+# echo "-------Downloading and installing darktable"
+# mkdir darktable && cd darktable
+# wget http://www.phoronix-test-suite.com/benchmark-files/darktable-bench-assets-1.tar.bz2
+# tar -xjvf darktable-bench-assets-1.tar.bz2 && rm darktable-bench-assets-1.tar.bz2
+# wget http://www.phoronix-test-suite.com/benchmark-files/server-rack.tar.xz
+# tar -xf server-rack.tar.xz && rm server-rack.tar.xz
+# echo "#!/bin/sh
+# rm -f output*.jpg
+# darktable-cli \$1 output.jpg --core -d perf --disable-opencl" > darktable
+# chmod +x darktable
+# cd ../
+
+# echo "-------Downloading and installing rsvg"
+# mkdir rsvg && cd rsvg
+# wget https://www.w3.org/Graphics/SVG/Test/20110816/archives/W3C_SVG_11_TestSuite.tar.gz
+# tar -xzvf W3C_SVG_11_TestSuite.tar.gz && rm W3C_SVG_11_TestSuite.tar.gz
+# wget http://phoronix-test-suite.com/benchmark-files/svg-test-files-1.zip
+# unzip svg-test-files-1.zip && rm svg-test-files-1.zip
+# cp svg/* ./ && rm -rf svg
+# echo "#!/bin/sh
+# for i in *.svg
+# do
+# 	rsvg-convert -f png -o output.png \$i
+# done" > rsvg
+# chmod +x rsvg
+# cd ../
+
+echo "-------Downloading and installing gegl"
+mkdir gegl && cd gegl
+wget http://phoronix-test-suite.com/benchmark-files/sample-photo-6000x4000-1.zip
+unzip sample-photo-6000x4000-1.zip && rm sample-photo-6000x4000-1.zip
+wget http://www.phoronix-test-suite.com/benchmark-files/stock-photos-jpeg-2018-1.tar.xz
+tar -xf stock-photos-jpeg-2018-1.tar.xz && rm stock-photos-jpeg-2018-1.tar.xz
+wget http://www.phoronix-test-suite.com/benchmark-files/pts-sample-photos-2.tar.bz2
+tar -xf pts-sample-photos-2.tar.bz2 && rm pts-sample-photos-2.tar.bz2
 echo "#!/bin/sh
-rm -f output*.jpg
-darktable-cli \$1 output.jpg --core -d perf --disable-opencl" > darktable
-chmod +x darktable
+for i in *.JPG
+do 
+    gegl -i \$i -o out.png -- \$@
+done" > gegl
+chmod +x gegl
 cd ../

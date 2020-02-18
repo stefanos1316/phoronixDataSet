@@ -143,3 +143,13 @@
       apt: 
         name: 'darktable'
         state: present
+
+    - name: Installing dependencies for rsvg
+      apt: 
+        name: 'librsvg2-bin'
+        state: present    
+      
+    - name: Installing dependencies for gegl
+      apt: 
+        name: 'gegl'
+        state: present    
