@@ -128,3 +128,8 @@
       apt: 
         name: 'ant'
         state: present
+
+    - name: Installing dependencies for build-php
+      apt: 
+        name: 'libxml2-dev'
+        state: present

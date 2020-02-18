@@ -1032,13 +1032,52 @@ cd tasks_test
 # chmod +x glmark2
 # cd ../
 
-echo "-------Downloading and installing compilebench"
-mkdir compilebench && cd compilebench
-wget http://www.phoronix-test-suite.com/benchmark-files/compilebench-0.6.tar.bz2
-tar -xjvf compilebench-0.6.tar.bz2 && rm compilebench-0.6.tar.bz2
-mv compilebench-0.6/* ./ && rm -rf compilebench-0.6
-mv compilebench compile-bench
+# echo "-------Downloading and installing compilebench"
+# mkdir compilebench && cd compilebench
+# wget http://www.phoronix-test-suite.com/benchmark-files/compilebench-0.6.tar.bz2
+# tar -xjvf compilebench-0.6.tar.bz2 && rm compilebench-0.6.tar.bz2
+# mv compilebench-0.6/* ./ && rm -rf compilebench-0.6
+# mv compilebench compile-bench
+# echo "#!/bin/sh
+# python2 compile-bench -D t -i 10 --makej \$1" > compilebench
+# chmod +x compilebench
+# cd ../
+
+# echo "-------Downloading and installing smallpt"
+# mkdir smallpt && cd smallpt
+# wget http://www.phoronix-test-suite.com/benchmark-files/smallpt-1.tar.gz
+# tar -xzvf smallpt-1.tar.gz && rm smallpt-1.tar.gz
+# c++ -fopenmp -O3 smallpt.cpp -o smallpt
+# cd ../
+
+# echo "-------Downloading and installing build-php"
+# mkdir build-php && cd build-php
+# wget http://mirror.cogentco.com/pub/php/php-7.4.2.tar.bz2
+# tar -xjvf php-7.4.2.tar.bz2 && rm php-7.4.2.tar.bz2
+# mv php-7.4.2/* ./ && rm -rf php-7.4.2/
+# echo "#!/bin/bash
+# make clean
+# ./configure --without-sqlite3 --without-pdo-sqlite
+# make -s -j $(nproc --all)" > build-php
+# chmod +x build-php
+# cd ../
+
+echo "-------Downloading and installing nexuiz"
+mkdir nexuiz && cd nexuiz
+wget http://ftp.vim.org/pub/pub/os/Linux/distr/vectorlinux/veclinux-7.0/source/abs/games/nexuiz/nexuiz-252.zip
+unzip nexuiz-252.zip && rm nexuiz-252.zip
+mv Nexuiz/* ./ && rm -rf Nexuiz/
 echo "#!/bin/sh
-python2 compile-bench -D t -i 10 --makej \$1" > compilebench
-chmod +x compilebench
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+vid_width 800 +vid_height 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+vid_width 1024 +vid_height 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+vid_width 1920 +vid_height 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+vid_width 2560 +vid_height 1440\";;
+esac
+./nexuiz-linux-glx.sh +exec effects-high.cfg -nohome -benchmark demos/demo2 +r_glsl 1 \$getConfigurations " > nexuiz
+chmod +x nexuiz
 cd ../

@@ -55,9 +55,10 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"rocksdb fillseq" "rocksdb fillrandom" "rocksdb fillsync" "rocksdb readrandom" \
 		"cassandra write" "cassandra read" "cassandra mixed_1_1" "cassandra mixed_1_3" \
 		"xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" "paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
-		"glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440")
+		"glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440"  "compilebench initial_create" "compilebench compile" \
+		"compilebench read_compile_tree" "smallpt 128" "build-php")
 # timeConsumingTaks=( )
-tasks=( "compilebench initial_create" "compilebench compile" "compilebench read_compile_tree")
+tasks=( "nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440")
 function startServers {
 	case $1 in
 		("apache")
@@ -176,7 +177,7 @@ for task in "${tasks[@]}"; do
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
 		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 | sunflow | \
 		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassandra* | \
-		paraview* | xonotic* | compilebench* )
+		paraview* | xonotic* | compilebench* | build-php | nexuiz*)
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
