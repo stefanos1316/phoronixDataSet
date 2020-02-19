@@ -65,10 +65,9 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
 		"tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "pybench" "network-loopback" \
 		"svt-vp9 tune_0" "svt-vp9 tune_1" "svt-vp9 tune_2" "svt-hevc" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" \
-		"tungsten volumetric-caustic")
+		"tungsten volumetric-caustic" "ospray san_miguel" "ospray nasa_streamlines" "ospray xfrog_forest" "ospray magnetic_reconnection")
 # timeConsumingTaks=( )
-tasks=( "ospray san_miguel" "ospray nasa_streamlines" "ospray xfrog_forest" "ospray magnetic_reconnection"
-		"embree asian_dragon" "embree asian_dragon_obj" "embree crown") 
+tasks=( "embree asian_dragon" "embree asian_dragon_obj" "embree crown") 
 
 function startServers {
 	case $1 in

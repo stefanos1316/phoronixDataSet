@@ -1400,6 +1400,6 @@ case \$1 in
     (\"crown\")
         testCase=\"crown/crown.ecs\";;
 esac
-./bin/pathtracer --threads \$(nproc --all) -benchmark 0 600 -c \$testCase" > ospray
-chmod +x ospray
+./bin/pathtracer --threads \$(nproc --all) -benchmark 0 600 -c \$testCase" > embree
+chmod +x embree
 cd ../
