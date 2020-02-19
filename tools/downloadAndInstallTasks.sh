@@ -1236,50 +1236,69 @@ cd tasks_test
 # chmod +x schbench
 # cd ../
 
-echo "-------Downloading and installing osbench"
-git clone https://github.com/mbitsnbites/osbench.git
-cd osbench
-cp ../../$taskScripts/osbench_create_files.c src/create_files.c
-cp ../../$taskScripts/osbench_create_processes.c src/create_processes.c
-cp ../../$taskScripts/osbench_create_threads.c src/create_threads.c
-cp ../../$taskScripts/osbench_launch_programs.c src/launch_programs.c
-cp ../../$taskScripts/osbench_mem_alloc.c src/mem_alloc.c
-mkdir out
-cd out
-meson --buildtype=release ../src
-ninja
-mkdir target
-cd ../
+# echo "-------Downloading and installing osbench"
+# git clone https://github.com/mbitsnbites/osbench.git
+# cd osbench
+# cp ../../$taskScripts/osbench_create_files.c src/create_files.c
+# cp ../../$taskScripts/osbench_create_processes.c src/create_processes.c
+# cp ../../$taskScripts/osbench_create_threads.c src/create_threads.c
+# cp ../../$taskScripts/osbench_launch_programs.c src/launch_programs.c
+# cp ../../$taskScripts/osbench_mem_alloc.c src/mem_alloc.c
+# mkdir out
+# cd out
+# meson --buildtype=release ../src
+# ninja
+# mkdir target
+# cd ../
+# echo "#!/bin/bash
+# cd out/
+# if [ \"\$1\" == \"create_files\" ]; then
+#     ./\$1 \`pwd\`
+# else
+#     ./\$1
+# fi" > osbench
+# chmod +x osbench
+# cd ../
+
+# echo "-------Downloading and installing tiobench"
+# mkdir tiobench && cd tiobench
+# wget http://phoronix-test-suite.com/benchmark-files/tiobench-20170504.tar.bz2
+# tar -xjvf tiobench-20170504.tar.bz2 && rm tiobench-20170504.tar.bz2
+# mv tiobench-20170504/* ./ && rm -rf tiobench-20170504
+# make -j $(nproc --all)
+# echo "#!/bin/bash
+# case \$1 in
+#     (\"write\")
+#         configurations=\"-k3 -k2 -k1\" ;;
+#     (\"read\")
+#         configurations=\"-k3 -k1\" ;;
+#     (\"random_write\")
+#         configurations=\"-k3 -k2\" ;;
+#     (\"random_read\")
+#         configurations=\"-k2 -k1\" ;;
+# esac
+
+# for i in {1..10}; do
+#     ./tiotest \$configurations -f 256 -t \$(nproc --all)
+# done"  > tiobench
+# chmod +x tiobench
+# cd ../
+
+echo "-------Downloading and installing pybench"
+mkdir pybench && cd pybench
+wget http://www.phoronix-test-suite.com/benchmark-files/pybench-2018-02-16.tar.gz
+tar -xzvf pybench-2018-02-16.tar.gz && rm pybench-2018-02-16.tar.gz
+mv pybench-2018-02-16/* ./ && rm -rf pybench-2018-02-16
 echo "#!/bin/bash
-cd out/
-if [ \"\$1\" == \"create_files\" ]; then
-    ./\$1 \`pwd\`
-else
-    ./\$1
-fi" > osbench
-chmod +x osbench
+python3 pybench.py -n 20\$@" > pybench
+chmod +x pybench
 cd ../
 
-echo "-------Downloading and installing tiobench"
-mkdir tiobench && cd tiobench
-wget http://phoronix-test-suite.com/benchmark-files/tiobench-20170504.tar.bz2
-tar -xjvf tiobench-20170504.tar.bz2 && rm tiobench-20170504.tar.bz2
-mv tiobench-20170504/* ./ && rm -rf tiobench-20170504
-make -j $(nproc --all)
+echo "-------Downloading and installing network-loopback"
+mkdir network-loopback && cd network-loopback
 echo "#!/bin/bash
-case \$1 in
-    (\"write\")
-        configurations=\"-k3 -k2 -k1\" ;;
-    (\"read\")
-        configurations=\"-k3 -k1\" ;;
-    (\"random_write\")
-        configurations=\"-k3 -k2\" ;;
-    (\"random_read\")
-        configurations=\"-k2 -k1\" ;;
-esac
-
-for i in {1..10}; do
-    ./tiotest \$configurations -f 256 -t \$(nproc --all)
-done"  > tiobench
-chmod +x tiobench
+nc -d -l 9999 > /dev/null &
+sleep 3
+dd if=/dev/zero bs=1M count=100000 | nc -w 3 localhost 9999" > network-loopback
+chmod +x network-loopback
 cd ../

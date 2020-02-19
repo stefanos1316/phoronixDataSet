@@ -61,10 +61,11 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"darktable masskrug.NEF" "darktable bench.SRW" "darktable server_room.NEF" "rsvg" "gegl rotate-on-center degrees=90" "gegl scale-size x=400 y=400" \
 		"gegl antialias" "gegl cartoon" "gegl color-enhance" "gegl crop x=100 y=100 width=1920 height=1080" "gegl wavelet-blur" "gegl reflect" \
 		"gegl tile-glass tile-width=20 tile-height=20" "renaissance akka-uct" "renaissance reactors" "renaissance als" "renaissance naive-bayes" \
-		"renaissance page-rank" "renaissance db-shootout" "renaissance dotty" "renaissance finagle-chirper" "java-jmh" "schbench 2" "schbench 4" "schbench 8" )
+		"renaissance page-rank" "renaissance db-shootout" "renaissance dotty" "renaissance finagle-chirper" "java-jmh" "schbench 2" "schbench 4" "schbench 8" \
+		"osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
+		"tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read")
 # timeConsumingTaks=( )
-tasks=( "osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
-		"tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read") 
+tasks=( "pybench" "network-loopback") 
 
 function startServers {
 	case $1 in
@@ -185,7 +186,7 @@ for task in "${tasks[@]}"; do
 		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 | sunflow | \
 		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassandra* | \
 		paraview* | xonotic* | compilebench* | build-php | nexuiz* | warsow* | inkscape | rawtherapee | tjbench | darktable* | \
-		rsvg | gegl* | renaissance* | java-jmh | schbench* | osbench* )
+		rsvg | gegl* | renaissance* | java-jmh | schbench* | osbench* | tiobench* | pybench | network-loopback)
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
