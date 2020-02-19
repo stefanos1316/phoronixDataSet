@@ -1198,28 +1198,88 @@ cd tasks_test
 # chmod +x gegl
 # cd ../
 
-echo "-------Downloading and installing renaissance"
-mkdir renaissance && cd renaissance
-wget https://github.com/renaissance-benchmarks/renaissance/releases/download/v0.9.0/renaissance-mit-0.9.0.jar
-echo "#!/bin/sh
-java -jar renaissance-mit-0.9.0.jar -r 1 \$1" > renaissance
-chmod +x renaissance
+# echo "-------Downloading and installing renaissance"
+# mkdir renaissance && cd renaissance
+# wget https://github.com/renaissance-benchmarks/renaissance/releases/download/v0.9.0/renaissance-mit-0.9.0.jar
+# echo "#!/bin/sh
+# java -jar renaissance-mit-0.9.0.jar -r 1 \$1" > renaissance
+# chmod +x renaissance
+# cd ../
+
+# echo "-------Downloading and installing java-jmh"
+# mkdir java-jmh && cd java-jmh
+# mvn archetype:generate \
+#           -DinteractiveMode=false \
+#           -DarchetypeGroupId=org.openjdk.jmh \
+#           -DarchetypeArtifactId=jmh-java-benchmark-archetype \
+#           -DgroupId=org.sample \
+#           -DartifactId=test \
+#           -Dversion=1.0
+# cd test
+# mvn clean install
+# cd ../
+# echo "#!/bin/sh
+# cd test
+# java -jar target/benchmarks.jar -t max" > java-jmh
+# chmod +x java-jmh
+# cd ../
+
+# echo "-------Downloading and installing schbench"
+# mkdir schbench && cd schbench
+# wget http://phoronix-test-suite.com/benchmark-files/schbench-20180206.zip
+# unzip schbench-20180206.zip && rm schbench-20180206.zip
+# mv schbench/* ./ && rm -rf schbench/ 
+# make
+# mv schbench schbench-bin
+# echo "#!/bin/sh
+# ./schbench-bin -m \$1 -t \$(nproc --all) " > schbench
+# chmod +x schbench
+# cd ../
+
+echo "-------Downloading and installing osbench"
+git clone https://github.com/mbitsnbites/osbench.git
+cd osbench
+cp ../../$taskScripts/osbench_create_files.c src/create_files.c
+cp ../../$taskScripts/osbench_create_processes.c src/create_processes.c
+cp ../../$taskScripts/osbench_create_threads.c src/create_threads.c
+cp ../../$taskScripts/osbench_launch_programs.c src/launch_programs.c
+cp ../../$taskScripts/osbench_mem_alloc.c src/mem_alloc.c
+mkdir out
+cd out
+meson --buildtype=release ../src
+ninja
+mkdir target
+cd ../
+echo "#!/bin/bash
+cd out/
+if [ \"\$1\" == \"create_files\" ]; then
+    ./\$1 \`pwd\`
+else
+    ./\$1
+fi" > osbench
+chmod +x osbench
 cd ../
 
-echo "-------Downloading and installing java-jmh"
-mkdir java-jmh && cd java-jmh
-mvn archetype:generate \
-          -DinteractiveMode=false \
-          -DarchetypeGroupId=org.openjdk.jmh \
-          -DarchetypeArtifactId=jmh-java-benchmark-archetype \
-          -DgroupId=org.sample \
-          -DartifactId=test \
-          -Dversion=1.0
-cd test
-mvn clean install
-cd ../
-echo "#!/bin/sh
-cd test
-java -jar target/benchmarks.jar -t max" > java-jmh
-chmod +x java-jmh
+echo "-------Downloading and installing tiobench"
+mkdir tiobench && cd tiobench
+wget http://phoronix-test-suite.com/benchmark-files/tiobench-20170504.tar.bz2
+tar -xjvf tiobench-20170504.tar.bz2 && rm tiobench-20170504.tar.bz2
+mv tiobench-20170504/* ./ && rm -rf tiobench-20170504
+make -j $(nproc --all)
+echo "#!/bin/bash
+case \$1 in
+    (\"write\")
+        configurations=\"-k3 -k2 -k1\" ;;
+    (\"read\")
+        configurations=\"-k3 -k1\" ;;
+    (\"random_write\")
+        configurations=\"-k3 -k2\" ;;
+    (\"random_read\")
+        configurations=\"-k2 -k1\" ;;
+esac
+
+for i in {1..10}; do
+    ./tiotest \$configurations -f 256 -t \$(nproc --all)
+done"  > tiobench
+chmod +x tiobench
 cd ../

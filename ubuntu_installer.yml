@@ -157,4 +157,9 @@
     - name: Installing dependencies for java-jhm
       apt: 
         name: 'maven'
+        state: present 
+
+    - name: Installing dependencies for osbench
+      apt: 
+        name: ['meson', 'ninja-build']
         state: present  
