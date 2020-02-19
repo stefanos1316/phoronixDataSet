@@ -1324,16 +1324,82 @@ cd tasks_test
 # chmod +x svt-vp9
 # cd ../
 
-echo "-------Downloading and installing svt-hevc"
-git clone https://github.com/OpenVisualCloud/SVT-HEVC.git
-mv SVT-HEVC svt-hevc && cd svt-hevc
-mkdir build
-cd build
-cmake ..
-make -j $(nproc --all)
-cd ../
-echo "#!/bin/sh
-./Bin/Release/SvtHevcEncApp -encMode 5 -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m -w 1920 -h 1080" > svt-hevc
-chmod +x svt-hevc
-cd ../
+# echo "-------Downloading and installing svt-hevc"
+# git clone https://github.com/OpenVisualCloud/SVT-HEVC.git
+# mv SVT-HEVC svt-hevc && cd svt-hevc
+# mkdir build
+# cd build
+# cmake ..
+# make -j $(nproc --all)
+# cd ../
+# echo "#!/bin/bash
+# ./Bin/Release/SvtHevcEncApp -encMode 5 -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m -w 1920 -h 1080" > svt-hevc
+# chmod +x svt-hevc
+# cd ../
 
+# echo "-------Downloading and installing tungsten"
+# mkdir tungsten && cd tungsten
+# wget http://phoronix-test-suite.com/benchmark-files/tungsten-20190812.zip
+# unzip tungsten-20190812.zip && rm tungsten-20190812.zip
+# mv tungsten-master/* ./ && rm -rf tungsten-master
+# ./setup_builds.sh
+# cd build/release
+# make -j $(nproc --all)
+# cd ../../
+# echo "#!/bin/bash
+# cd build/release
+# ./tungsten -t \$(nproc --all) ../../data/example-scenes/\$1/scene.json" > tungsten
+# chmod +x tungsten
+# cd ../
+
+# echo "-------Downloading and installing ospray"
+# mkdir ospray && cd ospray
+# wget http://github.com/ospray/ospray/releases/download/v1.8.5/ospray-1.8.5.x86_64.linux.tar.gz
+# tar -xzvf ospray-1.8.5.x86_64.linux.tar.gz && rm ospray-1.8.5.x86_64.linux.tar.gz
+# wget http://www.sdvis.org/ospray/download/demos/sanm.zip
+# unzip sanm.zip && rm sanm.zip
+# wget http://www.pauldebevec.com/Probes/rnl_probe.pfm
+# wget http://www.sdvis.org/ospray/download/demos/MagneticReconnection/magnetic-512-volume.tar.bz2
+# tar -xjvf magnetic-512-volume.tar.bz2 && rf magnetic-512-volume.tar.bz2
+# wget http://www.sdvis.org/ospray/download/demos/XFrogForest/xfrog-forest.tar.bz2
+# tar -xjvf xfrog-forest.tar.bz2 && rm xfrog-forest.tar.bz2
+# mv ospray-1.8.5.x86_64.linux/* ./ && rm -rf ospray-1.8.5.x86_64.linux
+# echo "#!/bin/bash
+# case \$1 in
+#     (\"magnetic_reconnection\")
+#         testCase=\"magnetic-512-volume/magnetic-512-volume.osp\";;
+#     (\"xfrog_forest\")
+#         testCase=\"xfrog-forest.xml\";;
+#     (\"san_miguel\")
+#         testCase=\"sanm/sanm.obj -vp 22.958788 3.204613 2.712676 \
+#         -vu 0.000000 1.000000 0.000000 -vi 12.364944 0.176316 4.009342 \
+#         -sg:sun:intensity=4.0 -sg:sun:direction=0,-1,0 -sg:bounce:intensity=0.0 \
+#         --hdri-light rnl_probe.pfm -sg:hdri:intensity=1.25\";;
+# esac
+# ./bin/ospBenchmark --warmup 10 --bench 200 --osp:numthreads \$(nproc --all) --renderer scivis \$testCase" > ospray
+# chmod +x ospray
+# cd ../
+
+echo "-------Downloading and installing embree"
+mkdir embree && cd embree
+wget https://github.com/embree/models/releases/download/release/asian_dragon.zip
+unzip asian_dragon.zip && rm asian_dragon.zip
+wget https://github.com/embree/models/releases/download/release/asian_dragon_obj.zip
+unizp asian_dragon_obj.zip && rf asian_dragon_obj.zip
+wget https://github.com/embree/models/releases/download/release/crown.zip
+unzip crown.zip && rm crown.zip
+wget https://github.com/embree/embree/releases/download/v3.6.1/embree-3.6.1.x86_64.linux.tar.gz
+tar -xzvf embree-3.6.1.x86_64.linux.tar.gz && rm -rf embree-3.6.1.x86_64.linux.tar.gz
+mv embree-3.6.1.x86_64.linux/* ./ && rm -rf embree-3.6.1.x86_64.linux
+echo "#!/bin/bash
+case \$1 in
+    (\"asian_dragon\")
+        testCase=\"asian_dragon/asian_dragon.ecs\";;
+    (\"asian_dragon_obj\")
+        testCase=\"asian_dragon_obj/asian_dragon.ecs\";;
+    (\"crown\")
+        testCase=\"crown/crown.ecs\";;
+esac
+./bin/pathtracer --threads \$(nproc --all) -benchmark 0 600 -c \$testCase" > ospray
+chmod +x ospray
+cd ../
