@@ -63,9 +63,10 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"gegl tile-glass tile-width=20 tile-height=20" "renaissance akka-uct" "renaissance reactors" "renaissance als" "renaissance naive-bayes" \
 		"renaissance page-rank" "renaissance db-shootout" "renaissance dotty" "renaissance finagle-chirper" "java-jmh" "schbench 2" "schbench 4" "schbench 8" \
 		"osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
-		"tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "pybench" "network-loopback"																																															)
+		"tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "pybench" "network-loopback" \
+		"svt-vp9 tune_0" "svt-vp9 tune_1" "svt-vp9 tune_2")
 # timeConsumingTaks=( )
-tasks=(  "svt-vp9 tune_0" "svt-vp9 tune_1" "svt-vp9 tune_2") 
+tasks=(   "svt-hevc") 
 
 function startServers {
 	case $1 in
@@ -186,7 +187,8 @@ for task in "${tasks[@]}"; do
 		build-linux-kernel | build-gcc | build-llvm | openarena* | urbanterrorG* | j2dbench* | javascimark2 | sunflow | \
 		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassandra* | \
 		paraview* | xonotic* | compilebench* | build-php | nexuiz* | warsow* | inkscape | rawtherapee | tjbench | darktable* | \
-		rsvg | gegl* | renaissance* | java-jmh | schbench* | osbench* | tiobench* | pybench | network-loopback | svt-vp9*)
+		rsvg | gegl* | renaissance* | java-jmh | schbench* | osbench* | tiobench* | pybench | network-loopback | svt-vp9* | \
+		svt-hevc )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark

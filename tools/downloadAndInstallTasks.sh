@@ -1303,23 +1303,37 @@ cd tasks_test
 # chmod +x network-loopback
 # cd ../
 
-echo "-------Downloading and installing svt-vp9"
-git clone https://github.com/OpenVisualCloud/SVT-VP9.git
-mv SVT-VP9 svt-vp9 && cd svt-vp9
-cd Build/linux/
-./build.sh release
-cd ../../
-echo "#!/bin/bash
-case \$1 in 
-    (\"tune_0\")
-        tuning=\"tune 0\";;
-    (\"tune_1\")
-        tuning=\"tune 1\";;
-    (\"tune_2\")
-        tuning=\"tune 1\";;
-esac
-for i in {1..10}; do
-    ./Bin/Release/SvtVp9EncApp -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -w 1920 -h 1080 \$tuning
-done" > svt-vp9
-chmod +x svt-vp9
+# echo "-------Downloading and installing svt-vp9"
+# git clone https://github.com/OpenVisualCloud/SVT-VP9.git
+# mv SVT-VP9 svt-vp9 && cd svt-vp9
+# cd Build/linux/
+# ./build.sh release
+# cd ../../
+# echo "#!/bin/bash
+# case \$1 in 
+#     (\"tune_0\")
+#         tuning=\"tune 0\";;
+#     (\"tune_1\")
+#         tuning=\"tune 1\";;
+#     (\"tune_2\")
+#         tuning=\"tune 1\";;
+# esac
+# for i in {1..10}; do
+#     ./Bin/Release/SvtVp9EncApp -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -w 1920 -h 1080 \$tuning
+# done" > svt-vp9
+# chmod +x svt-vp9
+# cd ../
+
+echo "-------Downloading and installing svt-hevc"
+git clone https://github.com/OpenVisualCloud/SVT-HEVC.git
+mv SVT-HEVC svt-hevc && cd svt-hevc
+mkdir build
+cd build
+cmake ..
+make -j $(nproc --all)
 cd ../
+echo "#!/bin/sh
+./Bin/Release/SvtHevcEncApp -encMode 5 -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m -w 1920 -h 1080" > svt-hevc
+chmod +x svt-hevc
+cd ../
+
