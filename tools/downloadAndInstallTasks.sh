@@ -1284,21 +1284,42 @@ cd tasks_test
 # chmod +x tiobench
 # cd ../
 
-echo "-------Downloading and installing pybench"
-mkdir pybench && cd pybench
-wget http://www.phoronix-test-suite.com/benchmark-files/pybench-2018-02-16.tar.gz
-tar -xzvf pybench-2018-02-16.tar.gz && rm pybench-2018-02-16.tar.gz
-mv pybench-2018-02-16/* ./ && rm -rf pybench-2018-02-16
-echo "#!/bin/bash
-python3 pybench.py -n 20\$@" > pybench
-chmod +x pybench
-cd ../
+# echo "-------Downloading and installing pybench"
+# mkdir pybench && cd pybench
+# wget http://www.phoronix-test-suite.com/benchmark-files/pybench-2018-02-16.tar.gz
+# tar -xzvf pybench-2018-02-16.tar.gz && rm pybench-2018-02-16.tar.gz
+# mv pybench-2018-02-16/* ./ && rm -rf pybench-2018-02-16
+# echo "#!/bin/bash
+# python3 pybench.py -n 20\$@" > pybench
+# chmod +x pybench
+# cd ../
 
-echo "-------Downloading and installing network-loopback"
-mkdir network-loopback && cd network-loopback
+# echo "-------Downloading and installing network-loopback"
+# mkdir network-loopback && cd network-loopback
+# echo "#!/bin/bash
+# nc -d -l 9999 > /dev/null &
+# sleep 3
+# dd if=/dev/zero bs=1M count=100000 | nc -w 3 localhost 9999" > network-loopback
+# chmod +x network-loopback
+# cd ../
+
+echo "-------Downloading and installing svt-vp9"
+git clone https://github.com/OpenVisualCloud/SVT-VP9.git
+mv SVT-VP9 svt-vp9 && cd svt-vp9
+cd Build/linux/
+./build.sh release
+cd ../../
 echo "#!/bin/bash
-nc -d -l 9999 > /dev/null &
-sleep 3
-dd if=/dev/zero bs=1M count=100000 | nc -w 3 localhost 9999" > network-loopback
-chmod +x network-loopback
+case \$1 in 
+    (\"tune_0\")
+        tuning=\"tune 0\";;
+    (\"tune_1\")
+        tuning=\"tune 1\";;
+    (\"tune_2\")
+        tuning=\"tune 1\";;
+esac
+for i in {1..10}; do
+    ./Bin/Release/SvtVp9EncApp -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -w 1920 -h 1080 \$tuning
+done" > svt-vp9
+chmod +x svt-vp9
 cd ../
