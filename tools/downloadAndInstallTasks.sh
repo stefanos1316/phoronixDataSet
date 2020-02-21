@@ -1404,27 +1404,70 @@ cd tasks_test
 # chmod +x embree
 # cd ../
 
-echo "-------Downloading and installing iperf"
-mkdir iperf && cd iperf
-wget https://downloads.es.net/pub/iperf/iperf-3.7.tar.gz
-tar -xzvf iperf-3.7.tar.gz && rm iperf-3.7.tar.gz
-mv iperf-3.7/* ./ && rm -rf iperf-3.7
-./configure --prefix=`pwd` CFLAGS="-O3 -march=native"
+# echo "-------Downloading and installing iperf"
+# mkdir iperf && cd iperf
+# wget https://downloads.es.net/pub/iperf/iperf-3.7.tar.gz
+# tar -xzvf iperf-3.7.tar.gz && rm iperf-3.7.tar.gz
+# mv iperf-3.7/* ./ && rm -rf iperf-3.7
+# ./configure --prefix=`pwd` CFLAGS="-O3 -march=native"
+# make -j $(nproc --all)
+# make install
+# echo "#!/bin/sh
+# cd bin
+# # start server if doing localhost testing
+# ./iperf3 -s &
+# IPERF_SERVER_PID=\$!
+# sleep 3
+# case \$1 in
+#     (\"tcp\")
+#         protocol=\"\" ;;
+#     (\"udp\")
+#         protocol=\"--udp\" ;;
+# esac
+# ./iperf3 \$protocol -b 1000m  -t 30 -c 127.0.0.1 
+# kill \$IPERF_SERVER_PID" > iperf
+# chmod +x iperf
+# cd ../
+
+# echo "-------Downloading and installing oidn"
+# mkdir oidn && cd oidn
+# wget https://github.com/OpenImageDenoise/oidn/releases/download/v1.0.0/oidn-1.0.0.x86_64.linux.tar.gz
+# tar -xzvf oidn-1.0.0.x86_64.linux.tar.gz && rm oidn-1.0.0.x86_64.linux.tar.gz
+# mv oidn-1.0.0.x86_64.linux/* ./ && rm -rf oidn-1.0.0.x86_64.linux
+# wget http://www.pauldebevec.com/Research/HDR/memorial.pfm
+# mv memorial.pfm bin/
+# echo "#!/bin/sh
+# cd bin/
+# ./denoise -out out.pfm -bench 100 -threads \$(nproc --all) -hdr memorial.pfm" > oidn
+# chmod +x oidn
+# cd ../
+
+# echo "-------Downloading and installing pyperformance"
+# mkdir pyperformance-run && cd pyperformance-run
+# wget https://github.com/python/pyperformance/archive/1.0.0.zip
+# unzip 1.0.0.zip && rm 1.0.0.zip
+# mv pyperformance-1.0.0/* ./ && rm -rf pyperformance-1.0.0
+# python3 setup.py build
+# python3 setup.py install --user
+# echo "#!/bin/bash
+# ~/.local/bin/pyperformance run -r -b \$1" > pyperformance-run
+# chmod +x pyperformance-run
+# cd ../
+
+echo "-------Downloading and installing indigobench"
+mkdir indigobench && cd indigobench
+wget ftp://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.59.tar.gz
+tar -xf libpng-1.2.59.tar.gz && rm libpng-1.2.59.tar.gz 
+mkdir libpng
+cd libpng-1.2.59
+./configure --prefix=`pwd/../libpng`
 make -j $(nproc --all)
 make install
-echo "#!/bin/sh
-cd bin
-# start server if doing localhost testing
-./iperf3 -s &
-IPERF_SERVER_PID=\$!
-sleep 3
-case \$1 in
-    (\"tcp\")
-        protocol=\"\" ;;
-    (\"udp\")
-        protocol=\"--udp\" ;;
-esac
-./iperf3 \$protocol -b 1000m  -t 30 -c 127.0.0.1 
-kill \$IPERF_SERVER_PID" > iperf
-chmod +x iperf
+cd ../
+wget http://downloads.indigorenderer.com/dist/beta/IndigoBenchmark_x64_v4.0.64.tar.gz
+tar -xf IndigoBenchmark_x64_v4.0.64.tar.gz && rm IndigoBenchmark_x64_v4.0.64.tar.gz
+mv IndigoBenchmark_x64_v4.0.64/* ./ && rm -rf IndigoBenchmark_x64_v4.0.64
+echo "#!/bin/bash
+./indigo_benchmark --silent --scenes \$1" > indigobench
+chmod +x indigobench
 cd ../
