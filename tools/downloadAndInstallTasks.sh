@@ -1454,20 +1454,43 @@ cd tasks_test
 # chmod +x pyperformance-run
 # cd ../
 
-echo "-------Downloading and installing indigobench"
-mkdir indigobench && cd indigobench
-wget ftp://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.59.tar.gz
-tar -xf libpng-1.2.59.tar.gz && rm libpng-1.2.59.tar.gz 
-mkdir libpng
-cd libpng-1.2.59
-./configure --prefix=`pwd/../libpng`
-make -j $(nproc --all)
-make install
-cd ../
-wget http://downloads.indigorenderer.com/dist/beta/IndigoBenchmark_x64_v4.0.64.tar.gz
-tar -xf IndigoBenchmark_x64_v4.0.64.tar.gz && rm IndigoBenchmark_x64_v4.0.64.tar.gz
-mv IndigoBenchmark_x64_v4.0.64/* ./ && rm -rf IndigoBenchmark_x64_v4.0.64
+# echo "-------Downloading and installing indigobench"
+# mkdir indigobench && cd indigobench
+# wget ftp://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.59.tar.gz
+# tar -xf libpng-1.2.59.tar.gz && rm libpng-1.2.59.tar.gz 
+# mkdir libpng
+# cd libpng-1.2.59
+# ./configure --prefix=`pwd/../libpng`
+# make -j $(nproc --all)
+# make install
+# cd ../
+# wget http://downloads.indigorenderer.com/dist/beta/IndigoBenchmark_x64_v4.0.64.tar.gz
+# tar -xf IndigoBenchmark_x64_v4.0.64.tar.gz && rm IndigoBenchmark_x64_v4.0.64.tar.gz
+# mv IndigoBenchmark_x64_v4.0.64/* ./ && rm -rf IndigoBenchmark_x64_v4.0.64
+# echo "#!/bin/bash
+# ./indigo_benchmark --silent --scenes \$1" > indigobench
+# chmod +x indigobench
+# cd ../
+
+# echo "-------Downloading and installing rays1bench"
+# mkdir rays1bench && cd rays1bench
+# wget http://phoronix-test-suite.com/benchmark-files/rays1bench-20200109.zip
+# unzip rays1bench-20200109.zip && rm rays1bench-20200109.zip
+# mv rays1bench-master/* ./ && rm -rf rays1bench-master
+# python3 bench.py --latest --compile-only
+# echo "#!/bin/bash
+# python3 bench.py  --latest" > rays1bench
+# chmod +x rays1bench
+# cd ../
+
+echo "-------Downloading and installing cp2k"
+mkdir cp2k && cd cp2k
+wget https://github.com/cp2k/cp2k/releases/download/v6.1.0/cp2k-6.1.tar.bz2
+tar -xjvf cp2k-6.1.tar.bz2 && rm cp2k-6.1.tar.bz2
+wget https://github.com/cp2k/cp2k/releases/download/v6.1.0/cp2k-6.1-Linux-x86_64.ssmp
+chmod +x cp2k-6.1-Linux-x86_64.ssmp
+mv cp2k-6.1/* ./ && rm -rf cp2k-6.1
 echo "#!/bin/bash
-./indigo_benchmark --silent --scenes \$1" > indigobench
-chmod +x indigobench
+./cp2k-6.1-Linux-x86_64.ssmp -i tests/Fist/benchmark/fayalite.inp" > cp2k
+chmod +x cp2k
 cd ../

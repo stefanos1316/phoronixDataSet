@@ -69,9 +69,10 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"embree crown" "embree asian_dragon" "embree asian_dragon_obj" "iperf tcp" "iperf udp" "oidn" \
 		"pyperformance-run 2to3" "pyperformance-run chaos" "pyperformance-run crypto_pyaes" "pyperformance-run django_template" \
 		"pyperformance-run float" "pyperformance-run go" "pyperformance-run json_loads" "pyperformance-run nbody" "pyperformance-run pathlib" \
-		"pyperformance-run pickle_pure_python" "pyperformance-run python_startup" "pyperformance-run raytrace" "pyperformance-run regex_compile")
+		"pyperformance-run pickle_pure_python" "pyperformance-run python_startup" "pyperformance-run raytrace" "pyperformance-run regex_compile" \
+		"indigobench supercar" "indigobench bedroom")
 # timeConsumingTaks=( )
-tasks=("indigobench supercar" "indigobench bedroom") 
+tasks=("rays1bench" "cp2k") 
 
 function startServers {
 	case $1 in
@@ -193,7 +194,8 @@ for task in "${tasks[@]}"; do
 		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassandra* | \
 		paraview* | xonotic* | compilebench* | build-php | nexuiz* | warsow* | inkscape | rawtherapee | tjbench | darktable* | \
 		rsvg | gegl* | renaissance* | java-jmh | schbench* | osbench* | tiobench* | pybench | network-loopback | svt-vp9* | \
-		svt-hevc | tungsten* | ospray* | embree* | iperf* | oidn | pyperformance-run* | indigobench* )
+		svt-hevc | tungsten* | ospray* | embree* | iperf* | oidn | pyperformance-run* | indigobench* | rays1bench | \
+		cp2k )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
