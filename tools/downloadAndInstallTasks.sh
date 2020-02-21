@@ -1380,26 +1380,51 @@ cd tasks_test
 # chmod +x ospray
 # cd ../
 
-echo "-------Downloading and installing embree"
-mkdir embree && cd embree
-wget https://github.com/embree/models/releases/download/release/asian_dragon.zip
-unzip asian_dragon.zip && rm asian_dragon.zip
-wget https://github.com/embree/models/releases/download/release/asian_dragon_obj.zip
-unizp asian_dragon_obj.zip && rf asian_dragon_obj.zip
-wget https://github.com/embree/models/releases/download/release/crown.zip
-unzip crown.zip && rm crown.zip
-wget https://github.com/embree/embree/releases/download/v3.6.1/embree-3.6.1.x86_64.linux.tar.gz
-tar -xzvf embree-3.6.1.x86_64.linux.tar.gz && rm -rf embree-3.6.1.x86_64.linux.tar.gz
-mv embree-3.6.1.x86_64.linux/* ./ && rm -rf embree-3.6.1.x86_64.linux
-echo "#!/bin/bash
+# echo "-------Downloading and installing embree"
+# mkdir embree && cd embree
+# wget https://github.com/embree/models/releases/download/release/asian_dragon.zip
+# unzip asian_dragon.zip && rm asian_dragon.zip
+# wget https://github.com/embree/models/releases/download/release/asian_dragon_obj.zip
+# unzip asian_dragon_obj.zip && rf asian_dragon_obj.zip
+# wget https://github.com/embree/models/releases/download/release/crown.zip
+# unzip crown.zip && rm crown.zip
+# wget https://github.com/embree/embree/releases/download/v3.6.1/embree-3.6.1.x86_64.linux.tar.gz
+# tar -xzvf embree-3.6.1.x86_64.linux.tar.gz && rm -rf embree-3.6.1.x86_64.linux.tar.gz
+# mv embree-3.6.1.x86_64.linux/* ./ && rm -rf embree-3.6.1.x86_64.linux
+# echo "#!/bin/bash
+# case \$1 in
+#     (\"asian_dragon\")
+#         testCase=\"asian_dragon/asian_dragon.ecs\";;
+#     (\"asian_dragon_obj\")
+#         testCase=\"asian_dragon_obj/asian_dragon.ecs\";;
+#     (\"crown\")
+#         testCase=\"crown/crown.ecs\";;
+# esac
+# ./bin/pathtracer --threads \$(nproc --all) -benchmark 0 600 -c \$testCase" > embree
+# chmod +x embree
+# cd ../
+
+echo "-------Downloading and installing iperf"
+mkdir iperf && cd iperf
+wget https://downloads.es.net/pub/iperf/iperf-3.7.tar.gz
+tar -xzvf iperf-3.7.tar.gz && rm iperf-3.7.tar.gz
+mv iperf-3.7/* ./ && rm -rf iperf-3.7
+./configure --prefix=`pwd` CFLAGS="-O3 -march=native"
+make -j $(nproc --all)
+make install
+echo "#!/bin/sh
+cd bin
+# start server if doing localhost testing
+./iperf3 -s &
+IPERF_SERVER_PID=\$!
+sleep 3
 case \$1 in
-    (\"asian_dragon\")
-        testCase=\"asian_dragon/asian_dragon.ecs\";;
-    (\"asian_dragon_obj\")
-        testCase=\"asian_dragon_obj/asian_dragon.ecs\";;
-    (\"crown\")
-        testCase=\"crown/crown.ecs\";;
+    (\"tcp\")
+        protocol=\"\" ;;
+    (\"udp\")
+        protocol=\"--udp\" ;;
 esac
-./bin/pathtracer --threads \$(nproc --all) -benchmark 0 600 -c \$testCase" > embree
-chmod +x embree
+./iperf3 \$protocol -b 1000m  -t 30 -c 127.0.0.1 
+kill \$IPERF_SERVER_PID" > iperf
+chmod +x iperf
 cd ../

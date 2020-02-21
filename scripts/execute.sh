@@ -65,9 +65,10 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
 		"tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "pybench" "network-loopback" \
 		"svt-vp9 tune_0" "svt-vp9 tune_1" "svt-vp9 tune_2" "svt-hevc" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" \
-		"tungsten volumetric-caustic" "ospray san_miguel" "ospray nasa_streamlines" "ospray xfrog_forest" "ospray magnetic_reconnection")
+		"tungsten volumetric-caustic" "ospray san_miguel" "ospray nasa_streamlines" "ospray xfrog_forest" "ospray magnetic_reconnection" \
+		"embree crown" "embree asian_dragon" "embree asian_dragon_obj")
 # timeConsumingTaks=( )
-tasks=( "embree asian_dragon" "embree asian_dragon_obj" "embree crown") 
+tasks=( "iperf tcp" "iperf udp") 
 
 function startServers {
 	case $1 in
@@ -189,7 +190,7 @@ for task in "${tasks[@]}"; do
 		sqlitebench | dbench* | fs-mark* | bork | ffmpeg | encode-mp3 | graphics-magick* | rocksdb* | cassandra* | \
 		paraview* | xonotic* | compilebench* | build-php | nexuiz* | warsow* | inkscape | rawtherapee | tjbench | darktable* | \
 		rsvg | gegl* | renaissance* | java-jmh | schbench* | osbench* | tiobench* | pybench | network-loopback | svt-vp9* | \
-		svt-hevc | tungsten* | ospray* | embree* )
+		svt-hevc | tungsten* | ospray* | embree* | iperf* )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
