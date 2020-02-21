@@ -70,9 +70,10 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"pyperformance-run 2to3" "pyperformance-run chaos" "pyperformance-run crypto_pyaes" "pyperformance-run django_template" \
 		"pyperformance-run float" "pyperformance-run go" "pyperformance-run json_loads" "pyperformance-run nbody" "pyperformance-run pathlib" \
 		"pyperformance-run pickle_pure_python" "pyperformance-run python_startup" "pyperformance-run raytrace" "pyperformance-run regex_compile" \
-		"indigobench supercar" "indigobench bedroom")
+		"indigobench supercar" "indigobench bedroom" "rays1bench" "cp2k" "svt-av1" "dav1d summer_nature_1080p.ivf" "dav1d summer_nature_4k.ivf" \
+		"dav1d chimera_8b_1080p.ivf" "dav1d chimera_10b_1080p.ivf")
 # timeConsumingTaks=( )
-tasks=("rays1bench" "cp2k") 
+tasks=( "cpuminer-opt lbry" "cpuminer-opt sha256t" "cpuminer-opt skein" "cpuminer-opt myr-gr" "cpuminer-opt m7m" "cpuminer-opt deep") 
 
 function startServers {
 	case $1 in
@@ -195,7 +196,7 @@ for task in "${tasks[@]}"; do
 		paraview* | xonotic* | compilebench* | build-php | nexuiz* | warsow* | inkscape | rawtherapee | tjbench | darktable* | \
 		rsvg | gegl* | renaissance* | java-jmh | schbench* | osbench* | tiobench* | pybench | network-loopback | svt-vp9* | \
 		svt-hevc | tungsten* | ospray* | embree* | iperf* | oidn | pyperformance-run* | indigobench* | rays1bench | \
-		cp2k )
+		cp2k | svt-av1 | dav1d* | cpuminer-opt* )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark

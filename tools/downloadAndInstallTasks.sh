@@ -1483,14 +1483,76 @@ cd tasks_test
 # chmod +x rays1bench
 # cd ../
 
-echo "-------Downloading and installing cp2k"
-mkdir cp2k && cd cp2k
-wget https://github.com/cp2k/cp2k/releases/download/v6.1.0/cp2k-6.1.tar.bz2
-tar -xjvf cp2k-6.1.tar.bz2 && rm cp2k-6.1.tar.bz2
-wget https://github.com/cp2k/cp2k/releases/download/v6.1.0/cp2k-6.1-Linux-x86_64.ssmp
-chmod +x cp2k-6.1-Linux-x86_64.ssmp
-mv cp2k-6.1/* ./ && rm -rf cp2k-6.1
+# echo "-------Downloading and installing cp2k"
+# mkdir cp2k && cd cp2k
+# wget https://github.com/cp2k/cp2k/releases/download/v6.1.0/cp2k-6.1.tar.bz2
+# tar -xjvf cp2k-6.1.tar.bz2 && rm cp2k-6.1.tar.bz2
+# wget https://github.com/cp2k/cp2k/releases/download/v6.1.0/cp2k-6.1-Linux-x86_64.ssmp
+# chmod +x cp2k-6.1-Linux-x86_64.ssmp
+# mv cp2k-6.1/* ./ && rm -rf cp2k-6.1
+# echo "#!/bin/bash
+# ./cp2k-6.1-Linux-x86_64.ssmp -i tests/Fist/benchmark/fayalite.inp" > cp2k
+# chmod +x cp2k
+# cd ../
+
+# echo "-------Downloading and installing svt-av1"
+# git clone https://github.com/OpenVisualCloud/SVT-AV1.git
+# mv SVT-AV1 svt-av1 && cd svt-av1 
+# cd Build/linux/
+# ./build.sh release
+# cd ../../
+# echo "#!/bin/sh
+# ./Bin/Release/SvtAv1EncApp enc-mode 8 -n 320 -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m -w 1920 -h 1080" > svt-av1
+# chmod +x svt-av1
+# cd ../
+
+# echo "-------Downloading and installing dav1d"
+# mkdir dav1d && cd dav1d
+# wget http://ffmpeg.org/releases/ffmpeg-4.2.1.tar.bz2
+# tar -xjvf ffmpeg-4.2.1.tar.bz2 && rm ffmpeg-4.2.1.tar.bz2
+# wget http://downloads.videolan.org/pub/videolan/dav1d/0.5.0/dav1d-0.5.0.tar.xz
+# tar -xf dav1d-0.5.0.tar.xz && rm dav1d-0.5.0.tar.xz
+# wget http://www.elecard.com/storage/video/Stream2_AV1_HD_6.8mbps.webm
+# wget http://www.elecard.com/storage/video/Stream2_AV1_4K_22.7mbps.webm
+# wget http://download.opencontent.netflix.com.s3.amazonaws.com/AV1/Chimera/Old/Chimera-AV1-8bit-1920x1080-6736kbps.mp4
+# wget http://download.opencontent.netflix.com.s3.amazonaws.com/AV1/Chimera/Old/Chimera-AV1-10bit-1920x1080-6191kbps.mp4
+# cd ffmpeg-4.2.1/
+# ./configure --disable-zlib --disable-doc --prefix=`pwd`
+# make -j $(nproc --all)
+# make install
+# cd ../
+# ./ffmpeg-4.2.1/bin/ffmpeg -i Stream2_AV1_HD_6.8mbps.webm -vcodec copy -an -f ivf summer_nature_1080p.ivf
+# ./ffmpeg-4.2.1/bin/ffmpeg -i Stream2_AV1_4K_22.7mbps.webm -vcodec copy -an -f ivf summer_nature_4k.ivf
+# ./ffmpeg-4.2.1/bin/ffmpeg -i Chimera-AV1-8bit-1920x1080-6736kbps.mp4 -vcodec copy -an -f ivf chimera_8b_1080p.ivf
+# ./ffmpeg-4.2.1/bin/ffmpeg -i Chimera-AV1-10bit-1920x1080-6191kbps.mp4 -vcodec copy -an -f ivf chimera_10b_1080p.ivf
+# cd dav1d-0.5.0/
+# meson build --buildtype release
+# ninja -C build
+# cd ../
+# echo "#!/bin/bash
+# ./dav1d-0.5.0/build/tools/dav1d -i \$1 --muxer null --framethreads \$(nproc --all) --tilethreads 4 --filmgrain 0" > dav1d
+# chmod +x dav1d
+# cd ../
+
+# echo "-------Downloading and installing cpuminer-opt"
+# mkdir cpuminer-opt && cd cpuminer-opt
+# wget http://www.phoronix-test-suite.com/benchmark-files/cpuminer-opt-3.8.8.1.zip 
+# unzip cpuminer-opt-3.8.8.1.zip && rm cpuminer-opt-3.8.8.1.zip
+# mv cpuminer-opt-3.8.8.1/* ./ && rm -rf cpuminer-opt-3.8.8.1
+# ./autogen.sh 
+# CFLAGS="-O3 -march=native" ./configure --without-curl
+# make -j $(nproc --all)
+# echo "#!/bin/sh
+# ./cpuminer --quiet --time-limit=30 --benchmark -a \$1" > cpuminer-opt
+# chmod +x cpuminer-opt
+# cd ../
+
+echo "-------Downloading and installing rav1e"
+git clone https://github.com/xiph/rav1e.git
+cd rav1e
+cargo build --bin rav1e --release -j $(nproc --all)
 echo "#!/bin/bash
-./cp2k-6.1-Linux-x86_64.ssmp -i tests/Fist/benchmark/fayalite.inp" > cp2k
-chmod +x cp2k
+./target/release/rav1e ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m \
+--threads \$(nproc --all) --tiles 4 --output /dev/null \$@" > rav1e
+chmod +x rav1e
 cd ../

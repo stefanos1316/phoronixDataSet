@@ -163,3 +163,8 @@
       apt: 
         name: ['meson', 'ninja-build']
         state: present
+
+    - name: Installing dependencies for cpuminer-opt
+      apt: 
+        name: 'libcurl4-openssl-dev'
+        state: present    
