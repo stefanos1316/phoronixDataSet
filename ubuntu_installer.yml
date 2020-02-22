@@ -167,4 +167,10 @@
     - name: Installing dependencies for cpuminer-opt
       apt: 
         name: 'libcurl4-openssl-dev'
+        state: present
+        
+    - name: Installing dependencies for octave-cli
+      apt: 
+        name: 'octave'
         state: present    
+

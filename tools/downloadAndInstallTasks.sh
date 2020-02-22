@@ -1547,12 +1547,71 @@ cd tasks_test
 # chmod +x cpuminer-opt
 # cd ../
 
-echo "-------Downloading and installing rav1e"
-git clone https://github.com/xiph/rav1e.git
-cd rav1e
-cargo build --bin rav1e --release -j $(nproc --all)
+# echo "-------Downloading and installing libvpx"
+# git clone https://github.com/webmproject/libvpx.git
+# mv libvpx vpxenc && cd vpxenc 
+# ./configure --disable-install-docs --disable-vp8 --enable-shared --prefix=`pwd`
+# make -j $(nproc --all)
+# make install
+# echo "#!/bin/bash
+# cd bin
+# THREADCOUNT=\$((\$(nproc --all)>64?64:\$nproc --all))
+# LD_PRELOAD=../lib/libvpx.so  ./vpxenc --cpu-used=5 \
+# -o /dev/null ../../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m \
+# --passes=1 --end-usage=cq --cq-level=30 --width=1920 --height=1080" > vpxenc
+# chmod +x vpxenc
+# cd ../
+
+# echo "-------Downloading and installing mt-dgemm"
+# mkdir mt-dgemm && cd mt-dgemm
+# wget http://phoronix-test-suite.com/benchmark-files/mtdgemm-crossroads-v1.0.0.tgz
+# tar -xf mtdgemm-crossroads-v1.0.0.tgz && rm mtdgemm-crossroads-v1.0.0.tgz
+# cc -O3 -march=native -fopenmp -o mtdgemm src/mt-dgemm.c
+# echo "#!/bin/sh
+# export OMP_NUM_THREADS=\$(nproc --all)
+# export OMP_PLACES=cores
+# export OMP_PROC_BIND=close
+# ./mtdgemm 3072 4" > mt-dgemm
+# chmod +x mt-dgemm
+# cd ../
+
+# echo "-------Downloading and installing deepspeech"
+# mkdir deepspeech && cd deepspeech
+# wget https://github.com/mozilla/DeepSpeech/releases/download/v0.6.0/deepspeech-0.6.0-models.tar.gz
+# tar -xf deepspeech-0.6.0-models.tar.gz && rm deepspeech-0.6.0-models.tar.gz
+# wget http://www.phoronix-test-suite.com/benchmark-files/sample-speech-1.tar.xz
+# tar -xf sample-speech-1.tar.xz && rm sample-speech-1.tar.xz
+# wget https://github.com/mozilla/DeepSpeech/releases/download/v0.6.0/native_client.amd64.cpu.linux.tar.xz
+# tar -xf native_client.amd64.cpu.linux.tar.xz && rm native_client.amd64.cpu.linux.tar.xz
+# mv deepspeech deepspeech-bin
+# echo "#!/bin/sh
+# ./deepspeech-bin --model deepspeech-0.6.0-models/output_graph.pbmm --lm deepspeech-0.6.0-models/lm.binary \
+# --trie deepspeech-0.6.0-models/trie  --audio sample-speech-1.wav -t" > deepspeech
+# chmod +x deepspeech
+# cd ../
+
+echo "-------Downloading and installing octave-benchmark"
+mkdir octave-benchmark && cd octave-benchmark
+wget http://www.phoronix-test-suite.com/benchmark-files/octave-benchmark-1.1.1.tar.gz
+tar -xf octave-benchmark-1.1.1.tar.gz && rm octave-benchmark-1.1.1.tar.gz
+mv benchmark-1.1.1/* ./ && rm -rf benchmark-1.1.1/
 echo "#!/bin/bash
-./target/release/rav1e ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m \
---threads \$(nproc --all) --tiles 4 --output /dev/null \$@" > rav1e
-chmod +x rav1e
+cd inst/
+for filename in benchmark_*.m; do
+        octave-cli \$filename
+done" > octave-benchmark
+chmod +x octave-benchmark
+cd ../
+
+echo "-------Downloading and installing octave-benchmark"
+mkdir octave-benchmark && cd octave-benchmark
+wget http://www.phoronix-test-suite.com/benchmark-files/octave-benchmark-1.1.1.tar.gz
+tar -xf octave-benchmark-1.1.1.tar.gz && rm octave-benchmark-1.1.1.tar.gz
+mv benchmark-1.1.1/* ./ && rm -rf benchmark-1.1.1/
+echo "#!/bin/bash
+cd inst/
+for filename in benchmark_*.m; do
+        octave-cli \$filename
+done" > octave-benchmark
+chmod +x octave-benchmark
 cd ../

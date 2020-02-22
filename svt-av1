@@ -1,2 +1,0 @@
-#!/bin/sh
-./Bin/Release/SvtAv1EncApp enc-mode 8 -n 320 -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m$@
