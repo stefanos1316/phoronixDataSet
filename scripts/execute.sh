@@ -3,7 +3,7 @@
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
 
-stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
+tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.txt ../inputs/wpa.cap" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2  ../inputs/tmp_linux-5.3.tar.gz -v" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"sudokut" "nero2d" "minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
@@ -76,9 +76,7 @@ stasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng -w ../inputs/aircrack.
 		"unigine-valley 800x600" "unigine-valley 1024x768" "unigine-valley 1920x1080" "unigine-valley 2560x1440" \
 		"unigine-heaven 800x600" "unigine-heaven 1024x768" "unigine-heaven 1920x1080" "unigine-heaven 2560x1440" \
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
-		"build-llvm")
-# timeConsumingTaks=( )
-tasks=("build2" "build-gdb") 
+		"build-llvm" "build2" "build-gdb")
 
 function startServers {
 	case $1 in
@@ -220,4 +218,5 @@ done
 
 dumpGarbage
 echo "Done with all"
+python3 sendNotification.py "Stock"
 exit
