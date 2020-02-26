@@ -172,5 +172,10 @@
     - name: Installing dependencies for octave-cli
       apt: 
         name: 'octave'
-        state: present    
+        state: present 
+        
+    - name: Installing dependencies for encode-flac
+      apt: 
+        name: 'libtool-bin'
+        state: present 
 

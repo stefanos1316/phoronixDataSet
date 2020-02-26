@@ -1590,28 +1590,149 @@ cd tasks_test
 # chmod +x deepspeech
 # cd ../
 
-echo "-------Downloading and installing octave-benchmark"
-mkdir octave-benchmark && cd octave-benchmark
-wget http://www.phoronix-test-suite.com/benchmark-files/octave-benchmark-1.1.1.tar.gz
-tar -xf octave-benchmark-1.1.1.tar.gz && rm octave-benchmark-1.1.1.tar.gz
-mv benchmark-1.1.1/* ./ && rm -rf benchmark-1.1.1/
-echo "#!/bin/bash
-cd inst/
-for filename in benchmark_*.m; do
-        octave-cli \$filename
-done" > octave-benchmark
-chmod +x octave-benchmark
-cd ../
+# echo "-------Downloading and installing octave-benchmark"
+# mkdir octave-benchmark && cd octave-benchmark
+# wget http://www.phoronix-test-suite.com/benchmark-files/octave-benchmark-1.1.1.tar.gz
+# tar -xf octave-benchmark-1.1.1.tar.gz && rm octave-benchmark-1.1.1.tar.gz
+# mv benchmark-1.1.1/* ./ && rm -rf benchmark-1.1.1/
+# echo "#!/bin/bash
+# cd inst/
+# for filename in benchmark_*.m; do
+#         octave-cli \$filename
+# done" > octave-benchmark
+# chmod +x octave-benchmark
+# cd ../
 
-echo "-------Downloading and installing octave-benchmark"
-mkdir octave-benchmark && cd octave-benchmark
-wget http://www.phoronix-test-suite.com/benchmark-files/octave-benchmark-1.1.1.tar.gz
-tar -xf octave-benchmark-1.1.1.tar.gz && rm octave-benchmark-1.1.1.tar.gz
-mv benchmark-1.1.1/* ./ && rm -rf benchmark-1.1.1/
-echo "#!/bin/bash
-cd inst/
-for filename in benchmark_*.m; do
-        octave-cli \$filename
-done" > octave-benchmark
-chmod +x octave-benchmark
+# echo "-------Downloading and installing unigine-valley"
+# mkdir unigine-valley && cd unigine-valley
+# wget http://assets.unigine.com/d/Unigine_Valley-1.0.run
+# chmod +x Unigine_Valley-1.0.run
+# ./Unigine_Valley-1.0.run --nox11
+# echo "#!/bin/sh
+# cd Unigine_Valley-1.0/
+# export LD_LIBRARY_PATH=bin/:\$LD_LIBRARY_PATH
+# case \$1 in
+# 	(\"800x600\")
+# 		getConfigurations=\"-video_width 800 -video_height 600 \
+#         -sound_app null -engine_config ../data/valley_1.0.cfg \
+#         -system_script valley/unigine.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+# 	(\"1024x768\")
+# 		getConfigurations=\"-video_width 1024 -video_height 768 \
+#         -sound_app null -engine_config ../data/valley_1.0.cfg \
+#         -system_script valley/unigine.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+# 	(\"1920x1080\")
+# 		getConfigurations=\"-video_width 1920 -video_height 1080 \
+#         -sound_app null -engine_config ../data/valley_1.0.cfg \
+#         -system_script valley/unigine.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+# 	(\"2560x1440\")
+# 		getConfigurations=\"-video_width 2560 -video_height 1440 \
+#         -sound_app null -engine_config ../data/valley_1.0.cfg \
+#         -system_script valley/unigine.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+# esac
+# ./bin/valley_x64 -data_path ../ \$getConfigurations" > unigine-valley
+# chmod +x unigine-valley
+# cd ../
+
+# echo "-------Downloading and installing unigine-heaven"
+# mkdir unigine-heaven && cd unigine-heaven
+# wget http://www.phoronix-test-suite.com/benchmark-files/Unigine_Heaven-4.0.run
+# chmod +x Unigine_Heaven-4.0.run
+# ./Unigine_Heaven-4.0.run --nox11
+# echo "#!/bin/sh
+# cd Unigine_Heaven-4.0/
+# export LD_LIBRARY_PATH=bin/:\$LD_LIBRARY_PATH
+# case \$1 in
+# 	(\"800x600\")
+# 		getConfigurations=\"-video_width 800 -video_height 600 \
+#         -sound_app null -engine_config ../data/heaven_4.0.cfg \
+#         -system_script heaven/unigine.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+# 	(\"1024x768\")
+# 		getConfigurations=\"-video_width 1024 -video_height 768 \
+#         -sound_app null -engine_config ../data/heaven_4.0.cfg \
+#         -system_script heaven/unigine.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+# 	(\"1920x1080\")
+# 		getConfigurations=\"-video_width 1920 -video_height 1080 \
+#         -sound_app null -engine_config ../data/heaven_4.0.cfg \
+#         -system_script heaven/unigine.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+# 	(\"2560x1440\")
+# 		getConfigurations=\"-video_width 2560 -video_height 1440 \
+#         -sound_app null -engine_config ../data/heaven_4.0.cfg \
+#         -system_script heaven/unigine.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+# esac
+# ./bin/heaven_x64 -data_path ../ \$getConfigurations" > unigine-heaven
+# chmod +x unigine-heaven
+# cd ../
+
+# echo "-------Downloading and installing unigine-super"
+# mkdir unigine-super && cd unigine-super
+# wget https://assets.unigine.com/d/Unigine_Superposition-1.0.run
+# chmod +x Unigine_Superposition-1.0.run
+# ./Unigine_Superposition-1.0.run --nox11
+# echo "#!/bin/bash
+# case \$1 in
+# 	(\"800x600\")
+# 		getConfigurations=\"-video_width 800 -video_height 600 \
+#         -sound_app null -engine_config ../data/superposition/unigine.cfg \
+#         -system_script superposition/system_script.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \
+#         -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
+# 	(\"1024x768\")
+# 		getConfigurations=\"-video_width 1024 -video_height 768 \
+#         -sound_app null -engine_config ../data/superposition/unigine.cfg \
+#         -system_script superposition/system_script.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \
+#         -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
+# 	(\"1920x1080\")
+# 		getConfigurations=\"-video_width 1920 -video_height 1080 \
+#         -sound_app null -engine_config ../data/superposition/unigine.cfg \
+#         -system_script superposition/system_script.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \
+#         -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
+# 	(\"2560x1440\")
+# 		getConfigurations=\"-video_width 2560 -video_height 1440 \
+#         -sound_app null -engine_config ../data/superposition/unigine.cfg \
+#         -system_script superposition/system_script.cpp -video_mode -1 \
+#         video_fullscreen 1 -extern_define PHORONIX,RELEASE \
+#         -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
+# esac
+# cd Unigine_Superposition-1.0/
+# rm -f ~/.Superposition/automation/log*.txt
+# ./bin/superposition  -data_path ../  -console_command \"config_readonly 1 && world_load superposition/superposition\" \
+# \$getConfigurations" > unigine-tropics
+# chmod +x unigine-tropics
+# cd ../
+
+# echo "-------Downloading and installing build2"
+# mkdir build2 && cd build2
+# wget https://download.build2.org/0.12.0/build2-install-0.12.0.sh
+# wget https://download.build2.org/0.12.0/build2-toolchain-0.12.0.tar.xz
+# tar -xJf build2-toolchain-0.12.0.tar.xz && rm build2-toolchain-0.12.0.tar.xz
+# chmod +x build2-install-0.12.0.sh
+# echo "#!/bin/bash
+# rm -rf build2-toolchain-0.12.0
+# rm -rf t
+# mkdir t
+# ./build2-install-0.12.0.sh --local --yes --no-check t" > build2
+# chmod +x build2
+# cd ../
+
+echo "-------Downloading and installing build-gdb"
+mkdir build-gdb && cd build-gdb
+wget https://ftp.gnu.org/gnu/gdb/gdb-9.1.tar.xz
+tar -xJf gdb-9.1.tar.xz && rm gdb-9.1.tar.xz
+echo "#!/bin/sh
+cd gdb-9.1/
+mkdir build
+cd build
+../configure
+make -s -j \$(nproc --all)" > build-gdb
+chmod +x build-gdb
 cd ../
