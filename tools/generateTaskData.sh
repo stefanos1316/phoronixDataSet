@@ -17,5 +17,5 @@ mv xzData/1 ../inputs/xz.txt
 rm -rf xzData
 
 echo "Downloading linux kernel 4.3"
-wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.3.tar.gz
-mv linux-4.3.tar.gz ../inputs
+wget https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.3.tar.gz
+mv linux-5.3.tar.gz ../inputs
