@@ -37,7 +37,7 @@ wget http://archive.apache.org/dist/httpd/httpd-2.4.29.tar.bz2
 tar -xjvf httpd-2.4.29.tar.bz2 && rm httpd-2.4.29.tar.bz2
 mv httpd-2.4.29/* ./ && rm -rf httpd-2.4.29/
 ./configure
-make --j $(nproc --all)
+make -j $(nproc --all)
 sudo make install
 cd ../
 
