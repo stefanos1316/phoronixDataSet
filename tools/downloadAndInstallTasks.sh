@@ -102,7 +102,7 @@ mv  zstd-1.3.4/* ./ && rm -rf zstd-1.3.4/
 make -j $(nproc --all)
 cd ../
 
-echo "-------Downloading and installing xd"
+echo "-------Downloading and installing xz"
 mkdir xz && cd xz
 wget http://distfiles.macports.org/xz/xz-5.2.4.tar.bz2
 tar -xvf xz-5.2.4.tar.bz2 && rm xz-5.2.4.tar.bz2
@@ -826,7 +826,7 @@ mv iozone3_465/* ./ && rm -rf iozone3_465
 cd src/current/
 make linux
 cp iozone ../../
-cd ../
+cd ../../../
 
 echo "-------Downloading and installing dbench"
 mkdir dbench && cd dbench
