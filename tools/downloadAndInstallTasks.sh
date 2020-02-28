@@ -1736,6 +1736,7 @@ echo "-------Downloading and installing mt-dgemm"
 mkdir mt-dgemm && cd mt-dgemm
 wget http://phoronix-test-suite.com/benchmark-files/mtdgemm-crossroads-v1.0.0.tgz
 tar -xf mtdgemm-crossroads-v1.0.0.tgz && rm mtdgemm-crossroads-v1.0.0.tgz
+mv mt-dgemm/* ./ && rm -rf mt-dgemm
 cc -O3 -march=native -fopenmp -o mtdgemm src/mt-dgemm.c
 echo "#!/bin/sh
 export OMP_NUM_THREADS=\$(nproc --all)
