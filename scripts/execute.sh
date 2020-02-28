@@ -238,11 +238,6 @@ for task in "${tasks[@]}"; do
 				sudo /usr/local/nginx/sbin/nginx -s stop
 			fi
 			getTimeInSeconds ../results/log_${taskName}.txt ;;
-		# ("hpcg")
-		# 	cp ../inputs/hpcg.dat ../${taskDirectory}/hpcg/
-		# 	cd ../${taskDirectory}/${benchmark}
-		# 	time (./${task}) 2> ../../../results/log_${taskName}.txt
-		# 	cd ../../scripts ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench | lammps | phpbench | pymongo | \
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
