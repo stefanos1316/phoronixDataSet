@@ -12,8 +12,6 @@ wget http://fsbench.filesystems.org/bench/aio-stress.c
 cc -Wall -pthread -o aio-stress aio-stress.c -laio
 cd ../
 
-exit
-
 echo "-------Downloading and installing aircrack-ng"
 mkdir aircrack-ng
 cd aircrack-ng
