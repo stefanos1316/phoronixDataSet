@@ -6,15 +6,13 @@ mkdir tasks_test
 cd tasks_test
 
 echo "-------Downloading and installing aio-stress"
-mkdir aio-stress
-cd aio-stress
+mkdir aio-stress && cd aio-stress
 wget http://fsbench.filesystems.org/bench/aio-stress.c
 cc -Wall -pthread -o aio-stress aio-stress.c -laio
 cd ../
 
 echo "-------Downloading and installing aircrack-ng"
-mkdir aircrack-ng
-cd aircrack-ng
+mkdir aircrack-ng && cd aircrack-ng
 wget https://download.aircrack-ng.org/aircrack-ng-1.3.tar.gz
 tar -zxvf aircrack-ng-1.3.tar.gz && rm aircrack-ng-1.3.tar.gz
 mv aircrack-ng-1.3/* ./
@@ -1067,6 +1065,17 @@ tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
 echo "#!/bin/bash
 ./bin/lame -h pts-trondheim-3.wav" > encode-mp3
 chmod +x encode-mp3
+cd ../
+
+echo "-------Downloading and installing aio-stress"
+mkdir encode-flac && cd encode-flac
+wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
+tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
+echo "#!\bin\bash
+for i in {1..10}; do
+flac --best pts-trondheim-3.wav -f -o output
+done" > encode-flac
+chmod +x encode-flac
 cd ../
 
 echo "-------Downloading and installing graphics-magick"

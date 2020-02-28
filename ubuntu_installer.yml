@@ -187,4 +187,9 @@
     - name: Installing dependencies for sudokut
       apt: 
         name: 'tcl'
-        state: present 
+        state: present
+  
+    - name: Installing dependencies for flac
+      apt: 
+        name: 'flac'
+        state: present
