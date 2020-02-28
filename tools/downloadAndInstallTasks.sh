@@ -21,7 +21,7 @@ mv aircrack-ng-1.3/* ./
 rm -rf aircrack-ng-1.3/
 ./autogen.sh
 make -j $(nproc --all)
-cp ../${taskScripts}/aircrack-ng ./
+cp ../../${taskScripts}/aircrack-ng ./
 cd ../
 
 echo "-------Downloading and installing aobench"
