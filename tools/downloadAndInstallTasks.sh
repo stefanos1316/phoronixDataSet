@@ -21,7 +21,7 @@ mv aircrack-ng-1.3/* ./
 rm -rf aircrack-ng-1.3/
 ./autogen.sh
 make -j $(nproc --all)
-cp ../${taskScripts}/aircrack-ng ./
+cp ../../${taskScripts}/aircrack-ng ./
 cd ../
 
 echo "-------Downloading and installing aobench"
@@ -37,7 +37,7 @@ wget http://archive.apache.org/dist/httpd/httpd-2.4.29.tar.bz2
 tar -xjvf httpd-2.4.29.tar.bz2 && rm httpd-2.4.29.tar.bz2
 mv httpd-2.4.29/* ./ && rm -rf httpd-2.4.29/
 ./configure
-make -j $(nproc --all)
+make --j $(nproc --all)
 sudo make install
 cd ../
 
@@ -74,8 +74,14 @@ wget http://www.phoronix-test-suite.com/benchmark-files/stockfish-9-src.zip
 unzip stockfish-9-src.zip && rm stockfish-9-src.zip
 cd src
 make build ARCH=x86-64-modern
-cp stockfish ../
-cd ../../
+cp stockfish ../stockfish-bin
+cd ../
+echo "#!/bin/bash
+for i in {1..20}; do
+	./stockfish-bin bench
+done" > stockfish
+chmod +x stockfish
+cd ../
 
 echo "-------Downloading and installing p7zip"
 mkdir p7zip && cd p7zip
@@ -205,9 +211,14 @@ tar -xzvf hmmer-2.3.2.tar.gz && rm hmmer-2.3.2.tar.gz
 mv hmmer-2.3.2/* ./ && rm -rf hmmer-2.3.2/
 ./configure --enable-threads
 make -j $(nproc --all)
-cp src/hmmpfam ./hmmer
+echo "!#/bin/bash
+cd src/
+for i in {1..10}; do
+./hmmpfam -E 0.1 ../../../..//inputs/Pfam_ls ../../../..//inputs/7LES_DROME
+done" > hmmer
+chmod +x hmmer
 wget http://www.phoronix-test-suite.com/benchmark-files/Pfam_ls.gz
-gunzip Pfam_ls.gz -c > ../../../inputs/Pfam_ls 
+gunzip Pfam_ls.gz -c > ../../../inputs/Pfam_ls && rm Pfam_ls.gz 
 cd ../
 
 echo "-------Downloading and installing rodinia"
@@ -215,12 +226,15 @@ mkdir rodinia && cd rodinia
 wget http://www.cs.virginia.edu/~kw5na/lava/Rodinia/Packages/Current/rodinia_2.4.tar.bz2
 tar -xvf rodinia_2.4.tar.bz2 && rm rodinia_2.4.tar.bz2
 mv rodinia_2.4/* ./ && rm -rf rodinia_2.4/
-cp ../../$taskScripts/rodinia ./
 cp data/cfd/missile.domn.0.2M ../../../inputs/missile.domn.0.2M
 cd openmp/cfd && make && cp euler3d_cpu_double ../../ && cd ../
 cd lavaMD && make && cp lavaMD ../../ && cd ../
 cd streamcluster && make && cp sc_omp ../../
-cd ../../../
+cd ../../
+echo "#!/bin/bash
+./\$*"> rodinia
+chmod +x rodinia
+cd ../
 
 echo "-------Downloading and installing openssl"
 mkdir openssl && cd openssl
@@ -239,7 +253,10 @@ tar -xjf x264-snapshot-20180925-2245.tar.bz2 && rm x264-snapshot-20180925-2245.t
 mv x264-snapshot-20180925-2245/* ./ && rm -rf x264-snapshot-20180925-2245/
 ./configure --prefix=./ --disable-opencl  --enable-pic --enable-shared
 make install
-cp bin/x264 ./
+echo "#!/bin/bash
+cd bin
+./x264 ../../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -o /dev/null" > x264
+chmod +x x264
 cd ../
 
 echo "-------Downloading and installing X265"
@@ -250,7 +267,10 @@ mv x265_3.1.2/* ./ && rm -rf x265_3.1.2/ && cd build
 cmake ../source
 make -j $(nproc --all)
 cd ../
-cp build/x265 ./
+echo "#!/bin/bash
+cd build
+./x265 ../../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -o /dev/null" > x265
+chmod +x x265
 cd ../
 
 echo "-------Downloading and installing build-linux-kernel"
@@ -263,7 +283,12 @@ cd ../
 echo "-------Downloading and installing ctx-clock"
 mkdir ctx_clock && cd ctx_clock
 cp ../../$taskScripts/ctx_clock.c ./
-cc ctx_clock.c -o ctx_clock
+cc ctx-clock.c -o ctx-clock
+echo "#!/bin/bash
+for i in {1..10}; do
+    ./ctx-clock
+done" > ctx_clock
+chmod +x ctx_clock
 cd ../
 
 echo "-------Downloading and installing sysbench"
@@ -342,9 +367,12 @@ wget http://phoronix-test-suite.com/benchmark-files/CloverLeaf_OpenMP-20181012.z
 unzip CloverLeaf_OpenMP-20181012.zip && rm CloverLeaf_OpenMP-20181012.zip
 mv CloverLeaf_OpenMP-master/* ./ && rm -rf CloverLeaf_OpenMP-master/
 COMPILER=GNU make
-mv clover_leaf cloverleaf
 cp InputDecks/clover_bm8192.in ../../../inputs
-cp clover.in ../../../inputs
+echo "#!/bin/bash
+for i in {1..10}; do
+    ./clover_leaf InputDecks/clover_bm8192.in
+done" > cloverleaf
+chmod +x cloverleaf
 cd ../
 
 echo "-------Downloading and installing brlcad"
@@ -356,7 +384,9 @@ mkdir build && cd build
 cmake .. -DBRLCAD_ENABLE_STRICT=NO -DBRLCAD_BUNDLED_LIBS=ON -DBRLCAD_OPTIMIZED_BUILD=ON -DCMAKE_BUILD_TYPE=Release
 make -j $(nproc --all)
 cd ../
-cp ../../$taskScripts/brlcad ./
+echo "#!/bin/bash
+./build/bench/benchmark run -P 8" > brlcad
+chmod +x brlcad
 cd ../
 
 echo "-------Downloading and installing cpp-perf-bench"
@@ -827,6 +857,7 @@ cd src/current/
 make linux
 cp iozone ../../
 cd ../../../
+
 
 echo "-------Downloading and installing dbench"
 mkdir dbench && cd dbench

@@ -9,7 +9,7 @@
         name: 
           ['systemtap-sdt-dev','build-essential', 'gcc', 'curl', 'automake',
           'libtool','m4', 'stress-ng', 'mesa-utils', 'libaio-dev', 'libssl-dev',
-          'ethtool']
+          'ethtool', 'cmake']
         state: present
 
     - name: Install dependencies for aircrack
@@ -181,5 +181,10 @@
         
     - name: Installing dependencies for video
       apt: 
-        name: 'p7zip-full'
+        name: ['p7zip-full', 'libgmp3-dev']
+        state: present 
+
+    - name: Installing dependencies for sudokut
+      apt: 
+        name: 'tcl'
         state: present 
