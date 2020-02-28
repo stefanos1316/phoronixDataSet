@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cd src/
-runThem=`echo $@ | awk '{first = $1; $1 = ""; print $0; }'`
-eval $runThem
-cd ../

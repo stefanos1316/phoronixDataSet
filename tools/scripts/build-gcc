@@ -1,7 +1,0 @@
-#!/bin/bash
-
-./contrib/download_prerequisites
-./configure --disable-multilib --enable-checking=release
-make defconfig
-make clean
-make -s -j $(nproc --all)

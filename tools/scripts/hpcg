@@ -1,5 +1,0 @@
-#!/bin/bash
-
-rm -f HPCG-Benchmark*.txt
-cd bin/
-mpirun --allow-run-as-root -np 8 ./xhpcg

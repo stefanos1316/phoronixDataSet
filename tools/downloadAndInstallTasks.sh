@@ -21,7 +21,9 @@ mv aircrack-ng-1.3/* ./
 rm -rf aircrack-ng-1.3/
 ./autogen.sh
 make -j $(nproc --all)
-cp ../../${taskScripts}/aircrack-ng ./
+echo "#!/bin/bash
+./src/aircrack-ng -w ../../../inputs/aircrack.txt ../../../inputs/wpa.cap" > aircrack-ng
+chmod +x aircrack-ng
 cd ../
 
 echo "-------Downloading and installing aobench"
@@ -115,7 +117,9 @@ tar -xvf xz-5.2.4.tar.bz2 && rm xz-5.2.4.tar.bz2
 mv  xz-5.2.4/* ./ && rm -rf xz-5.2.4/
 ./configure
 make -j $(nproc --all)
-cp ../../$taskScripts/xz ./
+echo "#!/bin/bash
+xz \$@" > xz
+chmod +x xz
 cd ../
 
 echo "-------Downloading and installing BYTE"
@@ -189,7 +193,9 @@ tar -xzvf nero2d-2.0.2-pts1.tar.gz && rm nero2d-2.0.2-pts1.tar.gz
 mv nero2d-2.0.2/* ./ && rm -rf nero2d-2.0.2/
 ./configure
 make -j $(nproc --all)
-cp ../../$taskScripts/nero2d ./
+echo "#!/bin/bash
+./src/nero2d ../../../inputs/nero2d.igf" > nero2d
+chmod +x nero2d
 cd ../
 
 echo "-------Downloading and installing minion"
@@ -277,7 +283,14 @@ echo "-------Downloading and installing build-linux-kernel"
 mkdir build-linux-kernel && cd build-linux-kernel
 cp ../../../inputs/linux-5.3.tar.gz ./
 tar -xzvf linux-5.3.tar.gz && rm linux-5.3.tar.gz
-cp ../../$taskScripts/build-linux-kernel ./
+echo "#!/bin/bash
+cd linux-5.3/
+yes \"\" | make oldconfig
+make clean
+sudo make -s -j \$(nproc --all)
+cd ../
+rm -rf ./linux-5.3" > build-linux-kernel
+chmod +x build-linux-kernel
 cd ../
 
 echo "-------Downloading and installing ctx-clock"
@@ -395,14 +408,22 @@ wget http://phoronix-test-suite.com/benchmark-files/CppPerformanceBenchmarks-9.z
 unzip CppPerformanceBenchmarks-9.zip && rm CppPerformanceBenchmarks-9.zip
 mv CppPerformanceBenchmarks-master/* ./ && rm -rf CppPerformanceBenchmarks-master/
 make all
-cp ../../$taskScripts/cpp-perf-bench ./
+echo "#!/bin/bash
+./\$1" > cpp-perf-bench
+chmod + cpp-perf-bench
 cd ../
 
 echo "-------Downloading and installing dacapo"
 mkdir dacapo && cd dacapo
 wget 'https://downloads.sourceforge.net/project/dacapobench/9.12-bach-MR1/dacapo-9.12-MR1-bach.jar?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdacapobench%2Ffiles%2F9.12-bach-MR1%2Fdacapo-9.12-MR1-bach.jar%2Fdownload%3Fuse_mirror%3Dautoselect&ts=1581797045'
 mv * dacapo.jar
-cp ../../$taskScripts/dacapo ./
+echo "#!/bin/bash
+command=`echo \$@ | awk '{first = $1; $1 = ""; print $0; }'`
+for j in {1..5}; do
+	eval \$command
+done
+rm -rf scratch" > dacapo
+chmod +x dacapo
 cd ../
 
 echo "-------Downloading and installing glibc-bench"
@@ -410,7 +431,9 @@ mkdir glibc-bench && cd glibc-bench
 wget https://www.phoronix-test-suite.com/benchmark-files/glibc-benchmarks-2.tar.gz
 tar -xvf glibc-benchmarks-2.tar.gz && rm glibc-benchmarks-2.tar.gz
 mv glibc-benchmarks/* ./ && rm -rf glibc-benchmarks
-cp ../../$taskScripts/glibc-bench ./
+echo "#!/bin/bash
+./\$1" > glibc-bench
+chmod +x glibc-bench
 cd ../
 
 echo "-------Downloading and installing ebizzy"
@@ -435,7 +458,9 @@ tar -xzvf hint-1.0.tar.gz && rm hint-1.0.tar.gz
 mv unix/* ./ && rm -rf unix
 cc -O3 -march=native hint.c hkernel.c -Dunix -DDOUBLE -DIINT -o double -lm
 cc -O3 -march=native hint.c hkernel.c -Dunix -DFLOAT -DIINT -o float -lm
-cp ../../$taskScripts/hint ./
+echo "#!/bin/bash
+./\$1" > hint
+chmod +x hint
 cd ../
 
 echo "-------Downloading and installing hpcg"
@@ -444,7 +469,11 @@ wget http://www.hpcg-benchmark.org/downloads/hpcg-3.1.tar.gz
 tar -xzvf hpcg-3.1.tar.gz && rm hpcg-3.1.tar.gz
 mv hpcg-3.1/* ./ && rm -rf hpcg-3.1
 make arch=Linux_MPI
-cp ../../$taskScripts/hpcg ./
+echo "#!/bin/bash
+rm -f HPCG-Benchmark*.txt
+cd bin/
+mpirun --allow-run-as-root -np 8 ./xhpcg" > hpcg
+chmod +x hpcg
 cd ../
 
 echo "-------Downloading and installing john-the-ripper"
@@ -456,7 +485,11 @@ cd src/
 CFLAGS="-O3 -march=native -std=gnu89" ./configure --disable-native-tests --disable-opencl
 CFLAGS="-O3 -march=native -std=gnu89" make -j $(nproc --all)
 cd ../
-cp ../../$taskScripts/john-the-ripper ./
+echo "#!/bin/bash
+cd run/
+command=`echo \$@ | awk '{first = $1; $1 = ""; print $0; }'`
+eval \$command" > john-the-ripper
+chmod +x john-the-ripper
 cd ../
 
 echo "-------Downloading and installing lammps"
@@ -468,7 +501,11 @@ mkdir b && cd b
 cmake ../cmake/ -DCMAKE_BUILD_TYPE=Release -DPKG_MOLECULE=1 -DPKG_KSPACE=1 -DPKG_RIGID=1 -DPKG_GRANULAR=1 -DPKG_MANYBODY=1
 make -j $(nproc --all)
 cd ../
-cp ../../$taskScripts/lammps ./
+echo "#!/bin/bash
+export OMP_NUM_THREADS=8
+cd bench
+mpirun --allow-run-as-root -np 8 ../b/lmp" > lammps
+chmod +x lammps
 cd ../
 
 echo "-------Downloading and installing lzbench"
@@ -502,7 +539,11 @@ tar -xzvf mcperf-0.1.1.tar.gz && rm mcperf-0.1.1.tar.gz
 mv mcperf-0.1.1/* ./ && rm -rf mcperf-0.1.1
 ./configure
 make
-cp ../../$taskScripts/mcperf ./
+echo "#!/bin/bash
+cd src/
+runThem=`echo \$@ | awk '{first = $1; $1 = ""; print $0; }'`
+eval \$runThem" > mcperf
+chmod +x mcperf
 cd ../
 
 echo "-------Downloading and installing mkl-dnn"
@@ -514,7 +555,11 @@ mkdir build && cd build
 CFLAGS="-O3 -march=native" CXXFLAGS="-O3 -march=native" cmake -DCMAKE_BUILD_TYPE=Release MKLDNN_ARCH_OPT_FLAGS="-O3 -march=native" $CMAKE_OPTIONS ..
 make -j $(nproc --all)
 cd ../
-cp ../../$taskScripts/mkl-dnn ./
+echo "#!/bin/bash
+cd build/tests/benchdnn
+command=`echo \$@ | awk '{first = $1; $1 = ""; print $0; }'`
+eval \$command" > mkl-dnn
+chmod +x mkl-dnn
 cd ../
 
 echo "-------Downloading and installing node-express-loadtest"
@@ -525,7 +570,12 @@ export TZ=EST
 mv NodeRestPerfTest3-master/* ./ && rm -rf NodeRestPerfTest3-master/
 npm i express
 npm i loadtest
-cp ../../$taskScripts/node-express-loadtest ./
+echo "#!/bin/bash
+node expressserver.js &
+task=\$!
+./node_modules/loadtest/bin/loadtest.js  -n 100000 -c 250 http://localhost:8000
+kill -9 \$task" > node-express-loadtest
+chmod +x node-express-loadtest
 cd ../
 
 echo "-------Downloading and installing numenta-nab"
@@ -534,7 +584,9 @@ wget http://phoronix-test-suite.com/benchmark-files/NAB-20181109.tar.xz
 tar -xf NAB-20181109.tar.xz && rm NAB-20181109.tar.xz
 mv NAB-master/* ./ && rm -rf NAB-master/
 pip install . --user
-cp ../../$taskScripts/numenta-nab ./
+echo "#!/bin/bash
+python run.py -d numenta --detect --skipConfirmation --score" > numenta-nab
+chmod +x numenta-nab
 cd ../
 
 echo "-------Downloading and installing phpbench"
@@ -542,7 +594,9 @@ mkdir phpbench && cd phpbench
 wget http://phoronix-test-suite.com/benchmark-files/phpbench-081-patched1.zip
 unzip phpbench-081-patched1.zip && rm phpbench-081-patched1.zip
 mv phpbench-0.8.1-patched1/* ./ && rm -rf phpbench-0.8.1-patched1/
-cp ../../$taskScripts/phpbench ./
+echo "#!/bin/bash
+\$@" > phpbench
+chmod +x phpbench
 cd ../
 
 echo "-------Downloading and installing primesieve"
@@ -557,8 +611,10 @@ cd ../
 echo "-------Downloading and installing pymongo"
 mkdir pymongo && cd pymongo
 python3 -m pip install pymongo
-cp ../../$taskScripts/pymongo ./
 cp ../../$taskScripts/pymongoInsert.py ./
+echo "#!/bin/bash
+python3 pymongoInsert.py" > pymongo
+chmod +x pymongo
 cd ../
 
 echo "-------Downloading and installing rbenchmark"
@@ -566,7 +622,9 @@ mkdir rbenchmark && cd rbenchmark
 wget http://www.phoronix-test-suite.com/benchmark-files/rbenchmarks-20160105.tar.bz2
 tar -xjvf rbenchmarks-20160105.tar.bz2 && rm rbenchmarks-20160105.tar.bz2
 mv rbenchmarks/* ./ && rm -rf rbenchmarks/
-cp ../../$taskScripts/rbenchmark ./
+echo "#!/bin/bash
+Rscript R-benchmark-25/R-benchmark-25.R" > rbenchmark
+chmod +x rbenchmark
 cd ../
 
 echo "-------Downloading and installing redis"
@@ -578,7 +636,13 @@ cd deps/
 make hiredis jemalloc linenoise lua
 cd ../
 make MALLOC=libc -j $(nproc --all)
-cp ../../$taskScripts/redis ./
+echo "#!/bin/bash
+running=`ps -aux | grep redis | wc -l`
+if [ \$running -ne 2 ]; then
+	src/redis-server &
+fi
+src/redis-benchmark -n 1000000 -P 640000 -q -c 50 --csv \$1" > redis
+chmod +x redis 
 cd ../
 
 echo "-------Downloading and installing rust-prime"
@@ -594,7 +658,9 @@ mkdir scikit && cd scikit
 wget https://github.com/scikit-learn/scikit-learn/archive/0.22.1/scikit-learn-0.22.1.tar.gz
 tar -xzvf scikit-learn-0.22.1.tar.gz && rm scikit-learn-0.22.1.tar.gz
 mv scikit-learn-0.22.1/* ./ && rm -rf scikit-learn-0.22.1/
-cp ../../$taskScripts/scikit ./
+echo "#!/bin/bash
+python3 benchmarks/bench_random_projections.py --n-times 20" > scikit
+chmod +x scikit
 cd ../
 
 echo "-------Downloading and installing sockperf"
@@ -628,7 +694,17 @@ wget http://www.phoronix-test-suite.com/benchmark-files/ramsmp-3.5.0.tar.gz
 tar -xzvf ramsmp-3.5.0.tar.gz && rm ramsmp-3.5.0.tar.gz
 mv ramsmp-3.5.0/* ./ && rm -rf ramsmp-3.5.0
 cc -O3 -march=native -o ramsmp fltmark.c fltmem.c intmark.c intmem.c ramsmp.c
-cp ../../$taskScripts/ramspeed ./
+echo "#!/bin/bash
+argumentType=`echo \$1 | awk -F\"_\" '{print $2}'`
+testType=`echo \$1 | awk -F\"_\" '{print $1}'`
+case \${argumentType} in
+	(\"int\") argumentType=3 ;;
+	(\"float\") argumentType=6 ;;
+esac
+for i in {1..10}; do
+	./ramsmp -b \${argumentType} -l \${testType} 
+done" > ramspeed
+chmod +x ramspeed
 cd ../
 
 echo "-------Downloading and installing swet"
@@ -653,7 +729,9 @@ wget http://www.phoronix-test-suite.com/benchmark-files/cifar10_tf.tar.gz
 tar -axf cifar10_tf.tar.gz && rm cifar10_tf.tar.gz
 mv cifar10/* ./ && rm -rf cifar10
 pip3 install tensorflow
-cp ../../$taskScripts/tensorflow ./
+echo "#!/bin/bash
+python3 cifar10_train.py --max_steps 400" > tensorflow
+chmod +x tensorflow
 cd ../
 
 echo "-------Downloading and installing tinymembench"
@@ -679,7 +757,10 @@ unzip renderer-2.3b.zip && rm renderer-2.3b.zip
 mv renderer-2.3b/* ./ && rm -rf renderer-2.3b/
 ./configure
 make -j $(nproc --all)
-cp ../../${taskScripts}/ttsiod-renderer ./
+echo "#!/bin/bash
+cd 3D-Objects
+OMP_NUM_THREADS=\$(nproc --all) SDL_VIDEODRIVER=dummy ../src/renderer -b -n 10000 statue.ply" > ttsiod-renderer
+chmod +x ttsiod-renderer
 cd ../
 
 echo "-------Downloading and installing botan"
@@ -690,7 +771,9 @@ mv Botan-2.8.0/* ./ && rm -rf Botan-2.8.0
 python3 ./configure.py
 make -j $(nproc --all)
 mv botan botan_bin
-cp ../../${taskScripts}/botan ./
+echo "#!/bin/bash
+./botan_bin speed \$1 --format=table --msec=10000" > botan
+chmod +x botan
 cd ../
 
 echo "-------Downloading and installing build-gcc"
@@ -698,7 +781,13 @@ mkdir build-gcc && cd build-gcc
 wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-8.2.0/gcc-8.2.0.tar.gz
 tar -xzvf gcc-8.2.0.tar.gz && rm -rf 
 mv gcc-8.2.0/* ./ && rm -rf gcc-8.2.0
-cp ../../${taskScripts}/build-gcc ./
+echo "#!/bin/bash
+./contrib/download_prerequisites
+./configure --disable-multilib --enable-checking=release
+make defconfig
+make clean
+make -s -j \$(nproc --all)" > build-gcc
+chmod +x build-gcc
 cd ../
 
 echo "-------Downloading and installing build-llvm"
@@ -706,7 +795,11 @@ mkdir build-llvm && cd build-llvm
 wget http://releases.llvm.org/6.0.1/llvm-6.0.1.src.tar.xz
 tar -xf llvm-6.0.1.src.tar.xz && rm llvm-6.0.1.src.tar.xz
 mv llvm-6.0.1.src/* ./ && rm -rf llvm-6.0.1.src/ 
-cp ../../${taskScripts}/build-llvm ./
+echo "#!/bin/bash
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE:STRING=Release ../
+make -s -j \$(nproc --all)" > build-llvm
+chmod +x build-llvm
 cd ../
 
 echo "-------Downloading and installing openarena"
@@ -718,7 +811,19 @@ wget http://www.phoronix-test-suite.com/benchmark-files/openarena-088-1.zip
 unzip openarena-088-1.zip && rm openarena-088-1.zip
 mv pts-openarena-088.cfg baseoa/
 chmod +x openarena.x86_64
-cp ../../${taskScripts}/openarenaG ./
+echo "#!/bin/bash
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+set r_customWidth 800 +set r_customHeight 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+set r_customWidth 1024 +set r_customHeight 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+set r_customWidth 1920 +set r_customHeight 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+set r_customWidth 2560 +set r_customHeight 1440\";;
+esac
+./openarena.x86_64 +exec pts-openarena-088 +set r_mode -1 +set r_fullscreen 1 +set com_speeds 1 \$getConfigurations" >openarenaG
+chmod +x openarenaG
 cd ../
 
 echo "-------Downloading and installing urbanterror"
@@ -733,8 +838,21 @@ rm -f q3ut4/autoexec.cfg
 mv autoexec.cfg q3ut4/
 mkdir q3ut4/demos/
 mv pts-ut43.urtdemo q3ut4/demos/
-cp ../../${taskScripts}/urbanterrorG ./
 chmod +x Quake3-UrT.x86_64
+echo "#!/bin/bash
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+set r_customWidth 800 +set r_customHeight 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+set r_customWidth 1024 +set r_customHeight 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+set r_customWidth 1920 +set r_customHeight 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+set r_customWidth 2560 +set r_customHeight 1440\";;
+esac
+./Quake3-UrT.x86_64 +timedemo 1 +set demodone \"quit\" +set demoloop1 \"demo pts-ut43; \
+set nextdemo vstr demodone\" +vstr demoloop1 +set com_speeds 1 \$getConfigurations" > urbanterrorG
+chmod +x urbanterrorG
 cd ../
 
 echo "-------Downloading and installing qgears"
@@ -868,7 +986,13 @@ mv dbench-4.0/* ./ && rm -rf dbench-4.0
 ./configure --prefix=`pwd`
 make -j $(nproc --all)
 make install
-cp ../../$taskScripts/dbench ./
+echo "#!/bin/bash
+bin/dbench \$@ -c client.txt
+numberOfProcesses=`ps -aux | grep \"dbench\" | wc -l`
+if [ \$numberOfProcesses -gt 1 ]; then
+    kill -9 `ps -aux | grep "dbench" | head -1 | awk '{print \$2}'`
+fi" > dbench
+chmod +x dbench
 cd ../
 
 echo "-------Downloading and installing postmark"

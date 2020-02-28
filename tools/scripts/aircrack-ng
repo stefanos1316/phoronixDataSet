@@ -1,3 +1,0 @@
-#!/bin/bash
-
-./src/aircrack-ng -w ../../../inputs/aircrack.txt ../../../inputs/wpa.cap
