@@ -6,7 +6,7 @@ tasks/aobench/aobench
 inputs/zstd_test
 inputs/xz.txt
 inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m
-inputs/linux-5.3*
+inputs/*linux-5.3*
 inputs/gcc-8.2.0*
 inputs/missile.domn.0.2M
 inputs/Pfam_ls

@@ -5,6 +5,85 @@ taskScripts='scripts'
 mkdir tasks_test 
 cd tasks_test
 
+echo "-------Downloading and installing povray"
+mkdir povray && cd povray
+wget http://www.phoronix-test-suite.com/benchmark-files/povray-3.7.0.7.tar.xz
+tar -xf povray-3.7.0.7.tar.xz && rm povray-3.7.0.7.tar.xz
+mv povray-3.7.0.7/* ./ && rm -rf povray-3.7.0.7/ 
+cd unix
+autoupdate
+./prebuild.sh
+cd ..
+automake --add-missing
+LIBS="-lboost_system" ./configure COMPILED_BY="justarandom@gmail.com" --with-boost-thread=boost_thread
+make -j $(nproc --all)
+echo "#!/bin/sh
+echo 1 | ./unix/povray -benchmark" > povray
+chmod +x povray
+cd ../
+
+echo "-------Downloading and installing bzip2"
+mkdir bzip2 && cd bzip2
+wget http://downloads.openwrt.org/sources/bzip2-1.0.6.tar.gz
+tar -xzvf bzip2-1.0.6.tar.gz && rm bzip2-1.0.6.tar.gz
+mv bzip2-1.0.6/* ./ && rm -rf bzip2-1.0.6
+make
+mv bzip2 bzip2-bin
+echo "#!/bin/bash
+./bzip2-bin -c -5 ../../../inputs/linux-5.3.tar.gz > /dev/null" > bzip2 
+chmod +x bzip2
+cd ../
+
+echo "-------Downloading and installing hpcg"
+mkdir hpcg && cd hpcg
+wget http://www.hpcg-benchmark.org/downloads/hpcg-3.1.tar.gz
+tar -xzvf hpcg-3.1.tar.gz && rm hpcg-3.1.tar.gz
+mv hpcg-3.1/* ./ && rm -rf hpcg-3.1
+make arch=Linux_MPI
+echo "#!/bin/bash
+rm -f HPCG-Benchmark*.txt
+cd bin/
+mpirun --allow-run-as-root -np 8 ./xhpcg" > hpcg
+chmod +x hpcg
+cd ../
+
+echo "-------Downloading and installing sockperf"
+mkdir sockperf && cd sockperf
+wget http://phoronix-test-suite.com/benchmark-files/sockperf-3.4.zip
+unzip sockperf-3.4.zip && rm sockperf-3.4.zip
+mv sockperf-3.4/* ./ && rm -rf sockperf-3.4/
+./autogen.sh
+./configure
+make -j $(nproc --all)
+echo "#!/bin/sh
+./sockperf server &
+sleep 5
+./sockperf \$@
+killall -9 sockperf" > sockperf
+chmod +x sockperf
+cd ../
+
+echo "-------Downloading and installing apache"
+mkdir apache && cd apache
+wget http://archive.apache.org/dist/httpd/httpd-2.4.29.tar.bz2
+tar -xjvf httpd-2.4.29.tar.bz2 && rm httpd-2.4.29.tar.bz2
+mv httpd-2.4.29/* ./ && rm -rf httpd-2.4.29/
+./configure
+make --j $(nproc --all)
+sudo make install
+cd ../
+
+echo "-------Downloading and installing ctx-clock"
+mkdir ctx_clock && cd ctx_clock
+cp ../../$taskScripts/ctx_clock.c ./ctx-clock.c
+cc ctx-clock.c -o ctx-clock
+echo "#!/bin/bash
+for i in {1..10}; do
+    ./ctx-clock
+done" > ctx_clock
+chmod +x ctx_clock
+cd ../
+
 echo "-------Downloading and installing aio-stress"
 mkdir aio-stress && cd aio-stress
 wget http://fsbench.filesystems.org/bench/aio-stress.c
@@ -29,16 +108,6 @@ mkdir aobench && cd aobench
 wget http://phoronix-test-suite.com/benchmark-files/aobench-20180207.zip
 unzip aobench-20180207.zip && rm aobench-20180207.zip
 cc ao.c -o aobench -lm -O3
-cd ../
-
-echo "-------Downloading and installing apache"
-mkdir apache && cd apache
-wget http://archive.apache.org/dist/httpd/httpd-2.4.29.tar.bz2
-tar -xjvf httpd-2.4.29.tar.bz2 && rm httpd-2.4.29.tar.bz2
-mv httpd-2.4.29/* ./ && rm -rf httpd-2.4.29/
-./configure
-make --j $(nproc --all)
-sudo make install
 cd ../
 
 echo "-------Downloading and installing nginx"
@@ -92,14 +161,6 @@ make -j $(nproc --all)
 cp bin/7za ./p7zip
 cd ../
 
-echo "-------Downloading and installing bzip2"
-mkdir bzip2 && cd bzip2
-wget http://downloads.openwrt.org/sources/bzip2-1.0.6.tar.gz
-tar -xzvf bzip2-1.0.6.tar.gz && rm bzip2-1.0.6.tar.gz
-mv bzip2-1.0.6/* ./ && rm -rf bzip2-1.0.6
-make -j $(nproc --all)
-cd ../
-
 echo "-------Downloading and installing zstd"
 mkdir zstd && cd zstd
 wget http://www.phoronix-test-suite.com/benchmark-files/zstd-1.3.4.tar.gz
@@ -116,6 +177,7 @@ mv  xz-5.2.4/* ./ && rm -rf xz-5.2.4/
 ./configure
 make -j $(nproc --all)
 echo "#!/bin/bash
+cp ../../../inputs/xz.txt ../../../inputs/tmp_xz.txt
 xz \$@" > xz
 chmod +x xz
 cd ../
@@ -291,17 +353,6 @@ rm -rf ./linux-5.3" > build-linux-kernel
 chmod +x build-linux-kernel
 cd ../
 
-echo "-------Downloading and installing ctx-clock"
-mkdir ctx_clock && cd ctx_clock
-cp ../../$taskScripts/ctx_clock.c ./
-cc ctx-clock.c -o ctx-clock
-echo "#!/bin/bash
-for i in {1..10}; do
-    ./ctx-clock
-done" > ctx_clock
-chmod +x ctx_clock
-cd ../
-
 echo "-------Downloading and installing sysbench"
 mkdir sysbench && cd sysbench
 wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip
@@ -311,21 +362,6 @@ mv sysbench-master/* ./ && rm -rf sysbench-master/
 ./configure  --without-mysql
 make -j $(nproc --all)
 cp src/sysbench ./
-cd ../
-
-echo "-------Downloading and installing povray"
-mkdir povray && cd povray
-wget http://www.phoronix-test-suite.com/benchmark-files/povray-3.7.0.7.tar.xz
-tar -xf povray-3.7.0.7.tar.xz && rm povray-3.7.0.7.tar.xz
-mv povray-3.7.0.7/* ./ && rm -rf povray-3.7.0.7/ 
-cd unix
-autoupdate
-./prebuild.sh
-cd ..
-automake --add-missing
-LIBS="-lboost_system" ./configure COMPILED_BY="justarandom@gmail.com" --with-boost-thread=boost_thread
-make -j $(nproc --all)
-cp unix/povray ./
 cd ../
 
 echo "-------Downloading and installing blake2s"
@@ -459,19 +495,6 @@ cc -O3 -march=native hint.c hkernel.c -Dunix -DFLOAT -DIINT -o float -lm
 echo "#!/bin/bash
 ./\$1" > hint
 chmod +x hint
-cd ../
-
-echo "-------Downloading and installing hpcg"
-mkdir hpcg && cd hpcg
-wget http://www.hpcg-benchmark.org/downloads/hpcg-3.1.tar.gz
-tar -xzvf hpcg-3.1.tar.gz && rm hpcg-3.1.tar.gz
-mv hpcg-3.1/* ./ && rm -rf hpcg-3.1
-make arch=Linux_MPI
-echo "#!/bin/bash
-rm -f HPCG-Benchmark*.txt
-cd bin/
-mpirun --allow-run-as-root -np 8 ./xhpcg" > hpcg
-chmod +x hpcg
 cd ../
 
 echo "-------Downloading and installing john-the-ripper"
@@ -659,16 +682,6 @@ mv scikit-learn-0.22.1/* ./ && rm -rf scikit-learn-0.22.1/
 echo "#!/bin/bash
 python3 benchmarks/bench_random_projections.py --n-times 20" > scikit
 chmod +x scikit
-cd ../
-
-echo "-------Downloading and installing sockperf"
-mkdir sockperf && cd sockperf
-wget http://phoronix-test-suite.com/benchmark-files/sockperf-3.4.zip
-unzip sockperf-3.4.zip && rm sockperf-3.4.zip
-mv sockperf-3.4/* ./ && rm -rf sockperf-3.4/
-./autogen.sh
-./configure
-make -j $(nproc --all)
 cd ../
 
 echo "-------Downloading and installing stress-ng"
