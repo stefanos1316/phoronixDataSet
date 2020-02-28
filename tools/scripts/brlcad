@@ -1,3 +1,0 @@
-#!/bin/bash
-
-./build/bench/benchmark run -P 8
