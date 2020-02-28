@@ -19,3 +19,8 @@ rm -rf xzData
 echo "Downloading linux kernel 4.3"
 wget https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.3.tar.gz
 mv linux-5.3.tar.gz ../inputs
+
+echo "Downloading and installing wattsup pro"
+git clone https://github.com/pyrovski/watts-up.git
+cd watts-up
+make

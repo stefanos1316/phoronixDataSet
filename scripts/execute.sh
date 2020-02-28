@@ -150,6 +150,20 @@ function checkIfSubstringExistsMoreTimesInArray {
 	fi
 }
 
+function useWattsUpPro {
+	local taskname=$2
+	local dataPath="../results/tmp_energy_${taskname}.txt"
+	case "$1" in
+		("start")
+			sudo ../tools/watts-up/wattsup ttyUSB0 -s watts >> ${dataPath}  &
+			sleep 2 ;; 
+		("stop")
+			sudo pkill wattsup
+			awk '{sum+=$1} END {print sum}' $dataPath >> ../results/energy.txt
+			sleep 10 ;;
+	esac
+}
+
 sudo bash ../tools/governor.sh pe
 
 for task in "${tasks[@]}"; do
@@ -157,8 +171,9 @@ for task in "${tasks[@]}"; do
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}
 	checkIfSubstringExistsMoreTimesInArray ${task}
-
 	totalTime=0
+	useWattsUpPro start ${taskName}
+
 	case "$taskName" in
 		("apache" | "nginx" ) 
 			startServers $task
@@ -208,6 +223,7 @@ for task in "${tasks[@]}"; do
 		(*) time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
 	esac
 
+	useWattsUpPro stop ${taskName}
 	getTimeInSeconds ../results/log_${taskName}.txt
 	echo "${taskName}		${totalTime}" >> ../results/time.txt
 done

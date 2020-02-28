@@ -19,3 +19,4 @@ tasks/gmpbench/RES-*
 tasks/brlcad/*.pix
 tasks/brlcad/*.log
 tools/tasks_test/*
+tools/watts-up/*

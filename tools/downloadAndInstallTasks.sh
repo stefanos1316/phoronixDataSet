@@ -12,6 +12,8 @@ wget http://fsbench.filesystems.org/bench/aio-stress.c
 cc -Wall -pthread -o aio-stress aio-stress.c -laio
 cd ../
 
+exit
+
 echo "-------Downloading and installing aircrack-ng"
 mkdir aircrack-ng
 cd aircrack-ng
@@ -1123,13 +1125,6 @@ case \"\$1\" in
 	./cassandra-stress mixed ratio\(write=1,read=3\) n=400K -rate threads=\$(nproc --all);;
 esac
 kill \$CASSANDRA_SERVER_PID
-# while true; do
-#     processes=\`ps -aux | grep \"cassandra\" | wc -l\`
-#     if [ \$processes -gt 2 ]; then
-#      break
-#     fi
-#     sleep 1
-# done
 sleep 3
 " > cassandra
 chmod +x cassandra
