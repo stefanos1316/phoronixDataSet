@@ -178,4 +178,8 @@
       apt: 
         name: 'libtool-bin'
         state: present 
-
+        
+    - name: Installing dependencies for video
+      apt: 
+        name: 'p7zip-full'
+        state: present 
