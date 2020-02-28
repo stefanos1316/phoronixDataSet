@@ -110,7 +110,7 @@ function startServers {
 function getTimeInSeconds {
 	local filePath=$1
 	local minutes=`grep real ${filePath} | tail -1 | awk {'print $2'} | awk -F'm' '{print $1}'`
-	local seconds=`grep real ${filePath} | tail -1 | awk {'print $2'} | awk -F'm' '{print $2}' | awk -F',' '{print $1}'`
+	local seconds=`grep real ${filePath} | tail -1 | awk {'print $2'} | awk -F'm' '{print $2}' | awk -F'.' '{print $1}'`
 	if [ $minutes -ne 0 ]; then
 		minutes=$((minutes * 60))
 	fi
@@ -200,7 +200,7 @@ for task in "${tasks[@]}"; do
 		rsvg | gegl* | renaissance* | java-jmh | schbench* | osbench* | tiobench* | pybench | network-loopback | svt-vp9* | \
 		svt-hevc | tungsten* | ospray* | embree* | iperf* | oidn | pyperformance-run* | indigobench* | rays1bench | \
 		cp2k | svt-av1 | dav1d* | cpuminer-opt* | vpxenc | mt-dgemm | deepspeech | octave-benchmark | unigine-valley* | \
-		unigine-heaven* | unigine-super* | build2 | build-gdb)
+		unigine-heaven* | unigine-super* | build2 | build-gdb | aircrack-ng )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
