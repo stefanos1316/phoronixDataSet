@@ -3,13 +3,11 @@ ubuntu_installer.retry
 *.swo
 tasks/aio-stress/aio-stress
 tasks/aobench/aobench
-inputs/linux-5.5.2.tar.xz
-inputs/tmp_linux-5.5.2.tar.xz.bz2
 inputs/zstd_test
 inputs/xz.txt
 inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m
-inputs/linux-5.3.tar.gz
-inputs/gcc-8.2.0.tar.gz
+inputs/linux-5.3*
+inputs/gcc-8.2.0*
 inputs/missile.domn.0.2M
 inputs/Pfam_ls
 results/*
