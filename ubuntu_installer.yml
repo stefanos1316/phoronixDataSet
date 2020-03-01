@@ -9,7 +9,8 @@
         name: 
           ['systemtap-sdt-dev','build-essential', 'gcc', 'curl', 'automake',
           'libtool','m4', 'stress-ng', 'mesa-utils', 'libaio-dev', 'libssl-dev',
-          'ethtool', 'cmake', 'yasm', 'openjdk-8-jdk', 'flex', 'bison', 'python-pip' ]
+          'ethtool', 'cmake', 'yasm', 'openjdk-8-jdk', 'flex', 'bison', 'python-pip',
+          'qt5-default']
         state: present
 
     - name: Install dependencies for aircrack

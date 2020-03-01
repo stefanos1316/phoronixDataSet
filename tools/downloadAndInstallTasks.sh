@@ -5,6 +5,66 @@ taskScripts='scripts'
 mkdir tasks_test 
 cd tasks_test
 
+echo "-------Downloading and installing qgears"
+mkdir qgears && cd qgears
+wget http://www.phoronix-test-suite.com/benchmark-files/qgears2.tar.bz2
+tar -jxf qgears2.tar.bz2 && rm qgears2.tar.bz2
+mv qgears2/* ./ && rm -rf qgears2
+chmod +w commonrenderer.cpp
+echo "--- commonrenderer.cpp.orig	2008-11-02 16:19:16.000000000 -0500
++++ commonrenderer.cpp	2008-11-02 16:20:33.000000000 -0500
+@@ -31,6 +31,7 @@
+ double gear1_rotation = 35;
+ double gear2_rotation = 24;
+ double gear3_rotation = 33.5;
++int frame_report_count = 0;
+ 
+ #define LINEWIDTH 3
+ 
+@@ -83,7 +84,13 @@
+ 
+     ++frame_cnt;
+     if (FRAME_COUNT_INTERVAL == frame_cnt)
++    {
+         printFrameRate();
++        frame_report_count++;
++    }
++
++    if(frame_report_count == 40)
++        exit(0);
+ }
+ 
+ QPainterPath CommonRenderer::gearPath(double inner_radius, double outer_radius," | patch -p0
+qmake
+make -j $(nproc --all)
+mv qgears qgears-bin
+echo "#!/bin/bash
+export QT_QPA_PLATFORM='offscreen'
+./qgears-bin \$1" > qgears
+chmod +x qgears
+cd ../
+
+exit
+
+echo "-------Downloading and installing ramspeed"
+mkdir ramspeed && cd ramspeed
+wget http://www.phoronix-test-suite.com/benchmark-files/ramsmp-3.5.0.tar.gz
+tar -xzvf ramsmp-3.5.0.tar.gz && rm ramsmp-3.5.0.tar.gz
+mv ramsmp-3.5.0/* ./ && rm -rf ramsmp-3.5.0
+cc -O3 -march=native -o ramsmp fltmark.c fltmem.c intmark.c intmem.c ramsmp.c
+echo "#!/bin/bash
+argumentType=\`echo \$1 | awk -F\"_\" '{print \$2}'\`
+testType=\`echo \$1 | awk -F\"_\" '{print \$1}'\`
+case \${argumentType} in
+	(\"int\") argumentType=3 ;;
+	(\"float\") argumentType=6 ;;
+esac
+for i in {1..10}; do
+	./ramsmp -b \${argumentType} -l \${testType} 
+done" > ramspeed
+chmod +x ramspeed
+cd ../
+
 echo "-------Downloading and installing povray"
 mkdir povray && cd povray
 wget http://www.phoronix-test-suite.com/benchmark-files/povray-3.7.0.7.tar.xz
@@ -684,25 +744,6 @@ tar -xjvf stream-2013-01-17.tar.bz2 && rm stream-2013-01-17.tar.bz2
 cc stream.c -DSTREAM_ARRAY_SIZE=100000000 -DNTIMES=100 -O3 -fopenmp -o stream
 cd ../
 
-echo "-------Downloading and installing ramspeed"
-mkdir ramspeed && cd ramspeed
-wget http://www.phoronix-test-suite.com/benchmark-files/ramsmp-3.5.0.tar.gz
-tar -xzvf ramsmp-3.5.0.tar.gz && rm ramsmp-3.5.0.tar.gz
-mv ramsmp-3.5.0/* ./ && rm -rf ramsmp-3.5.0
-cc -O3 -march=native -o ramsmp fltmark.c fltmem.c intmark.c intmem.c ramsmp.c
-echo "#!/bin/bash
-argumentType=`echo \$1 | awk -F\"_\" '{print $2}'`
-testType=`echo \$1 | awk -F\"_\" '{print $1}'`
-case \${argumentType} in
-	(\"int\") argumentType=3 ;;
-	(\"float\") argumentType=6 ;;
-esac
-for i in {1..10}; do
-	./ramsmp -b \${argumentType} -l \${testType} 
-done" > ramspeed
-chmod +x ramspeed
-cd ../
-
 echo "-------Downloading and installing swet"
 mkdir swet && cd swet
 wget http://www.phoronix-test-suite.com/benchmark-files/swet-1.5.16-src.tar.gz
@@ -849,40 +890,6 @@ esac
 ./Quake3-UrT.x86_64 +timedemo 1 +set demodone \"quit\" +set demoloop1 \"demo pts-ut43; \
 set nextdemo vstr demodone\" +vstr demoloop1 +set com_speeds 1 \$getConfigurations" > urbanterrorG
 chmod +x urbanterrorG
-cd ../
-
-echo "-------Downloading and installing qgears"
-mkdir qgears && cd qgears
-wget http://www.phoronix-test-suite.com/benchmark-files/qgears2.tar.bz2
-tar -jxf qgears2.tar.bz2 && rm qgears2.tar.bz2
-mv qgears2/* ./ && rm -rf qgears2
-chmod +w commonrenderer.cpp
-echo "--- commonrenderer.cpp.orig	2008-11-02 16:19:16.000000000 -0500
-+++ commonrenderer.cpp	2008-11-02 16:20:33.000000000 -0500
-@@ -31,6 +31,7 @@
- double gear1_rotation = 35;
- double gear2_rotation = 24;
- double gear3_rotation = 33.5;
-+int frame_report_count = 0;
- 
- #define LINEWIDTH 3
- 
-@@ -83,7 +84,13 @@
- 
-     ++frame_cnt;
-     if (FRAME_COUNT_INTERVAL == frame_cnt)
-+    {
-         printFrameRate();
-+        frame_report_count++;
-+    }
-+
-+    if(frame_report_count == 40)
-+        exit(0);
- }
- 
- QPainterPath CommonRenderer::gearPath(double inner_radius, double outer_radius," | patch -p0
-qmake
-make -j $(nproc --all)
 cd ../
 
 echo "-------Downloading and installing jxrend"
