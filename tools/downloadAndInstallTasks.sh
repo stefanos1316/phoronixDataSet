@@ -661,6 +661,9 @@ mkdir scikit && cd scikit
 wget https://github.com/scikit-learn/scikit-learn/archive/0.22.1/scikit-learn-0.22.1.tar.gz
 tar -xzvf scikit-learn-0.22.1.tar.gz && rm scikit-learn-0.22.1.tar.gz
 mv scikit-learn-0.22.1/* ./ && rm -rf scikit-learn-0.22.1/
+pip3 install numpy
+pip3 install scipy
+pip install sklearn
 echo "#!/bin/bash
 python3 benchmarks/bench_random_projections.py --n-times 20" > scikit
 chmod +x scikit
