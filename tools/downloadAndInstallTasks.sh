@@ -1609,6 +1609,7 @@ mkdir pyperformance-run && cd pyperformance-run
 wget https://github.com/python/pyperformance/archive/1.0.0.zip
 unzip 1.0.0.zip && rm 1.0.0.zip
 mv pyperformance-1.0.0/* ./ && rm -rf pyperformance-1.0.0
+pip3 install pyperformance
 python3 setup.py build
 python3 setup.py install --user
 echo "#!/bin/bash
@@ -1688,7 +1689,7 @@ cd ../
 ./ffmpeg-4.2.1/bin/ffmpeg -i Chimera-AV1-8bit-1920x1080-6736kbps.mp4 -vcodec copy -an -f ivf chimera_8b_1080p.ivf
 ./ffmpeg-4.2.1/bin/ffmpeg -i Chimera-AV1-10bit-1920x1080-6191kbps.mp4 -vcodec copy -an -f ivf chimera_10b_1080p.ivf
 cd dav1d-0.5.0/
-meson build --buildtype release
+~/.local/bin/meson build --buildtype release
 ninja -C build
 cd ../
 echo "#!/bin/bash

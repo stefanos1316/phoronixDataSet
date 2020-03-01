@@ -52,7 +52,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
 		"tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "pybench" "network-loopback" \
 		"svt-vp9 tune_0" "svt-vp9 tune_1" "svt-vp9 tune_2" "svt-hevc" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" \
-		"tungsten volumetric-caustic" "ospray san_miguel" "ospray nasa_streamlines" "ospray xfrog_forest" "ospray magnetic_reconnection" \
+		"tungsten volumetric-caustic" "ospray san_miguel" "ospray xfrog_forest" "ospray magnetic_reconnection" \
 		"embree crown" "embree asian_dragon" "embree asian_dragon_obj" "iperf tcp" "iperf udp" "oidn" \
 		"pyperformance-run 2to3" "pyperformance-run chaos" "pyperformance-run crypto_pyaes" "pyperformance-run django_template" \
 		"pyperformance-run float" "pyperformance-run go" "pyperformance-run json_loads" "pyperformance-run nbody" "pyperformance-run pathlib" \
@@ -65,7 +65,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
-tasks=("glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440" )
+tasks=("dav1d summer_nature_1080p.ivf" "dav1d summer_nature_4k.ivf" "dav1d chimera_8b_1080p.ivf" "dav1d chimera_10b_1080p.ivf")
 
 function startServers {
 	case $1 in
@@ -182,7 +182,7 @@ for task in "${tasks[@]}"; do
 		svt-hevc | tungsten* | ospray* | embree* | iperf* | oidn | pyperformance-run* | indigobench* | rays1bench | \
 		cp2k | svt-av1 | dav1d* | cpuminer-opt* | vpxenc | mt-dgemm | deepspeech | octave-benchmark | unigine-valley* | \
 		unigine-heaven* | unigine-super* | build2 | build-gdb | aircrack-ng |  stockfish | x264 | x265 | ctx_clock | hmmer | cloverleaf | \
-		encode-flac | xz | povray | bzip2 | hpcg | sockperf* | qgears* )
+		encode-flac | xz | povray | bzip2 | hpcg | sockperf* | qgears* | glmark2* )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
