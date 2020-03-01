@@ -513,22 +513,6 @@ eval \$command" > john-the-ripper
 chmod +x john-the-ripper
 cd ../
 
-echo "-------Downloading and installing lammps"
-mkdir lammps && cd lammps
-wget https://github.com/lammps/lammps/archive/patch_9Jan2020.tar.gz
-tar -xzvf patch_9Jan2020.tar.gz && rm patch_9Jan2020.tar.gz
-mv lammps-patch_9Jan2020/* ./ && rm -rf lammps-patch_9Jan2020/
-mkdir b && cd b
-cmake ../cmake/ -DCMAKE_BUILD_TYPE=Release -DPKG_MOLECULE=1 -DPKG_KSPACE=1 -DPKG_RIGID=1 -DPKG_GRANULAR=1 -DPKG_MANYBODY=1
-make -j $(nproc --all)
-cd ../
-echo "#!/bin/bash
-export OMP_NUM_THREADS=8
-cd bench
-mpirun --allow-run-as-root -np 8 ../b/lmp" > lammps
-chmod +x lammps
-cd ../
-
 echo "-------Downloading and installing lzbench"
 mkdir lzbench && cd lzbench
 wget http://www.phoronix-test-suite.com/benchmark-files/lzbench-20170808.zip
