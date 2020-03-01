@@ -5,6 +5,31 @@ taskScripts='scripts'
 mkdir tasks_test 
 cd tasks_test
 
+echo "-------Downloading and installing j2dbench"
+mkdir j2dbench && cd j2dbench
+wget http://www.phoronix-test-suite.com/benchmark-files/J2DBench.zip
+unzip J2DBench.zip && rm J2DBench.zip
+echo "#!/bin/sh
+rm -f *.output
+rm -f *.res
+case \"\$1\" in
+\"all\")
+  TEST_TYPE=all ;;
+\"graphics\")
+  TEST_TYPE=graphics ;;
+\"images\")
+  TEST_TYPE=images ;;
+\"text\")
+  TEST_TYPE=text ;;
+esac
+java -Dsun.java2d.opengl=True -jar dist/J2DBench.jar \
+-batch -loadopts \$TEST_TYPE.opt -saveres \$TEST_TYPE.res \
+-title \$TEST_TYPE -desc \$TEST_TYPE > \$THIS_RUN_TIME.output
+java -jar dist/J2DAnalyzer.jar \$TEST_TYPE.res" > j2dbench
+chmod +x j2dbench
+cd ../
+exit
+
 echo "-------Downloading and installing qgears"
 mkdir qgears && cd qgears
 wget http://www.phoronix-test-suite.com/benchmark-files/qgears2.tar.bz2
@@ -40,11 +65,11 @@ make -j $(nproc --all)
 mv qgears qgears-bin
 echo "#!/bin/bash
 export QT_QPA_PLATFORM='offscreen'
-./qgears-bin \$1" > qgears
+for i in {1..10}; do
+./qgears-bin \$1
+done" > qgears
 chmod +x qgears
 cd ../
-
-exit
 
 echo "-------Downloading and installing ramspeed"
 mkdir ramspeed && cd ramspeed
@@ -899,30 +924,6 @@ unzip JXRenderMark-1.0.1.zip && rm JXRenderMark-1.0.1.zip
 cc JXRenderMark.c -o jxrend -lX11 -lXrender -O3
 cd ../
 
-echo "-------Downloading and installing j2dbench"
-mkdir j2dbench && cd j2dbench
-wget http://www.phoronix-test-suite.com/benchmark-files/J2DBench.zip
-unzip J2DBench.zip && rm J2DBench.zip
-echo "#!/bin/sh
-rm -f *.output
-rm -f *.res
-case \"\$1\" in
-\"TEST_ALL\")
-  TEST_TYPE=all ;;
-\"TEST_GRAPHICS\")
-  TEST_TYPE=graphics ;;
-\"TEST_IMAGES\")
-  TEST_TYPE=images ;;
-\"TEST_TEXT\")
-  TEST_TYPE=text ;;
-esac
-java -Dsun.java2d.opengl=True -jar dist/J2DBench.jar \
--batch -loadopts \$TEST_TYPE.opt -saveres \$TEST_TYPE.res \
--title \$TEST_TYPE -desc \$TEST_TYPE > \$THIS_RUN_TIME.output
-java -jar dist/J2DAnalyzer.jar \$TEST_TYPE.res > \$LOG_FILE" > j2dbench
-chmod +x j2dbench
-cd ../
-
 echo "-------Downloading and installing javascimark2"
 mkdir javascimark2 && cd javascimark2
 wget http://math.nist.gov/scimark2/scimark2lib.zip
@@ -961,11 +962,10 @@ tar -xzvf pts-sqlite-tests-1.tar.gz && rm pts-sqlite-tests-1.tar.gz
 ./configure --prefix=`pwd`
 make -j $(nproc --all)
 make install
-echo "
-#!/bin/sh
+echo "#!/bin/sh
 rm benchmark.db
-sqlite3 benchmark.db  \"CREATE TABLE pts1 ('I' SMALLINT NOT NULL, 'DT' TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 'F1' VARCHAR(4) NOT NULL, 'F2' VARCHAR(16) NOT NULL);\"
-cat sqlite-2500-insertions.txt | sqlite3 benchmark.db" > sqlitebench
+bin/sqlite3 benchmark.db  \"CREATE TABLE pts1 ('I' SMALLINT NOT NULL, 'DT' TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 'F1' VARCHAR(4) NOT NULL, 'F2' VARCHAR(16) NOT NULL);\"
+cat sqlite-2500-insertions.txt | bin/sqlite3 benchmark.db" > sqlitebench
 chmod +x sqlitebench
 cd ../
 
