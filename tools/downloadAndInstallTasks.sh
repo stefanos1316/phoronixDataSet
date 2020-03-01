@@ -5,6 +5,21 @@ taskScripts='scripts'
 mkdir tasks_test 
 cd tasks_test
 
+echo "-------Downloading and installing mt-dgemm"
+mkdir mt-dgemm && cd mt-dgemm
+wget http://phoronix-test-suite.com/benchmark-files/mtdgemm-crossroads-v1.0.0.tgz
+tar -xf mtdgemm-crossroads-v1.0.0.tgz && rm mtdgemm-crossroads-v1.0.0.tgz
+mv mt-dgemm/* ./ && rm -rf mt-dgemm
+cc -O3 -march=native -fopenmp -o mtdgemm src/mt-dgemm.c
+echo "#!/bin/sh
+export OMP_NUM_THREADS=\$(nproc --all)
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+./mtdgemm 3072 4" > mt-dgemm
+chmod +x mt-dgemm
+cd ../
+exit
+
 echo "-------Downloading and installing j2dbench"
 mkdir j2dbench && cd j2dbench
 wget http://www.phoronix-test-suite.com/benchmark-files/J2DBench.zip
@@ -28,7 +43,6 @@ java -Dsun.java2d.opengl=True -jar dist/J2DBench.jar \
 java -jar dist/J2DAnalyzer.jar \$TEST_TYPE.res" > j2dbench
 chmod +x j2dbench
 cd ../
-exit
 
 echo "-------Downloading and installing qgears"
 mkdir qgears && cd qgears
@@ -1076,7 +1090,7 @@ echo "-------Downloading and installing aio-stress"
 mkdir encode-flac && cd encode-flac
 wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
 tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
-echo "#!\bin\bash
+echo "#!/bin/bash
 for i in {1..10}; do
 flac --best pts-trondheim-3.wav -f -o output
 done" > encode-flac
@@ -1723,20 +1737,6 @@ LD_PRELOAD=../lib/libvpx.so  ./vpxenc --cpu-used=5 \
 -o /dev/null ../../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m \
 --passes=1 --end-usage=cq --cq-level=30 --width=1920 --height=1080" > vpxenc
 chmod +x vpxenc
-cd ../
-
-echo "-------Downloading and installing mt-dgemm"
-mkdir mt-dgemm && cd mt-dgemm
-wget http://phoronix-test-suite.com/benchmark-files/mtdgemm-crossroads-v1.0.0.tgz
-tar -xf mtdgemm-crossroads-v1.0.0.tgz && rm mtdgemm-crossroads-v1.0.0.tgz
-mv mt-dgemm/* ./ && rm -rf mt-dgemm
-cc -O3 -march=native -fopenmp -o mtdgemm src/mt-dgemm.c
-echo "#!/bin/sh
-export OMP_NUM_THREADS=\$(nproc --all)
-export OMP_PLACES=cores
-export OMP_PROC_BIND=close
-./mtdgemm 3072 4" > mt-dgemm
-chmod +x mt-dgemm
 cd ../
 
 echo "-------Downloading and installing deepspeech"

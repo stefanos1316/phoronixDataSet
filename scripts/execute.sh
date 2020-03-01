@@ -1,5 +1,7 @@
 #!/bin/bash
 
+scenario="stock"
+mkdir -p ../results/stock
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
 
@@ -65,7 +67,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
-tasks=("dav1d summer_nature_1080p.ivf" "dav1d summer_nature_4k.ivf" "dav1d chimera_8b_1080p.ivf" "dav1d chimera_10b_1080p.ivf")
+tasks=("encode-flac")
 
 function startServers {
 	case $1 in
@@ -139,7 +141,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 
 function useWattsUpPro {
 	local taskname=$2
-	local dataPath="../results/tmp_energy_${taskname}.txt"
+	local dataPath="../results/${scenario}/tmp_energy_${taskname}.txt"
 	case "$1" in
 		("start")
 			sudo ../tools/watts-up/wattsup ttyUSB0 -s watts >> ${dataPath}  &
@@ -165,10 +167,10 @@ for task in "${tasks[@]}"; do
 		("apache" | "nginx" ) 
 			startServers $task
 			if [ $taskName == "apache" ]; then
-				time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/log_${taskName}.txt
+				time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/apache2/bin/apachectl -k stop
 			else
-				time (ab -n 1000000 -c 100 http://0.0.0.0:80/) 2> ../results/log_${taskName}.txt
+				time (ab -n 1000000 -c 100 http://0.0.0.0:80/) 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/nginx/sbin/nginx -s stop
 			fi
 			getTimeInSeconds ../results/log_${taskName}.txt ;;
@@ -189,17 +191,17 @@ for task in "${tasks[@]}"; do
 			fi
 
 			cd ../${taskDirectory}/${benchmark}
-			time (./${task}) 2> ../../../results/log_${taskName}.txt
+			time (./${task}) 2> ../../../results/${scenario}/log_${taskName}.txt
 			cd ../../../scripts ;;
-		(*) time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/log_${taskName}.txt ;;
+		(*) time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/${scenario}/log_${taskName}.txt ;;
 	esac
 
 	useWattsUpPro stop ${taskName}
-	getTimeInSeconds ../results/log_${taskName}.txt
-	echo "${taskName}		${totalTime}" >> ../results/time.txt
+	getTimeInSeconds ../results/${scenario}/log_${taskName}.txt
+	echo "${taskName}		${totalTime}" >> ../results/${scenario}/time.txt
 done
 
 dumpGarbage
 echo "Done with all"
-python3 sendNotification.py "Stock"
+python sendNotification.py "Stock"
 exit
