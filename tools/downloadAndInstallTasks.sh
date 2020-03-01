@@ -449,12 +449,11 @@ cd ../
 
 echo "-------Downloading and installing dacapo"
 mkdir dacapo && cd dacapo
-wget 'https://downloads.sourceforge.net/project/dacapobench/9.12-bach-MR1/dacapo-9.12-MR1-bach.jar?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdacapobench%2Ffiles%2F9.12-bach-MR1%2Fdacapo-9.12-MR1-bach.jar%2Fdownload%3Fuse_mirror%3Dautoselect&ts=1581797045'
-mv * dacapo.jar
+wget https://downloads.sourceforge.net/project/dacapobench/9.12-bach-MR1/dacapo-9.12-MR1-bach.jar
+mv dacapo-9-.12-MR1-bach.jar dacapo.jar
 echo "#!/bin/bash
-command=`echo \$@ | awk '{first = $1; $1 = ""; print $0; }'`
 for j in {1..5}; do
-	eval \$command
+	/usr/lib/jvm/java-8-openjdk-amd64/bin/java -jar dacapo.jar -t \$(nproc --all) --window 10 \$1
 done
 rm -rf scratch" > dacapo
 chmod +x dacapo
@@ -508,8 +507,7 @@ CFLAGS="-O3 -march=native -std=gnu89" make -j $(nproc --all)
 cd ../
 echo "#!/bin/bash
 cd run/
-command=`echo \$@ | awk '{first = $1; $1 = ""; print $0; }'`
-eval \$command" > john-the-ripper
+./john --test=30 --format=\$1" > john-the-ripper
 chmod +x john-the-ripper
 cd ../
 
@@ -546,8 +544,7 @@ mv mcperf-0.1.1/* ./ && rm -rf mcperf-0.1.1
 make
 echo "#!/bin/bash
 cd src/
-runThem=`echo \$@ | awk '{first = $1; $1 = ""; print $0; }'`
-eval \$runThem" > mcperf
+./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=\$1" > mcperf
 chmod +x mcperf
 cd ../
 
@@ -562,8 +559,7 @@ make -j $(nproc --all)
 cd ../
 echo "#!/bin/bash
 cd build/tests/benchdnn
-command=`echo \$@ | awk '{first = $1; $1 = ""; print $0; }'`
-eval \$command" > mkl-dnn
+./benchdnn --mode=p --\$2 --batch=inputs/\$2/\$1" > mkl-dnn
 chmod +x mkl-dnn
 cd ../
 
@@ -589,6 +585,8 @@ wget http://phoronix-test-suite.com/benchmark-files/NAB-20181109.tar.xz
 tar -xf NAB-20181109.tar.xz && rm NAB-20181109.tar.xz
 mv NAB-master/* ./ && rm -rf NAB-master/
 pip install . --user
+pip install pandas
+pip install nupic
 echo "#!/bin/bash
 python run.py -d numenta --detect --skipConfirmation --score" > numenta-nab
 chmod +x numenta-nab
@@ -615,10 +613,10 @@ cd ../
 
 echo "-------Downloading and installing pymongo"
 mkdir pymongo && cd pymongo
-python3 -m pip install pymongo
+python -m pip install pymongo
 cp ../../$taskScripts/pymongoInsert.py ./
 echo "#!/bin/bash
-python3 pymongoInsert.py" > pymongo
+python pymongoInsert.py" > pymongo
 chmod +x pymongo
 cd ../
 
