@@ -6,7 +6,7 @@ mkdir -p ../results/stock
 taskDirectory="tools/tasks_test"
 
 taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
-		"stockfish bench" "p7zip b" "bzip2" "zstd ../inputs/zstd_test" "xz ../inputs/tmp_xz.txt" "byte register" \
+		"stockfish bench" "p7zip b" "bzip2" "zstd ../inputs/zstd_test" "xz" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"sudokut" "nero2d" "minion ../inputs/minions.minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
 		"rodinia euler3d_cpu_double ../../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
@@ -67,7 +67,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
-tasks=("encode-flac")
+tasks=("bzip2" "xz")
 
 function startServers {
 	case $1 in
@@ -144,11 +144,13 @@ function useWattsUpPro {
 	local dataPath="../results/${scenario}/tmp_energy_${taskname}.txt"
 	case "$1" in
 		("start")
+			rm ${dataPath}
 			sudo ../tools/watts-up/wattsup ttyUSB0 -s watts >> ${dataPath}  &
 			sleep 2 ;; 
 		("stop")
 			sudo pkill wattsup
-			awk '{sum+=$1} END {print sum}' $dataPath >> ../results/energy.txt
+			energy=`awk '{sum+=$1} END {print sum}' $dataPath`
+			echo "$taskname		$energy">> ../results/${scenario}/energy.txt
 			sleep 10 ;;
 	esac
 }
@@ -184,7 +186,7 @@ for task in "${tasks[@]}"; do
 		svt-hevc | tungsten* | ospray* | embree* | iperf* | oidn | pyperformance-run* | indigobench* | rays1bench | \
 		cp2k | svt-av1 | dav1d* | cpuminer-opt* | vpxenc | mt-dgemm | deepspeech | octave-benchmark | unigine-valley* | \
 		unigine-heaven* | unigine-super* | build2 | build-gdb | aircrack-ng |  stockfish | x264 | x265 | ctx_clock | hmmer | cloverleaf | \
-		encode-flac | xz | povray | bzip2 | hpcg | sockperf* | qgears* | glmark2* )
+		encode-flac | xz | povray | bzip2 | hpcg | sockperf* | qgears* | glmark2* | lzbench* )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark

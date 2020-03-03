@@ -275,9 +275,12 @@ tar -xvf xz-5.2.4.tar.bz2 && rm xz-5.2.4.tar.bz2
 mv  xz-5.2.4/* ./ && rm -rf xz-5.2.4/
 ./configure
 make -j $(nproc --all)
-echo "#!/bin/bash
-cp ../../../inputs/xz.txt ../../../inputs/tmp_xz.txt
-xz \$@" > xz
+echo "#!/bin/bas
+cp ../../../inputs/xz.txt tmp_xz.txt
+if [ -f \"tmp_xz.txt.xz\" ]; then
+	rm -f tmp_xz.txt.xz
+fi
+xz tmp_xz.txt" > xz
 chmod +x xz
 cd ../
 
@@ -446,9 +449,7 @@ echo "#!/bin/bash
 cd linux-5.3/
 yes \"\" | make oldconfig
 make clean
-sudo make -s -j \$(nproc --all)
-cd ../
-rm -rf ./linux-5.3" > build-linux-kernel
+sudo make -s -j \$(nproc --all)" > build-linux-kernel
 chmod +x build-linux-kernel
 cd ../
 
@@ -616,6 +617,11 @@ wget http://www.phoronix-test-suite.com/benchmark-files/lzbench-20170808.zip
 unzip lzbench-20170808.zip && rm lzbench-20170808.zip
 mv lzbench/* ./ && rm -rf lzbench/
 make
+mv lzbench lzbench-bin
+cp ../../../inputs/linux-5.3.tar.gz ./
+ehco "#!/bin/bash
+./lzbench-bin -t10,10 -v \$1 ./linux-5.3.tar.gz" > lzbench
+chmod +x lzbench
 cd ../
 
 echo "-------Downloading and installing m-queens"
@@ -1120,8 +1126,14 @@ mkdir rocksdb && cd rocksdb
 git clone https://github.com/facebook/rocksdb
 mv rocksdb/* ./ && rm -rf rocksdb
 make db_bench  
-echo "#!/bin/sh
-./db_bench --benchmarks=\"\$1\" -compression_type \"none\" --threads \$(nproc --all) --num 2000000" > rocksdb
+echo "#!/bin/bash
+if [ \"\$1\" == \"readrandom\" ]; then
+	for i in {1..20}; do
+		./db_bench --benchmarks=\"\$1\" -compression_type \"none\" --threads \$(nproc --all) --num 2000000
+	done
+else
+./db_bench --benchmarks=\"\$1\" -compression_type \"none\" --threads \$(nproc --all) --num 2000000
+fi" > rocksdb
 chmod +x rocksdb
 cd ../
 
