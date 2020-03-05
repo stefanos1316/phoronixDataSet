@@ -266,6 +266,12 @@ wget http://www.phoronix-test-suite.com/benchmark-files/zstd-1.3.4.tar.gz
 tar -xvf zstd-1.3.4.tar.gz && rm zstd-1.3.4.tar.gz
 mv  zstd-1.3.4/* ./ && rm -rf zstd-1.3.4/
 make -j $(nproc --all)
+mv zstd zstd-bin
+cp ../../../inputs/linux-5.3.tar.gz ./
+echo "#!/bin/bash
+./zstd-bin -19 -T\$(nproc --all) linux-5.3.tar.gz
+rm -f linux-5.3.tar.gz.zst" > zstd
+chmod +x zstd
 cd ../
 
 echo "-------Downloading and installing xz"

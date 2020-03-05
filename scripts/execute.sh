@@ -6,7 +6,7 @@ mkdir -p ../results/${scenario}
 taskDirectory="tools/tasks_test"
 
 taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
-		"stockfish bench" "p7zip b" "bzip2" "zstd ../inputs/zstd_test" "xz" "byte register" \
+		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"sudokut" "nero2d" "minion ../inputs/minions.minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
 		"rodinia euler3d_cpu_double ../../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
@@ -67,8 +67,8 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
-tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
-		"stockfish bench" "p7zip b" "bzip2" "zstd ../inputs/zstd_test" "xz" "byte register" \
+taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
+		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"sudokut" "nero2d" "minion ../inputs/minions.minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
 		"rodinia euler3d_cpu_double ../../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
@@ -104,7 +104,7 @@ tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "ng
 		"rocksdb fillseq" "rocksdb fillrandom" "rocksdb readrandom" \
 		"cassandra write" "cassandra read" "cassandra mixed_1_1" "cassandra mixed_1_3" \
 		"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
-		"glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440"  "compilebench initial_create" "compilebench compile" \
+		"compilebench initial_create" "compilebench compile" \
 		"compilebench read_compile_tree" "smallpt 128" "build-php" "inkscape" "rawtherapee" "tjbench" \
 		"darktable masskrug.NEF" "darktable bench.SRW" "darktable server_room.NEF" "rsvg" "gegl rotate-on-center degrees=90" "gegl scale-size x=400 y=400" \
 		"gegl antialias" "gegl cartoon" "gegl color-enhance" "gegl crop x=100 y=100 width=1920 height=1080" "gegl wavelet-blur" "gegl reflect" \
@@ -118,12 +118,11 @@ tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "ng
 		"pyperformance-run 2to3" "pyperformance-run chaos" "pyperformance-run crypto_pyaes" "pyperformance-run django_template" \
 		"pyperformance-run float" "pyperformance-run go" "pyperformance-run json_loads" "pyperformance-run nbody" "pyperformance-run pathlib" \
 		"pyperformance-run pickle_pure_python" "pyperformance-run python_startup" "pyperformance-run raytrace" "pyperformance-run regex_compile" \
-		"indigobench supercar" "indigobench bedroom" "rays1bench" "cp2k" "svt-av1" "dav1d summer_nature_1080p.ivf" "dav1d summer_nature_4k.ivf" \
+		"rays1bench" "cp2k" "svt-av1" "dav1d summer_nature_1080p.ivf" "dav1d summer_nature_4k.ivf" \
 		"dav1d chimera_8b_1080p.ivf" "dav1d chimera_10b_1080p.ivf" "cpuminer-opt lbry" "cpuminer-opt sha256t" "cpuminer-opt skein" \
 		"cpuminer-opt myr-gr" "cpuminer-opt m7m" "cpuminer-opt deep" "vpxenc" "mt-dgemm" "deepspeech" "octave-benchmark" \
-		"unigine-valley 800x600" "unigine-valley 1024x768" "unigine-valley 1920x1080" "unigine-valley 2560x1440" \
-		"unigine-heaven 800x600" "unigine-heaven 1024x768" "unigine-heaven 1920x1080" "unigine-heaven 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
+tasks=("build-linux-kernel")
 
 function startServers {
 	case $1 in
@@ -168,12 +167,12 @@ function dumpGarbage {
 	|| [ -f ../inputs/tmp_xz.txt.xz ] || [ -f *.tmp] || [ -f RES-multiply-* ] \
 	|| [ -f ../${taskDirectory}/dcraw/*.ppm ] || [ -f bitmap0_* ] || [-f blog-* ] \
 	|| [ -f alltext.out ] || [ -f output.ppm ] || [-f clover.* ] || [ -f results.txt ] \
-	|| [ -f image.ppm]; then
+	|| [ -f image.ppm] || [ -f ../inputs/zstd_test.zst ] ; then
 		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp
 		rm ../inputs/tmp_linux-5.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst
 		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../${taskDirectory}/dcraw/*.ppm 
 		rm bitmap0_* ; rm -rf blog-* ; rm alltext.out ; rm output.ppm; rm results.txt
-		rm clover.* ; rm tmp_linux-5.3.tar.gz.bz2; rm image.ppm
+		rm clover.* ; rm tmp_linux-5.3.tar.gz.bz2; rm image.ppm; rm -f ../inputs/zstd_test.zst
 	fi
 }
 
@@ -201,7 +200,7 @@ function useWattsUpPro {
 	case "$1" in
 		("start")
 			rm ${dataPath}
-			sudo ../tools/watts-up/wattsup ttyUSB0 -s watts >> ${dataPath}  &
+			sudo nohup ../tools/watts-up/wattsup ttyUSB0 -s watts >> ${dataPath}  &
 			sleep 2 ;; 
 		("stop")
 			sudo pkill wattsup
@@ -242,7 +241,7 @@ for task in "${tasks[@]}"; do
 		svt-hevc | tungsten* | ospray* | embree* | iperf* | oidn | pyperformance-run* | indigobench* | rays1bench | \
 		cp2k | svt-av1 | dav1d* | cpuminer-opt* | vpxenc | mt-dgemm | deepspeech | octave-benchmark | unigine-valley* | \
 		unigine-heaven* | unigine-super* | build2 | build-gdb | aircrack-ng |  stockfish | x264 | x265 | ctx_clock | hmmer | cloverleaf | \
-		encode-flac | xz | povray | bzip2 | hpcg | sockperf* | qgears* | glmark2* | lzbench* )
+		encode-flac | xz | povray | bzip2 | hpcg | sockperf* | qgears* | glmark2* | lzbench* | zstd )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
