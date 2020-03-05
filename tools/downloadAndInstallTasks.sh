@@ -1888,8 +1888,8 @@ esac
 cd Unigine_Superposition-1.0/
 rm -f ~/.Superposition/automation/log*.txt
 ./bin/superposition  -data_path ../  -console_command \"config_readonly 1 && world_load superposition/superposition\" \
-\$getConfigurations" > unigine-tropics
-chmod +x unigine-tropics
+\$getConfigurations" > unigine-super
+chmod +x unigine-super
 cd ../
 
 echo "-------Downloading and installing build2"
