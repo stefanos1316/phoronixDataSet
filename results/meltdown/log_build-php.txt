@@ -1,0 +1,6 @@
+mkdir: cannot create directory 'ext/date/lib/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+
+real	1m46,354s
+user	9m9,908s
+sys	0m31,296s

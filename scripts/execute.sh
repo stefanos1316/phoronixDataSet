@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="meltdown"
+scenario="stock"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
@@ -67,7 +67,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
-taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
+tasks=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"sudokut" "nero2d" "minion ../inputs/minions.minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
@@ -122,7 +122,6 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"dav1d chimera_8b_1080p.ivf" "dav1d chimera_10b_1080p.ivf" "cpuminer-opt lbry" "cpuminer-opt sha256t" "cpuminer-opt skein" \
 		"cpuminer-opt myr-gr" "cpuminer-opt m7m" "cpuminer-opt deep" "vpxenc" "mt-dgemm" "deepspeech" "octave-benchmark" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
-tasks=("build-linux-kernel")
 
 function startServers {
 	case $1 in

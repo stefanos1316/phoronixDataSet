@@ -1,0 +1,7 @@
+stress-ng: info:  [21458] defaulting to a 86400 second run per stressor
+stress-ng: info:  [21458] dispatching hogs: 8 vecmath
+stress-ng: info:  [21458] successful run completed in 19.15s
+
+real	0m19,362s
+user	2m30,447s
+sys	0m0,017s

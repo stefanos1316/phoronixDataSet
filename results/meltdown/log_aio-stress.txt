@@ -1,0 +1,16 @@
+dropping thread count to the number of contexts 1
+file size 15360MB, record size 64KB, depth 64, ios per iteration 8
+max io_submit 8, buffer alignment set to 4KB
+threads 1 files 1 contexts 1 context offset 2MB verification off
+write on temp (165.00 MB/s) 15360.00 MB in 93.09s
+thread 0 write totals (133.70 MB/s) 15360.00 MB in 114.89s
+read on temp (137.65 MB/s) 15360.00 MB in 111.59s
+thread 0 read totals (137.51 MB/s) 15360.00 MB in 111.70s
+random write on temp (61.93 MB/s) 15360.00 MB in 248.02s
+thread 0 random write totals (47.75 MB/s) 15360.00 MB in 321.68s
+random read on temp (85.32 MB/s) 15360.00 MB in 180.02s
+thread 0 random read totals (85.30 MB/s) 15360.00 MB in 180.07s
+
+real	12m8,396s
+user	0m0,431s
+sys	0m22,141s

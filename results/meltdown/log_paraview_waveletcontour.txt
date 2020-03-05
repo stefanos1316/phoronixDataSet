@@ -1,0 +1,9 @@
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/Rendering/OpenGL2/vtkXOpenGLRenderWindow.cxx, line 297
+vtkXOpenGLRenderWindow (0x4a2a080): bad X server connection. DISPLAY=localhost:10.0. Aborting.
+
+
+Aborted (core dumped)
+
+real	0m5,282s
+user	0m4,855s
+sys	0m0,232s

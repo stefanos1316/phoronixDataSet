@@ -1,0 +1,19 @@
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3426 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3205 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3152 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3515 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3161 msec =====
+
+real	0m50,219s
+user	2m41,951s
+sys	0m4,642s

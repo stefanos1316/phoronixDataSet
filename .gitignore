@@ -11,7 +11,6 @@ inputs/gcc-8.2.0*
 inputs/missile.domn.0.2M
 inputs/Pfam_ls
 inputs/tmp_xz.txt
-results/*
 tasks/scimark2/*.o
 tasks/dcraw/*.NEF
 tasks/minions/test_instances/*

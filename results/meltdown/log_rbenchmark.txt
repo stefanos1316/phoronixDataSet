@@ -1,0 +1,5 @@
+Loading required package: Matrix
+
+real	0m26,945s
+user	0m51,927s
+sys	0m13,893s

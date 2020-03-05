@@ -1,0 +1,5 @@
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_json_loads.py --rigorous --output /tmp/tmpm338x1u3`
+
+real	0m24,804s
+user	0m24,481s
+sys	0m0,337s

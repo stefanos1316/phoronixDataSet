@@ -1,0 +1,6 @@
+read 65536 points
+finish local search
+
+real	0m42,375s
+user	5m31,074s
+sys	0m0,096s

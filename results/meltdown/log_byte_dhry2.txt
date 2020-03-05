@@ -1,0 +1,5 @@
+join: /tmp/9360.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+
+real	2m2,081s
+user	1m0,038s
+sys	0m0,008s
