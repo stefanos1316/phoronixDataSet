@@ -1,0 +1,5 @@
++ ./embree asian_dragon
+
+real	1m58,602s
+user	15m34,723s
+sys	0m0,600s

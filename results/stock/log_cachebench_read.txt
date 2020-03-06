@@ -1,0 +1,5 @@
++ ../tools/tasks_test/cachebench/cachebench read -r -m 9
+
+real	0m27,602s
+user	0m27,578s
+sys	0m0,000s

@@ -1,0 +1,5 @@
++ ../tools/tasks_test/jxrend/jxrend
+
+real	0m0,036s
+user	0m0,001s
+sys	0m0,000s

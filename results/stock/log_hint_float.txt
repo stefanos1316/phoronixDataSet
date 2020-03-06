@@ -1,0 +1,5 @@
++ ./hint float
+
+real	6m37,607s
+user	6m37,504s
+sys	0m0,000s

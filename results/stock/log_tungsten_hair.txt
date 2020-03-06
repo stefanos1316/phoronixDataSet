@@ -1,0 +1,5 @@
++ ./tungsten hair
+
+real	1m0,333s
+user	7m55,209s
+sys	0m0,046s

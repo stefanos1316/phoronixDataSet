@@ -1,0 +1,7 @@
++ ./paraview manyspheres
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/Rendering/OpenGL2/vtkXOpenGLRenderWindow.cxx, line 297
+vtkXOpenGLRenderWindow (0x48e9820): bad X server connection. DISPLAY=Aborted (core dumped)
+
+real	0m21,681s
+user	0m12,989s
+sys	0m2,352s

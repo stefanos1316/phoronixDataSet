@@ -1,0 +1,5 @@
++ ../tools/tasks_test/blake2s/blake2s 100
+
+real	0m40,026s
+user	0m39,977s
+sys	0m0,028s

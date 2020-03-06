@@ -1,0 +1,5 @@
++ ./ramspeed scale_int
+
+real	2m19,794s
+user	2m18,893s
+sys	0m0,824s

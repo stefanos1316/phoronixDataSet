@@ -1,0 +1,10 @@
++ ./paraview waveletvolume
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/ParaViewCore/ClientServerCore/Rendering/vtkPVRenderView.cxx, line 1916
+vtkPVRenderView (0x45931e0): Some of the representations in this view require remote rendering which, however, is not available. Rendering may not work as expected.
+
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/Rendering/OpenGL2/vtkXOpenGLRenderWindow.cxx, line 297
+vtkXOpenGLRenderWindow (0x45e7bc0): bad X server connection. DISPLAY=Aborted (core dumped)
+
+real	0m1,681s
+user	0m1,544s
+sys	0m0,060s

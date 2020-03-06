@@ -1,0 +1,5 @@
++ ./botan Blowfish
+
+real	0m20,177s
+user	0m20,173s
+sys	0m0,004s

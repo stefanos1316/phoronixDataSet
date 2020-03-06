@@ -1,0 +1,5 @@
++ ./lzbench -ezstd ../inputs/linux-5.3.tar.gz
+
+real	10m24,808s
+user	10m20,758s
+sys	0m0,568s

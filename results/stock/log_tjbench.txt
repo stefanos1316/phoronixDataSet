@@ -1,0 +1,5 @@
++ ./tjbench
+
+real	0m24,978s
+user	0m24,470s
+sys	0m0,096s

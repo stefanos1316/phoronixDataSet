@@ -1,0 +1,8 @@
++ ../tools/tasks_test/stress-ng/stress-ng --sem 0 --sem-ops 100000000
+stress-ng: info:  [31630] defaulting to a 86400 second run per stressor
+stress-ng: info:  [31630] dispatching hogs: 8 sem
+stress-ng: info:  [31630] successful run completed in 20.61s
+
+real	0m20,616s
+user	0m51,406s
+sys	1m53,086s

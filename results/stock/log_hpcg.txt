@@ -1,0 +1,5 @@
++ ./hpcg
+
+real	4m31,409s
+user	35m52,952s
+sys	0m8,963s

@@ -1,0 +1,5 @@
++ ./tiobench random_read
+
+real	3m13,949s
+user	0m2,675s
+sys	0m20,290s

@@ -1,0 +1,6 @@
++ ./cpuminer-opt myr-gr
+5887955
+
+real	0m31,156s
+user	4m8,627s
+sys	0m0,008s

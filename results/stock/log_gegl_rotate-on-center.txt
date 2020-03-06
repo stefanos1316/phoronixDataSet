@@ -1,0 +1,5 @@
++ ./gegl rotate-on-center degrees=90
+
+real	0m49,260s
+user	1m6,281s
+sys	0m6,748s
