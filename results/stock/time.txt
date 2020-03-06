@@ -143,17 +143,7 @@ botan_CAST-256		20
 botan_KASUMI		20
 botan_Twofish		20
 build-gcc		385
-qgears_-image		146
-qgears_-render		139
-qgears_TEXT		90
-qgears_GEARSFANCY		140
-qgears_COMPO		9
-jxrend		0
 javascimark2		25
-j2dbench_all		0
-j2dbench_images		0
-j2dbench_graphics		0
-j2dbench_text		0
 sunflow		23
 sqlitebench		164
 iozone_-s2096000		86
@@ -184,9 +174,6 @@ cassandra_write		13
 cassandra_read		15
 cassandra_mixed_1_1		15
 cassandra_mixed_1_3		15
-paraview_manyspheres		21
-paraview_waveletcontour		5
-paraview_waveletvolume		1
 compilebench_initial_create		185
 compilebench_compile		185
 compilebench_read_compile_tree		180

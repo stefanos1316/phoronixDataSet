@@ -148,12 +148,7 @@ qgears_-render		6879.4
 qgears_TEXT		4317.7
 qgears_GEARSFANCY		6934.5
 qgears_COMPO		388.3
-jxrend		1066.4
 javascimark2		1257
-j2dbench_all		22965.4
-j2dbench_images		7164.2
-j2dbench_graphics		17401.9
-j2dbench_text		946.6
 sunflow		2124.5
 sqlitebench		4208.9
 iozone_-s2096000		2713.4
@@ -184,9 +179,6 @@ cassandra_write		432.4
 cassandra_read		407.5
 cassandra_mixed_1_1		316
 cassandra_mixed_1_3		430.4
-paraview_manyspheres		25721.8
-paraview_waveletcontour		237.8
-paraview_waveletvolume		26
 compilebench_initial_create		5850.3
 compilebench_compile		5661.5
 compilebench_read_compile_tree		5838
