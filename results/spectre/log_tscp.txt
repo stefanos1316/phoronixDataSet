@@ -1,0 +1,5 @@
++ ../tools/tasks_test/tscp/tscp
+
+real	0m26,258s
+user	0m26,227s
+sys	0m0,004s

@@ -129,6 +129,7 @@ tasks_with_grapihcs=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 192
 	"warsow 800x600" "warsow 1024x768" "warsow 1920x1080" "warsow 2560x1440" "paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
 	"indigobench supercar" "indigobench bedroom")
 
+taskArray="tasks_without_graphics"
 
 function startServers {
 	case $1 in
@@ -188,7 +189,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks[@]}"; do
+	for i in "${tasks_without_graphics[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi

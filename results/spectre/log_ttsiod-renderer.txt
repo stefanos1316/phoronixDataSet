@@ -1,0 +1,5 @@
++ ./ttsiod-renderer
+
+real	0m51,086s
+user	6m34,003s
+sys	0m0,052s

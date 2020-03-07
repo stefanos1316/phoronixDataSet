@@ -1,0 +1,5 @@
++ ./redis sadd
+
+real	0m13,179s
+user	0m1,626s
+sys	0m0,319s

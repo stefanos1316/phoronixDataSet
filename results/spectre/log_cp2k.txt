@@ -1,0 +1,5 @@
++ ./cp2k
+
+real	9m26,804s
+user	58m33,426s
+sys	0m2,576s

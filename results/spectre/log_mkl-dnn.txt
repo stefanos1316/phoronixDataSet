@@ -1,0 +1,5 @@
++ ./mkl-dnn rnn_training rnn
+
+real	0m37,940s
+user	4m59,524s
+sys	0m0,984s

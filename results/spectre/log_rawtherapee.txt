@@ -1,0 +1,5 @@
++ ./rawtherapee
+
+real	1m31,801s
+user	9m18,257s
+sys	0m25,310s
