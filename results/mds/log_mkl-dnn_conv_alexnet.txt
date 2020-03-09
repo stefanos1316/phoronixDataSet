@@ -1,0 +1,5 @@
++ ./mkl-dnn conv_alexnet conv
+
+real	0m18,058s
+user	1m9,436s
+sys	0m0,580s

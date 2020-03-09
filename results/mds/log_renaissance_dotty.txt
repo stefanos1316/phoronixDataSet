@@ -1,0 +1,5 @@
++ ./renaissance dotty
+
+real	0m7,577s
+user	0m22,042s
+sys	0m0,372s

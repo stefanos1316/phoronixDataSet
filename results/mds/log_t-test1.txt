@@ -1,0 +1,5 @@
++ ../tools/tasks_test/t-test1/t-test1 5000
+
+real	0m7,833s
+user	0m7,914s
+sys	0m7,808s

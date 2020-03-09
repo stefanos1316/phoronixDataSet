@@ -1,0 +1,5 @@
++ ./brlcad run -P 8
+
+real	13m40,621s
+user	54m14,553s
+sys	0m1,499s

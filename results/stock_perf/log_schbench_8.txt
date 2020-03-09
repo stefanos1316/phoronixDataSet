@@ -1,0 +1,17 @@
+Latency percentiles (usec)
+	50.0000th: 4696
+	75.0000th: 13168
+	90.0000th: 28384
+	95.0000th: 39616
+	*99.0000th: 58048
+	99.5000th: 67968
+	99.9000th: 102528
+	min=0, max=170516
+
+ Performance counter stats for 'system wide':
+
+           1100,69 Joules power/energy-pkg/                                           
+             15,06 Joules power/energy-ram/                                           
+
+      30,048862013 seconds time elapsed
+

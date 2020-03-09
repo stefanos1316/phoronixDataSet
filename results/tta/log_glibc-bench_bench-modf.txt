@@ -1,0 +1,5 @@
++ ./glibc-bench bench-modf
+
+real	0m10,268s
+user	0m8,628s
+sys	0m1,624s

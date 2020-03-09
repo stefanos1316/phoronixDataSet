@@ -1,0 +1,12 @@
+Warning: more than 4 verts in face!
+         Polygons not supported.
+         Reloading as a triangle mesh.
+#osp:sg: failed to load texture 'sanm/06-30-1997.png'
+
+ Performance counter stats for 'system wide':
+
+           2270,11 Joules power/energy-pkg/                                           
+             63,42 Joules power/energy-ram/                                           
+
+      58,029283776 seconds time elapsed
+

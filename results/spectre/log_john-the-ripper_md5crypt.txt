@@ -1,0 +1,6 @@
++ ./john-the-ripper md5crypt
+Will run 4 OpenMP threads
+
+real	1m0,118s
+user	3m59,533s
+sys	0m0,080s

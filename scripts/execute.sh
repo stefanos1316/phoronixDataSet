@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="spectre"
+scenario="stock_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
@@ -225,16 +225,16 @@ for task in "${tasks_without_graphics[@]}"; do
 	benchmark=${taskName}
 	checkIfSubstringExistsMoreTimesInArray ${task}
 	totalTime=0
-	useWattsUpPro start ${taskName}
+	#useWattsUpPro start ${taskName}
 
 	case "$taskName" in
 		("apache" | "nginx" ) 
 			startServers $task
 			if [ $taskName == "apache" ]; then
-				time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/${scenario}/log_${taskName}.txt
+				sudo perf stat -a -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://localhost:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/apache2/bin/apachectl -k stop
 			else
-				time (ab -n 1000000 -c 100 http://0.0.0.0:80/) 2> ../results/${scenario}/log_${taskName}.txt
+				sudo perf stat -a -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://0.0.0.0:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/nginx/sbin/nginx -s stop
 			fi
 			getTimeInSeconds ../results/log_${taskName}.txt ;;
@@ -255,14 +255,19 @@ for task in "${tasks_without_graphics[@]}"; do
 			fi
 
 			cd ../${taskDirectory}/${benchmark}
-			time (./${task}) 2> ../../../results/${scenario}/log_${taskName}.txt
+			sudo perf stat -a -e "power/energy-pkg/,power/energy-ram/" ./${task} 2> ../../../results/${scenario}/log_${taskName}.txt
 			cd ../../../scripts ;;
-		(*) time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/${scenario}/log_${taskName}.txt ;;
+		(*) sudo perf stat -a -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
 	esac
 
-	useWattsUpPro stop ${taskName}
-	getTimeInSeconds ../results/${scenario}/log_${taskName}.txt
-	echo "${taskName}		${totalTime}" >> ../results/${scenario}/time.txt
+	#useWattsUpPro stop ${taskName}
+	#getTimeInSeconds ../results/${scenario}/log_${taskName}.txt
+	totalTime=`grep 'seconds' ../results/${scenario}/log_${taskName}.txt | awk -F',' '{print $1}'`
+        energyPkg=`grep 'energy-pkg' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | sed 's/,/\./g'`
+        energyRam=`grep 'energy-ram' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | sed 's/,/\./g'`
+        totalEnergy=`echo $energyPkg + $energyRam| bc`
+        echo "${taskName}               ${totalTime}" >> ../results/${scenario}/time.txt
+        echo "${taskName}               ${totalEnergy}" >> ../results/${scenario}/energy.txt
 done
 
 dumpGarbage

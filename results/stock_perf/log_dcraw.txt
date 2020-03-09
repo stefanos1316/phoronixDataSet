@@ -1,0 +1,26 @@
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5031.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5032.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5033.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5034.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5035.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5037.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5038.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5039.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5040.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5041.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5042.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5043.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5044.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5045.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5046.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5047.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5048.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5049.ppm
+
+ Performance counter stats for 'system wide':
+
+            483,68 Joules power/energy-pkg/                                           
+             15,48 Joules power/energy-ram/                                           
+
+      25,961696325 seconds time elapsed
+

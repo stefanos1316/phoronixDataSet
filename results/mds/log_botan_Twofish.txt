@@ -1,0 +1,5 @@
++ ./botan Twofish
+
+real	0m20,208s
+user	0m20,203s
+sys	0m0,004s

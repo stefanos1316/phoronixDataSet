@@ -1,0 +1,6 @@
++ ./john-the-ripper bcrypt
+Will run 4 OpenMP threads
+
+real	0m30,390s
+user	1m59,531s
+sys	0m0,068s

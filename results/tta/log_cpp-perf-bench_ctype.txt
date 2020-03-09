@@ -1,0 +1,5 @@
++ ./cpp-perf-bench ctype
+
+real	0m30,699s
+user	0m30,698s
+sys	0m0,000s

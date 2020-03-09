@@ -1,0 +1,5 @@
++ ./embree crown
+
+real	3m14,015s
+user	12m47,151s
+sys	0m0,340s

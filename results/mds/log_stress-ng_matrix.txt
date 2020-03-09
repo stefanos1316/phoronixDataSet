@@ -1,0 +1,9 @@
++ ../tools/tasks_test/stress-ng/stress-ng --matrix 0 --matrix-ops 400000
+stress-ng: info:  [18244] defaulting to a 86400 second run per stressor
+stress-ng: info:  [18244] dispatching hogs: 8 matrix
+stress-ng: info:  [18244] cache allocate: using built-in defaults as unable to determine cache details
+stress-ng: info:  [18244] successful run completed in 18.62s
+
+real	0m18,621s
+user	1m14,037s
+sys	0m0,002s

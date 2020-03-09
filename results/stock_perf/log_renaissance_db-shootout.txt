@@ -1,0 +1,11 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+ Performance counter stats for 'system wide':
+
+            603,24 Joules power/energy-pkg/                                           
+             27,37 Joules power/energy-ram/                                           
+
+      21,535198209 seconds time elapsed
+

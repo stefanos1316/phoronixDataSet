@@ -1,0 +1,5 @@
++ ./darktable masskrug.NEF
+
+real	0m14,153s
+user	0m41,058s
+sys	0m2,260s

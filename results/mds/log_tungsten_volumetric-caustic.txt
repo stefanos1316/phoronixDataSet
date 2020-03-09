@@ -1,0 +1,9 @@
++ ./tungsten volumetric-caustic
+Warning: pthread_setaffinity_np failed
+Warning: pthread_setaffinity_np failed
+Warning: pthread_setaffinity_np failed
+Warning: pthread_setaffinity_np failed
+
+real	0m26,233s
+user	1m44,286s
+sys	0m0,016s

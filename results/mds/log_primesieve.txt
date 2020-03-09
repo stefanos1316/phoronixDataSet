@@ -1,0 +1,5 @@
++ ../tools/tasks_test/primesieve/primesieve 1e12 --quiet --time
+
+real	0m58,708s
+user	3m53,799s
+sys	0m0,012s

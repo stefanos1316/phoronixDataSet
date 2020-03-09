@@ -1,0 +1,5 @@
++ ./osbench launch_programs
+
+real	0m18,473s
+user	0m52,957s
+sys	0m8,365s

@@ -1,0 +1,6 @@
++ ./pyperformance-run python_startup
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_python_startup.py --rigorous --output /tmp/tmpo5wbk5aj`
+
+real	1m24,694s
+user	1m10,589s
+sys	0m14,653s

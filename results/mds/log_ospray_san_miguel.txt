@@ -1,0 +1,9 @@
++ ./ospray san_miguel
+Warning: more than 4 verts in face!
+         Polygons not supported.
+         Reloading as a triangle mesh.
+#osp:sg: failed to load texture 'sanm/06-30-1997.png'
+
+real	1m10,615s
+user	3m12,384s
+sys	0m1,508s
