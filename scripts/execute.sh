@@ -262,6 +262,7 @@ for task in "${tasks_without_graphics[@]}"; do
 			perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ./${task} 2> ../../../results/${scenario}/log_${taskName}.txt
 			cd ../../../scripts ;;
 		(*) perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
+	esac
 
 	#useWattsUpPro stop ${taskName}
 	#getTimeInSeconds ../results/${scenario}/log_${taskName}.txt
