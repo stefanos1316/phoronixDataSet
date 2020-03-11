@@ -1,0 +1,5 @@
++ ./glibc-bench bench-ffs
+
+real	0m10,267s
+user	0m8,512s
+sys	0m1,740s

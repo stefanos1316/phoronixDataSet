@@ -1,0 +1,5 @@
++ ./glibc-bench bench-sincos
+
+real	0m20,636s
+user	0m20,563s
+sys	0m0,072s

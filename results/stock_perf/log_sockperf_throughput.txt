@@ -1,0 +1,188 @@
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: Killed
+
+ Performance counter stats for 'system wide':
+
+            119,37 Joules power/energy-pkg/                                           
+              6,12 Joules power/energy-ram/                                           
+
+       5,414686643 seconds time elapsed
+
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 5: ./sockperf: Cannot fork
+Killed
+./sockperf: 5: ./sockperf: Cannot fork
+Killed
+Killed
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 5: ./sockperf: Cannot fork
+Killed
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+Killed
+Killed
+Killed
+Killed
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 4: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+Killed
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+sockperf: no process found
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+sockperf: no process found
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+sockperf: no process found
+sockperf: no process found
+sockperf: no process found
+Killed
+sockperf: no process found
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 4: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 5: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+Killed
+./sockperf: 4: ./sockperf: Cannot fork
+Killed
+Killed
+./sockperf: 3: ./sockperf: Cannot fork
+Killed
+./sockperf: 4: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+./sockperf: 3: ./sockperf: Cannot fork
+./sockperf: 0: ./sockperf: Cannot fork
+Killed
+./sockperf: 3: ./sockperf: Cannot fork
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+Killed
+sockperf: no process found
+sockperf: no process found

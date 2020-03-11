@@ -1,0 +1,5 @@
++ ./ramspeed copy_float
+
+real	2m19,671s
+user	2m18,750s
+sys	0m0,815s

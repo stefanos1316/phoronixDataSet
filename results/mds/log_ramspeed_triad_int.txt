@@ -1,0 +1,5 @@
++ ./ramspeed triad_int
+
+real	2m19,743s
+user	2m16,929s
+sys	0m0,691s

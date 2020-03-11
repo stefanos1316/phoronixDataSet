@@ -1,0 +1,9 @@
+Read : 0 / 160 MB ==>  0% Read : 0 / 160 MB ==>  0% Read : 1 / 160 MB ==> 100% Read : 2 / 160 MB ==> 100% Read : 5 / 160 MB ==> 100% Read : 7 / 160 MB ==> 100% Read : 9 / 160 MB ==> 100% Read : 14 / 160 MB ==> 100% Read : 16 / 160 MB ==> 100% Read : 22 / 160 MB ==> 100% Read : 26 / 160 MB ==> 100% Read : 31 / 160 MB ==> 100% Read : 35 / 160 MB ==> 100% Read : 39 / 160 MB ==> 100% Read : 44 / 160 MB ==> 100% Read : 48 / 160 MB ==> 100% Read : 53 / 160 MB ==> 99% Read : 57 / 160 MB ==> 99% Read : 62 / 160 MB ==> 99% Read : 66 / 160 MB ==> 99% Read : 71 / 160 MB ==> 99% Read : 74 / 160 MB ==> 99% Read : 79 / 160 MB ==> 99% Read : 83 / 160 MB ==> 99% Read : 88 / 160 MB ==> 99% Read : 92 / 160 MB ==> 99% Read : 97 / 160 MB ==> 99% Read : 101 / 160 MB ==> 99% Read : 106 / 160 MB ==> 99% Read : 110 / 160 MB ==> 99% Read : 114 / 160 MB ==> 99% Read : 119 / 160 MB ==> 99% Read : 123 / 160 MB ==> 99% Read : 127 / 160 MB ==> 99% Read : 130 / 160 MB ==> 99% Read : 134 / 160 MB ==> 99% Read : 138 / 160 MB ==> 99% Read : 142 / 160 MB ==> 99% Read : 145 / 160 MB ==> 99% Read : 147 / 160 MB ==> 99% Read : 149 / 160 MB ==> 99% Read : 151 / 160 MB ==> 99% Read : 153 / 160 MB ==> 99% Read : 155 / 160 MB ==> 99% Read : 157 / 160 MB ==> 99% Read : 158 / 160 MB ==> 99% Read : 160 / 160 MB ==> 99%                                                                                linux-5.3.tar.gz     : 99.14%   (168029263 => 166586285 bytes, linux-5.3.tar.gz.zst) 
+
+ Performance counter stats for 'system wide':
+
+            368,58 Joules power/energy-pkg/                                           
+             26,70 Joules power/energy-ram/                                           
+
+      11,437839068 seconds time elapsed
+

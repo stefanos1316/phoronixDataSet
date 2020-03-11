@@ -1,0 +1,5 @@
++ ./gegl reflect
+
+real	0m35,928s
+user	0m35,821s
+sys	0m5,584s

@@ -1,0 +1,5 @@
++ ./node-express-loadtest
+
+real	0m11,133s
+user	0m10,633s
+sys	0m4,197s

@@ -1,0 +1,5 @@
++ ./sqlitebench
+
+real	2m27,929s
+user	0m0,300s
+sys	0m0,901s

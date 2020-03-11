@@ -1,0 +1,11 @@
+stress-ng: info:  [26939] defaulting to a 86400 second run per stressor
+stress-ng: info:  [26939] dispatching hogs: 8 sock
+stress-ng: info:  [26939] successful run completed in 33.36s
+
+ Performance counter stats for 'system wide':
+
+           1848,36 Joules power/energy-pkg/                                           
+             20,99 Joules power/energy-ram/                                           
+
+      33,367783467 seconds time elapsed
+

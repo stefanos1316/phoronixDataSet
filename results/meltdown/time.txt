@@ -148,12 +148,7 @@ qgears_-render		140
 qgears_TEXT		90
 qgears_GEARSFANCY		140
 qgears_COMPO		9
-jxrend		39
 javascimark2		28
-j2dbench_all		460
-j2dbench_images		141
-j2dbench_graphics		327
-j2dbench_text		24
 sunflow		23
 sqlitebench		149
 iozone_-s2096000		89
@@ -184,9 +179,6 @@ cassandra_write		13
 cassandra_read		15
 cassandra_mixed_1_1		15
 cassandra_mixed_1_3		15
-paraview_manyspheres		966
-paraview_waveletcontour		5
-paraview_waveletvolume		1
 compilebench_initial_create		185
 compilebench_compile		187
 compilebench_read_compile_tree		183

@@ -1,0 +1,5 @@
++ ./xz
+
+real	1m22,195s
+user	1m20,086s
+sys	0m0,440s

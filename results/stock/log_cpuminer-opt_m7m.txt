@@ -1,0 +1,6 @@
++ ./cpuminer-opt m7m
+128603
+
+real	0m38,351s
+user	5m6,371s
+sys	0m0,020s

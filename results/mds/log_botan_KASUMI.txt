@@ -1,0 +1,5 @@
++ ./botan KASUMI
+
+real	0m20,056s
+user	0m20,055s
+sys	0m0,000s

@@ -1,0 +1,5 @@
++ ./osbench create_processes
+
+real	0m23,549s
+user	0m59,379s
+sys	0m23,348s

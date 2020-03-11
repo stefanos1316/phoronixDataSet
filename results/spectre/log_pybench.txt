@@ -1,0 +1,5 @@
++ ./pybench
+
+real	0m26,145s
+user	0m24,946s
+sys	0m0,023s

@@ -1,0 +1,6 @@
++ ./pyperformance-run chaos
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_chaos.py --rigorous --output /tmp/tmp8banceu5`
+
+real	0m22,151s
+user	0m21,778s
+sys	0m0,369s

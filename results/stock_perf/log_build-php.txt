@@ -1,0 +1,9 @@
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+
+ Performance counter stats for 'system wide':
+
+           4477,62 Joules power/energy-pkg/                                           
+            179,54 Joules power/energy-ram/                                           
+
+     107,953337775 seconds time elapsed
+

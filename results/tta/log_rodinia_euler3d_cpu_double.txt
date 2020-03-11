@@ -1,0 +1,5 @@
++ ./rodinia euler3d_cpu_double ../../../inputs/missile.domn.0.2M
+
+real	0m52,017s
+user	6m39,938s
+sys	0m0,637s

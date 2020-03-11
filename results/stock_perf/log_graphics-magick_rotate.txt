@@ -1,0 +1,10 @@
+Results: 8 threads 300 iter 43.89s user 197.686661s total 1.518 iter/s 6.835 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+
+ Performance counter stats for 'system wide':
+
+           1901,67 Joules power/energy-pkg/                                           
+            133,04 Joules power/energy-ram/                                           
+
+     197,690923100 seconds time elapsed
+

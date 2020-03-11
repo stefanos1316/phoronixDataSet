@@ -67,7 +67,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
-taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
+tasks_without_graphics=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"sudokut" "nero2d" "minion ../inputs/minions.minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
@@ -83,8 +83,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"glibc-bench bench-pthread_once" "glibc-bench bench-tanh" "glibc-bench bench-sqrt" "glibc-bench bench-sin" "glibc-bench bench-cos" \
 		"glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" "glibc-bench bench-sinh" "glibc-bench bench-modf" \
 		"glibc-bench bench-exp" "glibc-bench bench-log2" "himeno XL" "hint float" "hint double" "hpcg" "build-linux-kernel"\
-		"john-the-ripper bcrypt" "john-the-ripper md5crypt" "lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
-		"lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" \
+		"john-the-ripper bcrypt" "john-the-ripper md5crypt" "lzbench -ezstd" "lzbench -ebrotli" "lzbench -elibdeflate" "lzbench -exz" "m-queens 2 18" \
 		"mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" "mbw 8192 MiB -n 100 -t2" \
 		"mcperf get" "mcperf set" "mcperf delete" "mcperf add" "mcperf replace" "mcperf append" "mcperf prepend" \
 		"mkl-dnn conv_all conv" "mkl-dnn conv_googlenet_v3 conv" "mkl-dnn conv_alexnet conv" "mkl-dnn ip_1d ip" "mkl-dnn ip_all ip" "mkl-dnn rnn_training rnn" \
@@ -101,11 +100,8 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "postmark ../inputs/postmark.pmrc" \
 		"fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" "bork" "ffmpeg" "encode-mp3" \
 		"graphics-magick minify" "graphics-magick gaussian 0x1" "graphics-magick sharpen 0x2.0" "graphics-magick rotate 90" "graphics-magick resize 50%" \
-		"rocksdb fillseq" "rocksdb fillrandom" "rocksdb readrandom" \
-		"cassandra write" "cassandra read" "cassandra mixed_1_1" "cassandra mixed_1_3" \
-		"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
-		"compilebench initial_create" "compilebench compile" \
-		"compilebench read_compile_tree" "smallpt 128" "build-php" "inkscape" "rawtherapee" "tjbench" \
+		"rocksdb fillseq" "rocksdb fillrandom" "rocksdb readrandom" "cassandra write" "cassandra read" "cassandra mixed_1_1" "cassandra mixed_1_3" \
+		"compilebench initial_create" "compilebench compile" "compilebench read_compile_tree" "smallpt 128" "build-php" "inkscape" "rawtherapee" "tjbench" \
 		"darktable masskrug.NEF" "darktable bench.SRW" "darktable server_room.NEF" "rsvg" "gegl rotate-on-center degrees=90" "gegl scale-size x=400 y=400" \
 		"gegl antialias" "gegl cartoon" "gegl color-enhance" "gegl crop x=100 y=100 width=1920 height=1080" "gegl wavelet-blur" "gegl reflect" \
 		"gegl tile-glass tile-width=20 tile-height=20" "renaissance akka-uct" "renaissance reactors" "renaissance als" "renaissance naive-bayes" \
@@ -124,7 +120,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
 # For the tasks below avoid running them remotely (ssh) because it reduces their performance
-tasks=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
+tasks_with_grapihcs=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \V
 	"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
 	"unigine-valley 800x600" "unigine-valley 1024x768" "unigine-valley 1920x1080" "unigine-valley 2560x1440" \
 	"unigine-heaven 800x600" "unigine-heaven 1024x768" "unigine-heaven 1920x1080" "unigine-heaven 2560x1440" \
@@ -132,7 +128,8 @@ tasks=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "opena
         "qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" \
 	"nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440" \
 	"xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" \
-	"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" )
+	"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
+	"indigobench supercar" "indigobench bedroom" "j2dbench all" "j2dbench images" "j2dbench graphics" "j2dbench text")
 
 taskArray="tasks_without_graphics"
 
@@ -189,12 +186,12 @@ function dumpGarbage {
 }
 
 # Note: for the above to work the alternative scenarios
-# of the bench suite must be immediatly after the bench's name
+# of the bench suite must be immediatly after the benchs name
 function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks[@]}"; do
+	for i in "${tasks_without_graphics[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi
@@ -226,7 +223,7 @@ sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
-for task in "${tasks[@]}"; do
+for task in "${tasks_without_graphics[@]}"; do
 
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}
@@ -265,7 +262,6 @@ for task in "${tasks[@]}"; do
 			perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ./${task} 2> ../../../results/${scenario}/log_${taskName}.txt
 			cd ../../../scripts ;;
 		(*) perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
-	esac
 
 	#useWattsUpPro stop ${taskName}
 	#getTimeInSeconds ../results/${scenario}/log_${taskName}.txt

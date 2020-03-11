@@ -1,0 +1,5 @@
++ ./svt-hevc
+
+real	0m27,887s
+user	3m29,075s
+sys	0m1,175s

@@ -1,0 +1,7 @@
++ ./graphics-magick sharpen 0x2.0
+Results: 4 threads 300 iter 1356.20s user 503.592456s total 0.596 iter/s 0.221 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+
+real	8m23,605s
+user	22m15,936s
+sys	0m20,278s

@@ -1,0 +1,5 @@
++ ./cpp-perf-bench mathlib
+
+real	5m58,798s
+user	5m58,760s
+sys	0m0,004s

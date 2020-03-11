@@ -1,0 +1,9 @@
+./hmmer: 1: ./hmmer: !#/bin/bash: not found
+
+ Performance counter stats for 'system wide':
+
+            425,14 Joules power/energy-pkg/                                           
+             21,76 Joules power/energy-ram/                                           
+
+       9,005636301 seconds time elapsed
+

@@ -1,0 +1,5 @@
++ ./darktable server_room.NEF
+
+real	0m9,827s
+user	1m4,787s
+sys	0m1,951s

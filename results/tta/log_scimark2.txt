@@ -1,0 +1,5 @@
++ ../tools/tasks_test/scimark2/scimark2
+
+real	0m29,881s
+user	0m29,863s
+sys	0m0,000s

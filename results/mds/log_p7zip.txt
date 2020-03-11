@@ -1,0 +1,5 @@
++ ../tools/tasks_test/p7zip/p7zip b
+
+real	0m52,049s
+user	3m17,858s
+sys	0m1,367s

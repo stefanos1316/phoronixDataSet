@@ -1,0 +1,9 @@
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_raytrace.py --rigorous --output /tmp/tmpu5fynwhu`
+
+ Performance counter stats for 'system wide':
+
+           2071,65 Joules power/energy-pkg/                                           
+             43,22 Joules power/energy-ram/                                           
+
+      85,265217964 seconds time elapsed
+

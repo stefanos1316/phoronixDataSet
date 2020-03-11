@@ -1,0 +1,9 @@
++ ../tools/tasks_test/stress-ng/stress-ng --sem 0 --sem-ops 100000000
+stress-ng: info:  [22026] defaulting to a 86400 second run per stressor
+stress-ng: info:  [22026] dispatching hogs: 8 sem
+stress-ng: info:  [22026] cache allocate: using built-in defaults as unable to determine cache details
+stress-ng: info:  [22026] successful run completed in 16.91s
+
+real	0m16,916s
+user	0m30,353s
+sys	0m36,849s

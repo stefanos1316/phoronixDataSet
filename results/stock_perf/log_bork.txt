@@ -1,0 +1,11 @@
+1048576+0 records in
+1048576+0 records out
+2147483648 bytes (2,1 GB, 2,0 GiB) copied, 1,98974 s, 1,1 GB/s
+
+ Performance counter stats for 'system wide':
+
+            251,80 Joules power/energy-pkg/                                           
+             10,29 Joules power/energy-ram/                                           
+
+      16,654087643 seconds time elapsed
+

@@ -1,0 +1,9 @@
++ ../tools/tasks_test/stress-ng/stress-ng --sock 0 --sock-ops 100000
+stress-ng: info:  [22081] defaulting to a 86400 second run per stressor
+stress-ng: info:  [22081] dispatching hogs: 8 sock
+stress-ng: info:  [22081] cache allocate: using built-in defaults as unable to determine cache details
+stress-ng: info:  [22081] successful run completed in 44.71s
+
+real	0m44,716s
+user	0m28,347s
+sys	2m29,877s

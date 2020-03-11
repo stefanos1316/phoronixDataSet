@@ -1,0 +1,8 @@
++ ./build-php
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+mkdir: cannot create directory 'ext/hash/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+
+real	2m3,168s
+user	5m57,681s
+sys	0m21,155s

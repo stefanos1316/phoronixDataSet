@@ -1,0 +1,5 @@
++ ./fs-mark 5000_Files_1MB_Size_4_Threads
+
+real	6m3,826s
+user	0m1,559s
+sys	0m18,457s

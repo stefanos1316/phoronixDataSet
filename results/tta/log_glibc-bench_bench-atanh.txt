@@ -1,0 +1,5 @@
++ ./glibc-bench bench-atanh
+
+real	0m10,254s
+user	0m9,946s
+sys	0m0,308s

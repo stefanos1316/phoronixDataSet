@@ -1,0 +1,9 @@
+join: /tmp/3927.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+
+ Performance counter stats for 'system wide':
+
+           1648,36 Joules power/energy-pkg/                                           
+             60,46 Joules power/energy-ram/                                           
+
+     121,613112161 seconds time elapsed
+

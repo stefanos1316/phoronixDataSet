@@ -1,0 +1,5 @@
++ ./glibc-bench bench-log2
+
+real	0m10,253s
+user	0m9,777s
+sys	0m0,476s

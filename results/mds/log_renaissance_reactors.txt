@@ -1,0 +1,5 @@
++ ./renaissance reactors
+
+real	0m16,896s
+user	0m40,825s
+sys	0m3,954s

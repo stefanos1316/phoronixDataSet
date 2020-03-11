@@ -1,0 +1,15 @@
++ ./dacapo eclipse
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 21708 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 21561 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 25371 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 21235 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 25948 msec =====
+
+real	2m10,145s
+user	4m31,218s
+sys	0m8,176s

@@ -1,0 +1,5 @@
++ ./mkl-dnn conv_all conv
+
+real	10m43,023s
+user	42m7,700s
+sys	0m13,096s

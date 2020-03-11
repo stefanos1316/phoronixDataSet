@@ -1,0 +1,5 @@
++ ./osbench mem_alloc
+
+real	0m24,844s
+user	0m19,698s
+sys	0m5,144s

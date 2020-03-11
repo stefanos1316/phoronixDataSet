@@ -1,0 +1,5 @@
++ ../tools/tasks_test/fhourstones/fhourstones
+
+real	1m58,889s
+user	1m58,853s
+sys	0m0,012s

@@ -1,0 +1,7 @@
++ ./sockperf ping-pong --mps=max -m 64 -t 30
+./sockperf: 0: ./sockperf: Cannot fork
+execute.sh: line 222:  2326 Killed                  ./${task}
+
+real	0m5,065s
+user	0m0,000s
+sys	0m0,001s
