@@ -1,0 +1,9 @@
++ ./glmark2 1024x768
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+
+real	5m32.089s
+user	19m19.058s
+sys	0m16.396s

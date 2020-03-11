@@ -1,0 +1,6 @@
++ ../tools/tasks_test/jxrend/jxrend
+../tools/tasks_test/jxrend/jxrend: line 4: ./jxrend-bin: No such file or directory
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s

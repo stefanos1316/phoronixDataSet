@@ -1,0 +1,25 @@
++ ./qgears COMPO
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-sgeorgiou'
+setting mode to  2
+
+real	0m46.155s
+user	0m12.508s
+sys	0m0.614s

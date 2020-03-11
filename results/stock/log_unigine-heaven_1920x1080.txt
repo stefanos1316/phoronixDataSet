@@ -1,0 +1,8 @@
++ ./unigine-heaven 1920x1080
+Engine::init(): can't create log file
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+
+real	7m18.881s
+user	47m10.456s
+sys	0m4.996s

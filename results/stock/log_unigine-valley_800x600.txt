@@ -1,0 +1,8 @@
++ ./unigine-valley 800x600
+Engine::init(): can't create log file
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+
+real	3m52.317s
+user	21m30.347s
+sys	0m3.297s

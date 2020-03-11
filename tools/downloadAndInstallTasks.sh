@@ -5,20 +5,33 @@ taskScripts='scripts'
 mkdir tasks_test 
 cd tasks_test
 
-echo "-------Downloading and installing mt-dgemm"
-mkdir mt-dgemm && cd mt-dgemm
-wget http://phoronix-test-suite.com/benchmark-files/mtdgemm-crossroads-v1.0.0.tgz
-tar -xf mtdgemm-crossroads-v1.0.0.tgz && rm mtdgemm-crossroads-v1.0.0.tgz
-mv mt-dgemm/* ./ && rm -rf mt-dgemm
-cc -O3 -march=native -fopenmp -o mtdgemm src/mt-dgemm.c
-echo "#!/bin/sh
-export OMP_NUM_THREADS=\$(nproc --all)
-export OMP_PLACES=cores
-export OMP_PROC_BIND=close
-./mtdgemm 3072 4" > mt-dgemm
-chmod +x mt-dgemm
+echo "-------Downloading and installing aio-stress"
+mkdir aio-stress && cd aio-stress
+wget http://fsbench.filesystems.org/bench/aio-stress.c
+cc -Wall -pthread -o aio-stress aio-stress.c -laio
 cd ../
+
 exit
+
+echo "-------Downloading and installing xonotic"
+mkdir xonotic && cd xonotic
+wget http://dl.xonotic.org/xonotic-0.8.2.zip
+unzip xonotic-0.8.2.zip && rm xonotic-0.8.2.zip
+mv Xonotic/* ./ && rm -rf Xonotic
+echo "#!/bin/sh
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+vid_width 800 +vid_height 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+vid_width 1024 +vid_height 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+vid_width 1920 +vid_height 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+vid_width 2560 +vid_height 1440\";;
+esac
+./xonotic-linux64-sdl -nohome -benchmark demos/the-big-keybench +r_glsl 1 \$getConfigurations" > xonotic
+chmod +x xonotic
+cd ../
 
 echo "-------Downloading and installing j2dbench"
 mkdir j2dbench && cd j2dbench
@@ -44,14 +57,14 @@ java -jar dist/J2DAnalyzer.jar \$TEST_TYPE.res" > j2dbench
 chmod +x j2dbench
 cd ../
 
-echo "-------Downloading and installing qgears"
+cho "-------Downloading and installing qgears"
 mkdir qgears && cd qgears
 wget http://www.phoronix-test-suite.com/benchmark-files/qgears2.tar.bz2
 tar -jxf qgears2.tar.bz2 && rm qgears2.tar.bz2
 mv qgears2/* ./ && rm -rf qgears2
 chmod +w commonrenderer.cpp
-echo "--- commonrenderer.cpp.orig	2008-11-02 16:19:16.000000000 -0500
-+++ commonrenderer.cpp	2008-11-02 16:20:33.000000000 -0500
+echo "--- commonrenderer.cpp.orig       2008-11-02 16:19:16.000000000 -0500
++++ commonrenderer.cpp  2008-11-02 16:20:33.000000000 -0500
 @@ -31,6 +31,7 @@
  double gear1_rotation = 35;
  double gear2_rotation = 24;
@@ -83,6 +96,286 @@ for i in {1..10}; do
 ./qgears-bin \$1
 done" > qgears
 chmod +x qgears
+cd ../
+
+echo "-------Downloading and installing indigobench"
+mkdir indigobench && cd indigobench
+wget ftp://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.59.tar.gz
+tar -xf libpng-1.2.59.tar.gz && rm libpng-1.2.59.tar.gz 
+mkdir libpng
+cd libpng-1.2.59
+./configure --prefix=`pwd/../libpng`
+make -j $(nproc --all)
+make install
+cd ../
+wget http://downloads.indigorenderer.com/dist/beta/IndigoBenchmark_x64_v4.0.64.tar.gz
+tar -xf IndigoBenchmark_x64_v4.0.64.tar.gz && rm IndigoBenchmark_x64_v4.0.64.tar.gz
+mv IndigoBenchmark_x64_v4.0.64/* ./ && rm -rf IndigoBenchmark_x64_v4.0.64
+echo "#!/bin/bash
+./indigo_benchmark --silent --scenes \$1" > indigobench
+chmod +x indigobench
+cd ../
+
+echo "-------Downloading and installing jxrend"
+mkdir jxrend && cd jxrend
+wget http://www.phoronix-test-suite.com/benchmark-files/JXRenderMark-1.0.1.zip
+unzip JXRenderMark-1.0.1.zip && rm JXRenderMark-1.0.1.zip
+cc JXRenderMark.c -o jxrend -lX11 -lXrender -O3
+cd ../
+
+echo "-------Downloading and installing paraview"
+mkdir paraview && cd paraview
+wget http://www.paraview.org/files/v5.4/ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
+tar -xzvf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz && rm ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
+mv ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit/* ./ && rm -rf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit
+echo "#!/bin/sh
+case \$1 in 
+    (\"manyspheres\")
+        configurations=\"manyspheres.py -s 100 -r 726 -f 30\";;
+    (\"waveletcontour\")
+        configurations=\"waveletcontour.py -d 256 -f 600\";;
+    (\"waveletvolume\")
+        configurations=\"waveletvolume.py -d 256 -f 1200\";;
+esac
+./bin/pvpython lib/python2.7/site-packages/paraview/benchmark/\$configurations" > paraview
+chmod +x paraview
+cd ../
+
+echo "-------Downloading and installing warsow"
+mkdir warsow && cd warsow
+wget http://warsow.net/warsow-2.1.2.tar.gz
+tar -xzvf warsow-2.1.2.tar.gz && rm warsow-2.1.2.tar.gz
+mv warsow-2.1.2/* ./ && rm -rf warsow-2.1.2/
+wget http://www.phoronix-test-suite.com/benchmark-files/pts-warsow-15-1.zip
+unzip pts-warsow-15-1.zip && rm pts-warsow-15-1.zip
+chmod +x warsow.*
+mkdir -p basewsw/demos
+cp -f pts1.wdz20 basewsw/demos
+echo "#!/bin/sh
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+vid_customwidth 800 +vid_customheight 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+vid_customwidth 1024 +vid_customheight 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+vid_customwidth 1920 +vid_customheight 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+vid_customwidth 2560 +vid_customheight 1440\";;
+esac
+./warsow.x86_64 +logconsole pts-log +exec profiles/high+.cfg +timedemo 1 \
+ +cg_showFPS 1 +cl_maxfps 999 +cl_checkForUpdate 0 +demo pts1 +next \"quit\" +r_mode -1 \$getConfigurations " > warsow
+chmod +x warsow
+cd ../
+
+echo "-------Downloading and installing nexuiz"
+mkdir nexuiz && cd nexuiz
+wget http://ftp.vim.org/pub/pub/os/Linux/distr/vectorlinux/veclinux-7.0/source/abs/games/nexuiz/nexuiz-252.zip
+unzip nexuiz-252.zip && rm nexuiz-252.zip
+mv Nexuiz/* ./ && rm -rf Nexuiz/
+echo "#!/bin/sh
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+vid_width 800 +vid_height 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+vid_width 1024 +vid_height 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+vid_width 1920 +vid_height 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+vid_width 2560 +vid_height 1440\";;
+esac
+./nexuiz-linux-glx.sh +exec effects-high.cfg -nohome -benchmark demos/demo2 +r_glsl 1 \$getConfigurations " > nexuiz
+chmod +x nexuiz
+cd ../
+
+echo "-------Downloading and installing glmark2"
+mkdir glmark2 && cd glmark2
+wget http://phoronix-test-suite.com/benchmark-files/glmark2-20170617.tar.gz
+tar -xzvf glmark2-20170617.tar.gz && rm glmark2-20170617.tar.gz
+mv glmark2-20170617/* ./ && rm -rf glmark2-20170617
+./waf configure --with-flavors=x11-gl --prefix=`pwd`
+./waf build
+./waf install
+echo "#!/bin/sh
+cd bin/
+./glmark2 -s \$1" > glmark2
+chmod +x glmark2
+cd ../
+
+echo "-------Downloading and installing unigine-valley"
+mkdir unigine-valley && cd unigine-valley
+wget http://assets.unigine.com/d/Unigine_Valley-1.0.run
+chmod +x Unigine_Valley-1.0.run
+./Unigine_Valley-1.0.run --nox11
+echo "#!/bin/sh
+cd Unigine_Valley-1.0/
+export LD_LIBRARY_PATH=bin/:\$LD_LIBRARY_PATH
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"-video_width 800 -video_height 600 \
+        -sound_app null -engine_config ../data/valley_1.0.cfg \
+        -system_script valley/unigine.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+	(\"1024x768\")
+		getConfigurations=\"-video_width 1024 -video_height 768 \
+        -sound_app null -engine_config ../data/valley_1.0.cfg \
+        -system_script valley/unigine.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+	(\"1920x1080\")
+		getConfigurations=\"-video_width 1920 -video_height 1080 \
+        -sound_app null -engine_config ../data/valley_1.0.cfg \
+        -system_script valley/unigine.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+	(\"2560x1440\")
+		getConfigurations=\"-video_width 2560 -video_height 1440 \
+        -sound_app null -engine_config ../data/valley_1.0.cfg \
+        -system_script valley/unigine.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+esac
+./bin/valley_x64 -data_path ../ \$getConfigurations" > unigine-valley
+chmod +x unigine-valley
+cd ../
+
+echo "-------Downloading and installing unigine-heaven"
+mkdir unigine-heaven && cd unigine-heaven
+wget http://www.phoronix-test-suite.com/benchmark-files/Unigine_Heaven-4.0.run
+chmod +x Unigine_Heaven-4.0.run
+./Unigine_Heaven-4.0.run --nox11
+echo "#!/bin/sh
+cd Unigine_Heaven-4.0/
+export LD_LIBRARY_PATH=bin/:\$LD_LIBRARY_PATH
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"-video_width 800 -video_height 600 \
+        -sound_app null -engine_config ../data/heaven_4.0.cfg \
+        -system_script heaven/unigine.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+	(\"1024x768\")
+		getConfigurations=\"-video_width 1024 -video_height 768 \
+        -sound_app null -engine_config ../data/heaven_4.0.cfg \
+        -system_script heaven/unigine.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+	(\"1920x1080\")
+		getConfigurations=\"-video_width 1920 -video_height 1080 \
+        -sound_app null -engine_config ../data/heaven_4.0.cfg \
+        -system_script heaven/unigine.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+	(\"2560x1440\")
+		getConfigurations=\"-video_width 2560 -video_height 1440 \
+        -sound_app null -engine_config ../data/heaven_4.0.cfg \
+        -system_script heaven/unigine.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
+esac
+./bin/heaven_x64 -data_path ../ \$getConfigurations" > unigine-heaven
+chmod +x unigine-heaven
+cd ../
+
+echo "-------Downloading and installing unigine-super"
+mkdir unigine-super && cd unigine-super
+wget https://assets.unigine.com/d/Unigine_Superposition-1.0.run
+chmod +x Unigine_Superposition-1.0.run
+./Unigine_Superposition-1.0.run --nox11
+echo "#!/bin/bash
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"-video_width 800 -video_height 600 \
+        -sound_app null -engine_config ../data/superposition/unigine.cfg \
+        -system_script superposition/system_script.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \
+        -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
+	(\"1024x768\")
+		getConfigurations=\"-video_width 1024 -video_height 768 \
+        -sound_app null -engine_config ../data/superposition/unigine.cfg \
+        -system_script superposition/system_script.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \
+        -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
+	(\"1920x1080\")
+		getConfigurations=\"-video_width 1920 -video_height 1080 \
+        -sound_app null -engine_config ../data/superposition/unigine.cfg \
+        -system_script superposition/system_script.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \
+        -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
+	(\"2560x1440\")
+		getConfigurations=\"-video_width 2560 -video_height 1440 \
+        -sound_app null -engine_config ../data/superposition/unigine.cfg \
+        -system_script superposition/system_script.cpp -video_mode -1 \
+        video_fullscreen 1 -extern_define PHORONIX,RELEASE \
+        -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
+esac
+cd Unigine_Superposition-1.0/
+rm -f ~/.Superposition/automation/log*.txt
+./bin/superposition  -data_path ../  -console_command \"config_readonly 1 && world_load superposition/superposition\" \
+\$getConfigurations" > unigine-super
+chmod +x unigine-super
+cd ../
+
+echo "-------Downloading and installing openarena"
+mkdir openarenaG && cd openarenaG
+wget http://iweb.dl.sourceforge.net/project/oarena/openarena-0.8.8.zip
+unzip openarena-0.8.8.zip && rm openarena-0.8.8.zip
+mv openarena-0.8.8/* ./ && rm -rf openarena-0.8.8 
+wget http://www.phoronix-test-suite.com/benchmark-files/openarena-088-1.zip
+unzip openarena-088-1.zip && rm openarena-088-1.zip
+mv pts-openarena-088.cfg baseoa/
+chmod +x openarena.x86_64
+echo "#!/bin/bash
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+set r_customWidth 800 +set r_customHeight 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+set r_customWidth 1024 +set r_customHeight 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+set r_customWidth 1920 +set r_customHeight 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+set r_customWidth 2560 +set r_customHeight 1440\";;
+esac
+./openarena.x86_64 +exec pts-openarena-088 +set r_mode -1 +set r_fullscreen 1 +set com_speeds 1 \$getConfigurations" >openarenaG
+chmod +x openarenaG
+cd ../
+
+echo "-------Downloading and installing urbanterror"
+mkdir urbanterrorG && cd urbanterrorG
+wget http://cdn.urbanterror.info/urt/43/releases/zips/UrbanTerror432_full.zip
+unzip UrbanTerror432_full.zip && rm UrbanTerror432_full.zip
+mv UrbanTerror43/* ./ && rm -rf UrbanTerror43/
+chmod +x Quake3-UrT.app/Contents/MacOS/Quake3-UrT.i386 
+wget http://www.phoronix-test-suite.com/benchmark-files/urbanterror-43-1.zip
+unzip urbanterror-43-1.zip && rm urbanterror-43-1.zip
+rm -f q3ut4/autoexec.cfg
+mv autoexec.cfg q3ut4/
+mkdir q3ut4/demos/
+mv pts-ut43.urtdemo q3ut4/demos/
+chmod +x Quake3-UrT.x86_64
+echo "#!/bin/bash
+case \$1 in
+	(\"800x600\")
+		getConfigurations=\"+set r_customWidth 800 +set r_customHeight 600\";;
+	(\"1024x768\")
+		getConfigurations=\"+set r_customWidth 1024 +set r_customHeight 768\";;
+	(\"1920x1080\")
+		getConfigurations=\"+set r_customWidth 1920 +set r_customHeight 1080\";;
+	(\"2560x1440\")
+		getConfigurations=\"+set r_customWidth 2560 +set r_customHeight 1440\";;
+esac
+./Quake3-UrT.x86_64 +timedemo 1 +set demodone \"quit\" +set demoloop1 \"demo pts-ut43; \
+set nextdemo vstr demodone\" +vstr demoloop1 +set com_speeds 1 \$getConfigurations" > urbanterrorG
+chmod +x urbanterrorG
+cd ../
+
+exit
+
+
+echo "-------Downloading and installing mt-dgemm"
+mkdir mt-dgemm && cd mt-dgemm
+wget http://phoronix-test-suite.com/benchmark-files/mtdgemm-crossroads-v1.0.0.tgz
+tar -xf mtdgemm-crossroads-v1.0.0.tgz && rm mtdgemm-crossroads-v1.0.0.tgz
+mv mt-dgemm/* ./ && rm -rf mt-dgemm
+cc -O3 -march=native -fopenmp -o mtdgemm src/mt-dgemm.c
+echo "#!/bin/sh
+export OMP_NUM_THREADS=\$(nproc --all)
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+./mtdgemm 3072 4" > mt-dgemm
+chmod +x mt-dgemm
 cd ../
 
 echo "-------Downloading and installing ramspeed"
@@ -181,12 +474,6 @@ for i in {1..10}; do
     ./ctx-clock
 done" > ctx_clock
 chmod +x ctx_clock
-cd ../
-
-echo "-------Downloading and installing aio-stress"
-mkdir aio-stress && cd aio-stress
-wget http://fsbench.filesystems.org/bench/aio-stress.c
-cc -Wall -pthread -o aio-stress aio-stress.c -laio
 cd ../
 
 echo "-------Downloading and installing aircrack-ng"
@@ -890,66 +1177,6 @@ make -s -j \$(nproc --all)" > build-llvm
 chmod +x build-llvm
 cd ../
 
-echo "-------Downloading and installing openarena"
-mkdir openarenaG && cd openarenaG
-wget http://iweb.dl.sourceforge.net/project/oarena/openarena-0.8.8.zip
-unzip openarena-0.8.8.zip && rm openarena-0.8.8.zip
-mv openarena-0.8.8/* ./ && rm -rf openarena-0.8.8 
-wget http://www.phoronix-test-suite.com/benchmark-files/openarena-088-1.zip
-unzip openarena-088-1.zip && rm openarena-088-1.zip
-mv pts-openarena-088.cfg baseoa/
-chmod +x openarena.x86_64
-echo "#!/bin/bash
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"+set r_customWidth 800 +set r_customHeight 600\";;
-	(\"1024x768\")
-		getConfigurations=\"+set r_customWidth 1024 +set r_customHeight 768\";;
-	(\"1920x1080\")
-		getConfigurations=\"+set r_customWidth 1920 +set r_customHeight 1080\";;
-	(\"2560x1440\")
-		getConfigurations=\"+set r_customWidth 2560 +set r_customHeight 1440\";;
-esac
-./openarena.x86_64 +exec pts-openarena-088 +set r_mode -1 +set r_fullscreen 1 +set com_speeds 1 \$getConfigurations" >openarenaG
-chmod +x openarenaG
-cd ../
-
-echo "-------Downloading and installing urbanterror"
-mkdir urbanterrorG && cd urbanterrorG
-wget http://cdn.urbanterror.info/urt/43/releases/zips/UrbanTerror432_full.zip
-unzip UrbanTerror432_full.zip && rm UrbanTerror432_full.zip
-mv UrbanTerror43/* ./ && rm -rf UrbanTerror43/
-chmod +x Quake3-UrT.app/Contents/MacOS/Quake3-UrT.i386 
-wget http://www.phoronix-test-suite.com/benchmark-files/urbanterror-43-1.zip
-unzip urbanterror-43-1.zip && rm urbanterror-43-1.zip
-rm -f q3ut4/autoexec.cfg
-mv autoexec.cfg q3ut4/
-mkdir q3ut4/demos/
-mv pts-ut43.urtdemo q3ut4/demos/
-chmod +x Quake3-UrT.x86_64
-echo "#!/bin/bash
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"+set r_customWidth 800 +set r_customHeight 600\";;
-	(\"1024x768\")
-		getConfigurations=\"+set r_customWidth 1024 +set r_customHeight 768\";;
-	(\"1920x1080\")
-		getConfigurations=\"+set r_customWidth 1920 +set r_customHeight 1080\";;
-	(\"2560x1440\")
-		getConfigurations=\"+set r_customWidth 2560 +set r_customHeight 1440\";;
-esac
-./Quake3-UrT.x86_64 +timedemo 1 +set demodone \"quit\" +set demoloop1 \"demo pts-ut43; \
-set nextdemo vstr demodone\" +vstr demoloop1 +set com_speeds 1 \$getConfigurations" > urbanterrorG
-chmod +x urbanterrorG
-cd ../
-
-echo "-------Downloading and installing jxrend"
-mkdir jxrend && cd jxrend
-wget http://www.phoronix-test-suite.com/benchmark-files/JXRenderMark-1.0.1.zip
-unzip JXRenderMark-1.0.1.zip && rm JXRenderMark-1.0.1.zip
-cc JXRenderMark.c -o jxrend -lX11 -lXrender -O3
-cd ../
-
 echo "-------Downloading and installing javascimark2"
 mkdir javascimark2 && cd javascimark2
 wget http://math.nist.gov/scimark2/scimark2lib.zip
@@ -1174,58 +1401,6 @@ sleep 3
 chmod +x cassandra
 cd ../
 
-echo "-------Downloading and installing xonotic"
-mkdir xonotic && cd xonotic
-wget http://dl.xonotic.org/xonotic-0.8.2.zip
-unzip xonotic-0.8.2.zip && rm xonotic-0.8.2.zip
-mv Xonotic/* ./ && rm -rf Xonotic
-echo "#!/bin/sh
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"+vid_width 800 +vid_height 600\";;
-	(\"1024x768\")
-		getConfigurations=\"+vid_width 1024 +vid_height 768\";;
-	(\"1920x1080\")
-		getConfigurations=\"+vid_width 1920 +vid_height 1080\";;
-	(\"2560x1440\")
-		getConfigurations=\"+vid_width 2560 +vid_height 1440\";;
-esac
-./xonotic-linux64-sdl -nohome -benchmark demos/the-big-keybench +r_glsl 1 \$getConfigurations" > xonotic
-chmod +x xonotic
-cd ../
-
-echo "-------Downloading and installing paraview"
-mkdir paraview && cd paraview
-wget http://www.paraview.org/files/v5.4/ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
-tar -xzvf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz && rm ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit.tar.gz
-mv ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit/* ./ && rm -rf ParaView-5.4.1-Qt5-OpenGL2-MPI-Linux-64bit
-echo "#!/bin/sh
-case \$1 in 
-    (\"manyspheres\")
-        configurations=\"manyspheres.py -s 100 -r 726 -f 30\";;
-    (\"waveletcontour\")
-        configurations=\"waveletcontour.py -d 256 -f 600\";;
-    (\"waveletvolume\")
-        configurations=\"waveletvolume.py -d 256 -f 1200\";;
-esac
-./bin/pvpython lib/python2.7/site-packages/paraview/benchmark/\$configurations" > paraview
-chmod +x paraview
-cd ../
-
-echo "-------Downloading and installing glmark2"
-mkdir glmark2 && cd glmark2
-wget http://phoronix-test-suite.com/benchmark-files/glmark2-20170617.tar.gz
-tar -xzvf glmark2-20170617.tar.gz && rm glmark2-20170617.tar.gz
-mv glmark2-20170617/* ./ && rm -rf glmark2-20170617
-./waf configure --with-flavors=x11-gl --prefix=`pwd`
-./waf build
-./waf install
-echo "#!/bin/sh
-cd bin/
-./glmark2 -s \$1" > glmark2
-chmod +x glmark2
-cd ../
-
 echo "-------Downloading and installing compilebench"
 mkdir compilebench && cd compilebench
 wget http://www.phoronix-test-suite.com/benchmark-files/compilebench-0.6.tar.bz2
@@ -1254,52 +1429,6 @@ make clean
 ./configure --without-sqlite3 --without-pdo-sqlite
 make -s -j $(nproc --all)" > build-php
 chmod +x build-php
-cd ../
-
-echo "-------Downloading and installing nexuiz"
-mkdir nexuiz && cd nexuiz
-wget http://ftp.vim.org/pub/pub/os/Linux/distr/vectorlinux/veclinux-7.0/source/abs/games/nexuiz/nexuiz-252.zip
-unzip nexuiz-252.zip && rm nexuiz-252.zip
-mv Nexuiz/* ./ && rm -rf Nexuiz/
-echo "#!/bin/sh
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"+vid_width 800 +vid_height 600\";;
-	(\"1024x768\")
-		getConfigurations=\"+vid_width 1024 +vid_height 768\";;
-	(\"1920x1080\")
-		getConfigurations=\"+vid_width 1920 +vid_height 1080\";;
-	(\"2560x1440\")
-		getConfigurations=\"+vid_width 2560 +vid_height 1440\";;
-esac
-./nexuiz-linux-glx.sh +exec effects-high.cfg -nohome -benchmark demos/demo2 +r_glsl 1 \$getConfigurations " > nexuiz
-chmod +x nexuiz
-cd ../
-
-echo "-------Downloading and installing warsow"
-mkdir warsow && cd warsow
-wget http://warsow.net/warsow-2.1.2.tar.gz
-tar -xzvf warsow-2.1.2.tar.gz && rm warsow-2.1.2.tar.gz
-mv warsow-2.1.2/* ./ && rm -rf warsow-2.1.2/
-wget http://www.phoronix-test-suite.com/benchmark-files/pts-warsow-15-1.zip
-unzip pts-warsow-15-1.zip && rm pts-warsow-15-1.zip
-chmod +x warsow.*
-mkdir -p basewsw/demos
-cp -f pts1.wdz20 basewsw/demos
-echo "#!/bin/sh
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"+vid_customwidth 800 +vid_customheight 600\";;
-	(\"1024x768\")
-		getConfigurations=\"+vid_customwidth 1024 +vid_customheight 768\";;
-	(\"1920x1080\")
-		getConfigurations=\"+vid_customwidth 1920 +vid_customheight 1080\";;
-	(\"2560x1440\")
-		getConfigurations=\"+vid_customwidth 2560 +vid_customheight 1440\";;
-esac
-./warsow.x86_64 +logconsole pts-log +exec profiles/high+.cfg +timedemo 1 \
- +cg_showFPS 1 +cl_maxfps 999 +cl_checkForUpdate 0 +demo pts1 +next \"quit\" +r_mode -1 \$getConfigurations " > warsow
-chmod +x warsow
 cd ../
 
 echo "-------Downloading and installing inkscape"
@@ -1649,24 +1778,6 @@ echo "#!/bin/bash
 chmod +x pyperformance-run
 cd ../
 
-echo "-------Downloading and installing indigobench"
-mkdir indigobench && cd indigobench
-wget ftp://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.59.tar.gz
-tar -xf libpng-1.2.59.tar.gz && rm libpng-1.2.59.tar.gz 
-mkdir libpng
-cd libpng-1.2.59
-./configure --prefix=`pwd/../libpng`
-make -j $(nproc --all)
-make install
-cd ../
-wget http://downloads.indigorenderer.com/dist/beta/IndigoBenchmark_x64_v4.0.64.tar.gz
-tar -xf IndigoBenchmark_x64_v4.0.64.tar.gz && rm IndigoBenchmark_x64_v4.0.64.tar.gz
-mv IndigoBenchmark_x64_v4.0.64/* ./ && rm -rf IndigoBenchmark_x64_v4.0.64
-echo "#!/bin/bash
-./indigo_benchmark --silent --scenes \$1" > indigobench
-chmod +x indigobench
-cd ../
-
 echo "-------Downloading and installing rays1bench"
 mkdir rays1bench && cd rays1bench
 wget http://phoronix-test-suite.com/benchmark-files/rays1bench-20200109.zip
@@ -1783,113 +1894,6 @@ for filename in benchmark_*.m; do
         octave-cli \$filename
 done" > octave-benchmark
 chmod +x octave-benchmark
-cd ../
-
-echo "-------Downloading and installing unigine-valley"
-mkdir unigine-valley && cd unigine-valley
-wget http://assets.unigine.com/d/Unigine_Valley-1.0.run
-chmod +x Unigine_Valley-1.0.run
-./Unigine_Valley-1.0.run --nox11
-echo "#!/bin/sh
-cd Unigine_Valley-1.0/
-export LD_LIBRARY_PATH=bin/:\$LD_LIBRARY_PATH
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"-video_width 800 -video_height 600 \
-        -sound_app null -engine_config ../data/valley_1.0.cfg \
-        -system_script valley/unigine.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
-	(\"1024x768\")
-		getConfigurations=\"-video_width 1024 -video_height 768 \
-        -sound_app null -engine_config ../data/valley_1.0.cfg \
-        -system_script valley/unigine.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
-	(\"1920x1080\")
-		getConfigurations=\"-video_width 1920 -video_height 1080 \
-        -sound_app null -engine_config ../data/valley_1.0.cfg \
-        -system_script valley/unigine.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
-	(\"2560x1440\")
-		getConfigurations=\"-video_width 2560 -video_height 1440 \
-        -sound_app null -engine_config ../data/valley_1.0.cfg \
-        -system_script valley/unigine.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
-esac
-./bin/valley_x64 -data_path ../ \$getConfigurations" > unigine-valley
-chmod +x unigine-valley
-cd ../
-
-echo "-------Downloading and installing unigine-heaven"
-mkdir unigine-heaven && cd unigine-heaven
-wget http://www.phoronix-test-suite.com/benchmark-files/Unigine_Heaven-4.0.run
-chmod +x Unigine_Heaven-4.0.run
-./Unigine_Heaven-4.0.run --nox11
-echo "#!/bin/sh
-cd Unigine_Heaven-4.0/
-export LD_LIBRARY_PATH=bin/:\$LD_LIBRARY_PATH
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"-video_width 800 -video_height 600 \
-        -sound_app null -engine_config ../data/heaven_4.0.cfg \
-        -system_script heaven/unigine.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
-	(\"1024x768\")
-		getConfigurations=\"-video_width 1024 -video_height 768 \
-        -sound_app null -engine_config ../data/heaven_4.0.cfg \
-        -system_script heaven/unigine.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
-	(\"1920x1080\")
-		getConfigurations=\"-video_width 1920 -video_height 1080 \
-        -sound_app null -engine_config ../data/heaven_4.0.cfg \
-        -system_script heaven/unigine.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
-	(\"2560x1440\")
-		getConfigurations=\"-video_width 2560 -video_height 1440 \
-        -sound_app null -engine_config ../data/heaven_4.0.cfg \
-        -system_script heaven/unigine.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \";;
-esac
-./bin/heaven_x64 -data_path ../ \$getConfigurations" > unigine-heaven
-chmod +x unigine-heaven
-cd ../
-
-echo "-------Downloading and installing unigine-super"
-mkdir unigine-super && cd unigine-super
-wget https://assets.unigine.com/d/Unigine_Superposition-1.0.run
-chmod +x Unigine_Superposition-1.0.run
-./Unigine_Superposition-1.0.run --nox11
-echo "#!/bin/bash
-case \$1 in
-	(\"800x600\")
-		getConfigurations=\"-video_width 800 -video_height 600 \
-        -sound_app null -engine_config ../data/superposition/unigine.cfg \
-        -system_script superposition/system_script.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \
-        -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
-	(\"1024x768\")
-		getConfigurations=\"-video_width 1024 -video_height 768 \
-        -sound_app null -engine_config ../data/superposition/unigine.cfg \
-        -system_script superposition/system_script.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \
-        -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
-	(\"1920x1080\")
-		getConfigurations=\"-video_width 1920 -video_height 1080 \
-        -sound_app null -engine_config ../data/superposition/unigine.cfg \
-        -system_script superposition/system_script.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \
-        -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
-	(\"2560x1440\")
-		getConfigurations=\"-video_width 2560 -video_height 1440 \
-        -sound_app null -engine_config ../data/superposition/unigine.cfg \
-        -system_script superposition/system_script.cpp -video_mode -1 \
-        video_fullscreen 1 -extern_define PHORONIX,RELEASE \
-        -sound_app openal -project_name Superposition -mode 2 -preset 0 \";;
-esac
-cd Unigine_Superposition-1.0/
-rm -f ~/.Superposition/automation/log*.txt
-./bin/superposition  -data_path ../  -console_command \"config_readonly 1 && world_load superposition/superposition\" \
-\$getConfigurations" > unigine-super
-chmod +x unigine-super
 cd ../
 
 echo "-------Downloading and installing build2"

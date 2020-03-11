@@ -1,0 +1,17 @@
++ ./j2dbench graphics
+
+(process:12981): dconf-CRITICAL **: 15:20:33.895: unable to create file '/home/sgeorgiou/.cache/dconf/user': Permission denied.  dconf will not work properly.
+
+(process:12981): dconf-CRITICAL **: 15:20:33.895: unable to create file '/home/sgeorgiou/.cache/dconf/user': Permission denied.  dconf will not work properly.
+
+(process:12981): dconf-CRITICAL **: 15:20:33.895: unable to create file '/home/sgeorgiou/.cache/dconf/user': Permission denied.  dconf will not work properly.
+
+(process:12981): dconf-CRITICAL **: 15:20:33.895: unable to create file '/home/sgeorgiou/.cache/dconf/user': Permission denied.  dconf will not work properly.
+
+(process:12981): dconf-CRITICAL **: 15:20:36.903: unable to create file '/home/sgeorgiou/.cache/dconf/user': Permission denied.  dconf will not work properly.
+
+(process:12981): dconf-CRITICAL **: 15:20:36.903: unable to create file '/home/sgeorgiou/.cache/dconf/user': Permission denied.  dconf will not work properly.
+
+real	4m5.608s
+user	16m44.659s
+sys	0m30.751s

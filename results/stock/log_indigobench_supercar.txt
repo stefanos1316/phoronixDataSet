@@ -1,0 +1,5 @@
++ ./indigobench supercar
+
+real	1m1.589s
+user	8m1.340s
+sys	0m0.644s
