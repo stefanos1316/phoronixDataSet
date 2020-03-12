@@ -2,3 +2,6 @@ Ignore depricated test since they did not offered any donwload link
 geekbench novabench that require licence key or account generation because we cannot easily automate
 this porcess commandline automation
 spec benchmark and v-ray that needed signing or not free (same as above)
+
+
+For the GCC test, we exlucded all non-C/C++ codes.

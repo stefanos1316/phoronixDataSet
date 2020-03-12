@@ -1,23 +1,83 @@
 Successfully created tables
 ===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3647 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3226 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3174 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3179 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3232 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3217 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3167 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3177 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3175 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3104 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
 ===== DaCapo 9.12-MR1 tradebeans PASSED in 3243 msec =====
 Successfully created tables
 ===== DaCapo 9.12-MR1 tradebeans starting =====
-===== DaCapo 9.12-MR1 tradebeans PASSED in 3189 msec =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3258 msec =====
 Successfully created tables
 ===== DaCapo 9.12-MR1 tradebeans starting =====
-===== DaCapo 9.12-MR1 tradebeans PASSED in 3236 msec =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3220 msec =====
 Successfully created tables
 ===== DaCapo 9.12-MR1 tradebeans starting =====
-===== DaCapo 9.12-MR1 tradebeans PASSED in 3372 msec =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3182 msec =====
 Successfully created tables
 ===== DaCapo 9.12-MR1 tradebeans starting =====
-===== DaCapo 9.12-MR1 tradebeans PASSED in 3211 msec =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3258 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3171 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3223 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3180 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3503 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3216 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3112 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3311 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3269 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3490 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3212 msec =====
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-           1727,38 Joules power/energy-pkg/                                           
-             59,04 Joules power/energy-ram/                                           
+           2324,60 Joules power/energy-pkg/                                             ( +-  5,95% )
+            109,02 Joules power/energy-ram/                                             ( +- 11,23% )
 
-      50,847332254 seconds time elapsed
+            146,77 +- 24,86 seconds time elapsed  ( +- 16,94% )
 
