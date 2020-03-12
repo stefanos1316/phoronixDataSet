@@ -15,6 +15,120 @@ taskScripts='scripts'
 mkdir gcc_tasks_test
 cd gcc_tasks_test
 
+echo "-------Downloading and installing openssl"
+mkdir openssl && cd openssl
+wget http://www.openssl.org/source/old/1.0.1/openssl-1.0.1g.tar.gz
+tar -xzvf openssl-1.0.1g.tar.gz && rm openssl-1.0.1g.tar.gz
+mv openssl-1.0.1g/* ./ && rm -rf openssl-1.0.1g/
+whims=`echo ${SECURITY_FLAGS} | sed 's/\-z\ execstack//g'`
+./config no-zlib ${whims}
+make
+cp apps/openssl ./
+cd ../
+
+exit
+
+echo "-------Downloading and installing X264"
+mkdir x264 && cd x264
+wget http://download.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20180925-2245.tar.bz2
+tar -xjf x264-snapshot-20180925-2245.tar.bz2 && rm x264-snapshot-20180925-2245.tar.bz2
+mv x264-snapshot-20180925-2245/* ./ && rm -rf x264-snapshot-20180925-2245/
+CFLAGS="${SECURITY_FLAGS}" ./configure --prefix=./ --disable-opencl  --enable-pic --enable-shared
+make install
+echo "#!/bin/bash
+cd bin
+./x264 ../../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -o /dev/null" > x264
+chmod +x x264
+cd ../
+
+echo "-------Downloading and installing hmmer"
+mkdir hmmer && cd hmmer
+wget http://www.phoronix-test-suite.com/benchmark-files/hmmer-2.3.2.tar.gz
+tar -xzvf hmmer-2.3.2.tar.gz && rm hmmer-2.3.2.tar.gz
+mv hmmer-2.3.2/* ./ && rm -rf hmmer-2.3.2/
+CFLAGS="${SECURITY_FLAGS}" ./configure --enable-threads
+make -j $(nproc --all)
+echo "!#/bin/bash
+cd src/
+for i in {1..10}; do
+./hmmpfam -E 0.1 ../../../..//inputs/Pfam_ls ../../../..//inputs/7LES_DROME
+done" > hmmer
+chmod +x hmmer
+wget http://www.phoronix-test-suite.com/benchmark-files/Pfam_ls.gz
+gunzip Pfam_ls.gz -c > ../../../inputs/Pfam_ls && rm Pfam_ls.gz 
+cd ../
+
+echo "-------Downloading and installing minion"
+mkdir minion && cd minion
+wget http://constraintmodelling.org/files/2015/06/minion-1.8-linux.tar_.gz
+tar -xzvf minion-1.8-linux.tar_.gz && rm minion-1.8-linux.tar_.gz
+mv minion-1.8/* ./ && rm -rf minion-1.8/
+cd bin/
+cmake -DQUICK=1 ..
+make minion -j $(nproc --all)
+cd ../ && rm -rf minion
+cp bin/minion ./
+cd ../
+
+echo "-------Downloading and installing nero2d"
+mkdir nero2d && cd nero2d
+wget http://www.phoronix-test-suite.com/benchmark-files/nero2d-2.0.2-pts1.tar.gz
+tar -xzvf nero2d-2.0.2-pts1.tar.gz && rm nero2d-2.0.2-pts1.tar.gz
+mv nero2d-2.0.2/* ./ && rm -rf nero2d-2.0.2/
+CFLAGS="${SECURITY_FLAGS}" ./configure
+make -j $(nproc --all)
+echo "#!/bin/bash
+./src/nero2d ../../../inputs/nero2d.igf" > nero2d
+chmod +x nero2d
+cd ../
+
+echo "-------Downloading and installing gmpbench"
+mkdir gmpbench && cd gmpbench
+wget ftp://ftp.gmplib.org/pub/misc/gmpbench-0.2.tar.bz2
+tar -xjvf gmpbench-0.2.tar.bz2 && rm gmpbench-0.2.tar.bz2
+mv gmpbench-0.2/* ./ && rm -rf gmpbench-0.2
+wget http://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/gexpr.c.tar.gz
+tar -xvzf gexpr.c.tar.gz && rm gexpr.c.tar.gz 
+cc -O3 gexpr.c -o gexpr -lm ${SECURITY_FLAGS}
+mv runbench ./gmpbench
+cd ../
+
+echo "-------Downloading and installing dcraw"
+mkdir dcraw && cd dcraw
+wget http://www.phoronix-test-suite.com/benchmark-files/dcraw-test-1.tar.bz2
+tar -xjvf dcraw-test-1.tar.bz2 && rm dcraw-test-1.tar.bz2
+cc -o dcraw -O3 dcraw.c -lm -DNO_JPEG -DNO_LCMS ${SECURITY_FLAGS}
+cp DSC_5037.NEF DSC_5040.NEF
+cp DSC_5037.NEF DSC_5041.NEF
+cp DSC_5037.NEF DSC_5042.NEF
+cp DSC_5037.NEF DSC_5043.NEF
+cp DSC_5037.NEF DSC_5044.NEF
+cp DSC_5037.NEF DSC_5045.NEF
+cp DSC_5037.NEF DSC_5046.NEF
+cp DSC_5037.NEF DSC_5047.NEF
+cp DSC_5037.NEF DSC_5048.NEF
+cp DSC_5037.NEF DSC_5049.NEF
+cd ../
+
+echo "-------Downloading and installing fhourstones"
+mkdir fhourstones && cd fhourstones
+wget http://www.phoronix-test-suite.com/benchmark-files/Fhourstones.tar.gz
+tar -xzvf Fhourstones.tar.gz && rm Fhourstones.tar.gz 
+cp ../../$taskScripts/SearchGame.c ./
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
+fi
+make -j $(nproc --all)
+mv SearchGame fhourstones
+cd ../
+
+echo "-------Downloading and installing scimark2"
+wget http://www.phoronix-test-suite.com/benchmark-files/scimark2_1c.zip
+unzip scimark2_1c.zip -d scimark2 && rm scimark2_1c.zip && cd scimark2
+cc -O3 -o scimark2 *.c -lm ${SECURITY_FLAGS}
+cd ../
+
 echo "-------Downloading and installing xz"
 mkdir xz && cd xz
 wget http://distfiles.macports.org/xz/xz-5.2.4.tar.bz2
@@ -44,8 +158,6 @@ fi
 make
 mv Run byte
 cd ../
-
-exit
 
 echo "-------Downloading and installing p7zip"
 mkdir p7zip && cd p7zip
