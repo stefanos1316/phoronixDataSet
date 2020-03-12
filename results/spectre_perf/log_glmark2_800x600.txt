@@ -1,0 +1,28 @@
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+
+ Performance counter stats for 'system wide' (5 runs):
+
+         12,578.62 Joules power/energy-pkg/                                             ( +-  0.06% )
+            445.05 Joules power/energy-ram/                                             ( +-  0.21% )
+
+          332.0452 +- 0.0532 seconds time elapsed  ( +-  0.02% )
+
