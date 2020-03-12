@@ -1,10 +1,18 @@
-join: /tmp/4198.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+join: /tmp/12706.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+join: /tmp/12836.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+join: /tmp/12958.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+join: /tmp/13079.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+join: /tmp/13200.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
 awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-           1467,80 Joules power/energy-pkg/                                           
-             60,50 Joules power/energy-ram/                                           
+           1480,71 Joules power/energy-pkg/                                             ( +-  0,11% )
+             61,02 Joules power/energy-ram/                                             ( +-  0,06% )
 
-     121,683594512 seconds time elapsed
+          122,4093 +- 0,0702 seconds time elapsed  ( +-  0,06% )
 

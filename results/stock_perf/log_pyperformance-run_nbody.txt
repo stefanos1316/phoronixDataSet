@@ -1,9 +1,13 @@
-INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_nbody.py --rigorous --output /tmp/tmp7h30ewz5`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_nbody.py --rigorous --output /tmp/tmpm5957y8_`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_nbody.py --rigorous --output /tmp/tmpojzwr3kv`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_nbody.py --rigorous --output /tmp/tmpu89anbdm`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_nbody.py --rigorous --output /tmp/tmpubwzh3nr`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_nbody.py --rigorous --output /tmp/tmpvpumjf30`
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-            511,18 Joules power/energy-pkg/                                           
-             11,55 Joules power/energy-ram/                                           
+            512,81 Joules power/energy-pkg/                                             ( +-  0,10% )
+             11,56 Joules power/energy-ram/                                             ( +-  0,05% )
 
-      22,235197362 seconds time elapsed
+          22,25792 +- 0,00965 seconds time elapsed  ( +-  0,04% )
 

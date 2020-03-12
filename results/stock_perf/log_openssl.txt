@@ -1,11 +1,23 @@
 WARNING: can't open config file: /usr/local/ssl/openssl.cnf
-Doing 4096 bit private rsa's for 10s: 1783 4096 bit private RSA's in 10.00s
-Doing 4096 bit public rsa's for 10s: 110740 4096 bit public RSA's in 10.00s
+Doing 4096 bit private rsa's for 10s: 1778 4096 bit private RSA's in 10.01s
+Doing 4096 bit public rsa's for 10s: 110663 4096 bit public RSA's in 10.00s
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+Doing 4096 bit private rsa's for 10s: 1767 4096 bit private RSA's in 10.00s
+Doing 4096 bit public rsa's for 10s: 110684 4096 bit public RSA's in 10.00s
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+Doing 4096 bit private rsa's for 10s: 1767 4096 bit private RSA's in 10.00s
+Doing 4096 bit public rsa's for 10s: 110692 4096 bit public RSA's in 10.00s
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+Doing 4096 bit private rsa's for 10s: 1767 4096 bit private RSA's in 10.01s
+Doing 4096 bit public rsa's for 10s: 110370 4096 bit public RSA's in 10.00s
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+Doing 4096 bit private rsa's for 10s: 1775 4096 bit private RSA's in 10.01s
+Doing 4096 bit public rsa's for 10s: 110597 4096 bit public RSA's in 10.00s
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-            430,27 Joules power/energy-pkg/                                           
-             10,06 Joules power/energy-ram/                                           
+            420,38 Joules power/energy-pkg/                                             ( +-  0,83% )
+             10,03 Joules power/energy-ram/                                             ( +-  0,06% )
 
-      20,062017944 seconds time elapsed
+           20,0215 +- 0,0108 seconds time elapsed  ( +-  0,05% )
 

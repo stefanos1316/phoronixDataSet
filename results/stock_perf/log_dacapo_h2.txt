@@ -1,18 +1,58 @@
 ===== DaCapo 9.12-MR1 h2 starting =====
-===== DaCapo 9.12-MR1 h2 PASSED in 3254 msec =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3188 msec =====
 ===== DaCapo 9.12-MR1 h2 starting =====
-===== DaCapo 9.12-MR1 h2 PASSED in 3531 msec =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3362 msec =====
 ===== DaCapo 9.12-MR1 h2 starting =====
-===== DaCapo 9.12-MR1 h2 PASSED in 3251 msec =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3140 msec =====
 ===== DaCapo 9.12-MR1 h2 starting =====
-===== DaCapo 9.12-MR1 h2 PASSED in 3279 msec =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3182 msec =====
 ===== DaCapo 9.12-MR1 h2 starting =====
-===== DaCapo 9.12-MR1 h2 PASSED in 3301 msec =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3494 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3265 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3239 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3290 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3654 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3316 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3103 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3352 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3386 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3113 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3438 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3458 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3483 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3537 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3352 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3383 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3293 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3382 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3212 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3329 msec =====
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3319 msec =====
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-           1321,27 Joules power/energy-pkg/                                           
-             41,72 Joules power/energy-ram/                                           
+           1343,51 Joules power/energy-pkg/                                             ( +-  0,28% )
+             42,92 Joules power/energy-ram/                                             ( +-  0,73% )
 
-      40,972595758 seconds time elapsed
+            41,503 +- 0,458 seconds time elapsed  ( +-  1,10% )
 

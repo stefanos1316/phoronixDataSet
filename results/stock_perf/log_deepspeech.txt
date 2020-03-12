@@ -1,11 +1,23 @@
 TensorFlow: v1.14.0-21-ge77504a
 DeepSpeech: v0.6.0-0-g6d43e21
-2020-03-09 10:28:52.076262: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-12 09:01:15.473534: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-12 09:03:20.622901: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-12 09:04:48.096269: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-12 09:06:15.559912: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-12 09:07:43.005733: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-           2270,11 Joules power/energy-pkg/                                           
-            192,62 Joules power/energy-ram/                                           
+           2075,47 Joules power/energy-pkg/                                             ( +-  2,38% )
+            176,23 Joules power/energy-ram/                                             ( +-  2,33% )
 
-     125,672530933 seconds time elapsed
+             95,07 +- 7,60 seconds time elapsed  ( +-  7,99% )
 
