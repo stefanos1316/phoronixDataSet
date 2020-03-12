@@ -1,11 +1,15 @@
-Meltdown
---------
-glmark*
-indigobench*
-unigine-valley
-unigine-heaven
+Graphics
+========
+stock (DONE)
+meltdown (DNOE)
+spectre
+mds
+all
 
-
-Stock
------
-All the graphic
+No-Graphics
+===========
+stock (DONE)
+meltdown
+spectre
+mds
+all
