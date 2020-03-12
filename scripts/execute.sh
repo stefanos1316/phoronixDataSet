@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="meltdown_perf"
+scenario="spectre_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
@@ -120,7 +120,7 @@ tasks_without_graphics=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobe
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
 # For the tasks below avoid running them remotely (ssh) because it reduces their performance
-tasks_with_grapihcs=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \V
+tasks_with_graphics=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
 	"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
 	"unigine-valley 800x600" "unigine-valley 1024x768" "unigine-valley 1920x1080" "unigine-valley 2560x1440" \
 	"unigine-heaven 800x600" "unigine-heaven 1024x768" "unigine-heaven 1920x1080" "unigine-heaven 2560x1440" \
@@ -191,7 +191,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks_without_graphics[@]}"; do
+	for i in "${tasks_with_graphics[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi
@@ -223,7 +223,7 @@ sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
-for task in "${tasks_without_graphics[@]}"; do
+for task in "${tasks_with_graphics[@]}"; do
 
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}

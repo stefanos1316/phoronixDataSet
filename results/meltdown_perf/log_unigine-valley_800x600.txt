@@ -1,0 +1,23 @@
+Engine::init(): can't create log file
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+Engine::init(): can't create log file
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+Engine::init(): can't create log file
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+Engine::init(): can't create log file
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+Engine::init(): can't create log file
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+
+ Performance counter stats for 'system wide' (5 runs):
+
+         10,011.59 Joules power/energy-pkg/                                             ( +-  0.06% )
+            170.09 Joules power/energy-ram/                                             ( +-  0.21% )
+
+           232.824 +- 0.664 seconds time elapsed  ( +-  0.29% )
+
