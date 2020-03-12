@@ -55,7 +55,7 @@ java -jar dist/J2DAnalyzer.jar \$TEST_TYPE.res" > j2dbench
 chmod +x j2dbench
 cd ../
 
-cho "-------Downloading and installing qgears"
+echo "-------Downloading and installing qgears"
 mkdir qgears && cd qgears
 wget http://www.phoronix-test-suite.com/benchmark-files/qgears2.tar.bz2
 tar -jxf qgears2.tar.bz2 && rm qgears2.tar.bz2
