@@ -11,8 +11,6 @@ wget http://fsbench.filesystems.org/bench/aio-stress.c
 cc -Wall -pthread -o aio-stress aio-stress.c -laio
 cd ../
 
-exit
-
 echo "-------Downloading and installing xonotic"
 mkdir xonotic && cd xonotic
 wget http://dl.xonotic.org/xonotic-0.8.2.zip
