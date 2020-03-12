@@ -359,9 +359,6 @@ set nextdemo vstr demodone\" +vstr demoloop1 +set com_speeds 1 \$getConfiguratio
 chmod +x urbanterrorG
 cd ../
 
-exit
-
-
 echo "-------Downloading and installing mt-dgemm"
 mkdir mt-dgemm && cd mt-dgemm
 wget http://phoronix-test-suite.com/benchmark-files/mtdgemm-crossroads-v1.0.0.tgz
