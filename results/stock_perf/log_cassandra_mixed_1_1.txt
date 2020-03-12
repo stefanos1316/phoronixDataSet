@@ -8,12 +8,56 @@ Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
 ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
 Error: Could not find or load main class org.apache.cassandra.stress.Stress
 Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
-./cassandra: line 23: kill: (20261) - No such process
+./cassandra: line 23: kill: (18664) - No such process
+ls: cannot access './../build/apache-cassandra*.jar': No such file or directory
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+Error: Could not find or load main class org.apache.cassandra.service.CassandraDaemon
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.service.CassandraDaemon
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+./cassandra: line 23: kill: (18869) - No such process
+ls: cannot access './../build/apache-cassandra*.jar': No such file or directory
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+Error: Could not find or load main class org.apache.cassandra.service.CassandraDaemon
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.service.CassandraDaemon
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+./cassandra: line 23: kill: (19071) - No such process
+ls: cannot access './../build/apache-cassandra*.jar': No such file or directory
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+Error: Could not find or load main class org.apache.cassandra.service.CassandraDaemon
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.service.CassandraDaemon
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+./cassandra: line 23: kill: (19272) - No such process
+ls: cannot access './../build/apache-cassandra*.jar': No such file or directory
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+Error: Could not find or load main class org.apache.cassandra.service.CassandraDaemon
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.service.CassandraDaemon
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+./cassandra: line 23: kill: (19477) - No such process
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-            119,15 Joules power/energy-pkg/                                           
-              8,28 Joules power/energy-ram/                                           
+            119,67 Joules power/energy-pkg/                                             ( +-  0,15% )
+              8,39 Joules power/energy-ram/                                             ( +-  0,08% )
 
-      15,346002037 seconds time elapsed
+           15,4023 +- 0,0119 seconds time elapsed  ( +-  0,08% )
 

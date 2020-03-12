@@ -67,7 +67,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
-tasks_without_graphics=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
+tasks_without_graphics=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"sudokut" "nero2d" "minion ../inputs/minions.minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
@@ -84,7 +84,7 @@ tasks_without_graphics=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobe
 		"glibc-bench bench-asinh" "glibc-bench bench-atanh" "glibc-bench bench-sincos" "glibc-bench bench-sinh" "glibc-bench bench-modf" \
 		"glibc-bench bench-exp" "glibc-bench bench-log2" "himeno XL" "hint float" "hint double" "hpcg" "build-linux-kernel"\
 		"john-the-ripper bcrypt" "john-the-ripper md5crypt" "lzbench -ezstd" "lzbench -ebrotli" "lzbench -elibdeflate" "lzbench -exz" "m-queens 2 18" \
-		"mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" "mbw 8192 MiB -n 100 -t2" \
+		"mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" \
 		"mcperf get" "mcperf set" "mcperf delete" "mcperf add" "mcperf replace" "mcperf append" "mcperf prepend" \
 		"mkl-dnn conv_all conv" "mkl-dnn conv_googlenet_v3 conv" "mkl-dnn conv_alexnet conv" "mkl-dnn ip_1d ip" "mkl-dnn ip_all ip" "mkl-dnn rnn_training rnn" \
 		"node-express-loadtest" "numenta-nab" "phpbench php phpbench.php -i 1000000" "primesieve 1e12 --quiet --time" "pymongo" \
@@ -217,6 +217,8 @@ function useWattsUpPro {
 	esac
 }
 
+sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
+sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
 for task in "${tasks_without_graphics[@]}"; do
@@ -231,10 +233,10 @@ for task in "${tasks_without_graphics[@]}"; do
 		("apache" | "nginx" ) 
 			startServers $task
 			if [ $taskName == "apache" ]; then
-				sudo perf stat -a -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://localhost:80/ 2> ../results/${scenario}/log_${taskName}.txt
+				perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://localhost:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/apache2/bin/apachectl -k stop
 			else
-				sudo perf stat -a -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://0.0.0.0:80/ 2> ../results/${scenario}/log_${taskName}.txt
+				perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://0.0.0.0:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/nginx/sbin/nginx -s stop
 			fi
 			getTimeInSeconds ../results/log_${taskName}.txt ;;
@@ -255,14 +257,14 @@ for task in "${tasks_without_graphics[@]}"; do
 			fi
 
 			cd ../${taskDirectory}/${benchmark}
-			sudo perf stat -a -e "power/energy-pkg/,power/energy-ram/" ./${task} 2> ../../../results/${scenario}/log_${taskName}.txt
+			perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ./${task} 2> ../../../results/${scenario}/log_${taskName}.txt
 			cd ../../../scripts ;;
-		(*) sudo perf stat -a -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
+		(*) perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
 	esac
 
 	#useWattsUpPro stop ${taskName}
 	#getTimeInSeconds ../results/${scenario}/log_${taskName}.txt
-	totalTime=`grep 'seconds' ../results/${scenario}/log_${taskName}.txt | awk -F',' '{print $1}'`
+	totalTime=`grep 'seconds time elapsed' ../results/${scenario}/log_${taskName}.txt | awk -F',' '{print $1}'`
         energyPkg=`grep 'energy-pkg' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | sed 's/,/\./g'`
         energyRam=`grep 'energy-ram' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | sed 's/,/\./g'`
         totalEnergy=`echo $energyPkg + $energyRam| bc`
@@ -272,5 +274,5 @@ done
 
 dumpGarbage
 echo "Done with all"
-python sendNotification.py "Stock"
+python sendNotification.py ${scenario}
 exit

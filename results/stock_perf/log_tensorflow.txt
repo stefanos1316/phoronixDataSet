@@ -26,11 +26,15 @@ WARNING:tensorflow:From cifar10_train.py:128: The name tf.app.run is deprecated.
 
 WARNING:tensorflow:From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
 
-W0309 06:01:47.645451 140402172483392 deprecation_wrapper.py:119] From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+W0311 10:40:46.247934 140196297865024 deprecation_wrapper.py:119] From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+WARNING:tensorflow:From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+W0311 10:40:46.248117 140196297865024 deprecation_wrapper.py:119] From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
 
 WARNING:tensorflow:From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
 
-W0309 06:01:47.645635 140402172483392 deprecation_wrapper.py:119] From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+W0311 10:40:46.308796 140196297865024 deprecation_wrapper.py:119] From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
 
 WARNING:tensorflow:
 The TensorFlow contrib module will not be included in TensorFlow 2.0.
@@ -40,7 +44,7 @@ For more information, please see:
   * https://github.com/tensorflow/io (for I/O related ops)
 If you depend on functionality not listed there, please file an issue.
 
-W0309 06:01:49.786949 140402172483392 lazy_loader.py:50] 
+W0311 10:40:48.611614 140196297865024 lazy_loader.py:50] 
 The TensorFlow contrib module will not be included in TensorFlow 2.0.
 For more information, please see:
   * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
@@ -51,169 +55,1029 @@ If you depend on functionality not listed there, please file an issue.
 WARNING:tensorflow:From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
 Instructions for updating:
 Please switch to tf.train.get_or_create_global_step
-W0309 06:01:49.787081 140402172483392 deprecation.py:323] From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+W0311 10:40:48.611745 140196297865024 deprecation.py:323] From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
 Instructions for updating:
 Please switch to tf.train.get_or_create_global_step
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
-W0309 06:01:49.850698 140402172483392 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+W0311 10:40:48.674727 140196297865024 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
 WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
-W0309 06:01:49.864088 140402172483392 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+W0311 10:40:48.688131 140196297865024 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
 WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
-W0309 06:01:49.864805 140402172483392 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+W0311 10:40:48.688840 140196297865024 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
 WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
 Instructions for updating:
 To construct input pipelines, use the `tf.data` module.
-W0309 06:01:49.865805 140402172483392 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+W0311 10:40:48.689818 140196297865024 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
 Instructions for updating:
 To construct input pipelines, use the `tf.data` module.
 WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
 Instructions for updating:
 To construct input pipelines, use the `tf.data` module.
-W0309 06:01:49.866384 140402172483392 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+W0311 10:40:48.690387 140196297865024 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
 Instructions for updating:
 To construct input pipelines, use the `tf.data` module.
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
-W0309 06:01:49.868591 140402172483392 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+W0311 10:40:48.692589 140196297865024 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
 
-W0309 06:01:49.924443 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+W0311 10:40:48.748214 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Deprecated in favor of operator or tf.math.divide.
-W0309 06:01:49.955532 140402172483392 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+W0311 10:40:48.779418 140196297865024 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Deprecated in favor of operator or tf.math.divide.
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
-W0309 06:01:49.956085 140402172483392 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+W0311 10:40:48.779970 140196297865024 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
 Instructions for updating:
 Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
 
-W0309 06:01:49.962399 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+W0311 10:40:48.786164 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
 
-W0309 06:01:49.963808 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+W0311 10:40:48.787588 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
 Call initializer instance with the dtype argument instead of passing it to the constructor
-W0309 06:01:49.964016 140402172483392 deprecation.py:506] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+W0311 10:40:48.787799 140196297865024 deprecation.py:506] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
 Call initializer instance with the dtype argument instead of passing it to the constructor
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
 
-W0309 06:01:49.964151 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+W0311 10:40:48.787931 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
 
-W0309 06:01:50.007949 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+W0311 10:40:48.833366 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
 Instructions for updating:
 Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
-W0309 06:01:50.045528 140402172483392 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+W0311 10:40:48.869610 140196297865024 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
 Instructions for updating:
 Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
 Instructions for updating:
 Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
-W0309 06:01:50.055444 140402172483392 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+W0311 10:40:48.879451 140196297865024 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
 Instructions for updating:
 Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
 
-W0309 06:01:50.056144 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+W0311 10:40:48.880150 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
 
-W0309 06:01:50.133168 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+W0311 10:40:48.956278 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
 
-W0309 06:01:50.146367 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+W0311 10:40:48.970193 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
 
-W0309 06:01:50.186195 140402172483392 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+W0311 10:40:49.009572 140196297865024 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
 
 WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
-W0309 06:01:50.260573 140402172483392 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+W0311 10:40:49.083730 140196297865024 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
 WARNING:tensorflow:From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
 
-W0309 06:01:50.385682 140402172483392 deprecation_wrapper.py:119] From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+W0311 10:40:49.207710 140196297865024 deprecation_wrapper.py:119] From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
 
 WARNING:tensorflow:From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
 
-W0309 06:01:50.385822 140402172483392 deprecation_wrapper.py:119] From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+W0311 10:40:49.207856 140196297865024 deprecation_wrapper.py:119] From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
 
 WARNING:tensorflow:From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
 
-W0309 06:01:50.385907 140402172483392 deprecation_wrapper.py:119] From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+W0311 10:40:49.207936 140196297865024 deprecation_wrapper.py:119] From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
 
 INFO:tensorflow:Create CheckpointSaverHook.
-I0309 06:01:50.386021 140402172483392 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+I0311 10:40:49.208045 140196297865024 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
 WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use tf.where in 2.0, which has the same broadcast rule as np.where
-W0309 06:01:50.521252 140402172483392 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+W0311 10:40:49.353636 140196297865024 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use tf.where in 2.0, which has the same broadcast rule as np.where
 INFO:tensorflow:Graph was finalized.
-I0309 06:01:50.571408 140402172483392 monitored_session.py:240] Graph was finalized.
-2020-03-09 06:01:50.571570: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-2020-03-09 06:01:50.714462: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
-2020-03-09 06:01:50.714776: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x699e4a0 executing computations on platform Host. Devices:
-2020-03-09 06:01:50.714797: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
-2020-03-09 06:01:50.854509: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+I0311 10:40:49.403542 140196297865024 monitored_session.py:240] Graph was finalized.
+2020-03-11 10:40:49.403703: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-11 10:40:49.547260: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
+2020-03-11 10:40:49.547579: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4828d60 executing computations on platform Host. Devices:
+2020-03-11 10:40:49.547614: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-03-11 10:40:49.678174: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
 INFO:tensorflow:Running local_init_op.
-I0309 06:01:50.998809 140402172483392 session_manager.py:500] Running local_init_op.
+I0311 10:40:49.797793 140196297865024 session_manager.py:500] Running local_init_op.
 INFO:tensorflow:Done running local_init_op.
-I0309 06:01:51.004995 140402172483392 session_manager.py:502] Done running local_init_op.
+I0311 10:40:49.803802 140196297865024 session_manager.py:502] Done running local_init_op.
 WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
 Instructions for updating:
 To construct input pipelines, use the `tf.data` module.
-W0309 06:01:51.026300 140402172483392 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+W0311 10:40:49.825108 140196297865024 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
 Instructions for updating:
 To construct input pipelines, use the `tf.data` module.
 INFO:tensorflow:Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
-I0309 06:01:51.520568 140402172483392 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
-INFO:tensorflow:global_step/sec: 7.154
-I0309 06:02:06.480845 140402172483392 basic_session_run_hooks.py:692] global_step/sec: 7.154
-INFO:tensorflow:global_step/sec: 7.31584
-I0309 06:02:20.149828 140402172483392 basic_session_run_hooks.py:692] global_step/sec: 7.31584
-INFO:tensorflow:global_step/sec: 7.3834
-I0309 06:02:33.693715 140402172483392 basic_session_run_hooks.py:692] global_step/sec: 7.3834
+I0311 10:40:50.353442 140196297865024 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+INFO:tensorflow:global_step/sec: 7.29438
+I0311 10:41:05.048486 140196297865024 basic_session_run_hooks.py:692] global_step/sec: 7.29438
+INFO:tensorflow:global_step/sec: 7.32473
+I0311 10:41:18.700880 140196297865024 basic_session_run_hooks.py:692] global_step/sec: 7.32473
+INFO:tensorflow:global_step/sec: 7.31491
+I0311 10:41:32.371580 140196297865024 basic_session_run_hooks.py:692] global_step/sec: 7.31491
 INFO:tensorflow:Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
-I0309 06:02:47.056779 140402172483392 basic_session_run_hooks.py:606] Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+I0311 10:41:45.876838 140196297865024 basic_session_run_hooks.py:606] Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From cifar10_train.py:128: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
 
- Performance counter stats for 'system wide':
+WARNING:tensorflow:From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
 
-           3148,11 Joules power/energy-pkg/                                           
-            121,35 Joules power/energy-ram/                                           
+W0311 10:41:49.359620 139801403533120 deprecation_wrapper.py:119] From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
 
-      84,904472789 seconds time elapsed
+WARNING:tensorflow:From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+W0311 10:41:49.359803 139801403533120 deprecation_wrapper.py:119] From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+WARNING:tensorflow:From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0311 10:41:49.361827 139801403533120 deprecation_wrapper.py:119] From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0311 10:41:49.740884 139801403533120 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+W0311 10:41:49.741007 139801403533120 deprecation.py:323] From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0311 10:41:49.743762 139801403533120 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0311 10:41:49.746481 139801403533120 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+W0311 10:41:49.746974 139801403533120 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:41:49.747866 139801403533120 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:41:49.748446 139801403533120 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+W0311 10:41:49.750581 139801403533120 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+
+W0311 10:41:49.758931 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0311 10:41:49.785575 139801403533120 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+W0311 10:41:49.786112 139801403533120 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+W0311 10:41:49.792382 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0311 10:41:49.793807 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0311 10:41:49.794020 139801403533120 deprecation.py:506] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0311 10:41:49.794152 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+
+W0311 10:41:49.837939 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
+W0311 10:41:49.841557 139801403533120 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
+W0311 10:41:49.851785 139801403533120 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+W0311 10:41:49.852486 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+W0311 10:41:49.930457 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0311 10:41:49.931053 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+W0311 10:41:49.970846 139801403533120 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0311 10:41:50.046462 139801403533120 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+
+W0311 10:41:50.173249 139801403533120 deprecation_wrapper.py:119] From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+
+WARNING:tensorflow:From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+
+W0311 10:41:50.173389 139801403533120 deprecation_wrapper.py:119] From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+
+WARNING:tensorflow:From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+W0311 10:41:50.173468 139801403533120 deprecation_wrapper.py:119] From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+INFO:tensorflow:Create CheckpointSaverHook.
+I0311 10:41:50.173608 139801403533120 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0311 10:41:50.259798 139801403533120 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Graph was finalized.
+I0311 10:41:50.310427 139801403533120 monitored_session.py:240] Graph was finalized.
+2020-03-11 10:41:50.310600: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-11 10:41:50.335033: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
+2020-03-11 10:41:50.335370: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5bb48f0 executing computations on platform Host. Devices:
+2020-03-11 10:41:50.335392: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-03-11 10:41:50.391398: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I0311 10:41:50.422674 139801403533120 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0311 10:41:50.428880 139801403533120 session_manager.py:502] Done running local_init_op.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:41:50.450131 139801403533120 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+I0311 10:41:50.827407 139801403533120 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+INFO:tensorflow:global_step/sec: 7.29562
+I0311 10:42:05.393157 139801403533120 basic_session_run_hooks.py:692] global_step/sec: 7.29562
+INFO:tensorflow:global_step/sec: 7.30604
+I0311 10:42:19.080457 139801403533120 basic_session_run_hooks.py:692] global_step/sec: 7.30604
+INFO:tensorflow:global_step/sec: 7.32632
+I0311 10:42:32.729890 139801403533120 basic_session_run_hooks.py:692] global_step/sec: 7.32632
+INFO:tensorflow:Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+I0311 10:42:46.240411 139801403533120 basic_session_run_hooks.py:606] Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From cifar10_train.py:128: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+W0311 10:42:49.592476 139901540472640 deprecation_wrapper.py:119] From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+WARNING:tensorflow:From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+W0311 10:42:49.592633 139901540472640 deprecation_wrapper.py:119] From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+WARNING:tensorflow:From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0311 10:42:49.594665 139901540472640 deprecation_wrapper.py:119] From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0311 10:42:49.972060 139901540472640 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+W0311 10:42:49.972186 139901540472640 deprecation.py:323] From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0311 10:42:49.974949 139901540472640 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0311 10:42:49.977641 139901540472640 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+W0311 10:42:49.978091 139901540472640 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:42:49.978988 139901540472640 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:42:49.979696 139901540472640 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+W0311 10:42:49.981805 139901540472640 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+
+W0311 10:42:49.989959 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0311 10:42:50.016534 139901540472640 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+W0311 10:42:50.017072 139901540472640 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+W0311 10:42:50.023333 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0311 10:42:50.024742 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0311 10:42:50.024952 139901540472640 deprecation.py:506] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0311 10:42:50.025082 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+
+W0311 10:42:50.067872 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
+W0311 10:42:50.071442 139901540472640 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
+W0311 10:42:50.081456 139901540472640 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+W0311 10:42:50.082159 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+W0311 10:42:50.159276 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0311 10:42:50.159860 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+W0311 10:42:50.198975 139901540472640 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0311 10:42:50.273187 139901540472640 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+
+W0311 10:42:50.398377 139901540472640 deprecation_wrapper.py:119] From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+
+WARNING:tensorflow:From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+
+W0311 10:42:50.398517 139901540472640 deprecation_wrapper.py:119] From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+
+WARNING:tensorflow:From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+W0311 10:42:50.398593 139901540472640 deprecation_wrapper.py:119] From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+INFO:tensorflow:Create CheckpointSaverHook.
+I0311 10:42:50.398705 139901540472640 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0311 10:42:50.484221 139901540472640 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Graph was finalized.
+I0311 10:42:50.534376 139901540472640 monitored_session.py:240] Graph was finalized.
+2020-03-11 10:42:50.534548: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-11 10:42:50.559271: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
+2020-03-11 10:42:50.559552: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x6662e60 executing computations on platform Host. Devices:
+2020-03-11 10:42:50.559583: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-03-11 10:42:50.615448: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I0311 10:42:50.646286 139901540472640 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0311 10:42:50.652173 139901540472640 session_manager.py:502] Done running local_init_op.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:42:50.672883 139901540472640 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+I0311 10:42:50.984504 139901540472640 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+INFO:tensorflow:global_step/sec: 7.30698
+I0311 10:43:05.548200 139901540472640 basic_session_run_hooks.py:692] global_step/sec: 7.30698
+INFO:tensorflow:global_step/sec: 7.33694
+I0311 10:43:19.177845 139901540472640 basic_session_run_hooks.py:692] global_step/sec: 7.33694
+INFO:tensorflow:global_step/sec: 7.32954
+I0311 10:43:32.821293 139901540472640 basic_session_run_hooks.py:692] global_step/sec: 7.32954
+INFO:tensorflow:Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+I0311 10:43:46.317718 139901540472640 basic_session_run_hooks.py:606] Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From cifar10_train.py:128: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+W0311 10:43:49.617027 139968971765568 deprecation_wrapper.py:119] From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+WARNING:tensorflow:From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+W0311 10:43:49.617199 139968971765568 deprecation_wrapper.py:119] From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+WARNING:tensorflow:From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0311 10:43:49.619223 139968971765568 deprecation_wrapper.py:119] From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0311 10:43:49.994800 139968971765568 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+W0311 10:43:49.994935 139968971765568 deprecation.py:323] From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0311 10:43:49.997636 139968971765568 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0311 10:43:50.000358 139968971765568 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+W0311 10:43:50.000831 139968971765568 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:43:50.001725 139968971765568 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:43:50.002300 139968971765568 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+W0311 10:43:50.004457 139968971765568 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+
+W0311 10:43:50.012709 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0311 10:43:50.039101 139968971765568 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+W0311 10:43:50.039633 139968971765568 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+W0311 10:43:50.045784 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0311 10:43:50.047279 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0311 10:43:50.047489 139968971765568 deprecation.py:506] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0311 10:43:50.047626 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+
+W0311 10:43:50.090478 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
+W0311 10:43:50.094020 139968971765568 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
+W0311 10:43:50.103936 139968971765568 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+W0311 10:43:50.104635 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+W0311 10:43:50.181464 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0311 10:43:50.182052 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+W0311 10:43:50.221371 139968971765568 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0311 10:43:50.295855 139968971765568 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+
+W0311 10:43:50.420678 139968971765568 deprecation_wrapper.py:119] From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+
+WARNING:tensorflow:From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+
+W0311 10:43:50.420819 139968971765568 deprecation_wrapper.py:119] From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+
+WARNING:tensorflow:From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+W0311 10:43:50.420896 139968971765568 deprecation_wrapper.py:119] From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+INFO:tensorflow:Create CheckpointSaverHook.
+I0311 10:43:50.421009 139968971765568 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0311 10:43:50.506348 139968971765568 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Graph was finalized.
+I0311 10:43:50.556184 139968971765568 monitored_session.py:240] Graph was finalized.
+2020-03-11 10:43:50.556353: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-11 10:43:50.579263: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
+2020-03-11 10:43:50.579562: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5fb8da0 executing computations on platform Host. Devices:
+2020-03-11 10:43:50.579585: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-03-11 10:43:50.634836: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I0311 10:43:50.665815 139968971765568 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0311 10:43:50.671703 139968971765568 session_manager.py:502] Done running local_init_op.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:43:50.692546 139968971765568 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+I0311 10:43:51.074387 139968971765568 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+INFO:tensorflow:global_step/sec: 7.31842
+I0311 10:44:05.595349 139968971765568 basic_session_run_hooks.py:692] global_step/sec: 7.31842
+INFO:tensorflow:global_step/sec: 7.34187
+I0311 10:44:19.215861 139968971765568 basic_session_run_hooks.py:692] global_step/sec: 7.34187
+INFO:tensorflow:global_step/sec: 7.33266
+I0311 10:44:32.853486 139968971765568 basic_session_run_hooks.py:692] global_step/sec: 7.33266
+INFO:tensorflow:Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+I0311 10:44:46.331403 139968971765568 basic_session_run_hooks.py:606] Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/sgeorgiou/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From cifar10_train.py:128: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+W0311 10:44:49.625443 140038999332672 deprecation_wrapper.py:119] From cifar10_train.py:120: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+WARNING:tensorflow:From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+W0311 10:44:49.625613 140038999332672 deprecation_wrapper.py:119] From cifar10_train.py:121: The name tf.gfile.DeleteRecursively is deprecated. Please use tf.io.gfile.rmtree instead.
+
+WARNING:tensorflow:From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0311 10:44:49.627671 140038999332672 deprecation_wrapper.py:119] From cifar10_train.py:122: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0311 10:44:50.003298 140038999332672 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+W0311 10:44:50.003421 140038999332672 deprecation.py:323] From cifar10_train.py:61: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0311 10:44:50.006143 140038999332672 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0311 10:44:50.008876 140038999332672 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+W0311 10:44:50.009322 140038999332672 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:44:50.010233 140038999332672 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:44:50.010842 140038999332672 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+W0311 10:44:50.012954 140038999332672 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+
+W0311 10:44:50.021216 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:171: The name tf.random_crop is deprecated. Please use tf.image.random_crop instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0311 10:44:50.047505 140038999332672 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/image_ops_impl.py:1514: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+W0311 10:44:50.048031 140038999332672 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+W0311 10:44:50.054170 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10_input.py:135: The name tf.summary.image is deprecated. Please use tf.compat.v1.summary.image instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0311 10:44:50.055619 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:203: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0311 10:44:50.055825 140038999332672 deprecation.py:506] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:135: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0311 10:44:50.055963 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:111: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+
+W0311 10:44:50.098892 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:138: The name tf.add_to_collection is deprecated. Please use tf.compat.v1.add_to_collection instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
+W0311 10:44:50.102431 140038999332672 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:93: histogram_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.histogram. Note that tf.summary.histogram uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
+W0311 10:44:50.112342 140038999332672 deprecation.py:323] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:95: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+W0311 10:44:50.113036 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:215: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+W0311 10:44:50.190132 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:295: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0311 10:44:50.190720 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:343: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+W0311 10:44:50.229956 140038999332672 deprecation_wrapper.py:119] From /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/tensorflow/cifar10.py:355: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0311 10:44:50.304551 140038999332672 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+
+W0311 10:44:50.429437 140038999332672 deprecation_wrapper.py:119] From cifar10_train.py:77: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+
+WARNING:tensorflow:From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+
+W0311 10:44:50.429576 140038999332672 deprecation_wrapper.py:119] From cifar10_train.py:106: The name tf.train.MonitoredTrainingSession is deprecated. Please use tf.compat.v1.train.MonitoredTrainingSession instead.
+
+WARNING:tensorflow:From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+W0311 10:44:50.429655 140038999332672 deprecation_wrapper.py:119] From cifar10_train.py:108: The name tf.train.StopAtStepHook is deprecated. Please use tf.estimator.StopAtStepHook instead.
+
+INFO:tensorflow:Create CheckpointSaverHook.
+I0311 10:44:50.429764 140038999332672 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0311 10:44:50.515310 140038999332672 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py:1354: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Graph was finalized.
+I0311 10:44:50.564943 140038999332672 monitored_session.py:240] Graph was finalized.
+2020-03-11 10:44:50.565114: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-11 10:44:50.587177: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
+2020-03-11 10:44:50.587486: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55c7710 executing computations on platform Host. Devices:
+2020-03-11 10:44:50.587507: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-03-11 10:44:50.642518: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I0311 10:44:50.674225 140038999332672 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0311 10:44:50.680156 140038999332672 session_manager.py:502] Done running local_init_op.
+WARNING:tensorflow:From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0311 10:44:50.701048 140038999332672 deprecation.py:323] From /home/sgeorgiou/.local/lib/python3.6/site-packages/tensorflow/python/training/monitored_session.py:875: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+I0311 10:44:51.047671 140038999332672 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+INFO:tensorflow:global_step/sec: 7.29328
+I0311 10:45:05.615557 140038999332672 basic_session_run_hooks.py:692] global_step/sec: 7.29328
+INFO:tensorflow:global_step/sec: 7.3306
+I0311 10:45:19.257007 140038999332672 basic_session_run_hooks.py:692] global_step/sec: 7.3306
+INFO:tensorflow:global_step/sec: 7.32115
+I0311 10:45:32.916062 140038999332672 basic_session_run_hooks.py:692] global_step/sec: 7.32115
+INFO:tensorflow:Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+I0311 10:45:46.407025 140038999332672 basic_session_run_hooks.py:606] Saving checkpoints for 400 into /tmp/cifar10_train/model.ckpt.
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           2864,57 Joules power/energy-pkg/                                             ( +-  0,31% )
+            109,32 Joules power/energy-ram/                                             ( +-  0,96% )
+
+             62,00 +- 1,90 seconds time elapsed  ( +-  3,06% )
 

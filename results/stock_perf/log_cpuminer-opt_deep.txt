@@ -1,9 +1,13 @@
-4089866
+4089906
+4088686
+4088639
+4091061
+4090587
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-           1990,25 Joules power/energy-pkg/                                           
-             17,16 Joules power/energy-ram/                                           
+           1978,55 Joules power/energy-pkg/                                             ( +-  0,65% )
+             17,07 Joules power/energy-ram/                                             ( +-  0,58% )
 
-      34,219748283 seconds time elapsed
+            34,008 +- 0,194 seconds time elapsed  ( +-  0,57% )
 

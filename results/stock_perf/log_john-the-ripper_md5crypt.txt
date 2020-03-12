@@ -1,9 +1,13 @@
 Will run 8 OpenMP threads
+Will run 8 OpenMP threads
+Will run 8 OpenMP threads
+Will run 8 OpenMP threads
+Will run 8 OpenMP threads
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-           3700,72 Joules power/energy-pkg/                                           
-             30,19 Joules power/energy-ram/                                           
+           3723,24 Joules power/energy-pkg/                                             ( +-  0,09% )
+             30,19 Joules power/energy-ram/                                             ( +-  0,01% )
 
-      60,155029428 seconds time elapsed
+         60,157951 +- 0,000799 seconds time elapsed  ( +-  0,00% )
 

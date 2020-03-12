@@ -1,9 +1,16 @@
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
 PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
 
- Performance counter stats for 'system wide':
+ Performance counter stats for 'system wide' (5 runs):
 
-           4477,62 Joules power/energy-pkg/                                           
-            179,54 Joules power/energy-ram/                                           
+           4225,61 Joules power/energy-pkg/                                             ( +-  0,22% )
+            177,66 Joules power/energy-ram/                                             ( +-  0,27% )
 
-     107,953337775 seconds time elapsed
+            99,863 +- 0,837 seconds time elapsed  ( +-  0,84% )
 
