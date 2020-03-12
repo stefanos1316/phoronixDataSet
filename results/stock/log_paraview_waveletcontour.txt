@@ -1,7 +1,0 @@
-+ ./paraview waveletcontour
-ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/Rendering/OpenGL2/vtkXOpenGLRenderWindow.cxx, line 297
-vtkXOpenGLRenderWindow (0x3ec90f0): bad X server connection. DISPLAY=Aborted (core dumped)
-
-real	0m5,363s
-user	0m4,876s
-sys	0m0,250s

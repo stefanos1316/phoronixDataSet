@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="stock_perf"
+scenario="meltdown_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
@@ -37,7 +37,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
 		"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
 		"qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" "javascimark2" \
-		"j2dbench all" "j2dbench images" "j2dbench graphics" "j2dbench text" "sunflow" "sqlitebench" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" \
+		"sunflow" "sqlitebench" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" \
 		"dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "postmark ../inputs/postmark.pmrc" \
 		"fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" "bork" "ffmpeg" "encode-mp3" \
 		"graphics-magick minify" "graphics-magick gaussian 0x1" "graphics-magick sharpen 0x2.0" "graphics-magick rotate 90" "graphics-magick resize 50%" \
@@ -88,13 +88,13 @@ tasks_without_graphics=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aoben
 		"mcperf get" "mcperf set" "mcperf delete" "mcperf add" "mcperf replace" "mcperf append" "mcperf prepend" \
 		"mkl-dnn conv_all conv" "mkl-dnn conv_googlenet_v3 conv" "mkl-dnn conv_alexnet conv" "mkl-dnn ip_1d ip" "mkl-dnn ip_all ip" "mkl-dnn rnn_training rnn" \
 		"node-express-loadtest" "numenta-nab" "phpbench php phpbench.php -i 1000000" "primesieve 1e12 --quiet --time" "pymongo" \
-		"rbenchmark" "redis get" "redis set" "redis lpush" "redis lpop" "redis sadd" "rust-prime 200000000 8" "scikit" "sockperf under-load --mps=max -m 64 -t 30" \
-		"sockperf ping-pong --mps=max -m 64 -t 30" "sockperf throughput --mps=max -m 64 -t 30" "stress-ng --vecmath 0 --vecmath-ops 200000" \
+		"rbenchmark" "redis get" "redis set" "redis lpush" "redis lpop" "redis sadd" "rust-prime 200000000 8" "scikit" "stress-ng --vecmath 0 --vecmath-ops 200000" \
 		"stress-ng --matrix 0 --matrix-ops 400000" "stress-ng --fork 0 --fork-ops 1000000" "stress-ng --msg 0 --msg-ops 100000000" \
 		"stress-ng --sem 0 --sem-ops 100000000" "stress-ng --sock 0 --sock-ops 100000" "stress-ng --switch 0 --switch-ops 40000000" \
 		"stream" "swet -Z" "t-test1 5000" "tensorflow" "tinymembench" "ttsiod-renderer" "xsbench -t 8 -s large -l 30000000" \
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
-		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "build-gcc" "javascimark2" \
+		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "build-gcc" \
+		"qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" "javascimark2" \
 		"sunflow" "sqlitebench" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" \
 		"dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "postmark ../inputs/postmark.pmrc" \
 		"fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" "bork" "ffmpeg" "encode-mp3" \
@@ -119,15 +119,16 @@ tasks_without_graphics=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aoben
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
 # For the tasks below avoid running them remotely (ssh) because it reduces their performance
-tasks_with_grapihcs=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
+tasks_with_grapihcs=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \V
 	"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
 	"unigine-valley 800x600" "unigine-valley 1024x768" "unigine-valley 1920x1080" "unigine-valley 2560x1440" \
 	"unigine-heaven 800x600" "unigine-heaven 1024x768" "unigine-heaven 1920x1080" "unigine-heaven 2560x1440" \
 	"glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440" \
         "qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" \
 	"nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440" \
-	"warsow 800x600" "warsow 1024x768" "warsow 1920x1080" "warsow 2560x1440" "paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
-	"indigobench supercar" "indigobench bedroom")
+	"xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" \
+	"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
+	"indigobench supercar" "indigobench bedroom" "j2dbench all" "j2dbench images" "j2dbench graphics" "j2dbench text")
 
 taskArray="tasks_without_graphics"
 
@@ -135,12 +136,12 @@ function startServers {
 	case $1 in
 		("apache")
 			sudo /usr/local/apache2/bin/apachectl -k stop
-			sudo rm -f /usr/local/apache2/logs/* 
+			sudo rm -f /usr/local/apache2/logs/*
 			sudo /usr/local/apache2/bin/apachectl -k start
 			sleep 10 ;;
 		("nginx")
 			sudo /usr/local/nginx/sbin/nginx -s stop
-			sudo rm -f /usr/local/nginx/logs/* 
+			sudo rm -f /usr/local/nginx/logs/*
 			sudo /usr/local/nginx/sbin/nginx
 			sleep 10 ;;
 		("mcperf")
@@ -164,7 +165,7 @@ function getTimeInSeconds {
 	if [ $minutes -ne 0 ]; then
 		minutes=$((minutes * 60))
 	fi
-			
+
 	totalTime=$((minutes + seconds))
 }
 
@@ -177,14 +178,14 @@ function dumpGarbage {
 	|| [ -f image.ppm] || [ -f ../inputs/zstd_test.zst ] ; then
 		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp
 		rm ../inputs/tmp_linux-5.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst
-		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../${taskDirectory}/dcraw/*.ppm 
+		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../${taskDirectory}/dcraw/*.ppm
 		rm bitmap0_* ; rm -rf blog-* ; rm alltext.out ; rm output.ppm; rm results.txt
 		rm clover.* ; rm tmp_linux-5.3.tar.gz.bz2; rm image.ppm; rm -f ../inputs/zstd_test.zst
 	fi
 }
 
 # Note: for the above to work the alternative scenarios
-# of the bench suite must be immediatly after the bench's name
+# of the bench suite must be immediatly after the benchs name
 function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
@@ -208,7 +209,7 @@ function useWattsUpPro {
 		("start")
 			rm ${dataPath}
 			sudo nohup ../tools/watts-up/wattsup ttyUSB0 -s watts >> ${dataPath}  &
-			sleep 2 ;; 
+			sleep 2 ;;
 		("stop")
 			sudo pkill wattsup
 			energy=`awk '{sum+=$1} END {print sum}' $dataPath`
@@ -230,7 +231,7 @@ for task in "${tasks_without_graphics[@]}"; do
 	#useWattsUpPro start ${taskName}
 
 	case "$taskName" in
-		("apache" | "nginx" ) 
+		("apache" | "nginx" )
 			startServers $task
 			if [ $taskName == "apache" ]; then
 				perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://localhost:80/ 2> ../results/${scenario}/log_${taskName}.txt
@@ -250,7 +251,7 @@ for task in "${tasks_without_graphics[@]}"; do
 		svt-hevc | tungsten* | ospray* | embree* | iperf* | oidn | pyperformance-run* | indigobench* | rays1bench | \
 		cp2k | svt-av1 | dav1d* | cpuminer-opt* | vpxenc | mt-dgemm | deepspeech | octave-benchmark | unigine-valley* | \
 		unigine-heaven* | unigine-super* | build2 | build-gdb | aircrack-ng |  stockfish | x264 | x265 | ctx_clock | hmmer | cloverleaf | \
-		encode-flac | xz | povray | bzip2 | hpcg | sockperf* | qgears* | glmark2* | lzbench* | zstd )
+		encode-flac | xz | povray | bzip2 | hpcg | sockperf* | qgears* | glmark2* | lzbench* | zstd | jxrend )
 			if [ $benchmark == "mcperf" ] || [ $benchmark == "pymongo" ]  || [ $benchmark == "redis" ] || \
 				[ $benchmark == "cassandra" ] ; then
 				startServers $benchmark
@@ -264,9 +265,9 @@ for task in "${tasks_without_graphics[@]}"; do
 
 	#useWattsUpPro stop ${taskName}
 	#getTimeInSeconds ../results/${scenario}/log_${taskName}.txt
-	totalTime=`grep 'seconds time elapsed' ../results/${scenario}/log_${taskName}.txt | awk -F',' '{print $1}'`
-        energyPkg=`grep 'energy-pkg' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | sed 's/,/\./g'`
-        energyRam=`grep 'energy-ram' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | sed 's/,/\./g'`
+	totalTime=`grep 'seconds time elapsed' ../results/${scenario}/log_${taskName}.txt | awk -F'.' '{print $1}'`
+        energyPkg=`grep 'energy-pkg' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,//g'`
+        energyRam=`grep 'energy-ram' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,//g'`
         totalEnergy=`echo $energyPkg + $energyRam| bc`
         echo "${taskName}               ${totalTime}" >> ../results/${scenario}/time.txt
         echo "${taskName}               ${totalEnergy}" >> ../results/${scenario}/energy.txt
