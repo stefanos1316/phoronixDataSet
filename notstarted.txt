@@ -2,7 +2,7 @@ Graphics
 ========
 stock (DONE)
 meltdown (DNOE)
-spectre
+spectre (DONE)
 mds
 all
 
