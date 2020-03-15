@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="spectre_perf"
+scenario="alloff_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
