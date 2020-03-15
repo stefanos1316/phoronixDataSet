@@ -15,6 +15,181 @@ taskScripts='scripts'
 mkdir gcc_tasks_test
 cd gcc_tasks_test
 
+echo "-------Downloading and installing iozone"
+mkdir iozone && cd iozone
+wget http://iozone.org/src/current/iozone3_465.tar
+tar -xf iozone3_465.tar && rm iozone3_465.tar
+mv iozone3_465/* ./ && rm -rf iozone3_465
+cd src/current/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' makefile
+fi
+make linux
+cp iozone ../../
+cd ../../../
+
+exit
+
+echo "-------Downloading and installing sqlitebench"
+mkdir sqlitebench && cd sqlitebench
+wget  http://sqlite.org/2019/sqlite-autoconf-3300100.tar.gz
+tar -xzvf sqlite-autoconf-3300100.tar.gz && rm sqlite-autoconf-3300100.tar.gz
+mv sqlite-autoconf-3300100/* ./ && rm -rf sqlite-autoconf-3300100/
+wget http://www.phoronix-test-suite.com/benchmark-files/pts-sqlite-tests-1.tar.gz
+tar -xzvf pts-sqlite-tests-1.tar.gz && rm pts-sqlite-tests-1.tar.gz
+CFLAGS="${SECURITY_FLAGS}" ./configure --prefix=`pwd`
+make -j $(nproc --all)
+make install
+echo "#!/bin/sh
+rm benchmark.db
+bin/sqlite3 benchmark.db  \"CREATE TABLE pts1 ('I' SMALLINT NOT NULL, 'DT' TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 'F1' VARCHAR(4) NOT NULL, 'F2' VARCHAR(16) NOT NULL);\"
+cat sqlite-2500-insertions.txt | bin/sqlite3 benchmark.db" > sqlitebench
+chmod +x sqlitebench
+cd ../
+
+echo "-------Downloading and installing botan"
+mkdir botan && cd botan
+wget http://botan.randombit.net/releases/Botan-2.8.0.tgz
+tar -xf Botan-2.8.0.tgz && rm Botan-2.8.0.tgz
+mv Botan-2.8.0/* ./ && rm -rf Botan-2.8.0 
+python3 ./configure.py
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
+fi
+make -j $(nproc --all)
+mv botan botan_bin
+echo "#!/bin/bash
+./botan_bin speed \$1 --format=table --msec=10000" > botan
+chmod +x botan
+cd ../
+
+echo "-------Downloading and installing ttsiod-renderer"
+mkdir ttsiod-renderer && cd ttsiod-renderer
+wget http://www.phoronix-test-suite.com/benchmark-files/renderer-2.3b.zip
+unzip renderer-2.3b.zip && rm renderer-2.3b.zip
+mv renderer-2.3b/* ./ && rm -rf renderer-2.3b/
+CFLAGS="${SECURITY_FLAGS}" ./configure
+make -j $(nproc --all)
+echo "#!/bin/bash
+cd 3D-Objects
+OMP_NUM_THREADS=\$(nproc --all) SDL_VIDEODRIVER=dummy ../src/renderer -b -n 10000 statue.ply" > ttsiod-renderer
+chmod +x ttsiod-renderer
+cd ../
+
+echo "-------Downloading and installing xsbench"
+mkdir xsbench && cd xsbench
+wget http://phoronix-test-suite.com/benchmark-files/XSBench-20170808.zip
+unzip XSBench-20170808.zip && rm XSBench-20170808.zip
+mv XSBench-master/* ./ && rm -rf XSBench-master/
+cd src/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
+fi
+make
+cp XSBench ../xsbench
+cd ../../
+
+echo "-------Downloading and installing tinymembench"
+mkdir tinymembench && cd tinymembench
+wget http://phoronix-test-suite.com/benchmark-files/tinymembench-20180528.zip
+unzip tinymembench-20180528.zip && rm tinymembench-20180528.zip
+mv tinymembench-master/* ./ && rm -rf tinymembench-master
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make
+cd ../
+
+echo "-------Downloading and installing t-test1"
+mkdir t-test1 && cd t-test1
+wget http://phoronix-test-suite.com/benchmark-files/t-test1c-20171.zip
+unzip t-test1c-20171.zip && rm t-test1c-20171.zip
+cc -pthread -O3 ${SECURITY_FLAGS} -o t-test1 t-test1.c
+cd ../
+
+echo "-------Downloading and installing swet"
+mkdir swet && cd swet
+wget http://www.phoronix-test-suite.com/benchmark-files/swet-1.5.16-src.tar.gz
+tar -xzvf swet-1.5.16-src.tar.gz && rm swet-1.5.16-src.tar.gz
+mv swet1/* ./ && rm -rf swet1
+CFLAGS="${SECURITY_FLAGS}" ./configure
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-Wall/-Wall\ '"$toReplace"'/g' Makefile
+fi
+make
+cd ../
+
+echo "-------Downloading and installing stress-ng"
+mkdir stress-ng && cd stress-ng
+wget http://www.phoronix-test-suite.com/benchmark-files/stress-ng-0.07.26.tar.gz
+tar -xzvf stress-ng-0.07.26.tar.gz && rm stress-ng-0.07.26.tar.gz
+mv stress-ng-0.07.26/* ./ && rm -rf stress-ng-0.07.26/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make -j $(nproc --all)
+cd ../
+
+echo "-------Downloading and installing stream"
+mkdir stream && cd stream
+wget http://www.phoronix-test-suite.com/benchmark-files/stream-2013-01-17.tar.bz2
+tar -xjvf stream-2013-01-17.tar.bz2 && rm stream-2013-01-17.tar.bz2
+cc stream.c -DSTREAM_ARRAY_SIZE=100000000 -DNTIMES=100 -O3 ${SECURITY_FLAGS} -fopenmp -o stream
+cd ../
+
+echo "-------Downloading and installing redis"
+mkdir redis && cd redis
+wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+tar -xzvf redis-5.0.5.tar.gz && rm redis-5.0.5.tar.gz
+mv redis-5.0.5/* ./ && rm -rf redis-5.0.5/
+cd deps/
+make CFLAGS="${SECURITY_FLAGS}" hiredis jemalloc linenoise lua
+cd ../
+make CFLAGS="${SECURITY_FLAGS}" MALLOC=libc -j $(nproc --all)
+echo "#!/bin/bash
+running=`ps -aux | grep redis | wc -l`
+if [ \$running -ne 2 ]; then
+	src/redis-server &
+fi
+src/redis-benchmark -n 1000000 -P 640000 -q -c 50 --csv \$1" > redis
+chmod +x redis 
+cd ../
+
+echo "-------Downloading and installing primesieve"
+mkdir primesieve && cd primesieve
+wget http://dl.bintray.com/kimwalisch/primesieve/primesieve-7.4.tar.gz
+tar -xzvf primesieve-7.4.tar.gz && rm primesieve-7.4.tar.gz
+mv primesieve-7.4/* ./ && rm -rf primesieve-7.4/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/COMPILE_FLAGS/COMPILE_FLAGS\ '"$toReplace"'/g' CMakeLists.txt
+fi
+cmake . -DBUILD_SHARED_LIBS=OFF
+make -j $(nproc --all)
+cd ../
+
+echo "-------Downloading and installing mkl-dnn"
+mkdir mkl-dnn && cd mkl-dnn
+wget https://github.com/intel/mkl-dnn/archive/v1.1.tar.gz
+tar -xf v1.1.tar.gz && rm v1.1.tar.gz
+mv mkl-dnn-1.1/* ./ && rm -rf mkl-dnn-1.1/
+mkdir build && cd build
+CFLAGS="-O3 -march=native ${SECURITY_FLAGS}" CXXFLAGS="-O3 -march=native ${SECURITY_FLAGS}" \
+cmake -DCMAKE_BUILD_TYPE=Release MKLDNN_ARCH_OPT_FLAGS="-O3 -march=native ${SECURITY_FLAGS}" $CMAKE_OPTIONS ..
+make -j $(nproc --all)
+cd ../
+echo "#!/bin/bash
+cd build/tests/benchdnn
+./benchdnn --mode=p --\$2 --batch=inputs/\$2/\$1" > mkl-dnn
+chmod +x mkl-dnn
+cd ../
+
 echo "-------Downloading and installing mbw"
 mkdir mbw && cd mbw
 wget http://www.phoronix-test-suite.com/benchmark-files/mbw-20180908.tar.xz

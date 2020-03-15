@@ -1227,7 +1227,6 @@ make linux
 cp iozone ../../
 cd ../../../
 
-
 echo "-------Downloading and installing dbench"
 mkdir dbench && cd dbench
 wget http://samba.org/ftp/tridge/dbench/dbench-4.0.tar.gz
