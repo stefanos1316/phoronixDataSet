@@ -124,7 +124,7 @@ tasks_with_graphics=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 192
 	"unigine-valley 800x600" "unigine-valley 1024x768" "unigine-valley 1920x1080" "unigine-valley 2560x1440" \
 	"unigine-heaven 800x600" "unigine-heaven 1024x768" "unigine-heaven 1920x1080" "unigine-heaven 2560x1440" \
 	"glmark2 800x600" "glmark2 1024x768" "glmark2 1920x1080" "glmark2 2560x1440" \
-    "qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" \
+   	"qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" \
 	"nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440" \
 	"xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" \
 	"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
