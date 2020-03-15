@@ -15,6 +15,202 @@ taskScripts='scripts'
 mkdir gcc_tasks_test
 cd gcc_tasks_test
 
+echo "-------Downloading and installing mbw"
+mkdir mbw && cd mbw
+wget http://www.phoronix-test-suite.com/benchmark-files/mbw-20180908.tar.xz
+tar -xf mbw-20180908.tar.xz && rm mbw-20180908.tar.xz
+mv mbw/* ./ && rm -rf mbw
+cc ${SECURITY_FLAGS} -O3 -march=native -o mbw mbw.c
+cd ../
+
+echo "-------Downloading and installing mcperf"
+mkdir mcperf && cd mcperf
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/twemperf/mcperf-0.1.1.tar.gz
+tar -xzvf mcperf-0.1.1.tar.gz && rm mcperf-0.1.1.tar.gz
+mv mcperf-0.1.1/* ./ && rm -rf mcperf-0.1.1
+CFLAGS="${SECURITY_FLAGS}" ./configure
+make
+echo "#!/bin/bash
+cd src/
+./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=\$1" > mcperf
+chmod +x mcperf
+cd ../
+
+echo "-------Downloading and installing lzbench"
+mkdir lzbench && cd lzbench
+wget http://www.phoronix-test-suite.com/benchmark-files/lzbench-20170808.zip
+unzip lzbench-20170808.zip && rm lzbench-20170808.zip
+mv lzbench/* ./ && rm -rf lzbench/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
+fi
+make
+mv lzbench lzbench-bin
+cp ../../../inputs/linux-5.3.tar.gz ./
+echo "#!/bin/bash
+./lzbench-bin -t10,10 -v \$1 ./linux-5.3.tar.gz" > lzbench
+chmod +x lzbench
+cd ../
+
+echo "-------Downloading and installing m-queens"
+mkdir m-queens && cd m-queens
+wget http://phoronix-test-suite.com/benchmark-files/m-queens-1.2.tar.gz
+tar -xzvf m-queens-1.2.tar.gz && rm m-queens-1.2.tar.gz
+mv m-queens-1.2/* ./ && rm -rf m-queens-1.2/
+g++ -fopenmp $CFLAGS ${SECURITY_FLAGS} main.c -o m-queens
+cd ../
+
+echo "-------Downloading and installing john-the-ripper"
+mkdir john-the-ripper && cd john-the-ripper
+wget https://www.openwall.com/john/k/john-1.9.0-jumbo-1.tar.gz
+tar -zxvf john-1.9.0-jumbo-1.tar.gz && rm john-1.9.0-jumbo-1.tar.gz
+mv john-1.9.0-jumbo-1/* ./ && rm -rf john-1.9.0-jumbo-1
+cd src/
+CFLAGS="${SECURITY_FLAGS} -O3 -march=native -std=gnu89" ./configure --disable-native-tests --disable-opencl
+CFLAGS="${SECURITY_FLAGS} -O3 -march=native -std=gnu89" make -j $(nproc --all)
+cd ../
+echo "#!/bin/bash
+cd run/
+./john --test=30 --format=\$1" > john-the-ripper
+chmod +x john-the-ripper
+cd ../
+
+echo "-------Downloading and installing himeno"
+mkdir himeno && cd himeno
+wget http://www.phoronix-test-suite.com/benchmark-files/himenobmtxpa-2.tar.xz
+tar -xf himenobmtxpa-2.tar.xz && rm himenobmtxpa-2.tar.xz
+cc himenobmtxpa.c ${SECURITY_FLAGS} -O3 -mavx2 -o himeno
+cd ../
+
+echo "-------Downloading and installing hint"
+mkdir hint && cd hint
+wget http://www.phoronix-test-suite.com/benchmark-files/hint-1.0.tar.gz
+tar -xzvf hint-1.0.tar.gz && rm hint-1.0.tar.gz
+mv unix/* ./ && rm -rf unix
+cc -O3 ${SECURITY_FLAGS} -march=native hint.c hkernel.c -Dunix -DDOUBLE -DIINT -o double -lm
+cc -O3 ${SECURITY_FLAGS} -march=native hint.c hkernel.c -Dunix -DFLOAT -DIINT -o float -lm
+echo "#!/bin/bash
+./\$1" > hint
+chmod +x hint
+cd ../
+
+echo "-------Downloading and installing ebizzy"
+mkdir ebizzy && cd ebizzy
+wget http://www.phoronix-test-suite.com/benchmark-files/ebizzy-0.3.tar.gz
+tar -xzvf ebizzy-0.3.tar.gz && rm ebizzy-0.3.tar.gz
+mv ebizzy-0.3/* ./ && rm -rf ebizzy-0.3
+cc -pthread -lpthread -O3 ${SECURITY_FLAGS} -march=native -o ebizzy ebizzy.c
+cd ../
+
+echo "-------Downloading and installing cpp-perf-bench"
+mkdir cpp-perf-bench && cd cpp-perf-bench
+wget http://phoronix-test-suite.com/benchmark-files/CppPerformanceBenchmarks-9.zip
+unzip CppPerformanceBenchmarks-9.zip && rm CppPerformanceBenchmarks-9.zip
+mv CppPerformanceBenchmarks-master/* ./ && rm -rf CppPerformanceBenchmarks-master/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' makefile
+fi
+make all
+echo "#!/bin/bash
+./\$1" > cpp-perf-bench
+chmod + cpp-perf-bench
+cd ../
+
+echo "-------Downloading and installing brlcad"
+mkdir brlcad && cd brlcad
+wget https://iweb.dl.sourceforge.net/project/brlcad/BRL-CAD%20Source/7.28.0/brlcad-7.28.0.tar.bz2
+tar -xf brlcad-7.28.0.tar.bz2 && rm brlcad-7.28.0.tar.bz2
+mv brlcad-7.28.0/* ./ && rm -rf brlcad-7.28.0/
+mkdir build && cd build
+whims=`echo ${SECURITY_FLAGS} | sed 's/\-z\ execstack//g'`
+cmake .. -DBRLCAD_ENABLE_STRICT=NO -DBRLCAD_BUNDLED_LIBS=ON -DBRLCAD_OPTIMIZED_BUILD=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="${SECURITY_FLAGS}"
+make -j $(nproc --all)
+cd ../
+echo "#!/bin/bash
+./build/bench/benchmark run -P 8" > brlcad
+chmod +x brlcad
+cd ../
+
+echo "-------Downloading and installing cloverleaf"
+mkdir cloverleaf && cd cloverleaf
+wget http://phoronix-test-suite.com/benchmark-files/CloverLeaf_OpenMP-20181012.zip
+unzip CloverLeaf_OpenMP-20181012.zip && rm CloverLeaf_OpenMP-20181012.zip
+mv CloverLeaf_OpenMP-master/* ./ && rm -rf CloverLeaf_OpenMP-master/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
+fi
+COMPILER=GNU make
+cp InputDecks/clover_bm8192.in ../../../inputs
+echo "#!/bin/bash
+for i in {1..10}; do
+    ./clover_leaf InputDecks/clover_bm8192.in
+done" > cloverleaf
+chmod +x cloverleaf
+cd ../
+
+echo "-------Downloading and installing c-ray"
+mkdir c-ray && cd c-ray
+wget http://www.phoronix-test-suite.com/benchmark-files/c-ray-1.1.tar.gz
+tar -xzvf c-ray-1.1.tar.gz && rm c-ray-1.1.tar.gz
+mv c-ray-1.1/* ./ && rm -rf c-ray-1.1/
+cc -o c-ray-mt c-ray-mt.c -lm -lpthread -O3 ${SECURITY_FLAGS}
+mv c-ray-mt c-ray
+cd ../
+
+echo "-------Downloading and installing blogbench"
+mkdir blogbench && cd blogbench
+wget http://download.pureftpd.org/pub/blogbench/blogbench-1.1.tar.gz
+tar -xzvf blogbench-1.1.tar.gz && rm blogbench-1.1.tar.gz
+mv blogbench-1.1/* ./ && rm -rf blogbench-1.1/
+CFLAGS="${SECURITY_FLAGS}" ./configure
+make -j $(nproc --all)
+cp src/blogbench ./
+cd ../
+
+echo "-------Downloading and installing blake2s"
+mkdir blake2s && cd blake2s
+wget http://www.phoronix-test-suite.com/benchmark-files/BLAKE2-20170307.tar.xz
+tar -xf BLAKE2-20170307.tar.xz && rm BLAKE2-20170307.tar.xz
+mv BLAKE2-20170307/* ./ && rm -rf BLAKE2-20170307/
+cp ../../$taskScripts/blake2s.c bench/bench.c
+cd bench
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' makefile
+fi
+make
+cp blake2s ../
+cd ../../
+
+echo "-------Downloading and installing sysbench"
+mkdir sysbench && cd sysbench
+wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip
+unzip sysbench-20180728.zip && rm sysbench-20180728.zip
+mv sysbench-master/* ./ && rm -rf sysbench-master/ 
+./autogen.sh
+CFLAGS="${SECURITY_FLAGS}" ./configure  --without-mysql
+make -j $(nproc --all)
+cp src/sysbench ./
+cd ../
+
+echo "-------Downloading and installing X265"
+mkdir x265 && cd x265
+wget http://bitbucket.org/multicoreware/x265/downloads/x265_3.1.2.tar.gz
+tar -xzvf x265_3.1.2.tar.gz && rm x265_3.1.2.tar.gz
+mv x265_3.1.2/* ./ && rm -rf x265_3.1.2/ && cd build
+sed -i 's/CMAKE_C_FLAGS_RELEASE/CMAKE_C_FLAGS_RELEASE '"${SECURITY_FLAGS}"'/g' ../source/CMakeLists.txt
+cmake ../source
+make -j $(nproc --all)
+cd ../
+echo "#!/bin/bash
+cd build
+./x265 ../../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -o /dev/null" > x265
+chmod +x x265
+cd ../
+
 echo "-------Downloading and installing openssl"
 mkdir openssl && cd openssl
 wget http://www.openssl.org/source/old/1.0.1/openssl-1.0.1g.tar.gz
@@ -25,8 +221,6 @@ whims=`echo ${SECURITY_FLAGS} | sed 's/\-z\ execstack//g'`
 make
 cp apps/openssl ./
 cd ../
-
-exit
 
 echo "-------Downloading and installing X264"
 mkdir x264 && cd x264

@@ -907,7 +907,7 @@ mv lzbench/* ./ && rm -rf lzbench/
 make
 mv lzbench lzbench-bin
 cp ../../../inputs/linux-5.3.tar.gz ./
-ehco "#!/bin/bash
+echo "#!/bin/bash
 ./lzbench-bin -t10,10 -v \$1 ./linux-5.3.tar.gz" > lzbench
 chmod +x lzbench
 cd ../
