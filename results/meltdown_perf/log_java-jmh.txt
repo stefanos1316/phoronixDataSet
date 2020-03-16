@@ -1,0 +1,33 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/java-jmh/test/target/benchmarks.jar) to field java.io.Console.cs
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/java-jmh/test/target/benchmarks.jar) to field java.io.Console.cs
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/java-jmh/test/target/benchmarks.jar) to field java.io.Console.cs
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/java-jmh/test/target/benchmarks.jar) to field java.io.Console.cs
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/java-jmh/test/target/benchmarks.jar) to field java.io.Console.cs
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          22689,51 Joules power/energy-pkg/                                             ( +-  0,04% )
+            252,34 Joules power/energy-ram/                                             ( +-  0,01% )
+
+          502,5558 +- 0,0262 seconds time elapsed  ( +-  0,01% )
+

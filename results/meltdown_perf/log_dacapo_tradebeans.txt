@@ -1,0 +1,83 @@
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3157 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3206 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3188 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3117 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3223 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3197 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3129 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3149 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3228 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3379 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3469 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3187 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3481 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3163 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3231 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3501 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3272 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3091 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3507 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3209 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3507 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3172 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3191 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3261 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradebeans starting =====
+===== DaCapo 9.12-MR1 tradebeans PASSED in 3162 msec =====
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           2441,53 Joules power/energy-pkg/                                             ( +-  5,94% )
+            120,56 Joules power/energy-ram/                                             ( +- 10,38% )
+
+            171,79 +- 24,84 seconds time elapsed  ( +- 14,46% )
+

@@ -1,0 +1,9 @@
+Results: 8 threads 300 iter 356.35s user 70.745086s total 4.241 iter/s 0.842 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 300 iter 357.46s user 71.633558s total 4.188 iter/s 0.839 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 300 iter 359.85s user 71.347714s total 4.205 iter/s 0.834 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Killed
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+./bin/gm benchmark convert: quitting due to signal 51 (SIGTERM) "Terminated"...

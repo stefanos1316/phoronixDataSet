@@ -1,0 +1,18 @@
+read 65536 points
+finish local search
+read 65536 points
+finish local search
+read 65536 points
+finish local search
+read 65536 points
+finish local search
+read 65536 points
+finish local search
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1698,38 Joules power/energy-pkg/                                             ( +-  0,11% )
+            103,68 Joules power/energy-ram/                                             ( +-  0,01% )
+
+          42,43318 +- 0,00504 seconds time elapsed  ( +-  0,01% )
+

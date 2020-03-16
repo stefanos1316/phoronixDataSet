@@ -1,0 +1,193 @@
+using working directory t, 10 intial dirs 100 runs
+native unpatched native-0 222MB in 0.62 seconds (358.67 MB/s)
+native patched native-0 109MB in 0.14 seconds (783.36 MB/s)
+native patched compiled native-0 691MB in 0.29 seconds (2384.81 MB/s)
+create dir kernel-0 222MB in 0.43 seconds (517.15 MB/s)
+create dir kernel-1 222MB in 0.55 seconds (404.32 MB/s)
+create dir kernel-2 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-3 222MB in 0.42 seconds (529.46 MB/s)
+create dir kernel-4 222MB in 0.42 seconds (529.46 MB/s)
+create dir kernel-5 222MB in 1.02 seconds (218.01 MB/s)
+create dir kernel-6 222MB in 0.68 seconds (327.02 MB/s)
+create dir kernel-7 222MB in 0.48 seconds (463.28 MB/s)
+create dir kernel-8 222MB in 1.37 seconds (162.32 MB/s)
+create dir kernel-9 222MB in 1.11 seconds (200.34 MB/s)
+compile dir kernel-5 680MB in 0.35 seconds (1944.67 MB/s)
+compile dir kernel-2 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-8 680MB in 0.37 seconds (1839.55 MB/s)
+compile dir kernel-1 680MB in 2.97 seconds (229.17 MB/s)
+compile dir kernel-9 680MB in 7.56 seconds (90.03 MB/s)
+compile dir kernel-6 680MB in 8.06 seconds (84.45 MB/s)
+compile dir kernel-7 680MB in 7.64 seconds (89.09 MB/s)
+compile dir kernel-3 680MB in 7.57 seconds (89.91 MB/s)
+compile dir kernel-4 680MB in 8.27 seconds (82.30 MB/s)
+compile dir kernel-0 680MB in 9.36 seconds (72.72 MB/s)
+read dir kernel-0 in 23.74 38.04 MB/s
+read dir kernel-8 in 22.86 39.50 MB/s
+read dir kernel-8 in 0.31 2912.93 MB/s
+delete kernel-6 in 2.87 seconds
+delete kernel-4 in 1.09 seconds
+delete kernel-1 in 1.60 seconds
+delete kernel-5 in 0.82 seconds
+delete kernel-3 in 0.85 seconds
+delete kernel-2 in 1.40 seconds
+delete kernel-8 in 0.97 seconds
+delete kernel-0 in 1.39 seconds
+delete kernel-7 in 0.81 seconds
+delete kernel-9 in 0.70 seconds
+using working directory t, 10 intial dirs 100 runs
+native unpatched native-0 222MB in 0.40 seconds (555.94 MB/s)
+native patched native-0 109MB in 0.14 seconds (783.36 MB/s)
+native patched compiled native-0 691MB in 0.29 seconds (2384.81 MB/s)
+create dir kernel-0 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-1 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-2 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-3 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-4 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-5 222MB in 0.43 seconds (517.15 MB/s)
+create dir kernel-6 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-7 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-8 222MB in 1.24 seconds (179.33 MB/s)
+create dir kernel-9 222MB in 2.67 seconds (83.29 MB/s)
+compile dir kernel-5 680MB in 0.29 seconds (2347.01 MB/s)
+compile dir kernel-2 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-8 680MB in 0.29 seconds (2347.01 MB/s)
+compile dir kernel-1 680MB in 4.38 seconds (155.40 MB/s)
+compile dir kernel-9 680MB in 7.23 seconds (94.14 MB/s)
+compile dir kernel-6 680MB in 7.14 seconds (95.33 MB/s)
+compile dir kernel-7 680MB in 7.93 seconds (85.83 MB/s)
+compile dir kernel-3 680MB in 7.91 seconds (86.05 MB/s)
+compile dir kernel-4 680MB in 8.89 seconds (76.56 MB/s)
+compile dir kernel-0 680MB in 8.40 seconds (81.03 MB/s)
+read dir kernel-0 in 23.04 39.19 MB/s
+read dir kernel-8 in 22.20 40.68 MB/s
+read dir kernel-8 in 0.31 2912.93 MB/s
+delete kernel-6 in 3.21 seconds
+delete kernel-4 in 1.41 seconds
+delete kernel-1 in 1.41 seconds
+delete kernel-5 in 1.31 seconds
+delete kernel-3 in 0.84 seconds
+delete kernel-2 in 0.75 seconds
+delete kernel-8 in 0.87 seconds
+delete kernel-0 in 1.29 seconds
+delete kernel-7 in 0.87 seconds
+delete kernel-9 in 0.79 seconds
+using working directory t, 10 intial dirs 100 runs
+native unpatched native-0 222MB in 0.43 seconds (517.15 MB/s)
+native patched native-0 109MB in 0.14 seconds (783.36 MB/s)
+native patched compiled native-0 691MB in 0.29 seconds (2384.81 MB/s)
+create dir kernel-0 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-1 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-2 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-3 222MB in 0.39 seconds (570.19 MB/s)
+create dir kernel-4 222MB in 0.39 seconds (570.19 MB/s)
+create dir kernel-5 222MB in 0.42 seconds (529.46 MB/s)
+create dir kernel-6 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-7 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-8 222MB in 1.36 seconds (163.51 MB/s)
+create dir kernel-9 222MB in 2.61 seconds (85.20 MB/s)
+compile dir kernel-5 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-2 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-8 680MB in 0.29 seconds (2347.01 MB/s)
+compile dir kernel-1 680MB in 4.45 seconds (152.95 MB/s)
+compile dir kernel-9 680MB in 7.35 seconds (92.60 MB/s)
+compile dir kernel-6 680MB in 7.15 seconds (95.19 MB/s)
+compile dir kernel-7 680MB in 8.09 seconds (84.13 MB/s)
+compile dir kernel-3 680MB in 7.57 seconds (89.91 MB/s)
+compile dir kernel-4 680MB in 8.60 seconds (79.14 MB/s)
+compile dir kernel-0 680MB in 9.25 seconds (73.58 MB/s)
+read dir kernel-0 in 23.61 38.25 MB/s
+read dir kernel-8 in 23.69 38.12 MB/s
+read dir kernel-8 in 0.30 3010.03 MB/s
+delete kernel-6 in 2.15 seconds
+delete kernel-4 in 2.16 seconds
+delete kernel-1 in 2.06 seconds
+delete kernel-5 in 0.73 seconds
+delete kernel-3 in 0.81 seconds
+delete kernel-2 in 0.73 seconds
+delete kernel-8 in 0.80 seconds
+delete kernel-0 in 1.43 seconds
+delete kernel-7 in 0.83 seconds
+delete kernel-9 in 0.78 seconds
+using working directory t, 10 intial dirs 100 runs
+native unpatched native-0 222MB in 0.44 seconds (505.40 MB/s)
+native patched native-0 109MB in 0.15 seconds (731.14 MB/s)
+native patched compiled native-0 691MB in 0.29 seconds (2384.81 MB/s)
+create dir kernel-0 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-1 222MB in 0.42 seconds (529.46 MB/s)
+create dir kernel-2 222MB in 0.42 seconds (529.46 MB/s)
+create dir kernel-3 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-4 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-5 222MB in 0.44 seconds (505.40 MB/s)
+create dir kernel-6 222MB in 0.42 seconds (529.46 MB/s)
+create dir kernel-7 222MB in 0.45 seconds (494.16 MB/s)
+create dir kernel-8 222MB in 1.71 seconds (130.04 MB/s)
+create dir kernel-9 222MB in 2.42 seconds (91.89 MB/s)
+compile dir kernel-5 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-2 680MB in 0.29 seconds (2347.01 MB/s)
+compile dir kernel-8 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-1 680MB in 4.75 seconds (143.29 MB/s)
+compile dir kernel-9 680MB in 7.17 seconds (94.93 MB/s)
+compile dir kernel-6 680MB in 7.26 seconds (93.75 MB/s)
+compile dir kernel-7 680MB in 7.87 seconds (86.48 MB/s)
+compile dir kernel-3 680MB in 7.33 seconds (92.86 MB/s)
+compile dir kernel-4 680MB in 9.75 seconds (69.81 MB/s)
+compile dir kernel-0 680MB in 8.68 seconds (78.41 MB/s)
+read dir kernel-0 in 22.93 39.38 MB/s
+read dir kernel-8 in 23.88 37.81 MB/s
+read dir kernel-8 in 0.30 3010.03 MB/s
+delete kernel-6 in 3.20 seconds
+delete kernel-4 in 1.14 seconds
+delete kernel-1 in 1.70 seconds
+delete kernel-5 in 1.28 seconds
+delete kernel-3 in 1.06 seconds
+delete kernel-2 in 0.90 seconds
+delete kernel-8 in 0.72 seconds
+delete kernel-0 in 1.35 seconds
+delete kernel-7 in 0.83 seconds
+delete kernel-9 in 0.82 seconds
+using working directory t, 10 intial dirs 100 runs
+native unpatched native-0 222MB in 0.42 seconds (529.46 MB/s)
+native patched native-0 109MB in 0.14 seconds (783.36 MB/s)
+native patched compiled native-0 691MB in 0.29 seconds (2384.81 MB/s)
+create dir kernel-0 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-1 222MB in 0.39 seconds (570.19 MB/s)
+create dir kernel-2 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-3 222MB in 0.39 seconds (570.19 MB/s)
+create dir kernel-4 222MB in 0.39 seconds (570.19 MB/s)
+create dir kernel-5 222MB in 0.44 seconds (505.40 MB/s)
+create dir kernel-6 222MB in 0.39 seconds (570.19 MB/s)
+create dir kernel-7 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-8 222MB in 1.47 seconds (151.27 MB/s)
+create dir kernel-9 222MB in 2.52 seconds (88.24 MB/s)
+compile dir kernel-5 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-2 680MB in 0.29 seconds (2347.01 MB/s)
+compile dir kernel-8 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-1 680MB in 4.41 seconds (154.34 MB/s)
+compile dir kernel-9 680MB in 6.74 seconds (100.98 MB/s)
+compile dir kernel-6 680MB in 10.04 seconds (67.79 MB/s)
+compile dir kernel-7 680MB in 8.01 seconds (84.97 MB/s)
+compile dir kernel-3 680MB in 7.77 seconds (87.60 MB/s)
+compile dir kernel-4 680MB in 8.89 seconds (76.56 MB/s)
+compile dir kernel-0 680MB in 8.17 seconds (83.31 MB/s)
+read dir kernel-0 in 22.34 40.42 MB/s
+read dir kernel-8 in 23.62 38.23 MB/s
+read dir kernel-8 in 0.31 2912.93 MB/s
+delete kernel-6 in 3.71 seconds
+delete kernel-4 in 1.21 seconds
+delete kernel-1 in 1.48 seconds
+delete kernel-5 in 0.70 seconds
+delete kernel-3 in 0.90 seconds
+delete kernel-2 in 0.68 seconds
+delete kernel-8 in 0.88 seconds
+delete kernel-0 in 1.52 seconds
+delete kernel-7 in 0.79 seconds
+delete kernel-9 in 0.81 seconds
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1541,29 Joules power/energy-pkg/                                             ( +-  0,68% )
+            104,94 Joules power/energy-ram/                                             ( +-  0,44% )
+
+           185,376 +- 0,720 seconds time elapsed  ( +-  0,39% )
+

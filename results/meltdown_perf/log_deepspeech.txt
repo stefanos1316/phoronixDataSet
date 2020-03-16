@@ -1,0 +1,23 @@
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-14 04:23:18.386355: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-14 04:25:23.593578: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-14 04:26:51.003257: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-14 04:28:18.457080: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-14 04:29:45.998650: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           2059,22 Joules power/energy-pkg/                                             ( +-  2,34% )
+            176,12 Joules power/energy-ram/                                             ( +-  2,33% )
+
+             95,06 +- 7,61 seconds time elapsed  ( +-  8,00% )
+

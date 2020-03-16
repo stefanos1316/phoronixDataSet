@@ -1,0 +1,163 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/03/13 21:19:46 INFO SparkContext: Running Spark version 2.0.0
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-483597622024055296/cp-1167533254755296985.jar) to method sun.security.krb5.Config.getInstance()
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/03/13 21:19:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/03/13 21:19:47 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+20/03/13 21:19:47 WARN Utils: Your hostname, sgeorgiou resolves to a loopback address: 127.0.1.1; using 195.251.251.27 instead (on interface enp0s31f6)
+20/03/13 21:19:47 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+20/03/13 21:19:47 INFO SecurityManager: Changing view acls to: root
+20/03/13 21:19:47 INFO SecurityManager: Changing modify acls to: root
+20/03/13 21:19:47 INFO SecurityManager: Changing view acls groups to: 
+20/03/13 21:19:47 INFO SecurityManager: Changing modify acls groups to: 
+20/03/13 21:19:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+20/03/13 21:19:47 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+20/03/13 21:19:47 INFO Utils: Successfully started service 'sparkDriver' on port 38683.
+20/03/13 21:19:47 INFO SparkEnv: Registering MapOutputTracker
+20/03/13 21:19:47 INFO SparkEnv: Registering BlockManagerMaster
+20/03/13 21:19:47 INFO DiskBlockManager: Created local directory at /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/als4421237958508198076/blockmgr-a1705269-f155-416a-9a4e-8eef4e838c7a
+20/03/13 21:19:47 INFO MemoryStore: MemoryStore started with capacity 2.1 GB
+20/03/13 21:19:47 INFO SparkEnv: Registering OutputCommitCoordinator
+20/03/13 21:19:47 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/03/13 21:19:47 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://195.251.251.27:4040
+20/03/13 21:19:48 INFO Executor: Starting executor ID driver on host localhost
+20/03/13 21:19:48 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40033.
+20/03/13 21:19:48 INFO NettyBlockTransferService: Server created on 195.251.251.27:40033
+20/03/13 21:19:48 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 195.251.251.27, 40033)
+20/03/13 21:19:48 INFO BlockManagerMasterEndpoint: Registering block manager 195.251.251.27:40033 with 2.1 GB RAM, BlockManagerId(driver, 195.251.251.27, 40033)
+20/03/13 21:19:48 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 195.251.251.27, 40033)
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/03/13 21:19:57 INFO SparkContext: Running Spark version 2.0.0
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-1668899991335899766/cp-17598190015883813430.jar) to method sun.security.krb5.Config.getInstance()
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/03/13 21:19:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/03/13 21:19:57 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+20/03/13 21:19:57 WARN Utils: Your hostname, sgeorgiou resolves to a loopback address: 127.0.1.1; using 195.251.251.27 instead (on interface enp0s31f6)
+20/03/13 21:19:57 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+20/03/13 21:19:57 INFO SecurityManager: Changing view acls to: root
+20/03/13 21:19:57 INFO SecurityManager: Changing modify acls to: root
+20/03/13 21:19:57 INFO SecurityManager: Changing view acls groups to: 
+20/03/13 21:19:57 INFO SecurityManager: Changing modify acls groups to: 
+20/03/13 21:19:57 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+20/03/13 21:19:58 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+20/03/13 21:19:58 INFO Utils: Successfully started service 'sparkDriver' on port 39649.
+20/03/13 21:19:58 INFO SparkEnv: Registering MapOutputTracker
+20/03/13 21:19:58 INFO SparkEnv: Registering BlockManagerMaster
+20/03/13 21:19:58 INFO DiskBlockManager: Created local directory at /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/als1065388809812906074/blockmgr-dcb8a797-4e1c-4194-b8fb-06be83a25142
+20/03/13 21:19:58 INFO MemoryStore: MemoryStore started with capacity 2.1 GB
+20/03/13 21:19:58 INFO SparkEnv: Registering OutputCommitCoordinator
+20/03/13 21:19:58 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/03/13 21:19:58 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://195.251.251.27:4040
+20/03/13 21:19:58 INFO Executor: Starting executor ID driver on host localhost
+20/03/13 21:19:58 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42291.
+20/03/13 21:19:58 INFO NettyBlockTransferService: Server created on 195.251.251.27:42291
+20/03/13 21:19:58 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 195.251.251.27, 42291)
+20/03/13 21:19:58 INFO BlockManagerMasterEndpoint: Registering block manager 195.251.251.27:42291 with 2.1 GB RAM, BlockManagerId(driver, 195.251.251.27, 42291)
+20/03/13 21:19:58 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 195.251.251.27, 42291)
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/03/13 21:20:09 INFO SparkContext: Running Spark version 2.0.0
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-2069078586873322583/cp-8501237683397463848.jar) to method sun.security.krb5.Config.getInstance()
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/03/13 21:20:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/03/13 21:20:09 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+20/03/13 21:20:09 WARN Utils: Your hostname, sgeorgiou resolves to a loopback address: 127.0.1.1; using 195.251.251.27 instead (on interface enp0s31f6)
+20/03/13 21:20:09 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+20/03/13 21:20:09 INFO SecurityManager: Changing view acls to: root
+20/03/13 21:20:09 INFO SecurityManager: Changing modify acls to: root
+20/03/13 21:20:09 INFO SecurityManager: Changing view acls groups to: 
+20/03/13 21:20:09 INFO SecurityManager: Changing modify acls groups to: 
+20/03/13 21:20:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+20/03/13 21:20:09 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+20/03/13 21:20:09 INFO Utils: Successfully started service 'sparkDriver' on port 34647.
+20/03/13 21:20:09 INFO SparkEnv: Registering MapOutputTracker
+20/03/13 21:20:09 INFO SparkEnv: Registering BlockManagerMaster
+20/03/13 21:20:09 INFO DiskBlockManager: Created local directory at /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/als1048278612361405089/blockmgr-42cd9a33-a2b4-4a23-bb54-42f88ea928a9
+20/03/13 21:20:09 INFO MemoryStore: MemoryStore started with capacity 2.1 GB
+20/03/13 21:20:09 INFO SparkEnv: Registering OutputCommitCoordinator
+20/03/13 21:20:09 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/03/13 21:20:09 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://195.251.251.27:4040
+20/03/13 21:20:09 INFO Executor: Starting executor ID driver on host localhost
+20/03/13 21:20:09 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35899.
+20/03/13 21:20:09 INFO NettyBlockTransferService: Server created on 195.251.251.27:35899
+20/03/13 21:20:09 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 195.251.251.27, 35899)
+20/03/13 21:20:09 INFO BlockManagerMasterEndpoint: Registering block manager 195.251.251.27:35899 with 2.1 GB RAM, BlockManagerId(driver, 195.251.251.27, 35899)
+20/03/13 21:20:09 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 195.251.251.27, 35899)
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/03/13 21:20:19 INFO SparkContext: Running Spark version 2.0.0
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-3873514246488686519/cp-2536723390865357240.jar) to method sun.security.krb5.Config.getInstance()
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/03/13 21:20:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/03/13 21:20:19 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+20/03/13 21:20:19 WARN Utils: Your hostname, sgeorgiou resolves to a loopback address: 127.0.1.1; using 195.251.251.27 instead (on interface enp0s31f6)
+20/03/13 21:20:19 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+20/03/13 21:20:19 INFO SecurityManager: Changing view acls to: root
+20/03/13 21:20:19 INFO SecurityManager: Changing modify acls to: root
+20/03/13 21:20:19 INFO SecurityManager: Changing view acls groups to: 
+20/03/13 21:20:19 INFO SecurityManager: Changing modify acls groups to: 
+20/03/13 21:20:19 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+20/03/13 21:20:19 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+20/03/13 21:20:20 INFO Utils: Successfully started service 'sparkDriver' on port 43035.
+20/03/13 21:20:20 INFO SparkEnv: Registering MapOutputTracker
+20/03/13 21:20:20 INFO SparkEnv: Registering BlockManagerMaster
+20/03/13 21:20:20 INFO DiskBlockManager: Created local directory at /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/als1658934545760109294/blockmgr-cb5316fe-752f-4b49-8f3a-f91a15842a05
+20/03/13 21:20:20 INFO MemoryStore: MemoryStore started with capacity 2.1 GB
+20/03/13 21:20:20 INFO SparkEnv: Registering OutputCommitCoordinator
+20/03/13 21:20:20 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/03/13 21:20:20 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://195.251.251.27:4040
+20/03/13 21:20:20 INFO Executor: Starting executor ID driver on host localhost
+20/03/13 21:20:20 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46791.
+20/03/13 21:20:20 INFO NettyBlockTransferService: Server created on 195.251.251.27:46791
+20/03/13 21:20:20 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 195.251.251.27, 46791)
+20/03/13 21:20:20 INFO BlockManagerMasterEndpoint: Registering block manager 195.251.251.27:46791 with 2.1 GB RAM, BlockManagerId(driver, 195.251.251.27, 46791)
+20/03/13 21:20:20 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 195.251.251.27, 46791)
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/03/13 21:20:30 INFO SparkContext: Running Spark version 2.0.0
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-14619832335619533443/cp-11003598113799711195.jar) to method sun.security.krb5.Config.getInstance()
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/03/13 21:20:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/03/13 21:20:30 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+20/03/13 21:20:30 WARN Utils: Your hostname, sgeorgiou resolves to a loopback address: 127.0.1.1; using 195.251.251.27 instead (on interface enp0s31f6)
+20/03/13 21:20:30 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+20/03/13 21:20:30 INFO SecurityManager: Changing view acls to: root
+20/03/13 21:20:30 INFO SecurityManager: Changing modify acls to: root
+20/03/13 21:20:30 INFO SecurityManager: Changing view acls groups to: 
+20/03/13 21:20:30 INFO SecurityManager: Changing modify acls groups to: 
+20/03/13 21:20:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+20/03/13 21:20:30 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+20/03/13 21:20:30 INFO Utils: Successfully started service 'sparkDriver' on port 42197.
+20/03/13 21:20:30 INFO SparkEnv: Registering MapOutputTracker
+20/03/13 21:20:30 INFO SparkEnv: Registering BlockManagerMaster
+20/03/13 21:20:30 INFO DiskBlockManager: Created local directory at /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/als1184613295864838839/blockmgr-a6ac1012-5158-432d-b070-98b1e642ad30
+20/03/13 21:20:30 INFO MemoryStore: MemoryStore started with capacity 2.1 GB
+20/03/13 21:20:30 INFO SparkEnv: Registering OutputCommitCoordinator
+20/03/13 21:20:30 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/03/13 21:20:30 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://195.251.251.27:4040
+20/03/13 21:20:30 INFO Executor: Starting executor ID driver on host localhost
+20/03/13 21:20:30 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35989.
+20/03/13 21:20:30 INFO NettyBlockTransferService: Server created on 195.251.251.27:35989
+20/03/13 21:20:30 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 195.251.251.27, 35989)
+20/03/13 21:20:30 INFO BlockManagerMasterEndpoint: Registering block manager 195.251.251.27:35989 with 2.1 GB RAM, BlockManagerId(driver, 195.251.251.27, 35989)
+20/03/13 21:20:30 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 195.251.251.27, 35989)
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            446,04 Joules power/energy-pkg/                                             ( +-  2,03% )
+             13,37 Joules power/energy-ram/                                             ( +-  1,96% )
+
+            11,126 +- 0,397 seconds time elapsed  ( +-  3,57% )
+

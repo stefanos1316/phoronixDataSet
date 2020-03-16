@@ -1,0 +1,23 @@
+100000+0 records in
+100000+0 records out
+104857600000 bytes (105 GB, 98 GiB) copied, 40,7251 s, 2,6 GB/s
+100000+0 records in
+100000+0 records out
+104857600000 bytes (105 GB, 98 GiB) copied, 39,4984 s, 2,7 GB/s
+100000+0 records in
+100000+0 records out
+104857600000 bytes (105 GB, 98 GiB) copied, 39,5266 s, 2,7 GB/s
+100000+0 records in
+100000+0 records out
+104857600000 bytes (105 GB, 98 GiB) copied, 39,6678 s, 2,6 GB/s
+100000+0 records in
+100000+0 records out
+104857600000 bytes (105 GB, 98 GiB) copied, 39,3281 s, 2,7 GB/s
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1392,35 Joules power/energy-pkg/                                             ( +-  0,28% )
+             22,96 Joules power/energy-ram/                                             ( +-  0,59% )
+
+            45,770 +- 0,264 seconds time elapsed  ( +-  0,58% )
+

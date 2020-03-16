@@ -1,0 +1,13 @@
+join: /tmp/4547.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+join: /tmp/4719.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+join: /tmp/4839.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+join: /tmp/4954.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+join: /tmp/5065.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1649,22 Joules power/energy-pkg/                                             ( +-  0,25% )
+             60,55 Joules power/energy-ram/                                             ( +-  0,06% )
+
+          121,7701 +- 0,0669 seconds time elapsed  ( +-  0,05% )
+

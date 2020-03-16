@@ -1,0 +1,13 @@
+4091253
+4091227
+4090306
+4090712
+4089618
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1972,76 Joules power/energy-pkg/                                             ( +-  0,63% )
+             17,06 Joules power/energy-ram/                                             ( +-  0,59% )
+
+            34,008 +- 0,199 seconds time elapsed  ( +-  0,59% )
+

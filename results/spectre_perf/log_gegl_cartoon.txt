@@ -1,0 +1,688 @@
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:28771): GEGL-WARNING **: 21:08:01.462: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:28801): GEGL-WARNING **: 21:08:08.847: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:28831): GEGL-WARNING **: 21:08:16.880: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:28862): GEGL-WARNING **: 21:08:25.097: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:28893): GEGL-WARNING **: 21:08:33.440: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:28923): GEGL-WARNING **: 21:08:41.199: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:28955): GEGL-WARNING **: 21:08:49.190: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:28985): GEGL-WARNING **: 21:08:57.217: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29015): GEGL-WARNING **: 21:09:05.209: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29096): GEGL-WARNING **: 21:09:11.784: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29126): GEGL-WARNING **: 21:09:18.483: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29156): GEGL-WARNING **: 21:09:24.784: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29186): GEGL-WARNING **: 21:09:31.134: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29218): GEGL-WARNING **: 21:09:37.701: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29248): GEGL-WARNING **: 21:09:39.258: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29278): GEGL-WARNING **: 21:09:53.740: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:29278): GEGL-WARNING **: 21:09:53.740: tile-backend-swap gap list had more than one element
+
+
+(gegl:29278): GEGL-WARNING **: 21:09:53.740: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:29278): GEGL-WARNING **: 21:09:53.740: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29310): GEGL-WARNING **: 21:10:02.081: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29340): GEGL-WARNING **: 21:10:09.504: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29371): GEGL-WARNING **: 21:10:17.645: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29401): GEGL-WARNING **: 21:10:25.929: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29431): GEGL-WARNING **: 21:10:34.363: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29461): GEGL-WARNING **: 21:10:42.180: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29493): GEGL-WARNING **: 21:10:50.198: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29523): GEGL-WARNING **: 21:10:58.240: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29553): GEGL-WARNING **: 21:11:06.241: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29583): GEGL-WARNING **: 21:11:12.807: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29613): GEGL-WARNING **: 21:11:19.482: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29643): GEGL-WARNING **: 21:11:25.774: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29673): GEGL-WARNING **: 21:11:32.116: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29705): GEGL-WARNING **: 21:11:38.699: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29739): GEGL-WARNING **: 21:11:40.257: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29769): GEGL-WARNING **: 21:11:55.164: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:29769): GEGL-WARNING **: 21:11:55.164: tile-backend-swap gap list had more than one element
+
+
+(gegl:29769): GEGL-WARNING **: 21:11:55.164: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:29769): GEGL-WARNING **: 21:11:55.164: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29804): GEGL-WARNING **: 21:12:03.506: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29834): GEGL-WARNING **: 21:12:10.927: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29864): GEGL-WARNING **: 21:12:19.027: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29897): GEGL-WARNING **: 21:12:27.295: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29927): GEGL-WARNING **: 21:12:35.663: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29958): GEGL-WARNING **: 21:12:43.447: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:29988): GEGL-WARNING **: 21:12:51.396: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30018): GEGL-WARNING **: 21:12:59.405: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30050): GEGL-WARNING **: 21:13:07.381: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30080): GEGL-WARNING **: 21:13:13.956: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30110): GEGL-WARNING **: 21:13:20.672: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30140): GEGL-WARNING **: 21:13:27.089: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30170): GEGL-WARNING **: 21:13:33.497: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30201): GEGL-WARNING **: 21:13:40.131: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30231): GEGL-WARNING **: 21:13:41.697: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30261): GEGL-WARNING **: 21:13:56.204: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:30261): GEGL-WARNING **: 21:13:56.204: tile-backend-swap gap list had more than one element
+
+
+(gegl:30261): GEGL-WARNING **: 21:13:56.204: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:30261): GEGL-WARNING **: 21:13:56.204: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30292): GEGL-WARNING **: 21:14:04.553: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30322): GEGL-WARNING **: 21:14:11.968: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30352): GEGL-WARNING **: 21:14:20.075: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30382): GEGL-WARNING **: 21:14:28.319: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30412): GEGL-WARNING **: 21:14:36.670: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30443): GEGL-WARNING **: 21:14:44.470: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30475): GEGL-WARNING **: 21:14:52.445: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30505): GEGL-WARNING **: 21:15:00.470: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30537): GEGL-WARNING **: 21:15:08.579: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30571): GEGL-WARNING **: 21:15:15.204: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30601): GEGL-WARNING **: 21:15:21.895: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30633): GEGL-WARNING **: 21:15:28.196: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30667): GEGL-WARNING **: 21:15:34.537: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30699): GEGL-WARNING **: 21:15:41.121: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30729): GEGL-WARNING **: 21:15:42.703: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30759): GEGL-WARNING **: 21:15:57.127: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:30759): GEGL-WARNING **: 21:15:57.127: tile-backend-swap gap list had more than one element
+
+
+(gegl:30759): GEGL-WARNING **: 21:15:57.127: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:30759): GEGL-WARNING **: 21:15:57.127: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30791): GEGL-WARNING **: 21:16:05.584: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30821): GEGL-WARNING **: 21:16:12.966: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30852): GEGL-WARNING **: 21:16:20.983: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30882): GEGL-WARNING **: 21:16:29.184: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30912): GEGL-WARNING **: 21:16:37.568: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30943): GEGL-WARNING **: 21:16:45.377: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:30973): GEGL-WARNING **: 21:16:53.326: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31003): GEGL-WARNING **: 21:17:01.327: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31033): GEGL-WARNING **: 21:17:09.344: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31066): GEGL-WARNING **: 21:17:15.952: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31097): GEGL-WARNING **: 21:17:22.718: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31127): GEGL-WARNING **: 21:17:29.019: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31158): GEGL-WARNING **: 21:17:35.385: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31188): GEGL-WARNING **: 21:17:41.961: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31218): GEGL-WARNING **: 21:17:43.526: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+Missing fast-path babl conversion detected, Implementing missing babl fast paths
+accelerates GEGL, GIMP and other software using babl, warnings are printed on
+first occurance of formats used where a conversion has to be synthesized
+programmatically by babl based on format description
+
+*WARNING* missing babl fast path(s): "R'G'B' u8" to "Y'CbCrA float"
+
+(gegl:31248): GEGL-WARNING **: 21:17:58.167: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:31248): GEGL-WARNING **: 21:17:58.167: tile-backend-swap gap list had more than one element
+
+
+(gegl:31248): GEGL-WARNING **: 21:17:58.167: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:31248): GEGL-WARNING **: 21:17:58.167: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           2711,04 Joules power/energy-pkg/                                             ( +-  0,07% )
+             69,59 Joules power/energy-ram/                                             ( +-  0,09% )
+
+           121,006 +- 0,131 seconds time elapsed  ( +-  0,11% )
+

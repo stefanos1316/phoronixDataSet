@@ -1,0 +1,13 @@
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_pickle.py --pure-python pickle --rigorous --output /tmp/tmpni6zky46`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_pickle.py --pure-python pickle --rigorous --output /tmp/tmpgup9x32p`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_pickle.py --pure-python pickle --rigorous --output /tmp/tmpta1rtcko`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_pickle.py --pure-python pickle --rigorous --output /tmp/tmpt5dpj1hk`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_pickle.py --pure-python pickle --rigorous --output /tmp/tmpmcmbjm5t`
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            686,55 Joules power/energy-pkg/                                             ( +-  0,37% )
+             14,66 Joules power/energy-ram/                                             ( +-  0,09% )
+
+           28,3785 +- 0,0290 seconds time elapsed  ( +-  0,10% )
+

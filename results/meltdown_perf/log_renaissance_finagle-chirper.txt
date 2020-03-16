@@ -1,0 +1,58 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.twitter.jvm.Hotspot (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-10757580951121637556/cp-16118691512649281312.jar) to field sun.management.ManagementFactoryHelper.jvm
+WARNING: Please consider reporting this to the maintainers of com.twitter.jvm.Hotspot
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 13, 2020 9:26:39 PM com.twitter.finagle.Init$$anonfun$6 apply$mcV$sp
+INFO: Finagle version 19.4.0 (rev=15ae0aba979a2c11ed4a71774b2e995f5df918b4) built at 20190418-114039
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.twitter.jvm.Hotspot (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-1180778315968589268/cp-8128447390822014300.jar) to field sun.management.ManagementFactoryHelper.jvm
+WARNING: Please consider reporting this to the maintainers of com.twitter.jvm.Hotspot
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 13, 2020 9:26:48 PM com.twitter.finagle.Init$$anonfun$6 apply$mcV$sp
+INFO: Finagle version 19.4.0 (rev=15ae0aba979a2c11ed4a71774b2e995f5df918b4) built at 20190418-114039
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.twitter.jvm.Hotspot (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-1258434125824866534/cp-16927329066938017671.jar) to field sun.management.ManagementFactoryHelper.jvm
+WARNING: Please consider reporting this to the maintainers of com.twitter.jvm.Hotspot
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 13, 2020 9:26:57 PM com.twitter.finagle.Init$$anonfun$6 apply$mcV$sp
+INFO: Finagle version 19.4.0 (rev=15ae0aba979a2c11ed4a71774b2e995f5df918b4) built at 20190418-114039
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.twitter.jvm.Hotspot (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-17011709259277744351/cp-17059102396013256901.jar) to field sun.management.ManagementFactoryHelper.jvm
+WARNING: Please consider reporting this to the maintainers of com.twitter.jvm.Hotspot
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 13, 2020 9:27:06 PM com.twitter.finagle.Init$$anonfun$6 apply$mcV$sp
+INFO: Finagle version 19.4.0 (rev=15ae0aba979a2c11ed4a71774b2e995f5df918b4) built at 20190418-114039
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.twitter.jvm.Hotspot (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-7664019938861476677/cp-6513984325321905510.jar) to field sun.management.ManagementFactoryHelper.jvm
+WARNING: Please consider reporting this to the maintainers of com.twitter.jvm.Hotspot
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 13, 2020 9:27:15 PM com.twitter.finagle.Init$$anonfun$6 apply$mcV$sp
+INFO: Finagle version 19.4.0 (rev=15ae0aba979a2c11ed4a71774b2e995f5df918b4) built at 20190418-114039
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            383,06 Joules power/energy-pkg/                                             ( +-  1,06% )
+             14,74 Joules power/energy-ram/                                             ( +-  1,21% )
+
+             9,198 +- 0,132 seconds time elapsed  ( +-  1,44% )
+

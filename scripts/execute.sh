@@ -1,6 +1,10 @@
 #!/bin/bash
 
+<<<<<<< HEAD
+scenario="spectre_perf"
+=======
 scenario="alloff_perf"
+>>>>>>> 8fdff33aefb71cecff9f7cd677950ee8f77be215
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
@@ -67,7 +71,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"unigine-super 800x600" "unigine-super 1024x768" "unigine-super 1920x1080" "unigine-super 2560x1440" \
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
-tasks_without_graphics=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
+tasks_without_graphic=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
 		"byte dhry2" "byte int" "byte float" "scimark2" "fhourstones" "gmpbench" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
 		"sudokut" "nero2d" "minion ../inputs/minions.minion" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
@@ -93,12 +97,12 @@ tasks_without_graphics=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aoben
 		"stress-ng --sem 0 --sem-ops 100000000" "stress-ng --sock 0 --sock-ops 100000" "stress-ng --switch 0 --switch-ops 40000000" \
 		"stream" "swet -Z" "t-test1 5000" "tensorflow" "tinymembench" "ttsiod-renderer" "xsbench -t 8 -s large -l 30000000" \
 		"ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
-		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "build-gcc" \
-		"qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" "javascimark2" \
+		"ramspeed add_float" "ramspeed traid_float" "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "build-gcc" "javascimark2" \
 		"sunflow" "sqlitebench" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" \
 		"dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "postmark ../inputs/postmark.pmrc" \
 		"fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" "bork" "ffmpeg" "encode-mp3" \
-		"graphics-magick minify" "graphics-magick gaussian 0x1" "graphics-magick sharpen 0x2.0" "graphics-magick rotate 90" "graphics-magick resize 50%" \
+		"graphics-magick minify" "graphics-magick gaussian 0x1" "graphics-magick sharpen 0x2.0" "graphics-magick rotate 90")
+tasks_without_graphics=("graphics-magick resize 50%" \
 		"rocksdb fillseq" "rocksdb fillrandom" "rocksdb readrandom" "cassandra write" "cassandra read" "cassandra mixed_1_1" "cassandra mixed_1_3" \
 		"compilebench initial_create" "compilebench compile" "compilebench read_compile_tree" "smallpt 128" "build-php" "inkscape" "rawtherapee" "tjbench" \
 		"darktable masskrug.NEF" "darktable bench.SRW" "darktable server_room.NEF" "rsvg" "gegl rotate-on-center degrees=90" "gegl scale-size x=400 y=400" \

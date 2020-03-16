@@ -1,0 +1,58 @@
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19298 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19222 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19196 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19168 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18918 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18777 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18698 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19085 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19597 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18938 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18908 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18833 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18591 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18536 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18873 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19323 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19622 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19104 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19286 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19065 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18835 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19520 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19432 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18657 msec =====
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 18585 msec =====
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           3940,15 Joules power/energy-pkg/                                             ( +-  0,53% )
+            150,96 Joules power/energy-ram/                                             ( +-  0,88% )
+
+           108,449 +- 0,602 seconds time elapsed  ( +-  0,55% )
+

@@ -9,7 +9,7 @@ alloff (DONE)
 No-Graphics
 ===========
 stock (DONE)
-meltdown
-spectre
+meltdown (DONE)
+spectre (PENDING)
 mds
 alloff
