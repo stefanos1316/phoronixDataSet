@@ -1,0 +1,28 @@
+Warning: more than 4 verts in face!
+         Polygons not supported.
+         Reloading as a triangle mesh.
+#osp:sg: failed to load texture 'sanm/06-30-1997.png'
+Warning: more than 4 verts in face!
+         Polygons not supported.
+         Reloading as a triangle mesh.
+#osp:sg: failed to load texture 'sanm/06-30-1997.png'
+Warning: more than 4 verts in face!
+         Polygons not supported.
+         Reloading as a triangle mesh.
+#osp:sg: failed to load texture 'sanm/06-30-1997.png'
+Warning: more than 4 verts in face!
+         Polygons not supported.
+         Reloading as a triangle mesh.
+#osp:sg: failed to load texture 'sanm/06-30-1997.png'
+Warning: more than 4 verts in face!
+         Polygons not supported.
+         Reloading as a triangle mesh.
+#osp:sg: failed to load texture 'sanm/06-30-1997.png'
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           2282,26 Joules power/energy-pkg/                                             ( +-  0,18% )
+             61,72 Joules power/energy-ram/                                             ( +-  0,72% )
+
+            55,645 +- 0,686 seconds time elapsed  ( +-  1,23% )
+

@@ -1,0 +1,133 @@
+
+Total: connections 1 requests 2000000 responses 2000000 test-duration 27.214 s
+
+Connection rate: 0.0 conn/s (27214.3 ms/conn <= 1 concurrent connections)
+Connection time [ms]: avg 27214.3 min 27214.3 max 27214.3 stddev 0.00
+Connect time [ms]: avg 0.0 min 0.0 max 0.0 stddev 0.00
+
+Request rate: 73490.9 req/s (0.0 ms/req)
+Request size [B]: avg 5154.0 min 5154.0 max 5154.0 stddev 0.00
+
+Response rate: 73490.9 rsp/s (0.0 ms/rsp)
+Response size [B]: avg 12.0 min 8.0 max 12.0 stddev 0.31
+Response time [ms]: avg 0.0 min 0.0 max 0.5 stddev 0.00
+Response time [ms]: p25 1.0 p50 1.0 p75 1.0
+Response time [ms]: p95 1.0 p99 1.0 p999 1.0
+Response type: stored 11775 not_stored 1988225 exists 0 not_found 0
+Response type: num 0 deleted 0 end 0 value 0
+Response type: error 0 client_error 0 server_error 0
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 ftab-full 0 addrunavail 0 other 0
+
+CPU time [s]: user 3.60 system 12.03 (user 13.2% system 44.2% total 57.4%)
+Net I/O: bytes 9.6 GB rate 370754.1 KB/s (3037.2*10^6 bps)
+
+
+Total: connections 1 requests 2000000 responses 2000000 test-duration 27.042 s
+
+Connection rate: 0.0 conn/s (27042.2 ms/conn <= 1 concurrent connections)
+Connection time [ms]: avg 27042.2 min 27042.2 max 27042.2 stddev 0.00
+Connect time [ms]: avg 0.0 min 0.0 max 0.0 stddev 0.00
+
+Request rate: 73958.4 req/s (0.0 ms/req)
+Request size [B]: avg 5154.0 min 5154.0 max 5154.0 stddev 0.00
+
+Response rate: 73958.4 rsp/s (0.0 ms/rsp)
+Response size [B]: avg 12.0 min 8.0 max 12.0 stddev 0.31
+Response time [ms]: avg 0.0 min 0.0 max 0.1 stddev 0.00
+Response time [ms]: p25 1.0 p50 1.0 p75 1.0
+Response time [ms]: p95 1.0 p99 1.0 p999 1.0
+Response type: stored 11775 not_stored 1988225 exists 0 not_found 0
+Response type: num 0 deleted 0 end 0 value 0
+Response type: error 0 client_error 0 server_error 0
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 ftab-full 0 addrunavail 0 other 0
+
+CPU time [s]: user 3.39 system 12.11 (user 12.6% system 44.8% total 57.4%)
+Net I/O: bytes 9.6 GB rate 373112.5 KB/s (3056.5*10^6 bps)
+
+
+Total: connections 1 requests 2000000 responses 2000000 test-duration 26.819 s
+
+Connection rate: 0.0 conn/s (26818.7 ms/conn <= 1 concurrent connections)
+Connection time [ms]: avg 26818.7 min 26818.7 max 26818.7 stddev 0.00
+Connect time [ms]: avg 0.0 min 0.0 max 0.0 stddev 0.00
+
+Request rate: 74574.9 req/s (0.0 ms/req)
+Request size [B]: avg 5154.0 min 5154.0 max 5154.0 stddev 0.00
+
+Response rate: 74574.9 rsp/s (0.0 ms/rsp)
+Response size [B]: avg 12.0 min 8.0 max 12.0 stddev 0.31
+Response time [ms]: avg 0.0 min 0.0 max 0.4 stddev 0.00
+Response time [ms]: p25 1.0 p50 1.0 p75 1.0
+Response time [ms]: p95 1.0 p99 1.0 p999 1.0
+Response type: stored 11775 not_stored 1988225 exists 0 not_found 0
+Response type: num 0 deleted 0 end 0 value 0
+Response type: error 0 client_error 0 server_error 0
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 ftab-full 0 addrunavail 0 other 0
+
+CPU time [s]: user 3.21 system 12.14 (user 12.0% system 45.3% total 57.2%)
+Net I/O: bytes 9.6 GB rate 376222.6 KB/s (3082.0*10^6 bps)
+
+
+Total: connections 1 requests 2000000 responses 2000000 test-duration 26.881 s
+
+Connection rate: 0.0 conn/s (26881.1 ms/conn <= 1 concurrent connections)
+Connection time [ms]: avg 26881.1 min 26881.1 max 26881.1 stddev 0.00
+Connect time [ms]: avg 0.0 min 0.0 max 0.0 stddev 0.00
+
+Request rate: 74401.8 req/s (0.0 ms/req)
+Request size [B]: avg 5154.0 min 5154.0 max 5154.0 stddev 0.00
+
+Response rate: 74401.8 rsp/s (0.0 ms/rsp)
+Response size [B]: avg 12.0 min 8.0 max 12.0 stddev 0.31
+Response time [ms]: avg 0.0 min 0.0 max 0.6 stddev 0.00
+Response time [ms]: p25 1.0 p50 1.0 p75 1.0
+Response time [ms]: p95 1.0 p99 1.0 p999 1.0
+Response type: stored 11775 not_stored 1988225 exists 0 not_found 0
+Response type: num 0 deleted 0 end 0 value 0
+Response type: error 0 client_error 0 server_error 0
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 ftab-full 0 addrunavail 0 other 0
+
+CPU time [s]: user 3.30 system 12.18 (user 12.3% system 45.3% total 57.6%)
+Net I/O: bytes 9.6 GB rate 375349.8 KB/s (3074.9*10^6 bps)
+
+
+Total: connections 1 requests 2000000 responses 2000000 test-duration 26.944 s
+
+Connection rate: 0.0 conn/s (26944.0 ms/conn <= 1 concurrent connections)
+Connection time [ms]: avg 26944.0 min 26944.0 max 26944.0 stddev 0.00
+Connect time [ms]: avg 0.0 min 0.0 max 0.0 stddev 0.00
+
+Request rate: 74228.0 req/s (0.0 ms/req)
+Request size [B]: avg 5154.0 min 5154.0 max 5154.0 stddev 0.00
+
+Response rate: 74228.0 rsp/s (0.0 ms/rsp)
+Response size [B]: avg 12.0 min 8.0 max 12.0 stddev 0.31
+Response time [ms]: avg 0.0 min 0.0 max 0.6 stddev 0.00
+Response time [ms]: p25 1.0 p50 1.0 p75 1.0
+Response time [ms]: p95 1.0 p99 1.0 p999 1.0
+Response type: stored 11775 not_stored 1988225 exists 0 not_found 0
+Response type: num 0 deleted 0 end 0 value 0
+Response type: error 0 client_error 0 server_error 0
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 ftab-full 0 addrunavail 0 other 0
+
+CPU time [s]: user 3.28 system 12.19 (user 12.2% system 45.2% total 57.4%)
+Net I/O: bytes 9.6 GB rate 374472.6 KB/s (3067.7*10^6 bps)
+
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            696,72 Joules power/energy-pkg/                                             ( +-  0,14% )
+             13,56 Joules power/energy-ram/                                             ( +-  0,25% )
+
+           26,9824 +- 0,0692 seconds time elapsed  ( +-  0,26% )
+

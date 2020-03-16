@@ -1,0 +1,328 @@
+arch/x86/hyperv/hv_apic.c: In function ‘__send_ipi_one’:
+arch/x86/hyperv/hv_apic.c:201:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘hv_send_ipi_mask_allbutself’:
+arch/x86/hyperv/hv_apic.c:226:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/kernel/kvm.c: In function ‘kvm_send_ipi_mask_allbutself’:
+arch/x86/kernel/kvm.c:503:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/block/rbd.c: In function ‘rbd_object_map_callback’:
+drivers/block/rbd.c:2124:21: warning: ‘current_state’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+      (current_state == OBJECT_EXISTS && state == OBJECT_EXISTS_CLEAN))
+drivers/block/rbd.c:2092:23: note: ‘current_state’ was declared here
+  u8 state, new_state, current_state;
+                       ^~~~~~~~~~~~~
+fs/jffs2/xattr.c: In function ‘jffs2_build_xattr_subsystem’:
+fs/jffs2/xattr.c:887:1: warning: the frame size of 1120 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/cpufreq/cpufreq_ondemand.c: In function ‘od_set_powersave_bias’:
+drivers/cpufreq/cpufreq_ondemand.c:446:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+In file included from ./include/linux/wait.h:9:0,
+                 from ./include/linux/net.h:19,
+                 from drivers/infiniband/sw/siw/siw_qp_rx.c:8:
+drivers/infiniband/sw/siw/siw_qp_rx.c: In function ‘siw_proc_send’:
+./include/linux/spinlock.h:288:3: warning: ‘flags’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   _raw_spin_unlock_irqrestore(lock, flags); \
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/infiniband/sw/siw/siw_qp_rx.c:335:16: note: ‘flags’ was declared here
+  unsigned long flags;
+                ^~~~~
+drivers/net/ethernet/huawei/hinic/hinic_rx.c: In function ‘rx_request_irq’:
+drivers/net/ethernet/huawei/hinic/hinic_rx.c:497:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c: In function ‘mlx5e_grp_sw_update_stats’:
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c:294:1: warning: the frame size of 1312 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c: In function ‘mlx5e_open_xsk’:
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c:127:1: warning: the frame size of 1328 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/neterion/vxge/vxge-main.c: In function ‘VXGE_COMPLETE_VPATH_TX.isra.47’:
+drivers/net/ethernet/neterion/vxge/vxge-main.c:119:1: warning: the frame size of 1048 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/scsi.c: In function ‘vhost_scsi_flush’:
+drivers/vhost/scsi.c:1374:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/vhost.c: In function ‘log_used’:
+drivers/vhost/vhost.c:1931:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/usb/misc/usbtest.c: In function ‘test_queue’:
+drivers/usb/misc/usbtest.c:2148:1: warning: the frame size of 1232 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘__send_ipi_one’:
+arch/x86/hyperv/hv_apic.c:201:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘hv_send_ipi_mask_allbutself’:
+arch/x86/hyperv/hv_apic.c:226:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/kernel/kvm.c: In function ‘kvm_send_ipi_mask_allbutself’:
+arch/x86/kernel/kvm.c:503:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+fs/jffs2/xattr.c: In function ‘jffs2_build_xattr_subsystem’:
+fs/jffs2/xattr.c:887:1: warning: the frame size of 1120 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/block/rbd.c: In function ‘rbd_object_map_callback’:
+drivers/block/rbd.c:2124:21: warning: ‘current_state’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+      (current_state == OBJECT_EXISTS && state == OBJECT_EXISTS_CLEAN))
+drivers/block/rbd.c:2092:23: note: ‘current_state’ was declared here
+  u8 state, new_state, current_state;
+                       ^~~~~~~~~~~~~
+drivers/cpufreq/cpufreq_ondemand.c: In function ‘od_set_powersave_bias’:
+drivers/cpufreq/cpufreq_ondemand.c:446:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+In file included from ./include/linux/wait.h:9:0,
+                 from ./include/linux/net.h:19,
+                 from drivers/infiniband/sw/siw/siw_qp_rx.c:8:
+drivers/infiniband/sw/siw/siw_qp_rx.c: In function ‘siw_proc_send’:
+./include/linux/spinlock.h:288:3: warning: ‘flags’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   _raw_spin_unlock_irqrestore(lock, flags); \
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/infiniband/sw/siw/siw_qp_rx.c:335:16: note: ‘flags’ was declared here
+  unsigned long flags;
+                ^~~~~
+drivers/net/ethernet/huawei/hinic/hinic_rx.c: In function ‘rx_request_irq’:
+drivers/net/ethernet/huawei/hinic/hinic_rx.c:497:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c: In function ‘mlx5e_grp_sw_update_stats’:
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c:294:1: warning: the frame size of 1312 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c: In function ‘mlx5e_open_xsk’:
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c:127:1: warning: the frame size of 1328 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/neterion/vxge/vxge-main.c: In function ‘VXGE_COMPLETE_VPATH_TX.isra.47’:
+drivers/net/ethernet/neterion/vxge/vxge-main.c:119:1: warning: the frame size of 1048 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/scsi.c: In function ‘vhost_scsi_flush’:
+drivers/vhost/scsi.c:1374:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/vhost.c: In function ‘log_used’:
+drivers/vhost/vhost.c:1931:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/usb/misc/usbtest.c: In function ‘test_queue’:
+drivers/usb/misc/usbtest.c:2148:1: warning: the frame size of 1232 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘__send_ipi_one’:
+arch/x86/hyperv/hv_apic.c:201:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘hv_send_ipi_mask_allbutself’:
+arch/x86/hyperv/hv_apic.c:226:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/kernel/kvm.c: In function ‘kvm_send_ipi_mask_allbutself’:
+arch/x86/kernel/kvm.c:503:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+fs/jffs2/xattr.c: In function ‘jffs2_build_xattr_subsystem’:
+fs/jffs2/xattr.c:887:1: warning: the frame size of 1120 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/block/rbd.c: In function ‘rbd_object_map_callback’:
+drivers/block/rbd.c:2124:21: warning: ‘current_state’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+      (current_state == OBJECT_EXISTS && state == OBJECT_EXISTS_CLEAN))
+drivers/block/rbd.c:2092:23: note: ‘current_state’ was declared here
+  u8 state, new_state, current_state;
+                       ^~~~~~~~~~~~~
+drivers/cpufreq/cpufreq_ondemand.c: In function ‘od_set_powersave_bias’:
+drivers/cpufreq/cpufreq_ondemand.c:446:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+In file included from ./include/linux/wait.h:9:0,
+                 from ./include/linux/net.h:19,
+                 from drivers/infiniband/sw/siw/siw_qp_rx.c:8:
+drivers/infiniband/sw/siw/siw_qp_rx.c: In function ‘siw_proc_send’:
+./include/linux/spinlock.h:288:3: warning: ‘flags’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   _raw_spin_unlock_irqrestore(lock, flags); \
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/infiniband/sw/siw/siw_qp_rx.c:335:16: note: ‘flags’ was declared here
+  unsigned long flags;
+                ^~~~~
+drivers/net/ethernet/huawei/hinic/hinic_rx.c: In function ‘rx_request_irq’:
+drivers/net/ethernet/huawei/hinic/hinic_rx.c:497:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c: In function ‘mlx5e_grp_sw_update_stats’:
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c:294:1: warning: the frame size of 1312 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/neterion/vxge/vxge-main.c: In function ‘VXGE_COMPLETE_VPATH_TX.isra.47’:
+drivers/net/ethernet/neterion/vxge/vxge-main.c:119:1: warning: the frame size of 1048 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c: In function ‘mlx5e_open_xsk’:
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c:127:1: warning: the frame size of 1328 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/scsi.c: In function ‘vhost_scsi_flush’:
+drivers/vhost/scsi.c:1374:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/vhost.c: In function ‘log_used’:
+drivers/vhost/vhost.c:1931:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/usb/misc/usbtest.c: In function ‘test_queue’:
+drivers/usb/misc/usbtest.c:2148:1: warning: the frame size of 1232 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘__send_ipi_one’:
+arch/x86/hyperv/hv_apic.c:201:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘hv_send_ipi_mask_allbutself’:
+arch/x86/hyperv/hv_apic.c:226:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/kernel/kvm.c: In function ‘kvm_send_ipi_mask_allbutself’:
+arch/x86/kernel/kvm.c:503:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+fs/jffs2/xattr.c: In function ‘jffs2_build_xattr_subsystem’:
+fs/jffs2/xattr.c:887:1: warning: the frame size of 1120 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/block/rbd.c: In function ‘rbd_object_map_callback’:
+drivers/block/rbd.c:2124:21: warning: ‘current_state’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+      (current_state == OBJECT_EXISTS && state == OBJECT_EXISTS_CLEAN))
+drivers/block/rbd.c:2092:23: note: ‘current_state’ was declared here
+  u8 state, new_state, current_state;
+                       ^~~~~~~~~~~~~
+drivers/cpufreq/cpufreq_ondemand.c: In function ‘od_set_powersave_bias’:
+drivers/cpufreq/cpufreq_ondemand.c:446:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+In file included from ./include/linux/wait.h:9:0,
+                 from ./include/linux/net.h:19,
+                 from drivers/infiniband/sw/siw/siw_qp_rx.c:8:
+drivers/infiniband/sw/siw/siw_qp_rx.c: In function ‘siw_proc_send’:
+./include/linux/spinlock.h:288:3: warning: ‘flags’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   _raw_spin_unlock_irqrestore(lock, flags); \
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/infiniband/sw/siw/siw_qp_rx.c:335:16: note: ‘flags’ was declared here
+  unsigned long flags;
+                ^~~~~
+drivers/net/ethernet/huawei/hinic/hinic_rx.c: In function ‘rx_request_irq’:
+drivers/net/ethernet/huawei/hinic/hinic_rx.c:497:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/neterion/vxge/vxge-main.c: In function ‘VXGE_COMPLETE_VPATH_TX.isra.47’:
+drivers/net/ethernet/neterion/vxge/vxge-main.c:119:1: warning: the frame size of 1048 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c: In function ‘mlx5e_grp_sw_update_stats’:
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c:294:1: warning: the frame size of 1312 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c: In function ‘mlx5e_open_xsk’:
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c:127:1: warning: the frame size of 1328 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/usb/misc/usbtest.c: In function ‘test_queue’:
+drivers/usb/misc/usbtest.c:2148:1: warning: the frame size of 1232 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/scsi.c: In function ‘vhost_scsi_flush’:
+drivers/vhost/scsi.c:1374:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/vhost.c: In function ‘log_used’:
+drivers/vhost/vhost.c:1931:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘__send_ipi_one’:
+arch/x86/hyperv/hv_apic.c:201:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/hyperv/hv_apic.c: In function ‘hv_send_ipi_mask_allbutself’:
+arch/x86/hyperv/hv_apic.c:226:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+arch/x86/kernel/kvm.c: In function ‘kvm_send_ipi_mask_allbutself’:
+arch/x86/kernel/kvm.c:503:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/block/rbd.c: In function ‘rbd_object_map_callback’:
+drivers/block/rbd.c:2124:21: warning: ‘current_state’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+      (current_state == OBJECT_EXISTS && state == OBJECT_EXISTS_CLEAN))
+drivers/block/rbd.c:2092:23: note: ‘current_state’ was declared here
+  u8 state, new_state, current_state;
+                       ^~~~~~~~~~~~~
+fs/jffs2/xattr.c: In function ‘jffs2_build_xattr_subsystem’:
+fs/jffs2/xattr.c:887:1: warning: the frame size of 1120 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/cpufreq/cpufreq_ondemand.c: In function ‘od_set_powersave_bias’:
+drivers/cpufreq/cpufreq_ondemand.c:446:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+In file included from ./include/linux/wait.h:9:0,
+                 from ./include/linux/net.h:19,
+                 from drivers/infiniband/sw/siw/siw_qp_rx.c:8:
+drivers/infiniband/sw/siw/siw_qp_rx.c: In function ‘siw_proc_send’:
+./include/linux/spinlock.h:288:3: warning: ‘flags’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   _raw_spin_unlock_irqrestore(lock, flags); \
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/infiniband/sw/siw/siw_qp_rx.c:335:16: note: ‘flags’ was declared here
+  unsigned long flags;
+                ^~~~~
+drivers/net/ethernet/huawei/hinic/hinic_rx.c: In function ‘rx_request_irq’:
+drivers/net/ethernet/huawei/hinic/hinic_rx.c:497:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c: In function ‘mlx5e_grp_sw_update_stats’:
+drivers/net/ethernet/mellanox/mlx5/core/en_stats.c:294:1: warning: the frame size of 1312 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c: In function ‘mlx5e_open_xsk’:
+drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c:127:1: warning: the frame size of 1328 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/net/ethernet/neterion/vxge/vxge-main.c: In function ‘VXGE_COMPLETE_VPATH_TX.isra.47’:
+drivers/net/ethernet/neterion/vxge/vxge-main.c:119:1: warning: the frame size of 1048 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/usb/misc/usbtest.c: In function ‘test_queue’:
+drivers/usb/misc/usbtest.c:2148:1: warning: the frame size of 1232 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/scsi.c: In function ‘vhost_scsi_flush’:
+drivers/vhost/scsi.c:1374:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+drivers/vhost/vhost.c: In function ‘log_used’:
+drivers/vhost/vhost.c:1931:1: warning: the frame size of 1040 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          70714,25 Joules power/energy-pkg/                                             ( +-  0,10% )
+           2616,61 Joules power/energy-ram/                                             ( +-  0,04% )
+
+           1393,18 +- 3,53 seconds time elapsed  ( +-  0,25% )
+

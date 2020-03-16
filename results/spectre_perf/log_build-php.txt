@@ -1,0 +1,16 @@
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+mkdir: cannot create directory 'ext/session/.libs': File exists
+mkdir: cannot create directory 'Zend/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+mkdir: cannot create directory 'ext/opcache/Optimizer/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           4191,25 Joules power/energy-pkg/                                             ( +-  0,21% )
+            175,57 Joules power/energy-ram/                                             ( +-  0,21% )
+
+            98,988 +- 0,865 seconds time elapsed  ( +-  0,87% )
+

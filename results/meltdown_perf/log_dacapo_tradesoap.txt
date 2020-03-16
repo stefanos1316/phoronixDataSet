@@ -1,0 +1,186 @@
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6316 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6323 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6109 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6516 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6230 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6361 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6557 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6520 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6461 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6596 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6398 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6529 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6561 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0x238440335ba86e56bcd4ea2866c9e0697e898ad5
+===== DaCapo 9.12-MR1 tradesoap FAILED =====
+Validation FAILED for tradesoap default
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6530 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6392 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+AxisFault
+ faultCode: {http://schemas.xmlsoap.org/soap/envelope/}Server.userException
+ faultSubcode: 
+ faultString: java.rmi.RemoteException: ; nested exception is: 
+	java.lang.NullPointerException
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{http://xml.apache.org/axis/}stackTrace:java.rmi.RemoteException: ; nested exception is: 
+	java.lang.NullPointerException
+	at org.apache.geronimo.samples.daytrader.soap.TradeWSAction.sell(TradeWSAction.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.geronimo.axis.server.POJOProvider.invokeMethod(POJOProvider.java:50)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+	at org.apache.geronimo.axis.server.AxisWebServiceContainer.doService(AxisWebServiceContainer.java:132)
+	at org.apache.geronimo.axis.server.AxisWebServiceContainer.invoke(AxisWebServiceContainer.java:81)
+	at org.apache.geronimo.webservices.WebServiceContainerInvoker.service(WebServiceContainerInvoker.java:84)
+	at org.apache.geronimo.webservices.POJOWebServiceServlet.service(POJOWebServiceServlet.java:79)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.apache.geronimo.jetty6.InternalJettyServletHolder.handle(InternalJettyServletHolder.java:65)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.apache.geronimo.jetty6.handler.TwistyWebAppContext.access$101(TwistyWebAppContext.java:40)
+	at org.apache.geronimo.jetty6.handler.TwistyWebAppContext$TwistyHandler.handle(TwistyWebAppContext.java:65)
+	at org.apache.geronimo.jetty6.handler.ThreadClassloaderHandler.handle(ThreadClassloaderHandler.java:46)
+	at org.apache.geronimo.jetty6.handler.InstanceContextHandler.handle(InstanceContextHandler.java:58)
+	at org.apache.geronimo.jetty6.handler.UserTransactionHandler.handle(UserTransactionHandler.java:48)
+	at org.apache.geronimo.jetty6.handler.ComponentContextHandler.handle(ComponentContextHandler.java:47)
+	at org.apache.geronimo.jetty6.handler.TwistyWebAppContext.handle(TwistyWebAppContext.java:59)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:842)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.apache.geronimo.pool.ThreadPool$1.run(ThreadPool.java:214)
+	at org.apache.geronimo.pool.ThreadPool$ContextClassLoaderRunnable.run(ThreadPool.java:344)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.apache.geronimo.samples.daytrader.TradeAction.sell(TradeAction.java:238)
+	at org.apache.geronimo.samples.daytrader.soap.TradeWSAction.sell(TradeWSAction.java:61)
+	... 44 more
+
+	{http://xml.apache.org/axis/}hostname:sgeorgiou
+
+java.rmi.RemoteException: ; nested exception is: 
+	java.lang.NullPointerException
+	at org.apache.axis.message.SOAPFaultBuilder.createFault(SOAPFaultBuilder.java:222)
+	at org.apache.axis.message.SOAPFaultBuilder.endElement(SOAPFaultBuilder.java:129)
+	at org.apache.axis.encoding.DeserializationContext.endElement(DeserializationContext.java:1087)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.apache.axis.encoding.DeserializationContext.parse(DeserializationContext.java:227)
+	at org.apache.axis.SOAPPart.getAsSOAPEnvelope(SOAPPart.java:696)
+	at org.apache.axis.Message.getSOAPEnvelope(Message.java:435)
+	at org.apache.axis.handlers.soap.MustUnderstandChecker.invoke(MustUnderstandChecker.java:62)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:206)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at org.apache.geronimo.axis.client.ServiceEndpointMethodInterceptor.doIntercept(ServiceEndpointMethodInterceptor.java:103)
+	at org.apache.geronimo.axis.client.ServiceEndpointMethodInterceptor.intercept(ServiceEndpointMethodInterceptor.java:58)
+	at org.apache.geronimo.axis.client.GenericServiceEndpointWrapper$$EnhancerByCGLIB$$55af7a7c.sell(<generated>)
+	at org.apache.geronimo.samples.daytrader.soap.TradeWebSoapProxy.sell(TradeWebSoapProxy.java:252)
+	at org.apache.geronimo.samples.daytrader.dacapo.DaCapoTrader.doSell(DaCapoTrader.java:493)
+	at org.apache.geronimo.samples.daytrader.dacapo.DaCapoTrader.runTradeSession(DaCapoTrader.java:309)
+	at org.apache.geronimo.samples.daytrader.dacapo.DaCapoTrader.run(DaCapoTrader.java:123)
+Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0x05157762ac4a3087c96147315635b6e4518d0369
+Digest validation failed for stderr.log, expecting 0xda39a3ee5e6b4b0d3255bfef95601890afd80709 found 0x0adecd3adb9231af5f1266dfd3dc0f0e0e7d89cb
+===== DaCapo 9.12-MR1 tradesoap FAILED =====
+Validation FAILED for tradesoap default
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6381 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0x62ace5059d713339365f09ddd4a438b3ffe95e45
+===== DaCapo 9.12-MR1 tradesoap FAILED =====
+Validation FAILED for tradesoap default
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6520 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6443 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6549 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6509 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6594 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6575 msec =====
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           3273,28 Joules power/energy-pkg/                                             ( +-  0,56% )
+            172,96 Joules power/energy-ram/                                             ( +-  1,08% )
+
+            200,57 +- 4,01 seconds time elapsed  ( +-  2,00% )
+

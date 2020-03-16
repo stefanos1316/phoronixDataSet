@@ -9,7 +9,7 @@ all
 No-Graphics
 ===========
 stock (DONE)
-meltdown
-spectre
+meltdown (DONE)
+spectre (PENDING)
 mds
 all

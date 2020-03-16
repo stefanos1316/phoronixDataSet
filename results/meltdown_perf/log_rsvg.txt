@@ -1,0 +1,348 @@
+
+(rsvg-convert:30876): librsvg-WARNING **: 20:38:17.088: CSS parsing error
+
+
+(rsvg-convert:30876): librsvg-WARNING **: 20:38:17.088: CSS unrecoverable error
+
+parsing error: 2:4:could not recognize next production
+
+(rsvg-convert:30906): librsvg-WARNING **: 20:38:17.845: CSS parsing error
+
+
+(rsvg-convert:30906): librsvg-WARNING **: 20:38:17.845: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:30907): librsvg-WARNING **: 20:38:17.867: CSS parsing error
+
+
+(rsvg-convert:30907): librsvg-WARNING **: 20:38:17.867: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:30908): librsvg-WARNING **: 20:38:17.891: CSS parsing error
+
+
+(rsvg-convert:30908): librsvg-WARNING **: 20:38:17.891: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+Could not get dimensions for file struct-frag-01-t.svg
+
+(rsvg-convert:30975): librsvg-WARNING **: 20:38:19.299: unknown line cap style inherit
+
+
+(rsvg-convert:30975): librsvg-WARNING **: 20:38:19.299: unknown line join style inherit
+
+
+(rsvg-convert:31034): librsvg-WARNING **: 20:38:20.735: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:31034): librsvg-WARNING **: 20:38:20.735: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:31038): librsvg-WARNING **: 20:38:20.830: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:31038): librsvg-WARNING **: 20:38:20.830: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:31058): librsvg-WARNING **: 20:38:21.563: CSS parsing error
+
+
+(rsvg-convert:31058): librsvg-WARNING **: 20:38:21.563: CSS parsing error
+
+
+(rsvg-convert:31058): librsvg-WARNING **: 20:38:21.564: CSS parsing error
+
+
+(rsvg-convert:31058): librsvg-WARNING **: 20:38:21.564: CSS parsing error
+
+
+(rsvg-convert:31058): librsvg-WARNING **: 20:38:21.564: CSS parsing error
+
+
+(rsvg-convert:31096): librsvg-WARNING **: 20:38:22.663: CSS parsing error
+
+
+(rsvg-convert:31096): librsvg-WARNING **: 20:38:22.663: CSS parsing error
+
+
+(rsvg-convert:31531): librsvg-WARNING **: 20:38:33.214: CSS parsing error
+
+
+(rsvg-convert:31531): librsvg-WARNING **: 20:38:33.214: CSS unrecoverable error
+
+parsing error: 2:4:could not recognize next production
+
+(rsvg-convert:31563): librsvg-WARNING **: 20:38:33.968: CSS parsing error
+
+
+(rsvg-convert:31563): librsvg-WARNING **: 20:38:33.968: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:31564): librsvg-WARNING **: 20:38:33.990: CSS parsing error
+
+
+(rsvg-convert:31564): librsvg-WARNING **: 20:38:33.990: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:31565): librsvg-WARNING **: 20:38:34.014: CSS parsing error
+
+
+(rsvg-convert:31565): librsvg-WARNING **: 20:38:34.014: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+Could not get dimensions for file struct-frag-01-t.svg
+
+(rsvg-convert:31630): librsvg-WARNING **: 20:38:35.318: unknown line cap style inherit
+
+
+(rsvg-convert:31630): librsvg-WARNING **: 20:38:35.318: unknown line join style inherit
+
+
+(rsvg-convert:31690): librsvg-WARNING **: 20:38:36.695: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:31690): librsvg-WARNING **: 20:38:36.695: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:31694): librsvg-WARNING **: 20:38:36.790: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:31694): librsvg-WARNING **: 20:38:36.790: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:31715): librsvg-WARNING **: 20:38:37.345: CSS parsing error
+
+
+(rsvg-convert:31715): librsvg-WARNING **: 20:38:37.345: CSS parsing error
+
+
+(rsvg-convert:31715): librsvg-WARNING **: 20:38:37.345: CSS parsing error
+
+
+(rsvg-convert:31715): librsvg-WARNING **: 20:38:37.345: CSS parsing error
+
+
+(rsvg-convert:31715): librsvg-WARNING **: 20:38:37.345: CSS parsing error
+
+
+(rsvg-convert:31753): librsvg-WARNING **: 20:38:38.326: CSS parsing error
+
+
+(rsvg-convert:31753): librsvg-WARNING **: 20:38:38.326: CSS parsing error
+
+
+(rsvg-convert:32184): librsvg-WARNING **: 20:38:48.957: CSS parsing error
+
+
+(rsvg-convert:32184): librsvg-WARNING **: 20:38:48.958: CSS unrecoverable error
+
+parsing error: 2:4:could not recognize next production
+
+(rsvg-convert:32214): librsvg-WARNING **: 20:38:49.708: CSS parsing error
+
+
+(rsvg-convert:32214): librsvg-WARNING **: 20:38:49.708: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:32215): librsvg-WARNING **: 20:38:49.730: CSS parsing error
+
+
+(rsvg-convert:32215): librsvg-WARNING **: 20:38:49.730: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:32216): librsvg-WARNING **: 20:38:49.754: CSS parsing error
+
+
+(rsvg-convert:32216): librsvg-WARNING **: 20:38:49.754: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+Could not get dimensions for file struct-frag-01-t.svg
+
+(rsvg-convert:32281): librsvg-WARNING **: 20:38:51.056: unknown line cap style inherit
+
+
+(rsvg-convert:32281): librsvg-WARNING **: 20:38:51.057: unknown line join style inherit
+
+
+(rsvg-convert:32340): librsvg-WARNING **: 20:38:52.453: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:32340): librsvg-WARNING **: 20:38:52.453: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:32344): librsvg-WARNING **: 20:38:52.547: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:32344): librsvg-WARNING **: 20:38:52.547: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:32364): librsvg-WARNING **: 20:38:53.101: CSS parsing error
+
+
+(rsvg-convert:32364): librsvg-WARNING **: 20:38:53.101: CSS parsing error
+
+
+(rsvg-convert:32364): librsvg-WARNING **: 20:38:53.101: CSS parsing error
+
+
+(rsvg-convert:32364): librsvg-WARNING **: 20:38:53.101: CSS parsing error
+
+
+(rsvg-convert:32364): librsvg-WARNING **: 20:38:53.101: CSS parsing error
+
+
+(rsvg-convert:32402): librsvg-WARNING **: 20:38:54.082: CSS parsing error
+
+
+(rsvg-convert:32402): librsvg-WARNING **: 20:38:54.082: CSS parsing error
+
+
+(rsvg-convert:443): librsvg-WARNING **: 20:39:04.712: CSS parsing error
+
+
+(rsvg-convert:443): librsvg-WARNING **: 20:39:04.712: CSS unrecoverable error
+
+parsing error: 2:4:could not recognize next production
+
+(rsvg-convert:476): librsvg-WARNING **: 20:39:05.462: CSS parsing error
+
+
+(rsvg-convert:476): librsvg-WARNING **: 20:39:05.462: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:477): librsvg-WARNING **: 20:39:05.484: CSS parsing error
+
+
+(rsvg-convert:477): librsvg-WARNING **: 20:39:05.484: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:478): librsvg-WARNING **: 20:39:05.507: CSS parsing error
+
+
+(rsvg-convert:478): librsvg-WARNING **: 20:39:05.507: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+Could not get dimensions for file struct-frag-01-t.svg
+
+(rsvg-convert:546): librsvg-WARNING **: 20:39:06.812: unknown line cap style inherit
+
+
+(rsvg-convert:546): librsvg-WARNING **: 20:39:06.812: unknown line join style inherit
+
+
+(rsvg-convert:607): librsvg-WARNING **: 20:39:08.190: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:607): librsvg-WARNING **: 20:39:08.190: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:611): librsvg-WARNING **: 20:39:08.284: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:611): librsvg-WARNING **: 20:39:08.284: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:631): librsvg-WARNING **: 20:39:08.838: CSS parsing error
+
+
+(rsvg-convert:631): librsvg-WARNING **: 20:39:08.838: CSS parsing error
+
+
+(rsvg-convert:631): librsvg-WARNING **: 20:39:08.838: CSS parsing error
+
+
+(rsvg-convert:631): librsvg-WARNING **: 20:39:08.838: CSS parsing error
+
+
+(rsvg-convert:631): librsvg-WARNING **: 20:39:08.838: CSS parsing error
+
+
+(rsvg-convert:670): librsvg-WARNING **: 20:39:09.817: CSS parsing error
+
+
+(rsvg-convert:670): librsvg-WARNING **: 20:39:09.817: CSS parsing error
+
+
+(rsvg-convert:1167): librsvg-WARNING **: 20:39:20.352: CSS parsing error
+
+
+(rsvg-convert:1167): librsvg-WARNING **: 20:39:20.352: CSS unrecoverable error
+
+parsing error: 2:4:could not recognize next production
+
+(rsvg-convert:1212): librsvg-WARNING **: 20:39:21.103: CSS parsing error
+
+
+(rsvg-convert:1212): librsvg-WARNING **: 20:39:21.103: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:1213): librsvg-WARNING **: 20:39:21.125: CSS parsing error
+
+
+(rsvg-convert:1213): librsvg-WARNING **: 20:39:21.125: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:1215): librsvg-WARNING **: 20:39:21.149: CSS parsing error
+
+
+(rsvg-convert:1215): librsvg-WARNING **: 20:39:21.149: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+Could not get dimensions for file struct-frag-01-t.svg
+
+(rsvg-convert:1303): librsvg-WARNING **: 20:39:22.461: unknown line cap style inherit
+
+
+(rsvg-convert:1303): librsvg-WARNING **: 20:39:22.461: unknown line join style inherit
+
+
+(rsvg-convert:1370): librsvg-WARNING **: 20:39:23.859: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:1370): librsvg-WARNING **: 20:39:23.859: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:1374): librsvg-WARNING **: 20:39:23.954: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:1374): librsvg-WARNING **: 20:39:23.954: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:1394): librsvg-WARNING **: 20:39:24.507: CSS parsing error
+
+
+(rsvg-convert:1394): librsvg-WARNING **: 20:39:24.507: CSS parsing error
+
+
+(rsvg-convert:1394): librsvg-WARNING **: 20:39:24.507: CSS parsing error
+
+
+(rsvg-convert:1394): librsvg-WARNING **: 20:39:24.507: CSS parsing error
+
+
+(rsvg-convert:1394): librsvg-WARNING **: 20:39:24.507: CSS parsing error
+
+
+(rsvg-convert:1509): librsvg-WARNING **: 20:39:25.488: CSS parsing error
+
+
+(rsvg-convert:1509): librsvg-WARNING **: 20:39:25.488: CSS parsing error
+
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            350,71 Joules power/energy-pkg/                                             ( +-  0,68% )
+             10,00 Joules power/energy-ram/                                             ( +-  1,07% )
+
+            15,892 +- 0,186 seconds time elapsed  ( +-  1,17% )
+

@@ -1,0 +1,13 @@
+4091961
+4092833
+4091790
+4091985
+4089514
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1951,40 Joules power/energy-pkg/                                             ( +-  0,57% )
+             17,06 Joules power/energy-ram/                                             ( +-  0,57% )
+
+            34,013 +- 0,201 seconds time elapsed  ( +-  0,59% )
+
