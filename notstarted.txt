@@ -2,9 +2,9 @@ Graphics
 ========
 stock (DONE)
 meltdown (DNOE)
-spectre
-mds
-all
+spectre (DONE)
+mds (DONE)
+alloff (DONE)
 
 No-Graphics
 ===========
@@ -12,4 +12,4 @@ stock (DONE)
 meltdown (DONE)
 spectre (PENDING)
 mds
-all
+alloff

@@ -144,7 +144,6 @@ qgears_-render                         140,2051 +- 0,0538 seconds time elapsed  
 qgears_TEXT                          90,9110 +- 0,0783 seconds time elapsed  ( +-  0,09% )
 qgears_GEARSFANCY                         140,1330 +- 0,0330 seconds time elapsed  ( +-  0,02% )
 qgears_COMPO                          9,71375 +- 0,00857 seconds time elapsed  ( +-  0,09% )
-jxrend                          0,00877 +- 0,00814 seconds time elapsed  ( +- 92,79% )
 javascimark2                           26,289 +- 0,661 seconds time elapsed  ( +-  2,52% )
 sunflow                           23,028 +- 0,185 seconds time elapsed  ( +-  0,80% )
 sqlitebench                           125,63 +- 6,01 seconds time elapsed  ( +-  4,78% )
@@ -270,3 +269,46 @@ build-llvm                           862,15 +- 1,27 seconds time elapsed  ( +-  
 build2                           197,96 +- 1,28 seconds time elapsed  ( +-  0,65% )
 build-gdb                          132,998 +- 0,367 seconds time elapsed  ( +-  0,28% )
 encode-flac                           20,426 +- 0,229 seconds time elapsed  ( +-  1,12% )
+openarenaG_800x600                           108
+openarenaG_1024x768                         146
+openarenaG_1920x1080                         304
+openarenaG_2560x1440                          84
+urbanterrorG_800x600                           35
+urbanterrorG_1024x768                           42
+urbanterrorG_1920x1080                          70
+urbanterrorG_2560x1440                          30
+unigine-valley_800x600                          232
+unigine-valley_1024x768                          244
+unigine-valley_1920x1080                         417
+unigine-valley_2560x1440                          655
+unigine-heaven_800x600                          312
+unigine-heaven_1024x768                         315
+unigine-heaven_1920x1080                         438
+unigine-heaven_2560x1440                          720
+glmark2_800x600                         332
+glmark2_1024x768                        332
+glmark2_1920x1080                        332
+glmark2_2560x1440                         332
+qgears_-image                         162
+qgears_-render                         155
+qgears_TEXT                          104
+qgears_GEARSFANCY                         155
+qgears_COMPO                          16
+jxrend                          21
+nexuiz_800x600                           24
+nexuiz_1024x768                          30
+nexuiz_1920x1080                          52
+nexuiz_2560x1440                          52
+xonotic_800x600                          887
+xonotic_1024x768                          886
+xonotic_1920x1080                          886
+xonotic_2560x1440                          888
+paraview_manyspheres                           360
+paraview_waveletcontour                           784
+paraview_waveletvolume                           31
+indigobench_supercar                           61
+indigobench_bedroom                           62
+j2dbench_all                          361
+j2dbench_images                         105
+j2dbench_graphics                          245
+j2dbench_text                          14

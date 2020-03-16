@@ -1,0 +1,83 @@
+TIFFOpen: log.scene.f000.tiff: Permission denied.
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 253
+vtkTIFFWriter (0x5f6a460): Problem writing file.
+
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 408
+vtkTIFFWriter (0x5f6a460): Problem writing trailer.
+
+Traceback (most recent call last):
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 211, in <module>
+    main(sys.argv[1:])
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 207, in main
+    transparency=args.transparency, ospray=args.ospray)
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 154, in run
+    with open(output_basename + '.args.txt', 'w') as argfile:
+IOError: [Errno 13] Permission denied: 'log.args.txt'
+TIFFOpen: log.scene.f000.tiff: Permission denied.
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 253
+vtkTIFFWriter (0x6efc230): Problem writing file.
+
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 408
+vtkTIFFWriter (0x6efc230): Problem writing trailer.
+
+Traceback (most recent call last):
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 211, in <module>
+    main(sys.argv[1:])
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 207, in main
+    transparency=args.transparency, ospray=args.ospray)
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 154, in run
+    with open(output_basename + '.args.txt', 'w') as argfile:
+IOError: [Errno 13] Permission denied: 'log.args.txt'
+TIFFOpen: log.scene.f000.tiff: Permission denied.
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 253
+vtkTIFFWriter (0x61c49e0): Problem writing file.
+
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 408
+vtkTIFFWriter (0x61c49e0): Problem writing trailer.
+
+Traceback (most recent call last):
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 211, in <module>
+    main(sys.argv[1:])
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 207, in main
+    transparency=args.transparency, ospray=args.ospray)
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 154, in run
+    with open(output_basename + '.args.txt', 'w') as argfile:
+IOError: [Errno 13] Permission denied: 'log.args.txt'
+TIFFOpen: log.scene.f000.tiff: Permission denied.
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 253
+vtkTIFFWriter (0x5f20560): Problem writing file.
+
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 408
+vtkTIFFWriter (0x5f20560): Problem writing trailer.
+
+Traceback (most recent call last):
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 211, in <module>
+    main(sys.argv[1:])
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 207, in main
+    transparency=args.transparency, ospray=args.ospray)
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 154, in run
+    with open(output_basename + '.args.txt', 'w') as argfile:
+IOError: [Errno 13] Permission denied: 'log.args.txt'
+TIFFOpen: log.scene.f000.tiff: Permission denied.
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 253
+vtkTIFFWriter (0x73412e0): Problem writing file.
+
+ERROR: In /home/buildslave/dashboards/buildbot/paraview-pvbinsdash-linux-shared-release_superbuild/build/superbuild/paraview/src/VTK/IO/Image/vtkTIFFWriter.cxx, line 408
+vtkTIFFWriter (0x73412e0): Problem writing trailer.
+
+Traceback (most recent call last):
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 211, in <module>
+    main(sys.argv[1:])
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 207, in main
+    transparency=args.transparency, ospray=args.ospray)
+  File "lib/python2.7/site-packages/paraview/benchmark/waveletcontour.py", line 154, in run
+    with open(output_basename + '.args.txt', 'w') as argfile:
+IOError: [Errno 13] Permission denied: 'log.args.txt'
+
+ Performance counter stats for 'system wide' (5 runs):
+
+         18,396.21 Joules power/energy-pkg/                                             ( +-  0.11% )
+            928.78 Joules power/energy-ram/                                             ( +-  0.08% )
+
+           779.912 +- 0.581 seconds time elapsed  ( +-  0.07% )
+

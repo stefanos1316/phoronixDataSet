@@ -55,4 +55,3 @@ setting mode to  0
              88,08 Joules power/energy-ram/                                             ( +-  0,03% )
 
           140,2051 +- 0,0538 seconds time elapsed  ( +-  0,04% )
-

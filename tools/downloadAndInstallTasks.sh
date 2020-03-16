@@ -11,8 +11,6 @@ wget http://fsbench.filesystems.org/bench/aio-stress.c
 cc -Wall -pthread -o aio-stress aio-stress.c -laio
 cd ../
 
-exit
-
 echo "-------Downloading and installing xonotic"
 mkdir xonotic && cd xonotic
 wget http://dl.xonotic.org/xonotic-0.8.2.zip
@@ -57,7 +55,7 @@ java -jar dist/J2DAnalyzer.jar \$TEST_TYPE.res" > j2dbench
 chmod +x j2dbench
 cd ../
 
-cho "-------Downloading and installing qgears"
+echo "-------Downloading and installing qgears"
 mkdir qgears && cd qgears
 wget http://www.phoronix-test-suite.com/benchmark-files/qgears2.tar.bz2
 tar -jxf qgears2.tar.bz2 && rm qgears2.tar.bz2
@@ -360,9 +358,6 @@ esac
 set nextdemo vstr demodone\" +vstr demoloop1 +set com_speeds 1 \$getConfigurations" > urbanterrorG
 chmod +x urbanterrorG
 cd ../
-
-exit
-
 
 echo "-------Downloading and installing mt-dgemm"
 mkdir mt-dgemm && cd mt-dgemm
@@ -912,7 +907,7 @@ mv lzbench/* ./ && rm -rf lzbench/
 make
 mv lzbench lzbench-bin
 cp ../../../inputs/linux-5.3.tar.gz ./
-ehco "#!/bin/bash
+echo "#!/bin/bash
 ./lzbench-bin -t10,10 -v \$1 ./linux-5.3.tar.gz" > lzbench
 chmod +x lzbench
 cd ../
@@ -1231,7 +1226,6 @@ cd src/current/
 make linux
 cp iozone ../../
 cd ../../../
-
 
 echo "-------Downloading and installing dbench"
 mkdir dbench && cd dbench
