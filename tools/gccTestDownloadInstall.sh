@@ -15,6 +15,252 @@ taskScripts='scripts'
 mkdir gcc_tasks_test
 cd gcc_tasks_test
 
+echo "-------Downloading and installing svt-vp9"
+git clone https://github.com/OpenVisualCloud/SVT-VP9.git
+mv SVT-VP9 svt-vp9 && cd svt-vp9
+cd Build/linux/
+./build.sh release
+cd ../../
+echo "#!/bin/bash
+case \$1 in 
+    (\"tune_0\")
+        tuning=\"tune 0\";;
+    (\"tune_1\")
+        tuning=\"tune 1\";;
+    (\"tune_2\")
+        tuning=\"tune 1\";;
+esac
+for i in {1..10}; do
+    ./Bin/Release/SvtVp9EncApp -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -w 1920 -h 1080 \$tuning
+done" > svt-vp9
+chmod +x svt-vp9
+cd ../
+
+exit
+
+echo "-------Downloading and installing tiobench"
+mkdir tiobench && cd tiobench
+wget http://phoronix-test-suite.com/benchmark-files/tiobench-20170504.tar.bz2
+tar -xjvf tiobench-20170504.tar.bz2 && rm tiobench-20170504.tar.bz2
+mv tiobench-20170504/* ./ && rm -rf tiobench-20170504
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make -j $(nproc --all)
+echo "#!/bin/bash
+case \$1 in
+    (\"write\")
+        configurations=\"-k3 -k2 -k1\" ;;
+    (\"read\")
+        configurations=\"-k3 -k1\" ;;
+    (\"random_write\")
+        configurations=\"-k3 -k2\" ;;
+    (\"random_read\")
+        configurations=\"-k2 -k1\" ;;
+esac
+
+for i in {1..10}; do
+    ./tiotest \$configurations -f 256 -t \$(nproc --all)
+done"> tiobench
+chmod +x tiobench
+cd ../
+
+echo "-------Downloading and installing osbench"
+git clone https://github.com/mbitsnbites/osbench.git
+cd osbench
+cp ../../$taskScripts/osbench_create_files.c src/create_files.c
+cp ../../$taskScripts/osbench_create_processes.c src/create_processes.c
+cp ../../$taskScripts/osbench_create_threads.c src/create_threads.c
+cp ../../$taskScripts/osbench_launch_programs.c src/launch_programs.c
+cp ../../$taskScripts/osbench_mem_alloc.c src/mem_alloc.c
+mkdir out
+cd out
+meson --buildtype=release ../src
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' build.ninja
+fi
+ninja
+mkdir target
+cd ../
+echo "#!/bin/bash
+cd out/
+if [ \"\$1\" == \"create_files\" ]; then
+    ./\$1 \`pwd\`
+else
+    ./\$1
+fi" > osbench
+chmod +x osbench
+cd ../
+
+echo "-------Downloading and installing schbench"
+mkdir schbench && cd schbench
+wget http://phoronix-test-suite.com/benchmark-files/schbench-20180206.zip
+unzip schbench-20180206.zip && rm schbench-20180206.zip
+mv schbench/* ./ && rm -rf schbench/ 
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make
+mv schbench schbench-bin
+echo "#!/bin/sh
+./schbench-bin -m \$1 -t \$(nproc --all) " > schbench
+chmod +x schbench
+cd ../
+
+echo "-------Downloading and installing tjbench"
+mkdir tjbench && cd tjbench
+wget http://ftp.osuosl.org/pub/blfs/conglomeration/libjpeg-turbo/libjpeg-turbo-2.0.2.tar.gz
+tar -xzvf libjpeg-turbo-2.0.2.tar.gz && rm libjpeg-turbo-2.0.2.tar.gz
+mv libjpeg-turbo-2.0.2/* ./ && rm -rf libjpeg-turbo-2.0.2
+wget http://phoronix-test-suite.com/benchmark-files/jpeg-test-1.zip
+unzip jpeg-test-1.zip && rm jpeg-test-1.zip
+cp jpeg-test-1.JPG jpeg-test-2.JPG
+cp jpeg-test-1.JPG jpeg-test-3.JPG
+cp jpeg-test-1.JPG jpeg-test-4.JPG
+mkdir build
+cd build
+CFLAGS="${SECURITY_FLAGS}"  cmake ..
+make -j $(nproc --all)
+cd ..
+echo "#!/bin/sh
+./build/tjbench jpeg-test-1.JPG -nowrite
+./build/tjbench jpeg-test-2.JPG -nowrite
+./build/tjbench jpeg-test-3.JPG -nowrite
+./build/tjbench jpeg-test-4.JPG -nowrite" > tjbench
+chmod +x tjbench
+cd ../
+
+echo "-------Downloading and installing smallpt"
+mkdir smallpt && cd smallpt
+wget http://www.phoronix-test-suite.com/benchmark-files/smallpt-1.tar.gz
+tar -xzvf smallpt-1.tar.gz && rm smallpt-1.tar.gz
+c++ -fopenmp -O3 ${SECURITY_FLAGS} smallpt.cpp -o smallpt
+cd ../
+
+echo "-------Downloading and installing rocksdb"
+mkdir rocksdb && cd rocksdb
+git clone https://github.com/facebook/rocksdb
+mv rocksdb/* ./ && rm -rf rocksdb
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make db_bench  
+echo "#!/bin/bash
+if [ \"\$1\" == \"readrandom\" ]; then
+	for i in {1..20}; do
+		./db_bench --benchmarks=\"\$1\" -compression_type \"none\" --threads \$(nproc --all) --num 2000000
+	done
+else
+./db_bench --benchmarks=\"\$1\" -compression_type \"none\" --threads \$(nproc --all) --num 2000000
+fi" > rocksdb
+chmod +x rocksdb
+cd ../
+
+echo "-------Downloading and installing graphics-magick"
+mkdir graphics-magick && cd graphics-magick
+wget ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/1.3/GraphicsMagick-1.3.33.tar.bz2
+tar -xjf GraphicsMagick-1.3.33.tar.bz2 && rm GraphicsMagick-1.3.33.tar.bz2
+mv GraphicsMagick-1.3.33/* ./ && rm -rf GraphicsMagick-1.3.33/
+CFLAGS="${SECURITY_FLAGS}" ./configure --without-perl --prefix=`pwd` --without-png
+make -j $(nproc --all)
+make install
+wget http://phoronix-test-suite.com/benchmark-files/sample-photo-6000x4000-1.zip
+unzip sample-photo-6000x4000-1.zip && rm -rf sample-photo-6000x4000-1.zip
+./bin/gm convert sample-photo-6000x4000.JPG input.mpc
+chown -R `whoami` ./  
+echo "#!/bin/sh
+./bin/gm benchmark -iterations 300 convert input.mpc -\$1 \$2 output.miff
+output.miff" > graphics-magick
+chmod +x graphics-magick
+cd ../
+
+echo "-------Downloading and installing ffmpeg"
+mkdir ffmpeg && cd ffmpeg
+wget http://ffmpeg.org/releases/ffmpeg-4.0.2.tar.bz2
+tar -xjvf ffmpeg-4.0.2.tar.bz2 && rm ffmpeg-4.0.2.tar.bz2
+mv ffmpeg-4.0.2/* ./ && rm -rf ffmpeg-4.0.2/
+wget http://samples.ffmpeg.org/V-codecs/h264/HD2-h264.ts
+./configure --disable-zlib --disable-doc --prefix=`pwd` --extra-cflags="${SECURITY_FLAGS}"
+make -j $(nproc --all)
+make install
+echo "#!/bin/bash
+bin/ffmpeg -i HD2-h264.ts -f rawvideo -threads \$(nproc --all) -y -target ntsc-dv /dev/null" > ffmpeg
+chmod +x ffmpeg
+cd ../
+
+echo "-------Downloading and installing encode-mp3"
+mkdir encode-mp3 && cd encode-mp3
+wget http://ftp.osuosl.org/pub/blfs/conglomeration/lame/lame-3.100.tar.gz
+tar -xzvf lame-3.100.tar.gz && rm lame-3.100.tar.gz
+mv lame-3.100/* ./ && rm -rf lame-3.100/
+autoconf
+CFLAGS="${SECURITY_FLAGS}" ./configure --prefix=`pwd` --enable-expopt=full
+make
+make install
+wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
+tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
+echo "#!/bin/bash
+./bin/lame -h pts-trondheim-3.wav" > encode-mp3
+chmod +x encode-mp3
+cd ../
+
+echo "-------Downloading and installing fs-mark"
+mkdir fs-mark && cd fs-mark
+wget http://www.phoronix-test-suite.com/benchmark-files/fs_mark-3.3.tar.gz
+tar -xzvf fs_mark-3.3.tar.gz && rm fs_mark-3.3.tar.gz
+mv fs_mark-3.3/* ./ && rm -rf fs_mark-3.3/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make -j $(nproc --all)
+echo "#!/bin/bash
+case \$1 in
+	(\"1000_Files_1MB_Size\")
+		getConfigurations=\"-s 1048576 -n 1000\";;
+	(\"1000_Files_1MB_Size_No_Sync_FSync\")
+		getConfigurations=\"-s 1048576 -n 1000 -S 0\";;
+	(\"5000_Files_1MB_Size_4_Threads\")
+		getConfigurations=\"-s 1048576 -n 5000 -t 4\";;
+	(\"4000_Files_32_Sub_Dirs_1MB_Size\")
+		getConfigurations=\"-s 1048576 -n 4000 -D 32\";;
+esac
+./fs_mark -d ./scratch/ \$getConfigurations" > fs-mark
+chmod +x fs-mark
+mkdir scratch
+cd ../
+
+echo "-------Downloading and installing dbench"
+mkdir dbench && cd dbench
+wget http://samba.org/ftp/tridge/dbench/dbench-4.0.tar.gz
+tar -xf dbench-4.0.tar.gz && rm dbench-4.0.tar.gz
+mv dbench-4.0/* ./ && rm -rf dbench-4.0
+./autogen.sh
+CFLAGS="${SECURITY_FLAGS}" ./configure --prefix=`pwd`
+make -j $(nproc --all)
+make install
+echo "#!/bin/bash
+bin/dbench \$@ -c client.txt
+numberOfProcesses=`ps -aux | grep \"dbench\" | wc -l`
+if [ \$numberOfProcesses -gt 1 ]; then
+    kill -9 `ps -aux | grep "dbench" | head -1 | awk '{print \$2}'`
+fi" > dbench
+chmod +x dbench
+cd ../
+
+echo "-------Downloading and installing postmark"
+mkdir postmark && cd postmark
+wget http://archive.debian.org/debian/pool/main/p/postmark/postmark_1.51.orig.tar.gz
+tar -xzvf postmark_1.51.orig.tar.gz && rm postmark_1.51.orig.tar.gz
+mv postmark-1.51/* ./ && rm -rf postmark-1.51
+cc -O3 ${SECURITY_FLAGS} postmark-1.51.c -o postmark
+cp ../../../inputs/postmark.pmrc ./
+cd ../
+
 echo "-------Downloading and installing iozone"
 mkdir iozone && cd iozone
 wget http://iozone.org/src/current/iozone3_465.tar
@@ -28,8 +274,6 @@ fi
 make linux
 cp iozone ../../
 cd ../../../
-
-exit
 
 echo "-------Downloading and installing sqlitebench"
 mkdir sqlitebench && cd sqlitebench
