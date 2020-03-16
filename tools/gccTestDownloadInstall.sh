@@ -15,28 +15,78 @@ taskScripts='scripts'
 mkdir gcc_tasks_test
 cd gcc_tasks_test
 
-echo "-------Downloading and installing svt-vp9"
-git clone https://github.com/OpenVisualCloud/SVT-VP9.git
-mv SVT-VP9 svt-vp9 && cd svt-vp9
-cd Build/linux/
-./build.sh release
-cd ../../
+echo "-------Downloading and installing libvpx"
+git clone https://github.com/webmproject/libvpx.git
+mv libvpx vpxenc && cd vpxenc 
+./configure --disable-install-docs --disable-vp8 --enable-shared --prefix=`pwd` \
+--extra-cflags="${SECURITY_FLAGS}"
+make -j $(nproc --all)
+make install
 echo "#!/bin/bash
-case \$1 in 
-    (\"tune_0\")
-        tuning=\"tune 0\";;
-    (\"tune_1\")
-        tuning=\"tune 1\";;
-    (\"tune_2\")
-        tuning=\"tune 1\";;
-esac
-for i in {1..10}; do
-    ./Bin/Release/SvtVp9EncApp -i ../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m  -w 1920 -h 1080 \$tuning
-done" > svt-vp9
-chmod +x svt-vp9
+cd bin
+THREADCOUNT=\$((\$(nproc --all)>64?64:\$nproc --all))
+LD_PRELOAD=../lib/libvpx.so  ./vpxenc --cpu-used=5 \
+-o /dev/null ../../../../inputs/Bosphorus_1920x1080_120fps_420_8bit_YUV.y4m \
+--passes=1 --end-usage=cq --cq-level=30 --width=1920 --height=1080" > vpxenc
+chmod +x vpxenc
 cd ../
 
-exit
+echo "-------Downloading and installing cpuminer-opt"
+mkdir cpuminer-opt && cd cpuminer-opt
+wget http://www.phoronix-test-suite.com/benchmark-files/cpuminer-opt-3.8.8.1.zip 
+unzip cpuminer-opt-3.8.8.1.zip && rm cpuminer-opt-3.8.8.1.zip
+mv cpuminer-opt-3.8.8.1/* ./ && rm -rf cpuminer-opt-3.8.8.1
+./autogen.sh 
+CFLAGS="-O3 -march=native ${SECURITY_FLAGS}" ./configure --without-curl
+make -j $(nproc --all)
+echo "#!/bin/sh
+./cpuminer --quiet --time-limit=30 --benchmark -a \$1" > cpuminer-opt
+chmod +x cpuminer-opt
+cd ../
+
+echo "-------Downloading and installing iperf"
+mkdir iperf && cd iperf
+wget https://downloads.es.net/pub/iperf/iperf-3.7.tar.gz
+tar -xzvf iperf-3.7.tar.gz && rm iperf-3.7.tar.gz
+mv iperf-3.7/* ./ && rm -rf iperf-3.7
+./configure --prefix=`pwd` CFLAGS="-O3 -march=native ${SECURITY_FLAGS}"
+make -j $(nproc --all)
+make install
+echo "#!/bin/sh
+cd bin
+# start server if doing localhost testing
+./iperf3 -s &
+IPERF_SERVER_PID=\$!
+sleep 3
+case \$1 in
+    (\"tcp\")
+        protocol=\"\" ;;
+    (\"udp\")
+        protocol=\"--udp\" ;;
+esac
+./iperf3 \$protocol -b 1000m  -t 30 -c 127.0.0.1 
+kill \$IPERF_SERVER_PID" > iperf
+chmod +x iperf
+cd ../
+
+echo "-------Downloading and installing tungsten"
+mkdir tungsten && cd tungsten
+wget http://phoronix-test-suite.com/benchmark-files/tungsten-20190812.zip
+unzip tungsten-20190812.zip && rm tungsten-20190812.zip
+mv tungsten-master/* ./ && rm -rf tungsten-master
+./setup_builds.sh
+cd build/release
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' CMakeCache.txt
+fi
+make -j $(nproc --all)
+cd ../../
+echo "#!/bin/bash
+cd build/release
+./tungsten -t \$(nproc --all) ../../data/example-scenes/\$1/scene.json" > tungsten
+chmod +x tungsten
+cd ../
 
 echo "-------Downloading and installing tiobench"
 mkdir tiobench && cd tiobench
@@ -807,7 +857,10 @@ mv tscp181/* ./ && rm -rf tscp181
 cp ../../${taskScripts}/tscp_main.c ./main.c
 cc -O3 ${SECURITY_FLAGS} *.c -o tscp
 cd ../
-
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
+fi
 echo "-------Downloading and installing stockfish"
 mkdir stockfish && cd stockfish
 wget http://www.phoronix-test-suite.com/benchmark-files/stockfish-9-src.zip
