@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-scenario="gcc_all_off"
+scenario="stock_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
@@ -119,7 +119,7 @@ tasks_without_graphics=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aoben
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
 # For the tasks below avoid running them remotely (ssh) because it reduces their performance
-tasks_with_graphics=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
+tasks_with_graphic=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
 	"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
 	"unigine-valley 800x600" "unigine-valley 1024x768" "unigine-valley 1920x1080" "unigine-valley 2560x1440" \
 	"unigine-heaven 800x600" "unigine-heaven 1024x768" "unigine-heaven 1920x1080" "unigine-heaven 2560x1440" \
@@ -127,8 +127,9 @@ tasks_with_graphics=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 192
    	"qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" \
 	"nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440" \
 	"xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" \
-	"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
-	"indigobench supercar" "indigobench bedroom" "j2dbench all" "j2dbench images" "j2dbench graphics" "j2dbench text")
+	"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" )
+
+tasks_with_graphics=("indigobench supercar" "indigobench bedroom" "j2dbench all" "j2dbench images" "j2dbench graphics" "j2dbench text")
 
 # For GCC-related tasks
 tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" \
@@ -159,8 +160,6 @@ tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 
 		   "tinymembench" "tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "tjbench" "tscp" "t-test1 5000" \
 		   "ttsiod-renderer" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" "tungsten volumetric-caustic" \
 		   "vpxenc" "x264" "x265" "xsbench -t 8 -s large -l 30000000" "xz" "zstd")
-
-taskArray="tasks_without_graphics"
 
 function startServers {
 	case $1 in
