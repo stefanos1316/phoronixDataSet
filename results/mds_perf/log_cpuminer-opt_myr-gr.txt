@@ -1,0 +1,13 @@
+5938731
+5834490
+5833070
+5831442
+5827373
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1787,71 Joules power/energy-pkg/                                             ( +-  0,30% )
+             15,55 Joules power/energy-ram/                                             ( +-  0,28% )
+
+           30,9976 +- 0,0861 seconds time elapsed  ( +-  0,28% )
+
