@@ -1319,7 +1319,7 @@ echo "#!/bin/bash
 chmod +x encode-mp3
 cd ../
 
-echo "-------Downloading and installing aio-stress"
+echo "-------Downloading and installing encode-flac"
 mkdir encode-flac && cd encode-flac
 wget https://www.phoronix.net/downloads/phoronix-test-suite/benchmark-files/pts-trondheim-wav-3.tar.gz
 tar -xzvf pts-trondheim-wav-3.tar.gz && rm pts-trondheim-wav-3.tar.gz
@@ -1390,8 +1390,7 @@ case \"\$1\" in
 	./cassandra-stress mixed ratio\(write=1,read=3\) n=400K -rate threads=\$(nproc --all);;
 esac
 kill \$CASSANDRA_SERVER_PID
-sleep 3
-" > cassandra
+sleep 3" > cassandra
 chmod +x cassandra
 cd ../
 

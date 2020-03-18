@@ -12,7 +12,7 @@ taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "n
 		"rodinia euler3d_cpu_double ../../../inputs/missile.domn.0.2M" "rodinia lavaMD -cores $(nproc --all) -boxes1d 48" \
 		"rodinia sc_omp 10 30 512 65536 65536 2000 none output.txt $(nproc --all) && rm output.txt" "openssl speed rsa4096" \
 		"sysbench cpu --cpu-max-prime=20000000 --threads=8 run" "sysbench memory --memory-total-size=100G --threads=8 run" \
-		"blake2s 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" "x264" "x265"  "ctx_clock" \
+		"blake2s 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" "x264" "x265" "ctx_clock" \
 		"c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" "povray -benchmark" \
 		"cachebench read -r -m 9" "cachebench write -w -m 9" "cachebench mixed -b -m 9" "cachebench memset -s -m 9" "cachebench memcpy -p -m 9" \
 		"cloverleaf" "brlcad run -P $(nproc --all)" "cpp-perf-bench stepanov_abstraction" "cpp-perf-bench stepanov_vector" \
@@ -118,7 +118,7 @@ tasks_without_graphics=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aoben
 		"build-llvm" "build2" "build-gdb" "encode-flac")
 
 # For the tasks below avoid running them remotely (ssh) because it reduces their performance
-tasks_with_graphics=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
+tasks_with_graphic=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 1920x1080" "openarenaG 2560x1440" \
 	"urbanterrorG 800x600" "urbanterrorG 1024x768" "urbanterrorG 1920x1080" "urbanterrorG 2560x1440" \
 	"unigine-valley 800x600" "unigine-valley 1024x768" "unigine-valley 1920x1080" "unigine-valley 2560x1440" \
 	"unigine-heaven 800x600" "unigine-heaven 1024x768" "unigine-heaven 1920x1080" "unigine-heaven 2560x1440" \
@@ -126,10 +126,39 @@ tasks_with_graphics=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 192
    	"qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "jxrend" \
 	"nexuiz 800x600" "nexuiz 1024x768" "nexuiz 1920x1080" "nexuiz 2560x1440" \
 	"xonotic 800x600" "xonotic 1024x768" "xonotic 1920x1080" "xonotic 2560x1440" \
-	"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" \
-	"indigobench supercar" "indigobench bedroom" "j2dbench all" "j2dbench images" "j2dbench graphics" "j2dbench text")
+	"paraview manyspheres" "paraview waveletcontour" "paraview waveletvolume" )
 
-taskArray="tasks_without_graphics"
+tasks_with_graphics=("indigobench supercar" "indigobench bedroom" "j2dbench all" "j2dbench images" "j2dbench graphics" "j2dbench text")
+
+# For GCC-related tasks
+tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" \
+		   "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "brlcad run -P $(nproc --all)" \
+		   "byte register" "byte dhry2" "byte int" "byte float" "bzip2" "cloverleaf" "cpp-perf-bench stepanov_abstraction" "cpp-perf-bench stepanov_vector" \
+		   "cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" "cpp-perf-bench mathlib" "cpp-perf-bench random_numbers" \
+		   "cpuminer-opt lbry" "cpuminer-opt sha256t" "cpuminer-opt skein" "cpuminer-opt myr-gr" "cpuminer-opt m7m" "cpuminer-opt deep" \
+		   "crafty bench quit" "ctx_clock" "c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \
+		   "dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
+		   "fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" \
+		   "graphics-magick minify" "graphics-magick gaussian 0x1" "graphics-magick sharpen 0x2.0" "graphics-magick rotate 90" "graphics-magick resize 50%" \
+		   "ebizzy -S 30" "encode-mp3" "ffmpeg" "fhourstones" "gmpbench" "himeno XL" "hint float" "hint double" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
+		   "hpcg" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" "iperf tcp" "iperf udp" "john-the-ripper bcrypt" "john-the-ripper md5crypt" \
+		   "jxrend" "lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" "minion ../inputs/minions.minion" \
+		   "lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" "mt-dgemm"\
+		   "mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" "mbw 8192 MiB -n 100 -t2" "nero2d" "p7zip b"\
+		   "mcperf get" "mcperf set" "mcperf delete" "mcperf add" "mcperf replace" "mcperf append" "mcperf prepend" "openssl speed rsa4096" \
+		   "mkl-dnn conv_all conv" "mkl-dnn conv_googlenet_v3 conv" "mkl-dnn conv_alexnet conv" "mkl-dnn ip_1d ip" "mkl-dnn ip_all ip" "mkl-dnn rnn_training rnn" \
+		   "osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
+		   "postmark ../inputs/postmark.pmrc" "povray -benchmark" "primesieve 1e12 --quiet --time" "schbench 2" "schbench 4" "schbench 8" \
+		   "qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "rocksdb fillseq" "rocksdb fillrandom" "rocksdb readrandom" \
+		   "ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
+		   "ramspeed add_float" "ramspeed traid_float" "redis get" "redis set" "redis lpush" "redis lpop" "redis sadd" "scimark2" \
+		   "smallpt 128" "sqlitebench" "stockfish bench" "stress-ng --vecmath 0 --vecmath-ops 200000" \
+		   "stress-ng --matrix 0 --matrix-ops 400000" "stress-ng --fork 0 --fork-ops 1000000" "stress-ng --msg 0 --msg-ops 100000000" \
+		   "stress-ng --sem 0 --sem-ops 100000000" "stress-ng --sock 0 --sock-ops 100000" "stress-ng --switch 0 --switch-ops 40000000" \
+		   "stream" "swet -Z" "sysbench cpu --cpu-max-prime=20000000 --threads=8 run" "sysbench memory --memory-total-size=100G --threads=8 run" \
+		   "tinymembench" "tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "tjbench" "tscp" "t-test1 5000" \
+		   "ttsiod-renderer" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" "tungsten volumetric-caustic" \
+		   "vpxenc" "x264" "x265" "xsbench -t 8 -s large -l 30000000" "xz" "zstd")
 
 function startServers {
 	case $1 in

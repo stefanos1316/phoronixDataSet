@@ -302,3 +302,9 @@ xonotic_2560x1440               44939
 paraview_manyspheres               7818
 paraview_waveletcontour               19423
 paraview_waveletvolume               1367
+indigobench_supercar               3101
+indigobench_bedroom               3086
+j2dbench_all               13232
+j2dbench_images               3796
+j2dbench_graphics               9078
+j2dbench_text               393
