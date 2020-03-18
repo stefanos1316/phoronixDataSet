@@ -1,0 +1,21 @@
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+mkdir: cannot create directory 'ext/opcache/.libs': File exists
+mkdir: cannot create directory 'ext/json/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+mkdir: cannot create directory 'ext/filter/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           4184,06 Joules power/energy-pkg/                                             ( +-  0,24% )
+            176,30 Joules power/energy-ram/                                             ( +-  0,26% )
+
+            98,258 +- 0,876 seconds time elapsed  ( +-  0,89% )
+

@@ -1,7 +1,6 @@
 #!/bin/bash
 
-
-scenario="stock_perf"
+scenario="alloff_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
@@ -219,7 +218,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks_with_graphics[@]}"; do
+	for i in "${tasks_without_graphics[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi
@@ -251,7 +250,7 @@ sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
-for task in "${tasks_with_graphics[@]}"; do
+for task in "${tasks_without_graphics[@]}"; do
 
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}
