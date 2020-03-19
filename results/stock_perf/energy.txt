@@ -178,9 +178,9 @@ build-php               4403.27
 inkscape               556.19
 rawtherapee               3969.25
 tjbench               560.94
-darktable_masskrug.NEF               498.70
-darktable_bench.SRW               1193.20
-darktable_server_room.NEF               400.81
+darktable_masskrugNEF               498.70
+darktable_benchSRW               1193.20
+darktable_server_roomNEF               400.81
 rsvg               369.12
 gegl_rotate-on-center               1178.44
 gegl_scale-size               175.07
@@ -247,10 +247,10 @@ pyperformance-run_regex_compile               887.58
 rays1bench               1867.04
 cp2k               21820.92
 svt-av1               2192.94
-dav1d_summer_nature_1080p.ivf               755.64
-dav1d_summer_nature_4k.ivf               2941.17
-dav1d_chimera_8b_1080p.ivf               2280.70
-dav1d_chimera_10b_1080p.ivf               11522.82
+dav1d_summer_nature_1080pivf               755.64
+dav1d_summer_nature_4kivf               2941.17
+dav1d_chimera_8b_1080pivf               2280.70
+dav1d_chimera_10b_1080pivf               11522.82
 cpuminer-opt_lbry               1857.60
 cpuminer-opt_sha256t               1896.41
 cpuminer-opt_skein               1865.70
