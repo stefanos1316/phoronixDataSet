@@ -1,5 +1,0 @@
-+ ./oidn
-
-real	0m28,515s
-user	1m51,643s
-sys	0m0,228s

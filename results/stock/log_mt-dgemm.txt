@@ -1,5 +1,0 @@
-+ ./mt-dgemm
-
-real	6m14,438s
-user	48m52,859s
-sys	0m0,256s

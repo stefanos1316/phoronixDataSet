@@ -1,5 +1,0 @@
-+ ./cpp-perf-bench stepanov_vector
-
-real	1m28,302s
-user	1m28,300s
-sys	0m0,000s

@@ -1,7 +1,0 @@
-+ ./graphics-magick minify
-Results: 4 threads 300 iter 88.76s user 51.626697s total 5.811 iter/s 3.380 iter/cpu
-./graphics-magick: 3: ./graphics-magick: output.miff: not found
-
-real	0m51,957s
-user	1m23,909s
-sys	0m4,865s

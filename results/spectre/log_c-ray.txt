@@ -1,7 +1,0 @@
-+ ../tools/tasks_test/c-ray/c-ray -t 8 -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm
-c-ray-mt v1.1
-Rendering took: 189 seconds (189054 milliseconds)
-
-real	3m9,428s
-user	23m47,139s
-sys	0m0,056s

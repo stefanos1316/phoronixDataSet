@@ -1,5 +1,0 @@
-+ ./sudokut
-
-real	0m20,610s
-user	0m20,177s
-sys	0m0,343s

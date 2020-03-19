@@ -1,8 +1,0 @@
-+ ../tools/tasks_test/stress-ng/stress-ng --sock 0 --sock-ops 100000
-stress-ng: info:  [31687] defaulting to a 86400 second run per stressor
-stress-ng: info:  [31687] dispatching hogs: 8 sock
-stress-ng: info:  [31687] successful run completed in 33.14s
-
-real	0m33,140s
-user	0m36,226s
-sys	3m47,332s

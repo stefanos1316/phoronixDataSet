@@ -1,5 +1,0 @@
-+ ./xonotic 2560x1440
-
-real	14m50.342s
-user	99m21.306s
-sys	0m5.082s

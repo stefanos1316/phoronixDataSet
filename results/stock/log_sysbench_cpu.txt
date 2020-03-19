@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/sysbench/sysbench cpu --cpu-max-prime=20000000 --threads=8 run
-
-real	0m34,379s
-user	4m34,360s
-sys	0m0,004s

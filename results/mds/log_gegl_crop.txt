@@ -1,5 +1,0 @@
-+ ./gegl crop x=100 y=100 width=1920 height=1080
-
-real	0m9,584s
-user	0m10,002s
-sys	0m2,185s

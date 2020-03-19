@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/blogbench/blogbench write -d ./ -i 5
-
-real	1m25,537s
-user	0m52,585s
-sys	5m24,504s

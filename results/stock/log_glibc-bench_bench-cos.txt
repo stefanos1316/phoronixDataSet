@@ -1,5 +1,0 @@
-+ ./glibc-bench bench-cos
-
-real	0m21,433s
-user	0m21,335s
-sys	0m0,080s

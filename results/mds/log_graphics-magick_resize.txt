@@ -1,7 +1,0 @@
-+ ./graphics-magick resize 50%
-Results: 4 threads 300 iter 190.04s user 83.001463s total 3.614 iter/s 1.579 iter/cpu
-./graphics-magick: 3: ./graphics-magick: output.miff: not found
-
-real	1m23,012s
-user	3m1,597s
-sys	0m8,456s

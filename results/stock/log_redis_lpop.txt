@@ -1,5 +1,0 @@
-+ ./redis lpop
-
-real	0m13,262s
-user	0m1,761s
-sys	0m0,397s

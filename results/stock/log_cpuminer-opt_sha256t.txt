@@ -1,6 +1,0 @@
-+ ./cpuminer-opt sha256t
-33235448
-
-real	0m31,039s
-user	4m7,819s
-sys	0m0,020s

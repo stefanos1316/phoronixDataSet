@@ -1,5 +1,0 @@
-+ ./aircrack-ng
-
-real	0m18,545s
-user	2m23,515s
-sys	0m0,060s

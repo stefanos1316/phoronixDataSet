@@ -1,5 +1,0 @@
-+ ./lzbench -exz ../inputs/linux-5.3.tar.gz
-
-real	10m33,296s
-user	10m32,548s
-sys	0m0,676s

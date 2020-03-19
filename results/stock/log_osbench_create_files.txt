@@ -1,5 +1,0 @@
-+ ./osbench create_files
-
-real	0m30,324s
-user	0m3,678s
-sys	0m26,584s

@@ -139,11 +139,6 @@ botan_CAST-256               388.24
 botan_KASUMI               385.36
 botan_Twofish               423.14
 build-gcc               16898.68
-qgears_-image               3445.78
-qgears_-render               3316.41
-qgears_TEXT               2082.25
-qgears_GEARSFANCY               3310.35
-qgears_COMPO               232.88
 javascimark2               615.20
 sunflow               1313.26
 sqlitebench               878.49
@@ -166,7 +161,8 @@ encode-mp3               665.15
 graphics-magick_minify               1086.24
 graphics-magick_gaussian               8621.68
 graphics-magick_sharpen               18281.05
-graphics-magick               2463.95
+graphics-magick_rotate	            2042.45		
+graphics-magick_resize              2463.95
 rocksdb_fillseq               951.11
 rocksdb_fillrandom               1243.21
 rocksdb_readrandom               1241.80

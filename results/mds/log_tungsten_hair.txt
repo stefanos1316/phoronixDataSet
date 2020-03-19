@@ -1,9 +1,0 @@
-+ ./tungsten hair
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-
-real	1m24,483s
-user	5m34,132s
-sys	0m0,116s

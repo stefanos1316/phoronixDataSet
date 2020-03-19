@@ -1,7 +1,0 @@
-WARNING: can't open config file: /usr/local/ssl/openssl.cnf
-Doing 4096 bit private rsa's for 10s: 1764 4096 bit private RSA's in 10.00s
-Doing 4096 bit public rsa's for 10s: 110639 4096 bit public RSA's in 10.00s
-
-real	0m20,079s
-user	0m20,008s
-sys	0m0,004s

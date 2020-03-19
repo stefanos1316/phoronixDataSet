@@ -1,6 +1,0 @@
-+ ./pyperformance-run go
-INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_go.py --rigorous --output /tmp/tmpud_t0z3l`
-
-real	0m44,455s
-user	0m43,291s
-sys	0m0,441s

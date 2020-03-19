@@ -1,5 +1,0 @@
-+ ./osbench create_threads
-
-real	0m20,791s
-user	0m6,361s
-sys	0m27,522s

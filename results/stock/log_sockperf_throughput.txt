@@ -1,7 +1,0 @@
-+ ./sockperf throughput --mps=max -m 64 -t 30
-./sockperf: 0: ./sockperf: Cannot fork
-execute.sh: line 222: 24863 Killed                  ./${task}
-
-real	0m2,090s
-user	0m0,001s
-sys	0m0,000s
