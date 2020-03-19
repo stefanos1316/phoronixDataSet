@@ -139,11 +139,6 @@ botan_CAST-256                        20
 botan_KASUMI                         20
 botan_Twofish                         20
 build-gcc                           353
-qgears_-image                          145
-qgears_-render                         140
-qgears_TEXT                          90
-qgears_GEARSFANCY                         140
-qgears_COMPO                           9
 javascimark2                           25
 sunflow                           22
 sqlitebench                           138

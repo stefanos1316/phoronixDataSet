@@ -161,7 +161,8 @@ encode-mp3                          28
 graphics-magick_minify                           47
 graphics-magick_gaussian                           306
 graphics-magick_sharpen                           482
-graphics-magick                            68
+graphics-magick_rotate				 196
+graphics-magick_resize                           68
 rocksdb_fillseq                           21
 rocksdb_fillrandom                          31
 rocksdb_readrandom                          24
