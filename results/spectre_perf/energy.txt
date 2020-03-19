@@ -245,7 +245,7 @@ pyperformance-run_python_startup               1923.07
 pyperformance-run_raytrace               2105.94
 pyperformance-run_regex_compile               883.99
 rays1bench               1858.71
-cp2k               24050.20
+cp2k               21820.20
 svt-av1               2151.62
 dav1d_summer_nature_1080p.ivf               752.10
 dav1d_summer_nature_4k.ivf               2924.21
@@ -297,7 +297,7 @@ nexuiz_1920x1080               2458
 nexuiz_2560x1440               2463
 xonotic_800x600               44967
 xonotic_1024x768               44937
-xonotic_1920x1080               45016
+xonotic_1920x1080               44916
 xonotic_2560x1440               44905
 paraview_manyspheres               7816
 paraview_waveletcontour               19408
