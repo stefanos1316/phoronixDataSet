@@ -563,7 +563,7 @@ tar -xvf xz-5.2.4.tar.bz2 && rm xz-5.2.4.tar.bz2
 mv  xz-5.2.4/* ./ && rm -rf xz-5.2.4/
 ./configure
 make -j $(nproc --all)
-echo "#!/bin/bas
+echo "#!/bin/bash
 cp ../../../inputs/xz.txt tmp_xz.txt
 if [ -f \"tmp_xz.txt.xz\" ]; then
 	rm -f tmp_xz.txt.xz
@@ -832,7 +832,7 @@ mv CppPerformanceBenchmarks-master/* ./ && rm -rf CppPerformanceBenchmarks-maste
 make all
 echo "#!/bin/bash
 ./\$1" > cpp-perf-bench
-chmod + cpp-perf-bench
+chmod +x cpp-perf-bench
 cd ../
 
 echo "-------Downloading and installing dacapo"
