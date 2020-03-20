@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/himeno/himeno XL
-
-real	1m14,179s
-user	1m11,025s
-sys	0m3,116s

@@ -455,19 +455,6 @@ src/redis-benchmark -n 1000000 -P 640000 -q -c 50 --csv \$1" > redis
 chmod +x redis 
 cd ../
 
-echo "-------Downloading and installing primesieve"
-mkdir primesieve && cd primesieve
-wget http://dl.bintray.com/kimwalisch/primesieve/primesieve-7.4.tar.gz
-tar -xzvf primesieve-7.4.tar.gz && rm primesieve-7.4.tar.gz
-mv primesieve-7.4/* ./ && rm -rf primesieve-7.4/
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/COMPILE_FLAGS/COMPILE_FLAGS\ '"$toReplace"'/g' CMakeLists.txt
-fi
-cmake . -DBUILD_SHARED_LIBS=OFF
-make -j $(nproc --all)
-cd ../
-
 echo "-------Downloading and installing mkl-dnn"
 mkdir mkl-dnn && cd mkl-dnn
 wget https://github.com/intel/mkl-dnn/archive/v1.1.tar.gz

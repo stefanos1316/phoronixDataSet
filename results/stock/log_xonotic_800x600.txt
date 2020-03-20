@@ -1,5 +1,0 @@
-+ ./xonotic 800x600
-
-real	14m49.866s
-user	99m18.099s
-sys	0m5.175s

@@ -1,5 +1,0 @@
-iperf3: interrupt - the server has terminated
-
-real	0m33,004s
-user	0m1,473s
-sys	0m0,001s

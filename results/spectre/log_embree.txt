@@ -1,5 +1,0 @@
-+ ./embree asian_dragon_obj
-
-real	2m28,641s
-user	18m0,198s
-sys	0m0,916s

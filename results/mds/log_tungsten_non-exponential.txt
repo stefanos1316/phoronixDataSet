@@ -1,9 +1,0 @@
-+ ./tungsten non-exponential
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-
-real	0m19,256s
-user	1m16,537s
-sys	0m0,004s

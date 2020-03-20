@@ -1,5 +1,0 @@
-+ ./pymongo
-
-real	0m41,426s
-user	0m28,381s
-sys	0m1,975s

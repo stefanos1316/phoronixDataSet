@@ -1,9 +1,0 @@
-+ ./tungsten water-caustic
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-Warning: pthread_setaffinity_np failed
-
-real	0m57,920s
-user	3m10,791s
-sys	0m0,248s

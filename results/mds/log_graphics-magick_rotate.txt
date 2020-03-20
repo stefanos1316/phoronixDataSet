@@ -1,7 +1,0 @@
-+ ./graphics-magick rotate 90
-Results: 4 threads 300 iter 44.01s user 200.262440s total 1.498 iter/s 6.817 iter/cpu
-./graphics-magick: 3: ./graphics-magick: output.miff: not found
-
-real	3m20,269s
-user	0m25,461s
-sys	0m18,568s

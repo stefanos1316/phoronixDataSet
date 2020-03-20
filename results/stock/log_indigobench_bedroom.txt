@@ -1,5 +1,0 @@
-+ ./indigobench bedroom
-
-real	1m2.306s
-user	8m3.980s
-sys	0m0.896s

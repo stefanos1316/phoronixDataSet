@@ -1,5 +1,0 @@
-+ ./glibc-bench bench-sin
-
-real	0m21,694s
-user	0m21,576s
-sys	0m0,117s

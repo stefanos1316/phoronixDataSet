@@ -1,6 +1,0 @@
-QXcbConnection: Could not connect to display localhost:10.0
-./indigobench: line 2: 27976 Aborted                 (core dumped) ./indigo_benchmark --silent --scenes $1
-
-real	0m0,082s
-user	0m0,006s
-sys	0m0,000s

@@ -1,6 +1,0 @@
-+ ./cpuminer-opt deep
-4093611
-
-real	0m34,227s
-user	4m33,383s
-sys	0m0,020s

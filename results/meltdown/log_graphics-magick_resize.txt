@@ -1,6 +1,0 @@
-Results: 8 threads 300 iter 358.57s user 78.024503s total 3.845 iter/s 0.837 iter/cpu
-./graphics-magick: 3: ./graphics-magick: output.miff: not found
-
-real	1m18,037s
-user	5m48,889s
-sys	0m9,703s

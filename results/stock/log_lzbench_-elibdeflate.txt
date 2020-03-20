@@ -1,5 +1,0 @@
-+ ./lzbench -elibdeflate ../inputs/linux-5.3.tar.gz
-
-real	4m22,036s
-user	4m21,240s
-sys	0m0,160s

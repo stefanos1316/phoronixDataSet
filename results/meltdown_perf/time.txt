@@ -1,275 +1,270 @@
-aio-stress                           86,747 +- 0,328 seconds time elapsed  ( +-  0,38% )
-aircrack-ng                          18,3868 +- 0,0153 seconds time elapsed  ( +-  0,08% )
-aobench                          38,6373 +- 0,0828 seconds time elapsed  ( +-  0,21% )
-apache                           39,206 +- 0,211 seconds time elapsed  ( +-  0,54% )
-nginx                           39,921 +- 0,122 seconds time elapsed  ( +-  0,31% )
-crafty                          24,4969 +- 0,0492 seconds time elapsed  ( +-  0,20% )
-tscp                          26,0299 +- 0,0292 seconds time elapsed  ( +-  0,11% )
-stockfish                          38,9006 +- 0,0135 seconds time elapsed  ( +-  0,03% )
-p7zip                          37,8602 +- 0,0547 seconds time elapsed  ( +-  0,14% )
-bzip2                          15,6024 +- 0,0850 seconds time elapsed  ( +-  0,55% )
-zstd                           10,929 +- 0,130 seconds time elapsed  ( +-  1,19% )
-xz                           80,636 +- 0,356 seconds time elapsed  ( +-  0,44% )
-byte_register                          121,878 +- 0,117 seconds time elapsed  ( +-  0,10% )
-byte_dhry2                         121,8525 +- 0,0130 seconds time elapsed  ( +-  0,01% )
-byte_int                         121,8454 +- 0,0480 seconds time elapsed  ( +-  0,04% )
-byte_float                         121,8701 +- 0,0580 seconds time elapsed  ( +-  0,05% )
-scimark2                           30,012 +- 0,139 seconds time elapsed  ( +-  0,46% )
-fhourstones                         117,6813 +- 0,0602 seconds time elapsed  ( +-  0,05% )
-gmpbench                          418,888 +- 0,245 seconds time elapsed  ( +-  0,06% )
-dcraw                           23,921 +- 0,453 seconds time elapsed  ( +-  1,89% )
-sudokut                          20,4804 +- 0,0255 seconds time elapsed  ( +-  0,12% )
-nero2d                          306,476 +- 0,444 seconds time elapsed  ( +-  0,15% )
-minion                          44,2923 +- 0,0752 seconds time elapsed  ( +-  0,17% )
-hmmer                           8,7519 +- 0,0617 seconds time elapsed  ( +-  0,70% )
-rodinia_euler3d_cpu_double                          51,7936 +- 0,0623 seconds time elapsed  ( +-  0,12% )
-rodinia_lavaMD                          176,763 +- 0,361 seconds time elapsed  ( +-  0,20% )
-rodinia_sc_omp                          42,4706 +- 0,0124 seconds time elapsed  ( +-  0,03% )
-openssl                         20,02218 +- 0,00974 seconds time elapsed  ( +-  0,05% )
-sysbench_cpu                          34,5747 +- 0,0197 seconds time elapsed  ( +-  0,06% )
-sysbench_memory                           5,9556 +- 0,0341 seconds time elapsed  ( +-  0,57% )
-blake2s                          39,9931 +- 0,0106 seconds time elapsed  ( +-  0,03% )
-blogbench_read                            62,43 +- 8,35 seconds time elapsed  ( +- 13,37% )
-blogbench_write                           52,601 +- 0,112 seconds time elapsed  ( +-  0,21% )
-x264                            13,58 +- 2,39 seconds time elapsed  ( +- 17,63% )
-x265                          18,0193 +- 0,0941 seconds time elapsed  ( +-  0,52% )
-ctx_clock                          174,497 +- 0,195 seconds time elapsed  ( +-  0,11% )
-c-ray                          188,889 +- 0,346 seconds time elapsed  ( +-  0,18% )
-povray                          102,208 +- 0,120 seconds time elapsed  ( +-  0,12% )
-cachebench_read                         27,61461 +- 0,00500 seconds time elapsed  ( +-  0,02% )
-cachebench_write                         28,84508 +- 0,00307 seconds time elapsed  ( +-  0,01% )
-cachebench_mixed                         83,42756 +- 0,00360 seconds time elapsed  ( +-  0,00% )
-cachebench_memset                         24,45350 +- 0,00336 seconds time elapsed  ( +-  0,01% )
-cachebench_memcpy                         22,62721 +- 0,00277 seconds time elapsed  ( +-  0,01% )
-cloverleaf                         90,33842 +- 0,00867 seconds time elapsed  ( +-  0,01% )
-brlcad                           641,35 +- 19,59 seconds time elapsed  ( +-  3,05% )
-cpp-perf-bench_stepanov_abstraction                         35,23558 +- 0,00481 seconds time elapsed  ( +-  0,01% )
-cpp-perf-bench_stepanov_vector                          88,1631 +- 0,0118 seconds time elapsed  ( +-  0,01% )
-cpp-perf-bench_functionobjects                         15,09418 +- 0,00394 seconds time elapsed  ( +-  0,03% )
-cpp-perf-bench_atol                          65,0780 +- 0,0285 seconds time elapsed  ( +-  0,04% )
-cpp-perf-bench_ctype                          30,6823 +- 0,0207 seconds time elapsed  ( +-  0,07% )
-cpp-perf-bench_mathlib                          358,916 +- 0,551 seconds time elapsed  ( +-  0,15% )
-cpp-perf-bench_random_numbers                          948,891 +- 0,145 seconds time elapsed  ( +-  0,02% )
-dacapo_eclipse                          108,408 +- 0,464 seconds time elapsed  ( +-  0,43% )
-dacapo_h2                           41,412 +- 0,869 seconds time elapsed  ( +-  2,10% )
-dacapo_jython                           28,738 +- 0,193 seconds time elapsed  ( +-  0,67% )
-dacapo_tradebeans                           171,79 +- 24,84 seconds time elapsed  ( +- 14,46% )
-dacapo_tradesoap                           200,57 +- 4,01 seconds time elapsed  ( +-  2,00% )
-ebizzy                         30,00739 +- 0,00478 seconds time elapsed  ( +-  0,02% )
-glibc-bench_bench-ffsll                         10,25838 +- 0,00748 seconds time elapsed  ( +-  0,07% )
-glibc-bench_bench-ffs                         10,25394 +- 0,00261 seconds time elapsed  ( +-  0,03% )
-glibc-bench_bench-pthread_once                         10,25437 +- 0,00323 seconds time elapsed  ( +-  0,03% )
-glibc-bench_bench-tanh                         10,25457 +- 0,00261 seconds time elapsed  ( +-  0,03% )
-glibc-bench_bench-sqrt                        10,251235 +- 0,000128 seconds time elapsed  ( +-  0,00% )
-glibc-bench_bench-sin                         21,72457 +- 0,00532 seconds time elapsed  ( +-  0,02% )
-glibc-bench_bench-cos                          21,4752 +- 0,0146 seconds time elapsed  ( +-  0,07% )
-glibc-bench_bench-asinh                         10,25886 +- 0,00470 seconds time elapsed  ( +-  0,05% )
-glibc-bench_bench-atanh                        10,252239 +- 0,000382 seconds time elapsed  ( +-  0,00% )
-glibc-bench_bench-sincos                          20,4984 +- 0,0204 seconds time elapsed  ( +-  0,10% )
-glibc-bench_bench-sinh                        10,252837 +- 0,000505 seconds time elapsed  ( +-  0,00% )
-glibc-bench_bench-modf                         10,25526 +- 0,00396 seconds time elapsed  ( +-  0,04% )
-glibc-bench_bench-exp                         30,39543 +- 0,00612 seconds time elapsed  ( +-  0,02% )
-glibc-bench_bench-log2                        10,252274 +- 0,000255 seconds time elapsed  ( +-  0,00% )
-himeno                           72,941 +- 0,370 seconds time elapsed  ( +-  0,51% )
-hint_float                           390,92 +- 1,58 seconds time elapsed  ( +-  0,41% )
-hint_double                          288,690 +- 0,232 seconds time elapsed  ( +-  0,08% )
-hpcg                         270,7584 +- 0,0592 seconds time elapsed  ( +-  0,02% )
-build-linux-kernel                          1382,53 +- 4,94 seconds time elapsed  ( +-  0,36% )
-john-the-ripper_bcrypt                          30,1674 +- 0,0480 seconds time elapsed  ( +-  0,16% )
-john-the-ripper_md5crypt                         60,15208 +- 0,00209 seconds time elapsed  ( +-  0,00% )
-lzbench_-ezstd                          625,251 +- 0,763 seconds time elapsed  ( +-  0,12% )
-lzbench_-ebrotli                          572,806 +- 0,950 seconds time elapsed  ( +-  0,17% )
-lzbench_-elibdeflate                          262,117 +- 0,123 seconds time elapsed  ( +-  0,05% )
-lzbench_-exz                          633,714 +- 0,524 seconds time elapsed  ( +-  0,08% )
-m-queens                          57,8066 +- 0,0720 seconds time elapsed  ( +-  0,12% )
-mbw_512                          8,74667 +- 0,00414 seconds time elapsed  ( +-  0,05% )
-mbw_1024                          17,4755 +- 0,0117 seconds time elapsed  ( +-  0,07% )
-mbw_4096                          69,9359 +- 0,0542 seconds time elapsed  ( +-  0,08% )
-mcperf_get                          16,8978 +- 0,0727 seconds time elapsed  ( +-  0,43% )
-mcperf_set                          28,8566 +- 0,0947 seconds time elapsed  ( +-  0,33% )
-mcperf_delete                           17,462 +- 0,120 seconds time elapsed  ( +-  0,69% )
-mcperf_add                           28,707 +- 0,119 seconds time elapsed  ( +-  0,42% )
-mcperf_replace                          26,9824 +- 0,0692 seconds time elapsed  ( +-  0,26% )
-mcperf_append                          27,0108 +- 0,0849 seconds time elapsed  ( +-  0,31% )
-mcperf_prepend                           27,093 +- 0,107 seconds time elapsed  ( +-  0,39% )
-mkl-dnn_conv_all                          638,294 +- 0,110 seconds time elapsed  ( +-  0,02% )
-mkl-dnn_conv_googlenet_v3                         131,2455 +- 0,0220 seconds time elapsed  ( +-  0,02% )
-mkl-dnn_conv_alexnet                          17,7490 +- 0,0243 seconds time elapsed  ( +-  0,14% )
-mkl-dnn_ip_1d                         15,26598 +- 0,00499 seconds time elapsed  ( +-  0,03% )
-mkl-dnn_ip_all                          47,7428 +- 0,0210 seconds time elapsed  ( +-  0,04% )
-mkl-dnn_rnn_training                          37,9255 +- 0,0358 seconds time elapsed  ( +-  0,09% )
-node-express-loadtest                           10,211 +- 0,189 seconds time elapsed  ( +-  1,86% )
-numenta-nab                           573,18 +- 1,08 seconds time elapsed  ( +-  0,19% )
-phpbench                          15,5726 +- 0,0283 seconds time elapsed  ( +-  0,18% )
-primesieve                          52,4802 +- 0,0871 seconds time elapsed  ( +-  0,17% )
-pymongo                           39,885 +- 0,247 seconds time elapsed  ( +-  0,62% )
-rbenchmark                           26,511 +- 0,149 seconds time elapsed  ( +-  0,56% )
-redis_get                           13,596 +- 0,350 seconds time elapsed  ( +-  2,57% )
-redis_set                           13,358 +- 0,314 seconds time elapsed  ( +-  2,35% )
-redis_lpush                          13,2055 +- 0,0330 seconds time elapsed  ( +-  0,25% )
-redis_lpop                           13,298 +- 0,299 seconds time elapsed  ( +-  2,25% )
-redis_sadd                          12,9607 +- 0,0285 seconds time elapsed  ( +-  0,22% )
-rust-prime                         24,42387 +- 0,00504 seconds time elapsed  ( +-  0,02% )
-scikit                           46,474 +- 0,786 seconds time elapsed  ( +-  1,69% )
-stress-ng_vecmath                          18,9687 +- 0,0163 seconds time elapsed  ( +-  0,09% )
-stress-ng_matrix                           13,348 +- 0,103 seconds time elapsed  ( +-  0,77% )
-stress-ng_fork                          23,0701 +- 0,0620 seconds time elapsed  ( +-  0,27% )
-stress-ng_msg                           18,107 +- 0,169 seconds time elapsed  ( +-  0,94% )
-stress-ng_sem                          21,2560 +- 0,0399 seconds time elapsed  ( +-  0,19% )
-stress-ng_sock                           28,289 +- 0,434 seconds time elapsed  ( +-  1,53% )
-stress-ng_switch                          25,3524 +- 0,0321 seconds time elapsed  ( +-  0,13% )
-stream                         65,40402 +- 0,00370 seconds time elapsed  ( +-  0,01% )
-swet                          14,2178 +- 0,0112 seconds time elapsed  ( +-  0,08% )
-t-test1                          7,34713 +- 0,00786 seconds time elapsed  ( +-  0,11% )
-tensorflow                            64,78 +- 4,93 seconds time elapsed  ( +-  7,62% )
-tinymembench                           289,66 +- 4,61 seconds time elapsed  ( +-  1,59% )
-ttsiod-renderer                          50,3530 +- 0,0545 seconds time elapsed  ( +-  0,11% )
-xsbench                          81,2984 +- 0,0798 seconds time elapsed  ( +-  0,10% )
-ramspeed_copy_int                         140,9200 +- 0,0202 seconds time elapsed  ( +-  0,01% )
-ramspeed_scale_int                         140,9567 +- 0,0312 seconds time elapsed  ( +-  0,02% )
-ramspeed_add_int                         140,9554 +- 0,0219 seconds time elapsed  ( +-  0,02% )
-ramspeed_triad_int                         140,9640 +- 0,0198 seconds time elapsed  ( +-  0,01% )
-ramspeed_copy_float                         140,7561 +- 0,0185 seconds time elapsed  ( +-  0,01% )
-ramspeed_scale_float                         140,7566 +- 0,0163 seconds time elapsed  ( +-  0,01% )
-ramspeed_add_float                        140,74419 +- 0,00819 seconds time elapsed  ( +-  0,01% )
-ramspeed_traid_float                         140,7601 +- 0,0238 seconds time elapsed  ( +-  0,02% )
-botan_AES-256                          22,2588 +- 0,0254 seconds time elapsed  ( +-  0,11% )
-botan_Blowfish                        20,166786 +- 0,000942 seconds time elapsed  ( +-  0,00% )
-botan_CAST-256                        20,083488 +- 0,000173 seconds time elapsed  ( +-  0,00% )
-botan_KASUMI                         20,05933 +- 0,00464 seconds time elapsed  ( +-  0,02% )
-botan_Twofish                         20,20755 +- 0,00248 seconds time elapsed  ( +-  0,01% )
-build-gcc                           353,43 +- 4,54 seconds time elapsed  ( +-  1,28% )
-qgears_-image                          145,535 +- 0,145 seconds time elapsed  ( +-  0,10% )
-qgears_-render                         140,5213 +- 0,0777 seconds time elapsed  ( +-  0,06% )
-qgears_TEXT                          90,7996 +- 0,0716 seconds time elapsed  ( +-  0,08% )
-qgears_GEARSFANCY                         140,1862 +- 0,0525 seconds time elapsed  ( +-  0,04% )
-qgears_COMPO                           9,7285 +- 0,0170 seconds time elapsed  ( +-  0,17% )
-javascimark2                           25,667 +- 0,543 seconds time elapsed  ( +-  2,12% )
-sunflow                           22,788 +- 0,130 seconds time elapsed  ( +-  0,57% )
-sqlitebench                           138,80 +- 5,08 seconds time elapsed  ( +-  3,66% )
-iozone_-s2096000                           92,081 +- 0,439 seconds time elapsed  ( +-  0,48% )
-iozone_-s4096000                          232,323 +- 0,827 seconds time elapsed  ( +-  0,36% )
-iozone_-s8126000                           679,95 +- 2,29 seconds time elapsed  ( +-  0,34% )
-dbench_1                         720,2310 +- 0,0120 seconds time elapsed  ( +-  0,00% )
-dbench_6                        720,27291 +- 0,00906 seconds time elapsed  ( +-  0,00% )
-dbench_12                        720,27287 +- 0,00946 seconds time elapsed  ( +-  0,00% )
-dbench_48                         720,4139 +- 0,0533 seconds time elapsed  ( +-  0,01% )
-dbench_128                          720,760 +- 0,123 seconds time elapsed  ( +-  0,02% )
-dbench_256                         721,1408 +- 0,0797 seconds time elapsed  ( +-  0,01% )
-postmark                           109,32 +- 5,62 seconds time elapsed  ( +-  5,14% )
-fs-mark_1000_Files_1MB_Size                            48,97 +- 1,20 seconds time elapsed  ( +-  2,46% )
-fs-mark_5000_Files_1MB_Size_4_Threads                           393,19 +- 9,73 seconds time elapsed  ( +-  2,47% )
-fs-mark_4000_Files_32_Sub_Dirs_1MB_Size                           154,66 +- 1,67 seconds time elapsed  ( +-  1,08% )
-bork                           15,088 +- 0,162 seconds time elapsed  ( +-  1,07% )
-ffmpeg                            5,977 +- 0,190 seconds time elapsed  ( +-  3,18% )
-encode-mp3                          28,9128 +- 0,0325 seconds time elapsed  ( +-  0,11% )
-graphics-magick_minify                           47,954 +- 0,345 seconds time elapsed  ( +-  0,72% )
-graphics-magick_gaussian                           307,87 +- 3,65 seconds time elapsed  ( +-  1,19% )
-graphics-magick_sharpen                           483,40 +- 2,14 seconds time elapsed  ( +-  0,44% )
-graphics-magick_rotate                           195,51 +- 1,90 seconds time elapsed  ( +-  0,97% )
-graphics-magick_resize                           71,261 +- 0,119 seconds time elapsed  ( +-  0,17% )
-rocksdb_fillseq                           21,360 +- 0,102 seconds time elapsed  ( +-  0,48% )
-rocksdb_fillrandom                           31,459 +- 0,148 seconds time elapsed  ( +-  0,47% )
-rocksdb_readrandom                          24,6869 +- 0,0945 seconds time elapsed  ( +-  0,38% )
-cassandra_write                          13,1882 +- 0,0148 seconds time elapsed  ( +-  0,11% )
-cassandra_read                         15,36384 +- 0,00738 seconds time elapsed  ( +-  0,05% )
-cassandra_mixed_1_1                         15,36077 +- 0,00778 seconds time elapsed  ( +-  0,05% )
-cassandra_mixed_1_3                         15,36671 +- 0,00956 seconds time elapsed  ( +-  0,06% )
-compilebench_initial_create                          185,376 +- 0,720 seconds time elapsed  ( +-  0,39% )
-compilebench_compile                          183,941 +- 0,513 seconds time elapsed  ( +-  0,28% )
-compilebench_read_compile_tree                          185,107 +- 0,519 seconds time elapsed  ( +-  0,28% )
-smallpt                          24,9855 +- 0,0300 seconds time elapsed  ( +-  0,12% )
-build-php                           98,667 +- 0,844 seconds time elapsed  ( +-  0,86% )
-inkscape                           23,112 +- 0,504 seconds time elapsed  ( +-  2,18% )
-rawtherapee                           91,753 +- 0,152 seconds time elapsed  ( +-  0,17% )
-tjbench                           24,687 +- 0,102 seconds time elapsed  ( +-  0,41% )
-darktable_masskrug.NEF                           12,402 +- 0,310 seconds time elapsed  ( +-  2,50% )
-darktable_bench.SRW                          27,5634 +- 0,0357 seconds time elapsed  ( +-  0,13% )
-darktable_server_room.NEF                           9,7725 +- 0,0277 seconds time elapsed  ( +-  0,28% )
-rsvg                           15,892 +- 0,186 seconds time elapsed  ( +-  1,17% )
-gegl_rotate-on-center                           48,179 +- 0,271 seconds time elapsed  ( +-  0,56% )
-gegl_scale-size                           6,5995 +- 0,0191 seconds time elapsed  ( +-  0,29% )
-gegl_antialias                          47,4516 +- 0,0420 seconds time elapsed  ( +-  0,09% )
-gegl_cartoon                         122,0596 +- 0,0830 seconds time elapsed  ( +-  0,07% )
-gegl_color-enhance                          68,2054 +- 0,0849 seconds time elapsed  ( +-  0,12% )
-gegl_crop                          10,1948 +- 0,0546 seconds time elapsed  ( +-  0,54% )
-gegl_wavelet-blur                          73,2917 +- 0,0370 seconds time elapsed  ( +-  0,05% )
-gegl_reflect                          35,8967 +- 0,0465 seconds time elapsed  ( +-  0,13% )
-gegl_tile-glass                          35,6580 +- 0,0430 seconds time elapsed  ( +-  0,12% )
-renaissance_akka-uct                           13,664 +- 0,269 seconds time elapsed  ( +-  1,97% )
-renaissance_reactors                           22,051 +- 0,137 seconds time elapsed  ( +-  0,62% )
-renaissance_als                           11,126 +- 0,397 seconds time elapsed  ( +-  3,57% )
-renaissance_naive-bayes                           12,441 +- 0,254 seconds time elapsed  ( +-  2,04% )
-renaissance_page-rank                           31,285 +- 0,377 seconds time elapsed  ( +-  1,20% )
-renaissance_db-shootout                           19,906 +- 0,153 seconds time elapsed  ( +-  0,77% )
-renaissance_dotty                            8,004 +- 0,146 seconds time elapsed  ( +-  1,83% )
-renaissance_finagle-chirper                            9,198 +- 0,132 seconds time elapsed  ( +-  1,44% )
-java-jmh                         502,5558 +- 0,0262 seconds time elapsed  ( +-  0,01% )
-schbench_2                         30,05237 +- 0,00852 seconds time elapsed  ( +-  0,03% )
-schbench_4                         30,04762 +- 0,00483 seconds time elapsed  ( +-  0,02% )
-schbench_8                         30,04381 +- 0,00547 seconds time elapsed  ( +-  0,02% )
-osbench_create_files                           27,593 +- 0,310 seconds time elapsed  ( +-  1,12% )
-osbench_create_processes                           20,816 +- 0,279 seconds time elapsed  ( +-  1,34% )
-osbench_create_threads                           17,971 +- 0,100 seconds time elapsed  ( +-  0,56% )
-osbench_launch_programs                          10,5901 +- 0,0264 seconds time elapsed  ( +-  0,25% )
-osbench_mem_alloc                          22,9174 +- 0,0117 seconds time elapsed  ( +-  0,05% )
-tiobench_write                           205,78 +- 2,05 seconds time elapsed  ( +-  1,00% )
-tiobench_read                           197,96 +- 1,95 seconds time elapsed  ( +-  0,99% )
-tiobench_random_write                           342,35 +- 3,12 seconds time elapsed  ( +-  0,91% )
-tiobench_random_read                           196,14 +- 1,72 seconds time elapsed  ( +-  0,87% )
-pybench                          24,6980 +- 0,0895 seconds time elapsed  ( +-  0,36% )
-network-loopback                           45,770 +- 0,264 seconds time elapsed  ( +-  0,58% )
-svt-vp9_tune_0                            78,16 +- 1,02 seconds time elapsed  ( +-  1,30% )
-svt-vp9_tune_1                          77,1116 +- 0,0193 seconds time elapsed  ( +-  0,02% )
-svt-vp9_tune_2                          77,1677 +- 0,0738 seconds time elapsed  ( +-  0,10% )
-svt-hevc                          27,8715 +- 0,0206 seconds time elapsed  ( +-  0,07% )
-tungsten_hair                          60,2272 +- 0,0421 seconds time elapsed  ( +-  0,07% )
-tungsten_water-caustic                          48,2749 +- 0,0437 seconds time elapsed  ( +-  0,09% )
-tungsten_non-exponential                          14,6864 +- 0,0320 seconds time elapsed  ( +-  0,22% )
-tungsten_volumetric-caustic                          19,9083 +- 0,0237 seconds time elapsed  ( +-  0,12% )
-ospray_san_miguel                           55,632 +- 0,544 seconds time elapsed  ( +-  0,98% )
-ospray_xfrog_forest                          184,047 +- 0,430 seconds time elapsed  ( +-  0,23% )
-ospray_magnetic_reconnection                           31,142 +- 0,517 seconds time elapsed  ( +-  1,66% )
-embree_crown                          137,522 +- 0,361 seconds time elapsed  ( +-  0,26% )
-embree_asian_dragon                          117,588 +- 0,244 seconds time elapsed  ( +-  0,21% )
-embree_asian_dragon_obj                         147,9902 +- 0,0800 seconds time elapsed  ( +-  0,05% )
-iperf_tcp                         33,00734 +- 0,00285 seconds time elapsed  ( +-  0,01% )
-iperf_udp                       33,0034837 +- 0,0000444 seconds time elapsed  ( +-  0,00% )
-oidn                          28,4209 +- 0,0443 seconds time elapsed  ( +-  0,16% )
-pyperformance-run_2to3                          60,7095 +- 0,0842 seconds time elapsed  ( +-  0,14% )
-pyperformance-run_chaos                         22,09818 +- 0,00815 seconds time elapsed  ( +-  0,04% )
-pyperformance-run_crypto_pyaes                          20,1013 +- 0,0150 seconds time elapsed  ( +-  0,07% )
-pyperformance-run_django_template                          30,5086 +- 0,0985 seconds time elapsed  ( +-  0,32% )
-pyperformance-run_float                         20,46944 +- 0,00689 seconds time elapsed  ( +-  0,03% )
-pyperformance-run_go                          44,3421 +- 0,0272 seconds time elapsed  ( +-  0,06% )
-pyperformance-run_json_loads                          24,7496 +- 0,0187 seconds time elapsed  ( +-  0,08% )
-pyperformance-run_nbody                          22,2566 +- 0,0433 seconds time elapsed  ( +-  0,19% )
-pyperformance-run_pathlib                          31,5494 +- 0,0263 seconds time elapsed  ( +-  0,08% )
-pyperformance-run_pickle_pure_python                          28,3785 +- 0,0290 seconds time elapsed  ( +-  0,10% )
-pyperformance-run_python_startup                         82,67512 +- 0,00741 seconds time elapsed  ( +-  0,01% )
-pyperformance-run_raytrace                          85,1563 +- 0,0502 seconds time elapsed  ( +-  0,06% )
-pyperformance-run_regex_compile                          36,2796 +- 0,0131 seconds time elapsed  ( +-  0,04% )
-rays1bench                           33,402 +- 0,181 seconds time elapsed  ( +-  0,54% )
-cp2k                           554,08 +- 10,33 seconds time elapsed  ( +-  1,86% )
-svt-av1                           37,146 +- 0,259 seconds time elapsed  ( +-  0,70% )
-dav1d_summer_nature_1080p.ivf                           14,341 +- 0,185 seconds time elapsed  ( +-  1,29% )
-dav1d_summer_nature_4k.ivf                           53,013 +- 0,555 seconds time elapsed  ( +-  1,05% )
-dav1d_chimera_8b_1080p.ivf                           44,944 +- 0,484 seconds time elapsed  ( +-  1,08% )
-dav1d_chimera_10b_1080p.ivf                          267,651 +- 0,529 seconds time elapsed  ( +-  0,20% )
-cpuminer-opt_lbry                          30,9420 +- 0,0477 seconds time elapsed  ( +-  0,15% )
-cpuminer-opt_sha256t                          30,9937 +- 0,0217 seconds time elapsed  ( +-  0,07% )
-cpuminer-opt_skein                          30,9812 +- 0,0550 seconds time elapsed  ( +-  0,18% )
-cpuminer-opt_myr-gr                          30,9969 +- 0,0637 seconds time elapsed  ( +-  0,21% )
-cpuminer-opt_m7m                          38,3341 +- 0,0229 seconds time elapsed  ( +-  0,06% )
-cpuminer-opt_deep                           34,008 +- 0,199 seconds time elapsed  ( +-  0,59% )
-vpxenc                          25,5730 +- 0,0571 seconds time elapsed  ( +-  0,22% )
-mt-dgemm                           377,19 +- 1,06 seconds time elapsed  ( +-  0,28% )
-deepspeech                            95,06 +- 7,61 seconds time elapsed  ( +-  8,00% )
-octave-benchmark                           10,297 +- 0,114 seconds time elapsed  ( +-  1,11% )
-build-llvm                           861,21 +- 1,07 seconds time elapsed  ( +-  0,12% )
-build2                          197,357 +- 0,837 seconds time elapsed  ( +-  0,42% )
-build-gdb                          131,280 +- 0,532 seconds time elapsed  ( +-  0,41% )
-encode-flac                          20,1673 +- 0,0695 seconds time elapsed  ( +-  0,34% )
+aio-stress                           86
+aircrack-ng                          18
+aobench                          38
+apache                           39
+nginx                           39
+crafty                          24
+tscp                          26
+stockfish                          38
+p7zip                          37
+bzip2                          15
+zstd                           10
+xz                           80
+byte_register                          121
+byte_dhry2                         121
+byte_int                         121
+byte_float                         121
+scimark2                           30
+fhourstones                         117
+gmpbench                          418
+dcraw                           23
+sudokut                          20
+nero2d                          306
+minion                          44
+hmmer                           8
+rodinia_euler3d_cpu_double                          51
+rodinia_lavaMD                          176
+rodinia_sc_omp                          42
+openssl                         20
+sysbench_cpu                          34
+sysbench_memory                           5
+blake2s                          39
+blogbench_read                            62
+blogbench_write                           52
+x264                            13
+x265                          18
+ctx_clock                          174
+c-ray                          188
+povray                          102
+cachebench_read                         27
+cachebench_write                         28
+cachebench_mixed                         83
+cachebench_memset                         24
+cachebench_memcpy                         22
+cloverleaf                         90
+brlcad                           641
+cpp-perf-bench_stepanov_abstraction                         35
+cpp-perf-bench_stepanov_vector                          88
+cpp-perf-bench_functionobjects                         15
+cpp-perf-bench_atol                          65
+cpp-perf-bench_ctype                          30
+cpp-perf-bench_mathlib                          358
+cpp-perf-bench_random_numbers                          948
+dacapo_eclipse                          108
+dacapo_h2                           41
+dacapo_jython                           28
+dacapo_tradebeans                           171
+dacapo_tradesoap                           200
+ebizzy                         30
+glibc-bench_bench-ffsll                         10
+glibc-bench_bench-ffs                         10
+glibc-bench_bench-pthread_once                         10
+glibc-bench_bench-tanh                         10
+glibc-bench_bench-sqrt                        10
+glibc-bench_bench-sin                         21
+glibc-bench_bench-cos                          21
+glibc-bench_bench-asinh                         10
+glibc-bench_bench-atanh                        10
+glibc-bench_bench-sincos                          20
+glibc-bench_bench-sinh                        10
+glibc-bench_bench-modf                         10
+glibc-bench_bench-exp                         30
+glibc-bench_bench-log2                        10
+himeno                           72
+hint_float                           390
+hint_double                          288
+hpcg                         270
+build-linux-kernel                          1382
+john-the-ripper_bcrypt                          30
+john-the-ripper_md5crypt                         60
+lzbench_-ezstd                          625
+lzbench_-ebrotli                          572
+lzbench_-elibdeflate                          262
+lzbench_-exz                          633
+m-queens                          57
+mbw_512                          8
+mbw_1024                          17
+mbw_4096                          69
+mcperf_get                          16
+mcperf_set                          28
+mcperf_delete                           17
+mcperf_add                           28
+mcperf_replace                          26
+mcperf_append                          27
+mcperf_prepend                           27
+mkl-dnn_conv_all                          638
+mkl-dnn_conv_googlenet_v3                         131
+mkl-dnn_conv_alexnet                          17
+mkl-dnn_ip_1d                         15
+mkl-dnn_ip_all                          47
+mkl-dnn_rnn_training                          37
+node-express-loadtest                           10
+numenta-nab                           573
+phpbench                          15
+primesieve                          52
+pymongo                           39
+rbenchmark                           26
+redis_get                           13
+redis_set                           13
+redis_lpush                          13
+redis_lpop                           13
+redis_sadd                          12
+rust-prime                         24
+scikit                           46
+stress-ng_vecmath                          18
+stress-ng_matrix                           13
+stress-ng_fork                          23
+stress-ng_msg                           18
+stress-ng_sem                          21
+stress-ng_sock                           28
+stress-ng_switch                          25
+stream                         65
+swet                          14
+t-test1                          7
+tensorflow                            64
+tinymembench                           289
+ttsiod-renderer                          50
+xsbench                          81
+ramspeed_copy_int                         140
+ramspeed_scale_int                         140
+ramspeed_add_int                         140
+ramspeed_triad_int                         140
+ramspeed_copy_float                         140
+ramspeed_scale_float                         140
+ramspeed_add_float                        140
+ramspeed_traid_float                         140
+botan_AES-256                          22
+botan_Blowfish                        20
+botan_CAST-256                        20
+botan_KASUMI                         20
+botan_Twofish                         20
+build-gcc                           353
+javascimark2                           25
+sunflow                           22
+sqlitebench                           138
+iozone_-s2096000                           92
+iozone_-s4096000                          232
+iozone_-s8126000                           679
+dbench_1                         720
+dbench_6                        720
+dbench_12                        720
+dbench_48                         720
+dbench_128                          720
+dbench_256                         721
+postmark                           109
+fs-mark_1000_Files_1MB_Size                            48
+fs-mark_5000_Files_1MB_Size_4_Threads                           393
+fs-mark_4000_Files_32_Sub_Dirs_1MB_Size                           154
+bork                           15
+ffmpeg                            5
+encode-mp3                          28
+graphics-magick_minify                           47
+graphics-magick_gaussian                           307
+graphics-magick_sharpen                           483
+graphics-magick_rotate                           195
+graphics-magick_resize                           71
+rocksdb_fillseq                           21
+rocksdb_fillrandom                           31
+rocksdb_readrandom                          24
+cassandra_write                          13
+cassandra_read                         15
+cassandra_mixed_1_1                         15
+cassandra_mixed_1_3                         15
+compilebench_initial_create                          185
+compilebench_compile                          183
+compilebench_read_compile_tree                          185
+smallpt                          24
+build-php                           98
+inkscape                           23
+rawtherapee                           91
+tjbench                           24
+darktable_masskrug.NEF                           12
+darktable_bench.SRW                          27
+darktable_server_room.NEF                           9
+rsvg                           15
+gegl_rotate-on-center                           48
+gegl_scale-size                           6
+gegl_antialias                          47
+gegl_cartoon                         122
+gegl_color-enhance                          68
+gegl_crop                          10
+gegl_wavelet-blur                          73
+gegl_reflect                          35
+gegl_tile-glass                          35
+renaissance_akka-uct                           13
+renaissance_reactors                           22
+renaissance_als                           11
+renaissance_naive-bayes                           12
+renaissance_page-rank                           31
+renaissance_db-shootout                           19
+renaissance_dotty                            8
+renaissance_finagle-chirper                            9
+java-jmh                         502
+schbench_2                         30
+schbench_4                         30
+schbench_8                         30
+osbench_create_files                           27
+osbench_create_processes                           20
+osbench_create_threads                           17
+osbench_launch_programs                          10
+osbench_mem_alloc                          22
+tiobench_write                           205
+tiobench_read                           197
+tiobench_random_write                           342
+tiobench_random_read                           196
+pybench                          24
+network-loopback                           45
+svt-vp9_tune_0                            78
+svt-vp9_tune_1                          77
+svt-vp9_tune_2                          77
+svt-hevc                          27
+tungsten_hair                          60
+tungsten_water-caustic                          48
+tungsten_non-exponential                          14
+tungsten_volumetric-caustic                          19
+ospray_san_miguel                           55
+ospray_xfrog_forest                          184
+ospray_magnetic_reconnection                           31
+embree_crown                          137
+embree_asian_dragon                          117
+embree_asian_dragon_obj                         147
+iperf_tcp                         33
+iperf_udp                       33
+oidn                          28
+pyperformance-run_2to3                          60
+pyperformance-run_chaos                         22
+pyperformance-run_crypto_pyaes                          20
+pyperformance-run_django_template                          30
+pyperformance-run_float                         20
+pyperformance-run_go                          44
+pyperformance-run_json_loads                          24
+pyperformance-run_nbody                          22
+pyperformance-run_pathlib                          31
+pyperformance-run_pickle_pure_python                          28
+pyperformance-run_python_startup                         82
+pyperformance-run_raytrace                          85
+pyperformance-run_regex_compile                          36
+rays1bench                           33
+cp2k                           554
+svt-av1                           37
+dav1d_summer_nature_1080p.ivf                           14
+dav1d_summer_nature_4k.ivf                           53
+dav1d_chimera_8b_1080p.ivf                           44
+dav1d_chimera_10b_1080p.ivf                          267
+cpuminer-opt_lbry                          30
+cpuminer-opt_sha256t                          30
+cpuminer-opt_skein                          30
+cpuminer-opt_myr-gr                          30
+cpuminer-opt_m7m                          38
+cpuminer-opt_deep                           34
+vpxenc                          25
+mt-dgemm                           377
+deepspeech                            95
+octave-benchmark                           10
+build-llvm                           861
+build2                          197
+build-gdb                          131
+encode-flac                          20
 openarenaG_800x600                          106
 openarenaG_1024x768                          146
 openarenaG_1920x1080                          304

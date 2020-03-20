@@ -1,5 +1,0 @@
-+ ./ramspeed traid_float
-
-real	2m19,704s
-user	2m18,863s
-sys	0m0,752s

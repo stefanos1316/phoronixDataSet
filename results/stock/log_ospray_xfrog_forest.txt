@@ -1,5 +1,0 @@
-+ ./ospray xfrog_forest
-
-real	3m5,349s
-user	24m3,856s
-sys	0m0,604s

@@ -1,5 +1,0 @@
-Will run 8 OpenMP threads
-
-real	0m30,347s
-user	4m0,195s
-sys	0m0,044s

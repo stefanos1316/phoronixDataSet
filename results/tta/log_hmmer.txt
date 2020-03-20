@@ -1,6 +1,0 @@
-+ ./hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME
-./hmmer: line 1: !#/bin/bash: No such file or directory
-
-real	1m27,365s
-user	10m29,248s
-sys	0m4,845s

@@ -1,5 +1,0 @@
-+ ./tungsten non-exponential
-
-real	0m14,508s
-user	1m55,385s
-sys	0m0,008s

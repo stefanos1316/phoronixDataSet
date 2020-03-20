@@ -1,5 +1,0 @@
-+ ./ospray magnetic_reconnection
-
-real	0m33,494s
-user	4m2,430s
-sys	0m0,648s

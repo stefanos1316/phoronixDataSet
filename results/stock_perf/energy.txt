@@ -122,7 +122,7 @@ stream               2279.47
 swet               296.11
 t-test1               241.23
 tensorflow               2973.89
-tinymembench               5469.45
+tinymembench               5969.45
 ttsiod-renderer               2565.35
 xsbench               3249.42
 ramspeed_copy_int               3914.82
@@ -178,9 +178,9 @@ build-php               4403.27
 inkscape               556.19
 rawtherapee               3969.25
 tjbench               560.94
-darktable_masskrug.NEF               498.70
-darktable_bench.SRW               1193.20
-darktable_server_room.NEF               400.81
+darktable_masskrugNEF               498.70
+darktable_benchSRW               1193.20
+darktable_server_roomNEF               400.81
 rsvg               369.12
 gegl_rotate-on-center               1178.44
 gegl_scale-size               175.07
@@ -217,7 +217,7 @@ network-loopback               1488.20
 svt-vp9_tune_0               4272.83
 svt-vp9_tune_1               4251.99
 svt-vp9_tune_2               4260.86
-svt-hevc               1264.84
+svt-hevc               1564.84
 tungsten_hair               3314.02
 tungsten_water-caustic               2134.64
 tungsten_non-exponential               827.18
@@ -245,12 +245,12 @@ pyperformance-run_python_startup               1938.51
 pyperformance-run_raytrace               2110.82
 pyperformance-run_regex_compile               887.58
 rays1bench               1867.04
-cp2k               21820.92
+cp2k               22520.92
 svt-av1               2192.94
-dav1d_summer_nature_1080p.ivf               755.64
-dav1d_summer_nature_4k.ivf               2941.17
-dav1d_chimera_8b_1080p.ivf               2280.70
-dav1d_chimera_10b_1080p.ivf               11522.82
+dav1d_summer_nature_1080pivf               755.64
+dav1d_summer_nature_4kivf               2941.17
+dav1d_chimera_8b_1080pivf               2280.70
+dav1d_chimera_10b_1080pivf               11522.82
 cpuminer-opt_lbry               1857.60
 cpuminer-opt_sha256t               1896.41
 cpuminer-opt_skein               1865.70
@@ -296,7 +296,7 @@ nexuiz_1024x768               1291
 nexuiz_1920x1080               2496
 nexuiz_2560x1440               2499
 xonotic_800x600               45011
-xonotic_1024x768               4992
+xonotic_1024x768               44925
 xonotic_1920x1080               44873
 xonotic_2560x1440               44939
 paraview_manyspheres               7818

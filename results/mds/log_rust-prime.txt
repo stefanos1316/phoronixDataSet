@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/rust-prime/rust-prime 200000000 8
-
-real	0m31,896s
-user	2m6,895s
-sys	0m0,004s

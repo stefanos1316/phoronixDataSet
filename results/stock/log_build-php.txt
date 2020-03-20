@@ -1,6 +1,0 @@
-+ ./build-php
-PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
-
-real	1m47,955s
-user	9m13,874s
-sys	0m32,952s

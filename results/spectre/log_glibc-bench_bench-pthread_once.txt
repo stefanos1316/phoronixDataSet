@@ -1,5 +1,0 @@
-+ ./glibc-bench bench-pthread_once
-
-real	0m10,265s
-user	0m8,563s
-sys	0m1,689s
