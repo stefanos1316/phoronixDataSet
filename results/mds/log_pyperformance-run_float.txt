@@ -1,6 +1,0 @@
-+ ./pyperformance-run float
-INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_float.py --rigorous --output /tmp/tmpltv5e4m1`
-
-real	0m20,634s
-user	0m19,770s
-sys	0m0,869s

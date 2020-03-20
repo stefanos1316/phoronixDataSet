@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/swet/swet -Z
-
-real	0m14,344s
-user	0m14,229s
-sys	0m0,096s

@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/aobench/aobench
-
-real	0m38,558s
-user	0m38,493s
-sys	0m0,048s

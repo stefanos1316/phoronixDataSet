@@ -1,5 +1,0 @@
-+ ./mkl-dnn ip_all ip
-
-real	0m47,712s
-user	6m13,764s
-sys	0m1,567s

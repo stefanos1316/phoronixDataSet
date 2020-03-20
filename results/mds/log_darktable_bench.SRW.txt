@@ -1,5 +1,0 @@
-+ ./darktable bench.SRW
-
-real	0m23,298s
-user	1m27,786s
-sys	0m1,379s

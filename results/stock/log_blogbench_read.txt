@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/blogbench/blogbench read -d ./ -i 5
-
-real	0m51,320s
-user	0m53,129s
-sys	5m26,638s

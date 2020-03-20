@@ -1,5 +1,0 @@
-./hmmer: line 1: !#/bin/bash: No such file or directory
-
-real	1m28,328s
-user	10m35,491s
-sys	0m4,429s

@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/stream/stream
-
-real	1m5,253s
-user	8m37,448s
-sys	0m1,152s

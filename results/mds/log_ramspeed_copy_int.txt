@@ -1,5 +1,0 @@
-+ ./ramspeed copy_int
-
-real	2m19,706s
-user	2m17,375s
-sys	0m0,804s

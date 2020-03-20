@@ -1,0 +1,13 @@
+14805425
+14804400
+14841649
+14800296
+14798728
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1838,20 Joules power/energy-pkg/                                             ( +-  0,19% )
+             15,54 Joules power/energy-ram/                                             ( +-  0,19% )
+
+           30,9766 +- 0,0570 seconds time elapsed  ( +-  0,18% )
+

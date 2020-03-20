@@ -1,5 +1,0 @@
-+ ./nexuiz 1920x1080
-
-real	0m52.744s
-user	5m0.353s
-sys	0m1.072s

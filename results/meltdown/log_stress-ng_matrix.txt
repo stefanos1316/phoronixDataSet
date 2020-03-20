@@ -1,7 +1,0 @@
-stress-ng: info:  [21518] defaulting to a 86400 second run per stressor
-stress-ng: info:  [21518] dispatching hogs: 8 matrix
-stress-ng: info:  [21518] successful run completed in 14.12s
-
-real	0m14,126s
-user	1m44,661s
-sys	0m0,008s

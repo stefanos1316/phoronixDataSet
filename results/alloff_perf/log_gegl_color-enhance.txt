@@ -1,0 +1,208 @@
+
+(gegl:26207): GEGL-WARNING **: 21:16:20.990: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26225): GEGL-WARNING **: 21:16:25.362: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26243): GEGL-WARNING **: 21:16:29.628: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26260): GEGL-WARNING **: 21:16:34.487: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26276): GEGL-WARNING **: 21:16:39.913: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26292): GEGL-WARNING **: 21:16:44.257: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26310): GEGL-WARNING **: 21:16:48.614: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26328): GEGL-WARNING **: 21:16:53.256: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26344): GEGL-WARNING **: 21:16:57.624: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26360): GEGL-WARNING **: 21:17:01.419: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26379): GEGL-WARNING **: 21:17:05.073: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26397): GEGL-WARNING **: 21:17:08.290: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26415): GEGL-WARNING **: 21:17:11.656: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26431): GEGL-WARNING **: 21:17:15.499: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26447): GEGL-WARNING **: 21:17:16.459: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26463): GEGL-WARNING **: 21:17:23.532: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:26463): GEGL-WARNING **: 21:17:23.532: tile-backend-swap gap list had more than one element
+
+
+(gegl:26463): GEGL-WARNING **: 21:17:23.532: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:26463): GEGL-WARNING **: 21:17:23.532: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26480): GEGL-WARNING **: 21:17:28.360: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26498): GEGL-WARNING **: 21:17:32.669: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26516): GEGL-WARNING **: 21:17:36.994: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26532): GEGL-WARNING **: 21:17:41.869: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26550): GEGL-WARNING **: 21:17:47.262: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26566): GEGL-WARNING **: 21:17:51.564: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26583): GEGL-WARNING **: 21:17:55.955: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26600): GEGL-WARNING **: 21:18:00.613: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26618): GEGL-WARNING **: 21:18:04.989: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26634): GEGL-WARNING **: 21:18:08.835: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26650): GEGL-WARNING **: 21:18:12.497: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26666): GEGL-WARNING **: 21:18:15.714: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26682): GEGL-WARNING **: 21:18:19.130: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26698): GEGL-WARNING **: 21:18:22.973: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26716): GEGL-WARNING **: 21:18:23.924: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26732): GEGL-WARNING **: 21:18:30.947: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:26732): GEGL-WARNING **: 21:18:30.947: tile-backend-swap gap list had more than one element
+
+
+(gegl:26732): GEGL-WARNING **: 21:18:30.947: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:26732): GEGL-WARNING **: 21:18:30.947: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26751): GEGL-WARNING **: 21:18:35.834: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26769): GEGL-WARNING **: 21:18:40.126: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26785): GEGL-WARNING **: 21:18:44.426: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26805): GEGL-WARNING **: 21:18:49.409: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26821): GEGL-WARNING **: 21:18:54.786: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26837): GEGL-WARNING **: 21:18:59.138: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26855): GEGL-WARNING **: 21:19:03.520: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26871): GEGL-WARNING **: 21:19:08.196: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26890): GEGL-WARNING **: 21:19:12.613: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26908): GEGL-WARNING **: 21:19:16.375: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26924): GEGL-WARNING **: 21:19:20.021: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26941): GEGL-WARNING **: 21:19:23.246: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26957): GEGL-WARNING **: 21:19:26.621: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26973): GEGL-WARNING **: 21:19:30.521: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:26989): GEGL-WARNING **: 21:19:31.481: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27005): GEGL-WARNING **: 21:19:38.513: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:27005): GEGL-WARNING **: 21:19:38.513: tile-backend-swap gap list had more than one element
+
+
+(gegl:27005): GEGL-WARNING **: 21:19:38.513: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:27005): GEGL-WARNING **: 21:19:38.513: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27022): GEGL-WARNING **: 21:19:43.375: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27039): GEGL-WARNING **: 21:19:47.692: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27055): GEGL-WARNING **: 21:19:52.008: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27071): GEGL-WARNING **: 21:19:56.850: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27087): GEGL-WARNING **: 21:20:02.209: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27105): GEGL-WARNING **: 21:20:06.670: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27121): GEGL-WARNING **: 21:20:11.036: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27139): GEGL-WARNING **: 21:20:15.728: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27156): GEGL-WARNING **: 21:20:20.112: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27172): GEGL-WARNING **: 21:20:23.874: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27190): GEGL-WARNING **: 21:20:27.586: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27206): GEGL-WARNING **: 21:20:30.803: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27222): GEGL-WARNING **: 21:20:34.194: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27239): GEGL-WARNING **: 21:20:38.004: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27257): GEGL-WARNING **: 21:20:38.964: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27275): GEGL-WARNING **: 21:20:45.987: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:27275): GEGL-WARNING **: 21:20:45.987: tile-backend-swap gap list had more than one element
+
+
+(gegl:27275): GEGL-WARNING **: 21:20:45.987: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:27275): GEGL-WARNING **: 21:20:45.987: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27292): GEGL-WARNING **: 21:20:50.840: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27310): GEGL-WARNING **: 21:20:55.224: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27326): GEGL-WARNING **: 21:20:59.532: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27343): GEGL-WARNING **: 21:21:04.415: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27360): GEGL-WARNING **: 21:21:09.767: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27376): GEGL-WARNING **: 21:21:14.060: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27392): GEGL-WARNING **: 21:21:18.568: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27410): GEGL-WARNING **: 21:21:23.202: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27426): GEGL-WARNING **: 21:21:27.594: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27444): GEGL-WARNING **: 21:21:31.389: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27460): GEGL-WARNING **: 21:21:35.060: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27478): GEGL-WARNING **: 21:21:38.277: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27494): GEGL-WARNING **: 21:21:41.660: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27511): GEGL-WARNING **: 21:21:45.477: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27529): GEGL-WARNING **: 21:21:46.429: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+(gegl:27545): GEGL-WARNING **: 21:21:53.427: tile-backend-swap writer queue wasn't empty before freeing
+
+
+(gegl:27545): GEGL-WARNING **: 21:21:53.427: tile-backend-swap gap list had more than one element
+
+
+(gegl:27545): GEGL-WARNING **: 21:21:53.427: (gegl-tile-backend-swap.c:919):gegl_tile_backend_swap_cleanup: runtime check failed: (gap->start == 0 && gap->end == file_size)
+
+(gegl:27545): GEGL-WARNING **: 21:21:53.427: (gegl-tile-handler-cache.c:833):gegl_tile_cache_destroy: runtime check failed: (g_queue_is_empty (&cache_queue))
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1433,75 Joules power/energy-pkg/                                             ( +-  0,12% )
+             36,96 Joules power/energy-ram/                                             ( +-  0,04% )
+
+           67,4686 +- 0,0258 seconds time elapsed  ( +-  0,04% )
+

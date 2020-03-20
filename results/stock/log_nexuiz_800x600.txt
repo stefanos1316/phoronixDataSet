@@ -1,5 +1,0 @@
-+ ./nexuiz 800x600
-
-real	0m24.274s
-user	1m43.303s
-sys	0m0.863s

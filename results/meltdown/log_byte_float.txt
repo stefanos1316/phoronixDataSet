@@ -1,6 +1,0 @@
-join: /tmp/9774.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
-awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
-
-real	2m1,657s
-user	1m0,042s
-sys	0m0,005s

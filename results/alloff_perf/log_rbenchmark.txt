@@ -1,0 +1,13 @@
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            945,89 Joules power/energy-pkg/                                             ( +-  7,02% )
+             32,10 Joules power/energy-ram/                                             ( +-  4,90% )
+
+             29,16 +- 1,12 seconds time elapsed  ( +-  3,84% )
+

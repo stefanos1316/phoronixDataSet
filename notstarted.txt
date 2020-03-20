@@ -1,6 +1,6 @@
 Graphics
 ========
-stock (DONE)
+stock (DONE) (remaining indigo + j2bench)
 meltdown (DNOE)
 spectre (DONE)
 mds (DONE)

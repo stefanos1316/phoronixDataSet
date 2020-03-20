@@ -1,5 +1,0 @@
-+ ../tools/tasks_test/m-queens/m-queens 2 18
-
-real	0m57,707s
-user	7m41,027s
-sys	0m0,000s

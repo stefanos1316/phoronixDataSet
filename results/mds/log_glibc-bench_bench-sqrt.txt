@@ -1,5 +1,0 @@
-+ ./glibc-bench bench-sqrt
-
-real	0m10,268s
-user	0m8,571s
-sys	0m1,680s

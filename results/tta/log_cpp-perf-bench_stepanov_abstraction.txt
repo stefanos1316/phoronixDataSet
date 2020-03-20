@@ -1,5 +1,0 @@
-+ ./cpp-perf-bench stepanov_abstraction
-
-real	0m35,307s
-user	0m35,288s
-sys	0m0,001s

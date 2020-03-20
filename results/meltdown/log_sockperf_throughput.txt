@@ -1,6 +1,0 @@
-execute.sh: fork: retry: Resource temporarily unavailable
-./sockperf: 0: ./sockperf: Cannot fork
-
-real	0m1,733s
-user	0m0,001s
-sys	0m0,000s

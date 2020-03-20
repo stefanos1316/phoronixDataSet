@@ -1,0 +1,13 @@
+37148197
+33462044
+33054582
+32981610
+33086322
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1874,75 Joules power/energy-pkg/                                             ( +-  0,09% )
+             15,54 Joules power/energy-ram/                                             ( +-  0,06% )
+
+           30,9750 +- 0,0156 seconds time elapsed  ( +-  0,05% )
+

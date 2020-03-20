@@ -1,6 +1,0 @@
-./sockperf: 0: ./sockperf: Cannot fork
-execute.sh: line 224: 21828 Killed                  ./${task}
-
-real	0m3,323s
-user	0m0,001s
-sys	0m0,001s

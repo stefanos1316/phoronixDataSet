@@ -1,0 +1,13 @@
+4091046
+4090211
+4091360
+4090943
+4091568
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1960,60 Joules power/energy-pkg/                                             ( +-  0,06% )
+             17,16 Joules power/energy-ram/                                             ( +-  0,02% )
+
+          34,20732 +- 0,00335 seconds time elapsed  ( +-  0,01% )
+

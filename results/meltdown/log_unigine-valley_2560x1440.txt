@@ -1,7 +1,0 @@
-
-Unigine fatal error
-AppWindow::AppWindow(): can't open display
-
-real	0m0,112s
-user	0m0,009s
-sys	0m0,004s

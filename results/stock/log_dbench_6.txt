@@ -1,5 +1,0 @@
-+ ./dbench 6
-
-real	12m0,351s
-user	0m13,321s
-sys	0m28,571s

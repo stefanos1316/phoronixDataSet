@@ -1,0 +1,87 @@
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6628 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6592 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 5963 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6247 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6552 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0x15287bcc20715fdcb6e2b5c45c86cd8b395943e4
+===== DaCapo 9.12-MR1 tradesoap FAILED =====
+Validation FAILED for tradesoap default
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0xedfeac05c546ad3dd018cfca2d3fc5b0d62d1f37
+===== DaCapo 9.12-MR1 tradesoap FAILED =====
+Validation FAILED for tradesoap default
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6269 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6341 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6402 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6202 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6262 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6443 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6457 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6367 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6598 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6489 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6446 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6471 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6646 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6323 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6447 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6384 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6600 msec =====
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6405 msec =====
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           3271,51 Joules power/energy-pkg/                                             ( +-  0,77% )
+            173,70 Joules power/energy-ram/                                             ( +-  1,12% )
+
+            201,75 +- 3,32 seconds time elapsed  ( +-  1,65% )
+

@@ -1,6 +1,0 @@
-+ ./pyperformance-run regex_compile
-INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_regex_compile.py --rigorous --output /tmp/tmpt0x2o68v`
-
-real	0m36,245s
-user	0m35,887s
-sys	0m0,365s

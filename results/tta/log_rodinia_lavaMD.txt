@@ -1,5 +1,0 @@
-+ ./rodinia lavaMD -cores 8 -boxes1d 48
-
-real	2m55,570s
-user	22m52,264s
-sys	0m0,208s

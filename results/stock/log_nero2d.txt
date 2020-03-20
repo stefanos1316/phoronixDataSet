@@ -1,5 +1,0 @@
-+ ./nero2d
-
-real	5m6,613s
-user	5m19,422s
-sys	0m21,988s

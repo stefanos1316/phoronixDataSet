@@ -1,5 +1,0 @@
-+ ./renaissance akka-uct
-
-real	0m13,489s
-user	0m43,206s
-sys	0m2,444s

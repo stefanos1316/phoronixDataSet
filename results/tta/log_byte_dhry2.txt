@@ -1,6 +1,0 @@
-+ ./byte dhry2
-join: /tmp/3179.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
-
-real	2m1,613s
-user	1m0,041s
-sys	0m0,007s
