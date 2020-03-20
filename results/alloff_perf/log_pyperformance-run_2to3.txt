@@ -1,0 +1,13 @@
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_2to3.py --rigorous --output /tmp/tmpr4gzh7fj`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_2to3.py --rigorous --output /tmp/tmpw_4h4n06`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_2to3.py --rigorous --output /tmp/tmp05lats5d`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_2to3.py --rigorous --output /tmp/tmpvpng9mka`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_2to3.py --rigorous --output /tmp/tmp7qb9wc35`
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1401,76 Joules power/energy-pkg/                                             ( +-  0,14% )
+             34,85 Joules power/energy-ram/                                             ( +-  0,14% )
+
+           60,4015 +- 0,0944 seconds time elapsed  ( +-  0,16% )
+

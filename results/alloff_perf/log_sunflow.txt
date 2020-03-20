@@ -1,0 +1,23 @@
+./sunflow: 2: cd: can't cd to sunflow
+./sunflow: 3: [: -ge: unexpected operator
+./sunflow: 5: [: -ge: unexpected operator
+./sunflow: 2: cd: can't cd to sunflow
+./sunflow: 3: [: -ge: unexpected operator
+./sunflow: 5: [: -ge: unexpected operator
+./sunflow: 2: cd: can't cd to sunflow
+./sunflow: 3: [: -ge: unexpected operator
+./sunflow: 5: [: -ge: unexpected operator
+./sunflow: 2: cd: can't cd to sunflow
+./sunflow: 3: [: -ge: unexpected operator
+./sunflow: 5: [: -ge: unexpected operator
+./sunflow: 2: cd: can't cd to sunflow
+./sunflow: 3: [: -ge: unexpected operator
+./sunflow: 5: [: -ge: unexpected operator
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1282,88 Joules power/energy-pkg/                                             ( +-  0,75% )
+             26,55 Joules power/energy-ram/                                             ( +-  0,35% )
+
+            23,054 +- 0,139 seconds time elapsed  ( +-  0,60% )
+

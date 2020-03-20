@@ -1,0 +1,58 @@
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3608 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3714 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3460 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3624 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3611 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3639 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3567 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3411 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3463 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3567 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3544 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3625 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3446 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3556 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3515 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3452 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3475 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3379 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3626 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3530 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3460 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3497 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3560 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3464 msec =====
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3469 msec =====
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1044,33 Joules power/energy-pkg/                                             ( +-  0,94% )
+             30,01 Joules power/energy-ram/                                             ( +-  1,08% )
+
+            28,627 +- 0,205 seconds time elapsed  ( +-  0,72% )
+

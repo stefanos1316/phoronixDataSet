@@ -1,0 +1,13 @@
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_crypto_pyaes.py --rigorous --output /tmp/tmpvn1ktdhq`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_crypto_pyaes.py --rigorous --output /tmp/tmpord7xdnt`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_crypto_pyaes.py --rigorous --output /tmp/tmp922zjy3l`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_crypto_pyaes.py --rigorous --output /tmp/tmpdc01_752`
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_crypto_pyaes.py --rigorous --output /tmp/tmpmrv0ilx5`
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            478,80 Joules power/energy-pkg/                                             ( +-  0,14% )
+             10,47 Joules power/energy-ram/                                             ( +-  0,03% )
+
+          20,04420 +- 0,00993 seconds time elapsed  ( +-  0,05% )
+
