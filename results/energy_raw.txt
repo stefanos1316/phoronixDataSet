@@ -1,4 +1,4 @@
-Tasks	Stock	Meltdown	Spectre	MDS
+Tasks Stock Meltdown Spectre MDS
 aio-stress	715.01	670.24	668.80	668.49
 aircrack-ng	1104.03	1100.97	1099.61	1103.85
 aobench	868.11	868.35	858.66	863.70
