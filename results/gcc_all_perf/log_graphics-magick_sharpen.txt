@@ -1,0 +1,18 @@
+Results: 8 threads 300 iter 8206.72s user 1220.960146s total 0.246 iter/s 0.037 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 300 iter 8196.78s user 1219.230223s total 0.246 iter/s 0.037 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 300 iter 8198.05s user 1225.590948s total 0.245 iter/s 0.037 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 300 iter 8208.31s user 1234.548904s total 0.243 iter/s 0.037 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 300 iter 8191.72s user 1231.320027s total 0.244 iter/s 0.037 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+
+ Performance counter stats for 'system wide' (5 runs):
+
+         49,496.85 Joules power/energy-pkg/                                             ( +-  0.07% )
+            675.98 Joules power/energy-ram/                                             ( +-  0.23% )
+
+           1226.34 +- 2.93 seconds time elapsed  ( +-  0.24% )
+

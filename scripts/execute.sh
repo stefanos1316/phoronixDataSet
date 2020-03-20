@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-scenario="stock_perf"
+scenario="gcc_stock_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
-taskDirectory="tools/tasks_test"
+taskDirectory="tools/gcc_tasks_test"
 
 taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
@@ -138,18 +138,18 @@ tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 
 		   "cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" "cpp-perf-bench mathlib" "cpp-perf-bench random_numbers" \
 		   "cpuminer-opt lbry" "cpuminer-opt sha256t" "cpuminer-opt skein" "cpuminer-opt myr-gr" "cpuminer-opt m7m" "cpuminer-opt deep" \
 		   "crafty bench quit" "ctx_clock" "c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \
-		   "dbench 1" "dbench 6" "dbench 12" "dbench 48" "dbench 128" "dbench 256" "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
-		   "fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" \
+		   "dbench 1" "dbench 6" "dbench 12" "dbench 48"  "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
+		   "fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size"  "minion ../inputs/minions.minion" \
 		   "graphics-magick minify" "graphics-magick gaussian 0x1" "graphics-magick sharpen 0x2.0" "graphics-magick rotate 90" "graphics-magick resize 50%" \
 		   "ebizzy -S 30" "encode-mp3" "ffmpeg" "fhourstones" "gmpbench" "himeno XL" "hint float" "hint double" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
 		   "hpcg" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" "iperf tcp" "iperf udp" "john-the-ripper bcrypt" "john-the-ripper md5crypt" \
-		   "jxrend" "lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" "minion ../inputs/minions.minion" \
+		   "lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
 		   "lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" "mt-dgemm"\
 		   "mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" "mbw 8192 MiB -n 100 -t2" "nero2d" "p7zip b"\
 		   "mcperf get" "mcperf set" "mcperf delete" "mcperf add" "mcperf replace" "mcperf append" "mcperf prepend" "openssl speed rsa4096" \
 		   "mkl-dnn conv_all conv" "mkl-dnn conv_googlenet_v3 conv" "mkl-dnn conv_alexnet conv" "mkl-dnn ip_1d ip" "mkl-dnn ip_all ip" "mkl-dnn rnn_training rnn" \
 		   "osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
-		   "postmark ../inputs/postmark.pmrc" "povray -benchmark" "primesieve 1e12 --quiet --time" "schbench 2" "schbench 4" "schbench 8" \
+		   "postmark ../inputs/postmark.pmrc" "povray -benchmark" "schbench 2" "schbench 4" "schbench 8" \
 		   "qgears -image" "qgears -render" "qgears TEXT" "qgears GEARSFANCY" "qgears COMPO" "rocksdb fillseq" "rocksdb fillrandom" "rocksdb readrandom" \
 		   "ramspeed copy_int" "ramspeed scale_int" "ramspeed add_int" "ramspeed triad_int" "ramspeed copy_float" "ramspeed scale_float" \
 		   "ramspeed add_float" "ramspeed traid_float" "redis get" "redis set" "redis lpush" "redis lpop" "redis sadd" "scimark2" \
@@ -219,7 +219,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks_with_graphics[@]}"; do
+	for i in "${tasks_gcc[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi
@@ -251,7 +251,7 @@ sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
-for task in "${tasks_with_graphics[@]}"; do
+for task in "${tasks_gcc[@]}"; do
 
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}
