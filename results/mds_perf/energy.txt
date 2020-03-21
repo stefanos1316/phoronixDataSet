@@ -23,7 +23,7 @@ nero2d               7450.30
 minion               1022.20
 hmmer               447.67
 rodinia_euler3d_cpu_double               2232.80
-rodinia_lavaMD               10562.01
+rodinia_lavaMD               10262.01
 rodinia_sc_omp               1804.22
 openssl               433.41
 sysbench_cpu               1473.85

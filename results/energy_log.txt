@@ -24,7 +24,7 @@ nero2d	22.27 22.27 22.27 22.27
 minion	17.30 17.30 17.30 17.30
 hmmer	15.27 15.25 15.25 15.25
 rodinia_euler3d_cpu_double	19.27 19.27 19.25 19.27
-rodinia_lavaMD	23.07 23.07 23.05 23.15
+rodinia_lavaMD	23.07 23.07 23.05 23.07
 rodinia_sc_omp	18.72 18.72 18.72 18.72
 openssl	15.15 15.17 15.12 15.17
 sysbench_cpu	18.22 18.22 18.20 18.22
