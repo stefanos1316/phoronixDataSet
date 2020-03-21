@@ -1,0 +1,18 @@
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+GLRender::GLRender(): Unknown GPU
+OpenGL error: invalid enum
+
+ Performance counter stats for 'system wide' (5 runs):
+
+         31,545.43 Joules power/energy-pkg/                                             ( +-  0.08% )
+            444.05 Joules power/energy-ram/                                             ( +-  0.03% )
+
+           659.563 +- 0.179 seconds time elapsed  ( +-  0.03% )
+
