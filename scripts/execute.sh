@@ -1,9 +1,9 @@
 #!/bin/bash
 
-scenario="gcc_stock_perf"
+scenario="alloff_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
-taskDirectory="tools/gcc_tasks_test"
+taskDirectory="tools/tasks_test"
 
 taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
@@ -203,7 +203,7 @@ function dumpGarbage {
 	|| [ -f ../${taskDirectory}/dcraw/*.ppm ] || [ -f bitmap0_* ] || [-f blog-* ] \
 	|| [ -f alltext.out ] || [ -f output.ppm ] || [-f clover.* ] || [ -f results.txt ] \
 	|| [ -f image.ppm] || [ -f ../inputs/zstd_test.zst ] ; then
-		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp
+		rm temp ; rm ao.ppm ; rm game.* ; rm log.* ; rm *.tmp ; rm dump.rdb
 		rm ../inputs/tmp_linux-5.3.tar.gz.bz2 ; rm ../inputs/zstd_test.zst
 		rm ../inputs/tmp_xz.txt.xz ; rm RES-multiply-* ; rm ../${taskDirectory}/dcraw/*.ppm
 		rm bitmap0_* ; rm -rf blog-* ; rm alltext.out ; rm output.ppm; rm results.txt
@@ -217,7 +217,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks_gcc[@]}"; do
+	for i in "${tasks_with_graphics[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi
@@ -249,7 +249,7 @@ sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
-for task in "${tasks_gcc[@]}"; do
+for task in "${tasks_with_graphics[@]}"; do
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}
 	checkIfSubstringExistsMoreTimesInArray ${task}
