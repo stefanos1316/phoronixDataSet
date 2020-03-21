@@ -1,6 +1,6 @@
 Graphics
 ========
-stock (DONE) (remaining indigo + j2bench)
+stock (DONE)
 meltdown (DNOE)
 spectre (DONE)
 mds (DONE)
@@ -10,6 +10,11 @@ No-Graphics
 ===========
 stock (DONE)
 meltdown (DONE)
-spectre (PENDING)
-mds
-alloff
+spectre (DONE)
+mds (DONE)
+alloff (DONE)
+
+GCC
+===
+AllOff (DONE)
+AllOn (DONE)
