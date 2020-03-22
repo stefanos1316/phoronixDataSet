@@ -1,311 +1,311 @@
-Tasks Stock Meltdown Spectre MDS
-aio-stress	16.42 16.25 16.25 16.25
-aircrack-ng	17.50 17.50 17.50 17.50
-aobench	16.90 16.90 16.87 16.90
-apache	18.27 18.12 18.05 18.07
-nginx	18.30 18.15 18.07 18.10
-crafty	15.80 15.80 15.77 15.77
-tscp	15.82 15.80 15.77 15.80
-stockfish	17.07 17.07 17.05 17.05
-p7zip	18.67 18.65 18.65 18.65
-bzip2	14.55 14.55 14.57 14.55
-zstd	14.90 14.90 14.90 14.90
-xz	18.47 18.45 18.47 18.45
-byte_register	18.35 18.32 18.30 18.32
-byte_dhry2	18.62 18.62 18.60 18.62
-byte_int	18.32 18.32 18.30 18.30
-byte_float	18.35 18.32 18.30 18.30
-scimark2	16.35 16.35 16.32 16.27
-fhourstones	19.52 19.52 19.50 19.52
-gmpbench	22.82 22.80 22.80 22.80
-dcraw	15.45 15.45 15.42 15.45
-sudokut	15.52 15.52 15.50 15.55
-nero2d	22.27 22.27 22.27 22.27
-minion	17.30 17.30 17.30 17.30
-hmmer	15.27 15.25 15.25 15.25
-rodinia_euler3d_cpu_double	19.27 19.27 19.25 19.27
-rodinia_lavaMD	23.07 23.07 23.05 23.07
-rodinia_sc_omp	18.72 18.72 18.72 18.72
-openssl	15.15 15.17 15.12 15.17
-sysbench_cpu	18.22 18.22 18.20 18.22
-sysbench_memory	13.90 13.90 13.87 13.90
-blake2s	16.62 16.67 16.62 16.65
-blogbench_read	19.47 19.47 19.45 19.47
-blogbench_write	19.37 19.35 19.32 19.35
-x264	16.47 16.47 16.47 16.47
-x265	17.30 17.30 17.27 17.30
-ctx_clock	21.82 20.40 21.80 20.15
-c-ray	22.87 22.87 22.85 22.87
-povray	21.85 21.85 21.85 21.85
-cachebench_read	15.67 15.67 15.65 15.65
-cachebench_write	15.87 15.90 15.85 15.90
-cachebench_mixed	18.77 18.80 18.75 18.77
-cachebench_memset	16.00 16.02 15.97 15.97
-cachebench_memcpy	15.90 15.90 15.87 15.87
-cloverleaf	20.40 20.35 20.32 20.32
-brlcad	26.57 26.52 26.50 26.55
-cpp-perf-bench_stepanov_abstraction	16.35 16.35 16.32 16.35
-cpp-perf-bench_stepanov_vector	18.65 18.67 18.62 18.67
-cpp-perf-bench_functionobjects	14.45 14.45 14.42 14.47
-cpp-perf-bench_atol	18.30 18.32 18.30 18.32
-cpp-perf-bench_ctype	16.30 16.30 16.27 16.30
-cpp-perf-bench_mathlib	22.42 22.45 22.42 22.45
-cpp-perf-bench_random_numbers	24.62 24.62 24.60 24.62
-dacapo_eclipse	20.82 20.80 20.77 20.80
-dacapo_h2	18.07 18.07 18.05 18.05
-dacapo_jython	17.45 17.42 17.45 17.42
-dacapo_tradebeans	19.47 19.60 19.55 19.55
-dacapo_tradesoap	20.35 20.35 20.37 20.35
-ebizzy	18.57 18.55 18.57 18.57
-glibc-bench_bench-ffsll	13.52 13.60 13.52 13.60
-glibc-bench_bench-ffs	13.47 13.55 13.47 13.52
-glibc-bench_bench-pthread_once	13.47 13.55 13.50 13.42
-glibc-bench_bench-tanh	13.55 13.57 13.55 13.45
-glibc-bench_bench-sqrt	13.62 13.70 13.60 13.65
-glibc-bench_bench-sin	15.42 15.42 15.40 15.37
-glibc-bench_bench-cos	15.40 15.40 15.37 15.35
-glibc-bench_bench-asinh	13.60 13.60 13.57 13.47
-glibc-bench_bench-atanh	13.65 13.65 13.60 13.50
-glibc-bench_bench-sincos	15.25 15.25 15.22 15.17
-glibc-bench_bench-sinh	13.72 13.75 13.70 13.60
-glibc-bench_bench-modf	13.60 13.67 13.55 13.52
-glibc-bench_bench-exp	16.42 16.45 16.42 16.42
-glibc-bench_bench-log2	13.55 13.57 13.52 13.45
-himeno	18.60 18.60 18.57 18.57
-hint_float	22.45 22.50 22.45 22.47
-hint_double	21.80 21.80 21.80 21.80
-hpcg	22.97 23.00 22.97 22.97
-build-linux-kernel	28.25 27.97 28.00 27.97
-john-the-ripper_bcrypt	18.45 18.45 18.45 18.42
-john-the-ripper_md5crypt	20.57 20.57 20.57 20.55
-lzbench_-ezstd	23.82 23.80 23.80 23.80
-lzbench_-ebrotli	23.57 23.57 23.57 23.55
-lzbench_-elibdeflate	21.65 21.67 21.65 21.65
-lzbench_-exz	23.70 23.67 23.67 23.65
-m-queens	19.92 19.95 19.92 19.92
-mbw_512	13.32 13.32 13.32 13.27
-mbw_1024	15.05 15.02 15.02 15.00
-mbw_4096	18.50 18.50 18.50 18.47
-mcperf_get	15.75 15.55 15.17 15.52
-mcperf_set	16.70 16.57 16.25 16.60
-mcperf_delete	15.77 15.62 15.20 15.57
-mcperf_add	16.70 16.57 16.25 16.62
-mcperf_replace	16.52 16.40 16.10 16.42
-mcperf_append	16.55 16.40 16.10 16.40
-mcperf_prepend	16.52 16.40 16.10 16.40
-mkl-dnn_conv_all	26.15 26.15 26.15 26.15
-mkl-dnn_conv_googlenet_v3	22.27 22.27 22.27 22.30
-mkl-dnn_conv_alexnet	17.30 17.30 17.30 17.27
-mkl-dnn_ip_1d	16.95 16.95 16.95 16.95
-mkl-dnn_ip_all	19.37 19.37 19.37 19.40
-mkl-dnn_rnn_training	19.10 19.10 19.10 19.12
-node-express-loadtest	14.57 14.50 14.50 14.50
-numenta-nab	25.52 25.52 25.52 25.52
-phpbench	14.75 14.75 14.72 14.70
-primesieve	20.12 20.12 20.12 20.10
-pymongo	16.95 17.00 16.90 16.90
-rbenchmark	16.52 16.60 16.52 16.40
-redis_get	14.62 14.57 14.57 14.55
-redis_set	14.52 14.50 14.55 14.55
-redis_lpush	14.50 14.50 14.45 14.57
-redis_lpop	14.50 14.52 14.50 14.47
-redis_sadd	14.42 14.45 14.45 14.40
-rust-prime	17.32 17.32 17.32 17.32
-scikit	17.95 17.97 17.95 17.95
-stress-ng_vecmath	18.17 17.02 17.02 17.02
-stress-ng_matrix	16.70 16.57 16.62 16.65
-stress-ng_fork	17.77 17.67 17.75 17.65
-stress-ng_msg	17.32 16.87 17.22 16.12
-stress-ng_sem	16.97 17.12 16.95 16.65
-stress-ng_sock	18.22 18.07 18.42 18.05
-stress-ng_switch	18.15 18.12 17.97 17.72
-stream	19.32 19.32 19.30 19.30
-swet	14.22 14.20 14.22 14.22
-t-test1	13.70 13.57 13.70 13.52
-tensorflow	19.97 20.02 20.02 20.05
-tinymembench	21.72 21.67 21.72 21.37
-ttsiod-renderer	19.60 19.62 19.60 19.60
-xsbench	20.20 20.22 20.20 20.20
-ramspeed_copy_int	20.67 20.67 20.65 20.62
-ramspeed_scale_int	20.67 20.67 20.67 20.62
-ramspeed_add_int	20.67 20.67 20.67 20.62
-ramspeed_triad_int	20.67 20.67 20.67 20.65
-ramspeed_copy_float	20.72 20.72 20.72 20.72
-ramspeed_scale_float	20.75 20.72 20.72 20.72
-ramspeed_add_float	20.75 20.72 20.72 20.72
-ramspeed_traid_float	20.72 20.72 20.72 20.72
-botan_AES-256	15.17 15.20 15.17 15.17
-botan_Blowfish	14.97 14.97 14.97 14.95
-botan_CAST-256	14.87 14.90 14.90 14.87
-botan_KASUMI	14.85 14.90 14.87 14.85
-botan_Twofish	15.10 15.10 15.10 15.10
-build-gcc	24.35 24.32 24.32 24.30
-javascimark2	16.02 15.95 16.05 15.97
-sunflow	17.92 17.92 17.95 17.97
-sqlitebench	17.12 17.15 16.92 17.07
-iozone_-s2096000	16.67 16.55 16.60 16.52
-iozone_-s4096000	18.92 18.85 18.87 18.85
-iozone_-s8126000	21.65 21.62 21.60 21.57
-dbench_1	21.25 21.22 21.22 21.22
-dbench_6	21.32 21.27 21.30 21.27
-dbench_12	21.40 21.42 21.42 21.40
-dbench_48	21.60 21.60 21.60 21.60
-dbench_128	21.70 21.70 21.70 21.67
-dbench_256	21.80 21.80 21.77 21.77
-postmark	17.02 17.02 17.02 17.07
-fs-mark_1000_Files_1MB_Size	14.52 14.60 14.55 14.50
-fs-mark_5000_Files_1MB_Size_4_Threads	20.00 19.97 19.95 19.97
-fs-mark_4000_Files_32_Sub_Dirs_1MB_Size	17.55 17.52 17.52 17.50
-bork	13.85 13.77 13.95 13.80
-ffmpeg	14.20 14.20 14.20 14.17
-encode-mp3	16.25 16.25 16.25 16.25
-graphics-magick_minify	17.47 17.47 17.47 17.47
-graphics-magick_gaussian	22.65 22.65 22.65 22.65
-graphics-magick_sharpen	24.52 24.52 24.52 24.52
-graphics-magick_rotate	19.10 19.05 19.05 19.02
-graphics-magick_resize	19.55 19.55 19.50 19.55
-rocksdb_fillseq	17.20 17.17 17.12 17.15
-rocksdb_fillrandom	17.87 17.85 17.80 17.82
-rocksdb_readrandom	17.80 17.80 17.80 17.80
-cassandra_write	11.87 11.80 11.80 11.77
-cassandra_read	12.12 12.07 12.05 12.05
-cassandra_mixed_1_1	12.12 12.07 12.05 12.05
-cassandra_mixed_1_3	12.10 12.07 12.05 12.05
-compilebench_initial_create	18.72 18.50 18.40 18.42
-compilebench_compile	18.52 18.47 18.42 18.42
-compilebench_read_compile_tree	18.52 18.50 18.40 18.42
-smallpt	17.95 17.97 17.97 17.97
-build-php	20.97 20.95 20.95 20.95
-inkscape	15.80 15.77 15.77 15.77
-rawtherapee	20.70 20.70 20.67 20.70
-tjbench	15.80 15.80 15.80 15.80
-darktable_masskrugNEF	15.52 15.52 15.50 15.50
-darktable_benchSRW	17.70 17.70 17.67 17.70
-darktable_server_roomNEF	14.97 14.97 14.95 14.95
-rsvg	14.77 14.70 14.72 14.72
-gegl_rotate-on-center	17.67 17.67 17.65 17.65
-gegl_scale-size	12.90 12.92 12.87 12.85
-gegl_antialias	17.67 17.67 17.65 17.65
-gegl_cartoon	19.85 19.85 19.82 19.80
-gegl_color-enhance	18.25 18.27 18.20 18.22
-gegl_crop	13.70 13.75 13.67 13.67
-gegl_wavelet-blur	18.52 18.55 18.50 18.50
-gegl_reflect	16.67 16.70 16.65 16.67
-gegl_tile-glass	16.85 16.87 16.82 16.82
-renaissance_akka-uct	16.25 16.35 16.25 16.27
-renaissance_reactors	16.82 16.80 16.85 16.77
-renaissance_als	15.25 15.30 15.25 15.22
-renaissance_naive-bayes	15.90 15.77 15.85 15.90
-renaissance_page-rank	18.07 18.10 18.07 18.12
-renaissance_db-shootout	15.97 16.05 15.97 15.92
-renaissance_dotty	14.65 14.65 14.67 14.67
-renaissance_finagle-chirper	14.97 14.95 14.95 14.97
-java-jmh	25.07 25.10 25.07 25.07
-schbench_2	16.90 16.90 16.87 16.90
-schbench_4	17.50 17.50 17.50 17.50
-schbench_8	17.52 17.52 17.52 17.52
-osbench_create_files	16.22 16.10 15.95 16.07
-osbench_create_processes	16.95 16.85 16.97 16.90
-osbench_create_threads	15.92 15.75 15.87 15.77
-osbench_launch_programs	15.92 15.77 15.87 15.75
-osbench_mem_alloc	15.60 15.55 15.57 15.52
-tiobench_write	18.32 18.30 18.22 18.30
-tiobench_read	18.55 18.50 18.55 18.57
-tiobench_random_write	19.67 19.62 19.52 19.60
-tiobench_random_read	18.42 18.40 18.47 18.50
-pybench	15.90 15.95 15.97 15.90
-network-loopback	18.25 18.12 18.02 18.10
-svt-vp9_tune_0	20.90 20.87 20.87 20.87
-svt-vp9_tune_1	20.87 20.87 20.87 20.87
-svt-vp9_tune_2	20.87 20.87 20.87 20.87
-svt-hevc	18.37 18.40 18.37 18.40
-tungsten_hair	20.25 20.25 20.22 20.25
-tungsten_water-caustic	19.15 19.15 19.15 19.15
-tungsten_non-exponential	16.77 16.80 16.77 16.77
-tungsten_volumetric-caustic	17.77 17.77 17.75 17.75
-ospray_san_miguel	19.37 19.35 19.37 19.37
-ospray_xfrog_forest	23.05 23.05 23.02 23.05
-ospray_magnetic_reconnection	18.72 18.72 18.70 18.72
-embree_crown	22.45 22.45 22.42 22.42
-embree_asian_dragon	21.92 21.92 21.92 21.90
-embree_asian_dragon_obj	22.32 22.32 22.32 22.32
-iperf_tcp	14.17 14.22 14.17 14.20
-iperf_udp	14.20 14.17 14.15 14.17
-oidn	18.42 18.42 18.45 18.42
-pyperformance-run_2to3	18.25 18.20 18.22 18.17
-pyperformance-run_chaos	15.72 15.72 15.75 15.72
-pyperformance-run_crypto_pyaes	15.47 15.47 15.47 15.45
-pyperformance-run_django_template	16.50 16.52 16.50 16.50
-pyperformance-run_float	15.50 15.47 15.50 15.50
-pyperformance-run_go	17.45 17.45 17.42 17.42
-pyperformance-run_json_loads	15.95 15.95 15.95 15.92
-pyperformance-run_nbody	15.65 15.62 15.65 15.62
-pyperformance-run_pathlib	16.62 16.55 16.55 16.52
-pyperformance-run_pickle_pure_python	16.37 16.37 16.35 16.35
-pyperformance-run_python_startup	18.90 18.87 18.90 18.85
-pyperformance-run_raytrace	19.12 19.12 19.12 19.10
-pyperformance-run_regex_compile	16.95 16.95 16.95 16.95
-rays1bench	18.82 18.80 18.80 18.82
-cp2k	25.05 25.02 24.97 24.95
-svt-av1	19.22 19.20 19.17 19.17
-dav1d_summer_nature_1080pivf	16.55 16.55 16.55 16.52
-dav1d_summer_nature_4kivf	19.95 19.95 19.95 19.92
-dav1d_chimera_8b_1080pivf	19.32 19.32 19.30 19.30
-dav1d_chimera_10b_1080pivf	23.37 23.37 23.35 23.35
-cpuminer-opt_lbry	18.80 18.82 18.80 18.80
-cpuminer-opt_sha256t	18.85 18.85 18.85 18.85
-cpuminer-opt_skein	18.82 18.80 18.80 18.80
-cpuminer-opt_myr-gr	18.75 18.75 18.72 18.72
-cpuminer-opt_m7m	19.10 19.10 19.07 19.05
-cpuminer-opt_deep	18.97 18.97 18.95 18.95
-vpxenc	17.72 17.72 17.70 17.70
-mt-dgemm	23.67 23.65 23.57 23.65
-deepspeech	19.27 19.27 19.25 19.27
-octave-benchmark	14.05 14.02 14.00 13.95
-build-llvm	26.82 26.80 26.80 26.80
-build2	23.12 23.10 23.10 23.07
-build-gdb	21.65 21.60 21.62 21.60
-encode-flac	15.12 15.10 15.10 15.07
-openarenaG_800x600	21.27 21.32 21.30 21.27
-openarenaG_1024x768	22.20 22.17 22.17 22.17
-openarenaG_1920x1080	24.15 24.15 24.15 24.15
-openarenaG_2560x1440	20.60 20.60 20.57 20.60
-urbanterrorG_800x600	17.60 17.55 17.55 17.55
-urbanterrorG_1024x768	18.25 18.22 18.27 18.22
-urbanterrorG_1920x1080	19.82 19.82 19.82 19.82
-urbanterrorG_2560x1440	17.05 17.05 17.05 17.05
-unigine-valley_800x600	23.05 23.05 23.05 23.05
-unigine-valley_1024x768	23.25 23.25 23.25 23.22
-unigine-valley_1920x1080	24.75 24.75 24.75 24.75
-unigine-valley_2560x1440	25.95 25.95 25.95 25.95
-unigine-heaven_800x600	23.62 23.62 23.62 23.60
-unigine-heaven_1024x768	23.75 23.75 23.75 23.75
-unigine-heaven_1920x1080	24.77 24.80 24.77 24.77
-unigine-heaven_2560x1440	26.12 26.12 26.12 26.12
-glmark2_800x600	23.70 23.70 23.67 23.67
-glmark2_1024x768	23.72 23.72 23.70 23.70
-glmark2_1920x1080	23.70 23.70 23.67 23.67
-glmark2_2560x1440	23.75 23.75 23.72 23.75
-qgears_-image	20.77 20.60 20.57 20.57
-qgears_-render	20.65 20.47 20.45 20.45
-qgears_TEXT	19.65 19.37 19.37 19.37
-qgears_GEARSFANCY	20.65 20.47 20.45 20.45
-qgears_COMPO	16.42 14.90 14.90 14.90
-jxrend	15.20 15.22 15.25 15.25
-nexuiz_800x600	17.15 17.10 17.10 17.10
-nexuiz_1024x768	17.90 17.87 17.85 17.85
-nexuiz_1920x1080	19.55 19.52 19.50 19.50
-nexuiz_2560x1440	19.55 19.50 19.50 19.50
-xonotic_800x600	26.77 26.77 26.77 26.77
-xonotic_1024x768	26.77 26.77 26.77 26.77
-xonotic_1920x1080	26.77 26.77 26.77 26.77
-xonotic_2560x1440	26.77 26.77 26.77 26.77
-paraview_manyspheres	22.40 22.40 22.40 22.42
-paraview_waveletcontour	24.67 24.67 24.67 24.65
-paraview_waveletvolume	18.05 18.05 18.05 18.05
-indigobench_supercar	20.07 20.12 20.10 20.12
-indigobench_bedroom	20.07 20.10 20.10 20.10
-j2dbench_all	23.72 23.70 23.70 23.70
-j2dbench_images	20.60 20.57 20.57 20.57
-j2dbench_graphics	22.77 22.75 22.75 22.75
-j2dbench_text	14.92 14.87 14.92 14.90
+Tasks Stock Meltdown Spectre MDS AllOff
+aio-stress	16.42 16.25 16.25 16.25 16.25
+aircrack-ng	17.50 17.50 17.50 17.50 17.50
+aobench	16.90 16.90 16.87 16.90 16.87
+apache	18.27 18.12 18.05 18.07 17.77
+nginx	18.30 18.15 18.07 18.10 17.77
+crafty	15.80 15.80 15.77 15.77 15.77
+tscp	15.82 15.80 15.77 15.80 15.80
+stockfish	17.07 17.07 17.05 17.05 17.05
+p7zip	18.67 18.65 18.65 18.65 18.62
+bzip2	14.55 14.55 14.57 14.55 14.52
+zstd	14.90 14.90 14.90 14.90 14.87
+xz	18.47 18.45 18.47 18.45 18.45
+byte_register	18.35 18.32 18.30 18.32 18.30
+byte_dhry2	18.62 18.62 18.60 18.62 18.60
+byte_int	18.32 18.32 18.30 18.30 18.30
+byte_float	18.35 18.32 18.30 18.30 18.30
+scimark2	16.35 16.35 16.32 16.27 16.35
+fhourstones	19.52 19.52 19.50 19.52 19.47
+gmpbench	22.82 22.80 22.80 22.80 22.77
+dcraw	15.45 15.45 15.42 15.45 15.40
+sudokut	15.52 15.52 15.50 15.55 15.50
+nero2d	22.27 22.27 22.27 22.27 22.27
+minion	17.30 17.30 17.30 17.30 17.27
+hmmer	15.27 15.25 15.25 15.25 15.25
+rodinia_euler3d_cpu_double	19.27 19.27 19.25 19.27 19.25
+rodinia_lavaMD	23.07 23.07 23.05 23.07 23.05
+rodinia_sc_omp	18.72 18.72 18.72 18.72 18.72
+openssl	15.15 15.17 15.12 15.17 15.15
+sysbench_cpu	18.22 18.22 18.20 18.22 18.22
+sysbench_memory	13.90 13.90 13.87 13.90 13.87
+blake2s	16.62 16.67 16.62 16.65 16.65
+blogbench_read	19.47 19.47 19.45 19.47 19.42
+blogbench_write	19.37 19.35 19.32 19.35 19.30
+x264	16.47 16.47 16.47 16.47 16.47
+x265	17.30 17.30 17.27 17.30 17.30
+ctx_clock	21.82 20.40 21.80 20.15 17.55
+c-ray	22.87 22.87 22.85 22.87 22.87
+povray	21.85 21.85 21.85 21.85 21.85
+cachebench_read	15.67 15.67 15.65 15.65 15.67
+cachebench_write	15.87 15.90 15.85 15.90 15.90
+cachebench_mixed	18.77 18.80 18.75 18.77 18.75
+cachebench_memset	16.00 16.02 15.97 15.97 16.00
+cachebench_memcpy	15.90 15.90 15.87 15.87 15.90
+cloverleaf	20.40 20.35 20.32 20.32 20.32
+brlcad	26.57 26.52 26.50 26.55 26.60
+cpp-perf-bench_stepanov_abstraction	16.35 16.35 16.32 16.35 16.35
+cpp-perf-bench_stepanov_vector	18.65 18.67 18.62 18.67 18.65
+cpp-perf-bench_functionobjects	14.45 14.45 14.42 14.47 14.45
+cpp-perf-bench_atol	18.30 18.32 18.30 18.32 18.30
+cpp-perf-bench_ctype	16.30 16.30 16.27 16.30 16.30
+cpp-perf-bench_mathlib	22.42 22.45 22.42 22.45 22.45
+cpp-perf-bench_random_numbers	24.62 24.62 24.60 24.62 24.62
+dacapo_eclipse	20.82 20.80 20.77 20.80 20.77
+dacapo_h2	18.07 18.07 18.05 18.05 18.00
+dacapo_jython	17.45 17.42 17.45 17.42 17.42
+dacapo_tradebeans	19.47 19.60 19.55 19.55 19.62
+dacapo_tradesoap	15.60 15.57 15.62 15.60 15.55
+ebizzy	18.57 18.55 18.57 18.57 18.55
+glibc-bench_bench-ffsll	13.52 13.60 13.52 13.60 13.62
+glibc-bench_bench-ffs	13.47 13.55 13.47 13.52 13.55
+glibc-bench_bench-pthread_once	13.47 13.55 13.50 13.42 13.45
+glibc-bench_bench-tanh	13.55 13.57 13.55 13.45 13.42
+glibc-bench_bench-sqrt	13.62 13.70 13.60 13.65 13.72
+glibc-bench_bench-sin	15.42 15.42 15.40 15.37 15.35
+glibc-bench_bench-cos	15.40 15.40 15.37 15.35 15.32
+glibc-bench_bench-asinh	13.60 13.60 13.57 13.47 13.47
+glibc-bench_bench-atanh	13.65 13.65 13.60 13.50 13.47
+glibc-bench_bench-sincos	15.25 15.25 15.22 15.17 15.20
+glibc-bench_bench-sinh	13.72 13.75 13.70 13.60 13.60
+glibc-bench_bench-modf	13.60 13.67 13.55 13.52 13.57
+glibc-bench_bench-exp	16.42 16.45 16.42 16.42 16.40
+glibc-bench_bench-log2	13.55 13.57 13.52 13.45 13.45
+himeno	18.60 18.60 18.57 18.57 18.55
+hint_float	22.45 22.50 22.45 22.47 22.47
+hint_double	21.80 21.80 21.80 21.80 21.77
+hpcg	22.97 23.00 22.97 22.97 22.97
+build-linux-kernel	28.25 27.97 28.00 27.97 27.95
+john-the-ripper_bcrypt	18.45 18.45 18.45 18.42 18.42
+john-the-ripper_md5crypt	20.57 20.57 20.57 20.55 20.57
+lzbench_-ezstd	23.82 23.80 23.80 23.80 23.80
+lzbench_-ebrotli	23.57 23.57 23.57 23.55 23.57
+lzbench_-elibdeflate	21.65 21.67 21.65 21.65 21.65
+lzbench_-exz	23.70 23.67 23.67 23.65 23.65
+m-queens	19.92 19.95 19.92 19.92 19.92
+mbw_512	13.32 13.32 13.32 13.27 13.30
+mbw_1024	15.05 15.02 15.02 15.00 15.02
+mbw_4096	18.50 18.50 18.50 18.47 18.47
+mcperf_get	15.75 15.55 15.17 15.52 14.87
+mcperf_set	16.70 16.57 16.25 16.60 15.95
+mcperf_delete	15.77 15.62 15.20 15.57 14.87
+mcperf_add	16.70 16.57 16.25 16.62 15.95
+mcperf_replace	16.52 16.40 16.10 16.42 15.77
+mcperf_append	16.55 16.40 16.10 16.40 15.80
+mcperf_prepend	16.52 16.40 16.10 16.40 15.77
+mkl-dnn_conv_all	26.15 26.15 26.15 26.15 26.15
+mkl-dnn_conv_googlenet_v3	22.27 22.27 22.27 22.30 22.27
+mkl-dnn_conv_alexnet	17.30 17.30 17.30 17.27 17.27
+mkl-dnn_ip_1d	16.95 16.95 16.95 16.95 16.92
+mkl-dnn_ip_all	19.37 19.37 19.37 19.40 19.37
+mkl-dnn_rnn_training	19.10 19.10 19.10 19.12 19.10
+node-express-loadtest	14.57 14.50 14.50 14.50 14.37
+numenta-nab	25.52 25.52 25.52 25.52 25.52
+phpbench	14.75 14.75 14.72 14.70 14.72
+primesieve	20.12 20.12 20.12 20.10 20.12
+pymongo	16.95 17.00 16.90 16.90 16.90
+rbenchmark	16.52 16.60 16.52 16.40 17.20
+redis_get	14.62 14.57 14.57 14.55 14.55
+redis_set	14.52 14.50 14.55 14.55 14.62
+redis_lpush	14.50 14.50 14.45 14.57 14.45
+redis_lpop	14.50 14.52 14.50 14.47 14.57
+redis_sadd	14.42 14.45 14.45 14.40 14.57
+rust-prime	17.32 17.32 17.32 17.32 17.32
+scikit	17.95 17.97 17.95 17.95 17.95
+stress-ng_vecmath	18.17 17.02 17.02 17.02 17.02
+stress-ng_matrix	16.70 16.57 16.62 16.65 16.55
+stress-ng_fork	17.77 17.67 17.75 17.65 17.52
+stress-ng_msg	17.32 16.87 17.22 16.12 15.62
+stress-ng_sem	16.97 17.12 16.95 16.65 16.72
+stress-ng_sock	18.22 18.07 18.42 18.05 17.92
+stress-ng_switch	18.15 18.12 17.97 17.72 17.55
+stream	19.32 19.32 19.30 19.30 19.30
+swet	14.22 14.20 14.22 14.22 14.15
+t-test1	13.70 13.57 13.70 13.52 13.37
+tensorflow	19.97 20.02 20.02 20.05 20.05
+tinymembench	21.72 21.67 21.72 21.37 21.50
+ttsiod-renderer	19.60 19.62 19.60 19.60 19.60
+xsbench	20.20 20.22 20.20 20.20 20.20
+ramspeed_copy_int	20.67 20.67 20.65 20.62 20.65
+ramspeed_scale_int	20.67 20.67 20.67 20.62 20.65
+ramspeed_add_int	20.67 20.67 20.67 20.62 20.65
+ramspeed_triad_int	20.67 20.67 20.67 20.65 20.65
+ramspeed_copy_float	20.72 20.72 20.72 20.72 20.70
+ramspeed_scale_float	20.75 20.72 20.72 20.72 20.70
+ramspeed_add_float	20.75 20.72 20.72 20.72 20.70
+ramspeed_traid_float	20.72 20.72 20.72 20.72 20.70
+botan_AES-256	15.17 15.20 15.17 15.17 15.15
+botan_Blowfish	14.97 14.97 14.97 14.95 14.95
+botan_CAST-256	14.87 14.90 14.90 14.87 14.85
+botan_KASUMI	14.85 14.90 14.87 14.85 14.85
+botan_Twofish	15.10 15.10 15.10 15.10 15.10
+build-gcc	24.35 24.32 24.32 24.30 24.27
+javascimark2	16.02 15.95 16.05 15.97 16.02
+sunflow	17.92 17.92 17.95 17.97 17.92
+sqlitebench	17.12 17.15 16.92 17.07 17.02
+iozone_-s2096000	16.67 16.55 16.60 16.52 16.42
+iozone_-s4096000	18.92 18.85 18.87 18.85 18.72
+iozone_-s8126000	21.65 21.62 21.60 21.57 21.47
+dbench_1	21.25 21.22 21.22 21.22 21.22
+dbench_6	21.32 21.27 21.30 21.27 21.30
+dbench_12	21.40 21.42 21.42 21.40 21.37
+dbench_48	21.60 21.60 21.60 21.60 21.57
+dbench_128	21.70 21.70 21.70 21.67 21.65
+dbench_256	21.80 21.80 21.77 21.77 21.75
+postmark	17.02 17.02 17.02 17.07 16.97
+fs-mark_1000_Files_1MB_Size	14.52 14.60 14.55 14.50 14.50
+fs-mark_5000_Files_1MB_Size_4_Threads	20.00 19.97 19.95 19.97 19.97
+fs-mark_4000_Files_32_Sub_Dirs_1MB_Size	17.55 17.52 17.52 17.50 17.52
+bork	13.85 13.77 13.95 13.80 13.62
+ffmpeg	14.20 14.20 14.20 14.17 14.17
+encode-mp3	16.25 16.25 16.25 16.25 16.25
+graphics-magick_minify	17.47 17.47 17.47 17.47 17.45
+graphics-magick_gaussian	22.65 22.65 22.65 22.65 22.65
+graphics-magick_sharpen	24.52 24.52 24.52 24.52 24.52
+graphics-magick_rotate	19.10 19.05 19.05 19.02 18.97
+graphics-magick_resize	19.55 19.55 19.50 19.55 19.55
+rocksdb_fillseq	17.20 17.17 17.12 17.15 17.10
+rocksdb_fillrandom	17.87 17.85 17.80 17.82 17.75
+rocksdb_readrandom	17.80 17.80 17.80 17.80 17.80
+cassandra_write	11.87 11.80 11.80 11.77 11.77
+cassandra_read	12.12 12.07 12.05 12.05 12.02
+cassandra_mixed_1_1	12.12 12.07 12.05 12.05 12.02
+cassandra_mixed_1_3	12.10 12.07 12.05 12.05 12.02
+compilebench_initial_create	18.72 18.50 18.40 18.42 18.45
+compilebench_compile	18.52 18.47 18.42 18.42 18.45
+compilebench_read_compile_tree	18.52 18.50 18.40 18.42 18.45
+smallpt	17.95 17.97 17.97 17.97 17.95
+build-php	20.97 20.95 20.95 20.95 20.92
+inkscape	15.80 15.77 15.77 15.77 15.75
+rawtherapee	20.70 20.70 20.67 20.70 20.67
+tjbench	15.80 15.80 15.80 15.80 15.80
+darktable_masskrugNEF	15.52 15.52 15.50 15.50 15.50
+darktable_benchSRW	17.70 17.70 17.67 17.70 17.70
+darktable_server_roomNEF	14.97 14.97 14.95 14.95 14.95
+rsvg	14.77 14.70 14.72 14.72 14.65
+gegl_rotate-on-center	17.67 17.67 17.65 17.65 17.65
+gegl_scale-size	12.90 12.92 12.87 12.85 12.90
+gegl_antialias	17.67 17.67 17.65 17.65 17.65
+gegl_cartoon	19.85 19.85 19.82 19.80 19.80
+gegl_color-enhance	18.25 18.27 18.20 18.22 18.22
+gegl_crop	13.70 13.75 13.67 13.67 13.70
+gegl_wavelet-blur	18.52 18.55 18.50 18.50 18.50
+gegl_reflect	16.67 16.70 16.65 16.67 16.67
+gegl_tile-glass	16.85 16.87 16.82 16.82 16.80
+renaissance_akka-uct	16.25 16.35 16.25 16.27 16.25
+renaissance_reactors	16.82 16.80 16.85 16.77 16.67
+renaissance_als	15.25 15.30 15.25 15.22 15.27
+renaissance_naive-bayes	15.90 15.77 15.85 15.90 15.95
+renaissance_page-rank	18.07 18.10 18.07 18.12 18.10
+renaissance_db-shootout	15.97 16.05 15.97 15.92 15.82
+renaissance_dotty	14.65 14.65 14.67 14.67 14.67
+renaissance_finagle-chirper	14.97 14.95 14.95 14.97 14.92
+java-jmh	25.07 25.10 25.07 25.07 25.07
+schbench_2	16.90 16.90 16.87 16.90 16.90
+schbench_4	17.50 17.50 17.50 17.50 17.50
+schbench_8	17.52 17.52 17.52 17.52 17.52
+osbench_create_files	16.22 16.10 15.95 16.07 15.72
+osbench_create_processes	16.95 16.85 16.97 16.90 16.70
+osbench_create_threads	15.92 15.75 15.87 15.77 15.50
+osbench_launch_programs	15.92 15.77 15.87 15.75 15.57
+osbench_mem_alloc	15.60 15.55 15.57 15.52 15.42
+tiobench_write	18.32 18.30 18.22 18.30 18.27
+tiobench_read	18.55 18.50 18.55 18.57 18.50
+tiobench_random_write	19.67 19.62 19.52 19.60 19.57
+tiobench_random_read	18.42 18.40 18.47 18.50 18.45
+pybench	15.90 15.95 15.97 15.90 15.92
+network-loopback	18.25 18.12 18.02 18.10 17.85
+svt-vp9_tune_0	20.90 20.87 20.87 20.87 20.87
+svt-vp9_tune_1	20.87 20.87 20.87 20.87 20.87
+svt-vp9_tune_2	20.87 20.87 20.87 20.87 20.87
+svt-hevc	18.37 18.40 18.37 18.40 18.40
+tungsten_hair	20.25 20.25 20.22 20.25 20.25
+tungsten_water-caustic	19.15 19.15 19.15 19.15 19.15
+tungsten_non-exponential	16.77 16.80 16.77 16.77 16.77
+tungsten_volumetric-caustic	17.77 17.77 17.75 17.75 17.75
+ospray_san_miguel	19.37 19.35 19.37 19.37 19.37
+ospray_xfrog_forest	23.05 23.05 23.02 23.05 23.02
+ospray_magnetic_reconnection	18.72 18.72 18.70 18.72 18.70
+embree_crown	22.45 22.45 22.42 22.42 22.42
+embree_asian_dragon	21.92 21.92 21.92 21.90 21.90
+embree_asian_dragon_obj	22.32 22.32 22.32 22.32 22.32
+iperf_tcp	14.17 14.22 14.17 14.20 14.17
+iperf_udp	14.20 14.17 14.15 14.17 14.15
+oidn	18.42 18.42 18.45 18.42 18.42
+pyperformance-run_2to3	18.25 18.20 18.22 18.17 18.17
+pyperformance-run_chaos	15.72 15.72 15.75 15.72 15.72
+pyperformance-run_crypto_pyaes	15.47 15.47 15.47 15.45 15.47
+pyperformance-run_django_template	16.50 16.52 16.50 16.50 16.47
+pyperformance-run_float	15.50 15.47 15.50 15.50 15.47
+pyperformance-run_go	17.45 17.45 17.42 17.42 17.42
+pyperformance-run_json_loads	15.95 15.95 15.95 15.92 15.95
+pyperformance-run_nbody	15.65 15.62 15.65 15.62 15.62
+pyperformance-run_pathlib	16.62 16.55 16.55 16.52 16.45
+pyperformance-run_pickle_pure_python	16.37 16.37 16.35 16.35 16.35
+pyperformance-run_python_startup	18.90 18.87 18.90 18.85 18.80
+pyperformance-run_raytrace	19.12 19.12 19.12 19.10 19.12
+pyperformance-run_regex_compile	16.95 16.95 16.95 16.95 16.92
+rays1bench	18.82 18.80 18.80 18.82 18.80
+cp2k	25.05 25.02 24.97 24.95 24.85
+svt-av1	19.22 19.20 19.17 19.17 19.20
+dav1d_summer_nature_1080pivf	16.55 16.55 16.55 16.52 16.52
+dav1d_summer_nature_4kivf	19.95 19.95 19.95 19.92 19.95
+dav1d_chimera_8b_1080pivf	19.32 19.32 19.30 19.30 19.30
+dav1d_chimera_10b_1080pivf	23.37 23.37 23.35 23.35 23.35
+cpuminer-opt_lbry	18.80 18.82 18.80 18.80 18.80
+cpuminer-opt_sha256t	18.85 18.85 18.85 18.85 18.85
+cpuminer-opt_skein	18.82 18.80 18.80 18.80 18.80
+cpuminer-opt_myr-gr	18.75 18.75 18.72 18.72 18.75
+cpuminer-opt_m7m	19.10 19.10 19.07 19.05 19.07
+cpuminer-opt_deep	18.97 18.97 18.95 18.95 18.95
+vpxenc	17.72 17.72 17.70 17.70 17.70
+mt-dgemm	23.67 23.65 23.57 23.65 23.62
+deepspeech	19.27 19.27 19.25 19.27 19.27
+octave-benchmark	14.05 14.02 14.00 13.95 13.95
+build-llvm	26.82 26.80 26.80 26.80 26.77
+build2	23.12 23.10 23.10 23.07 23.07
+build-gdb	21.65 21.60 21.62 21.60 21.55
+encode-flac	15.12 15.10 15.10 15.07 15.07
+openarenaG_800x600	21.27 21.32 21.30 21.27 21.27
+openarenaG_1024x768	22.20 22.17 22.17 22.17 22.20
+openarenaG_1920x1080	24.15 24.15 24.15 24.15 24.15
+openarenaG_2560x1440	20.60 20.60 20.57 20.60 20.60
+urbanterrorG_800x600	17.60 17.55 17.55 17.55 17.55
+urbanterrorG_1024x768	18.25 18.22 18.27 18.22 18.22
+urbanterrorG_1920x1080	19.82 19.82 19.82 19.82 19.82
+urbanterrorG_2560x1440	17.05 17.05 17.05 17.05 17.05
+unigine-valley_800x600	23.05 23.05 23.05 23.05 23.05
+unigine-valley_1024x768	23.25 23.25 23.25 23.22 23.22
+unigine-valley_1920x1080	24.75 24.75 24.75 24.75 24.72
+unigine-valley_2560x1440	25.95 25.95 25.95 25.95 25.92
+unigine-heaven_800x600	23.62 23.62 23.62 23.60 23.62
+unigine-heaven_1024x768	23.75 23.75 23.75 23.75 23.75
+unigine-heaven_1920x1080	24.77 24.80 24.77 24.77 24.77
+unigine-heaven_2560x1440	26.12 26.12 26.12 26.12 26.12
+glmark2_800x600	23.70 23.70 23.67 23.67 23.70
+glmark2_1024x768	23.72 23.72 23.70 23.70 23.72
+glmark2_1920x1080	23.70 23.70 23.67 23.67 23.70
+glmark2_2560x1440	23.75 23.75 23.72 23.75 23.75
+qgears_-image	20.77 20.60 20.57 20.57 20.07
+qgears_-render	20.65 20.47 20.45 20.45 19.97
+qgears_TEXT	19.65 19.37 19.37 19.37 18.75
+qgears_GEARSFANCY	20.65 20.47 20.45 20.45 19.97
+qgears_COMPO	16.42 14.90 14.90 14.90 13.42
+jxrend	15.20 15.22 15.25 15.25 15.25
+nexuiz_800x600	17.15 17.10 17.10 17.10 17.10
+nexuiz_1024x768	17.90 17.87 17.85 17.85 17.87
+nexuiz_1920x1080	19.55 19.52 19.50 19.50 19.52
+nexuiz_2560x1440	19.55 19.50 19.50 19.50 19.50
+xonotic_800x600	26.77 26.77 26.77 26.77 26.77
+xonotic_1024x768	26.77 26.77 26.77 26.77 26.77
+xonotic_1920x1080	26.77 26.77 26.77 26.77 26.77
+xonotic_2560x1440	26.77 26.77 26.77 26.77 26.77
+paraview_manyspheres	22.40 22.40 22.40 22.42 22.37
+paraview_waveletcontour	24.67 24.67 24.67 24.65 24.67
+paraview_waveletvolume	18.05 18.05 18.05 18.05 18.72
+indigobench_supercar	20.07 20.12 20.10 20.12 20.12
+indigobench_bedroom	20.07 20.10 20.10 20.10 20.10
+j2dbench_all	23.72 23.70 23.70 23.70 23.70
+j2dbench_images	20.60 20.57 20.57 20.57 20.60
+j2dbench_graphics	22.77 22.75 22.75 22.75 22.75
+j2dbench_text	14.92 14.87 14.92 14.90 14.90

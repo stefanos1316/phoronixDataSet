@@ -54,7 +54,7 @@ dacapo_eclipse                          108
 dacapo_h2                           41
 dacapo_jython                           28
 dacapo_tradebeans                           171
-dacapo_tradesoap                           200
+dacapo_tradesoap                           13
 ebizzy                         30
 glibc-bench_bench-ffsll                         10
 glibc-bench_bench-ffs                         10

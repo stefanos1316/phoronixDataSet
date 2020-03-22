@@ -54,7 +54,7 @@ dacapo_eclipse               4093.85
 dacapo_h2               1348.47
 dacapo_jython               1074.34
 dacapo_tradebeans               2566.95
-dacapo_tradesoap               21629.29
+dacapo_tradesoap               506.31
 ebizzy               1681.50
 glibc-bench_bench-ffsll               233.08
 glibc-bench_bench-ffs               227.81
@@ -112,7 +112,7 @@ redis_sadd               342.38
 rust-prime               1025.00
 scikit               1319.11
 stress-ng_vecmath               911.60
-stress-ng_matrix               802.24
+stress-ng_matrix               752.24
 stress-ng_fork               1108.47
 stress-ng_msg               519.94
 stress-ng_sem               812.20

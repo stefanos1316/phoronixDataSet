@@ -1,96 +1,28 @@
+Using scaled threading model. 8 processors detected, 8 threads used to drive the workload, in a possible range of [1,128]
+Booting Geronimo Kernel (in Java 1.8.0_242)...
+Geronimo startup complete
 Successfully created tables
 ===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6757 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6319 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6442 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6676 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6646 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6492 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6509 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0x8582488433f3c5bf9e3b10a48603592430719cd1
-===== DaCapo 9.12-MR1 tradesoap FAILED =====
-Validation FAILED for tradesoap default
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6436 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6476 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0xd44090f3b0b3424645e20586f8c533dd75f96a85
-===== DaCapo 9.12-MR1 tradesoap FAILED =====
-Validation FAILED for tradesoap default
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6199 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6434 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6436 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6462 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6729 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6350 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-Could not perform sell of MTW 1433
-Could not perform sell of LUV 1018
-Could not perform sell of BIIB 1284
-Could not perform sell of MATK 961
-Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0xf62e66ae6a65da31843a049fbd640cef6dd22b30
-Digest validation failed for stderr.log, expecting 0xda39a3ee5e6b4b0d3255bfef95601890afd80709 found 0x6ce1bb36189a6a742cb154fdfd096c318f6399f6
-===== DaCapo 9.12-MR1 tradesoap FAILED =====
-Validation FAILED for tradesoap default
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6625 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6469 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6684 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6484 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6398 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6587 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-Digest validation failed for stdout.log, expecting 0x9e532fc3da9de06c04d182c3534ff559c023716f found 0xfdbba4099e172ab79eec58a92c9a0fd330aecbda
-===== DaCapo 9.12-MR1 tradesoap FAILED =====
-Validation FAILED for tradesoap default
+Resetting database and populating with 1098 stocks...
+Populating database with 192 users...
+Finished repopulating database
+Running 128 trade sessions from client via soap
+Completed 128 trade sessions comprising 2280 trader actions
+	Home ....................   447 (19.6%)
+	Portfolio ...............   173 ( 7.6%)
+	Quote ...................   959 (42.1%)
+	Buy .....................   202 ( 8.9%)
+	Sell ....................   192 ( 8.4%)
+	Update ..................    25 ( 1.1%)
+	Register ................    13 ( 0.6%)
+	Login ...................   128 ( 5.6%)
+	Logout ..................   141 ( 6.2%)
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6482 msec =====
+Shutting down Geronimo...
 
- Performance counter stats for 'system wide' (5 runs):
+ Performance counter stats for 'system wide':
 
-           3305,96 Joules power/energy-pkg/                                             ( +-  0,47% )
-            175,98 Joules power/energy-ram/                                             ( +-  0,74% )
+            496,76 Joules power/energy-pkg/                                           
+             21,41 Joules power/energy-ram/                                           
 
-            205,69 +- 2,83 seconds time elapsed  ( +-  1,37% )
-
+      13,510816482 seconds time elapsed
