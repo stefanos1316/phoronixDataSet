@@ -217,7 +217,7 @@ network-loopback                           49
 svt-vp9_tune_0                            78
 svt-vp9_tune_1                          77
 svt-vp9_tune_2                          77
-svt-hevc                            22
+svt-hevc                            27
 tungsten_hair                          60
 tungsten_water-caustic                          48
 tungsten_non-exponential                          14
