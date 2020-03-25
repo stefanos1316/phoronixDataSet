@@ -104,11 +104,11 @@ phpbench                          15
 primesieve                           52
 pymongo                           38
 rbenchmark                           26
-redis_get                           13
-redis_set                           13
-redis_lpush                          13
-redis_lpop                          13
-redis_sadd                          13
+redis_get                           66
+redis_set                           65
+redis_lpush                           66
+redis_lpop                           66
+redis_sadd                           66
 rust-prime                         24
 scikit                           46
 stress-ng_vecmath                            29
