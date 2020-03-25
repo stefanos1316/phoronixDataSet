@@ -1,0 +1,11 @@
+100000+0 records in
+100000+0 records out
+104857600000 bytes (105 GB, 98 GiB) copied, 38,922 s, 2,7 GB/s
+
+ Performance counter stats for 'system wide':
+
+          14881994      dTLB-load-misses                                            
+           1509929      iTLB-load-misses                                            
+
+      45,012313865 seconds time elapsed
+

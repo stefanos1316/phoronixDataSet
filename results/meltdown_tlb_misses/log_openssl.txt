@@ -1,0 +1,11 @@
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+Doing 4096 bit private rsa's for 10s: 1783 4096 bit private RSA's in 10.01s
+Doing 4096 bit public rsa's for 10s: 111006 4096 bit public RSA's in 10.00s
+
+ Performance counter stats for 'system wide':
+
+            332510      dTLB-load-misses                                            
+            125746      iTLB-load-misses                                            
+
+      20,057364668 seconds time elapsed
+

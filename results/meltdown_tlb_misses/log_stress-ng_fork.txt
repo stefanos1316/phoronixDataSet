@@ -1,0 +1,11 @@
+stress-ng: info:  [20552] defaulting to a 86400 second run per stressor
+stress-ng: info:  [20552] dispatching hogs: 8 fork
+stress-ng: info:  [20552] successful run completed in 22.79s
+
+ Performance counter stats for 'system wide':
+
+         181957624      dTLB-load-misses                                            
+          26943124      iTLB-load-misses                                            
+
+      22,793343904 seconds time elapsed
+

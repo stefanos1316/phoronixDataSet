@@ -1,0 +1,76 @@
+
+(rsvg-convert:14768): librsvg-WARNING **: 04:16:33.692: CSS parsing error
+
+
+(rsvg-convert:14768): librsvg-WARNING **: 04:16:33.692: CSS unrecoverable error
+
+parsing error: 2:4:could not recognize next production
+
+(rsvg-convert:14798): librsvg-WARNING **: 04:16:34.451: CSS parsing error
+
+
+(rsvg-convert:14798): librsvg-WARNING **: 04:16:34.451: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:14799): librsvg-WARNING **: 04:16:34.473: CSS parsing error
+
+
+(rsvg-convert:14799): librsvg-WARNING **: 04:16:34.473: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+
+(rsvg-convert:14800): librsvg-WARNING **: 04:16:34.497: CSS parsing error
+
+
+(rsvg-convert:14800): librsvg-WARNING **: 04:16:34.497: CSS unrecoverable error
+
+parsing error: 2:10:could not recognize next production
+Could not get dimensions for file struct-frag-01-t.svg
+
+(rsvg-convert:14865): librsvg-WARNING **: 04:16:35.815: unknown line cap style inherit
+
+
+(rsvg-convert:14865): librsvg-WARNING **: 04:16:35.815: unknown line join style inherit
+
+
+(rsvg-convert:14924): librsvg-WARNING **: 04:16:37.245: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:14924): librsvg-WARNING **: 04:16:37.245: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:14929): librsvg-WARNING **: 04:16:37.340: value '7' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:14929): librsvg-WARNING **: 04:16:37.340: value '-70%' for attribute 'baseline-shift' is not supported; only 'sub', 'super', and 'baseline' are supported
+
+
+(rsvg-convert:14950): librsvg-WARNING **: 04:16:38.111: CSS parsing error
+
+
+(rsvg-convert:14950): librsvg-WARNING **: 04:16:38.112: CSS parsing error
+
+
+(rsvg-convert:14950): librsvg-WARNING **: 04:16:38.112: CSS parsing error
+
+
+(rsvg-convert:14950): librsvg-WARNING **: 04:16:38.112: CSS parsing error
+
+
+(rsvg-convert:14950): librsvg-WARNING **: 04:16:38.112: CSS parsing error
+
+
+(rsvg-convert:14988): librsvg-WARNING **: 04:16:39.259: CSS parsing error
+
+
+(rsvg-convert:14988): librsvg-WARNING **: 04:16:39.259: CSS parsing error
+
+
+ Performance counter stats for 'system wide':
+
+           8051245      dTLB-load-misses                                            
+           3715149      iTLB-load-misses                                            
+
+      16,722472197 seconds time elapsed
+

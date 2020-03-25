@@ -1,0 +1,10 @@
+join: /tmp/2638.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+
+ Performance counter stats for 'system wide':
+
+           2092444      dTLB-load-misses                                            
+            758709      iTLB-load-misses                                            
+
+     122,481138261 seconds time elapsed
+

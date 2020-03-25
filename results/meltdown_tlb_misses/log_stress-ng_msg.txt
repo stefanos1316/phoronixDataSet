@@ -1,0 +1,11 @@
+stress-ng: info:  [25049] defaulting to a 86400 second run per stressor
+stress-ng: info:  [25049] dispatching hogs: 8 msg
+stress-ng: info:  [25049] successful run completed in 18.14s
+
+ Performance counter stats for 'system wide':
+
+           4475462      dTLB-load-misses                                            
+            327754      iTLB-load-misses                                            
+
+      18,148683713 seconds time elapsed
+

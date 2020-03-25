@@ -1,0 +1,17 @@
+Latency percentiles (usec)
+	50.0000th: 4648
+	75.0000th: 12848
+	90.0000th: 28000
+	95.0000th: 39232
+	*99.0000th: 58944
+	99.5000th: 72320
+	99.9000th: 107392
+	min=0, max=160001
+
+ Performance counter stats for 'system wide':
+
+           1139272      dTLB-load-misses                                            
+            857290      iTLB-load-misses                                            
+
+      30,055752659 seconds time elapsed
+
