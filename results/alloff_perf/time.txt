@@ -103,7 +103,7 @@ numenta-nab                           573
 phpbench                          15
 primesieve                           52
 pymongo                           38
-rbenchmark                            29
+rbenchmark                            24
 redis_get                           13
 redis_set                           14
 redis_lpush                          13

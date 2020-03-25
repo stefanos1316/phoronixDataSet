@@ -42,7 +42,7 @@ cachebench_mixed               1835.38
 cachebench_memset               602.23
 cachebench_memcpy               578.42
 cloverleaf               3519.32
-brlcad               41616.53
+brlcad               44792.06
 cpp-perf-bench_stepanov_abstraction               695.81
 cpp-perf-bench_stepanov_vector               1748.86
 cpp-perf-bench_functionobjects               324.66

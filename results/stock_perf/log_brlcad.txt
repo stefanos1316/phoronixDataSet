@@ -1,8 +1,709 @@
+WARNING: Passing unknown option [-P] to RT
+WARNING: Passing unknown option [8] to RT
+B R L - C A D   B E N C H M A R K
+=================================
+Running ./build/bench/benchmark on Τρι 24 Μαρ 2020 04:11:34 μμ EET
+Logging output to run-31756-benchmark.log
+Linux sgeorgiou 5.3.0-42-generic #34~18.04.1-Ubuntu SMP Fri Feb 28 13:42:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Using [./build/bench/../bin/rt] for RT
+Using [./build/bench/../share/db] for DB
+Using [./build/bench/../share/pix] for PIX
+Using [./build/bench/../share/pix] for LOG
+Using [./build/bench/../bin/pixcmp] for CMP
+Using [./build/bench/../bin/elapsed.sh] for ELP
+Using [32] for TIMEFRAME
+Using [300] for MAXTIME
+Using [2] for DEVIATION
+Using [5] for AVERAGE
+
+RT reports the following version information:
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+
+Minimum run time is 3 minutes, 12 seconds
+Maximum run time is 30 minutes
+Estimated time is 9 minutes, 36 seconds
+
+Running the BRL-CAD Benchmark tests... please wait ...
+
++++++ moss
+Frame  0:     312447 rays   in      0.04 sec =   8447738.49 rays/sec (RTFM)
+Frame  1:     625036 rays   in      0.07 sec =   8820639.11 rays/sec (RTFM)
+Frame  5:   10027840 rays   in      1.05 sec =   9530396.20 rays/sec (RTFM)
+Frame  9:  160059904 rays   in     16.93 sec =   9455748.51 rays/sec (RTFM)
+Frame 10:  319376384 rays   in     33.58 sec =   9512033.47 rays/sec (RTFM)
+Frame 11:  319441920 rays   in     33.78 sec =   9456270.14 rays/sec (RTFM)
+Frame 12:  319386624 rays   in     33.66 sec =   9488513.83 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+moss.pix: answers are RIGHT
++++++ world
+Frame  0:     423434 rays   in      0.11 sec =   3830980.82 rays/sec (RTFM)
+Frame  1:     851808 rays   in      0.22 sec =   3877909.37 rays/sec (RTFM)
+Frame  5:   13659968 rays   in      3.33 sec =   4101126.48 rays/sec (RTFM)
+Frame  8:  108966400 rays   in     26.54 sec =   4106503.33 rays/sec (RTFM)
+Frame  9:  219331072 rays   in     52.99 sec =   4138724.82 rays/sec (RTFM)
+Frame 10:  219297280 rays   in     54.10 sec =   4053378.12 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+world.pix: answers are RIGHT
++++++ star
+Frame  0:     271881 rays   in      0.07 sec =   3733846.96 rays/sec (RTFM)
+Frame  1:     543692 rays   in      0.14 sec =   3838768.64 rays/sec (RTFM)
+Frame  5:    8701632 rays   in      2.20 sec =   3949506.18 rays/sec (RTFM)
+Frame  8:   69732096 rays   in     17.32 sec =   4024947.87 rays/sec (RTFM)
+Frame  9:  139504640 rays   in     35.14 sec =   3969758.64 rays/sec (RTFM)
+Frame 10:  139464704 rays   in     36.18 sec =   3854411.42 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+star.pix: answers are RIGHT
++++++ bldg391
+Frame  0:     327224 rays   in      0.12 sec =   2746282.31 rays/sec (RTFM)
+Frame  1:     656238 rays   in      0.22 sec =   3016834.24 rays/sec (RTFM)
+Frame  5:   10536448 rays   in      3.28 sec =   3211234.58 rays/sec (RTFM)
+Frame  8:   83985664 rays   in     26.68 sec =   3147544.65 rays/sec (RTFM)
+Frame  9:  167646208 rays   in     53.01 sec =   3162735.98 rays/sec (RTFM)
+Frame 10:  168043008 rays   in     52.59 sec =   3195150.36 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+bldg391.pix: answers are RIGHT
++++++ m35
+Frame  0:     573281 rays   in      0.15 sec =   3838805.67 rays/sec (RTFM)
+Frame  1:    1146298 rays   in      0.29 sec =   4012851.09 rays/sec (RTFM)
+Frame  5:   18298016 rays   in      4.36 sec =   4198866.93 rays/sec (RTFM)
+Frame  7:   73192576 rays   in     17.61 sec =   4156916.19 rays/sec (RTFM)
+Frame  8:  146746368 rays   in     35.05 sec =   4186873.28 rays/sec (RTFM)
+Frame  9:  146374656 rays   in     35.03 sec =   4178296.20 rays/sec (RTFM)
+pixcmp pixels:   262070 matching,       74 off by 1,        0 off by many
+m35.pix: answers are RIGHT
++++++ sphflake
+Frame  0:    1647063 rays   in      0.35 sec =   4641748.64 rays/sec (RTFM)
+Frame  1:    3305302 rays   in      0.68 sec =   4854298.26 rays/sec (RTFM)
+Frame  5:   52653248 rays   in      9.93 sec =   5304487.23 rays/sec (RTFM)
+Frame  6:  105603968 rays   in     19.56 sec =   5399455.46 rays/sec (RTFM)
+Frame  7:  210761600 rays   in     39.63 sec =   5317715.66 rays/sec (RTFM)
+Frame  8:  210296064 rays   in     39.70 sec =   5296464.10 rays/sec (RTFM)
+Frame  9:  211192704 rays   in     39.54 sec =   5341658.35 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+sphflake.pix: answers are RIGHT
+
+... Done.
+
+Total testing time elapsed: 12 minutes, 11 seconds
+
+The following files have been generated and/or modified:
+  *.log ..... final log files for each individual raytrace test
+  *.pix ..... final pix image files for each individual raytrace test
+  *.log.* ... log files for previous frames and raytrace tests
+  *.pix.* ... pix image files for previous frames and raytrace tests
+  summary ... performance results summary, 2 lines per run
+
+Run './build/bench/benchmark clean' to remove generated pix files.
+
+Summary:
+Abs  sgeorgiou 9488513.83	4053378.12	3854411.42	3195150.36	4178296.20	5341658.35	5018568.04	Τρι 24 Μαρ 2020 04:23:46 μμ EET
+*vgr sgeorgiou 69254.16	60444.05	68742.84	59879.12	59107.31	360.39	52964.64	-P 8
+
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+Benchmark results indicate an approximate VGR performance metric of 52965
+Logarithmic VGR metric is 4.72  (natural logarithm is 10.88)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+These numbers seem to indicate that this machine is approximately 52965 times
+faster than the reference machine being used for comparison, a VAX 11/780
+running 4.3 BSD named VGR.  These results are in fact approximately 4.72
+orders of magnitude faster than the reference.
+
+Here are some other approximated VGR results for perspective:
+    120 on a 200MHz R5000 running IRIX 6.5
+    250 on a 500 MHz Pentium III running RedHat 7.1
+    550 on a dual 450 MHz UltraSPARC II running SunOS 5.8
+   1000 on a dual 500 MHz G4 PowerPC running Mac OS X 10.2
+   1500 on a dual 1.66 GHz Athlon MP 2000+ running RedHat 7.3
+  52000 on a 4x4 CPU 2.93 GHz Xeon running RHEL Server 5.4
+  65000 on a 512 CPU 400 MHz R12000 Running IRIX 6.5
+
+WARNING: This may not be an optimized compilation of BRL-CAD.
+Performance results may not be optimal.
+
+Official benchmark results are optimized builds with all run-time
+features enabled and optionally without compile-time debug symbols.
+
+For proper results, run 'make clean' and recompile with the
+following configure options added:
+  --enable-optimized
+
+Read the benchmark.tr document for more details on the BRL-CAD Benchmark.
+The document should be available in the 'doc' directory of any source
+or complete binary distribution of BRL-CAD.
+
+Output was saved to run-31756-benchmark.log from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/brlcad
+Benchmark testing complete.
+WARNING: Passing unknown option [-P] to RT
+WARNING: Passing unknown option [8] to RT
+B R L - C A D   B E N C H M A R K
+=================================
+Running ./build/bench/benchmark on Τρι 24 Μαρ 2020 04:23:46 μμ EET
+Logging output to run-5387-benchmark.log
+Linux sgeorgiou 5.3.0-42-generic #34~18.04.1-Ubuntu SMP Fri Feb 28 13:42:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Using [./build/bench/../bin/rt] for RT
+Using [./build/bench/../share/db] for DB
+Using [./build/bench/../share/pix] for PIX
+Using [./build/bench/../share/pix] for LOG
+Using [./build/bench/../bin/pixcmp] for CMP
+Using [./build/bench/../bin/elapsed.sh] for ELP
+Using [32] for TIMEFRAME
+Using [300] for MAXTIME
+Using [2] for DEVIATION
+Using [5] for AVERAGE
+
+RT reports the following version information:
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+
+Minimum run time is 3 minutes, 12 seconds
+Maximum run time is 30 minutes
+Estimated time is 9 minutes, 36 seconds
+
+Running the BRL-CAD Benchmark tests... please wait ...
+
++++++ moss
+Frame  0:     311992 rays   in      0.04 sec =   7872025.84 rays/sec (RTFM)
+Frame  1:     621614 rays   in      0.07 sec =   8794236.34 rays/sec (RTFM)
+Frame  5:    9948064 rays   in      1.08 sec =   9210254.67 rays/sec (RTFM)
+Frame  9:  159698944 rays   in     16.80 sec =   9507333.73 rays/sec (RTFM)
+Frame 10:  319354880 rays   in     33.70 sec =   9476032.97 rays/sec (RTFM)
+Frame 11:  320082944 rays   in     33.65 sec =   9511089.68 rays/sec (RTFM)
+Frame 12:  318753792 rays   in     33.98 sec =   9381364.62 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+moss.pix: answers are RIGHT
++++++ world
+Frame  0:     425984 rays   in      0.14 sec =   3128175.57 rays/sec (RTFM)
+Frame  1:     852946 rays   in      0.22 sec =   3946325.65 rays/sec (RTFM)
+Frame  5:   13617824 rays   in      3.38 sec =   4033197.15 rays/sec (RTFM)
+Frame  7:   54514432 rays   in     13.52 sec =   4033504.89 rays/sec (RTFM)
+Frame  8:  109507072 rays   in     26.56 sec =   4122356.90 rays/sec (RTFM)
+Frame  9:  217940480 rays   in     54.27 sec =   4015671.54 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+world.pix: answers are RIGHT
++++++ star
+Frame  0:     271911 rays   in      0.12 sec =   2300185.79 rays/sec (RTFM)
+Frame  1:     544846 rays   in      0.14 sec =   3839925.01 rays/sec (RTFM)
+Frame  5:    8716640 rays   in      2.19 sec =   3971480.88 rays/sec (RTFM)
+Frame  8:   69905920 rays   in     17.15 sec =   4076121.27 rays/sec (RTFM)
+Frame  9:  139492352 rays   in     34.98 sec =   3988059.74 rays/sec (RTFM)
+Frame 10:  139168768 rays   in     34.83 sec =   3995635.96 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+star.pix: answers are RIGHT
++++++ bldg391
+Frame  0:     329346 rays   in      0.15 sec =   2254649.82 rays/sec (RTFM)
+Frame  1:     654682 rays   in      0.21 sec =   3048870.23 rays/sec (RTFM)
+Frame  5:   10477728 rays   in      3.32 sec =   3158479.18 rays/sec (RTFM)
+Frame  8:   83995392 rays   in     26.64 sec =   3153377.89 rays/sec (RTFM)
+Frame  9:  167999488 rays   in     53.45 sec =   3142908.89 rays/sec (RTFM)
+Frame 10:  168100864 rays   in     52.56 sec =   3198342.54 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+bldg391.pix: answers are RIGHT
++++++ m35
+Frame  0:     579217 rays   in      0.14 sec =   4013133.06 rays/sec (RTFM)
+Frame  1:    1143672 rays   in      0.29 sec =   3946402.90 rays/sec (RTFM)
+Frame  5:   18336768 rays   in      4.38 sec =   4189078.27 rays/sec (RTFM)
+Frame  7:   73351168 rays   in     17.63 sec =   4161120.97 rays/sec (RTFM)
+Frame  8:  146715136 rays   in     34.48 sec =   4254518.80 rays/sec (RTFM)
+Frame  9:  146716160 rays   in     34.39 sec =   4266507.63 rays/sec (RTFM)
+Frame 10:  146724352 rays   in     35.19 sec =   4169542.55 rays/sec (RTFM)
+pixcmp pixels:   262070 matching,       74 off by 1,        0 off by many
+m35.pix: answers are RIGHT
++++++ sphflake
+Frame  0:    1647991 rays   in      0.36 sec =   4641193.71 rays/sec (RTFM)
+Frame  1:    3302686 rays   in      0.68 sec =   4836873.28 rays/sec (RTFM)
+Frame  5:   52644224 rays   in     10.20 sec =   5161378.70 rays/sec (RTFM)
+Frame  6:  105385216 rays   in     20.00 sec =   5269815.65 rays/sec (RTFM)
+Frame  7:  211272960 rays   in     39.38 sec =   5365294.79 rays/sec (RTFM)
+Frame  8:  210569856 rays   in     39.13 sec =   5381039.97 rays/sec (RTFM)
+Frame  9:  210633600 rays   in     39.97 sec =   5270126.51 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+sphflake.pix: answers are RIGHT
+
+... Done.
+
+Total testing time elapsed: 12 minutes, 5 seconds
+
+The following files have been generated and/or modified:
+  *.log ..... final log files for each individual raytrace test
+  *.pix ..... final pix image files for each individual raytrace test
+  *.log.* ... log files for previous frames and raytrace tests
+  *.pix.* ... pix image files for previous frames and raytrace tests
+  summary ... performance results summary, 2 lines per run
+
+Run './build/bench/benchmark clean' to remove generated pix files.
+
+Summary:
+Abs  sgeorgiou 9381364.62	4015671.54	3995635.96	3198342.54	4169542.55	5270126.51	5005113.95	Τρι 24 Μαρ 2020 04:35:51 μμ EET
+*vgr sgeorgiou 68472.11	59881.77	71261.56	59938.95	58983.48	355.57	53148.90	-P 8
+
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+Benchmark results indicate an approximate VGR performance metric of 53149
+Logarithmic VGR metric is 4.73  (natural logarithm is 10.88)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+These numbers seem to indicate that this machine is approximately 53149 times
+faster than the reference machine being used for comparison, a VAX 11/780
+running 4.3 BSD named VGR.  These results are in fact approximately 4.73
+orders of magnitude faster than the reference.
+
+Here are some other approximated VGR results for perspective:
+    120 on a 200MHz R5000 running IRIX 6.5
+    250 on a 500 MHz Pentium III running RedHat 7.1
+    550 on a dual 450 MHz UltraSPARC II running SunOS 5.8
+   1000 on a dual 500 MHz G4 PowerPC running Mac OS X 10.2
+   1500 on a dual 1.66 GHz Athlon MP 2000+ running RedHat 7.3
+  52000 on a 4x4 CPU 2.93 GHz Xeon running RHEL Server 5.4
+  65000 on a 512 CPU 400 MHz R12000 Running IRIX 6.5
+
+WARNING: This may not be an optimized compilation of BRL-CAD.
+Performance results may not be optimal.
+
+Official benchmark results are optimized builds with all run-time
+features enabled and optionally without compile-time debug symbols.
+
+For proper results, run 'make clean' and recompile with the
+following configure options added:
+  --enable-optimized
+
+Read the benchmark.tr document for more details on the BRL-CAD Benchmark.
+The document should be available in the 'doc' directory of any source
+or complete binary distribution of BRL-CAD.
+
+Output was saved to run-5387-benchmark.log from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/brlcad
+Benchmark testing complete.
+WARNING: Passing unknown option [-P] to RT
+WARNING: Passing unknown option [8] to RT
+B R L - C A D   B E N C H M A R K
+=================================
+Running ./build/bench/benchmark on Τρι 24 Μαρ 2020 04:35:51 μμ EET
+Logging output to run-11291-benchmark.log
+Linux sgeorgiou 5.3.0-42-generic #34~18.04.1-Ubuntu SMP Fri Feb 28 13:42:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Using [./build/bench/../bin/rt] for RT
+Using [./build/bench/../share/db] for DB
+Using [./build/bench/../share/pix] for PIX
+Using [./build/bench/../share/pix] for LOG
+Using [./build/bench/../bin/pixcmp] for CMP
+Using [./build/bench/../bin/elapsed.sh] for ELP
+Using [32] for TIMEFRAME
+Using [300] for MAXTIME
+Using [2] for DEVIATION
+Using [5] for AVERAGE
+
+RT reports the following version information:
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+
+Minimum run time is 3 minutes, 12 seconds
+Maximum run time is 30 minutes
+Estimated time is 9 minutes, 36 seconds
+
+Running the BRL-CAD Benchmark tests... please wait ...
+
++++++ moss
+Frame  0:     315484 rays   in      0.04 sec =   7058222.10 rays/sec (RTFM)
+Frame  1:     621800 rays   in      0.07 sec =   8598002.26 rays/sec (RTFM)
+Frame  5:    9979488 rays   in      1.06 sec =   9443243.95 rays/sec (RTFM)
+Frame  9:  159389184 rays   in     17.05 sec =   9350770.57 rays/sec (RTFM)
+Frame 10:  319426560 rays   in     34.41 sec =   9282235.38 rays/sec (RTFM)
+Frame 11:  318217216 rays   in     34.08 sec =   9337383.84 rays/sec (RTFM)
+Frame 12:  318073856 rays   in     34.30 sec =   9273512.64 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+moss.pix: answers are RIGHT
++++++ world
+Frame  0:     424112 rays   in      0.14 sec =   3043846.00 rays/sec (RTFM)
+Frame  1:     852930 rays   in      0.22 sec =   3966009.49 rays/sec (RTFM)
+Frame  5:   13623008 rays   in      3.37 sec =   4040712.61 rays/sec (RTFM)
+Frame  7:   54587904 rays   in     13.34 sec =   4092874.90 rays/sec (RTFM)
+Frame  8:  109609728 rays   in     26.29 sec =   4169667.05 rays/sec (RTFM)
+Frame  9:  218062336 rays   in     53.31 sec =   4090762.48 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+world.pix: answers are RIGHT
++++++ star
+Frame  0:     271939 rays   in      0.12 sec =   2239473.61 rays/sec (RTFM)
+Frame  1:     544868 rays   in      0.14 sec =   3849929.43 rays/sec (RTFM)
+Frame  5:    8717568 rays   in      2.18 sec =   4000894.49 rays/sec (RTFM)
+Frame  8:   69729280 rays   in     17.48 sec =   3988027.56 rays/sec (RTFM)
+Frame  9:  139479552 rays   in     34.49 sec =   4043690.55 rays/sec (RTFM)
+Frame 10:  139498496 rays   in     34.65 sec =   4026120.51 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+star.pix: answers are RIGHT
++++++ bldg391
+Frame  0:     327320 rays   in      0.11 sec =   2912371.71 rays/sec (RTFM)
+Frame  1:     654612 rays   in      0.22 sec =   3001464.94 rays/sec (RTFM)
+Frame  5:   10497728 rays   in      3.34 sec =   3146450.92 rays/sec (RTFM)
+Frame  7:   41919744 rays   in     13.23 sec =   3168198.32 rays/sec (RTFM)
+Frame  8:   83999488 rays   in     26.26 sec =   3199017.38 rays/sec (RTFM)
+Frame  9:  168031744 rays   in     52.72 sec =   3187229.15 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+bldg391.pix: answers are RIGHT
++++++ m35
+Frame  0:     572028 rays   in      0.15 sec =   3850400.42 rays/sec (RTFM)
+Frame  1:    1145870 rays   in      0.29 sec =   3966318.81 rays/sec (RTFM)
+Frame  5:   18336544 rays   in      4.39 sec =   4173506.28 rays/sec (RTFM)
+Frame  7:   73350528 rays   in     17.40 sec =   4215709.58 rays/sec (RTFM)
+Frame  8:  146349312 rays   in     34.97 sec =   4184864.93 rays/sec (RTFM)
+Frame  9:  146718720 rays   in     35.04 sec =   4186666.65 rays/sec (RTFM)
+pixcmp pixels:   262070 matching,       74 off by 1,        0 off by many
+m35.pix: answers are RIGHT
++++++ sphflake
+Frame  0:    1646792 rays   in      0.36 sec =   4623797.31 rays/sec (RTFM)
+Frame  1:    3289450 rays   in      0.68 sec =   4827479.56 rays/sec (RTFM)
+Frame  5:   52696384 rays   in     10.02 sec =   5260455.81 rays/sec (RTFM)
+Frame  6:  105596544 rays   in     19.90 sec =   5307244.36 rays/sec (RTFM)
+Frame  7:  210830976 rays   in     39.53 sec =   5333040.16 rays/sec (RTFM)
+Frame  8:  210738560 rays   in     39.21 sec =   5374441.61 rays/sec (RTFM)
+Frame  9:  211045120 rays   in     39.14 sec =   5392413.42 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+sphflake.pix: answers are RIGHT
+
+... Done.
+
+Total testing time elapsed: 10 minutes, 49 seconds
+
+The following files have been generated and/or modified:
+  *.log ..... final log files for each individual raytrace test
+  *.pix ..... final pix image files for each individual raytrace test
+  *.log.* ... log files for previous frames and raytrace tests
+  *.pix.* ... pix image files for previous frames and raytrace tests
+  summary ... performance results summary, 2 lines per run
+
+Run './build/bench/benchmark clean' to remove generated pix files.
+
+Summary:
+Abs  sgeorgiou 9273512.64	4090762.48	4026120.51	3187229.15	4186666.65	5392413.42	5026117.47	Τρι 24 Μαρ 2020 04:46:40 μμ EET
+*vgr sgeorgiou 67684.93	61001.52	71805.25	59730.68	59225.72	363.82	53301.98	-P 8
+
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+Benchmark results indicate an approximate VGR performance metric of 53302
+Logarithmic VGR metric is 4.73  (natural logarithm is 10.88)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+These numbers seem to indicate that this machine is approximately 53302 times
+faster than the reference machine being used for comparison, a VAX 11/780
+running 4.3 BSD named VGR.  These results are in fact approximately 4.73
+orders of magnitude faster than the reference.
+
+Here are some other approximated VGR results for perspective:
+    120 on a 200MHz R5000 running IRIX 6.5
+    250 on a 500 MHz Pentium III running RedHat 7.1
+    550 on a dual 450 MHz UltraSPARC II running SunOS 5.8
+   1000 on a dual 500 MHz G4 PowerPC running Mac OS X 10.2
+   1500 on a dual 1.66 GHz Athlon MP 2000+ running RedHat 7.3
+  52000 on a 4x4 CPU 2.93 GHz Xeon running RHEL Server 5.4
+  65000 on a 512 CPU 400 MHz R12000 Running IRIX 6.5
+
+WARNING: This may not be an optimized compilation of BRL-CAD.
+Performance results may not be optimal.
+
+Official benchmark results are optimized builds with all run-time
+features enabled and optionally without compile-time debug symbols.
+
+For proper results, run 'make clean' and recompile with the
+following configure options added:
+  --enable-optimized
+
+Read the benchmark.tr document for more details on the BRL-CAD Benchmark.
+The document should be available in the 'doc' directory of any source
+or complete binary distribution of BRL-CAD.
+
+Output was saved to run-11291-benchmark.log from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/brlcad
+Benchmark testing complete.
+WARNING: Passing unknown option [-P] to RT
+WARNING: Passing unknown option [8] to RT
+B R L - C A D   B E N C H M A R K
+=================================
+Running ./build/bench/benchmark on Τρι 24 Μαρ 2020 04:46:41 μμ EET
+Logging output to run-16868-benchmark.log
+Linux sgeorgiou 5.3.0-42-generic #34~18.04.1-Ubuntu SMP Fri Feb 28 13:42:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Using [./build/bench/../bin/rt] for RT
+Using [./build/bench/../share/db] for DB
+Using [./build/bench/../share/pix] for PIX
+Using [./build/bench/../share/pix] for LOG
+Using [./build/bench/../bin/pixcmp] for CMP
+Using [./build/bench/../bin/elapsed.sh] for ELP
+Using [32] for TIMEFRAME
+Using [300] for MAXTIME
+Using [2] for DEVIATION
+Using [5] for AVERAGE
+
+RT reports the following version information:
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+
+Minimum run time is 3 minutes, 12 seconds
+Maximum run time is 30 minutes
+Estimated time is 9 minutes, 36 seconds
+
+Running the BRL-CAD Benchmark tests... please wait ...
+
++++++ moss
+Frame  0:     313668 rays   in      0.04 sec =   7072918.02 rays/sec (RTFM)
+Frame  1:     623502 rays   in      0.07 sec =   8820790.69 rays/sec (RTFM)
+Frame  5:    9980864 rays   in      1.07 sec =   9341912.24 rays/sec (RTFM)
+Frame  9:  159716352 rays   in     16.82 sec =   9497530.01 rays/sec (RTFM)
+Frame 10:  317558784 rays   in     33.85 sec =   9380595.84 rays/sec (RTFM)
+Frame 11:  318251008 rays   in     33.55 sec =   9485309.24 rays/sec (RTFM)
+Frame 12:  318830592 rays   in     33.96 sec =   9388701.86 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+moss.pix: answers are RIGHT
++++++ world
+Frame  0:     426367 rays   in      0.11 sec =   3826634.82 rays/sec (RTFM)
+Frame  1:     854244 rays   in      0.21 sec =   3990559.00 rays/sec (RTFM)
+Frame  5:   13635008 rays   in      3.37 sec =   4044055.11 rays/sec (RTFM)
+Frame  7:   54577408 rays   in     13.26 sec =   4116700.46 rays/sec (RTFM)
+Frame  8:  109064192 rays   in     26.41 sec =   4128999.92 rays/sec (RTFM)
+Frame  9:  218968576 rays   in     52.94 sec =   4136450.16 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+world.pix: answers are RIGHT
++++++ star
+Frame  0:     275972 rays   in      0.07 sec =   3802792.79 rays/sec (RTFM)
+Frame  1:     544798 rays   in      0.14 sec =   3839157.19 rays/sec (RTFM)
+Frame  5:    8718688 rays   in      2.18 sec =   4007450.98 rays/sec (RTFM)
+Frame  8:   69737728 rays   in     17.22 sec =   4050558.12 rays/sec (RTFM)
+Frame  9:  139234816 rays   in     35.01 sec =   3976706.64 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+star.pix: answers are RIGHT
++++++ bldg391
+Frame  0:     328082 rays   in      0.11 sec =   2962074.83 rays/sec (RTFM)
+Frame  1:     655738 rays   in      0.22 sec =   3049591.36 rays/sec (RTFM)
+Frame  5:   10498400 rays   in      3.29 sec =   3190317.95 rays/sec (RTFM)
+Frame  8:   83991296 rays   in     26.70 sec =   3146031.22 rays/sec (RTFM)
+Frame  9:  167690240 rays   in     52.48 sec =   3195525.25 rays/sec (RTFM)
+Frame 10:  168022016 rays   in     52.94 sec =   3173842.07 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+bldg391.pix: answers are RIGHT
++++++ m35
+Frame  0:     571599 rays   in      0.15 sec =   3836025.72 rays/sec (RTFM)
+Frame  1:    1143306 rays   in      0.28 sec =   4011923.77 rays/sec (RTFM)
+Frame  5:   18340448 rays   in      4.30 sec =   4263579.23 rays/sec (RTFM)
+Frame  7:   73186560 rays   in     17.44 sec =   4197372.62 rays/sec (RTFM)
+Frame  8:  147032832 rays   in     34.83 sec =   4221301.84 rays/sec (RTFM)
+Frame  9:  146379264 rays   in     34.86 sec =   4198654.04 rays/sec (RTFM)
+pixcmp pixels:   262070 matching,       74 off by 1,        0 off by many
+m35.pix: answers are RIGHT
++++++ sphflake
+Frame  0:    1645714 rays   in      0.37 sec =   4462789.84 rays/sec (RTFM)
+Frame  1:    3297660 rays   in      0.68 sec =   4862267.92 rays/sec (RTFM)
+Frame  5:   52676128 rays   in     10.02 sec =   5259354.96 rays/sec (RTFM)
+Frame  6:  105617280 rays   in     19.79 sec =   5337844.86 rays/sec (RTFM)
+Frame  7:  210780544 rays   in     40.06 sec =   5261895.02 rays/sec (RTFM)
+Frame  8:  211253248 rays   in     39.53 sec =   5343563.53 rays/sec (RTFM)
+Frame  9:  211064064 rays   in     40.35 sec =   5230411.74 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+sphflake.pix: answers are RIGHT
+
+... Done.
+
+Total testing time elapsed: 10 minutes, 54 seconds
+
+The following files have been generated and/or modified:
+  *.log ..... final log files for each individual raytrace test
+  *.pix ..... final pix image files for each individual raytrace test
+  *.log.* ... log files for previous frames and raytrace tests
+  *.pix.* ... pix image files for previous frames and raytrace tests
+  summary ... performance results summary, 2 lines per run
+
+Run './build/bench/benchmark clean' to remove generated pix files.
+
+Summary:
+Abs  sgeorgiou 9388701.86	4136450.16	3976706.64	3173842.07	4198654.04	5230411.74	5017461.08	Τρι 24 Μαρ 2020 04:57:35 μμ EET
+*vgr sgeorgiou 68525.66	61682.82	70923.96	59479.79	59395.30	352.89	53393.40	-P 8
+
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+Benchmark results indicate an approximate VGR performance metric of 53393
+Logarithmic VGR metric is 4.73  (natural logarithm is 10.89)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+These numbers seem to indicate that this machine is approximately 53393 times
+faster than the reference machine being used for comparison, a VAX 11/780
+running 4.3 BSD named VGR.  These results are in fact approximately 4.73
+orders of magnitude faster than the reference.
+
+Here are some other approximated VGR results for perspective:
+    120 on a 200MHz R5000 running IRIX 6.5
+    250 on a 500 MHz Pentium III running RedHat 7.1
+    550 on a dual 450 MHz UltraSPARC II running SunOS 5.8
+   1000 on a dual 500 MHz G4 PowerPC running Mac OS X 10.2
+   1500 on a dual 1.66 GHz Athlon MP 2000+ running RedHat 7.3
+  52000 on a 4x4 CPU 2.93 GHz Xeon running RHEL Server 5.4
+  65000 on a 512 CPU 400 MHz R12000 Running IRIX 6.5
+
+WARNING: This may not be an optimized compilation of BRL-CAD.
+Performance results may not be optimal.
+
+Official benchmark results are optimized builds with all run-time
+features enabled and optionally without compile-time debug symbols.
+
+For proper results, run 'make clean' and recompile with the
+following configure options added:
+  --enable-optimized
+
+Read the benchmark.tr document for more details on the BRL-CAD Benchmark.
+The document should be available in the 'doc' directory of any source
+or complete binary distribution of BRL-CAD.
+
+Output was saved to run-16868-benchmark.log from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/brlcad
+Benchmark testing complete.
+WARNING: Passing unknown option [-P] to RT
+WARNING: Passing unknown option [8] to RT
+B R L - C A D   B E N C H M A R K
+=================================
+Running ./build/bench/benchmark on Τρι 24 Μαρ 2020 04:57:35 μμ EET
+Logging output to run-22275-benchmark.log
+Linux sgeorgiou 5.3.0-42-generic #34~18.04.1-Ubuntu SMP Fri Feb 28 13:42:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Using [./build/bench/../bin/rt] for RT
+Using [./build/bench/../share/db] for DB
+Using [./build/bench/../share/pix] for PIX
+Using [./build/bench/../share/pix] for LOG
+Using [./build/bench/../bin/pixcmp] for CMP
+Using [./build/bench/../bin/elapsed.sh] for ELP
+Using [32] for TIMEFRAME
+Using [300] for MAXTIME
+Using [2] for DEVIATION
+Using [5] for AVERAGE
+
+RT reports the following version information:
+BRL-CAD Release 7.28.0  The BRL-CAD Raytracer RT
+BRL-CAD Release 7.28.0  The BRL-CAD Ray-Tracing Library
+BRL-CAD Release 7.28.0  The BRL-CAD Numerical Computation Library
+BRL-CAD Release 7.28.0  The BRL-CAD Utility Library
+
+Minimum run time is 3 minutes, 12 seconds
+Maximum run time is 30 minutes
+Estimated time is 9 minutes, 36 seconds
+
+Running the BRL-CAD Benchmark tests... please wait ...
+
++++++ moss
+Frame  0:     311199 rays   in      0.05 sec =   6405644.07 rays/sec (RTFM)
+Frame  1:     618820 rays   in      0.07 sec =   8810534.43 rays/sec (RTFM)
+Frame  5:    9920480 rays   in      1.06 sec =   9385347.43 rays/sec (RTFM)
+Frame  9:  159381504 rays   in     16.84 sec =   9463902.08 rays/sec (RTFM)
+Frame 10:  319433728 rays   in     33.58 sec =   9513025.27 rays/sec (RTFM)
+Frame 11:  318146560 rays   in     34.43 sec =   9240853.60 rays/sec (RTFM)
+Frame 12:  319334400 rays   in     33.88 sec =   9424542.66 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+moss.pix: answers are RIGHT
++++++ world
+Frame  0:     425369 rays   in      0.13 sec =   3379384.17 rays/sec (RTFM)
+Frame  1:     854848 rays   in      0.24 sec =   3579330.82 rays/sec (RTFM)
+Frame  5:   13645536 rays   in      3.35 sec =   4075212.57 rays/sec (RTFM)
+Frame  8:  109318400 rays   in     26.89 sec =   4066049.07 rays/sec (RTFM)
+Frame  9:  217913856 rays   in     53.16 sec =   4099251.28 rays/sec (RTFM)
+Frame 10:  218377216 rays   in     53.84 sec =   4056144.52 rays/sec (RTFM)
+Frame 11:  218353664 rays   in     53.17 sec =   4106690.46 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+world.pix: answers are RIGHT
++++++ star
+Frame  0:     271817 rays   in      0.09 sec =   3039026.63 rays/sec (RTFM)
+Frame  1:     546120 rays   in      0.14 sec =   3871475.41 rays/sec (RTFM)
+Frame  5:    8701056 rays   in      2.17 sec =   4006055.78 rays/sec (RTFM)
+Frame  8:   69913344 rays   in     17.46 sec =   4004693.45 rays/sec (RTFM)
+Frame  9:  139201024 rays   in     34.94 sec =   3984499.85 rays/sec (RTFM)
+Frame 10:  139519488 rays   in     35.00 sec =   3986576.32 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+star.pix: answers are RIGHT
++++++ bldg391
+Frame  0:     327989 rays   in      0.11 sec =   2989276.30 rays/sec (RTFM)
+Frame  1:     655380 rays   in      0.21 sec =   3061993.95 rays/sec (RTFM)
+Frame  5:   10513600 rays   in      3.31 sec =   3176091.59 rays/sec (RTFM)
+Frame  7:   41919232 rays   in     13.31 sec =   3150298.62 rays/sec (RTFM)
+Frame  8:   83973376 rays   in     26.17 sec =   3208221.14 rays/sec (RTFM)
+Frame  9:  167599616 rays   in     52.44 sec =   3195848.60 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+bldg391.pix: answers are RIGHT
++++++ m35
+Frame  0:     571745 rays   in      0.15 sec =   3811696.86 rays/sec (RTFM)
+Frame  1:    1143762 rays   in      0.29 sec =   3969505.84 rays/sec (RTFM)
+Frame  5:   18340512 rays   in      4.32 sec =   4244592.07 rays/sec (RTFM)
+Frame  7:   73179136 rays   in     17.21 sec =   4253029.84 rays/sec (RTFM)
+Frame  8:  146743552 rays   in     34.98 sec =   4194797.76 rays/sec (RTFM)
+Frame  9:  146708736 rays   in     34.45 sec =   4258337.84 rays/sec (RTFM)
+Frame 10:  146719744 rays   in     34.90 sec =   4204578.97 rays/sec (RTFM)
+pixcmp pixels:   262070 matching,       74 off by 1,        0 off by many
+m35.pix: answers are RIGHT
++++++ sphflake
+Frame  0:    1650447 rays   in      0.35 sec =   4666382.52 rays/sec (RTFM)
+Frame  1:    3289116 rays   in      0.76 sec =   4308151.65 rays/sec (RTFM)
+Frame  5:   52616352 rays   in     10.12 sec =   5201231.29 rays/sec (RTFM)
+Frame  6:  105376256 rays   in     19.83 sec =   5314502.98 rays/sec (RTFM)
+Frame  7:  211149184 rays   in     38.78 sec =   5445172.37 rays/sec (RTFM)
+Frame  8:  211179648 rays   in     39.26 sec =   5378984.49 rays/sec (RTFM)
+Frame  9:  210633088 rays   in     39.40 sec =   5345728.60 rays/sec (RTFM)
+pixcmp pixels:   262144 matching,        0 off by 1,        0 off by many
+sphflake.pix: answers are RIGHT
+
+... Done.
+
+Total testing time elapsed: 12 minutes, 57 seconds
+
+The following files have been generated and/or modified:
+  *.log ..... final log files for each individual raytrace test
+  *.pix ..... final pix image files for each individual raytrace test
+  *.log.* ... log files for previous frames and raytrace tests
+  *.pix.* ... pix image files for previous frames and raytrace tests
+  summary ... performance results summary, 2 lines per run
+
+Run './build/bench/benchmark clean' to remove generated pix files.
+
+Summary:
+Abs  sgeorgiou 9424542.66	4106690.46	3986576.32	3195848.60	4204578.97	5345728.60	5043994.26	Τρι 24 Μαρ 2020 05:10:32 μμ EET
+*vgr sgeorgiou 68787.26	61239.04	71099.98	59892.21	59479.11	360.67	53476.37	-P 8
+
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+Benchmark results indicate an approximate VGR performance metric of 53476
+Logarithmic VGR metric is 4.73  (natural logarithm is 10.89)
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+These numbers seem to indicate that this machine is approximately 53476 times
+faster than the reference machine being used for comparison, a VAX 11/780
+running 4.3 BSD named VGR.  These results are in fact approximately 4.73
+orders of magnitude faster than the reference.
+
+Here are some other approximated VGR results for perspective:
+    120 on a 200MHz R5000 running IRIX 6.5
+    250 on a 500 MHz Pentium III running RedHat 7.1
+    550 on a dual 450 MHz UltraSPARC II running SunOS 5.8
+   1000 on a dual 500 MHz G4 PowerPC running Mac OS X 10.2
+   1500 on a dual 1.66 GHz Athlon MP 2000+ running RedHat 7.3
+  52000 on a 4x4 CPU 2.93 GHz Xeon running RHEL Server 5.4
+  65000 on a 512 CPU 400 MHz R12000 Running IRIX 6.5
+
+WARNING: This may not be an optimized compilation of BRL-CAD.
+Performance results may not be optimal.
+
+Official benchmark results are optimized builds with all run-time
+features enabled and optionally without compile-time debug symbols.
+
+For proper results, run 'make clean' and recompile with the
+following configure options added:
+  --enable-optimized
+
+Read the benchmark.tr document for more details on the BRL-CAD Benchmark.
+The document should be available in the 'doc' directory of any source
+or complete binary distribution of BRL-CAD.
+
+Output was saved to run-22275-benchmark.log from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/brlcad
+Benchmark testing complete.
 
  Performance counter stats for 'system wide' (5 runs):
 
-          41287,56 Joules power/energy-pkg/                                             ( +-  1,40% )
-            328,97 Joules power/energy-ram/                                             ( +-  1,40% )
+          44436,84 Joules power/energy-pkg/                                             ( +-  0,44% )
+            355,22 Joules power/energy-ram/                                             ( +-  0,46% )
 
-            654,65 +- 9,10 seconds time elapsed  ( +-  1,39% )
-
+            707,55 +- 24,50 seconds time elapsed  ( +-  0,46% )
