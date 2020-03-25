@@ -1,0 +1,69 @@
+make: *** No rule to make target 'distclean'.  Stop.
+In file included from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Support/Unix/Unix.h:24:0,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Support/Unix/Process.inc:14,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Support/Process.cpp:94:
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/Support/Errno.h:34:13: warning: mangled name for ‘decltype (F(llvm::sys::RetryAfterSignal::As ...)) llvm::sys::RetryAfterSignal(const FailT&, const Fun&, const Args& ...) [with FailT = int; Fun = int(int, stat*) throw (); Args = {int, stat*}]’ will change in C++17 because the exception specification is part of a function type [-Wnoexcept-type]
+ inline auto RetryAfterSignal(const FailT &Fail, const Fun &F,
+             ^~~~~~~~~~~~~~~~
+In file included from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/StringRef.h:13:0,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/StringMap.h:17,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/Support/Host.h:17,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/Hashing.h:49,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/APFloat.h:21,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/AsmParser/LLLexer.h:18,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/AsmParser/LLLexer.cpp:14:
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/STLExtras.h:813:6: warning: mangled name for ‘bool llvm::all_of(R&&, UnaryPredicate) [with R = llvm::StringRef&; UnaryPredicate = int (*)(int) throw ()]’ will change in C++17 because the exception specification is part of a function type [-Wnoexcept-type]
+ bool all_of(R &&Range, UnaryPredicate P) {
+      ^~~~~~
+In file included from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/StringRef.h:13:0,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/StringMap.h:17,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/Support/Host.h:17,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/Hashing.h:49,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/Support/CommandLine.h:23,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCTargetDesc.h:17,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/Hexagon.h:45,
+                 from /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/AsmParser/HexagonAsmParser.cpp:12:
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/include/llvm/ADT/STLExtras.h:853:6: warning: mangled name for ‘decltype (llvm::adl_begin(Range)) llvm::remove_if(R&&, UnaryPredicate) [with R = std::__cxx11::basic_string<char>&; UnaryPredicate = int (*)(int) throw ()]’ will change in C++17 because the exception specification is part of a function type [-Wnoexcept-type]
+ auto remove_if(R &&Range, UnaryPredicate P) -> decltype(adl_begin(Range)) {
+      ^~~~~~~~~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCDuplexInfo.cpp: In function ‘llvm::MCInst llvm::HexagonMCInstrInfo::deriveSubInst(const llvm::MCInst&)’:
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCDuplexInfo.cpp:786:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     if (Value == 2) {
+     ^~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCDuplexInfo.cpp:792:3: note: here
+   case Hexagon::A4_combineir:
+   ^~~~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCDuplexInfo.cpp:898:12: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     } else if (Value == 1) {
+            ^~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCDuplexInfo.cpp:904:3: note: here
+   case Hexagon::S2_storerb_io:
+   ^~~~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCDuplexInfo.cpp:934:12: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     } else if (Inst.getOperand(0).getReg() == Hexagon::R29) {
+            ^~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCDuplexInfo.cpp:940:3: note: here
+   case Hexagon::S2_storeri_io:
+   ^~~~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/HexagonISelDAGToDAGHVX.cpp:736:6: warning: ‘void {anonymous}::ResultStack::print(llvm::raw_ostream&, const llvm::SelectionDAG&) const’ defined but not used [-Wunused-function]
+ void ResultStack::print(raw_ostream &OS, const SelectionDAG &G) const {
+      ^~~~~~~~~~~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/Hexagon/HexagonISelDAGToDAGHVX.cpp:275:6: warning: ‘void {anonymous}::Coloring::dump() const’ defined but not used [-Wunused-function]
+ void Coloring::dump() const {
+      ^~~~~~~~
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/AMDGPU/R600ISelLowering.cpp: In member function ‘llvm::SDValue llvm::R600TargetLowering::OptimizeSwizzle(llvm::SDValue, llvm::SDValue*, llvm::SelectionDAG&, const llvm::SDLoc&) const’:
+/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/build-llvm/lib/Target/AMDGPU/R600ISelLowering.cpp:1689:22: warning: array subscript is above array bounds [-Warray-bounds]
+       if (NewBldVec[i] == NewBldVec[j]) {
+           ~~~~~~~~~~~^
+In member function ‘llvm::SUnit* llvm::R600SchedStrategy::pickOther(int)’:
+cc1plus: warning: ‘void* __builtin_memset(void*, int, long unsigned int)’: specified size 18446744073709551608 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+
+ Performance counter stats for 'system wide':
+
+       12292172133      dTLB-load-misses                                            
+        3968853271      iTLB-load-misses                                            
+
+     870,404734684 seconds time elapsed
+

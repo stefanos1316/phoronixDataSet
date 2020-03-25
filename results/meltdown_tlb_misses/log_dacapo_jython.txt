@@ -1,0 +1,10 @@
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3516 msec =====
+
+ Performance counter stats for 'system wide':
+
+           9485391      dTLB-load-misses                                            
+           4604905      iTLB-load-misses                                            
+
+       6,338309181 seconds time elapsed
+

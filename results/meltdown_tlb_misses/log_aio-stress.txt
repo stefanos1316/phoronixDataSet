@@ -1,0 +1,20 @@
+dropping thread count to the number of contexts 1
+file size 5120MB, record size 64KB, depth 64, ios per iteration 8
+max io_submit 8, buffer alignment set to 4KB
+threads 1 files 1 contexts 1 context offset 2MB verification off
+write on temp (276.03 MB/s) 5120.00 MB in 18.55s
+thread 0 write totals (141.15 MB/s) 5120.00 MB in 36.27s
+read on temp (9803.94 MB/s) 5120.00 MB in 0.52s
+thread 0 read totals (9307.70 MB/s) 5120.00 MB in 0.55s
+random write on temp (597.84 MB/s) 5120.00 MB in 8.56s
+thread 0 random write totals (102.67 MB/s) 5120.00 MB in 49.87s
+random read on temp (8473.86 MB/s) 5120.00 MB in 0.60s
+thread 0 random read totals (8100.02 MB/s) 5120.00 MB in 0.63s
+
+ Performance counter stats for 'system wide':
+
+           6069575      dTLB-load-misses                                            
+            997443      iTLB-load-misses                                            
+
+      87,407223978 seconds time elapsed
+

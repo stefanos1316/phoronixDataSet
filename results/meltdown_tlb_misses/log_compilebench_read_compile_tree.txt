@@ -1,0 +1,45 @@
+using working directory t, 10 intial dirs 100 runs
+native unpatched native-0 222MB in 0.41 seconds (542.38 MB/s)
+native patched native-0 109MB in 0.15 seconds (731.14 MB/s)
+native patched compiled native-0 691MB in 0.29 seconds (2384.81 MB/s)
+create dir kernel-0 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-1 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-2 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-3 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-4 222MB in 0.40 seconds (555.94 MB/s)
+create dir kernel-5 222MB in 0.65 seconds (342.11 MB/s)
+create dir kernel-6 222MB in 0.41 seconds (542.38 MB/s)
+create dir kernel-7 222MB in 0.48 seconds (463.28 MB/s)
+create dir kernel-8 222MB in 1.86 seconds (119.56 MB/s)
+create dir kernel-9 222MB in 2.44 seconds (91.14 MB/s)
+compile dir kernel-5 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-2 680MB in 0.29 seconds (2347.01 MB/s)
+compile dir kernel-8 680MB in 0.30 seconds (2268.78 MB/s)
+compile dir kernel-1 680MB in 4.27 seconds (159.40 MB/s)
+compile dir kernel-9 680MB in 6.21 seconds (109.60 MB/s)
+compile dir kernel-6 680MB in 7.24 seconds (94.01 MB/s)
+compile dir kernel-7 680MB in 7.90 seconds (86.16 MB/s)
+compile dir kernel-3 680MB in 9.62 seconds (70.75 MB/s)
+compile dir kernel-4 680MB in 8.83 seconds (77.08 MB/s)
+compile dir kernel-0 680MB in 8.32 seconds (81.81 MB/s)
+read dir kernel-0 in 26.34 34.28 MB/s
+read dir kernel-8 in 22.67 39.83 MB/s
+read dir kernel-8 in 0.30 3010.03 MB/s
+delete kernel-6 in 2.30 seconds
+delete kernel-4 in 1.34 seconds
+delete kernel-1 in 1.17 seconds
+delete kernel-5 in 1.68 seconds
+delete kernel-3 in 1.09 seconds
+delete kernel-2 in 1.10 seconds
+delete kernel-8 in 0.93 seconds
+delete kernel-0 in 1.39 seconds
+delete kernel-7 in 0.87 seconds
+delete kernel-9 in 0.79 seconds
+
+ Performance counter stats for 'system wide':
+
+          21738961      dTLB-load-misses                                            
+           9975857      iTLB-load-misses                                            
+
+     188,831474601 seconds time elapsed
+

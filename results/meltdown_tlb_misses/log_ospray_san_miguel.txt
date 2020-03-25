@@ -1,0 +1,12 @@
+Warning: more than 4 verts in face!
+         Polygons not supported.
+         Reloading as a triangle mesh.
+#osp:sg: failed to load texture 'sanm/06-30-1997.png'
+
+ Performance counter stats for 'system wide':
+
+         202353115      dTLB-load-misses                                            
+           6040349      iTLB-load-misses                                            
+
+      58,535780130 seconds time elapsed
+

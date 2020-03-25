@@ -1,0 +1,9 @@
+Loading required package: Matrix
+
+ Performance counter stats for 'system wide':
+
+         115540989      dTLB-load-misses                                            
+           2335381      iTLB-load-misses                                            
+
+      27,174525104 seconds time elapsed
+

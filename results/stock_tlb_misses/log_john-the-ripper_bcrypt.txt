@@ -1,0 +1,9 @@
+Will run 8 OpenMP threads
+
+ Performance counter stats for 'system wide':
+
+            903590      dTLB-load-misses                                            
+            709419      iTLB-load-misses                                            
+
+      30,361468449 seconds time elapsed
+

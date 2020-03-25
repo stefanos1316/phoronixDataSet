@@ -1,0 +1,10 @@
+Results: 8 threads 300 iter 45.24s user 194.623242s total 1.541 iter/s 6.631 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+
+ Performance counter stats for 'system wide':
+
+          65807264      dTLB-load-misses                                            
+          16164427      iTLB-load-misses                                            
+
+     194,630038794 seconds time elapsed
+
