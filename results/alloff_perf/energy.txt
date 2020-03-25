@@ -98,12 +98,12 @@ mkl-dnn_conv_alexnet               1009.11
 mkl-dnn_ip_1d               879.72
 mkl-dnn_ip_all               2340.46
 mkl-dnn_rnn_training               2099.55
-node-express-loadtest               314.74
+node-express-loadtest               311.74
 numenta-nab               27196.69
 phpbench               361.61
 primesieve               3145.81
 pymongo               867.78
-rbenchmark               977.99
+rbenchmark		692.70
 redis_get               1166.79
 redis_set               1167.15
 redis_lpush               1166.98
