@@ -104,11 +104,11 @@ phpbench               359.62
 primesieve               3114.87
 pymongo               870.28
 rbenchmark               710.83
-redis_get               338.13
-redis_set               337.34
-redis_lpush               340.60
-redis_lpop               328.73
-redis_sadd               320.07
+redis_get               1685.24
+redis_set               1680.67
+redis_lpush               1665.26
+redis_lpop               1672.95
+redis_sadd               1680.85
 rust-prime               1026.45
 scikit               1319.51
 stress-ng_vecmath               910.38
