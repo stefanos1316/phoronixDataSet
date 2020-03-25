@@ -1,0 +1,8 @@
+\begin{table}[]
+\begin{tabular}{lllllllllll}
+Task              & Stock  & Meltdown & Spectre & MDS     & AllOff  & Stock & Meltdown & Spectre & MDS & AllOff \\
+iperf\_tcp        & 290.97 & 296.56   & 291.63  & 293.65  & 292.78  & 33    & 33       & 33      & 33  & 33     \\
+iperf\_udp        & 295.33 & 291.84   & 289.48  & 292.84  & 288.57  & 33    & 33       & 33      & 33  & 33     \\
+network\_loopback & 1488.2 & 1415.31  & 1365.79 & 1398.58 & 1267.09 & 49    & 45       & 45      & 46  & 40    
+\end{tabular}
+\end{table}
