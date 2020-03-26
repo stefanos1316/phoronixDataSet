@@ -43,7 +43,7 @@ cachebench_mixed	11.02 11.02 11.02 11.02 11.02
 cachebench_memset	7.92 7.92 7.92 7.92 7.92
 cachebench_memcpy	7.72 7.72 7.72 7.72 7.72
 cloverleaf	11.32 11.22 11.22 11.22 11.22
-brlcad	16.20 16.15 16.12 16.22 16.20
+brlcad	16.40 16.15 16.12 16.22 16.20
 cpp-perf-bench_stepanov_abstraction	8.87 8.87 8.87 8.87 8.87
 cpp-perf-bench_stepanov_vector	11.17 11.17 11.17 11.17 11.17
 cpp-perf-bench_functionobjects	6.75 6.75 6.75 6.75 6.75
@@ -104,12 +104,12 @@ numenta-nab	15.87 15.87 15.87 15.85 15.87
 phpbench	6.75 6.75 6.75 6.75 6.75
 primesieve	9.87 9.87 9.87 9.87 9.87
 pymongo	9.07 9.15 9.02 9.07 9.07
-rbenchmark	8.12 8.12 8.12 8.02 8.40
-redis_get	6.40 6.40 6.40 6.40 6.40
-redis_set	6.40 6.40 6.40 6.40 6.57
-redis_lpush	6.40 6.40 6.40 6.40 6.40
-redis_lpop	6.40 6.40 6.40 6.40 6.40
-redis_sadd	6.40 6.20 6.40 6.20 6.40
+rbenchmark	8.12 8.12 8.12 8.02 7.92
+redis_get	10.45 9.92 10.15 10.00 8.95
+redis_set	10.42 9.87 10.15 9.95 8.95
+redis_lpush	10.45 9.92 10.15 9.95 8.95
+redis_lpop	10.45 9.87 10.15 9.95 8.95
+redis_sadd	10.45 9.92 10.15 9.95 8.95
 rust-prime	7.92 7.92 7.92 7.92 7.92
 scikit	9.55 9.55 9.55 9.50 9.50
 stress-ng_vecmath	8.40 7.22 7.22 7.22 7.22
@@ -218,7 +218,7 @@ network-loopback	9.72 9.50 9.50 9.55 9.20
 svt-vp9_tune_0	10.87 10.87 10.85 10.87 10.85
 svt-vp9_tune_1	10.85 10.85 10.82 10.85 10.82
 svt-vp9_tune_2	10.85 10.85 10.82 10.85 10.82
-svt-hevc	7.72 8.22 8.22 8.22 8.22
+svt-hevc	8.22 8.22 8.22 8.22 8.22
 tungsten_hair	10.22 10.22 10.22 10.22 10.22
 tungsten_water-caustic	9.67 9.67 9.67 9.67 9.67
 tungsten_non-exponential	6.57 6.57 6.57 6.57 6.57
@@ -302,7 +302,7 @@ xonotic_1920x1080	16.95 16.95 16.95 16.95 16.95
 xonotic_2560x1440	16.95 16.95 16.95 16.95 16.95
 paraview_manyspheres	14.70 14.70 14.70 14.72 14.70
 paraview_waveletcontour	16.65 16.65 16.65 16.62 16.67
-paraview_waveletvolume	8.57 8.57 8.57 8.57 9.87
+paraview_waveletvolume	8.57 8.57 8.57 8.57 8.57
 indigobench_supercar	10.27 10.27 10.27 10.27 10.27
 indigobench_bedroom	10.30 10.30 10.30 10.30 10.30
 j2dbench_all	14.70 14.70 14.70 14.70 14.70
