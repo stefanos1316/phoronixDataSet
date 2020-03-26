@@ -2,7 +2,7 @@ aio-stress               715.01
 aircrack-ng               1104.03
 aobench               868.11
 apache               1507.68
-nginx               1512.14
+nginx               936.24
 crafty               559.49
 tscp               561.16
 stockfish               931.14
