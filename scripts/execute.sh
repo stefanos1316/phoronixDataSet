@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="mds_perf"
+scenario="alloff_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/tasks_test"
@@ -165,6 +165,8 @@ tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 
 		   "ttsiod-renderer" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" "tungsten volumetric-caustic" \
 		   "vpxenc" "x264" "x265" "xsbench -t 8 -s large -l 30000000" "xz" "zstd")
 
+tasks=("nginx")
+
 function startServers {
 	case $1 in
 		("apache")
@@ -253,7 +255,7 @@ for task in "${tasks[@]}"; do
 				perf stat -a -r 5 -e $perfComponet ab -n 1000000 -c 100 http://localhost:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				
 			else
-				perf stat -a -r 5 -e $perfComponent ab -n 1000000 -c 100 http://0.0.0.0:80/ 2> ../results/${scenario}/log_${taskName}.txt
+				perf stat -a -r 5 -e $perfComponent ab -n 1000000 -c 100 http://localhost:443/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/nginx/sbin/nginx -s stop
 			fi
 			getTimeInSeconds ../results/log_${taskName}.txt ;;

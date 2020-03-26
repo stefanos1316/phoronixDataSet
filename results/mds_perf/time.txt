@@ -2,7 +2,7 @@ aio-stress                           86
 aircrack-ng                          18
 aobench                          38
 apache                           38
-nginx                           39
+nginx                           28
 crafty                          24
 tscp                          26
 stockfish                          38
