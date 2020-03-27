@@ -4,5 +4,5 @@
            5013,44 Joules power/energy-pkg/                                             ( +-  1,85% )
             427,15 Joules power/energy-ram/                                             ( +-  1,66% )
 
-            276,33 +- 4,20 seconds time elapsed  ( +-  1,52% )
+            270,33 +- 4,20 seconds time elapsed  ( +-  1,52% )
 

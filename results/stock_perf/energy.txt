@@ -2,7 +2,7 @@ aio-stress               715.01
 aircrack-ng               1104.03
 aobench               868.11
 apache               1507.68
-nginx               1512.14
+nginx               936.24
 crafty               559.49
 tscp               561.16
 stockfish               931.14
@@ -42,7 +42,7 @@ cachebench_mixed               1835.38
 cachebench_memset               602.23
 cachebench_memcpy               578.42
 cloverleaf               3519.32
-brlcad               41616.53
+brlcad               44792.06
 cpp-perf-bench_stepanov_abstraction               695.81
 cpp-perf-bench_stepanov_vector               1748.86
 cpp-perf-bench_functionobjects               324.66
@@ -54,7 +54,7 @@ dacapo_eclipse               4168.03
 dacapo_h2               1386.43
 dacapo_jython               1084.82
 dacapo_tradebeans               2433.62
-dacapo_tradesoap               3461.56
+dacapo_tradesoap               516.29
 ebizzy               1691.60
 glibc-bench_bench-ffsll               224.97
 glibc-bench_bench-ffs               221.18
@@ -104,11 +104,11 @@ phpbench               365.21
 primesieve               3158.11
 pymongo               883.42
 rbenchmark               745.95
-redis_get               348.94
-redis_set               334.37
-redis_lpush               330.73
-redis_lpop               330.60
-redis_sadd               323.68
+redis_get               1972.97
+redis_set               1972.03
+redis_lpush               1988.96
+redis_lpop               1985.55
+redis_sadd               1981.12
 rust-prime               1027.31
 scikit               1316.60
 stress-ng_vecmath               1446.39
@@ -217,7 +217,7 @@ network-loopback               1488.20
 svt-vp9_tune_0               4272.83
 svt-vp9_tune_1               4251.99
 svt-vp9_tune_2               4260.86
-svt-hevc               1564.84
+svt-hevc               1584.84
 tungsten_hair               3314.02
 tungsten_water-caustic               2134.64
 tungsten_non-exponential               827.18

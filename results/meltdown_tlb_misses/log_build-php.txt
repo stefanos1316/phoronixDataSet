@@ -1,0 +1,9 @@
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+
+ Performance counter stats for 'system wide':
+
+         634892770      dTLB-load-misses                                            
+         165163711      iTLB-load-misses                                            
+
+     102,161320244 seconds time elapsed
+

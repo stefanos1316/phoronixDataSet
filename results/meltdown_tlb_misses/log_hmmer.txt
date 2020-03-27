@@ -1,0 +1,9 @@
+./hmmer: 1: ./hmmer: !#/bin/bash: not found
+
+ Performance counter stats for 'system wide':
+
+           4379178      dTLB-load-misses                                            
+            769305      iTLB-load-misses                                            
+
+       8,897676547 seconds time elapsed
+

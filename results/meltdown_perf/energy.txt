@@ -2,7 +2,7 @@ aio-stress               670.24
 aircrack-ng               1100.97
 aobench               868.35
 apache               1416.64
-nginx               1425.35
+nginx               926.38
 crafty               556.49
 tscp               556.08
 stockfish               925.24
@@ -54,7 +54,7 @@ dacapo_eclipse               4131.88
 dacapo_h2               1383.97
 dacapo_jython               1068.86
 dacapo_tradebeans               2562.09
-dacapo_tradesoap               3446.24
+dacapo_tradesoap               511.73
 ebizzy               1674.57
 glibc-bench_bench-ffsll               232.18
 glibc-bench_bench-ffs               227.09
@@ -104,11 +104,11 @@ phpbench               367.59
 primesieve               3148.95
 pymongo               901.21
 rbenchmark               766.08
-redis_get               342.32
-redis_set               333.07
-redis_lpush               332.71
-redis_lpop               335.76
-redis_sadd               326.39
+redis_get               1631.72
+redis_set               1622.76
+redis_lpush               1640.91
+redis_lpop               1629.80
+redis_sadd               1642.70
 rust-prime               1029.16
 scikit               1335.58
 stress-ng_vecmath               914.65

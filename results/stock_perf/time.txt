@@ -2,7 +2,7 @@ aio-stress                           91
 aircrack-ng                          18
 aobench                          38
 apache                           42
-nginx                           42
+nginx                           31
 crafty                          24
 tscp                          26
 stockfish                          39
@@ -42,7 +42,7 @@ cachebench_mixed                          83
 cachebench_memset                         24
 cachebench_memcpy                         22
 cloverleaf                          93
-brlcad                           654
+brlcad                           707
 cpp-perf-bench_stepanov_abstraction                         35
 cpp-perf-bench_stepanov_vector                          88
 cpp-perf-bench_functionobjects                         15
@@ -54,7 +54,7 @@ dacapo_eclipse                          109
 dacapo_h2                           41
 dacapo_jython                           29
 dacapo_tradebeans                           146
-dacapo_tradesoap                           198
+dacapo_tradesoap                           14
 ebizzy                         30
 glibc-bench_bench-ffsll                         10
 glibc-bench_bench-ffs                         10
@@ -104,11 +104,11 @@ phpbench                          15
 primesieve                           52
 pymongo                           38
 rbenchmark                           26
-redis_get                           13
-redis_set                           13
-redis_lpush                          13
-redis_lpop                          13
-redis_sadd                          13
+redis_get                           66
+redis_set                           65
+redis_lpush                           66
+redis_lpop                           66
+redis_sadd                           66
 rust-prime                         24
 scikit                           46
 stress-ng_vecmath                            29
@@ -217,7 +217,7 @@ network-loopback                           49
 svt-vp9_tune_0                            78
 svt-vp9_tune_1                          77
 svt-vp9_tune_2                          77
-svt-hevc                            22
+svt-hevc                            27
 tungsten_hair                          60
 tungsten_water-caustic                          48
 tungsten_non-exponential                          14

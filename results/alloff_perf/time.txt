@@ -2,7 +2,7 @@ aio-stress                           88
 aircrack-ng                          18
 aobench                          38
 apache                           32
-nginx                           32
+nginx                           24
 crafty                          24
 tscp                          26
 stockfish                         38
@@ -54,7 +54,7 @@ dacapo_eclipse                          107
 dacapo_h2                           40
 dacapo_jython                           28
 dacapo_tradebeans                           175
-dacapo_tradesoap                          3133
+dacapo_tradesoap                          13
 ebizzy                         30
 glibc-bench_bench-ffsll                         10
 glibc-bench_bench-ffs                         10
@@ -103,12 +103,12 @@ numenta-nab                           573
 phpbench                          15
 primesieve                           52
 pymongo                           38
-rbenchmark                            29
-redis_get                           13
-redis_set                           14
-redis_lpush                          13
-redis_lpop                           13
-redis_sadd                           13
+rbenchmark                            24
+redis_get                           36
+redis_set                           36
+redis_lpush                           36
+redis_lpop                           36
+redis_sadd                           36
 rust-prime                          24
 scikit                           45
 stress-ng_vecmath                          18
@@ -301,7 +301,7 @@ xonotic_1920x1080                          885
 xonotic_2560x1440                          885
 paraview_manyspheres                           358
 paraview_waveletcontour                           789
-paraview_waveletvolume                           52
+paraview_waveletvolume                           31
 indigobench_supercar                           61
 indigobench_bedroom                           62
 j2dbench_all                          361

@@ -1,83 +1,28 @@
+Using scaled threading model. 8 processors detected, 8 threads used to drive the workload, in a possible range of [1,128]
+Booting Geronimo Kernel (in Java 1.8.0_242)...
+Geronimo startup complete
 Successfully created tables
 ===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6601 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6388 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6232 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6359 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6529 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 15004016 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6654 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6625 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6687 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6691 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6357 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6537 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6537 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6387 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6556 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6373 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6425 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6468 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6467 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6218 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6431 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6290 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6418 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6067 msec =====
-Successfully created tables
-===== DaCapo 9.12-MR1 tradesoap starting =====
-===== DaCapo 9.12-MR1 tradesoap PASSED in 6179 msec =====
+Resetting database and populating with 1098 stocks...
+Populating database with 192 users...
+Finished repopulating database
+Running 128 trade sessions from client via soap
+Completed 128 trade sessions comprising 2280 trader actions
+	Home ....................   447 (19.6%)
+	Portfolio ...............   173 ( 7.6%)
+	Quote ...................   959 (42.1%)
+	Buy .....................   202 ( 8.9%)
+	Sell ....................   192 ( 8.4%)
+	Update ..................    25 ( 1.1%)
+	Register ................    13 ( 0.6%)
+	Login ...................   128 ( 5.6%)
+	Logout ..................   141 ( 6.2%)
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6497 msec =====
+Shutting down Geronimo...
 
- Performance counter stats for 'system wide' (5 runs):
+ Performance counter stats for 'system wide':
 
-          20003,50 Joules power/energy-pkg/                                             ( +- 85,25% )
-           1625,79 Joules power/energy-ram/                                             ( +- 91,06% )
+            485,13 Joules power/energy-pkg/                                           
+             21,18 Joules power/energy-ram/                                           
 
-           3133,81 +- 2988,86 seconds time elapsed  ( +- 95,37% )
-
+      13,222645928 seconds time elapsed

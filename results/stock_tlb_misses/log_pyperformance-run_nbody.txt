@@ -1,0 +1,9 @@
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_nbody.py --rigorous --output /tmp/tmpuz5y601k`
+
+ Performance counter stats for 'system wide':
+
+           3554808      dTLB-load-misses                                            
+           4847368      iTLB-load-misses                                            
+
+      22,218789816 seconds time elapsed
+

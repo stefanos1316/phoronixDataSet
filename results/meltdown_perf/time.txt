@@ -2,7 +2,7 @@ aio-stress                           86
 aircrack-ng                          18
 aobench                          38
 apache                           39
-nginx                           39
+nginx                           30
 crafty                          24
 tscp                          26
 stockfish                          38
@@ -54,7 +54,7 @@ dacapo_eclipse                          108
 dacapo_h2                           41
 dacapo_jython                           28
 dacapo_tradebeans                           171
-dacapo_tradesoap                           200
+dacapo_tradesoap                           13
 ebizzy                         30
 glibc-bench_bench-ffsll                         10
 glibc-bench_bench-ffs                         10
@@ -104,11 +104,11 @@ phpbench                          15
 primesieve                          52
 pymongo                           39
 rbenchmark                           26
-redis_get                           13
-redis_set                           13
-redis_lpush                          13
-redis_lpop                           13
-redis_sadd                          12
+redis_get                           53
+redis_set                           52
+redis_lpush                           53
+redis_lpop                           52
+redis_sadd                           53 
 rust-prime                         24
 scikit                           46
 stress-ng_vecmath                          18

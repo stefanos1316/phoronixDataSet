@@ -1,0 +1,10 @@
+read 65536 points
+finish local search
+
+ Performance counter stats for 'system wide':
+
+         338001645      dTLB-load-misses                                            
+           1016989      iTLB-load-misses                                            
+
+      42,520548679 seconds time elapsed
+

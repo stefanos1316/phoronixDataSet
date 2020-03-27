@@ -4,6 +4,12 @@ scenario="gcc_stock_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/gcc_tasks_test"
+dataType=$1
+if [ $dataType == "energy" ] ; then
+	perfComponent="power/energy-pkg/,power/energy-ram/"
+else
+	perfComponent="dTLB-load-misses,iTLB-load-misses"
+fi
 
 taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
@@ -229,22 +235,6 @@ function checkIfSubstringExistsMoreTimesInArray {
 	fi
 }
 
-function useWattsUpPro {
-	local taskname=$2
-	local dataPath="../results/${scenario}/tmp_energy_${taskname}.txt"
-	case "$1" in
-		("start")
-			rm ${dataPath}
-			sudo nohup ../tools/watts-up/wattsup ttyUSB0 -s watts >> ${dataPath}  &
-			sleep 2 ;;
-		("stop")
-			sudo pkill wattsup
-			energy=`awk '{sum+=$1} END {print sum}' $dataPath`
-			echo "$taskname		$energy">> ../results/${scenario}/energy.txt
-			sleep 10 ;;
-	esac
-}
-
 sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
@@ -289,14 +279,20 @@ for task in "${tasks_gcc[@]}"; do
 		(*) ;; #perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
 	esac
 
-	#useWattsUpPro stop ${taskName}
-	#getTimeInSeconds ../results/${scenario}/log_${taskName}.txt
-	totalTime=`grep 'seconds time elapsed' ../results/${scenario}/log_${taskName}.txt | awk -F'.' '{print $1}'`
-        energyPkg=`grep 'energy-pkg' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,//g'`
-        energyRam=`grep 'energy-ram' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,//g'`
-        totalEnergy=`echo $energyPkg + $energyRam| bc`
-        echo "${taskName}               ${totalTime}" >> ../results/${scenario}/time.txt
-        echo "${taskName}               ${totalEnergy}" >> ../results/${scenario}/energy.txt
+	case $dataType in
+		("energy")
+			totalTime=`grep 'seconds time elapsed' ../results/${scenario}/log_${taskName}.txt | awk -F'.' '{print $1}'`
+        		energyPkg=`grep 'energy-pkg' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,//g'`
+        		energyRam=`grep 'energy-ram' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,//g'`
+        		totalEnergy=`echo $energyPkg + $energyRam| bc`
+        		echo "${taskName}               ${totalTime}" >> ../results/${scenario}/time.txt
+        		echo "${taskName}               ${totalEnergy}" >> ../results/${scenario}/energy.txt ;;
+		("tlb")
+			dTLB=`grep dTLB-load-misses ../results/${scenario}/log_${taskName}.txt | awk '{print $1}'`
+			iTLB=`grep iTLB-load-misses ../results/${scenario}/log_${taskName}.txt | awk '{print $1}'`
+			echo "$taskName		$dTLB" >> ../results/${scenario}/dTLB.txt
+			echo "$taskName		$iTLB" >> ../results/${scenario}/iTLB.txt ;;
+	esac
 done
 
 dumpGarbage

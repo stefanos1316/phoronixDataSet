@@ -2,7 +2,7 @@ aio-stress               668.49
 aircrack-ng               1103.85
 aobench               863.70
 apache               1386.56
-nginx               1406.23
+nginx               870.65
 crafty               552.24
 tscp               560.27
 stockfish               924.58
@@ -23,7 +23,7 @@ nero2d               7450.30
 minion               1022.20
 hmmer               447.67
 rodinia_euler3d_cpu_double               2232.80
-rodinia_lavaMD               10562.01
+rodinia_lavaMD               10262.01
 rodinia_sc_omp               1804.22
 openssl               433.41
 sysbench_cpu               1473.85
@@ -54,7 +54,7 @@ dacapo_eclipse               4119.39
 dacapo_h2               1367.30
 dacapo_jython               1070.55
 dacapo_tradebeans               2513.22
-dacapo_tradesoap               3445.21
+dacapo_tradesoap               512.89
 ebizzy               1700.44
 glibc-bench_bench-ffsll               231.89
 glibc-bench_bench-ffs               225.71
@@ -104,11 +104,11 @@ phpbench               359.62
 primesieve               3114.87
 pymongo               870.28
 rbenchmark               710.83
-redis_get               338.13
-redis_set               337.34
-redis_lpush               340.60
-redis_lpop               328.73
-redis_sadd               320.07
+redis_get               1685.24
+redis_set               1680.67
+redis_lpush               1665.26
+redis_lpop               1672.95
+redis_sadd               1680.85
 rust-prime               1026.45
 scikit               1319.51
 stress-ng_vecmath               910.38

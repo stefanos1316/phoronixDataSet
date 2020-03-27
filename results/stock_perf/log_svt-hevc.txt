@@ -2,8 +2,8 @@ interlace type not supported
 
  Performance counter stats for 'system wide' (5 runs):
 
-           1235,33 Joules power/energy-pkg/                                             ( +- 24,99% )
+           1255,33 Joules power/energy-pkg/                                             ( +- 24,99% )
              29,51 Joules power/energy-ram/                                             ( +- 24,97% )
 
-             22,34 +- 5,57 seconds time elapsed  ( +- 24,92% )
+             27,34 +- 5,57 seconds time elapsed  ( +- 24,92% )
 

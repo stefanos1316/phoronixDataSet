@@ -1,0 +1,9 @@
+iperf3: interrupt - the server has terminated
+
+ Performance counter stats for 'system wide':
+
+           9124556      dTLB-load-misses                                            
+           1920554      iTLB-load-misses                                            
+
+      33,004073081 seconds time elapsed
+

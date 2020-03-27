@@ -1,0 +1,10 @@
+===== DaCapo 9.12-MR1 eclipse starting =====
+===== DaCapo 9.12-MR1 eclipse PASSED in 19636 msec =====
+
+ Performance counter stats for 'system wide':
+
+          84858023      dTLB-load-misses                                            
+          22640278      iTLB-load-misses                                            
+
+      23,431570028 seconds time elapsed
+
