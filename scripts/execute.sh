@@ -1,9 +1,9 @@
 #!/bin/bash
 
-scenario="kernelspace_perf"
+scenario="gcc_stock_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
-taskDirectory="tools/tasks_test"
+taskDirectory="tools/gcc_tasks_test"
 dataType=$1
 
 case $dataType in
@@ -153,7 +153,7 @@ tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 
 		   "hpcg" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" "iperf tcp" "iperf udp" "john-the-ripper bcrypt" "john-the-ripper md5crypt" \
 		   "lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
 		   "lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" "mt-dgemm"\
-		   "mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" "mbw 8192 MiB -n 100 -t2" "nero2d" "p7zip b"\
+		   "mbw 512 MiB -n 100 -t2" "mbw 1024 MiB -n 100 -t2" "mbw 4096 MiB -n 100 -t2" "nero2d" "p7zip b"\
 		   "mcperf get" "mcperf set" "mcperf delete" "mcperf add" "mcperf replace" "mcperf append" "mcperf prepend" "openssl speed rsa4096" \
 		   "mkl-dnn conv_all conv" "mkl-dnn conv_googlenet_v3 conv" "mkl-dnn conv_alexnet conv" "mkl-dnn ip_1d ip" "mkl-dnn ip_all ip" "mkl-dnn rnn_training rnn" \
 		   "osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
@@ -258,10 +258,10 @@ for task in "${tasks_without_graphics[@]}"; do
 		("apache" | "nginx" )
 			startServers $task
 			if [ $taskName == "apache" ]; then
-				time (ab -n 1000000 -c 100 http://localhost:80/) 2> ../results/${scenario}/log_${taskName}.txt
-				
+				perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://localhost:80/ 2> ../results/${scenario}/log_${taskName}.txt
+				sudo /usr/local/apache2/bin/apachectl -k stop
 			else
-				time (ab -n 1000000 -c 100 http://localhost:443/) 2> ../results/${scenario}/log_${taskName}.txt
+				perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://0.0.0.0:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/nginx/sbin/nginx -s stop
 			fi ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
@@ -281,16 +281,17 @@ for task in "${tasks_without_graphics[@]}"; do
 			fi
 
 			cd ../${taskDirectory}/${benchmark}
-			time ( ./${task}) 2> ../../../results/${scenario}/log_${taskName}.txt
+			perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ./${task} 2> ../../../results/${scenario}/log_${taskName}.txt
 			cd ../../../scripts ;;
-		(*) time (../${taskDirectory}/${benchmark}/${task}) 2> ../results/${scenario}/log_${taskName}.txt ;;
+		(*) perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
+
 	esac
 
 	case $dataType in
 		("energy")
 			totalTime=`grep 'seconds time elapsed' ../results/${scenario}/log_${taskName}.txt | awk -F'.' '{print $1}'`
-        		energyPkg=`grep 'energy-pkg' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,/\./g'`
-        		energyRam=`grep 'energy-ram' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,/\./g'`
+        		energyPkg=`grep 'energy-pkg' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,//g'`
+        		energyRam=`grep 'energy-ram' ../results/${scenario}/log_${taskName}.txt | awk '{print $1}' | awk -F"." '{print $1}' | sed 's/,//g'`
         		totalEnergy=`echo $energyPkg + $energyRam| bc`
         		echo "${taskName}               ${totalTime}" >> ../results/${scenario}/time.txt
         		echo "${taskName}               ${totalEnergy}" >> ../results/${scenario}/energy.txt ;;
