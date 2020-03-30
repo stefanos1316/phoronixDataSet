@@ -1,0 +1,5 @@
++ ./phpbench php phpbench.php -i 1000000
+
+real	0m15,782s
+user	0m15,532s
+sys	0m0,013s

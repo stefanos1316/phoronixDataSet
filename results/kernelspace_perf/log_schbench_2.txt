@@ -1,0 +1,14 @@
++ ./schbench 2
+Latency percentiles (usec)
+	50.0000th: 62
+	75.0000th: 1154
+	90.0000th: 4824
+	95.0000th: 7816
+	*99.0000th: 14096
+	99.5000th: 15408
+	99.9000th: 18016
+	min=0, max=30083
+
+real	0m30,073s
+user	2m54,317s
+sys	0m0,084s

@@ -1,0 +1,8 @@
++ ./sunflow
+./sunflow: 2: cd: can't cd to sunflow
+./sunflow: 3: [: -ge: unexpected operator
+./sunflow: 5: [: -ge: unexpected operator
+
+real	0m23,786s
+user	2m56,751s
+sys	0m0,236s

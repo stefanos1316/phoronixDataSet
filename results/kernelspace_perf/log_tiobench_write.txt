@@ -1,0 +1,5 @@
++ ./tiobench write
+
+real	3m36,465s
+user	0m2,291s
+sys	0m18,133s

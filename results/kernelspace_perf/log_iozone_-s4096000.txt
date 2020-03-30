@@ -1,0 +1,5 @@
++ ../tools/tasks_test/iozone/iozone -s4096000
+
+real	3m38,436s
+user	0m5,328s
+sys	0m12,692s

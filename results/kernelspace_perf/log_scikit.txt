@@ -1,0 +1,5 @@
++ ./scikit
+
+real	0m48,124s
+user	1m32,490s
+sys	0m8,169s

@@ -1,0 +1,5 @@
++ ../tools/tasks_test/postmark/postmark ../inputs/postmark.pmrc
+
+real	1m57,135s
+user	0m1,822s
+sys	0m7,335s

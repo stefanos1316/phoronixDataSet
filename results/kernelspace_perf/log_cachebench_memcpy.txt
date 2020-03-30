@@ -1,0 +1,5 @@
++ ../tools/tasks_test/cachebench/cachebench memcpy -p -m 9
+
+real	0m22,665s
+user	0m22,664s
+sys	0m0,000s

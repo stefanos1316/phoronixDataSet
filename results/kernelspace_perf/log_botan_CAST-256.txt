@@ -1,0 +1,5 @@
++ ./botan CAST-256
+
+real	0m20,083s
+user	0m20,079s
+sys	0m0,004s

@@ -1,0 +1,5 @@
++ ./cpp-perf-bench atol
+
+real	1m5,115s
+user	1m5,113s
+sys	0m0,001s

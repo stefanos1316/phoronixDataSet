@@ -1,0 +1,8 @@
++ ./bork
+1048576+0 records in
+1048576+0 records out
+2147483648 bytes (2,1 GB, 2,0 GiB) copied, 2,03443 s, 1,1 GB/s
+
+real	0m15,571s
+user	0m5,536s
+sys	0m3,560s

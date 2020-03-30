@@ -1,0 +1,5 @@
++ ./cpp-perf-bench functionobjects
+
+real	0m15,101s
+user	0m15,101s
+sys	0m0,000s

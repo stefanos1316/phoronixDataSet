@@ -1,0 +1,5 @@
++ ./oidn
+
+real	0m28,707s
+user	1m52,101s
+sys	0m0,324s

@@ -1,0 +1,5 @@
++ ./lzbench -ebrotli
+
+real	9m32,733s
+user	9m31,304s
+sys	0m0,229s

@@ -1,0 +1,17 @@
++ ../tools/tasks_test/aio-stress/aio-stress -s 5g -r 64k -t 3 temp
+dropping thread count to the number of contexts 1
+file size 5120MB, record size 64KB, depth 64, ios per iteration 8
+max io_submit 8, buffer alignment set to 4KB
+threads 1 files 1 contexts 1 context offset 2MB verification off
+write on temp (257.35 MB/s) 5120.00 MB in 19.90s
+thread 0 write totals (139.30 MB/s) 5120.00 MB in 36.75s
+read on temp (9565.37 MB/s) 5120.00 MB in 0.54s
+thread 0 read totals (9167.18 MB/s) 5120.00 MB in 0.56s
+random write on temp (561.57 MB/s) 5120.00 MB in 9.12s
+thread 0 random write totals (102.67 MB/s) 5120.00 MB in 49.87s
+random read on temp (8291.87 MB/s) 5120.00 MB in 0.62s
+thread 0 random read totals (7942.18 MB/s) 5120.00 MB in 0.64s
+
+real	1m27,895s
+user	0m0,063s
+sys	0m4,410s

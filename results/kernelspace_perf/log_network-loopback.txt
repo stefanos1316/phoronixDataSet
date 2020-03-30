@@ -1,0 +1,8 @@
++ ./network-loopback
+100000+0 records in
+100000+0 records out
+104857600000 bytes (105 GB, 98 GiB) copied, 42,7987 s, 2,5 GB/s
+
+real	0m48,853s
+user	0m13,193s
+sys	1m14,338s

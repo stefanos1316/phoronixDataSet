@@ -1,0 +1,5 @@
++ ../tools/tasks_test/cachebench/cachebench mixed -b -m 9
+
+real	1m23,644s
+user	1m23,642s
+sys	0m0,000s

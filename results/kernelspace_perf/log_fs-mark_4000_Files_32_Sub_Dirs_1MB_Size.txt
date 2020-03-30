@@ -1,0 +1,5 @@
++ ./fs-mark 4000_Files_32_Sub_Dirs_1MB_Size
+
+real	2m28,650s
+user	0m0,260s
+sys	0m2,842s
