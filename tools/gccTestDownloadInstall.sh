@@ -708,18 +708,6 @@ wget http://www.phoronix-test-suite.com/benchmark-files/Pfam_ls.gz
 gunzip Pfam_ls.gz -c > ../../../inputs/Pfam_ls && rm Pfam_ls.gz 
 cd ../
 
-echo "-------Downloading and installing minion"
-mkdir minion && cd minion
-wget http://constraintmodelling.org/files/2015/06/minion-1.8-linux.tar_.gz
-tar -xzvf minion-1.8-linux.tar_.gz && rm minion-1.8-linux.tar_.gz
-mv minion-1.8/* ./ && rm -rf minion-1.8/
-cd bin/
-cmake -DQUICK=1 ..
-make minion -j $(nproc --all)
-cd ../ && rm -rf minion
-cp bin/minion ./
-cd ../
-
 echo "-------Downloading and installing nero2d"
 mkdir nero2d && cd nero2d
 wget http://www.phoronix-test-suite.com/benchmark-files/nero2d-2.0.2-pts1.tar.gz
