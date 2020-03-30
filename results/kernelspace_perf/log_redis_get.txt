@@ -1,0 +1,5 @@
++ ./redis get
+
+real	1m6,322s
+user	0m20,353s
+sys	0m45,753s

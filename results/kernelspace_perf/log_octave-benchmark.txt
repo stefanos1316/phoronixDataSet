@@ -1,0 +1,5 @@
++ ./octave-benchmark
+
+real	0m10,878s
+user	0m20,048s
+sys	0m3,563s

@@ -1,0 +1,5 @@
++ ./gegl scale-size x=400 y=400
+
+real	0m6,680s
+user	0m10,577s
+sys	0m5,347s

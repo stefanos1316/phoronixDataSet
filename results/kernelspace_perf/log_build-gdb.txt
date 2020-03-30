@@ -1,0 +1,38 @@
++ ./build-gdb
+make: *** No rule to make target 'distclean'.  Stop.
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+configure: WARNING: MPFR is missing or unusable; some features may be unavailable.
+configure: WARNING: libipt is missing or unusable; some features may be unavailable.
+configure: WARNING: babeltrace is missing or unusable; GDB is unable to read CTF data.
+In file included from ../../gdb/infrun.c:26:0:
+../../gdb/inferior.h: In function ‘void handle_vfork_child_exec_or_exit(int)’:
+../../gdb/inferior.h:584:26: warning: ‘*((void*)(& maybe_restore_inferior)+40).scoped_restore_current_inferior::m_saved_inf’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   { set_current_inferior (m_saved_inf); }
+     ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../../gdb/infrun.c:927:6: note: ‘*((void*)(& maybe_restore_inferior)+40).scoped_restore_current_inferior::m_saved_inf’ was declared here
+      maybe_restore_inferior;
+      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../gdb/inferior.h:49:0,
+                 from ../../gdb/infrun.c:26:
+../../gdb/progspace.h:313:31: warning: ‘*((void*)(& maybe_restore_inferior)+32).scoped_restore_current_program_space::m_saved_pspace’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   { set_current_program_space (m_saved_pspace); }
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../../gdb/infrun.c:927:6: note: ‘*((void*)(& maybe_restore_inferior)+32).scoped_restore_current_program_space::m_saved_pspace’ was declared here
+      maybe_restore_inferior;
+      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../gdb/exceptions.h:23:0,
+                 from ../../gdb/utils.h:24,
+                 from ../../gdb/defs.h:652,
+                 from ../../gdb/record-btrace.c:22:
+../../gdb/ui-out.h: In function ‘void btrace_insn_history(ui_out*, const btrace_thread_info*, const btrace_insn_iterator*, const btrace_insn_iterator*, gdb_disassembly_flags)’:
+../../gdb/ui-out.h:352:18: warning: ‘asm_list.ui_out_emit_type<(ui_out_type)1>::m_uiout’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     m_uiout->end (Type);
+     ~~~~~~~~~~~~~^~~~~~
+../../gdb/record-btrace.c:779:35: note: ‘asm_list.ui_out_emit_type<(ui_out_type)1>::m_uiout’ was declared here
+   gdb::optional<ui_out_emit_list> asm_list;
+                                   ^~~~~~~~
+
+real	2m16,324s
+user	10m46,790s
+sys	1m2,140s

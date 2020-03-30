@@ -1,0 +1,8 @@
++ ./deepspeech
+TensorFlow: v1.14.0-21-ge77504a
+DeepSpeech: v0.6.0-0-g6d43e21
+2020-03-30 00:26:47.915965: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+
+real	2m5,512s
+user	1m44,252s
+sys	0m0,856s

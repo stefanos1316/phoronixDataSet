@@ -1,0 +1,7 @@
++ ./dacapo h2
+===== DaCapo 9.12-MR1 h2 starting =====
+===== DaCapo 9.12-MR1 h2 PASSED in 3196 msec =====
+
+real	0m8,092s
+user	0m23,848s
+sys	0m0,329s

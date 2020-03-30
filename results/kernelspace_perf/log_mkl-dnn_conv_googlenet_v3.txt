@@ -1,0 +1,5 @@
++ ./mkl-dnn conv_googlenet_v3 conv
+
+real	2m11,310s
+user	17m25,080s
+sys	0m0,612s

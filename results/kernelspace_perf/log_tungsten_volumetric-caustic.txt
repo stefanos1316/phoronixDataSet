@@ -1,0 +1,5 @@
++ ./tungsten volumetric-caustic
+
+real	0m19,936s
+user	2m38,627s
+sys	0m0,032s

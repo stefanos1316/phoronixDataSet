@@ -1,0 +1,5 @@
++ ./redis set
+
+real	1m6,107s
+user	0m20,102s
+sys	0m45,826s

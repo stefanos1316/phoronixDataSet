@@ -1,0 +1,5 @@
++ ../tools/tasks_test/mbw/mbw 512 MiB -n 100 -t2
+
+real	0m8,823s
+user	0m8,569s
+sys	0m0,236s

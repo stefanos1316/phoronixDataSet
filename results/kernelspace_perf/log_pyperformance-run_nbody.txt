@@ -1,0 +1,6 @@
++ ./pyperformance-run nbody
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_nbody.py --rigorous --output /tmp/tmp0k8dzoes`
+
+real	0m22,152s
+user	0m21,851s
+sys	0m0,336s

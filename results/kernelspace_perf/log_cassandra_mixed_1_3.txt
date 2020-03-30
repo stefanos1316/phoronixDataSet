@@ -1,0 +1,16 @@
++ ./cassandra mixed_1_3
+ls: cannot access './../build/apache-cassandra*.jar': No such file or directory
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+Error: Could not find or load main class org.apache.cassandra.service.CassandraDaemon
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.service.CassandraDaemon
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+ls: cannot access './../../build/apache-cassandra*.jar': No such file or directory
+Error: Could not find or load main class org.apache.cassandra.stress.Stress
+Caused by: java.lang.ClassNotFoundException: org.apache.cassandra.stress.Stress
+./cassandra: line 23: kill: (22467) - No such process
+
+real	0m15,366s
+user	0m1,196s
+sys	0m1,031s

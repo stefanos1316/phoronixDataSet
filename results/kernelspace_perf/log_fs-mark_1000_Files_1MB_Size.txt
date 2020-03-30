@@ -1,0 +1,5 @@
++ ./fs-mark 1000_Files_1MB_Size
+
+real	0m41,536s
+user	0m0,080s
+sys	0m0,727s

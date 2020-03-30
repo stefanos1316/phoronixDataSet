@@ -1,0 +1,6 @@
++ ./cpuminer-opt lbry
+12860972
+
+real	0m30,748s
+user	4m4,518s
+sys	0m0,028s

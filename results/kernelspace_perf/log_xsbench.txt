@@ -1,0 +1,5 @@
++ ../tools/tasks_test/xsbench/xsbench -t 8 -s large -l 30000000
+
+real	1m21,272s
+user	10m24,430s
+sys	0m2,675s

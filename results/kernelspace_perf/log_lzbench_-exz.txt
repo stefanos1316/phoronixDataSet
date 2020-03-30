@@ -1,0 +1,5 @@
++ ./lzbench -exz
+
+real	10m34,226s
+user	10m33,517s
+sys	0m0,636s

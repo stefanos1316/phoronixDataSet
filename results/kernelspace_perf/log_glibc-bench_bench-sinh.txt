@@ -1,0 +1,5 @@
++ ./glibc-bench bench-sinh
+
+real	0m10,255s
+user	0m9,945s
+sys	0m0,309s

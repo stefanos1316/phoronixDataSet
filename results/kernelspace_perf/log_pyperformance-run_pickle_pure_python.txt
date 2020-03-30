@@ -1,0 +1,6 @@
++ ./pyperformance-run pickle_pure_python
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_pickle.py --pure-python pickle --rigorous --output /tmp/tmpxjiz6mz1`
+
+real	0m28,274s
+user	0m27,934s
+sys	0m0,354s

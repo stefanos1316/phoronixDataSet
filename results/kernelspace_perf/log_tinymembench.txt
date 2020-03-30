@@ -1,0 +1,5 @@
++ ../tools/tasks_test/tinymembench/tinymembench
+
+real	4m16,324s
+user	4m16,271s
+sys	0m0,028s

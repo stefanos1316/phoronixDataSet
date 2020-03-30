@@ -1,0 +1,5 @@
++ ./botan AES-256
+
+real	0m22,343s
+user	0m22,236s
+sys	0m0,000s

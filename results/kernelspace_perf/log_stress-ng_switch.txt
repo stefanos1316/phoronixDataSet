@@ -1,0 +1,8 @@
++ ../tools/tasks_test/stress-ng/stress-ng --switch 0 --switch-ops 40000000
+stress-ng: info:  [28472] defaulting to a 86400 second run per stressor
+stress-ng: info:  [28472] dispatching hogs: 8 switch
+stress-ng: info:  [28472] successful run completed in 25.36s
+
+real	0m25,359s
+user	0m31,423s
+sys	2m50,884s

@@ -1,0 +1,5 @@
++ ./ctx_clock
+
+real	5m19,799s
+user	4m3,881s
+sys	1m15,893s

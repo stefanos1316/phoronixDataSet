@@ -1,0 +1,5 @@
++ ../tools/tasks_test/crafty/crafty bench quit
+
+real	0m24,484s
+user	0m24,596s
+sys	0m0,032s

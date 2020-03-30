@@ -1,0 +1,7 @@
++ ./build-php
+mkdir: cannot create directory 'sapi/cli/.libs': File exists
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+
+real	1m43,048s
+user	8m38,331s
+sys	0m33,034s

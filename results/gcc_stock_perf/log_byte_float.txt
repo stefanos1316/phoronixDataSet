@@ -1,0 +1,18 @@
+join: /tmp/24705.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+join: /tmp/24825.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+join: /tmp/24987.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+join: /tmp/25110.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+join: /tmp/25222.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,319.74 Joules power/energy-pkg/                                             ( +-  0.16% )
+             60.62 Joules power/energy-ram/                                             ( +-  0.11% )
+
+           121.806 +- 0.129 seconds time elapsed  ( +-  0.11% )
+

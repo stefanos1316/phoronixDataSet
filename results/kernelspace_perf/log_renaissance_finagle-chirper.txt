@@ -1,0 +1,15 @@
++ ./renaissance finagle-chirper
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.twitter.jvm.Hotspot (file:/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/renaissance/./tmp-jars-13236215411695367011/cp-4463976096794212743.jar) to field sun.management.ManagementFactoryHelper.jvm
+WARNING: Please consider reporting this to the maintainers of com.twitter.jvm.Hotspot
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 29, 2020 11:02:16 PM com.twitter.finagle.Init$$anonfun$6 apply$mcV$sp
+INFO: Finagle version 19.4.0 (rev=15ae0aba979a2c11ed4a71774b2e995f5df918b4) built at 20190418-114039
+
+real	0m9,661s
+user	0m42,148s
+sys	0m3,638s

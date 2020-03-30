@@ -1,0 +1,5 @@
++ ./tungsten water-caustic
+
+real	0m48,494s
+user	4m34,953s
+sys	0m0,313s

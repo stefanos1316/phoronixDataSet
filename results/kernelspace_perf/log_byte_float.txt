@@ -1,0 +1,7 @@
++ ./byte float
+join: /tmp/7203.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+
+real	2m2,190s
+user	1m0,043s
+sys	0m0,005s

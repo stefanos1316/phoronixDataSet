@@ -1,0 +1,5 @@
++ ./rays1bench
+
+real	0m34,297s
+user	4m16,773s
+sys	0m0,163s

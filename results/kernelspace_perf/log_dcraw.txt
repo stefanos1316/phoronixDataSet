@@ -1,0 +1,23 @@
++ ../tools/tasks_test/dcraw/dcraw ../tools/tasks_test/dcraw/DSC_5031.NEF ../tools/tasks_test/dcraw/DSC_5031.ppm ../tools/tasks_test/dcraw/DSC_5032.NEF ../tools/tasks_test/dcraw/DSC_5032.ppm ../tools/tasks_test/dcraw/DSC_5033.NEF ../tools/tasks_test/dcraw/DSC_5033.ppm ../tools/tasks_test/dcraw/DSC_5034.NEF ../tools/tasks_test/dcraw/DSC_5034.ppm ../tools/tasks_test/dcraw/DSC_5035.NEF ../tools/tasks_test/dcraw/DSC_5035.ppm ../tools/tasks_test/dcraw/DSC_5037.NEF ../tools/tasks_test/dcraw/DSC_5037.ppm ../tools/tasks_test/dcraw/DSC_5038.NEF ../tools/tasks_test/dcraw/DSC_5038.ppm ../tools/tasks_test/dcraw/DSC_5039.NEF ../tools/tasks_test/dcraw/DSC_5039.ppm ../tools/tasks_test/dcraw/DSC_5040.NEF ../tools/tasks_test/dcraw/DSC_5040.ppm ../tools/tasks_test/dcraw/DSC_5041.NEF ../tools/tasks_test/dcraw/DSC_5041.ppm ../tools/tasks_test/dcraw/DSC_5042.NEF ../tools/tasks_test/dcraw/DSC_5042.ppm ../tools/tasks_test/dcraw/DSC_5043.NEF ../tools/tasks_test/dcraw/DSC_5043.ppm ../tools/tasks_test/dcraw/DSC_5044.NEF ../tools/tasks_test/dcraw/DSC_5044.ppm ../tools/tasks_test/dcraw/DSC_5045.NEF ../tools/tasks_test/dcraw/DSC_5045.ppm ../tools/tasks_test/dcraw/DSC_5046.NEF ../tools/tasks_test/dcraw/DSC_5046.ppm ../tools/tasks_test/dcraw/DSC_5047.NEF ../tools/tasks_test/dcraw/DSC_5047.ppm ../tools/tasks_test/dcraw/DSC_5048.NEF ../tools/tasks_test/dcraw/DSC_5048.ppm ../tools/tasks_test/dcraw/DSC_5049.NEF ../tools/tasks_test/dcraw/DSC_5049.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5031.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5032.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5033.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5034.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5035.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5037.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5038.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5039.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5040.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5041.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5042.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5043.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5044.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5045.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5046.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5047.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5048.ppm
+Cannot decode file ../tools/tasks_test/dcraw/DSC_5049.ppm
+
+real	0m25,803s
+user	0m21,309s
+sys	0m0,541s

@@ -1,0 +1,5 @@
++ ./lzbench -elibdeflate
+
+real	4m21,597s
+user	4m20,827s
+sys	0m0,156s

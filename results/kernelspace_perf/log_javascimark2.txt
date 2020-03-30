@@ -1,0 +1,5 @@
++ ./javascimark2
+
+real	0m25,785s
+user	0m25,272s
+sys	0m0,020s

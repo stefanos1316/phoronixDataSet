@@ -1,0 +1,8 @@
++ ../tools/tasks_test/stress-ng/stress-ng --msg 0 --msg-ops 100000000
+stress-ng: info:  [28306] defaulting to a 86400 second run per stressor
+stress-ng: info:  [28306] dispatching hogs: 8 msg
+stress-ng: info:  [28306] successful run completed in 21.97s
+
+real	0m21,970s
+user	1m5,866s
+sys	1m46,877s
