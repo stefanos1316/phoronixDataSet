@@ -1,0 +1,5 @@
++ ./ramspeed add_int
+
+real	2m20,902s
+user	2m19,975s
+sys	0m0,848s

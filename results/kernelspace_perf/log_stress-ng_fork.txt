@@ -1,0 +1,8 @@
++ ../tools/tasks_test/stress-ng/stress-ng --fork 0 --fork-ops 1000000
+stress-ng: info:  [23715] defaulting to a 86400 second run per stressor
+stress-ng: info:  [23715] dispatching hogs: 8 fork
+stress-ng: info:  [23715] successful run completed in 23.85s
+
+real	0m23,853s
+user	1m19,377s
+sys	1m10,597s

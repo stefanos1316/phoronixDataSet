@@ -1,0 +1,5 @@
++ ./redis lpush
+
+real	1m6,656s
+user	0m20,132s
+sys	0m46,349s

@@ -1,0 +1,5 @@
++ ../tools/tasks_test/cachebench/cachebench memset -s -m 9
+
+real	0m24,479s
+user	0m24,478s
+sys	0m0,000s

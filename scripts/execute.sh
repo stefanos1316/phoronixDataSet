@@ -5,11 +5,15 @@ mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/gcc_tasks_test"
 dataType=$1
-if [ $dataType == "energy" ] ; then
-	perfComponent="power/energy-pkg/,power/energy-ram/"
-else
-	perfComponent="dTLB-load-misses,iTLB-load-misses"
-fi
+
+case $dataType in
+	energy)
+		measurements="perf stat -r 5 -e power/energy-pkg/,power/energy-ram/" ;;
+	tbl)
+		measurements="perf stat -r 5 -e dTLB-load-misses,iTLB-load-misses" ;;
+	kernel)
+		measurements="time" ;;
+esac
 
 taskss=("aio-stress -s 15g -r 64k -t 3 temp" "aircrack-ng" "aobench" "apache" "nginx" "crafty bench quit" "tscp" \
 		"stockfish bench" "p7zip b" "bzip2" "zstd" "xz" "byte register" \
@@ -193,8 +197,12 @@ function startServers {
 
 function getTimeInSeconds {
 	local filePath=$1
-	local minutes=`grep real ${filePath} | tail -1 | awk {'print $2'} | awk -F'm' '{print $1}'`
-	local seconds=`grep real ${filePath} | tail -1 | awk {'print $2'} | awk -F'm' '{print $2}' | sed 's/,/\./g' | awk -F'.' '{print $1}'`
+	local typeOfTime=$2
+	if [ -z $typeOfTime ]; then
+		typeOfTime=real
+	fi
+	local minutes=`grep $typeOfTime ${filePath} | tail -1 | awk {'print $2'} | awk -F'm' '{print $1}'`
+	local seconds=`grep $typeOfTime ${filePath} | tail -1 | awk {'print $2'} | awk -F'm' '{print $2}' | sed 's/,/\./g' | awk -F'.' '{print $1}'`
 	if [ $minutes -ne 0 ]; then
 		minutes=$((minutes * 60))
 	fi
@@ -223,7 +231,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks_gcc[@]}"; do
+	for i in "${tasks_without_graphics[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi
@@ -239,7 +247,7 @@ sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
-for task in "${tasks_gcc[@]}"; do
+for task in "${tasks_without_graphics[@]}"; do
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}
 	checkIfSubstringExistsMoreTimesInArray ${task}
@@ -255,8 +263,7 @@ for task in "${tasks_gcc[@]}"; do
 			else
 				perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://0.0.0.0:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/nginx/sbin/nginx -s stop
-			fi
-			getTimeInSeconds ../results/log_${taskName}.txt ;;
+			fi ;;
 		glibc-bench* | dacapo* | cpp-perf-bench* | rodinia* | byte* | hint* | john-the-ripper* | gobench* | mcperf* | \
 		mkl-dnn* | node-express-loadtest | numenta-nab | sudokut.sh | brlcad | gmpbench  | phpbench | pymongo | \
 		rbenchmark | redis* | scikit | tensorflow | ramspeed* | ttsiod-renderer | botan* | gnupg | aircrack-ng | sudokut | nero2d | \
@@ -292,6 +299,11 @@ for task in "${tasks_gcc[@]}"; do
 			iTLB=`grep iTLB-load-misses ../results/${scenario}/log_${taskName}.txt | awk '{print $1}'`
 			echo "$taskName		$dTLB" >> ../results/${scenario}/dTLB.txt
 			echo "$taskName		$iTLB" >> ../results/${scenario}/iTLB.txt ;;
+		("kernel")
+			getTimeInSeconds ../results/${scenario}/log_${taskName}.txt sys
+			echo "$taskName			$totalTime" >> ../results/${scenario}/sysTime.txt
+			getTimeInSeconds ../results/${scenario}/log_${taskName}.txt real
+			echo "$taskName			$totalTime" >> ../results/${scenario}/realTime.txt ;;
 	esac
 done
 

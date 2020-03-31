@@ -1,0 +1,6 @@
++ ./pyperformance-run raytrace
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_raytrace.py --rigorous --output /tmp/tmpl_g_eco6`
+
+real	1m25,576s
+user	1m24,523s
+sys	0m0,330s

@@ -1,0 +1,5 @@
++ ../tools/tasks_test/cachebench/cachebench write -w -m 9
+
+real	0m28,883s
+user	0m28,882s
+sys	0m0,000s

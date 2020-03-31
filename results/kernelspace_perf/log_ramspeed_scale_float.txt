@@ -1,0 +1,5 @@
++ ./ramspeed scale_float
+
+real	2m20,742s
+user	2m19,909s
+sys	0m0,765s

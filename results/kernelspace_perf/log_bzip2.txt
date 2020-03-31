@@ -1,0 +1,5 @@
++ ./bzip2
+
+real	0m16,006s
+user	0m15,590s
+sys	0m0,048s

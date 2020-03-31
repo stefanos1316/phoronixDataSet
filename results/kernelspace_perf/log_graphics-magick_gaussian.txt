@@ -1,0 +1,7 @@
++ ./graphics-magick gaussian 0x1
+Results: 8 threads 300 iter 1128.08s user 298.030224s total 1.007 iter/s 0.266 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+
+real	4m58,039s
+user	18m24,368s
+sys	0m23,721s

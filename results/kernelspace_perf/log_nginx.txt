@@ -1,0 +1,16 @@
++ ab -n 1000000 -c 100 http://localhost:443/
+Completed 100000 requests
+Completed 200000 requests
+Completed 300000 requests
+Completed 400000 requests
+Completed 500000 requests
+Completed 600000 requests
+Completed 700000 requests
+Completed 800000 requests
+Completed 900000 requests
+Completed 1000000 requests
+Finished 1000000 requests
+
+real	0m31,332s
+user	0m6,438s
+sys	0m23,195s

@@ -1,0 +1,5 @@
++ ../tools/tasks_test/minion/minion ../inputs/minions.minion
+
+real	0m44,186s
+user	0m44,017s
+sys	0m0,013s

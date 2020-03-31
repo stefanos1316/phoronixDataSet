@@ -1,0 +1,7 @@
++ ./rodinia sc_omp 10 30 512 65536 65536 2000 none output.txt 8 '&&' rm output.txt
+read 65536 points
+finish local search
+
+real	0m42,512s
+user	5m31,688s
+sys	0m0,060s

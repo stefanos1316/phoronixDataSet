@@ -1,0 +1,5 @@
++ ./hint double
+
+real	4m49,310s
+user	4m46,361s
+sys	0m2,888s

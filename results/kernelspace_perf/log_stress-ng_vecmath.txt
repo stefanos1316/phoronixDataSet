@@ -1,0 +1,8 @@
++ ../tools/tasks_test/stress-ng/stress-ng --vecmath 0 --vecmath-ops 200000
+stress-ng: info:  [23633] defaulting to a 86400 second run per stressor
+stress-ng: info:  [23633] dispatching hogs: 8 vecmath
+stress-ng: info:  [23633] successful run completed in 18.95s
+
+real	0m19,051s
+user	2m30,608s
+sys	0m0,005s

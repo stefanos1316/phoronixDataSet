@@ -1,0 +1,5 @@
++ ./cpp-perf-bench random_numbers
+
+real	15m50,199s
+user	15m50,128s
+sys	0m0,004s

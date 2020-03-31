@@ -1,0 +1,731 @@
++ ./inkscape
+Failed to get connection
+** (inkscape:14370): CRITICAL **: 22:49:13.625: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14370): CRITICAL **: 22:49:13.625: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14370): CRITICAL **: 22:49:13.625: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14378): CRITICAL **: 22:49:14.519: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14378): CRITICAL **: 22:49:14.519: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14378): CRITICAL **: 22:49:14.519: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14386): CRITICAL **: 22:49:14.719: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14386): CRITICAL **: 22:49:14.719: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14386): CRITICAL **: 22:49:14.719: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14394): CRITICAL **: 22:49:14.890: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14394): CRITICAL **: 22:49:14.890: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14394): CRITICAL **: 22:49:14.890: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14402): CRITICAL **: 22:49:15.067: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14402): CRITICAL **: 22:49:15.067: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14402): CRITICAL **: 22:49:15.067: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14410): CRITICAL **: 22:49:15.241: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14410): CRITICAL **: 22:49:15.241: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14410): CRITICAL **: 22:49:15.241: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14418): CRITICAL **: 22:49:15.419: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14418): CRITICAL **: 22:49:15.419: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14418): CRITICAL **: 22:49:15.419: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14426): CRITICAL **: 22:49:15.592: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14426): CRITICAL **: 22:49:15.592: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14426): CRITICAL **: 22:49:15.592: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14434): CRITICAL **: 22:49:15.768: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14434): CRITICAL **: 22:49:15.768: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14434): CRITICAL **: 22:49:15.768: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14442): CRITICAL **: 22:49:15.941: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14442): CRITICAL **: 22:49:15.941: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14442): CRITICAL **: 22:49:15.941: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14450): CRITICAL **: 22:49:16.118: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14450): CRITICAL **: 22:49:16.118: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14450): CRITICAL **: 22:49:16.118: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14458): CRITICAL **: 22:49:16.291: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14458): CRITICAL **: 22:49:16.291: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14458): CRITICAL **: 22:49:16.291: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14466): CRITICAL **: 22:49:16.481: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14466): CRITICAL **: 22:49:16.482: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14466): CRITICAL **: 22:49:16.482: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14474): CRITICAL **: 22:49:16.653: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14474): CRITICAL **: 22:49:16.653: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14474): CRITICAL **: 22:49:16.653: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14482): CRITICAL **: 22:49:16.839: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14482): CRITICAL **: 22:49:16.839: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14482): CRITICAL **: 22:49:16.839: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14490): CRITICAL **: 22:49:17.012: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14490): CRITICAL **: 22:49:17.012: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14490): CRITICAL **: 22:49:17.012: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14498): CRITICAL **: 22:49:17.197: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14498): CRITICAL **: 22:49:17.197: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14498): CRITICAL **: 22:49:17.197: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14506): CRITICAL **: 22:49:17.369: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14506): CRITICAL **: 22:49:17.369: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14506): CRITICAL **: 22:49:17.369: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14514): CRITICAL **: 22:49:17.554: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14514): CRITICAL **: 22:49:17.554: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14514): CRITICAL **: 22:49:17.554: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14522): CRITICAL **: 22:49:17.729: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14522): CRITICAL **: 22:49:17.729: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14522): CRITICAL **: 22:49:17.729: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14530): CRITICAL **: 22:49:17.909: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14530): CRITICAL **: 22:49:17.909: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14530): CRITICAL **: 22:49:17.909: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14538): CRITICAL **: 22:49:18.083: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14538): CRITICAL **: 22:49:18.083: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14538): CRITICAL **: 22:49:18.083: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14546): CRITICAL **: 22:49:18.263: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14546): CRITICAL **: 22:49:18.263: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14546): CRITICAL **: 22:49:18.263: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14554): CRITICAL **: 22:49:18.437: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14554): CRITICAL **: 22:49:18.437: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14554): CRITICAL **: 22:49:18.437: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14562): CRITICAL **: 22:49:18.611: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14562): CRITICAL **: 22:49:18.611: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14562): CRITICAL **: 22:49:18.612: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14570): CRITICAL **: 22:49:18.785: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14570): CRITICAL **: 22:49:18.785: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14570): CRITICAL **: 22:49:18.785: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14578): CRITICAL **: 22:49:18.960: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14578): CRITICAL **: 22:49:18.960: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14578): CRITICAL **: 22:49:18.960: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14586): CRITICAL **: 22:49:19.131: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14586): CRITICAL **: 22:49:19.131: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14586): CRITICAL **: 22:49:19.131: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14594): CRITICAL **: 22:49:19.310: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14594): CRITICAL **: 22:49:19.310: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14594): CRITICAL **: 22:49:19.310: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14602): CRITICAL **: 22:49:19.481: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14602): CRITICAL **: 22:49:19.481: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14602): CRITICAL **: 22:49:19.481: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14610): CRITICAL **: 22:49:19.659: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14610): CRITICAL **: 22:49:19.659: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14610): CRITICAL **: 22:49:19.659: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14618): CRITICAL **: 22:49:19.834: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14618): CRITICAL **: 22:49:19.834: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14618): CRITICAL **: 22:49:19.834: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14626): CRITICAL **: 22:49:20.012: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14626): CRITICAL **: 22:49:20.012: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14626): CRITICAL **: 22:49:20.012: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14634): CRITICAL **: 22:49:20.185: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14634): CRITICAL **: 22:49:20.185: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14634): CRITICAL **: 22:49:20.185: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14642): CRITICAL **: 22:49:20.365: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14642): CRITICAL **: 22:49:20.365: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14642): CRITICAL **: 22:49:20.365: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14652): CRITICAL **: 22:49:20.537: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14652): CRITICAL **: 22:49:20.537: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14652): CRITICAL **: 22:49:20.537: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14660): CRITICAL **: 22:49:20.716: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14660): CRITICAL **: 22:49:20.717: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14660): CRITICAL **: 22:49:20.717: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14668): CRITICAL **: 22:49:20.887: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14668): CRITICAL **: 22:49:20.887: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14668): CRITICAL **: 22:49:20.887: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14676): CRITICAL **: 22:49:21.124: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14676): CRITICAL **: 22:49:21.124: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14676): CRITICAL **: 22:49:21.124: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14684): CRITICAL **: 22:49:21.301: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14684): CRITICAL **: 22:49:21.301: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14684): CRITICAL **: 22:49:21.301: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14692): CRITICAL **: 22:49:21.491: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14692): CRITICAL **: 22:49:21.491: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14692): CRITICAL **: 22:49:21.491: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14700): CRITICAL **: 22:49:21.660: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14700): CRITICAL **: 22:49:21.660: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14700): CRITICAL **: 22:49:21.660: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14709): CRITICAL **: 22:49:21.890: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14709): CRITICAL **: 22:49:21.890: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14709): CRITICAL **: 22:49:21.890: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14718): CRITICAL **: 22:49:22.066: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14718): CRITICAL **: 22:49:22.066: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14718): CRITICAL **: 22:49:22.066: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14726): CRITICAL **: 22:49:22.243: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14726): CRITICAL **: 22:49:22.243: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14726): CRITICAL **: 22:49:22.243: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14734): CRITICAL **: 22:49:22.419: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14734): CRITICAL **: 22:49:22.419: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14734): CRITICAL **: 22:49:22.420: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14742): CRITICAL **: 22:49:22.591: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14742): CRITICAL **: 22:49:22.591: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14742): CRITICAL **: 22:49:22.591: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14750): CRITICAL **: 22:49:22.767: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14750): CRITICAL **: 22:49:22.767: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14750): CRITICAL **: 22:49:22.767: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14758): CRITICAL **: 22:49:22.939: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14758): CRITICAL **: 22:49:22.939: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14758): CRITICAL **: 22:49:22.939: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14766): CRITICAL **: 22:49:23.115: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14766): CRITICAL **: 22:49:23.115: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14766): CRITICAL **: 22:49:23.115: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14774): CRITICAL **: 22:49:23.289: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14774): CRITICAL **: 22:49:23.289: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14774): CRITICAL **: 22:49:23.289: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14782): CRITICAL **: 22:49:23.464: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14782): CRITICAL **: 22:49:23.464: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14782): CRITICAL **: 22:49:23.464: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14790): CRITICAL **: 22:49:23.633: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14790): CRITICAL **: 22:49:23.633: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14790): CRITICAL **: 22:49:23.633: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14798): CRITICAL **: 22:49:23.809: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14798): CRITICAL **: 22:49:23.809: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14798): CRITICAL **: 22:49:23.809: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14806): CRITICAL **: 22:49:23.977: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14806): CRITICAL **: 22:49:23.977: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14806): CRITICAL **: 22:49:23.977: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14814): CRITICAL **: 22:49:24.153: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14814): CRITICAL **: 22:49:24.153: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14814): CRITICAL **: 22:49:24.153: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14822): CRITICAL **: 22:49:24.325: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14822): CRITICAL **: 22:49:24.325: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14822): CRITICAL **: 22:49:24.325: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14830): CRITICAL **: 22:49:24.500: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14830): CRITICAL **: 22:49:24.500: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14830): CRITICAL **: 22:49:24.500: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14838): CRITICAL **: 22:49:24.675: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14838): CRITICAL **: 22:49:24.675: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14838): CRITICAL **: 22:49:24.675: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14846): CRITICAL **: 22:49:24.851: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14846): CRITICAL **: 22:49:24.851: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14846): CRITICAL **: 22:49:24.851: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14854): CRITICAL **: 22:49:25.023: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14854): CRITICAL **: 22:49:25.023: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14854): CRITICAL **: 22:49:25.023: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14862): CRITICAL **: 22:49:25.193: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14862): CRITICAL **: 22:49:25.193: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14862): CRITICAL **: 22:49:25.193: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14870): CRITICAL **: 22:49:25.387: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14870): CRITICAL **: 22:49:25.387: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14870): CRITICAL **: 22:49:25.387: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14878): CRITICAL **: 22:49:25.561: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14878): CRITICAL **: 22:49:25.561: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14878): CRITICAL **: 22:49:25.561: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14886): CRITICAL **: 22:49:25.733: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14886): CRITICAL **: 22:49:25.733: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14886): CRITICAL **: 22:49:25.733: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14894): CRITICAL **: 22:49:25.912: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14894): CRITICAL **: 22:49:25.912: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14894): CRITICAL **: 22:49:25.912: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14902): CRITICAL **: 22:49:26.079: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14902): CRITICAL **: 22:49:26.079: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14902): CRITICAL **: 22:49:26.079: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14910): CRITICAL **: 22:49:26.258: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14910): CRITICAL **: 22:49:26.258: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14910): CRITICAL **: 22:49:26.258: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14918): CRITICAL **: 22:49:26.426: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14918): CRITICAL **: 22:49:26.426: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14918): CRITICAL **: 22:49:26.426: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14926): CRITICAL **: 22:49:26.606: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14926): CRITICAL **: 22:49:26.606: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14926): CRITICAL **: 22:49:26.606: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14934): CRITICAL **: 22:49:26.777: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14934): CRITICAL **: 22:49:26.777: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14934): CRITICAL **: 22:49:26.777: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14942): CRITICAL **: 22:49:26.954: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14942): CRITICAL **: 22:49:26.954: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14942): CRITICAL **: 22:49:26.954: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14950): CRITICAL **: 22:49:27.121: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14950): CRITICAL **: 22:49:27.121: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14950): CRITICAL **: 22:49:27.121: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14958): CRITICAL **: 22:49:27.300: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14958): CRITICAL **: 22:49:27.300: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14958): CRITICAL **: 22:49:27.300: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14966): CRITICAL **: 22:49:27.470: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14966): CRITICAL **: 22:49:27.471: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14966): CRITICAL **: 22:49:27.471: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14974): CRITICAL **: 22:49:27.649: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14974): CRITICAL **: 22:49:27.649: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14974): CRITICAL **: 22:49:27.649: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14982): CRITICAL **: 22:49:27.824: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14982): CRITICAL **: 22:49:27.824: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14982): CRITICAL **: 22:49:27.824: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14990): CRITICAL **: 22:49:27.992: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14990): CRITICAL **: 22:49:27.992: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14990): CRITICAL **: 22:49:27.992: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:14998): CRITICAL **: 22:49:28.185: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:14998): CRITICAL **: 22:49:28.185: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:14998): CRITICAL **: 22:49:28.185: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15006): CRITICAL **: 22:49:28.361: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15006): CRITICAL **: 22:49:28.361: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15006): CRITICAL **: 22:49:28.361: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15014): CRITICAL **: 22:49:28.558: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15014): CRITICAL **: 22:49:28.558: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15014): CRITICAL **: 22:49:28.558: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15023): CRITICAL **: 22:49:28.756: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15023): CRITICAL **: 22:49:28.756: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15023): CRITICAL **: 22:49:28.756: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15032): CRITICAL **: 22:49:28.953: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15032): CRITICAL **: 22:49:28.953: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15032): CRITICAL **: 22:49:28.953: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15040): CRITICAL **: 22:49:29.121: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15040): CRITICAL **: 22:49:29.121: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15040): CRITICAL **: 22:49:29.121: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15048): CRITICAL **: 22:49:29.315: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15048): CRITICAL **: 22:49:29.315: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15048): CRITICAL **: 22:49:29.315: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15056): CRITICAL **: 22:49:29.490: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15056): CRITICAL **: 22:49:29.490: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15056): CRITICAL **: 22:49:29.490: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15064): CRITICAL **: 22:49:29.667: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15064): CRITICAL **: 22:49:29.667: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15064): CRITICAL **: 22:49:29.667: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15072): CRITICAL **: 22:49:29.839: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15072): CRITICAL **: 22:49:29.839: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15072): CRITICAL **: 22:49:29.839: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15080): CRITICAL **: 22:49:30.028: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15080): CRITICAL **: 22:49:30.028: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15080): CRITICAL **: 22:49:30.028: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15088): CRITICAL **: 22:49:30.197: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15088): CRITICAL **: 22:49:30.197: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15088): CRITICAL **: 22:49:30.197: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15096): CRITICAL **: 22:49:30.383: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15096): CRITICAL **: 22:49:30.383: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15096): CRITICAL **: 22:49:30.383: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15104): CRITICAL **: 22:49:30.552: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15104): CRITICAL **: 22:49:30.552: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15104): CRITICAL **: 22:49:30.552: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15112): CRITICAL **: 22:49:30.741: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15112): CRITICAL **: 22:49:30.741: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15112): CRITICAL **: 22:49:30.741: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15120): CRITICAL **: 22:49:30.939: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15120): CRITICAL **: 22:49:30.939: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15120): CRITICAL **: 22:49:30.939: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15128): CRITICAL **: 22:49:31.137: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15128): CRITICAL **: 22:49:31.137: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15128): CRITICAL **: 22:49:31.137: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15136): CRITICAL **: 22:49:31.337: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15136): CRITICAL **: 22:49:31.337: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15136): CRITICAL **: 22:49:31.337: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15144): CRITICAL **: 22:49:31.524: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15144): CRITICAL **: 22:49:31.524: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15144): CRITICAL **: 22:49:31.524: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15152): CRITICAL **: 22:49:31.703: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15152): CRITICAL **: 22:49:31.703: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15152): CRITICAL **: 22:49:31.703: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15160): CRITICAL **: 22:49:31.887: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15160): CRITICAL **: 22:49:31.887: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15160): CRITICAL **: 22:49:31.887: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15168): CRITICAL **: 22:49:32.079: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15168): CRITICAL **: 22:49:32.079: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15168): CRITICAL **: 22:49:32.079: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15176): CRITICAL **: 22:49:32.249: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15176): CRITICAL **: 22:49:32.249: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15176): CRITICAL **: 22:49:32.249: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15184): CRITICAL **: 22:49:32.439: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15184): CRITICAL **: 22:49:32.439: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15184): CRITICAL **: 22:49:32.439: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15194): CRITICAL **: 22:49:32.613: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15194): CRITICAL **: 22:49:32.613: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15194): CRITICAL **: 22:49:32.613: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15202): CRITICAL **: 22:49:32.805: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15202): CRITICAL **: 22:49:32.805: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15202): CRITICAL **: 22:49:32.805: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15210): CRITICAL **: 22:49:32.983: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15210): CRITICAL **: 22:49:32.983: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15210): CRITICAL **: 22:49:32.983: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15218): CRITICAL **: 22:49:33.155: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15218): CRITICAL **: 22:49:33.155: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15218): CRITICAL **: 22:49:33.155: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15226): CRITICAL **: 22:49:33.345: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15226): CRITICAL **: 22:49:33.345: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15226): CRITICAL **: 22:49:33.345: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15234): CRITICAL **: 22:49:33.514: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15234): CRITICAL **: 22:49:33.514: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15234): CRITICAL **: 22:49:33.514: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15242): CRITICAL **: 22:49:33.701: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15242): CRITICAL **: 22:49:33.701: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15242): CRITICAL **: 22:49:33.701: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15250): CRITICAL **: 22:49:33.880: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15250): CRITICAL **: 22:49:33.880: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15250): CRITICAL **: 22:49:33.880: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15258): CRITICAL **: 22:49:34.052: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15258): CRITICAL **: 22:49:34.052: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15258): CRITICAL **: 22:49:34.052: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15266): CRITICAL **: 22:49:34.231: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15266): CRITICAL **: 22:49:34.231: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15266): CRITICAL **: 22:49:34.231: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15274): CRITICAL **: 22:49:34.405: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15274): CRITICAL **: 22:49:34.405: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15274): CRITICAL **: 22:49:34.405: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15282): CRITICAL **: 22:49:34.585: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15282): CRITICAL **: 22:49:34.585: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15282): CRITICAL **: 22:49:34.585: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15290): CRITICAL **: 22:49:34.741: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15290): CRITICAL **: 22:49:34.741: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15290): CRITICAL **: 22:49:34.741: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15298): CRITICAL **: 22:49:34.988: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15298): CRITICAL **: 22:49:34.988: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15298): CRITICAL **: 22:49:34.988: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15306): CRITICAL **: 22:49:35.519: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15306): CRITICAL **: 22:49:35.519: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15306): CRITICAL **: 22:49:35.519: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15314): CRITICAL **: 22:49:35.708: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15314): CRITICAL **: 22:49:35.708: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15314): CRITICAL **: 22:49:35.708: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15322): CRITICAL **: 22:49:36.053: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15322): CRITICAL **: 22:49:36.053: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15322): CRITICAL **: 22:49:36.053: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15330): CRITICAL **: 22:49:36.642: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15330): CRITICAL **: 22:49:36.642: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15330): CRITICAL **: 22:49:36.642: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+Failed to get connection
+** (inkscape:15338): CRITICAL **: 22:49:36.843: dbus_g_proxy_new_for_name: assertion 'connection != NULL' failed
+
+** (inkscape:15338): CRITICAL **: 22:49:36.843: dbus_g_proxy_call: assertion 'DBUS_IS_G_PROXY (proxy)' failed
+
+** (inkscape:15338): CRITICAL **: 22:49:36.843: dbus_g_connection_register_g_object: assertion 'connection != NULL' failed
+
+real	0m25,329s
+user	0m21,500s
+sys	0m2,815s

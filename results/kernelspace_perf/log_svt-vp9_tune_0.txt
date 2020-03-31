@@ -1,0 +1,5 @@
++ ./svt-vp9 tune_0
+
+real	1m22,101s
+user	8m48,659s
+sys	0m14,354s

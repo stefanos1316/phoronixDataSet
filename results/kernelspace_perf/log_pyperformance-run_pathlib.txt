@@ -1,0 +1,6 @@
++ ./pyperformance-run pathlib
+INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_pathlib.py --rigorous --output /tmp/tmpg5i5is2n`
+
+real	0m32,351s
+user	0m24,184s
+sys	0m8,164s

@@ -1,0 +1,8 @@
++ ./dacapo tradesoap
+Successfully created tables
+===== DaCapo 9.12-MR1 tradesoap starting =====
+===== DaCapo 9.12-MR1 tradesoap PASSED in 6751 msec =====
+
+real	0m13,694s
+user	0m59,035s
+sys	0m2,702s

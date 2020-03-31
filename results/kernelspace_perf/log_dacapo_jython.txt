@@ -1,0 +1,7 @@
++ ./dacapo jython
+===== DaCapo 9.12-MR1 jython starting =====
+===== DaCapo 9.12-MR1 jython PASSED in 3728 msec =====
+
+real	0m6,416s
+user	0m15,757s
+sys	0m0,420s

@@ -1,0 +1,6 @@
++ ./iperf tcp
+iperf3: interrupt - the server has terminated
+
+real	0m33,024s
+user	0m0,002s
+sys	0m0,989s
