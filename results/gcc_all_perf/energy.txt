@@ -1,7 +1,7 @@
 aio-stress               974
 aircrack-ng               1053
 aobench               758
-blake2s               6
+blake2s               681
 blogbench_read               2133
 blogbench_write               1764
 botan_AES-256               369
@@ -30,7 +30,7 @@ cpuminer-opt_myr-gr               1661
 cpuminer-opt_m7m               1954
 cpuminer-opt_deep               1816
 crafty               482
-ctx_clock               0
+ctx_clock               5408
 c-ray               8875
 dbench_1               4795
 dbench_6               4917
@@ -49,7 +49,6 @@ graphics-magick_resize               5640
 ebizzy               1636
 encode-mp3               599
 ffmpeg               278
-fhourstones               
 gmpbench               7988
 himeno               1528
 hint_float               7016
@@ -88,11 +87,11 @@ mkl-dnn_conv_alexnet               972
 mkl-dnn_ip_1d               833
 mkl-dnn_ip_all               2052
 mkl-dnn_rnn_training               1992
-osbench_create_files               120
-osbench_create_processes               185
-osbench_create_threads               135
-osbench_launch_programs               244
-osbench_mem_alloc               98
+osbench_create_files               567
+osbench_create_processes               855
+osbench_create_threads               529
+osbench_launch_programs               569
+osbench_mem_alloc               444
 postmark               1018
 povray               5633
 schbench_2               777
@@ -140,7 +139,7 @@ tiobench_read               2217
 tiobench_random_write               3743
 tiobench_random_read               2175
 tjbench               484
-tscp               23
+tscp               446
 t-test1               222
 ttsiod-renderer               2519
 tungsten_hair               3007

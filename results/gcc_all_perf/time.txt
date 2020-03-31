@@ -1,7 +1,7 @@
 aio-stress                           138
 aircrack-ng                          18
 aobench                           39
-blake2s                         0
+blake2s                          40
 blogbench_read                            65
 blogbench_write                           53
 botan_AES-256                          22
@@ -30,7 +30,7 @@ cpuminer-opt_myr-gr                          31
 cpuminer-opt_m7m                           38
 cpuminer-opt_deep                           33
 crafty                          24
-ctx_clock                        0
+ctx_clock                          318
 c-ray                          188
 dbench_1                         720
 dbench_6                        720
@@ -88,11 +88,11 @@ mkl-dnn_conv_alexnet                          17
 mkl-dnn_ip_1d                         15
 mkl-dnn_ip_all                          47
 mkl-dnn_rnn_training                          37
-osbench_create_files                            5
-osbench_create_processes                          5
-osbench_create_threads                          5
-osbench_launch_programs                         5
-osbench_mem_alloc                          5
+osbench_create_files                           27
+osbench_create_processes                           23
+osbench_create_threads                           19
+osbench_launch_programs                          11
+osbench_mem_alloc                          23
 postmark                           133
 povray                          102
 schbench_2                         30
@@ -140,7 +140,7 @@ tiobench_read                           301
 tiobench_random_write                           546
 tiobench_random_read                           304
 tjbench                           24
-tscp                          1
+tscp                         23
 t-test1                           7
 ttsiod-renderer                          50
 tungsten_hair                          59

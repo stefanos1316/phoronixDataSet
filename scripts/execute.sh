@@ -169,6 +169,9 @@ tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 
 		   "ttsiod-renderer" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" "tungsten volumetric-caustic" \
 		   "vpxenc" "x264" "x265" "xsbench -t 8 -s large -l 30000000" "xz" "zstd")
 
+tasks=("blake2s 100" "ctx_clock" "osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
+	"fhourstone" "tscp")
+
 function startServers {
 	case $1 in
 		("apache")
@@ -231,7 +234,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks_without_graphics[@]}"; do
+	for i in "${tasks[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi
@@ -247,7 +250,7 @@ sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
-for task in "${tasks_without_graphics[@]}"; do
+for task in "${tasks[@]}"; do
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}
 	checkIfSubstringExistsMoreTimesInArray ${task}
