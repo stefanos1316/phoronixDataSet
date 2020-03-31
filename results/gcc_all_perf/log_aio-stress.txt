@@ -1,0 +1,68 @@
+dropping thread count to the number of contexts 1
+file size 5120MB, record size 64KB, depth 64, ios per iteration 8
+max io_submit 8, buffer alignment set to 4KB
+threads 1 files 1 contexts 1 context offset 2MB verification off
+write on temp (193.21 MB/s) 5120.00 MB in 26.50s
+thread 0 write totals (100.42 MB/s) 5120.00 MB in 50.99s
+read on temp (9516.06 MB/s) 5120.00 MB in 0.54s
+thread 0 read totals (9165.08 MB/s) 5120.00 MB in 0.56s
+random write on temp (286.37 MB/s) 5120.00 MB in 17.88s
+thread 0 random write totals (74.93 MB/s) 5120.00 MB in 68.33s
+random read on temp (8232.64 MB/s) 5120.00 MB in 0.62s
+thread 0 random read totals (7932.01 MB/s) 5120.00 MB in 0.65s
+dropping thread count to the number of contexts 1
+file size 5120MB, record size 64KB, depth 64, ios per iteration 8
+max io_submit 8, buffer alignment set to 4KB
+threads 1 files 1 contexts 1 context offset 2MB verification off
+write on temp (181.26 MB/s) 5120.00 MB in 28.25s
+thread 0 write totals (93.46 MB/s) 5120.00 MB in 54.79s
+read on temp (8953.38 MB/s) 5120.00 MB in 0.57s
+thread 0 read totals (8215.03 MB/s) 5120.00 MB in 0.62s
+random write on temp (259.46 MB/s) 5120.00 MB in 19.73s
+thread 0 random write totals (58.44 MB/s) 5120.00 MB in 87.61s
+random read on temp (9267.12 MB/s) 5120.00 MB in 0.55s
+thread 0 random read totals (8955.93 MB/s) 5120.00 MB in 0.57s
+dropping thread count to the number of contexts 1
+file size 5120MB, record size 64KB, depth 64, ios per iteration 8
+max io_submit 8, buffer alignment set to 4KB
+threads 1 files 1 contexts 1 context offset 2MB verification off
+write on temp (181.68 MB/s) 5120.00 MB in 28.18s
+thread 0 write totals (91.99 MB/s) 5120.00 MB in 55.66s
+read on temp (9697.70 MB/s) 5120.00 MB in 0.53s
+thread 0 read totals (9258.96 MB/s) 5120.00 MB in 0.55s
+random write on temp (264.61 MB/s) 5120.00 MB in 19.35s
+thread 0 random write totals (60.52 MB/s) 5120.00 MB in 84.60s
+random read on temp (9297.02 MB/s) 5120.00 MB in 0.55s
+thread 0 random read totals (8949.45 MB/s) 5120.00 MB in 0.57s
+dropping thread count to the number of contexts 1
+file size 5120MB, record size 64KB, depth 64, ios per iteration 8
+max io_submit 8, buffer alignment set to 4KB
+threads 1 files 1 contexts 1 context offset 2MB verification off
+write on temp (169.42 MB/s) 5120.00 MB in 30.22s
+thread 0 write totals (88.74 MB/s) 5120.00 MB in 57.70s
+read on temp (9886.98 MB/s) 5120.00 MB in 0.52s
+thread 0 read totals (9351.99 MB/s) 5120.00 MB in 0.55s
+random write on temp (239.29 MB/s) 5120.00 MB in 21.40s
+thread 0 random write totals (58.12 MB/s) 5120.00 MB in 88.09s
+random read on temp (9309.21 MB/s) 5120.00 MB in 0.55s
+thread 0 random read totals (8915.85 MB/s) 5120.00 MB in 0.57s
+dropping thread count to the number of contexts 1
+file size 5120MB, record size 64KB, depth 64, ios per iteration 8
+max io_submit 8, buffer alignment set to 4KB
+threads 1 files 1 contexts 1 context offset 2MB verification off
+write on temp (175.43 MB/s) 5120.00 MB in 29.19s
+thread 0 write totals (92.37 MB/s) 5120.00 MB in 55.43s
+read on temp (9954.52 MB/s) 5120.00 MB in 0.51s
+thread 0 read totals (9617.61 MB/s) 5120.00 MB in 0.53s
+random write on temp (237.22 MB/s) 5120.00 MB in 21.58s
+thread 0 random write totals (61.53 MB/s) 5120.00 MB in 83.21s
+random read on temp (9311.14 MB/s) 5120.00 MB in 0.55s
+thread 0 random read totals (8950.80 MB/s) 5120.00 MB in 0.57s
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            897.30 Joules power/energy-pkg/                                             ( +-  2.69% )
+             77.36 Joules power/energy-ram/                                             ( +-  2.99% )
+
+            138.47 +- 4.64 seconds time elapsed  ( +-  3.35% )
+

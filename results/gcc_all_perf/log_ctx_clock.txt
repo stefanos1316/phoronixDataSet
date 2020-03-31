@@ -1,0 +1,58 @@
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+./ctx_clock: line 3: ./ctx-clock: No such file or directory
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              0.07 Joules power/energy-pkg/                                             ( +-  6.24% )
+              0.00 Joules power/energy-ram/                                             ( +-  6.54% )
+
+         0.0036235 +- 0.0000775 seconds time elapsed  ( +-  2.14% )
+

@@ -1,0 +1,8908 @@
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1883
+Nodes searched  : 5023629
+Nodes/second    : 2667885
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1875
+Nodes searched  : 5023629
+Nodes/second    : 2679268
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1872
+Nodes searched  : 5023629
+Nodes/second    : 2683562
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1882
+Nodes searched  : 5023629
+Nodes/second    : 2669303
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1878
+Nodes searched  : 5023629
+Nodes/second    : 2674988
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1883
+Nodes searched  : 5023629
+Nodes/second    : 2667885
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1878
+Nodes searched  : 5023629
+Nodes/second    : 2674988
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1880
+Nodes searched  : 5023629
+Nodes/second    : 2672143
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1874
+Nodes searched  : 5023629
+Nodes/second    : 2680698
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1881
+Nodes searched  : 5023629
+Nodes/second    : 2670722
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1881
+Nodes searched  : 5023629
+Nodes/second    : 2670722
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1880
+Nodes searched  : 5023629
+Nodes/second    : 2672143
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1882
+Nodes searched  : 5023629
+Nodes/second    : 2669303
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1888
+Nodes searched  : 5023629
+Nodes/second    : 2660820
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1873
+Nodes searched  : 5023629
+Nodes/second    : 2682129
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1875
+Nodes searched  : 5023629
+Nodes/second    : 2679268
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1874
+Nodes searched  : 5023629
+Nodes/second    : 2680698
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1881
+Nodes searched  : 5023629
+Nodes/second    : 2670722
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1881
+Nodes searched  : 5023629
+Nodes/second    : 2670722
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1886
+Nodes searched  : 5023629
+Nodes/second    : 2663642
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1875
+Nodes searched  : 5023629
+Nodes/second    : 2679268
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1888
+Nodes searched  : 5023629
+Nodes/second    : 2660820
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1874
+Nodes searched  : 5023629
+Nodes/second    : 2680698
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1880
+Nodes searched  : 5023629
+Nodes/second    : 2672143
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1886
+Nodes searched  : 5023629
+Nodes/second    : 2663642
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1883
+Nodes searched  : 5023629
+Nodes/second    : 2667885
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1880
+Nodes searched  : 5023629
+Nodes/second    : 2672143
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1884
+Nodes searched  : 5023629
+Nodes/second    : 2666469
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1881
+Nodes searched  : 5023629
+Nodes/second    : 2670722
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1872
+Nodes searched  : 5023629
+Nodes/second    : 2683562
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1882
+Nodes searched  : 5023629
+Nodes/second    : 2669303
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1878
+Nodes searched  : 5023629
+Nodes/second    : 2674988
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1883
+Nodes searched  : 5023629
+Nodes/second    : 2667885
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1888
+Nodes searched  : 5023629
+Nodes/second    : 2660820
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1883
+Nodes searched  : 5023629
+Nodes/second    : 2667885
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1887
+Nodes searched  : 5023629
+Nodes/second    : 2662230
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1884
+Nodes searched  : 5023629
+Nodes/second    : 2666469
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1872
+Nodes searched  : 5023629
+Nodes/second    : 2683562
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1873
+Nodes searched  : 5023629
+Nodes/second    : 2682129
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1880
+Nodes searched  : 5023629
+Nodes/second    : 2672143
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1882
+Nodes searched  : 5023629
+Nodes/second    : 2669303
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1873
+Nodes searched  : 5023629
+Nodes/second    : 2682129
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1880
+Nodes searched  : 5023629
+Nodes/second    : 2672143
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1880
+Nodes searched  : 5023629
+Nodes/second    : 2672143
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1875
+Nodes searched  : 5023629
+Nodes/second    : 2679268
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1881
+Nodes searched  : 5023629
+Nodes/second    : 2670722
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1886
+Nodes searched  : 5023629
+Nodes/second    : 2663642
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1885
+Nodes searched  : 5023629
+Nodes/second    : 2665055
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1878
+Nodes searched  : 5023629
+Nodes/second    : 2674988
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1875
+Nodes searched  : 5023629
+Nodes/second    : 2679268
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1888
+Nodes searched  : 5023629
+Nodes/second    : 2660820
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1876
+Nodes searched  : 5023629
+Nodes/second    : 2677840
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1871
+Nodes searched  : 5023629
+Nodes/second    : 2684996
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1878
+Nodes searched  : 5023629
+Nodes/second    : 2674988
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1874
+Nodes searched  : 5023629
+Nodes/second    : 2680698
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1868
+Nodes searched  : 5023629
+Nodes/second    : 2689308
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1886
+Nodes searched  : 5023629
+Nodes/second    : 2663642
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1871
+Nodes searched  : 5023629
+Nodes/second    : 2684996
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1876
+Nodes searched  : 5023629
+Nodes/second    : 2677840
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1878
+Nodes searched  : 5023629
+Nodes/second    : 2674988
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1879
+Nodes searched  : 5023629
+Nodes/second    : 2673565
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1886
+Nodes searched  : 5023629
+Nodes/second    : 2663642
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1872
+Nodes searched  : 5023629
+Nodes/second    : 2683562
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1878
+Nodes searched  : 5023629
+Nodes/second    : 2674988
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1873
+Nodes searched  : 5023629
+Nodes/second    : 2682129
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1874
+Nodes searched  : 5023629
+Nodes/second    : 2680698
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1881
+Nodes searched  : 5023629
+Nodes/second    : 2670722
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1877
+Nodes searched  : 5023629
+Nodes/second    : 2676413
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1890
+Nodes searched  : 5023629
+Nodes/second    : 2658004
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1882
+Nodes searched  : 5023629
+Nodes/second    : 2669303
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1884
+Nodes searched  : 5023629
+Nodes/second    : 2666469
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1878
+Nodes searched  : 5023629
+Nodes/second    : 2674988
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1874
+Nodes searched  : 5023629
+Nodes/second    : 2680698
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1887
+Nodes searched  : 5023629
+Nodes/second    : 2662230
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1880
+Nodes searched  : 5023629
+Nodes/second    : 2672143
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1875
+Nodes searched  : 5023629
+Nodes/second    : 2679268
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1876
+Nodes searched  : 5023629
+Nodes/second    : 2677840
+
+Position: 1/42
+
+Position: 2/42
+
+Position: 3/42
+
+Position: 4/42
+
+Position: 5/42
+
+Position: 6/42
+
+Position: 7/42
+
+Position: 8/42
+
+Position: 9/42
+
+Position: 10/42
+
+Position: 11/42
+
+Position: 12/42
+
+Position: 13/42
+
+Position: 14/42
+
+Position: 15/42
+
+Position: 16/42
+
+Position: 17/42
+
+Position: 18/42
+
+Position: 19/42
+
+Position: 20/42
+
+Position: 21/42
+
+Position: 22/42
+
+Position: 23/42
+
+Position: 24/42
+
+Position: 25/42
+
+Position: 26/42
+
+Position: 27/42
+
+Position: 28/42
+
+Position: 29/42
+
+Position: 30/42
+
+Position: 31/42
+
+Position: 32/42
+
+Position: 33/42
+
+Position: 34/42
+
+Position: 35/42
+
+Position: 36/42
+
+Position: 37/42
+
+Position: 38/42
+
+Position: 39/42
+
+Position: 40/42
+
+Position: 41/42
+
+Position: 42/42
+
+===========================
+Total time (ms) : 1876
+Nodes searched  : 5023629
+Nodes/second    : 2677840
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            785.57 Joules power/energy-pkg/                                             ( +-  0.57% )
+             24.27 Joules power/energy-ram/                                             ( +-  0.05% )
+
+          38.59315 +- 0.00528 seconds time elapsed  ( +-  0.01% )
+
