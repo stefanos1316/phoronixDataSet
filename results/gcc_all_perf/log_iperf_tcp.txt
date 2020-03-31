@@ -1,0 +1,13 @@
+iperf3: interrupt - the server has terminated
+iperf3: interrupt - the server has terminated
+iperf3: interrupt - the server has terminated
+iperf3: interrupt - the server has terminated
+iperf3: interrupt - the server has terminated
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            246.99 Joules power/energy-pkg/                                             ( +-  0.68% )
+             16.75 Joules power/energy-ram/                                             ( +-  0.66% )
+
+          33.01384 +- 0.00921 seconds time elapsed  ( +-  0.03% )
+

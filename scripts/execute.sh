@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="gcc_stock_perf"
+scenario="gcc_all_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/gcc_tasks_test"
@@ -250,10 +250,10 @@ for task in "${tasks_gcc[@]}"; do
 		("apache" | "nginx" )
 			startServers $task
 			if [ $taskName == "apache" ]; then
-			#	perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://localhost:80/ 2> ../results/${scenario}/log_${taskName}.txt
+				perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://localhost:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/apache2/bin/apachectl -k stop
 			else
-			#	perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://0.0.0.0:80/ 2> ../results/${scenario}/log_${taskName}.txt
+				perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ab -n 1000000 -c 100 http://0.0.0.0:80/ 2> ../results/${scenario}/log_${taskName}.txt
 				sudo /usr/local/nginx/sbin/nginx -s stop
 			fi
 			getTimeInSeconds ../results/log_${taskName}.txt ;;
@@ -274,9 +274,9 @@ for task in "${tasks_gcc[@]}"; do
 			fi
 
 			cd ../${taskDirectory}/${benchmark}
-			#perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ./${task} 2> ../../../results/${scenario}/log_${taskName}.txt
+			perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ./${task} 2> ../../../results/${scenario}/log_${taskName}.txt
 			cd ../../../scripts ;;
-		(*) ;; #perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
+		(*) perf stat -a -r 5 -e "power/energy-pkg/,power/energy-ram/" ../${taskDirectory}/${benchmark}/${task} 2> ../results/${scenario}/log_${taskName}.txt ;;
 	esac
 
 	case $dataType in

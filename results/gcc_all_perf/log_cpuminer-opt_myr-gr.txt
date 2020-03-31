@@ -1,0 +1,13 @@
+5669130
+5750320
+5763743
+5359587
+5659929
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,646.91 Joules power/energy-pkg/                                             ( +-  0.41% )
+             15.55 Joules power/energy-ram/                                             ( +-  0.12% )
+
+           31.0066 +- 0.0356 seconds time elapsed  ( +-  0.11% )
+

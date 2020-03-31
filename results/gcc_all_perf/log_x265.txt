@@ -1,0 +1,143 @@
+y4m  [info]: 1920x1080 fps 30/1 i420p8 frames 0 - 599 of 600
+raw  [info]: output file: /dev/null
+x265 [info]: HEVC encoder version 0.0
+x265 [info]: build info [Linux][GCC 7.5.0][64 bit] 8bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [info]: Main profile, Level-4 (Main tier)
+x265 [info]: Thread pool created using 8 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / wpp(17 rows)
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias: 25 / 250 / 40 / 5.00
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip signhide tmvp b-intra
+x265 [info]: tools: strong-intra-smoothing lslices=6 deblock sao
+[0.2%] 1/600 frames, 1.85 fps, 14522.40 kb/s, eta 0:05:24  [2.0%] 12/600 frames, 14.91 fps, 2451.70 kb/s, eta 0:00:39  [3.7%] 22/600 frames, 20.02 fps, 1985.36 kb/s, eta 0:00:28  [5.2%] 31/600 frames, 22.32 fps, 1730.01 kb/s, eta 0:00:25  [7.0%] 42/600 frames, 24.61 fps, 1612.21 kb/s, eta 0:00:22  [8.7%] 52/600 frames, 26.47 fps, 1499.79 kb/s, eta 0:00:20  [10.3%] 62/600 frames, 27.22 fps, 1488.29 kb/s, eta 0:00:19  [11.8%] 71/600 frames, 28.03 fps, 1442.46 kb/s, eta 0:00:18  [13.7%] 82/600 frames, 29.00 fps, 1423.68 kb/s, eta 0:00:17  [15.2%] 91/600 frames, 29.56 fps, 1393.85 kb/s, eta 0:00:17  [17.0%] 102/600 frames, 30.27 fps, 1387.27 kb/s, eta 0:00:16  [18.5%] 111/600 frames, 30.35 fps, 1367.40 kb/s, eta 0:00:16  [20.3%] 122/600 frames, 30.67 fps, 1362.48 kb/s, eta 0:00:15  [22.3%] 134/600 frames, 31.22 fps, 1351.25 kb/s, eta 0:00:14  [23.7%] 142/600 frames, 31.22 fps, 1346.68 kb/s, eta 0:00:14  [25.2%] 151/600 frames, 31.46 fps, 1336.05 kb/s, eta 0:00:14  [27.0%] 162/600 frames, 31.71 fps, 1336.08 kb/s, eta 0:00:13  [28.5%] 171/600 frames, 31.85 fps, 1325.30 kb/s, eta 0:00:13  [30.3%] 182/600 frames, 32.09 fps, 1324.03 kb/s, eta 0:00:13  [31.8%] 191/600 frames, 32.17 fps, 1315.41 kb/s, eta 0:00:12  [33.7%] 202/600 frames, 32.51 fps, 1315.38 kb/s, eta 0:00:12  [35.2%] 211/600 frames, 32.45 fps, 1307.71 kb/s, eta 0:00:11  [37.0%] 222/600 frames, 32.61 fps, 1306.65 kb/s, eta 0:00:11  [38.3%] 230/600 frames, 32.57 fps, 1303.67 kb/s, eta 0:00:11  [40.0%] 240/600 frames, 31.32 fps, 1293.88 kb/s, eta 0:00:11  [41.3%] 248/600 frames, 31.14 fps, 1331.18 kb/s, eta 0:00:11  [43.0%] 258/600 frames, 31.36 fps, 1317.90 kb/s, eta 0:00:10  [44.7%] 268/600 frames, 31.38 fps, 1322.38 kb/s, eta 0:00:10  [46.3%] 278/600 frames, 31.62 fps, 1312.53 kb/s, eta 0:00:10  [48.0%] 288/600 frames, 31.69 fps, 1316.75 kb/s, eta 0:00:09  [49.5%] 297/600 frames, 31.67 fps, 1311.93 kb/s, eta 0:00:09  [51.3%] 308/600 frames, 31.88 fps, 1311.64 kb/s, eta 0:00:09  [52.8%] 317/600 frames, 31.86 fps, 1307.13 kb/s, eta 0:00:08  [54.7%] 328/600 frames, 32.05 fps, 1307.18 kb/s, eta 0:00:08  [56.2%] 337/600 frames, 32.03 fps, 1302.66 kb/s, eta 0:00:08  [58.0%] 348/600 frames, 32.11 fps, 1302.30 kb/s, eta 0:00:07  [59.5%] 357/600 frames, 32.20 fps, 1298.45 kb/s, eta 0:00:07  [61.3%] 368/600 frames, 32.35 fps, 1298.20 kb/s, eta 0:00:07  [62.7%] 376/600 frames, 32.34 fps, 1296.44 kb/s, eta 0:00:06  [64.2%] 385/600 frames, 32.34 fps, 1292.71 kb/s, eta 0:00:06  [66.0%] 396/600 frames, 32.43 fps, 1293.61 kb/s, eta 0:00:06  [67.5%] 405/600 frames, 32.46 fps, 1290.49 kb/s, eta 0:00:06  [69.3%] 416/600 frames, 32.58 fps, 1290.75 kb/s, eta 0:00:05  [70.7%] 424/600 frames, 32.53 fps, 1289.81 kb/s, eta 0:00:05  [72.2%] 433/600 frames, 32.57 fps, 1286.92 kb/s, eta 0:00:05  [74.0%] 444/600 frames, 32.69 fps, 1287.94 kb/s, eta 0:00:04  [75.5%] 453/600 frames, 32.65 fps, 1284.93 kb/s, eta 0:00:04  [77.3%] 464/600 frames, 32.77 fps, 1285.05 kb/s, eta 0:00:04  [78.8%] 473/600 frames, 32.75 fps, 1282.71 kb/s, eta 0:00:03  [80.7%] 484/600 frames, 32.86 fps, 1284.52 kb/s, eta 0:00:03  [81.5%] 489/600 frames, 32.50 fps, 1282.66 kb/s, eta 0:00:03  [83.0%] 498/600 frames, 32.44 fps, 1297.81 kb/s, eta 0:00:03  [85.0%] 510/600 frames, 32.57 fps, 1295.94 kb/s, eta 0:00:02  [86.3%] 518/600 frames, 32.55 fps, 1295.33 kb/s, eta 0:00:02  [87.8%] 527/600 frames, 32.56 fps, 1292.93 kb/s, eta 0:00:02  [89.7%] 538/600 frames, 32.66 fps, 1292.92 kb/s, eta 0:00:01  [91.2%] 547/600 frames, 32.65 fps, 1290.19 kb/s, eta 0:00:01  [93.0%] 558/600 frames, 32.71 fps, 1290.37 kb/s, eta 0:00:01  [94.5%] 567/600 frames, 32.74 fps, 1288.12 kb/s, eta 0:00:01  [95.8%] 575/600 frames, 32.73 fps, 1287.64 kb/s, eta 0:00:00  [97.8%] 587/600 frames, 32.88 fps, 1287.86 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      3, Avg QP:27.57  kb/s: 14018.64
+x265 [info]: frame P:    146, Avg QP:28.84  kb/s: 4313.98 
+x265 [info]: frame B:    451, Avg QP:35.29  kb/s: 204.06  
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 0.7% 0.0% 0.0% 94.6% 4.7% 
+
+encoded 600 frames in 18.04s (33.25 fps), 1273.22 kb/s, Avg QP:33.68
+y4m  [info]: 1920x1080 fps 30/1 i420p8 frames 0 - 599 of 600
+raw  [info]: output file: /dev/null
+x265 [info]: HEVC encoder version 0.0
+x265 [info]: build info [Linux][GCC 7.5.0][64 bit] 8bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [info]: Main profile, Level-4 (Main tier)
+x265 [info]: Thread pool created using 8 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / wpp(17 rows)
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias: 25 / 250 / 40 / 5.00
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip signhide tmvp b-intra
+x265 [info]: tools: strong-intra-smoothing lslices=6 deblock sao
+[0.2%] 1/600 frames, 2.04 fps, 14522.40 kb/s, eta 0:04:52  [1.7%] 10/600 frames, 13.38 fps, 2902.92 kb/s, eta 0:00:44  [3.3%] 20/600 frames, 19.96 fps, 1963.43 kb/s, eta 0:00:29  [5.0%] 30/600 frames, 23.15 fps, 1775.78 kb/s, eta 0:00:24  [6.5%] 39/600 frames, 24.52 fps, 1620.98 kb/s, eta 0:00:22  [8.3%] 50/600 frames, 26.21 fps, 1550.81 kb/s, eta 0:00:20  [9.8%] 59/600 frames, 27.33 fps, 1487.07 kb/s, eta 0:00:19  [11.7%] 70/600 frames, 28.59 fps, 1458.48 kb/s, eta 0:00:18  [13.2%] 79/600 frames, 28.99 fps, 1421.02 kb/s, eta 0:00:17  [15.0%] 90/600 frames, 29.81 fps, 1405.26 kb/s, eta 0:00:17  [16.5%] 99/600 frames, 30.10 fps, 1382.78 kb/s, eta 0:00:16  [18.3%] 110/600 frames, 30.74 fps, 1376.29 kb/s, eta 0:00:15  [19.8%] 119/600 frames, 30.76 fps, 1358.15 kb/s, eta 0:00:15  [21.7%] 130/600 frames, 31.13 fps, 1354.17 kb/s, eta 0:00:15  [23.2%] 139/600 frames, 31.23 fps, 1342.18 kb/s, eta 0:00:14  [25.0%] 150/600 frames, 31.52 fps, 1342.56 kb/s, eta 0:00:14  [26.5%] 159/600 frames, 31.64 fps, 1332.40 kb/s, eta 0:00:13  [28.3%] 170/600 frames, 32.03 fps, 1331.14 kb/s, eta 0:00:13  [29.8%] 179/600 frames, 31.99 fps, 1321.15 kb/s, eta 0:00:13  [31.7%] 190/600 frames, 32.23 fps, 1320.34 kb/s, eta 0:00:12  [33.2%] 199/600 frames, 32.31 fps, 1312.20 kb/s, eta 0:00:12  [35.0%] 210/600 frames, 32.47 fps, 1311.98 kb/s, eta 0:00:12  [36.5%] 219/600 frames, 32.46 fps, 1304.37 kb/s, eta 0:00:11  [38.3%] 230/600 frames, 32.61 fps, 1303.67 kb/s, eta 0:00:11  [40.3%] 242/600 frames, 32.39 fps, 1284.34 kb/s, eta 0:00:11  [41.5%] 249/600 frames, 32.23 fps, 1327.57 kb/s, eta 0:00:10  [43.3%] 260/600 frames, 32.40 fps, 1325.03 kb/s, eta 0:00:10  [44.8%] 269/600 frames, 32.39 fps, 1319.14 kb/s, eta 0:00:10  [46.7%] 280/600 frames, 32.50 fps, 1318.91 kb/s, eta 0:00:09  [48.2%] 289/600 frames, 32.52 fps, 1313.73 kb/s, eta 0:00:09  [49.5%] 297/600 frames, 32.49 fps, 1311.93 kb/s, eta 0:00:09  [51.3%] 308/600 frames, 32.61 fps, 1311.64 kb/s, eta 0:00:08  [52.8%] 317/600 frames, 32.66 fps, 1307.13 kb/s, eta 0:00:08  [54.7%] 328/600 frames, 32.77 fps, 1307.18 kb/s, eta 0:00:08  [56.2%] 337/600 frames, 32.78 fps, 1302.66 kb/s, eta 0:00:08  [58.0%] 348/600 frames, 32.91 fps, 1302.30 kb/s, eta 0:00:07  [59.5%] 357/600 frames, 32.83 fps, 1298.45 kb/s, eta 0:00:07  [61.2%] 367/600 frames, 32.99 fps, 1290.30 kb/s, eta 0:00:07  [62.7%] 376/600 frames, 32.96 fps, 1296.44 kb/s, eta 0:00:06  [64.2%] 385/600 frames, 33.00 fps, 1292.71 kb/s, eta 0:00:06  [66.0%] 396/600 frames, 33.05 fps, 1293.61 kb/s, eta 0:00:06  [67.5%] 405/600 frames, 33.07 fps, 1290.49 kb/s, eta 0:00:05  [69.3%] 416/600 frames, 33.19 fps, 1290.75 kb/s, eta 0:00:05  [71.2%] 427/600 frames, 33.39 fps, 1282.25 kb/s, eta 0:00:05  [72.7%] 436/600 frames, 33.29 fps, 1288.40 kb/s, eta 0:00:04  [74.2%] 445/600 frames, 33.30 fps, 1286.11 kb/s, eta 0:00:04  [76.0%] 456/600 frames, 33.37 fps, 1286.21 kb/s, eta 0:00:04  [77.5%] 465/600 frames, 33.34 fps, 1283.32 kb/s, eta 0:00:04  [79.3%] 476/600 frames, 33.44 fps, 1284.12 kb/s, eta 0:00:03  [80.8%] 485/600 frames, 33.47 fps, 1282.80 kb/s, eta 0:00:03  [81.5%] 489/600 frames, 32.72 fps, 1282.66 kb/s, eta 0:00:03  [83.0%] 498/600 frames, 32.67 fps, 1297.81 kb/s, eta 0:00:03  [85.0%] 510/600 frames, 32.77 fps, 1295.94 kb/s, eta 0:00:02  [86.5%] 519/600 frames, 32.76 fps, 1293.80 kb/s, eta 0:00:02  [88.3%] 530/600 frames, 32.79 fps, 1293.92 kb/s, eta 0:00:02  [89.8%] 539/600 frames, 32.83 fps, 1291.34 kb/s, eta 0:00:01  [91.7%] 550/600 frames, 32.85 fps, 1291.25 kb/s, eta 0:00:01  [93.0%] 558/600 frames, 32.82 fps, 1290.37 kb/s, eta 0:00:01  [94.3%] 566/600 frames, 32.79 fps, 1289.51 kb/s, eta 0:00:01  [95.8%] 575/600 frames, 32.73 fps, 1287.64 kb/s, eta 0:00:00  [97.8%] 587/600 frames, 32.87 fps, 1287.86 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      3, Avg QP:27.57  kb/s: 14018.64
+x265 [info]: frame P:    146, Avg QP:28.84  kb/s: 4313.98 
+x265 [info]: frame B:    451, Avg QP:35.29  kb/s: 204.06  
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 0.7% 0.0% 0.0% 94.6% 4.7% 
+
+encoded 600 frames in 18.06s (33.22 fps), 1273.22 kb/s, Avg QP:33.68
+y4m  [info]: 1920x1080 fps 30/1 i420p8 frames 0 - 599 of 600
+raw  [info]: output file: /dev/null
+x265 [info]: HEVC encoder version 0.0
+x265 [info]: build info [Linux][GCC 7.5.0][64 bit] 8bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [info]: Main profile, Level-4 (Main tier)
+x265 [info]: Thread pool created using 8 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / wpp(17 rows)
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias: 25 / 250 / 40 / 5.00
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip signhide tmvp b-intra
+x265 [info]: tools: strong-intra-smoothing lslices=6 deblock sao
+[0.2%] 1/600 frames, 2.04 fps, 14522.40 kb/s, eta 0:04:54  [1.8%] 11/600 frames, 14.25 fps, 2668.04 kb/s, eta 0:00:41  [3.7%] 22/600 frames, 20.57 fps, 1985.36 kb/s, eta 0:00:28  [5.2%] 31/600 frames, 23.38 fps, 1730.01 kb/s, eta 0:00:24  [7.0%] 42/600 frames, 26.06 fps, 1612.21 kb/s, eta 0:00:21  [8.5%] 51/600 frames, 26.76 fps, 1527.47 kb/s, eta 0:00:20  [10.3%] 62/600 frames, 27.89 fps, 1488.29 kb/s, eta 0:00:19  [11.8%] 71/600 frames, 28.45 fps, 1442.46 kb/s, eta 0:00:18  [13.7%] 82/600 frames, 29.26 fps, 1423.68 kb/s, eta 0:00:17  [15.7%] 94/600 frames, 30.04 fps, 1399.23 kb/s, eta 0:00:16  [17.2%] 103/600 frames, 30.44 fps, 1377.43 kb/s, eta 0:00:16  [18.8%] 113/600 frames, 30.96 fps, 1344.89 kb/s, eta 0:00:15  [20.3%] 122/600 frames, 31.04 fps, 1362.48 kb/s, eta 0:00:15  [21.8%] 131/600 frames, 31.20 fps, 1346.58 kb/s, eta 0:00:15  [23.7%] 142/600 frames, 31.51 fps, 1346.68 kb/s, eta 0:00:14  [25.2%] 151/600 frames, 31.70 fps, 1336.05 kb/s, eta 0:00:14  [27.0%] 162/600 frames, 31.88 fps, 1336.08 kb/s, eta 0:00:13  [29.0%] 174/600 frames, 32.30 fps, 1328.54 kb/s, eta 0:00:13  [30.5%] 183/600 frames, 32.35 fps, 1319.00 kb/s, eta 0:00:12  [32.2%] 193/600 frames, 32.66 fps, 1302.67 kb/s, eta 0:00:12  [33.7%] 202/600 frames, 32.62 fps, 1315.38 kb/s, eta 0:00:12  [35.0%] 210/600 frames, 32.52 fps, 1311.98 kb/s, eta 0:00:11  [36.5%] 219/600 frames, 32.46 fps, 1304.37 kb/s, eta 0:00:11  [38.3%] 230/600 frames, 32.56 fps, 1303.67 kb/s, eta 0:00:11  [40.2%] 241/600 frames, 31.35 fps, 1289.24 kb/s, eta 0:00:11  [41.3%] 248/600 frames, 31.24 fps, 1331.18 kb/s, eta 0:00:11  [42.8%] 257/600 frames, 31.32 fps, 1322.63 kb/s, eta 0:00:10  [44.7%] 268/600 frames, 31.48 fps, 1322.38 kb/s, eta 0:00:10  [46.2%] 277/600 frames, 31.52 fps, 1316.97 kb/s, eta 0:00:10  [48.0%] 288/600 frames, 31.66 fps, 1316.75 kb/s, eta 0:00:09  [49.5%] 297/600 frames, 31.69 fps, 1311.93 kb/s, eta 0:00:09  [51.3%] 308/600 frames, 31.84 fps, 1311.64 kb/s, eta 0:00:09  [52.8%] 317/600 frames, 31.93 fps, 1307.13 kb/s, eta 0:00:08  [54.7%] 328/600 frames, 32.04 fps, 1307.18 kb/s, eta 0:00:08  [56.2%] 337/600 frames, 32.10 fps, 1302.66 kb/s, eta 0:00:08  [57.8%] 347/600 frames, 32.27 fps, 1293.81 kb/s, eta 0:00:07  [59.3%] 356/600 frames, 32.24 fps, 1300.76 kb/s, eta 0:00:07  [61.0%] 366/600 frames, 32.38 fps, 1293.52 kb/s, eta 0:00:07  [62.7%] 376/600 frames, 32.36 fps, 1296.44 kb/s, eta 0:00:06  [64.2%] 385/600 frames, 32.39 fps, 1292.71 kb/s, eta 0:00:06  [66.0%] 396/600 frames, 32.47 fps, 1293.61 kb/s, eta 0:00:06  [67.5%] 405/600 frames, 32.43 fps, 1290.49 kb/s, eta 0:00:06  [69.3%] 416/600 frames, 32.51 fps, 1290.75 kb/s, eta 0:00:05  [70.8%] 425/600 frames, 32.57 fps, 1287.82 kb/s, eta 0:00:05  [72.7%] 436/600 frames, 32.65 fps, 1288.40 kb/s, eta 0:00:05  [74.2%] 445/600 frames, 32.65 fps, 1286.11 kb/s, eta 0:00:04  [76.0%] 456/600 frames, 32.72 fps, 1286.21 kb/s, eta 0:00:04  [77.5%] 465/600 frames, 32.73 fps, 1283.32 kb/s, eta 0:00:04  [79.3%] 476/600 frames, 32.84 fps, 1284.12 kb/s, eta 0:00:03  [81.0%] 486/600 frames, 32.96 fps, 1280.46 kb/s, eta 0:00:03  [81.5%] 489/600 frames, 32.52 fps, 1282.66 kb/s, eta 0:00:03  [83.0%] 498/600 frames, 32.47 fps, 1297.81 kb/s, eta 0:00:03  [85.0%] 510/600 frames, 32.56 fps, 1295.94 kb/s, eta 0:00:02  [86.5%] 519/600 frames, 32.49 fps, 1293.80 kb/s, eta 0:00:02  [87.8%] 527/600 frames, 32.45 fps, 1292.93 kb/s, eta 0:00:02  [89.5%] 537/600 frames, 32.56 fps, 1287.44 kb/s, eta 0:00:01  [91.0%] 546/600 frames, 32.50 fps, 1291.67 kb/s, eta 0:00:01  [92.5%] 555/600 frames, 32.50 fps, 1289.28 kb/s, eta 0:00:01  [94.3%] 566/600 frames, 32.57 fps, 1289.51 kb/s, eta 0:00:01  [95.8%] 575/600 frames, 32.52 fps, 1287.64 kb/s, eta 0:00:00  [97.8%] 587/600 frames, 32.67 fps, 1287.86 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      3, Avg QP:27.57  kb/s: 14018.64
+x265 [info]: frame P:    146, Avg QP:28.84  kb/s: 4313.98 
+x265 [info]: frame B:    451, Avg QP:35.29  kb/s: 204.06  
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 0.7% 0.0% 0.0% 94.6% 4.7% 
+
+encoded 600 frames in 18.18s (33.00 fps), 1273.22 kb/s, Avg QP:33.68
+y4m  [info]: 1920x1080 fps 30/1 i420p8 frames 0 - 599 of 600
+raw  [info]: output file: /dev/null
+x265 [info]: HEVC encoder version 0.0
+x265 [info]: build info [Linux][GCC 7.5.0][64 bit] 8bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [info]: Main profile, Level-4 (Main tier)
+x265 [info]: Thread pool created using 8 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / wpp(17 rows)
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias: 25 / 250 / 40 / 5.00
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip signhide tmvp b-intra
+x265 [info]: tools: strong-intra-smoothing lslices=6 deblock sao
+[0.2%] 1/600 frames, 2.04 fps, 14522.40 kb/s, eta 0:04:53  [1.8%] 11/600 frames, 14.43 fps, 2668.04 kb/s, eta 0:00:40  [3.7%] 22/600 frames, 20.55 fps, 1985.36 kb/s, eta 0:00:28  [5.2%] 31/600 frames, 23.26 fps, 1730.01 kb/s, eta 0:00:24  [7.0%] 42/600 frames, 25.61 fps, 1612.21 kb/s, eta 0:00:21  [8.5%] 51/600 frames, 26.76 fps, 1527.47 kb/s, eta 0:00:20  [10.3%] 62/600 frames, 27.93 fps, 1488.29 kb/s, eta 0:00:19  [12.0%] 72/600 frames, 29.02 fps, 1423.44 kb/s, eta 0:00:18  [13.7%] 82/600 frames, 29.55 fps, 1423.68 kb/s, eta 0:00:17  [15.3%] 92/600 frames, 30.34 fps, 1379.55 kb/s, eta 0:00:16  [17.0%] 102/600 frames, 30.60 fps, 1387.27 kb/s, eta 0:00:16  [18.8%] 113/600 frames, 31.51 fps, 1344.89 kb/s, eta 0:00:15  [20.3%] 122/600 frames, 31.45 fps, 1362.48 kb/s, eta 0:00:15  [21.8%] 131/600 frames, 31.65 fps, 1346.58 kb/s, eta 0:00:14  [23.7%] 142/600 frames, 31.96 fps, 1346.68 kb/s, eta 0:00:14  [25.2%] 151/600 frames, 32.00 fps, 1336.05 kb/s, eta 0:00:14  [27.0%] 162/600 frames, 32.41 fps, 1336.08 kb/s, eta 0:00:13  [28.5%] 171/600 frames, 32.30 fps, 1325.30 kb/s, eta 0:00:13  [30.3%] 182/600 frames, 32.54 fps, 1324.03 kb/s, eta 0:00:12  [31.8%] 191/600 frames, 32.44 fps, 1315.41 kb/s, eta 0:00:12  [33.7%] 202/600 frames, 32.74 fps, 1315.38 kb/s, eta 0:00:12  [35.2%] 211/600 frames, 32.74 fps, 1307.71 kb/s, eta 0:00:11  [37.0%] 222/600 frames, 32.89 fps, 1306.65 kb/s, eta 0:00:11  [38.7%] 232/600 frames, 33.11 fps, 1294.47 kb/s, eta 0:00:11  [39.7%] 238/600 frames, 32.53 fps, 1302.43 kb/s, eta 0:00:11  [41.3%] 248/600 frames, 32.51 fps, 1331.18 kb/s, eta 0:00:10  [42.8%] 257/600 frames, 32.56 fps, 1322.63 kb/s, eta 0:00:10  [44.5%] 267/600 frames, 32.78 fps, 1311.21 kb/s, eta 0:00:10  [46.0%] 276/600 frames, 32.71 fps, 1320.17 kb/s, eta 0:00:09  [47.5%] 285/600 frames, 32.75 fps, 1315.00 kb/s, eta 0:00:09  [49.3%] 296/600 frames, 32.82 fps, 1314.87 kb/s, eta 0:00:09  [50.8%] 305/600 frames, 32.83 fps, 1309.80 kb/s, eta 0:00:08  [52.7%] 316/600 frames, 32.96 fps, 1309.81 kb/s, eta 0:00:08  [54.2%] 325/600 frames, 32.94 fps, 1305.42 kb/s, eta 0:00:08  [56.0%] 336/600 frames, 33.09 fps, 1305.15 kb/s, eta 0:00:07  [57.5%] 345/600 frames, 33.09 fps, 1300.70 kb/s, eta 0:00:07  [59.3%] 356/600 frames, 33.20 fps, 1300.76 kb/s, eta 0:00:07  [60.8%] 365/600 frames, 33.19 fps, 1296.79 kb/s, eta 0:00:07  [62.7%] 376/600 frames, 33.30 fps, 1296.44 kb/s, eta 0:00:06  [64.2%] 385/600 frames, 33.22 fps, 1292.71 kb/s, eta 0:00:06  [66.0%] 396/600 frames, 33.34 fps, 1293.61 kb/s, eta 0:00:06  [67.5%] 405/600 frames, 33.33 fps, 1290.49 kb/s, eta 0:00:05  [69.2%] 415/600 frames, 33.47 fps, 1283.52 kb/s, eta 0:00:05  [70.7%] 424/600 frames, 33.47 fps, 1289.81 kb/s, eta 0:00:05  [72.2%] 433/600 frames, 33.45 fps, 1286.92 kb/s, eta 0:00:04  [74.0%] 444/600 frames, 33.56 fps, 1287.94 kb/s, eta 0:00:04  [75.3%] 452/600 frames, 33.53 fps, 1286.78 kb/s, eta 0:00:04  [76.8%] 461/600 frames, 33.54 fps, 1283.78 kb/s, eta 0:00:04  [78.7%] 472/600 frames, 33.61 fps, 1284.48 kb/s, eta 0:00:03  [80.3%] 482/600 frames, 33.70 fps, 1279.81 kb/s, eta 0:00:03  [81.5%] 489/600 frames, 32.97 fps, 1282.66 kb/s, eta 0:00:03  [83.0%] 498/600 frames, 32.89 fps, 1297.81 kb/s, eta 0:00:03  [85.0%] 510/600 frames, 33.00 fps, 1295.94 kb/s, eta 0:00:02  [86.5%] 519/600 frames, 32.94 fps, 1293.80 kb/s, eta 0:00:02  [88.3%] 530/600 frames, 32.97 fps, 1293.92 kb/s, eta 0:00:02  [89.8%] 539/600 frames, 32.95 fps, 1291.34 kb/s, eta 0:00:01  [91.7%] 550/600 frames, 32.99 fps, 1291.25 kb/s, eta 0:00:01  [93.7%] 562/600 frames, 33.09 fps, 1289.92 kb/s, eta 0:00:01  [95.2%] 571/600 frames, 33.12 fps, 1287.82 kb/s, eta 0:00:00  [96.5%] 579/600 frames, 33.10 fps, 1287.49 kb/s, eta 0:00:00  [98.7%] 592/600 frames, 33.33 fps, 1285.48 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      3, Avg QP:27.57  kb/s: 14018.64
+x265 [info]: frame P:    146, Avg QP:28.84  kb/s: 4313.98 
+x265 [info]: frame B:    451, Avg QP:35.29  kb/s: 204.06  
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 0.7% 0.0% 0.0% 94.6% 4.7% 
+
+encoded 600 frames in 17.87s (33.58 fps), 1273.22 kb/s, Avg QP:33.68
+y4m  [info]: 1920x1080 fps 30/1 i420p8 frames 0 - 599 of 600
+raw  [info]: output file: /dev/null
+x265 [info]: HEVC encoder version 0.0
+x265 [info]: build info [Linux][GCC 7.5.0][64 bit] 8bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [info]: Main profile, Level-4 (Main tier)
+x265 [info]: Thread pool created using 8 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 3 / wpp(17 rows)
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias: 25 / 250 / 40 / 5.00
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip signhide tmvp b-intra
+x265 [info]: tools: strong-intra-smoothing lslices=6 deblock sao
+[0.2%] 1/600 frames, 2.02 fps, 14522.40 kb/s, eta 0:04:56  [1.8%] 11/600 frames, 14.41 fps, 2668.04 kb/s, eta 0:00:40  [3.7%] 22/600 frames, 20.29 fps, 1985.36 kb/s, eta 0:00:28  [5.2%] 31/600 frames, 23.11 fps, 1730.01 kb/s, eta 0:00:24  [7.0%] 42/600 frames, 25.56 fps, 1612.21 kb/s, eta 0:00:21  [8.5%] 51/600 frames, 26.84 fps, 1527.47 kb/s, eta 0:00:20  [10.3%] 62/600 frames, 27.83 fps, 1488.29 kb/s, eta 0:00:19  [12.3%] 74/600 frames, 28.96 fps, 1445.19 kb/s, eta 0:00:18  [13.8%] 83/600 frames, 29.46 fps, 1410.71 kb/s, eta 0:00:17  [15.7%] 94/600 frames, 30.05 fps, 1399.23 kb/s, eta 0:00:16  [17.3%] 104/600 frames, 30.71 fps, 1365.06 kb/s, eta 0:00:16  [19.0%] 114/600 frames, 30.70 fps, 1371.97 kb/s, eta 0:00:15  [20.7%] 124/600 frames, 31.24 fps, 1343.97 kb/s, eta 0:00:15  [22.3%] 134/600 frames, 31.23 fps, 1351.25 kb/s, eta 0:00:14  [23.8%] 143/600 frames, 31.47 fps, 1339.96 kb/s, eta 0:00:14  [25.7%] 154/600 frames, 31.69 fps, 1340.14 kb/s, eta 0:00:14  [27.5%] 165/600 frames, 32.28 fps, 1315.22 kb/s, eta 0:00:13  [29.0%] 174/600 frames, 32.05 fps, 1328.54 kb/s, eta 0:00:13  [30.5%] 183/600 frames, 32.20 fps, 1319.00 kb/s, eta 0:00:12  [32.3%] 194/600 frames, 32.35 fps, 1318.72 kb/s, eta 0:00:12  [34.0%] 204/600 frames, 32.61 fps, 1304.97 kb/s, eta 0:00:12  [35.7%] 214/600 frames, 32.69 fps, 1310.47 kb/s, eta 0:00:11  [37.2%] 223/600 frames, 32.72 fps, 1302.54 kb/s, eta 0:00:11  [39.0%] 234/600 frames, 32.97 fps, 1302.33 kb/s, eta 0:00:11  [40.2%] 241/600 frames, 31.59 fps, 1289.24 kb/s, eta 0:00:11  [41.3%] 248/600 frames, 31.45 fps, 1331.18 kb/s, eta 0:00:11  [42.8%] 257/600 frames, 31.56 fps, 1322.63 kb/s, eta 0:00:10  [44.7%] 268/600 frames, 31.75 fps, 1322.38 kb/s, eta 0:00:10  [46.0%] 276/600 frames, 31.74 fps, 1320.17 kb/s, eta 0:00:10  [47.5%] 285/600 frames, 31.81 fps, 1315.00 kb/s, eta 0:00:09  [49.3%] 296/600 frames, 31.91 fps, 1314.87 kb/s, eta 0:00:09  [51.0%] 306/600 frames, 32.09 fps, 1305.82 kb/s, eta 0:00:09  [52.7%] 316/600 frames, 32.13 fps, 1309.81 kb/s, eta 0:00:08  [54.2%] 325/600 frames, 32.17 fps, 1305.42 kb/s, eta 0:00:08  [56.0%] 336/600 frames, 32.35 fps, 1305.15 kb/s, eta 0:00:08  [57.5%] 345/600 frames, 32.41 fps, 1300.70 kb/s, eta 0:00:07  [59.3%] 356/600 frames, 32.55 fps, 1300.76 kb/s, eta 0:00:07  [61.3%] 368/600 frames, 32.73 fps, 1298.20 kb/s, eta 0:00:07  [62.8%] 377/600 frames, 32.76 fps, 1294.26 kb/s, eta 0:00:06  [64.7%] 388/600 frames, 32.88 fps, 1294.44 kb/s, eta 0:00:06  [66.2%] 397/600 frames, 32.88 fps, 1291.53 kb/s, eta 0:00:06  [68.0%] 408/600 frames, 32.96 fps, 1291.86 kb/s, eta 0:00:05  [69.5%] 417/600 frames, 32.98 fps, 1288.72 kb/s, eta 0:00:05  [71.3%] 428/600 frames, 33.00 fps, 1289.28 kb/s, eta 0:00:05  [72.8%] 437/600 frames, 33.05 fps, 1286.53 kb/s, eta 0:00:04  [74.7%] 448/600 frames, 33.09 fps, 1287.37 kb/s, eta 0:00:04  [76.2%] 457/600 frames, 33.13 fps, 1284.31 kb/s, eta 0:00:04  [78.0%] 468/600 frames, 33.17 fps, 1284.68 kb/s, eta 0:00:03  [79.5%] 477/600 frames, 33.20 fps, 1282.38 kb/s, eta 0:00:03  [81.5%] 489/600 frames, 33.05 fps, 1282.66 kb/s, eta 0:00:03  [83.0%] 498/600 frames, 32.97 fps, 1297.81 kb/s, eta 0:00:03  [84.7%] 508/600 frames, 33.07 fps, 1292.24 kb/s, eta 0:00:02  [86.3%] 518/600 frames, 33.04 fps, 1295.33 kb/s, eta 0:00:02  [87.7%] 526/600 frames, 33.01 fps, 1294.51 kb/s, eta 0:00:02  [89.0%] 534/600 frames, 32.95 fps, 1293.45 kb/s, eta 0:00:02  [90.3%] 542/600 frames, 32.83 fps, 1292.27 kb/s, eta 0:00:01  [92.0%] 552/600 frames, 32.93 fps, 1287.56 kb/s, eta 0:00:01  [93.7%] 562/600 frames, 32.92 fps, 1289.92 kb/s, eta 0:00:01  [95.2%] 571/600 frames, 32.93 fps, 1287.82 kb/s, eta 0:00:00  [96.5%] 579/600 frames, 32.90 fps, 1287.49 kb/s, eta 0:00:00  [98.7%] 592/600 frames, 33.14 fps, 1285.48 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      3, Avg QP:27.57  kb/s: 14018.64
+x265 [info]: frame P:    146, Avg QP:28.84  kb/s: 4313.98 
+x265 [info]: frame B:    451, Avg QP:35.29  kb/s: 204.06  
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 0.7% 0.0% 0.0% 94.6% 4.7% 
+
+encoded 600 frames in 17.97s (33.38 fps), 1273.22 kb/s, Avg QP:33.68
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            932.95 Joules power/energy-pkg/                                             ( +-  0.72% )
+             25.30 Joules power/energy-ram/                                             ( +-  0.15% )
+
+           18.0604 +- 0.0544 seconds time elapsed  ( +-  0.30% )
+
