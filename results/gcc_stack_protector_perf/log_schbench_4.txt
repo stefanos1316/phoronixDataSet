@@ -1,0 +1,53 @@
+Latency percentiles (usec)
+	50.0000th: 22
+	75.0000th: 9520
+	90.0000th: 19488
+	95.0000th: 27488
+	*99.0000th: 38592
+	99.5000th: 43072
+	99.9000th: 49600
+	min=0, max=60641
+Latency percentiles (usec)
+	50.0000th: 26
+	75.0000th: 9552
+	90.0000th: 20000
+	95.0000th: 28704
+	*99.0000th: 39488
+	99.5000th: 42944
+	99.9000th: 49472
+	min=0, max=68610
+Latency percentiles (usec)
+	50.0000th: 25
+	75.0000th: 9872
+	90.0000th: 20576
+	95.0000th: 28896
+	*99.0000th: 39104
+	99.5000th: 42944
+	99.9000th: 49984
+	min=0, max=83447
+Latency percentiles (usec)
+	50.0000th: 25
+	75.0000th: 9616
+	90.0000th: 20000
+	95.0000th: 28320
+	*99.0000th: 38976
+	99.5000th: 42944
+	99.9000th: 48832
+	min=0, max=74008
+Latency percentiles (usec)
+	50.0000th: 22
+	75.0000th: 9456
+	90.0000th: 20000
+	95.0000th: 27616
+	*99.0000th: 38976
+	99.5000th: 42048
+	99.9000th: 49728
+	min=0, max=60848
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            983.27 Joules power/energy-pkg/                                             ( +-  0.06% )
+             15.07 Joules power/energy-ram/                                             ( +-  0.03% )
+
+          30.04071 +- 0.00499 seconds time elapsed  ( +-  0.02% )
+

@@ -1,0 +1,13 @@
+./hmmer: 1: ./hmmer: !#/bin/bash: not found
+./hmmer: 1: ./hmmer: !#/bin/bash: not found
+./hmmer: 1: ./hmmer: !#/bin/bash: not found
+./hmmer: 1: ./hmmer: !#/bin/bash: not found
+./hmmer: 1: ./hmmer: !#/bin/bash: not found
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,203.86 Joules power/energy-pkg/                                             ( +-  0.54% )
+             37.31 Joules power/energy-ram/                                             ( +-  0.19% )
+
+           24.9477 +- 0.0331 seconds time elapsed  ( +-  0.13% )
+

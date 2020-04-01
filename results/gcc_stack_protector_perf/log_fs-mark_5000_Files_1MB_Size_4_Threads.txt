@@ -1,0 +1,10 @@
+Error in unlink of ./scratch///5e83db90~~~~~~~~KFXWS1044PLEPHCV9G456108 : No such file or directory
+fopen failed to open: fs_log.txt.5347
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          3,034.89 Joules power/energy-pkg/                                             ( +-  1.84% )
+            247.44 Joules power/energy-ram/                                             ( +-  2.03% )
+
+            467.82 +- 10.58 seconds time elapsed  ( +-  2.26% )
+

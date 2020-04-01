@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="gcc_all_perf"
+scenario="gcc_execstack_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/gcc_tasks_test"
@@ -147,9 +147,9 @@ tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 
 		   "cpuminer-opt lbry" "cpuminer-opt sha256t" "cpuminer-opt skein" "cpuminer-opt myr-gr" "cpuminer-opt m7m" "cpuminer-opt deep" \
 		   "crafty bench quit" "ctx_clock" "c-ray -t $(nproc --all) -s 3840x2160 -r 16 -i ../inputs/sphfract -o output.ppm" \
 		   "dbench 1" "dbench 6" "dbench 12" "dbench 48"  "dcraw ../${taskDirectory}/dcraw/DSC_50*" \
-		   "fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size"  "minion ../inputs/minions.minion" \
+		   "fs-mark 1000_Files_1MB_Size" "fs-mark 5000_Files_1MB_Size_4_Threads" "fs-mark 4000_Files_32_Sub_Dirs_1MB_Size" \
 		   "graphics-magick minify" "graphics-magick gaussian 0x1" "graphics-magick sharpen 0x2.0" "graphics-magick rotate 90" "graphics-magick resize 50%" \
-		   "ebizzy -S 30" "encode-mp3" "ffmpeg" "fhourstones" "gmpbench" "himeno XL" "hint float" "hint double" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
+		   "ebizzy -S 30" "encode-mp3" "ffmpeg" "gmpbench" "himeno XL" "hint float" "hint double" "hmmer -E 0.1 ../inputs/Pfam_ls ../inputs/7LES_DROME" \
 		   "hpcg" "iozone -s2096000" "iozone -s4096000" "iozone -s8126000" "iperf tcp" "iperf udp" "john-the-ripper bcrypt" "john-the-ripper md5crypt" \
 		   "lzbench -ezstd ../inputs/linux-5.3.tar.gz" "lzbench -ebrotli ../inputs/linux-5.3.tar.gz" \
 		   "lzbench -elibdeflate ../inputs/linux-5.3.tar.gz" "lzbench -exz ../inputs/linux-5.3.tar.gz" "m-queens 2 18" "mt-dgemm"\
@@ -168,9 +168,6 @@ tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 
 		   "tinymembench" "tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "tjbench" "tscp" "t-test1 5000" \
 		   "ttsiod-renderer" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" "tungsten volumetric-caustic" \
 		   "vpxenc" "x264" "x265" "xsbench -t 8 -s large -l 30000000" "xz" "zstd")
-
-tasks=("blake2s 100" "ctx_clock" "osbench create_files" "osbench create_processes" "osbench create_threads" "osbench launch_programs" "osbench mem_alloc" \
-	"fhourstone" "tscp")
 
 function startServers {
 	case $1 in
@@ -234,7 +231,7 @@ function checkIfSubstringExistsMoreTimesInArray {
 	local substring=$1
 	local count=0
 	local task
-	for i in "${tasks[@]}"; do
+	for i in "${tasks_gcc[@]}"; do
 		if [[ "$i" == "$substring"* ]]; then
 			count=$((count+1))
 		fi
@@ -250,7 +247,7 @@ sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
 sudo sysctl -w kernel.perf_event_paranoid=-1
 sudo bash ../tools/governor.sh pe
 
-for task in "${tasks[@]}"; do
+for task in "${tasks_gcc[@]}"; do
 	taskName=`echo ${task} | awk '{print $1}'`
 	benchmark=${taskName}
 	checkIfSubstringExistsMoreTimesInArray ${task}
