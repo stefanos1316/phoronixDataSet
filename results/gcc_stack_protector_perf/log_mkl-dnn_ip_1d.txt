@@ -1,0 +1,8 @@
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            802.14 Joules power/energy-pkg/                                             ( +-  0.65% )
+             18.63 Joules power/energy-ram/                                             ( +-  0.27% )
+
+          15.27002 +- 0.00591 seconds time elapsed  ( +-  0.04% )
+
