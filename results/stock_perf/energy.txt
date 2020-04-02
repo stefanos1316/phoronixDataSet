@@ -97,7 +97,7 @@ mkl-dnn_conv_googlenet_v3               7463.64
 mkl-dnn_conv_alexnet               1015.31
 mkl-dnn_ip_1d               880.88
 mkl-dnn_ip_all               2325.80
-mkl-dnn_rnn_training               2087.87
+mkl-dnn_rnn_training               2107.87
 node-express-loadtest               343.00
 numenta-nab               27361.78
 phpbench               365.21
@@ -290,7 +290,7 @@ qgears_-render               3900
 qgears_TEXT               2595
 qgears_GEARSFANCY               3887
 qgears_COMPO               719
-jxrend               439
+jxrend               448
 nexuiz_800x600               962
 nexuiz_1024x768               1291
 nexuiz_1920x1080               2496

@@ -21,8 +21,7 @@ libpng warning: iCCP: known incorrect sRGB profile
 
  Performance counter stats for 'system wide' (5 runs):
 
-         12,750.09 Joules power/energy-pkg/                                             ( +-  0.06% )
-            449.72 Joules power/energy-ram/                                             ( +-  0.34% )
+         12,690.60 Joules power/energy-pkg/                                             ( +-  0.12% )
+            447.86 Joules power/energy-ram/                                             ( +-  0.41% )
 
-          332.0291 +- 0.0389 seconds time elapsed  ( +-  0.01% )
-
+         331.99633 +- 0.00764 seconds time elapsed  ( +-  0.00% )

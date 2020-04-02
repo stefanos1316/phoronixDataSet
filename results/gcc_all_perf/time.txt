@@ -40,7 +40,6 @@ dcraw                           24
 fs-mark_1000_Files_1MB_Size                           43
 fs-mark_5000_Files_1MB_Size_4_Threads                           483
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size                           182
-minion               
 graphics-magick_minify                           83
 graphics-magick_gaussian                           622
 graphics-magick_sharpen                         1213

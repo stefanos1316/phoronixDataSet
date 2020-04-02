@@ -34,8 +34,8 @@ blogbench_write               2269.53
 x264               732.21
 x265               1016.26
 ctx_clock               1121.24
-c-ray               9444.25
-povray               6310.17
+c-ray               9398.18
+povray               6249.17
 cachebench_read               532.64
 cachebench_write               578.35
 cachebench_mixed               1824.65
@@ -157,7 +157,7 @@ fs-mark_5000_Files_1MB_Size_4_Threads               2957.24
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size               1111.36
 bork               234.67
 ffmpeg               292.69
-encode-mp3               670.95
+encode-mp3               661.15
 graphics-magick_minify               1076.91
 graphics-magick_gaussian               8645.46
 graphics-magick_sharpen               18236.49
@@ -281,9 +281,9 @@ unigine-heaven_800x600               12756
 unigine-heaven_1024x768               13439
 unigine-heaven_1920x1080               20274
 unigine-heaven_2560x1440               34735
-glmark2_800x600               13199
+glmark2_800x600               13138
 glmark2_1024x768               13273
-glmark2_1920x1080               13162
+glmark2_1920x1080               13124
 glmark2_2560x1440               13417
 qgears_-image               3080
 qgears_-render               2970
@@ -303,7 +303,7 @@ paraview_manyspheres               7782
 paraview_waveletcontour               19356
 paraview_waveletvolume               1308
 indigobench_supercar               3151
-indigobench_bedroom               3109
+indigobench_bedroom               3096
 j2dbench_all               13207
 j2dbench_images               3791
 j2dbench_graphics               9033
