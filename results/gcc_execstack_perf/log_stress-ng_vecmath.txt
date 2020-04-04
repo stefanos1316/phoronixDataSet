@@ -1,0 +1,23 @@
+stress-ng: info:  [27750] defaulting to a 86400 second run per stressor
+stress-ng: info:  [27750] dispatching hogs: 8 vecmath
+stress-ng: info:  [27750] successful run completed in 18.88s
+stress-ng: info:  [27769] defaulting to a 86400 second run per stressor
+stress-ng: info:  [27769] dispatching hogs: 8 vecmath
+stress-ng: info:  [27769] successful run completed in 18.85s
+stress-ng: info:  [27784] defaulting to a 86400 second run per stressor
+stress-ng: info:  [27784] dispatching hogs: 8 vecmath
+stress-ng: info:  [27784] successful run completed in 18.85s
+stress-ng: info:  [27799] defaulting to a 86400 second run per stressor
+stress-ng: info:  [27799] dispatching hogs: 8 vecmath
+stress-ng: info:  [27799] successful run completed in 18.86s
+stress-ng: info:  [27808] defaulting to a 86400 second run per stressor
+stress-ng: info:  [27808] dispatching hogs: 8 vecmath
+stress-ng: info:  [27808] successful run completed in 18.87s
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            861.52 Joules power/energy-pkg/                                             ( +-  0.28% )
+              9.46 Joules power/energy-ram/                                             ( +-  0.08% )
+
+           18.8757 +- 0.0126 seconds time elapsed  ( +-  0.07% )
+

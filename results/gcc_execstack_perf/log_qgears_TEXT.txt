@@ -1,0 +1,58 @@
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+setting mode to  3
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,758.77 Joules power/energy-pkg/                                             ( +-  0.04% )
+             57.83 Joules power/energy-ram/                                             ( +-  0.10% )
+
+           90.9181 +- 0.0996 seconds time elapsed  ( +-  0.11% )
+
