@@ -7,11 +7,6 @@
 	$ cd tools
 	$ bash generateInputData.sh
 
-# To install watts up pro submodule execute:
-
-	$ git submodule init
-  	$ git submodule update
-
 # To download and install all tasks execute:
 	
 	$ cd tools

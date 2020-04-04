@@ -40,7 +40,6 @@ dcraw               428
 fs-mark_1000_Files_1MB_Size               292
 fs-mark_5000_Files_1MB_Size_4_Threads               3299
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size               1255
-minion               900
 graphics-magick_minify               2493
 graphics-magick_gaussian               24302
 graphics-magick_sharpen               50949
@@ -49,7 +48,6 @@ graphics-magick_resize               5759
 ebizzy               1641
 encode-mp3               596
 ffmpeg               279
-fhourstones               2139
 gmpbench               7960
 himeno               1532
 hint_float               7088
