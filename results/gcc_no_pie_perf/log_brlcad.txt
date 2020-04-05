@@ -1,0 +1,13 @@
+./brlcad: line 2: ./build/bench/benchmark: Permission denied
+./brlcad: line 2: ./build/bench/benchmark: Permission denied
+./brlcad: line 2: ./build/bench/benchmark: Permission denied
+./brlcad: line 2: ./build/bench/benchmark: Permission denied
+./brlcad: line 2: ./build/bench/benchmark: Permission denied
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              0.04 Joules power/energy-pkg/                                             ( +- 66.47% )
+              0.00 Joules power/energy-ram/                                             ( +- 80.84% )
+
+           0.00401 +- 0.00297 seconds time elapsed  ( +- 74.08% )
+

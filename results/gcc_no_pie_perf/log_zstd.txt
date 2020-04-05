@@ -1,0 +1,13 @@
+zstd: linux-5.3.tar.gz.zst: Permission denied
+zstd: linux-5.3.tar.gz.zst: Permission denied
+zstd: linux-5.3.tar.gz.zst: Permission denied
+zstd: linux-5.3.tar.gz.zst: Permission denied
+zstd: linux-5.3.tar.gz.zst: Permission denied
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              0.09 Joules power/energy-pkg/                                             ( +- 55.22% )
+              0.01 Joules power/energy-ram/                                             ( +- 78.03% )
+
+           0.00906 +- 0.00679 seconds time elapsed  ( +- 74.99% )
+

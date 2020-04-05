@@ -1,0 +1,203 @@
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/17547.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/17661.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/17774.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/17892.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/18008.dat:6: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+awk: /home/sgeorgiou/GitHub/phoronixDataSet/tools/gcc_tasks_test/byte/pgms/index.awk:20: fatal: division by zero attempted
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            348.28 Joules power/energy-pkg/                                             ( +-  0.23% )
+             30.38 Joules power/energy-ram/                                             ( +-  0.20% )
+
+            61.479 +- 0.119 seconds time elapsed  ( +-  0.19% )
+

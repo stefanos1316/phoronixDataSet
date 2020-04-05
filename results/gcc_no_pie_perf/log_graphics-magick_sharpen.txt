@@ -1,0 +1,23 @@
+Results: 8 threads 1 iter 27.19s user 3.403474s total 0.294 iter/s 0.037 iter/cpu
+./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 1 iter 27.11s user 3.394742s total 0.295 iter/s 0.037 iter/cpu
+./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 1 iter 27.12s user 3.397041s total 0.294 iter/s 0.037 iter/cpu
+./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 1 iter 27.12s user 3.393315s total 0.295 iter/s 0.037 iter/cpu
+./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 1 iter 27.18s user 3.401486s total 0.294 iter/s 0.037 iter/cpu
+./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            160.51 Joules power/energy-pkg/                                             ( +-  0.33% )
+              1.75 Joules power/energy-ram/                                             ( +-  0.10% )
+
+           3.40115 +- 0.00196 seconds time elapsed  ( +-  0.06% )
+

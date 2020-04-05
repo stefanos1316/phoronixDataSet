@@ -1,0 +1,1108 @@
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fda6955432a
+#1  0x7fda69554ed5
+#2  0x7fda6955569d
+#3  0x7fda696c7ecd
+#4  0x7fda696cebdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fda68b9cb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f808f83e32a
+#1  0x7f808f83eed5
+#2  0x7f808f83f69d
+#3  0x7f808f9b1ecd
+#4  0x7f808f9b8bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f808ee86b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f82352b732a
+#1  0x7f82352b7ed5
+#2  0x7f82352b869d
+#3  0x7f823542aecd
+#4  0x7f8235431bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f82348ffb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fadbd00432a
+#1  0x7fadbd004ed5
+#2  0x7fadbd00569d
+#3  0x7fadbd177ecd
+#4  0x7fadbd17ebdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fadbc64cb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f0a9719832a
+#1  0x7f0a97198ed5
+#2  0x7f0a9719969d
+#3  0x7f0a9730becd
+#4  0x7f0a97312bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f0a967e0b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f9b38e1532a
+#1  0x7f9b38e15ed5
+#2  0x7f9b38e1669d
+#3  0x7f9b38f88ecd
+#4  0x7f9b38f8fbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f9b3845db96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fb829d8e32a
+#1  0x7fb829d8eed5
+#2  0x7fb829d8f69d
+#3  0x7fb829f01ecd
+#4  0x7fb829f08bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fb8293d6b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fc071c9032a
+#1  0x7fc071c90ed5
+#2  0x7fc071c9169d
+#3  0x7fc071e03ecd
+#4  0x7fc071e0abdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fc0712d8b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fa2f038032a
+#1  0x7fa2f0380ed5
+#2  0x7fa2f038169d
+#3  0x7fa2f04f3ecd
+#4  0x7fa2f04fabdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fa2ef9c8b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f711caad32a
+#1  0x7f711caaded5
+#2  0x7f711caae69d
+#3  0x7f711cc20ecd
+#4  0x7f711cc27bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f711c0f5b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7ff5879ca32a
+#1  0x7ff5879caed5
+#2  0x7ff5879cb69d
+#3  0x7ff587b3decd
+#4  0x7ff587b44bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7ff587012b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7ff6fd05332a
+#1  0x7ff6fd053ed5
+#2  0x7ff6fd05469d
+#3  0x7ff6fd1c6ecd
+#4  0x7ff6fd1cdbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7ff6fc69bb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fef281d932a
+#1  0x7fef281d9ed5
+#2  0x7fef281da69d
+#3  0x7fef2834cecd
+#4  0x7fef28353bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fef27821b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fcde781032a
+#1  0x7fcde7810ed5
+#2  0x7fcde781169d
+#3  0x7fcde7983ecd
+#4  0x7fcde798abdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fcde6e58b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f73e6bcc32a
+#1  0x7f73e6bcced5
+#2  0x7f73e6bcd69d
+#3  0x7f73e6d3fecd
+#4  0x7f73e6d46bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f73e6214b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f7eea8f932a
+#1  0x7f7eea8f9ed5
+#2  0x7f7eea8fa69d
+#3  0x7f7eeaa6cecd
+#4  0x7f7eeaa73bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f7ee9f41b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f9ffc0dc32a
+#1  0x7f9ffc0dced5
+#2  0x7f9ffc0dd69d
+#3  0x7f9ffc24fecd
+#4  0x7f9ffc256bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f9ffb724b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f94b835a32a
+#1  0x7f94b835aed5
+#2  0x7f94b835b69d
+#3  0x7f94b84cdecd
+#4  0x7f94b84d4bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f94b79a2b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f979bb2732a
+#1  0x7f979bb27ed5
+#2  0x7f979bb2869d
+#3  0x7f979bc9aecd
+#4  0x7f979bca1bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f979b16fb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fe27cfd332a
+#1  0x7fe27cfd3ed5
+#2  0x7fe27cfd469d
+#3  0x7fe27d146ecd
+#4  0x7fe27d14dbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fe27c61bb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fb7deb8b32a
+#1  0x7fb7deb8bed5
+#2  0x7fb7deb8c69d
+#3  0x7fb7decfeecd
+#4  0x7fb7ded05bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fb7de1d3b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f9c091a532a
+#1  0x7f9c091a5ed5
+#2  0x7f9c091a669d
+#3  0x7f9c09318ecd
+#4  0x7f9c0931fbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f9c087edb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f6ee164f32a
+#1  0x7f6ee164fed5
+#2  0x7f6ee165069d
+#3  0x7f6ee17c2ecd
+#4  0x7f6ee17c9bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f6ee0c97b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f81b06ca32a
+#1  0x7f81b06caed5
+#2  0x7f81b06cb69d
+#3  0x7f81b083decd
+#4  0x7f81b0844bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f81afd12b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f89920ce32a
+#1  0x7f89920ceed5
+#2  0x7f89920cf69d
+#3  0x7f8992241ecd
+#4  0x7f8992248bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f8991716b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f2bfa07a32a
+#1  0x7f2bfa07aed5
+#2  0x7f2bfa07b69d
+#3  0x7f2bfa1edecd
+#4  0x7f2bfa1f4bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f2bf96c2b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f2bbc73d32a
+#1  0x7f2bbc73ded5
+#2  0x7f2bbc73e69d
+#3  0x7f2bbc8b0ecd
+#4  0x7f2bbc8b7bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f2bbbd85b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fa70e8d732a
+#1  0x7fa70e8d7ed5
+#2  0x7fa70e8d869d
+#3  0x7fa70ea4aecd
+#4  0x7fa70ea51bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fa70df1fb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f992027632a
+#1  0x7f9920276ed5
+#2  0x7f992027769d
+#3  0x7f99203e9ecd
+#4  0x7f99203f0bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f991f8beb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f5c26a9632a
+#1  0x7f5c26a96ed5
+#2  0x7f5c26a9769d
+#3  0x7f5c26c09ecd
+#4  0x7f5c26c10bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f5c260deb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f8c2d59332a
+#1  0x7f8c2d593ed5
+#2  0x7f8c2d59469d
+#3  0x7f8c2d706ecd
+#4  0x7f8c2d70dbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f8c2cbdbb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fbb78a3532a
+#1  0x7fbb78a35ed5
+#2  0x7fbb78a3669d
+#3  0x7fbb78ba8ecd
+#4  0x7fbb78bafbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fbb7807db96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f595989d32a
+#1  0x7f595989ded5
+#2  0x7f595989e69d
+#3  0x7f5959a10ecd
+#4  0x7f5959a17bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f5958ee5b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fcaea55632a
+#1  0x7fcaea556ed5
+#2  0x7fcaea55769d
+#3  0x7fcaea6c9ecd
+#4  0x7fcaea6d0bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fcae9b9eb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fcd0226832a
+#1  0x7fcd02268ed5
+#2  0x7fcd0226969d
+#3  0x7fcd023dbecd
+#4  0x7fcd023e2bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fcd018b0b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f727e1ca32a
+#1  0x7f727e1caed5
+#2  0x7f727e1cb69d
+#3  0x7f727e33decd
+#4  0x7f727e344bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f727d812b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fcf34ed132a
+#1  0x7fcf34ed1ed5
+#2  0x7fcf34ed269d
+#3  0x7fcf35044ecd
+#4  0x7fcf3504bbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fcf34519b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f28108ce32a
+#1  0x7f28108ceed5
+#2  0x7f28108cf69d
+#3  0x7f2810a41ecd
+#4  0x7f2810a48bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f280ff16b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fc93575332a
+#1  0x7fc935753ed5
+#2  0x7fc93575469d
+#3  0x7fc9358c6ecd
+#4  0x7fc9358cdbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fc934d9bb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f372f88932a
+#1  0x7f372f889ed5
+#2  0x7f372f88a69d
+#3  0x7f372f9fcecd
+#4  0x7f372fa03bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f372eed1b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f95db3eb32a
+#1  0x7f95db3ebed5
+#2  0x7f95db3ec69d
+#3  0x7f95db55eecd
+#4  0x7f95db565bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f95daa33b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fe4a0c4032a
+#1  0x7fe4a0c40ed5
+#2  0x7fe4a0c4169d
+#3  0x7fe4a0db3ecd
+#4  0x7fe4a0dbabdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fe4a0288b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fcd4aefc32a
+#1  0x7fcd4aefced5
+#2  0x7fcd4aefd69d
+#3  0x7fcd4b06fecd
+#4  0x7fcd4b076bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fcd4a544b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fb960f2232a
+#1  0x7fb960f22ed5
+#2  0x7fb960f2369d
+#3  0x7fb961095ecd
+#4  0x7fb96109cbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fb96056ab96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fcb218ca32a
+#1  0x7fcb218caed5
+#2  0x7fcb218cb69d
+#3  0x7fcb21a3decd
+#4  0x7fcb21a44bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fcb20f12b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f078ca1a32a
+#1  0x7f078ca1aed5
+#2  0x7f078ca1b69d
+#3  0x7f078cb8decd
+#4  0x7f078cb94bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f078c062b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fc5db0ec32a
+#1  0x7fc5db0eced5
+#2  0x7fc5db0ed69d
+#3  0x7fc5db25fecd
+#4  0x7fc5db266bdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fc5da734b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7fa73f59032a
+#1  0x7fa73f590ed5
+#2  0x7fa73f59169d
+#3  0x7fa73f703ecd
+#4  0x7fa73f70abdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7fa73ebd8b96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f6bd08e532a
+#1  0x7f6bd08e5ed5
+#2  0x7f6bd08e669d
+#3  0x7f6bd0a58ecd
+#4  0x7f6bd0a5fbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f6bcff2db96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+At line 38 of file report.f90 (unit = 7)
+Fortran runtime error: Cannot open file 'fort.7': Permission denied
+
+Error termination. Backtrace:
+#0  0x7f16175a532a
+#1  0x7f16175a5ed5
+#2  0x7f16175a669d
+#3  0x7f1617718ecd
+#4  0x7f161771fbdc
+#5  0x417747
+#6  0x459901
+#7  0x401447
+#8  0x7f1616bedb96
+#9  0x401489
+#10  0xffffffffffffffff
+
+Clover Version    1.300
+       MPI Version
+    OpenMP Version
+   Task Count      1
+ Thread Count:     8
+
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              4.01 Joules power/energy-pkg/                                             ( +-  4.56% )
+              0.10 Joules power/energy-ram/                                             ( +- 13.49% )
+
+            0.1734 +- 0.0243 seconds time elapsed  ( +- 14.02% )
+

@@ -1,0 +1,198 @@
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/16938.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/17056.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/17165.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/17282.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make[1]: *** [all] Error 1
+make: *** [check] Error 2
+chmod: changing permissions of './pgms/arithoh': Operation not permitted
+chmod: changing permissions of './pgms/context1': Operation not permitted
+chmod: changing permissions of './pgms/dhry2': Operation not permitted
+chmod: changing permissions of './pgms/dhry2reg': Operation not permitted
+chmod: changing permissions of './pgms/double': Operation not permitted
+chmod: changing permissions of './pgms/execl': Operation not permitted
+chmod: changing permissions of './pgms/float': Operation not permitted
+chmod: changing permissions of './pgms/fstime': Operation not permitted
+chmod: changing permissions of './pgms/hanoi': Operation not permitted
+chmod: changing permissions of './pgms/int': Operation not permitted
+chmod: changing permissions of './pgms/long': Operation not permitted
+chmod: changing permissions of './pgms/looper': Operation not permitted
+chmod: changing permissions of './pgms/pipe': Operation not permitted
+chmod: changing permissions of './pgms/register': Operation not permitted
+chmod: changing permissions of './pgms/short': Operation not permitted
+chmod: changing permissions of './pgms/spawn': Operation not permitted
+chmod: changing permissions of './pgms/syscall': Operation not permitted
+make: *** [all] Error 1
+join: /tmp/17400.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            348.75 Joules power/energy-pkg/                                             ( +-  0.11% )
+             30.41 Joules power/energy-ram/                                             ( +-  0.08% )
+
+           61.5364 +- 0.0490 seconds time elapsed  ( +-  0.08% )
+

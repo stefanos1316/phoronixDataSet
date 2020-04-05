@@ -1,0 +1,13 @@
+5766280
+5752009
+5801398
+5832856
+5839213
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,645.22 Joules power/energy-pkg/                                             ( +-  0.37% )
+             15.57 Joules power/energy-ram/                                             ( +-  0.22% )
+
+           30.9856 +- 0.0566 seconds time elapsed  ( +-  0.18% )
+

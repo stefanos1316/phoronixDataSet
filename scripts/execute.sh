@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="gcc_execstack_perf"
+scenario="gcc_no_pie_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/gcc_tasks_test"

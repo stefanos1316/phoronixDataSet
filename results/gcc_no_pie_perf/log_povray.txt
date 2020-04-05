@@ -1,0 +1,318 @@
+povray: cannot open the system configuration file /usr/local/etc/povray/3.7/povray.conf: No such file or directory
+povray: cannot open the user configuration file /home/sgeorgiou/.povray/3.7/povray.conf: No such file or directory
+povray: I/O restrictions are disabled
+POV-Ray 3.7.0.7.unofficial (g++ 7 @ x86_64-pc-linux-gnu)
+
+Entering the standard POV-Ray 3.7 benchmark version 2.01.
+
+This built-in benchmark requires POV-Ray to be installed on your system
+before running it.  There will be neither display nor file output, and
+any additional command-line option except setting the number of render
+threads (+wtN for N threads) and library paths (+Lpath) will be ignored.
+To get an accurate benchmark result you might consider running POV-Ray
+with the Unix 'time' command (e.g. 'time povray -benchmark').
+
+The benchmark will run using 8 render thread(s).
+Press <Enter> to continue or <Ctrl-C> to abort.
+povray: creating /tmp/pov16065.ini
+povray: creating /tmp/pov16065.pov
+Running standard POV-Ray benchmark version 2.01
+Persistence of Vision(tm) Ray Tracer Version 3.7.0.7.unofficial (g++ 7 @
+ x86_64-pc-linux-gnu)
+This is an unofficial version compiled by:
+ justarandom@gmail.com
+ The POV-Ray Team is not responsible for supporting this version.
+
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins
+Copyright 1991-2013 Persistence of Vision Raytracer Pty. Ltd.
+
+Primary POV-Ray 3.7 Architects/Developers: (Alphabetically)
+  Chris Cason         Thorsten Froehlich  Christoph Lipka   
+
+With Assistance From: (Alphabetically)
+  Nicolas Calimet     Jerome Grimbert     James Holsenback    Christoph Hormann 
+  Nathan Kopp         Juha Nieminen     
+
+Past Contributors: (Alphabetically)
+  Steve Anger         Eric Barish         Dieter Bayer        David K. Buck     
+  Nicolas Calimet     Chris Cason         Aaron A. Collins    Chris Dailey      
+  Steve Demlow        Andreas Dilger      Alexander Enzmann   Dan Farmer        
+  Thorsten Froehlich  Mark Gordon         James Holsenback    Christoph Hormann 
+  Mike Hough          Chris Huff          Kari Kivisalo       Nathan Kopp       
+  Lutz Kretzschmar    Christoph Lipka     Jochen Lippert      Pascal Massimino  
+  Jim McElhiney       Douglas Muir        Juha Nieminen       Ron Parker        
+  Bill Pulver         Eduard Schwan       Wlodzimierz Skiba   Robert Skinner    
+  Yvo Smellenbergh    Zsolt Szalavari     Scott Taylor        Massimo Valentini 
+  Timothy Wegner      Drew Wells          Chris Young       
+
+Other contributors are listed in the documentation.
+
+Support libraries used by POV-Ray:
+  ZLib 1.2.11, Copyright 1995-2012 Jean-loup Gailly and Mark Adler
+  LibPNG 1.6.34, Copyright 1998-2012 Glenn Randers-Pehrson
+  LibJPEG 80, Copyright 1991-2013 Thomas G. Lane, Guido Vollbeding
+  LibTIFF 4.0.9, Copyright 1988-1997 Sam Leffler, 1991-1997 SGI
+  Boost 1.65, http://www.boost.org/
+
+Cannot open file 'alltext.out' for output.
+Cannot open file 'alltext.out' for output.povray: removing /tmp/pov16065.ini
+povray: removing /tmp/pov16065.pov
+
+Render failed
+
+povray: cannot open the system configuration file /usr/local/etc/povray/3.7/povray.conf: No such file or directory
+povray: cannot open the user configuration file /home/sgeorgiou/.povray/3.7/povray.conf: No such file or directory
+povray: I/O restrictions are disabled
+POV-Ray 3.7.0.7.unofficial (g++ 7 @ x86_64-pc-linux-gnu)
+
+Entering the standard POV-Ray 3.7 benchmark version 2.01.
+
+This built-in benchmark requires POV-Ray to be installed on your system
+before running it.  There will be neither display nor file output, and
+any additional command-line option except setting the number of render
+threads (+wtN for N threads) and library paths (+Lpath) will be ignored.
+To get an accurate benchmark result you might consider running POV-Ray
+with the Unix 'time' command (e.g. 'time povray -benchmark').
+
+The benchmark will run using 8 render thread(s).
+Press <Enter> to continue or <Ctrl-C> to abort.
+povray: creating /tmp/pov16071.ini
+povray: creating /tmp/pov16071.pov
+Running standard POV-Ray benchmark version 2.01
+Persistence of Vision(tm) Ray Tracer Version 3.7.0.7.unofficial (g++ 7 @
+ x86_64-pc-linux-gnu)
+This is an unofficial version compiled by:
+ justarandom@gmail.com
+ The POV-Ray Team is not responsible for supporting this version.
+
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins
+Copyright 1991-2013 Persistence of Vision Raytracer Pty. Ltd.
+
+Primary POV-Ray 3.7 Architects/Developers: (Alphabetically)
+  Chris Cason         Thorsten Froehlich  Christoph Lipka   
+
+With Assistance From: (Alphabetically)
+  Nicolas Calimet     Jerome Grimbert     James Holsenback    Christoph Hormann 
+  Nathan Kopp         Juha Nieminen     
+
+Past Contributors: (Alphabetically)
+  Steve Anger         Eric Barish         Dieter Bayer        David K. Buck     
+  Nicolas Calimet     Chris Cason         Aaron A. Collins    Chris Dailey      
+  Steve Demlow        Andreas Dilger      Alexander Enzmann   Dan Farmer        
+  Thorsten Froehlich  Mark Gordon         James Holsenback    Christoph Hormann 
+  Mike Hough          Chris Huff          Kari Kivisalo       Nathan Kopp       
+  Lutz Kretzschmar    Christoph Lipka     Jochen Lippert      Pascal Massimino  
+  Jim McElhiney       Douglas Muir        Juha Nieminen       Ron Parker        
+  Bill Pulver         Eduard Schwan       Wlodzimierz Skiba   Robert Skinner    
+  Yvo Smellenbergh    Zsolt Szalavari     Scott Taylor        Massimo Valentini 
+  Timothy Wegner      Drew Wells          Chris Young       
+
+Other contributors are listed in the documentation.
+
+Support libraries used by POV-Ray:
+  ZLib 1.2.11, Copyright 1995-2012 Jean-loup Gailly and Mark Adler
+  LibPNG 1.6.34, Copyright 1998-2012 Glenn Randers-Pehrson
+  LibJPEG 80, Copyright 1991-2013 Thomas G. Lane, Guido Vollbeding
+  LibTIFF 4.0.9, Copyright 1988-1997 Sam Leffler, 1991-1997 SGI
+  Boost 1.65, http://www.boost.org/
+
+Cannot open file 'alltext.out' for output.
+Cannot open file 'alltext.out' for output.povray: removing /tmp/pov16071.ini
+povray: removing /tmp/pov16071.pov
+
+Render failed
+
+povray: cannot open the system configuration file /usr/local/etc/povray/3.7/povray.conf: No such file or directory
+povray: cannot open the user configuration file /home/sgeorgiou/.povray/3.7/povray.conf: No such file or directory
+povray: I/O restrictions are disabled
+POV-Ray 3.7.0.7.unofficial (g++ 7 @ x86_64-pc-linux-gnu)
+
+Entering the standard POV-Ray 3.7 benchmark version 2.01.
+
+This built-in benchmark requires POV-Ray to be installed on your system
+before running it.  There will be neither display nor file output, and
+any additional command-line option except setting the number of render
+threads (+wtN for N threads) and library paths (+Lpath) will be ignored.
+To get an accurate benchmark result you might consider running POV-Ray
+with the Unix 'time' command (e.g. 'time povray -benchmark').
+
+The benchmark will run using 8 render thread(s).
+Press <Enter> to continue or <Ctrl-C> to abort.
+povray: creating /tmp/pov16077.ini
+povray: creating /tmp/pov16077.pov
+Running standard POV-Ray benchmark version 2.01
+Persistence of Vision(tm) Ray Tracer Version 3.7.0.7.unofficial (g++ 7 @
+ x86_64-pc-linux-gnu)
+This is an unofficial version compiled by:
+ justarandom@gmail.com
+ The POV-Ray Team is not responsible for supporting this version.
+
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins
+Copyright 1991-2013 Persistence of Vision Raytracer Pty. Ltd.
+
+Primary POV-Ray 3.7 Architects/Developers: (Alphabetically)
+  Chris Cason         Thorsten Froehlich  Christoph Lipka   
+
+With Assistance From: (Alphabetically)
+  Nicolas Calimet     Jerome Grimbert     James Holsenback    Christoph Hormann 
+  Nathan Kopp         Juha Nieminen     
+
+Past Contributors: (Alphabetically)
+  Steve Anger         Eric Barish         Dieter Bayer        David K. Buck     
+  Nicolas Calimet     Chris Cason         Aaron A. Collins    Chris Dailey      
+  Steve Demlow        Andreas Dilger      Alexander Enzmann   Dan Farmer        
+  Thorsten Froehlich  Mark Gordon         James Holsenback    Christoph Hormann 
+  Mike Hough          Chris Huff          Kari Kivisalo       Nathan Kopp       
+  Lutz Kretzschmar    Christoph Lipka     Jochen Lippert      Pascal Massimino  
+  Jim McElhiney       Douglas Muir        Juha Nieminen       Ron Parker        
+  Bill Pulver         Eduard Schwan       Wlodzimierz Skiba   Robert Skinner    
+  Yvo Smellenbergh    Zsolt Szalavari     Scott Taylor        Massimo Valentini 
+  Timothy Wegner      Drew Wells          Chris Young       
+
+Other contributors are listed in the documentation.
+
+Support libraries used by POV-Ray:
+  ZLib 1.2.11, Copyright 1995-2012 Jean-loup Gailly and Mark Adler
+  LibPNG 1.6.34, Copyright 1998-2012 Glenn Randers-Pehrson
+  LibJPEG 80, Copyright 1991-2013 Thomas G. Lane, Guido Vollbeding
+  LibTIFF 4.0.9, Copyright 1988-1997 Sam Leffler, 1991-1997 SGI
+  Boost 1.65, http://www.boost.org/
+
+Cannot open file 'alltext.out' for output.
+Cannot open file 'alltext.out' for output.povray: removing /tmp/pov16077.ini
+povray: removing /tmp/pov16077.pov
+
+Render failed
+
+povray: cannot open the system configuration file /usr/local/etc/povray/3.7/povray.conf: No such file or directory
+povray: cannot open the user configuration file /home/sgeorgiou/.povray/3.7/povray.conf: No such file or directory
+povray: I/O restrictions are disabled
+POV-Ray 3.7.0.7.unofficial (g++ 7 @ x86_64-pc-linux-gnu)
+
+Entering the standard POV-Ray 3.7 benchmark version 2.01.
+
+This built-in benchmark requires POV-Ray to be installed on your system
+before running it.  There will be neither display nor file output, and
+any additional command-line option except setting the number of render
+threads (+wtN for N threads) and library paths (+Lpath) will be ignored.
+To get an accurate benchmark result you might consider running POV-Ray
+with the Unix 'time' command (e.g. 'time povray -benchmark').
+
+The benchmark will run using 8 render thread(s).
+Press <Enter> to continue or <Ctrl-C> to abort.
+povray: creating /tmp/pov16083.ini
+povray: creating /tmp/pov16083.pov
+Running standard POV-Ray benchmark version 2.01
+Persistence of Vision(tm) Ray Tracer Version 3.7.0.7.unofficial (g++ 7 @
+ x86_64-pc-linux-gnu)
+This is an unofficial version compiled by:
+ justarandom@gmail.com
+ The POV-Ray Team is not responsible for supporting this version.
+
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins
+Copyright 1991-2013 Persistence of Vision Raytracer Pty. Ltd.
+
+Primary POV-Ray 3.7 Architects/Developers: (Alphabetically)
+  Chris Cason         Thorsten Froehlich  Christoph Lipka   
+
+With Assistance From: (Alphabetically)
+  Nicolas Calimet     Jerome Grimbert     James Holsenback    Christoph Hormann 
+  Nathan Kopp         Juha Nieminen     
+
+Past Contributors: (Alphabetically)
+  Steve Anger         Eric Barish         Dieter Bayer        David K. Buck     
+  Nicolas Calimet     Chris Cason         Aaron A. Collins    Chris Dailey      
+  Steve Demlow        Andreas Dilger      Alexander Enzmann   Dan Farmer        
+  Thorsten Froehlich  Mark Gordon         James Holsenback    Christoph Hormann 
+  Mike Hough          Chris Huff          Kari Kivisalo       Nathan Kopp       
+  Lutz Kretzschmar    Christoph Lipka     Jochen Lippert      Pascal Massimino  
+  Jim McElhiney       Douglas Muir        Juha Nieminen       Ron Parker        
+  Bill Pulver         Eduard Schwan       Wlodzimierz Skiba   Robert Skinner    
+  Yvo Smellenbergh    Zsolt Szalavari     Scott Taylor        Massimo Valentini 
+  Timothy Wegner      Drew Wells          Chris Young       
+
+Other contributors are listed in the documentation.
+
+Support libraries used by POV-Ray:
+  ZLib 1.2.11, Copyright 1995-2012 Jean-loup Gailly and Mark Adler
+  LibPNG 1.6.34, Copyright 1998-2012 Glenn Randers-Pehrson
+  LibJPEG 80, Copyright 1991-2013 Thomas G. Lane, Guido Vollbeding
+  LibTIFF 4.0.9, Copyright 1988-1997 Sam Leffler, 1991-1997 SGI
+  Boost 1.65, http://www.boost.org/
+
+Cannot open file 'alltext.out' for output.
+Cannot open file 'alltext.out' for output.povray: removing /tmp/pov16083.ini
+povray: removing /tmp/pov16083.pov
+
+Render failed
+
+povray: cannot open the system configuration file /usr/local/etc/povray/3.7/povray.conf: No such file or directory
+povray: cannot open the user configuration file /home/sgeorgiou/.povray/3.7/povray.conf: No such file or directory
+povray: I/O restrictions are disabled
+POV-Ray 3.7.0.7.unofficial (g++ 7 @ x86_64-pc-linux-gnu)
+
+Entering the standard POV-Ray 3.7 benchmark version 2.01.
+
+This built-in benchmark requires POV-Ray to be installed on your system
+before running it.  There will be neither display nor file output, and
+any additional command-line option except setting the number of render
+threads (+wtN for N threads) and library paths (+Lpath) will be ignored.
+To get an accurate benchmark result you might consider running POV-Ray
+with the Unix 'time' command (e.g. 'time povray -benchmark').
+
+The benchmark will run using 8 render thread(s).
+Press <Enter> to continue or <Ctrl-C> to abort.
+povray: creating /tmp/pov16089.ini
+povray: creating /tmp/pov16089.pov
+Running standard POV-Ray benchmark version 2.01
+Persistence of Vision(tm) Ray Tracer Version 3.7.0.7.unofficial (g++ 7 @
+ x86_64-pc-linux-gnu)
+This is an unofficial version compiled by:
+ justarandom@gmail.com
+ The POV-Ray Team is not responsible for supporting this version.
+
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins
+Copyright 1991-2013 Persistence of Vision Raytracer Pty. Ltd.
+
+Primary POV-Ray 3.7 Architects/Developers: (Alphabetically)
+  Chris Cason         Thorsten Froehlich  Christoph Lipka   
+
+With Assistance From: (Alphabetically)
+  Nicolas Calimet     Jerome Grimbert     James Holsenback    Christoph Hormann 
+  Nathan Kopp         Juha Nieminen     
+
+Past Contributors: (Alphabetically)
+  Steve Anger         Eric Barish         Dieter Bayer        David K. Buck     
+  Nicolas Calimet     Chris Cason         Aaron A. Collins    Chris Dailey      
+  Steve Demlow        Andreas Dilger      Alexander Enzmann   Dan Farmer        
+  Thorsten Froehlich  Mark Gordon         James Holsenback    Christoph Hormann 
+  Mike Hough          Chris Huff          Kari Kivisalo       Nathan Kopp       
+  Lutz Kretzschmar    Christoph Lipka     Jochen Lippert      Pascal Massimino  
+  Jim McElhiney       Douglas Muir        Juha Nieminen       Ron Parker        
+  Bill Pulver         Eduard Schwan       Wlodzimierz Skiba   Robert Skinner    
+  Yvo Smellenbergh    Zsolt Szalavari     Scott Taylor        Massimo Valentini 
+  Timothy Wegner      Drew Wells          Chris Young       
+
+Other contributors are listed in the documentation.
+
+Support libraries used by POV-Ray:
+  ZLib 1.2.11, Copyright 1995-2012 Jean-loup Gailly and Mark Adler
+  LibPNG 1.6.34, Copyright 1998-2012 Glenn Randers-Pehrson
+  LibJPEG 80, Copyright 1991-2013 Thomas G. Lane, Guido Vollbeding
+  LibTIFF 4.0.9, Copyright 1988-1997 Sam Leffler, 1991-1997 SGI
+  Boost 1.65, http://www.boost.org/
+
+Cannot open file 'alltext.out' for output.
+Cannot open file 'alltext.out' for output.povray: removing /tmp/pov16089.ini
+povray: removing /tmp/pov16089.pov
+
+Render failed
+
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              4.25 Joules power/energy-pkg/                                             ( +- 15.94% )
+              0.36 Joules power/energy-ram/                                             ( +- 15.94% )
+
+             0.719 +- 0.110 seconds time elapsed  ( +- 15.33% )
+

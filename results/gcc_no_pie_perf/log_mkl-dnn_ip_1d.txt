@@ -1,0 +1,18 @@
+./mkl-dnn: line 2: cd: build/tests/benchdnn: No such file or directory
+./mkl-dnn: line 3: ./benchdnn: No such file or directory
+./mkl-dnn: line 2: cd: build/tests/benchdnn: No such file or directory
+./mkl-dnn: line 3: ./benchdnn: No such file or directory
+./mkl-dnn: line 2: cd: build/tests/benchdnn: No such file or directory
+./mkl-dnn: line 3: ./benchdnn: No such file or directory
+./mkl-dnn: line 2: cd: build/tests/benchdnn: No such file or directory
+./mkl-dnn: line 3: ./benchdnn: No such file or directory
+./mkl-dnn: line 2: cd: build/tests/benchdnn: No such file or directory
+./mkl-dnn: line 3: ./benchdnn: No such file or directory
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              0.02 Joules power/energy-pkg/                                             ( +-  1.22% )
+              0.00 Joules power/energy-ram/                                             ( +-  8.74% )
+
+         0.0010568 +- 0.0000335 seconds time elapsed  ( +-  3.17% )
+
