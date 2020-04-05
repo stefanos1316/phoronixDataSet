@@ -5,6 +5,51 @@ taskScripts='scripts'
 mkdir tasks_test 
 cd tasks_test
 
+echo "-------Downloading and installing glmark2"
+mkdir glmark2 && cd glmark2
+wget http://phoronix-test-suite.com/benchmark-files/glmark2-20170617.tar.gz
+tar -xzvf glmark2-20170617.tar.gz && rm glmark2-20170617.tar.gz
+mv glmark2-20170617/* ./ && rm -rf glmark2-20170617
+./waf configure --with-flavors=x11-gl --prefix=`pwd`
+./waf build
+./waf install
+echo "#!/bin/sh
+export DISPLAY=:0.0
+cd bin/
+./glmark2 -s \$1" > glmark2
+chmod +x glmark2
+cd ../
+
+echo "-------Downloading and installing indigobench"
+mkdir indigobench && cd indigobench
+wget ftp://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.59.tar.gz
+tar -xf libpng-1.2.59.tar.gz && rm libpng-1.2.59.tar.gz 
+mkdir libpng
+cd libpng-1.2.59
+./configure --prefix=`pwd/../libpng`
+make -j $(nproc --all)
+make install
+cd ../
+wget http://downloads.indigorenderer.com/dist/beta/IndigoBenchmark_x64_v4.0.64.tar.gz
+tar -xf IndigoBenchmark_x64_v4.0.64.tar.gz && rm IndigoBenchmark_x64_v4.0.64.tar.gz
+mv IndigoBenchmark_x64_v4.0.64/* ./ && rm -rf IndigoBenchmark_x64_v4.0.64
+echo "#!/bin/bash
+export DISPLAY=:0.0
+./indigo_benchmark --silent --scenes \$1" > indigobench
+chmod +x indigobench
+cd ../
+
+echo "-------Downloading and installing jxrend"
+mkdir jxrend && cd jxrend
+wget http://www.phoronix-test-suite.com/benchmark-files/JXRenderMark-1.0.1.zip
+unzip JXRenderMark-1.0.1.zip && rm JXRenderMark-1.0.1.zip
+cc JXRenderMark.c -o jxrend-bin -lX11 -lXrender -O3
+echo "#!/bin/bash
+export DISPLAY=:0.0
+./jxrend-bin" > jxrend
+chmod +x jxrend
+cd ../
+
 echo "-------Downloading and installing aio-stress"
 mkdir aio-stress && cd aio-stress
 wget http://fsbench.filesystems.org/bench/aio-stress.c
@@ -96,30 +141,6 @@ done" > qgears
 chmod +x qgears
 cd ../
 
-echo "-------Downloading and installing indigobench"
-mkdir indigobench && cd indigobench
-wget ftp://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.59.tar.gz
-tar -xf libpng-1.2.59.tar.gz && rm libpng-1.2.59.tar.gz 
-mkdir libpng
-cd libpng-1.2.59
-./configure --prefix=`pwd/../libpng`
-make -j $(nproc --all)
-make install
-cd ../
-wget http://downloads.indigorenderer.com/dist/beta/IndigoBenchmark_x64_v4.0.64.tar.gz
-tar -xf IndigoBenchmark_x64_v4.0.64.tar.gz && rm IndigoBenchmark_x64_v4.0.64.tar.gz
-mv IndigoBenchmark_x64_v4.0.64/* ./ && rm -rf IndigoBenchmark_x64_v4.0.64
-echo "#!/bin/bash
-./indigo_benchmark --silent --scenes \$1" > indigobench
-chmod +x indigobench
-cd ../
-
-echo "-------Downloading and installing jxrend"
-mkdir jxrend && cd jxrend
-wget http://www.phoronix-test-suite.com/benchmark-files/JXRenderMark-1.0.1.zip
-unzip JXRenderMark-1.0.1.zip && rm JXRenderMark-1.0.1.zip
-cc JXRenderMark.c -o jxrend -lX11 -lXrender -O3
-cd ../
 
 echo "-------Downloading and installing paraview"
 mkdir paraview && cd paraview
@@ -183,20 +204,6 @@ case \$1 in
 esac
 ./nexuiz-linux-glx.sh +exec effects-high.cfg -nohome -benchmark demos/demo2 +r_glsl 1 \$getConfigurations " > nexuiz
 chmod +x nexuiz
-cd ../
-
-echo "-------Downloading and installing glmark2"
-mkdir glmark2 && cd glmark2
-wget http://phoronix-test-suite.com/benchmark-files/glmark2-20170617.tar.gz
-tar -xzvf glmark2-20170617.tar.gz && rm glmark2-20170617.tar.gz
-mv glmark2-20170617/* ./ && rm -rf glmark2-20170617
-./waf configure --with-flavors=x11-gl --prefix=`pwd`
-./waf build
-./waf install
-echo "#!/bin/sh
-cd bin/
-./glmark2 -s \$1" > glmark2
-chmod +x glmark2
 cd ../
 
 echo "-------Downloading and installing unigine-valley"

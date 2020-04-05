@@ -1,0 +1,13 @@
+5490801
+5704090
+5793180
+5751078
+5832648
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,647.95 Joules power/energy-pkg/                                             ( +-  0.46% )
+             15.56 Joules power/energy-ram/                                             ( +-  0.22% )
+
+           31.0156 +- 0.0734 seconds time elapsed  ( +-  0.24% )
+
