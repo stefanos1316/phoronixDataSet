@@ -1,0 +1,13 @@
+fopen: ./john.conf: Permission denied
+fopen: ./john.conf: Permission denied
+fopen: ./john.conf: Permission denied
+fopen: ./john.conf: Permission denied
+fopen: ./john.conf: Permission denied
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              0.18 Joules power/energy-pkg/                                             ( +- 79.56% )
+              0.01 Joules power/energy-ram/                                             ( +- 88.59% )
+
+            0.0223 +- 0.0202 seconds time elapsed  ( +- 90.48% )
+

@@ -1,0 +1,13 @@
+Can't init outfile 'pts-trondheim-3.mp3'
+Can't init outfile 'pts-trondheim-3.mp3'
+Can't init outfile 'pts-trondheim-3.mp3'
+Can't init outfile 'pts-trondheim-3.mp3'
+Can't init outfile 'pts-trondheim-3.mp3'
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              0.08 Joules power/energy-pkg/                                             ( +- 65.88% )
+              0.00 Joules power/energy-ram/                                             ( +- 80.78% )
+
+           0.00816 +- 0.00625 seconds time elapsed  ( +- 76.50% )
+

@@ -1,0 +1,13 @@
+fs_mark: failed to fopen log file: fs_log.txt Permission denied
+fs_mark: failed to fopen log file: fs_log.txt Permission denied
+fs_mark: failed to fopen log file: fs_log.txt Permission denied
+fs_mark: failed to fopen log file: fs_log.txt Permission denied
+fs_mark: failed to fopen log file: fs_log.txt Permission denied
+
+ Performance counter stats for 'system wide' (5 runs):
+
+              0.02 Joules power/energy-pkg/                                             ( +-  2.17% )
+              0.00 Joules power/energy-ram/                                             ( +-  8.13% )
+
+         0.0010827 +- 0.0000539 seconds time elapsed  ( +-  4.98% )
+
