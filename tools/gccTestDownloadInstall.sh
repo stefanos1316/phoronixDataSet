@@ -15,6 +15,45 @@ taskScripts='scripts'
 mkdir gcc_tasks_test
 cd gcc_tasks_test
 
+echo "-------Downloading and installing redis"
+mkdir redis && cd redis
+wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+tar -xzvf redis-5.0.5.tar.gz && rm redis-5.0.5.tar.gz
+mv redis-5.0.5/* ./ && rm -rf redis-5.0.5/
+cd deps/
+make CFLAGS="${SECURITY_FLAGS}" hiredis jemalloc linenoise lua
+cd ../
+make CFLAGS="${SECURITY_FLAGS}" MALLOC=libc -j $(nproc --all)
+echo "#!/bin/bash
+src/redis-benchmark -n 200000000 -p 100 --csv \$1" > redis
+chmod +x redis 
+cd ../
+
+exit
+
+echo "-------Downloading and installing sysbench"
+mkdir sysbench && cd sysbench
+wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip
+unzip sysbench-20180728.zip && rm sysbench-20180728.zip
+mv sysbench-master/* ./ && rm -rf sysbench-master/ 
+./autogen.sh
+CFLAGS="${SECURITY_FLAGS}" ./configure  --without-mysql
+make -j $(nproc --all)
+cp src/sysbench ./
+cd ../
+
+echo "-------Downloading and installing stress-ng"
+mkdir stress-ng && cd stress-ng
+wget http://www.phoronix-test-suite.com/benchmark-files/stress-ng-0.07.26.tar.gz
+tar -xzvf stress-ng-0.07.26.tar.gz && rm stress-ng-0.07.26.tar.gz
+mv stress-ng-0.07.26/* ./ && rm -rf stress-ng-0.07.26/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make -j $(nproc --all)
+cd ../
+
 echo "-------Downloading and installing libvpx"
 git clone https://github.com/webmproject/libvpx.git
 mv libvpx vpxenc && cd vpxenc 
@@ -418,41 +457,11 @@ fi
 make
 cd ../
 
-echo "-------Downloading and installing stress-ng"
-mkdir stress-ng && cd stress-ng
-wget http://www.phoronix-test-suite.com/benchmark-files/stress-ng-0.07.26.tar.gz
-tar -xzvf stress-ng-0.07.26.tar.gz && rm stress-ng-0.07.26.tar.gz
-mv stress-ng-0.07.26/* ./ && rm -rf stress-ng-0.07.26/
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
-fi
-make -j $(nproc --all)
-cd ../
-
 echo "-------Downloading and installing stream"
 mkdir stream && cd stream
 wget http://www.phoronix-test-suite.com/benchmark-files/stream-2013-01-17.tar.bz2
 tar -xjvf stream-2013-01-17.tar.bz2 && rm stream-2013-01-17.tar.bz2
 cc stream.c -DSTREAM_ARRAY_SIZE=100000000 -DNTIMES=100 -O3 ${SECURITY_FLAGS} -fopenmp -o stream
-cd ../
-
-echo "-------Downloading and installing redis"
-mkdir redis && cd redis
-wget http://download.redis.io/releases/redis-5.0.5.tar.gz
-tar -xzvf redis-5.0.5.tar.gz && rm redis-5.0.5.tar.gz
-mv redis-5.0.5/* ./ && rm -rf redis-5.0.5/
-cd deps/
-make CFLAGS="${SECURITY_FLAGS}" hiredis jemalloc linenoise lua
-cd ../
-make CFLAGS="${SECURITY_FLAGS}" MALLOC=libc -j $(nproc --all)
-echo "#!/bin/bash
-running=`ps -aux | grep redis | wc -l`
-if [ \$running -ne 2 ]; then
-	src/redis-server &
-fi
-src/redis-benchmark -n 1000000 -P 640000 -q -c 50 --csv \$1" > redis
-chmod +x redis 
 cd ../
 
 echo "-------Downloading and installing mkl-dnn"
@@ -640,17 +649,6 @@ fi
 make
 cp blake2s ../
 cd ../../
-
-echo "-------Downloading and installing sysbench"
-mkdir sysbench && cd sysbench
-wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip
-unzip sysbench-20180728.zip && rm sysbench-20180728.zip
-mv sysbench-master/* ./ && rm -rf sysbench-master/ 
-./autogen.sh
-CFLAGS="${SECURITY_FLAGS}" ./configure  --without-mysql
-make -j $(nproc --all)
-cp src/sysbench ./
-cd ../
 
 echo "-------Downloading and installing X265"
 mkdir x265 && cd x265

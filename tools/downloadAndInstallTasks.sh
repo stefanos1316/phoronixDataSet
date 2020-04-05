@@ -1040,11 +1040,7 @@ make hiredis jemalloc linenoise lua
 cd ../
 make MALLOC=libc -j $(nproc --all)
 echo "#!/bin/bash
-running=`ps -aux | grep redis | wc -l`
-if [ \$running -ne 2 ]; then
-	src/redis-server &
-fi
-src/redis-benchmark -n 1000000 -P 640000 -q -c 50 --csv \$1" > redis
+src/redis-benchmark -n 200000000 -P 100 --csv \$1" > redis
 chmod +x redis 
 cd ../
 
