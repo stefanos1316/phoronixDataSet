@@ -37,10 +37,10 @@ dbench_6                        0
 dbench_12                        0
 dbench_48                         0
 dcraw                           9
-fs-mark_1000_Files_1MB_Size                          0
-fs-mark_5000_Files_1MB_Size_4_Threads                        0
+fs-mark_1000_Files_1MB_Size                          44
+fs-mark_5000_Files_1MB_Size_4_Threads                        367
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size                        0
-graphics-magick_minify                            0
+graphics-magick_minify                            77
 graphics-magick_gaussian                          1
 graphics-magick_sharpen                          3
 graphics-magick_rotate                          0
