@@ -48,7 +48,6 @@ graphics-magick_resize                          143
 ebizzy                         30
 encode-mp3                          29
 ffmpeg                            5
-fhourstones               
 gmpbench                          419
 himeno                          72
 hint_float                           392

@@ -130,7 +130,7 @@ stress-ng_sock               1669
 stress-ng_switch               1354
 stream               2114
 swet               255
-sysbench_cpu               1384
+sysbench_cpu               1469
 sysbench_memory               245
 tinymembench               5828
 tiobench_write               1897
