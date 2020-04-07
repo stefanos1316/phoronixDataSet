@@ -1,7 +1,7 @@
 aio-stress               911
 aircrack-ng               1057
 aobench               754
-blake2s               674
+blake2s               781
 blogbench_read               2141
 blogbench_write               1761
 botan_AES-256               379
@@ -14,7 +14,7 @@ byte_register               1373
 byte_dhry2               1548
 byte_int               1372
 byte_float               1371
-bzip2               292
+bzip2               335
 cloverleaf               3225
 cpp-perf-bench_stepanov_abstraction               593
 cpp-perf-bench_stepanov_vector               1504
@@ -37,13 +37,13 @@ dbench_6               4890
 dbench_12               4916
 dbench_48               5102
 dcraw               429
-fs-mark_1000_Files_1MB_Size               286
+fs-mark_1000_Files_1MB_Size               315
 fs-mark_5000_Files_1MB_Size_4_Threads               3195
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size               1228
-graphics-magick_minify               2490
+graphics-magick_minify               2625
 graphics-magick_gaussian               24386
 graphics-magick_sharpen               51298
-graphics-magick_rotate               2094
+graphics-magick_rotate               2009
 graphics-magick_resize               5736
 ebizzy               1636
 encode-mp3               602

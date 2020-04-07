@@ -1,18 +1,18 @@
-Results: 8 threads 300 iter 396.66s user 82.731090s total 3.626 iter/s 0.756 iter/cpu
+Results: 8 threads 300 iter 396.27s user 78.978963s total 3.798 iter/s 0.757 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
-Results: 8 threads 300 iter 396.44s user 85.597124s total 3.505 iter/s 0.757 iter/cpu
+Results: 8 threads 300 iter 396.32s user 79.354718s total 3.780 iter/s 0.757 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
-Results: 8 threads 300 iter 396.65s user 81.650632s total 3.674 iter/s 0.756 iter/cpu
+Results: 8 threads 300 iter 396.42s user 79.380915s total 3.779 iter/s 0.757 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
-Results: 8 threads 300 iter 396.36s user 82.269239s total 3.647 iter/s 0.757 iter/cpu
+Results: 8 threads 300 iter 396.22s user 79.720257s total 3.763 iter/s 0.757 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
-Results: 8 threads 300 iter 396.56s user 80.255017s total 3.738 iter/s 0.757 iter/cpu
+
+Results: 8 threads 300 iter 396.35s user 79.608567s total 3.768 iter/s 0.757 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
 
  Performance counter stats for 'system wide' (5 runs):
 
-          2,440.24 Joules power/energy-pkg/                                             ( +-  0.20% )
-             53.60 Joules power/energy-ram/                                             ( +-  0.82% )
+           2584,20 Joules power/energy-pkg/                                             ( +-  0,19% )
+             51,88 Joules power/energy-ram/                                             ( +-  0,10% )
 
-            82.607 +- 0.891 seconds time elapsed  ( +-  1.08% )
-
+            79,431 +- 0,117 seconds time elapsed  ( +-  0,15% )

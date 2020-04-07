@@ -38,12 +38,12 @@ dbench_12                        720
 dbench_48                         720
 dcraw                           24
 fs-mark_1000_Files_1MB_Size                           43
-fs-mark_5000_Files_1MB_Size_4_Threads                           483
+fs-mark_5000_Files_1MB_Size_4_Threads                           363
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size                           182
-graphics-magick_minify                           83
+graphics-magick_minify                           78
 graphics-magick_gaussian                           622
 graphics-magick_sharpen                         1213
-graphics-magick_rotate                          228
+graphics-magick_rotate                          188
 graphics-magick_resize                          143
 ebizzy                         30
 encode-mp3                          29
