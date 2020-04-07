@@ -43,7 +43,7 @@ fs-mark_4000_Files_32_Sub_Dirs_1MB_Size                          188
 graphics-magick_minify                            77
 graphics-magick_gaussian                          618
 graphics-magick_sharpen                          1209
-graphics-magick_rotate                           236
+graphics-magick_rotate                           178
 graphics-magick_resize                          140
 ebizzy                          30
 encode-mp3                          28

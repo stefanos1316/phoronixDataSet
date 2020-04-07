@@ -41,10 +41,10 @@ fs-mark_1000_Files_1MB_Size               313
 fs-mark_5000_Files_1MB_Size_4_Threads               2809
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size               0
 graphics-magick_minify               2633
-graphics-magick_gaussian               73
-graphics-magick_sharpen               161
-graphics-magick_rotate               1
-graphics-magick_resize               17
+graphics-magick_gaussian              24523
+graphics-magick_sharpen               51035
+graphics-magick_rotate               2003
+graphics-magick_resize               5771
 ebizzy               1639
 encode-mp3               601
 ffmpeg               290
