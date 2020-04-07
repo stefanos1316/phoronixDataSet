@@ -25,9 +25,11 @@ make CFLAGS="${SECURITY_FLAGS}" hiredis jemalloc linenoise lua
 cd ../
 make CFLAGS="${SECURITY_FLAGS}" MALLOC=libc -j $(nproc --all)
 echo "#!/bin/bash
-src/redis-benchmark -n 200000000 -p 100 --csv \$1" > redis
+src/redis-benchmark -n 10000000 --csv \$1" > redis
 chmod +x redis 
 cd ../
+
+exit
 
 echo "-------Downloading and installing sysbench"
 mkdir sysbench && cd sysbench
