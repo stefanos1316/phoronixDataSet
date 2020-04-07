@@ -1,13 +1,13 @@
-fopen: ./john.conf: Permission denied
-fopen: ./john.conf: Permission denied
-fopen: ./john.conf: Permission denied
-fopen: ./john.conf: Permission denied
-fopen: ./john.conf: Permission denied
+Will run 8 OpenMP threads
+Will run 8 OpenMP threads
+Will run 8 OpenMP threads
+Will run 8 OpenMP threads
+Will run 8 OpenMP threads
 
  Performance counter stats for 'system wide' (5 runs):
 
-              0.18 Joules power/energy-pkg/                                             ( +- 79.56% )
-              0.01 Joules power/energy-ram/                                             ( +- 88.59% )
+          1,520.78 Joules power/energy-pkg/                                             ( +-  0.36% )
+             15.24 Joules power/energy-ram/                                             ( +-  0.17% )
 
-            0.0223 +- 0.0202 seconds time elapsed  ( +- 90.48% )
+           30.1768 +- 0.0492 seconds time elapsed  ( +-  0.16% )
 

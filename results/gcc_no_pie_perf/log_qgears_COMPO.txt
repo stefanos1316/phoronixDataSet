@@ -51,8 +51,8 @@ setting mode to  2
 
  Performance counter stats for 'system wide' (5 runs):
 
-            199.62 Joules power/energy-pkg/                                             ( +-  0.37% )
-             14.01 Joules power/energy-ram/                                             ( +-  0.58% )
+            199.37 Joules power/energy-pkg/                                             ( +-  0.24% )
+             14.16 Joules power/energy-ram/                                             ( +-  0.15% )
 
-            9.7820 +- 0.0502 seconds time elapsed  ( +-  0.51% )
+            9.7915 +- 0.0112 seconds time elapsed  ( +-  0.11% )
 

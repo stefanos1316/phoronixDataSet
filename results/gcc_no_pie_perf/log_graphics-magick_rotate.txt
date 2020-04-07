@@ -1,23 +1,18 @@
-Results: 8 threads 1 iter 0.08s user 0.084948s total 11.772 iter/s 12.500 iter/cpu
-./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+Results: 8 threads 300 iter 48.96s user 223.855014s total 1.340 iter/s 6.127 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
-Results: 8 threads 1 iter 0.08s user 0.085037s total 11.760 iter/s 12.500 iter/cpu
-./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+Results: 8 threads 300 iter 48.99s user 224.500158s total 1.336 iter/s 6.124 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
-Results: 8 threads 1 iter 0.07s user 0.080963s total 12.351 iter/s 14.286 iter/cpu
-./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+Results: 8 threads 300 iter 49.14s user 236.416251s total 1.269 iter/s 6.105 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
-Results: 8 threads 1 iter 0.07s user 0.080776s total 12.380 iter/s 14.286 iter/cpu
-./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+Results: 8 threads 300 iter 48.64s user 248.563455s total 1.207 iter/s 6.168 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
-Results: 8 threads 1 iter 0.08s user 0.080729s total 12.387 iter/s 12.500 iter/cpu
-./bin/gm benchmark convert: Unable to open file (output.miff) [Permission denied].
+Results: 8 threads 300 iter 49.05s user 250.116300s total 1.199 iter/s 6.116 iter/cpu
 ./graphics-magick: 3: ./graphics-magick: output.miff: not found
 
  Performance counter stats for 'system wide' (5 runs):
 
-              1.81 Joules power/energy-pkg/                                             ( +-  1.29% )
-              0.10 Joules power/energy-ram/                                             ( +-  0.73% )
+          2,117.93 Joules power/energy-pkg/                                             ( +-  1.62% )
+            154.29 Joules power/energy-ram/                                             ( +-  1.83% )
 
-           0.08542 +- 0.00101 seconds time elapsed  ( +-  1.18% )
+            236.70 +- 5.63 seconds time elapsed  ( +-  2.38% )
 

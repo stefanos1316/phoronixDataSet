@@ -1,23 +1,23 @@
 WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+Doing 4096 bit private rsa's for 10s: 1772 4096 bit private RSA's in 10.00s
+Doing 4096 bit public rsa's for 10s: 110549 4096 bit public RSA's in 10.00s
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+Doing 4096 bit private rsa's for 10s: 1766 4096 bit private RSA's in 10.01s
+Doing 4096 bit public rsa's for 10s: 110550 4096 bit public RSA's in 10.00s
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+Doing 4096 bit private rsa's for 10s: 1773 4096 bit private RSA's in 10.01s
+Doing 4096 bit public rsa's for 10s: 110595 4096 bit public RSA's in 10.00s
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
 Doing 4096 bit private rsa's for 10s: 1776 4096 bit private RSA's in 10.00s
-Doing 4096 bit public rsa's for 10s: 110908 4096 bit public RSA's in 10.00s
+Doing 4096 bit public rsa's for 10s: 109900 4096 bit public RSA's in 10.00s
 WARNING: can't open config file: /usr/local/ssl/openssl.cnf
-Doing 4096 bit private rsa's for 10s: 1769 4096 bit private RSA's in 10.00s
-Doing 4096 bit public rsa's for 10s: 110813 4096 bit public RSA's in 10.00s
-WARNING: can't open config file: /usr/local/ssl/openssl.cnf
-Doing 4096 bit private rsa's for 10s: 1778 4096 bit private RSA's in 10.00s
-Doing 4096 bit public rsa's for 10s: 110725 4096 bit public RSA's in 10.00s
-WARNING: can't open config file: /usr/local/ssl/openssl.cnf
-Doing 4096 bit private rsa's for 10s: 1776 4096 bit private RSA's in 10.00s
-Doing 4096 bit public rsa's for 10s: 110780 4096 bit public RSA's in 10.00s
-WARNING: can't open config file: /usr/local/ssl/openssl.cnf
-Doing 4096 bit private rsa's for 10s: 1773 4096 bit private RSA's in 10.00s
-Doing 4096 bit public rsa's for 10s: 110636 4096 bit public RSA's in 10.00s
+Doing 4096 bit private rsa's for 10s: 1777 4096 bit private RSA's in 10.01s
+Doing 4096 bit public rsa's for 10s: 109991 4096 bit public RSA's in 10.00s
 
  Performance counter stats for 'system wide' (5 runs):
 
-            377.42 Joules power/energy-pkg/                                             ( +-  0.39% )
-             10.04 Joules power/energy-ram/                                             ( +-  0.08% )
+            377.86 Joules power/energy-pkg/                                             ( +-  0.53% )
+             10.10 Joules power/energy-ram/                                             ( +-  0.11% )
 
-           20.0275 +- 0.0173 seconds time elapsed  ( +-  0.09% )
+           20.0306 +- 0.0174 seconds time elapsed  ( +-  0.09% )
 

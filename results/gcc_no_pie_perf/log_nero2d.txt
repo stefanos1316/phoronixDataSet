@@ -1,18 +1,8 @@
-Cannot open output file: 
-Cannot open output file: 
-Cannot open output file: 
-Cannot open output file: 
-Cannot open output file: 
-Cannot open output file: 
-Cannot open output file: 
-Cannot open output file: 
-Cannot open output file: 
-Cannot open output file: 
 
  Performance counter stats for 'system wide' (5 runs):
 
-          6,397.04 Joules power/energy-pkg/                                             ( +-  0.09% )
-            151.26 Joules power/energy-ram/                                             ( +-  0.16% )
+          6,636.21 Joules power/energy-pkg/                                             ( +-  0.36% )
+            156.39 Joules power/energy-ram/                                             ( +-  0.39% )
 
-           301.248 +- 0.462 seconds time elapsed  ( +-  0.15% )
+            309.61 +- 1.21 seconds time elapsed  ( +-  0.39% )
 
