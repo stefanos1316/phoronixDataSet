@@ -1,23 +1,23 @@
-stress-ng: info:  [8943] defaulting to a 86400 second run per stressor
-stress-ng: info:  [8943] dispatching hogs: 8 msg
-stress-ng: info:  [8943] successful run completed in 22.15s
-stress-ng: info:  [8963] defaulting to a 86400 second run per stressor
-stress-ng: info:  [8963] dispatching hogs: 8 msg
-stress-ng: info:  [8963] successful run completed in 22.11s
-stress-ng: info:  [8982] defaulting to a 86400 second run per stressor
-stress-ng: info:  [8982] dispatching hogs: 8 msg
-stress-ng: info:  [8982] successful run completed in 22.06s
-stress-ng: info:  [9001] defaulting to a 86400 second run per stressor
-stress-ng: info:  [9001] dispatching hogs: 8 msg
-stress-ng: info:  [9001] successful run completed in 22.00s
-stress-ng: info:  [9022] defaulting to a 86400 second run per stressor
-stress-ng: info:  [9022] dispatching hogs: 8 msg
-stress-ng: info:  [9022] successful run completed in 22.03s
+stress-ng: info:  [8584] defaulting to a 86400 second run per stressor
+stress-ng: info:  [8584] dispatching hogs: 8 msg
+stress-ng: info:  [8584] successful run completed in 22.50s
+stress-ng: info:  [8607] defaulting to a 86400 second run per stressor
+stress-ng: info:  [8607] dispatching hogs: 8 msg
+stress-ng: info:  [8607] successful run completed in 21.91s
+stress-ng: info:  [8626] defaulting to a 86400 second run per stressor
+stress-ng: info:  [8626] dispatching hogs: 8 msg
+stress-ng: info:  [8626] successful run completed in 22.32s
+stress-ng: info:  [8651] defaulting to a 86400 second run per stressor
+stress-ng: info:  [8651] dispatching hogs: 8 msg
+stress-ng: info:  [8651] successful run completed in 22.05s
+stress-ng: info:  [8670] defaulting to a 86400 second run per stressor
+stress-ng: info:  [8670] dispatching hogs: 8 msg
+stress-ng: info:  [8670] successful run completed in 22.04s
 
  Performance counter stats for 'system wide' (5 runs):
 
-            964.66 Joules power/energy-pkg/                                             ( +-  0.27% )
-             11.33 Joules power/energy-ram/                                             ( +-  0.13% )
+            972.80 Joules power/energy-pkg/                                             ( +-  0.52% )
+             11.62 Joules power/energy-ram/                                             ( +-  0.43% )
 
-           22.0745 +- 0.0280 seconds time elapsed  ( +-  0.13% )
+            22.167 +- 0.107 seconds time elapsed  ( +-  0.48% )
 

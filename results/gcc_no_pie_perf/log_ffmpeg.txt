@@ -8,129 +8,129 @@ ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   libavfilter     7. 16.100 /  7. 16.100
   libswscale      5.  1.100 /  5.  1.100
   libswresample   3.  1.100 /  3.  1.100
-[NULL @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] no frame!
-[mpeg2video @ 0x563e9463bdc0] Invalid frame dimensions 0x0.
+[NULL @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] no frame!
+[mpeg2video @ 0x556448517dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] no frame!
-[mpeg2video @ 0x563e9463bdc0] Invalid frame dimensions 0x0.
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] no frame!
+[mpeg2video @ 0x556448517dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] no frame!
-[mpeg2video @ 0x563e9463bdc0] Invalid frame dimensions 0x0.
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] no frame!
+[mpeg2video @ 0x556448517dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] no frame!
-[mpeg2video @ 0x563e9463bdc0] Invalid frame dimensions 0x0.
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] no frame!
+[mpeg2video @ 0x556448517dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] no frame!
-[mpeg2video @ 0x563e9463bdc0] Invalid frame dimensions 0x0.
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] no frame!
+[mpeg2video @ 0x556448517dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] no frame!
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] no frame!
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] no frame!
-[mpeg2video @ 0x563e9463bdc0] Invalid frame dimensions 0x0.
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] no frame!
+[mpeg2video @ 0x556448517dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] non-existing PPS 0 referenced
-[h264 @ 0x563e94665080] decode_slice_header error
-[h264 @ 0x563e94665080] no frame!
-[mpeg2video @ 0x563e9463bdc0] Invalid frame dimensions 0x0.
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] non-existing PPS 0 referenced
+[h264 @ 0x556448541080] decode_slice_header error
+[h264 @ 0x556448541080] no frame!
+[mpeg2video @ 0x556448517dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[mpegts @ 0x563e94635800] PES packet size mismatch
+[mpegts @ 0x556448511800] PES packet size mismatch
     Last message repeated 2 times
 Input #0, mpegts, from 'HD2-h264.ts':
   Duration: 00:01:04.75, start: 31309.702867, bitrate: 37500 kb/s
@@ -159,15 +159,15 @@ Output #0, dv, to '/dev/null':
     Stream #0:1(ger): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (clean effects)
     Metadata:
       encoder         : Lavc58.18.100 pcm_s16le
-[dv @ 0x563e94679bc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
+[dv @ 0x556448555bc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-[h264 @ 0x563e946eccc0] Increasing reorder buffer to 1
-frame=  161 fps=0.0 q=-0.0 size=   17408kB time=00:00:05.57 bitrate=25592.9kbits/s dup=8 drop=0 speed=11.1x    frame=  332 fps=331 q=-0.0 size=   37376kB time=00:00:11.47 bitrate=26680.2kbits/s dup=8 drop=0 speed=11.4x    frame=  499 fps=332 q=-0.0 size=   56832kB time=00:00:17.09 bitrate=27238.8kbits/s dup=8 drop=0 speed=11.4x    frame=  671 fps=334 q=-0.0 size=   77056kB time=00:00:22.73 bitrate=27768.8kbits/s dup=8 drop=0 speed=11.3x    frame=  820 fps=327 q=-0.0 size=   94464kB time=00:00:27.74 bitrate=27888.4kbits/s dup=10 drop=0 speed=11.1x    frame=  978 fps=325 q=-0.0 size=  113152kB time=00:00:32.93 bitrate=28147.0kbits/s dup=11 drop=2 speed=  11x    frame= 1144 fps=326 q=-0.0 size=  132608kB time=00:00:38.40 bitrate=28286.7kbits/s dup=13 drop=2 speed=10.9x    frame= 1307 fps=326 q=-0.0 size=  151552kB time=00:00:43.87 bitrate=28295.9kbits/s dup=14 drop=2 speed=10.9x    frame= 1459 fps=323 q=-0.0 size=  169472kB time=00:00:48.91 bitrate=28381.5kbits/s dup=15 drop=4 speed=10.8x    frame= 1622 fps=323 q=-0.0 size=  188416kB time=00:00:54.24 bitrate=28454.8kbits/s dup=17 drop=6 speed=10.8x    frame= 1787 fps=324 q=-0.0 size=  207872kB time=00:00:59.71 bitrate=28516.4kbits/s dup=18 drop=7 speed=10.8x    [mpegts @ 0x563e94635800] PES packet size mismatch
-[h264 @ 0x563e94678080] error while decoding MB 41 13, bytestream -26
-[h264 @ 0x563e94678080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
-[dv @ 0x563e94679bc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
+[h264 @ 0x5564485c8cc0] Increasing reorder buffer to 1
+frame=  158 fps=0.0 q=-0.0 size=   16896kB time=00:00:05.42 bitrate=25499.1kbits/s dup=8 drop=0 speed=10.8x    frame=  330 fps=329 q=-0.0 size=   37120kB time=00:00:11.35 bitrate=26777.4kbits/s dup=8 drop=0 speed=11.3x    frame=  500 fps=333 q=-0.0 size=   57088kB time=00:00:17.11 bitrate=27323.1kbits/s dup=8 drop=0 speed=11.4x    frame=  670 fps=334 q=-0.0 size=   77056kB time=00:00:22.70 bitrate=27798.1kbits/s dup=8 drop=0 speed=11.3x    frame=  821 fps=328 q=-0.0 size=   94720kB time=00:00:27.74 bitrate=27963.9kbits/s dup=10 drop=0 speed=11.1x    frame=  973 fps=324 q=-0.0 size=  112384kB time=00:00:32.78 bitrate=28078.8kbits/s dup=11 drop=2 speed=10.9x    frame= 1139 fps=325 q=-0.0 size=  131840kB time=00:00:38.11 bitrate=28335.3kbits/s dup=13 drop=2 speed=10.9x    frame= 1298 fps=324 q=-0.0 size=  150528kB time=00:00:43.58 bitrate=28290.4kbits/s dup=14 drop=2 speed=10.9x    frame= 1450 fps=321 q=-0.0 size=  168448kB time=00:00:48.62 bitrate=28377.1kbits/s dup=15 drop=4 speed=10.8x    frame= 1608 fps=321 q=-0.0 size=  186880kB time=00:00:53.81 bitrate=28449.4kbits/s dup=17 drop=6 speed=10.7x    frame= 1685 fps=305 q=-0.0 size=  195840kB time=00:00:56.40 bitrate=28443.3kbits/s dup=17 drop=6 speed=10.2x    frame= 1840 fps=306 q=-0.0 size=  214016kB time=00:01:01.44 bitrate=28533.5kbits/s dup=20 drop=7 speed=10.2x    [mpegts @ 0x556448511800] PES packet size mismatch
+[h264 @ 0x556448554080] error while decoding MB 41 13, bytestream -26
+[h264 @ 0x556448554080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
+[dv @ 0x556448555bc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-frame= 1921 fps=324 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=10.8x    
+frame= 1921 fps=306 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=10.2x    
 video:225117kB audio:11974kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
 ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
@@ -179,129 +179,129 @@ ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   libavfilter     7. 16.100 /  7. 16.100
   libswscale      5.  1.100 /  5.  1.100
   libswresample   3.  1.100 /  3.  1.100
-[NULL @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] no frame!
-[mpeg2video @ 0x55a4678f1dc0] Invalid frame dimensions 0x0.
+[NULL @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] no frame!
+[mpeg2video @ 0x560b4a3e7dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] no frame!
-[mpeg2video @ 0x55a4678f1dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] no frame!
+[mpeg2video @ 0x560b4a3e7dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] no frame!
-[mpeg2video @ 0x55a4678f1dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] no frame!
+[mpeg2video @ 0x560b4a3e7dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] no frame!
-[mpeg2video @ 0x55a4678f1dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] no frame!
+[mpeg2video @ 0x560b4a3e7dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] no frame!
-[mpeg2video @ 0x55a4678f1dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] no frame!
+[mpeg2video @ 0x560b4a3e7dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] no frame!
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] no frame!
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] no frame!
-[mpeg2video @ 0x55a4678f1dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] no frame!
+[mpeg2video @ 0x560b4a3e7dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] non-existing PPS 0 referenced
-[h264 @ 0x55a46791b080] decode_slice_header error
-[h264 @ 0x55a46791b080] no frame!
-[mpeg2video @ 0x55a4678f1dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] non-existing PPS 0 referenced
+[h264 @ 0x560b4a411080] decode_slice_header error
+[h264 @ 0x560b4a411080] no frame!
+[mpeg2video @ 0x560b4a3e7dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[mpegts @ 0x55a4678eb800] PES packet size mismatch
+[mpegts @ 0x560b4a3e1800] PES packet size mismatch
     Last message repeated 2 times
 Input #0, mpegts, from 'HD2-h264.ts':
   Duration: 00:01:04.75, start: 31309.702867, bitrate: 37500 kb/s
@@ -330,15 +330,15 @@ Output #0, dv, to '/dev/null':
     Stream #0:1(ger): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (clean effects)
     Metadata:
       encoder         : Lavc58.18.100 pcm_s16le
-[dv @ 0x55a46792fbc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
+[dv @ 0x560b4a425bc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-[h264 @ 0x55a4679a2cc0] Increasing reorder buffer to 1
-frame=  172 fps=0.0 q=-0.0 size=   18688kB time=00:00:05.88 bitrate=26017.9kbits/s dup=8 drop=0 speed=11.7x    frame=  350 fps=349 q=-0.0 size=   39424kB time=00:00:12.05 bitrate=26797.1kbits/s dup=8 drop=0 speed=  12x    frame=  522 fps=347 q=-0.0 size=   59648kB time=00:00:17.83 bitrate=27395.9kbits/s dup=8 drop=0 speed=11.9x    frame=  703 fps=351 q=-0.0 size=   80896kB time=00:00:24.00 bitrate=27607.8kbits/s dup=8 drop=0 speed=  12x    frame=  860 fps=343 q=-0.0 size=   99328kB time=00:00:29.18 bitrate=27877.6kbits/s dup=10 drop=0 speed=11.6x    frame= 1022 fps=339 q=-0.0 size=  118272kB time=00:00:34.37 bitrate=28188.1kbits/s dup=11 drop=2 speed=11.4x    frame= 1191 fps=339 q=-0.0 size=  137984kB time=00:00:40.15 bitrate=28149.2kbits/s dup=13 drop=2 speed=11.4x    frame= 1353 fps=337 q=-0.0 size=  156928kB time=00:00:45.31 bitrate=28368.6kbits/s dup=15 drop=3 speed=11.3x    frame= 1518 fps=336 q=-0.0 size=  176384kB time=00:00:50.93 bitrate=28369.9kbits/s dup=16 drop=4 speed=11.3x    frame= 1684 fps=336 q=-0.0 size=  195840kB time=00:00:56.40 bitrate=28443.3kbits/s dup=17 drop=6 speed=11.2x    frame= 1850 fps=335 q=-0.0 size=  215296kB time=00:01:01.73 bitrate=28570.3kbits/s dup=20 drop=7 speed=11.2x    [mpegts @ 0x55a4678eb800] PES packet size mismatch
-[h264 @ 0x55a46792e080] error while decoding MB 41 13, bytestream -26
-[h264 @ 0x55a46792e080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
-[dv @ 0x55a46792fbc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
+[h264 @ 0x560b4a498cc0] Increasing reorder buffer to 1
+frame=  168 fps=0.0 q=-0.0 size=   18176kB time=00:00:05.71 bitrate=26048.8kbits/s dup=8 drop=0 speed=11.4x    frame=  343 fps=341 q=-0.0 size=   38656kB time=00:00:11.76 bitrate=26918.3kbits/s dup=8 drop=0 speed=11.7x    frame=  515 fps=342 q=-0.0 size=   58880kB time=00:00:17.66 bitrate=27300.3kbits/s dup=8 drop=0 speed=11.7x    frame=  689 fps=343 q=-0.0 size=   79104kB time=00:00:23.30 bitrate=27802.3kbits/s dup=8 drop=0 speed=11.6x    frame=  848 fps=338 q=-0.0 size=   97792kB time=00:00:28.61 bitrate=27999.1kbits/s dup=10 drop=0 speed=11.4x    frame= 1010 fps=335 q=-0.0 size=  116736kB time=00:00:34.08 bitrate=28057.1kbits/s dup=11 drop=2 speed=11.3x    frame= 1174 fps=334 q=-0.0 size=  135936kB time=00:00:39.29 bitrate=28341.2kbits/s dup=13 drop=2 speed=11.2x    frame= 1339 fps=334 q=-0.0 size=  155392kB time=00:00:44.88 bitrate=28361.3kbits/s dup=15 drop=2 speed=11.2x    frame= 1500 fps=332 q=-0.0 size=  174336kB time=00:00:50.35 bitrate=28361.2kbits/s dup=15 drop=4 speed=11.2x    frame= 1665 fps=332 q=-0.0 size=  193536kB time=00:00:55.68 bitrate=28472.1kbits/s dup=17 drop=6 speed=11.1x    frame= 1831 fps=332 q=-0.0 size=  212992kB time=00:01:01.15 bitrate=28530.7kbits/s dup=20 drop=7 speed=11.1x    [mpegts @ 0x560b4a3e1800] PES packet size mismatch
+[h264 @ 0x560b4a424080] error while decoding MB 41 13, bytestream -26
+[h264 @ 0x560b4a424080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
+[dv @ 0x560b4a425bc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-frame= 1921 fps=335 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=11.2x    
+frame= 1921 fps=331 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=11.1x    
 video:225117kB audio:11974kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
 ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
@@ -350,129 +350,129 @@ ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   libavfilter     7. 16.100 /  7. 16.100
   libswscale      5.  1.100 /  5.  1.100
   libswresample   3.  1.100 /  3.  1.100
-[NULL @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] no frame!
-[mpeg2video @ 0x55c41b6cfdc0] Invalid frame dimensions 0x0.
+[NULL @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] no frame!
+[mpeg2video @ 0x56179d611dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] no frame!
-[mpeg2video @ 0x55c41b6cfdc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] no frame!
+[mpeg2video @ 0x56179d611dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] no frame!
-[mpeg2video @ 0x55c41b6cfdc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] no frame!
+[mpeg2video @ 0x56179d611dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] no frame!
-[mpeg2video @ 0x55c41b6cfdc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] no frame!
+[mpeg2video @ 0x56179d611dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] no frame!
-[mpeg2video @ 0x55c41b6cfdc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] no frame!
+[mpeg2video @ 0x56179d611dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] no frame!
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] no frame!
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] no frame!
-[mpeg2video @ 0x55c41b6cfdc0] Invalid frame dimensions 0x0.
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] no frame!
+[mpeg2video @ 0x56179d611dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] non-existing PPS 0 referenced
-[h264 @ 0x55c41b6f9080] decode_slice_header error
-[h264 @ 0x55c41b6f9080] no frame!
-[mpeg2video @ 0x55c41b6cfdc0] Invalid frame dimensions 0x0.
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] non-existing PPS 0 referenced
+[h264 @ 0x56179d63b080] decode_slice_header error
+[h264 @ 0x56179d63b080] no frame!
+[mpeg2video @ 0x56179d611dc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[mpegts @ 0x55c41b6c9800] PES packet size mismatch
+[mpegts @ 0x56179d60b800] PES packet size mismatch
     Last message repeated 2 times
 Input #0, mpegts, from 'HD2-h264.ts':
   Duration: 00:01:04.75, start: 31309.702867, bitrate: 37500 kb/s
@@ -501,15 +501,15 @@ Output #0, dv, to '/dev/null':
     Stream #0:1(ger): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (clean effects)
     Metadata:
       encoder         : Lavc58.18.100 pcm_s16le
-[dv @ 0x55c41b70dbc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
+[dv @ 0x56179d64fbc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-[h264 @ 0x55c41b780cc0] Increasing reorder buffer to 1
-frame=  172 fps=0.0 q=-0.0 size=   18688kB time=00:00:05.88 bitrate=26017.9kbits/s dup=8 drop=0 speed=11.7x    frame=  346 fps=345 q=-0.0 size=   38912kB time=00:00:11.90 bitrate=26768.9kbits/s dup=8 drop=0 speed=11.9x    frame=  518 fps=344 q=-0.0 size=   59136kB time=00:00:17.69 bitrate=27381.8kbits/s dup=8 drop=0 speed=11.8x    frame=  691 fps=345 q=-0.0 size=   79360kB time=00:00:23.42 bitrate=27749.5kbits/s dup=8 drop=0 speed=11.7x    frame=  848 fps=338 q=-0.0 size=   97792kB time=00:00:28.61 bitrate=27999.1kbits/s dup=10 drop=0 speed=11.4x    frame= 1011 fps=336 q=-0.0 size=  116992kB time=00:00:34.08 bitrate=28118.6kbits/s dup=11 drop=2 speed=11.3x    frame= 1178 fps=335 q=-0.0 size=  136448kB time=00:00:39.41 bitrate=28361.4kbits/s dup=13 drop=2 speed=11.2x    frame= 1344 fps=335 q=-0.0 size=  155904kB time=00:00:45.02 bitrate=28363.7kbits/s dup=15 drop=2 speed=11.2x    frame= 1506 fps=333 q=-0.0 size=  174848kB time=00:00:50.50 bitrate=28363.4kbits/s dup=15 drop=4 speed=11.2x    frame= 1675 fps=334 q=-0.0 size=  194816kB time=00:00:55.97 bitrate=28513.0kbits/s dup=17 drop=6 speed=11.1x    frame= 1840 fps=333 q=-0.0 size=  214016kB time=00:01:01.44 bitrate=28533.5kbits/s dup=20 drop=7 speed=11.1x    [mpegts @ 0x55c41b6c9800] PES packet size mismatch
-[h264 @ 0x55c41b70c080] error while decoding MB 41 13, bytestream -26
-[h264 @ 0x55c41b70c080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
-[dv @ 0x55c41b70dbc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
+[h264 @ 0x56179d6c2cc0] Increasing reorder buffer to 1
+frame=  179 fps=0.0 q=-0.0 size=   19456kB time=00:00:06.14 bitrate=25924.0kbits/s dup=8 drop=0 speed=12.3x    frame=  355 fps=354 q=-0.0 size=   40192kB time=00:00:12.19 bitrate=26996.6kbits/s dup=8 drop=0 speed=12.2x    frame=  526 fps=349 q=-0.0 size=   60160kB time=00:00:17.98 bitrate=27409.8kbits/s dup=8 drop=0 speed=11.9x    frame=  703 fps=350 q=-0.0 size=   80896kB time=00:00:24.00 bitrate=27607.8kbits/s dup=8 drop=0 speed=  12x    frame=  856 fps=341 q=-0.0 size=   98816kB time=00:00:29.04 bitrate=27871.4kbits/s dup=10 drop=0 speed=11.6x    frame= 1016 fps=337 q=-0.0 size=  117504kB time=00:00:34.10 bitrate=28221.8kbits/s dup=11 drop=2 speed=11.3x    frame= 1178 fps=335 q=-0.0 size=  136448kB time=00:00:39.41 bitrate=28361.4kbits/s dup=13 drop=2 speed=11.2x    frame= 1344 fps=335 q=-0.0 size=  155904kB time=00:00:45.02 bitrate=28363.7kbits/s dup=15 drop=2 speed=11.2x    frame= 1504 fps=333 q=-0.0 size=  174592kB time=00:00:50.50 bitrate=28321.9kbits/s dup=15 drop=4 speed=11.2x    frame= 1671 fps=333 q=-0.0 size=  194304kB time=00:00:55.82 bitrate=28511.4kbits/s dup=17 drop=6 speed=11.1x    frame= 1836 fps=333 q=-0.0 size=  213504kB time=00:01:01.44 bitrate=28465.3kbits/s dup=20 drop=7 speed=11.1x    [mpegts @ 0x56179d60b800] PES packet size mismatch
+[h264 @ 0x56179d64e080] error while decoding MB 41 13, bytestream -26
+[h264 @ 0x56179d64e080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
+[dv @ 0x56179d64fbc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-frame= 1921 fps=333 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=11.1x    
+frame= 1921 fps=332 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=11.1x    
 video:225117kB audio:11974kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
 ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
@@ -521,129 +521,129 @@ ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   libavfilter     7. 16.100 /  7. 16.100
   libswscale      5.  1.100 /  5.  1.100
   libswresample   3.  1.100 /  3.  1.100
-[NULL @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] no frame!
-[mpeg2video @ 0x55e31df01dc0] Invalid frame dimensions 0x0.
+[NULL @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] no frame!
+[mpeg2video @ 0x55fa0b17ddc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] no frame!
-[mpeg2video @ 0x55e31df01dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] no frame!
+[mpeg2video @ 0x55fa0b17ddc0] Invalid frame dimensions 0x0.
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] no frame!
-[mpeg2video @ 0x55e31df01dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] no frame!
+[mpeg2video @ 0x55fa0b17ddc0] Invalid frame dimensions 0x0.
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] no frame!
-[mpeg2video @ 0x55e31df01dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] no frame!
+[mpeg2video @ 0x55fa0b17ddc0] Invalid frame dimensions 0x0.
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] no frame!
-[mpeg2video @ 0x55e31df01dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] no frame!
+[mpeg2video @ 0x55fa0b17ddc0] Invalid frame dimensions 0x0.
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] no frame!
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] no frame!
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] no frame!
-[mpeg2video @ 0x55e31df01dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] no frame!
+[mpeg2video @ 0x55fa0b17ddc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] non-existing PPS 0 referenced
-[h264 @ 0x55e31df2b080] decode_slice_header error
-[h264 @ 0x55e31df2b080] no frame!
-[mpeg2video @ 0x55e31df01dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] non-existing PPS 0 referenced
+[h264 @ 0x55fa0b1a7080] decode_slice_header error
+[h264 @ 0x55fa0b1a7080] no frame!
+[mpeg2video @ 0x55fa0b17ddc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[mpegts @ 0x55e31defb800] PES packet size mismatch
+[mpegts @ 0x55fa0b177800] PES packet size mismatch
     Last message repeated 2 times
 Input #0, mpegts, from 'HD2-h264.ts':
   Duration: 00:01:04.75, start: 31309.702867, bitrate: 37500 kb/s
@@ -672,15 +672,15 @@ Output #0, dv, to '/dev/null':
     Stream #0:1(ger): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (clean effects)
     Metadata:
       encoder         : Lavc58.18.100 pcm_s16le
-[dv @ 0x55e31df3fbc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
+[dv @ 0x55fa0b1bbbc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-[h264 @ 0x55e31dfb2cc0] Increasing reorder buffer to 1
-frame=  166 fps=0.0 q=-0.0 size=   17920kB time=00:00:05.71 bitrate=25681.9kbits/s dup=8 drop=0 speed=11.4x    frame=  339 fps=338 q=-0.0 size=   38144kB time=00:00:11.69 bitrate=26725.4kbits/s dup=8 drop=0 speed=11.7x    frame=  511 fps=340 q=-0.0 size=   58368kB time=00:00:17.52 bitrate=27285.3kbits/s dup=8 drop=0 speed=11.6x    frame=  686 fps=342 q=-0.0 size=   78848kB time=00:00:23.28 bitrate=27740.9kbits/s dup=8 drop=0 speed=11.6x    frame=  845 fps=337 q=-0.0 size=   97536kB time=00:00:28.46 bitrate=28067.0kbits/s dup=10 drop=0 speed=11.4x    frame= 1008 fps=335 q=-0.0 size=  116480kB time=00:00:33.96 bitrate=28094.5kbits/s dup=11 drop=2 speed=11.3x    frame= 1175 fps=335 q=-0.0 size=  136192kB time=00:00:39.41 bitrate=28308.1kbits/s dup=13 drop=2 speed=11.2x    frame= 1341 fps=334 q=-0.0 size=  155648kB time=00:00:44.88 bitrate=28408.0kbits/s dup=15 drop=2 speed=11.2x    frame= 1503 fps=333 q=-0.0 size=  174592kB time=00:00:50.35 bitrate=28402.8kbits/s dup=15 drop=4 speed=11.2x    frame= 1672 fps=333 q=-0.0 size=  194304kB time=00:00:55.85 bitrate=28499.1kbits/s dup=17 drop=6 speed=11.1x    frame= 1838 fps=333 q=-0.0 size=  213760kB time=00:01:01.44 bitrate=28499.4kbits/s dup=20 drop=7 speed=11.1x    [mpegts @ 0x55e31defb800] PES packet size mismatch
-[h264 @ 0x55e31df3e080] error while decoding MB 41 13, bytestream -26
-[h264 @ 0x55e31df3e080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
-[dv @ 0x55e31df3fbc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
+[h264 @ 0x55fa0b22ecc0] Increasing reorder buffer to 1
+frame=  168 fps=0.0 q=-0.0 size=   18176kB time=00:00:05.71 bitrate=26048.8kbits/s dup=8 drop=0 speed=11.4x    frame=  339 fps=338 q=-0.0 size=   38144kB time=00:00:11.64 bitrate=26835.5kbits/s dup=8 drop=0 speed=11.6x    frame=  511 fps=340 q=-0.0 size=   58368kB time=00:00:17.52 bitrate=27285.3kbits/s dup=8 drop=0 speed=11.7x    frame=  693 fps=345 q=-0.0 size=   79616kB time=00:00:23.42 bitrate=27839.0kbits/s dup=8 drop=0 speed=11.7x    frame=  848 fps=338 q=-0.0 size=   97792kB time=00:00:28.61 bitrate=27999.1kbits/s dup=10 drop=0 speed=11.4x    frame= 1006 fps=334 q=-0.0 size=  116480kB time=00:00:33.82 bitrate=28214.1kbits/s dup=11 drop=2 speed=11.2x    frame= 1175 fps=335 q=-0.0 size=  136192kB time=00:00:39.41 bitrate=28308.1kbits/s dup=13 drop=2 speed=11.2x    frame= 1339 fps=334 q=-0.0 size=  155392kB time=00:00:44.88 bitrate=28361.3kbits/s dup=15 drop=2 speed=11.2x    frame= 1499 fps=332 q=-0.0 size=  174080kB time=00:00:50.21 bitrate=28400.8kbits/s dup=15 drop=4 speed=11.1x    frame= 1666 fps=332 q=-0.0 size=  193792kB time=00:00:55.68 bitrate=28509.8kbits/s dup=17 drop=6 speed=11.1x    frame= 1829 fps=331 q=-0.0 size=  212736kB time=00:01:01.15 bitrate=28496.5kbits/s dup=19 drop=7 speed=11.1x    [mpegts @ 0x55fa0b177800] PES packet size mismatch
+[h264 @ 0x55fa0b1ba080] error while decoding MB 41 13, bytestream -26
+[h264 @ 0x55fa0b1ba080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
+[dv @ 0x55fa0b1bbbc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-frame= 1921 fps=333 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=11.1x    
+frame= 1921 fps=331 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=  11x    
 video:225117kB audio:11974kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
 ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   built with gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04)
@@ -692,129 +692,129 @@ ffmpeg version 4.0.2 Copyright (c) 2000-2018 the FFmpeg developers
   libavfilter     7. 16.100 /  7. 16.100
   libswscale      5.  1.100 /  5.  1.100
   libswresample   3.  1.100 /  3.  1.100
-[NULL @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] no frame!
-[mpeg2video @ 0x56202b102dc0] Invalid frame dimensions 0x0.
+[NULL @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] no frame!
+[mpeg2video @ 0x5624de89bdc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] no frame!
-[mpeg2video @ 0x56202b102dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] no frame!
+[mpeg2video @ 0x5624de89bdc0] Invalid frame dimensions 0x0.
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] no frame!
-[mpeg2video @ 0x56202b102dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] no frame!
+[mpeg2video @ 0x5624de89bdc0] Invalid frame dimensions 0x0.
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] no frame!
-[mpeg2video @ 0x56202b102dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] no frame!
+[mpeg2video @ 0x5624de89bdc0] Invalid frame dimensions 0x0.
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] no frame!
-[mpeg2video @ 0x56202b102dc0] Invalid frame dimensions 0x0.
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] no frame!
+[mpeg2video @ 0x5624de89bdc0] Invalid frame dimensions 0x0.
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] no frame!
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] no frame!
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] no frame!
-[mpeg2video @ 0x56202b102dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] no frame!
+[mpeg2video @ 0x5624de89bdc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
     Last message repeated 1 times
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] non-existing PPS 0 referenced
-[h264 @ 0x56202b12c080] decode_slice_header error
-[h264 @ 0x56202b12c080] no frame!
-[mpeg2video @ 0x56202b102dc0] Invalid frame dimensions 0x0.
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] non-existing PPS 0 referenced
+[h264 @ 0x5624de8c5080] decode_slice_header error
+[h264 @ 0x5624de8c5080] no frame!
+[mpeg2video @ 0x5624de89bdc0] Invalid frame dimensions 0x0.
     Last message repeated 1 times
-[mpegts @ 0x56202b0fc800] PES packet size mismatch
+[mpegts @ 0x5624de895800] PES packet size mismatch
     Last message repeated 2 times
 Input #0, mpegts, from 'HD2-h264.ts':
   Duration: 00:01:04.75, start: 31309.702867, bitrate: 37500 kb/s
@@ -843,21 +843,21 @@ Output #0, dv, to '/dev/null':
     Stream #0:1(ger): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (clean effects)
     Metadata:
       encoder         : Lavc58.18.100 pcm_s16le
-[dv @ 0x56202b140bc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
+[dv @ 0x5624de8d9bc0] Can't process DV frame #0. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-[h264 @ 0x56202b1b3cc0] Increasing reorder buffer to 1
-frame=  182 fps=0.0 q=-0.0 size=   19712kB time=00:00:06.29 bitrate=25664.0kbits/s dup=8 drop=0 speed=12.6x    frame=  357 fps=356 q=-0.0 size=   40192kB time=00:00:12.19 bitrate=26996.6kbits/s dup=8 drop=0 speed=12.2x    frame=  530 fps=353 q=-0.0 size=   60672kB time=00:00:18.12 bitrate=27423.4kbits/s dup=8 drop=0 speed=12.1x    frame=  704 fps=351 q=-0.0 size=   80896kB time=00:00:24.00 bitrate=27607.8kbits/s dup=8 drop=0 speed=  12x    frame=  860 fps=343 q=-0.0 size=   99328kB time=00:00:29.18 bitrate=27877.6kbits/s dup=10 drop=0 speed=11.6x    frame= 1021 fps=340 q=-0.0 size=  118016kB time=00:00:34.37 bitrate=28127.1kbits/s dup=11 drop=2 speed=11.4x    frame= 1186 fps=338 q=-0.0 size=  137472kB time=00:00:39.72 bitrate=28349.8kbits/s dup=13 drop=2 speed=11.3x    frame= 1348 fps=336 q=-0.0 size=  156416kB time=00:00:45.17 bitrate=28366.2kbits/s dup=15 drop=2 speed=11.3x    frame= 1511 fps=335 q=-0.0 size=  175616kB time=00:00:50.64 bitrate=28407.0kbits/s dup=15 drop=4 speed=11.2x    frame= 1677 fps=334 q=-0.0 size=  195072kB time=00:00:56.11 bitrate=28477.2kbits/s dup=17 drop=6 speed=11.2x    frame= 1846 fps=335 q=-0.0 size=  214784kB time=00:01:01.58 bitrate=28569.0kbits/s dup=20 drop=7 speed=11.2x    [mpegts @ 0x56202b0fc800] PES packet size mismatch
-[h264 @ 0x56202b13f080] error while decoding MB 41 13, bytestream -26
-[h264 @ 0x56202b13f080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
-[dv @ 0x56202b140bc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
+[h264 @ 0x5624de94ccc0] Increasing reorder buffer to 1
+frame=  172 fps=0.0 q=-0.0 size=   18688kB time=00:00:05.86 bitrate=26124.5kbits/s dup=8 drop=0 speed=11.7x    frame=  346 fps=345 q=-0.0 size=   38912kB time=00:00:11.90 bitrate=26768.9kbits/s dup=8 drop=0 speed=11.9x    frame=  518 fps=344 q=-0.0 size=   59136kB time=00:00:17.66 bitrate=27419.0kbits/s dup=8 drop=0 speed=11.7x    frame=  689 fps=343 q=-0.0 size=   79104kB time=00:00:23.28 bitrate=27831.0kbits/s dup=8 drop=0 speed=11.6x    frame=  847 fps=338 q=-0.0 size=   97792kB time=00:00:28.51 bitrate=28093.3kbits/s dup=10 drop=0 speed=11.4x    frame= 1007 fps=335 q=-0.0 size=  116480kB time=00:00:33.94 bitrate=28114.3kbits/s dup=11 drop=2 speed=11.3x    frame= 1177 fps=335 q=-0.0 size=  136448kB time=00:00:39.41 bitrate=28361.4kbits/s dup=13 drop=2 speed=11.2x    frame= 1343 fps=335 q=-0.0 size=  155904kB time=00:00:44.90 bitrate=28439.5kbits/s dup=15 drop=2 speed=11.2x    frame= 1501 fps=333 q=-0.0 size=  174336kB time=00:00:50.35 bitrate=28361.2kbits/s dup=15 drop=4 speed=11.2x    frame= 1665 fps=332 q=-0.0 size=  193536kB time=00:00:55.68 bitrate=28472.1kbits/s dup=17 drop=6 speed=11.1x    frame= 1833 fps=332 q=-0.0 size=  213248kB time=00:01:01.30 bitrate=28497.9kbits/s dup=20 drop=7 speed=11.1x    [mpegts @ 0x5624de895800] PES packet size mismatch
+[h264 @ 0x5624de8d8080] error while decoding MB 41 13, bytestream -26
+[h264 @ 0x5624de8d8080] concealing 6608 DC, 6608 AC, 6608 MV errors in P frame
+[dv @ 0x5624de8d9bc0] Can't process DV frame #1914. Insufficient audio data or severe sync problem.
     Last message repeated 2 times
-frame= 1921 fps=335 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=11.2x    
+frame= 1921 fps=332 q=-0.0 Lsize=  224297kB time=00:01:04.09 bitrate=28666.4kbits/s dup=23 drop=7 speed=11.1x    
 video:225117kB audio:11974kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
 
  Performance counter stats for 'system wide' (5 runs):
 
-            282.41 Joules power/energy-pkg/                                             ( +-  0.72% )
-              8.57 Joules power/energy-ram/                                             ( +-  1.50% )
+            276.68 Joules power/energy-pkg/                                             ( +-  0.38% )
+              8.76 Joules power/energy-ram/                                             ( +-  1.84% )
 
-             6.037 +- 0.205 seconds time elapsed  ( +-  3.40% )
+             6.135 +- 0.262 seconds time elapsed  ( +-  4.28% )
 

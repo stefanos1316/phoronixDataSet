@@ -29,8 +29,6 @@ src/redis-benchmark -n 200000000 -p 100 --csv \$1" > redis
 chmod +x redis 
 cd ../
 
-exit
-
 echo "-------Downloading and installing sysbench"
 mkdir sysbench && cd sysbench
 wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip

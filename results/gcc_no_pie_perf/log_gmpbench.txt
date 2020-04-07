@@ -1,90 +1,45 @@
-/usr/bin/ld: cannot open output file a.out: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 1: ./gmpbench: ./a.out: not found
-/usr/bin/ld: cannot open output file gcd: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file gcdext: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file multiply: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file divide: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file rsa: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file pi: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128: Permission denied
-grep: RES-multiply-128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512: Permission denied
-grep: RES-multiply-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192: Permission denied
-grep: RES-multiply-8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072: Permission denied
-grep: RES-multiply-131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152: Permission denied
-grep: RES-multiply-2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128,128: Permission denied
-grep: RES-multiply-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512,512: Permission denied
-grep: RES-multiply-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192,8192: Permission denied
-grep: RES-multiply-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072,131072: Permission denied
-grep: RES-multiply-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152,2097152: Permission denied
-grep: RES-multiply-2097152,2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-15000,10000: Permission denied
-grep: RES-multiply-15000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-20000,10000: Permission denied
-grep: RES-multiply-20000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-30000,10000: Permission denied
-grep: RES-multiply-30000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,512: Permission denied
-grep: RES-multiply-16777216,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,262144: Permission denied
-grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -92,43 +47,27 @@ grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,32: Permission denied
-grep: RES-divide-8192,32: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,64: Permission denied
-grep: RES-divide-8192,64: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,128: Permission denied
-grep: RES-divide-8192,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,4096: Permission denied
-grep: RES-divide-8192,4096: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-131072,65536: Permission denied
-grep: RES-divide-131072,65536: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8388608,4194304: Permission denied
-grep: RES-divide-8388608,4194304: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,8064: Permission denied
-grep: RES-divide-8192,8064: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-16777216,262144: Permission denied
-grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -136,28 +75,18 @@ grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-128,128: Permission denied
-grep: RES-gcd-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-512,512: Permission denied
-grep: RES-gcd-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-8192,8192: Permission denied
-grep: RES-gcd-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-131072,131072: Permission denied
-grep: RES-gcd-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-1048576,1048576: Permission denied
-grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -165,28 +94,18 @@ grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-128,128: Permission denied
-grep: RES-gcdext-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-512,512: Permission denied
-grep: RES-gcdext-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-8192,8192: Permission denied
-grep: RES-gcdext-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-131072,131072: Permission denied
-grep: RES-gcdext-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-1048576,1048576: Permission denied
-grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -198,18 +117,12 @@ grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-512: Permission denied
-grep: RES-rsa-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-1024: Permission denied
-grep: RES-rsa-1024: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-2048: Permission denied
-grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -217,18 +130,12 @@ grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-10000: Permission denied
-grep: RES-pi-10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-100000: Permission denied
-grep: RES-pi-100000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-1000000: Permission denied
-grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -241,93 +148,48 @@ grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-/usr/bin/ld: cannot open output file a.out: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 1: ./gmpbench: ./a.out: not found
-/usr/bin/ld: cannot open output file gcd: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file gcdext: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file multiply: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file divide: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file rsa: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file pi: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128: Permission denied
-grep: RES-multiply-128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512: Permission denied
-grep: RES-multiply-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192: Permission denied
-grep: RES-multiply-8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072: Permission denied
-grep: RES-multiply-131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152: Permission denied
-grep: RES-multiply-2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128,128: Permission denied
-grep: RES-multiply-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512,512: Permission denied
-grep: RES-multiply-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192,8192: Permission denied
-grep: RES-multiply-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072,131072: Permission denied
-grep: RES-multiply-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152,2097152: Permission denied
-grep: RES-multiply-2097152,2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-15000,10000: Permission denied
-grep: RES-multiply-15000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-20000,10000: Permission denied
-grep: RES-multiply-20000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-30000,10000: Permission denied
-grep: RES-multiply-30000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,512: Permission denied
-grep: RES-multiply-16777216,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,262144: Permission denied
-grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -335,43 +197,27 @@ grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,32: Permission denied
-grep: RES-divide-8192,32: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,64: Permission denied
-grep: RES-divide-8192,64: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,128: Permission denied
-grep: RES-divide-8192,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,4096: Permission denied
-grep: RES-divide-8192,4096: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-131072,65536: Permission denied
-grep: RES-divide-131072,65536: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8388608,4194304: Permission denied
-grep: RES-divide-8388608,4194304: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,8064: Permission denied
-grep: RES-divide-8192,8064: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-16777216,262144: Permission denied
-grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -379,28 +225,18 @@ grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-128,128: Permission denied
-grep: RES-gcd-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-512,512: Permission denied
-grep: RES-gcd-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-8192,8192: Permission denied
-grep: RES-gcd-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-131072,131072: Permission denied
-grep: RES-gcd-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-1048576,1048576: Permission denied
-grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -408,28 +244,18 @@ grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-128,128: Permission denied
-grep: RES-gcdext-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-512,512: Permission denied
-grep: RES-gcdext-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-8192,8192: Permission denied
-grep: RES-gcdext-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-131072,131072: Permission denied
-grep: RES-gcdext-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-1048576,1048576: Permission denied
-grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -441,18 +267,12 @@ grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-512: Permission denied
-grep: RES-rsa-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-1024: Permission denied
-grep: RES-rsa-1024: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-2048: Permission denied
-grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -460,18 +280,12 @@ grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-10000: Permission denied
-grep: RES-pi-10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-100000: Permission denied
-grep: RES-pi-100000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-1000000: Permission denied
-grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -484,93 +298,48 @@ grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-/usr/bin/ld: cannot open output file a.out: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 1: ./gmpbench: ./a.out: not found
-/usr/bin/ld: cannot open output file gcd: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file gcdext: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file multiply: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file divide: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file rsa: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file pi: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128: Permission denied
-grep: RES-multiply-128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512: Permission denied
-grep: RES-multiply-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192: Permission denied
-grep: RES-multiply-8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072: Permission denied
-grep: RES-multiply-131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152: Permission denied
-grep: RES-multiply-2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128,128: Permission denied
-grep: RES-multiply-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512,512: Permission denied
-grep: RES-multiply-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192,8192: Permission denied
-grep: RES-multiply-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072,131072: Permission denied
-grep: RES-multiply-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152,2097152: Permission denied
-grep: RES-multiply-2097152,2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-15000,10000: Permission denied
-grep: RES-multiply-15000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-20000,10000: Permission denied
-grep: RES-multiply-20000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-30000,10000: Permission denied
-grep: RES-multiply-30000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,512: Permission denied
-grep: RES-multiply-16777216,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,262144: Permission denied
-grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -578,43 +347,27 @@ grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,32: Permission denied
-grep: RES-divide-8192,32: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,64: Permission denied
-grep: RES-divide-8192,64: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,128: Permission denied
-grep: RES-divide-8192,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,4096: Permission denied
-grep: RES-divide-8192,4096: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-131072,65536: Permission denied
-grep: RES-divide-131072,65536: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8388608,4194304: Permission denied
-grep: RES-divide-8388608,4194304: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,8064: Permission denied
-grep: RES-divide-8192,8064: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-16777216,262144: Permission denied
-grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -622,28 +375,18 @@ grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-128,128: Permission denied
-grep: RES-gcd-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-512,512: Permission denied
-grep: RES-gcd-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-8192,8192: Permission denied
-grep: RES-gcd-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-131072,131072: Permission denied
-grep: RES-gcd-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-1048576,1048576: Permission denied
-grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -651,28 +394,18 @@ grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-128,128: Permission denied
-grep: RES-gcdext-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-512,512: Permission denied
-grep: RES-gcdext-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-8192,8192: Permission denied
-grep: RES-gcdext-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-131072,131072: Permission denied
-grep: RES-gcdext-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-1048576,1048576: Permission denied
-grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -684,18 +417,12 @@ grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-512: Permission denied
-grep: RES-rsa-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-1024: Permission denied
-grep: RES-rsa-1024: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-2048: Permission denied
-grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -703,18 +430,12 @@ grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-10000: Permission denied
-grep: RES-pi-10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-100000: Permission denied
-grep: RES-pi-100000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-1000000: Permission denied
-grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -727,93 +448,48 @@ grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-/usr/bin/ld: cannot open output file a.out: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 1: ./gmpbench: ./a.out: not found
-/usr/bin/ld: cannot open output file gcd: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file gcdext: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file multiply: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file divide: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file rsa: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file pi: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128: Permission denied
-grep: RES-multiply-128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512: Permission denied
-grep: RES-multiply-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192: Permission denied
-grep: RES-multiply-8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072: Permission denied
-grep: RES-multiply-131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152: Permission denied
-grep: RES-multiply-2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128,128: Permission denied
-grep: RES-multiply-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512,512: Permission denied
-grep: RES-multiply-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192,8192: Permission denied
-grep: RES-multiply-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072,131072: Permission denied
-grep: RES-multiply-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152,2097152: Permission denied
-grep: RES-multiply-2097152,2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-15000,10000: Permission denied
-grep: RES-multiply-15000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-20000,10000: Permission denied
-grep: RES-multiply-20000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-30000,10000: Permission denied
-grep: RES-multiply-30000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,512: Permission denied
-grep: RES-multiply-16777216,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,262144: Permission denied
-grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -821,43 +497,27 @@ grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,32: Permission denied
-grep: RES-divide-8192,32: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,64: Permission denied
-grep: RES-divide-8192,64: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,128: Permission denied
-grep: RES-divide-8192,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,4096: Permission denied
-grep: RES-divide-8192,4096: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-131072,65536: Permission denied
-grep: RES-divide-131072,65536: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8388608,4194304: Permission denied
-grep: RES-divide-8388608,4194304: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,8064: Permission denied
-grep: RES-divide-8192,8064: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-16777216,262144: Permission denied
-grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -865,28 +525,18 @@ grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-128,128: Permission denied
-grep: RES-gcd-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-512,512: Permission denied
-grep: RES-gcd-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-8192,8192: Permission denied
-grep: RES-gcd-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-131072,131072: Permission denied
-grep: RES-gcd-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-1048576,1048576: Permission denied
-grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -894,28 +544,18 @@ grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-128,128: Permission denied
-grep: RES-gcdext-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-512,512: Permission denied
-grep: RES-gcdext-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-8192,8192: Permission denied
-grep: RES-gcdext-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-131072,131072: Permission denied
-grep: RES-gcdext-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-1048576,1048576: Permission denied
-grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -927,18 +567,12 @@ grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-512: Permission denied
-grep: RES-rsa-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-1024: Permission denied
-grep: RES-rsa-1024: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-2048: Permission denied
-grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -946,18 +580,12 @@ grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-10000: Permission denied
-grep: RES-pi-10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-100000: Permission denied
-grep: RES-pi-100000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-1000000: Permission denied
-grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -970,93 +598,48 @@ grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-/usr/bin/ld: cannot open output file a.out: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 1: ./gmpbench: ./a.out: not found
-/usr/bin/ld: cannot open output file gcd: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file gcdext: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file multiply: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file divide: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file rsa: Permission denied
-collect2: error: ld returned 1 exit status
-/usr/bin/ld: cannot open output file pi: Permission denied
-collect2: error: ld returned 1 exit status
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128: Permission denied
-grep: RES-multiply-128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512: Permission denied
-grep: RES-multiply-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192: Permission denied
-grep: RES-multiply-8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072: Permission denied
-grep: RES-multiply-131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152: Permission denied
-grep: RES-multiply-2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-128,128: Permission denied
-grep: RES-multiply-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-512,512: Permission denied
-grep: RES-multiply-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-8192,8192: Permission denied
-grep: RES-multiply-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-131072,131072: Permission denied
-grep: RES-multiply-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-2097152,2097152: Permission denied
-grep: RES-multiply-2097152,2097152: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-15000,10000: Permission denied
-grep: RES-multiply-15000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-20000,10000: Permission denied
-grep: RES-multiply-20000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-30000,10000: Permission denied
-grep: RES-multiply-30000,10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,512: Permission denied
-grep: RES-multiply-16777216,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-multiply-16777216,262144: Permission denied
-grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -1064,43 +647,27 @@ grep: RES-multiply-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,32: Permission denied
-grep: RES-divide-8192,32: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,64: Permission denied
-grep: RES-divide-8192,64: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,128: Permission denied
-grep: RES-divide-8192,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,4096: Permission denied
-grep: RES-divide-8192,4096: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-131072,65536: Permission denied
-grep: RES-divide-131072,65536: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8388608,4194304: Permission denied
-grep: RES-divide-8388608,4194304: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-8192,8064: Permission denied
-grep: RES-divide-8192,8064: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-divide-16777216,262144: Permission denied
-grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -1108,28 +675,18 @@ grep: RES-divide-16777216,262144: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-128,128: Permission denied
-grep: RES-gcd-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-512,512: Permission denied
-grep: RES-gcd-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-8192,8192: Permission denied
-grep: RES-gcd-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-131072,131072: Permission denied
-grep: RES-gcd-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcd-1048576,1048576: Permission denied
-grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -1137,28 +694,18 @@ grep: RES-gcd-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-128,128: Permission denied
-grep: RES-gcdext-128,128: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-512,512: Permission denied
-grep: RES-gcdext-512,512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-8192,8192: Permission denied
-grep: RES-gcdext-8192,8192: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-131072,131072: Permission denied
-grep: RES-gcdext-131072,131072: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-gcdext-1048576,1048576: Permission denied
-grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -1170,18 +717,12 @@ grep: RES-gcdext-1048576,1048576: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-512: Permission denied
-grep: RES-rsa-512: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-1024: Permission denied
-grep: RES-rsa-1024: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-rsa-2048: Permission denied
-grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -1189,18 +730,12 @@ grep: RES-rsa-2048: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-10000: Permission denied
-grep: RES-pi-10000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-100000: Permission denied
-grep: RES-pi-100000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
-./gmpbench: 121: ./gmpbench: cannot create RES-pi-1000000: Permission denied
-grep: RES-pi-1000000: No such file or directory
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
 ./gmpbench: 1: ./gmpbench: gexpr: not found
@@ -1216,8 +751,8 @@ grep: RES-pi-1000000: No such file or directory
 
  Performance counter stats for 'system wide' (5 runs):
 
-             11.20 Joules power/energy-pkg/                                             ( +-  2.27% )
-              0.34 Joules power/energy-ram/                                             ( +-  4.60% )
+          7,867.59 Joules power/energy-pkg/                                             ( +-  0.21% )
+            212.72 Joules power/energy-ram/                                             ( +-  0.12% )
 
-            0.5369 +- 0.0281 seconds time elapsed  ( +-  5.23% )
+           419.672 +- 0.463 seconds time elapsed  ( +-  0.11% )
 

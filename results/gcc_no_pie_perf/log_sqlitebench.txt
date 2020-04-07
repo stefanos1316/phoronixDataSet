@@ -1,23 +1,9 @@
 rm: cannot remove 'benchmark.db': No such file or directory
-Error: unable to open database "benchmark.db": unable to open database file
-Error: unable to open database "benchmark.db": unable to open database file
-rm: cannot remove 'benchmark.db': No such file or directory
-Error: unable to open database "benchmark.db": unable to open database file
-Error: unable to open database "benchmark.db": unable to open database file
-rm: cannot remove 'benchmark.db': No such file or directory
-Error: unable to open database "benchmark.db": unable to open database file
-Error: unable to open database "benchmark.db": unable to open database file
-rm: cannot remove 'benchmark.db': No such file or directory
-Error: unable to open database "benchmark.db": unable to open database file
-Error: unable to open database "benchmark.db": unable to open database file
-rm: cannot remove 'benchmark.db': No such file or directory
-Error: unable to open database "benchmark.db": unable to open database file
-Error: unable to open database "benchmark.db": unable to open database file
 
  Performance counter stats for 'system wide' (5 runs):
 
-              0.18 Joules power/energy-pkg/                                             ( +- 64.12% )
-              0.01 Joules power/energy-ram/                                             ( +- 83.42% )
+          1,042.08 Joules power/energy-pkg/                                             ( +-  3.32% )
+             84.91 Joules power/energy-ram/                                             ( +-  3.41% )
 
-            0.0196 +- 0.0169 seconds time elapsed  ( +- 86.24% )
+            164.94 +- 5.75 seconds time elapsed  ( +-  3.49% )
 
