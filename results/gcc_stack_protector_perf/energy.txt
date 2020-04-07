@@ -151,3 +151,8 @@ x265               958
 xsbench               2942
 xz               1400
 zstd               358
+redis_get               1777
+redis_set               1779
+redis_lpush               1777
+redis_lpop               1782
+redis_sadd               1781

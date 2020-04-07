@@ -151,3 +151,8 @@ x265                          18
 xsbench                          79
 xz                           81
 zstd                           11
+redis_get                           64
+redis_set                          64
+redis_lpush                          64
+redis_lpop                          64
+redis_sadd                          64
