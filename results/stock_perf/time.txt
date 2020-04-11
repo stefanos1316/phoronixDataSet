@@ -116,7 +116,7 @@ stress-ng_matrix                           14
 stress-ng_fork                          24
 stress-ng_msg                          22
 stress-ng_sem                           20
-stress-ng_sock                           28
+stress-ng_sock                           30
 stress-ng_switch                           26
 stream                         65
 swet                          14

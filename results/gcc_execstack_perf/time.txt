@@ -119,7 +119,7 @@ redis_lpop                          13
 redis_sadd                          13
 scimark2                           29
 smallpt                          24
-sqlitebench                           167
+sqlitebench                           163
 stockfish                          39
 stress-ng_vecmath                          18
 stress-ng_matrix                           14
@@ -132,14 +132,14 @@ stream                         66
 swet                          14
 sysbench_cpu                         34
 sysbench_memory                           5
-tinymembench                           295
+tinymembench                           266
 tiobench_write                           276
 tiobench_read                           310
 tiobench_random_write                           555
 tiobench_random_read                           310
 tjbench                           24
 tscp                          24
-t-test1                          7
+t-test1                          6
 ttsiod-renderer                          50
 tungsten_hair                          60
 tungsten_water-caustic                          48

@@ -116,7 +116,7 @@ stress-ng_matrix               799.82
 stress-ng_fork               1232.93
 stress-ng_msg               1024.72
 stress-ng_sem               895.91
-stress-ng_sock               1468.89
+stress-ng_sock               1719.89
 stress-ng_switch               1431.87
 stream               2279.47
 swet               296.11

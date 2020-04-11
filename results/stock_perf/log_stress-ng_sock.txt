@@ -1,23 +1,22 @@
-stress-ng: info:  [22113] defaulting to a 86400 second run per stressor
-stress-ng: info:  [22113] dispatching hogs: 8 sock
-stress-ng: info:  [22113] successful run completed in 29.05s
-stress-ng: info:  [22134] defaulting to a 86400 second run per stressor
-stress-ng: info:  [22134] dispatching hogs: 8 sock
-stress-ng: info:  [22134] successful run completed in 31.51s
-stress-ng: info:  [22155] defaulting to a 86400 second run per stressor
-stress-ng: info:  [22155] dispatching hogs: 8 sock
-stress-ng: info:  [22155] successful run completed in 27.19s
-stress-ng: info:  [22174] defaulting to a 86400 second run per stressor
-stress-ng: info:  [22174] dispatching hogs: 8 sock
-stress-ng: info:  [22174] successful run completed in 28.10s
-stress-ng: info:  [22197] defaulting to a 86400 second run per stressor
-stress-ng: info:  [22197] dispatching hogs: 8 sock
-stress-ng: info:  [22197] successful run completed in 27.71s
+stress-ng: info:  [1853] defaulting to a 86400 second run per stressor
+stress-ng: info:  [1853] dispatching hogs: 8 sock
+stress-ng: info:  [1853] successful run completed in 31.98s
+stress-ng: info:  [1874] defaulting to a 86400 second run per stressor
+stress-ng: info:  [1874] dispatching hogs: 8 sock
+stress-ng: info:  [1874] successful run completed in 30.90s
+stress-ng: info:  [1899] defaulting to a 86400 second run per stressor
+stress-ng: info:  [1899] dispatching hogs: 8 sock
+stress-ng: info:  [1899] successful run completed in 30.77s
+stress-ng: info:  [1916] defaulting to a 86400 second run per stressor
+stress-ng: info:  [1916] dispatching hogs: 8 sock
+stress-ng: info:  [1916] successful run completed in 30.57s
+stress-ng: info:  [1937] defaulting to a 86400 second run per stressor
+stress-ng: info:  [1937] dispatching hogs: 8 sock
+stress-ng: info:  [1937] successful run completed in 30.48s
 
  Performance counter stats for 'system wide' (5 runs):
 
-           1418,39 Joules power/energy-pkg/                                             ( +-  5,51% )
-             50,50 Joules power/energy-ram/                                             ( +- 15,25% )
+           1702,51 Joules power/energy-pkg/                                             ( +-  0,40% )
+             17,74 Joules power/energy-ram/                                             ( +-  1,22% )
 
-            28,717 +- 0,763 seconds time elapsed  ( +-  2,66% )
-
+            30,955 +- 0,280 seconds time elapsed  ( +-  0,91% )
