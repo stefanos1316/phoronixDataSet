@@ -112,11 +112,11 @@ ramspeed_copy_float                        141
 ramspeed_scale_float                        141
 ramspeed_add_float                        141
 ramspeed_traid_float                         141
-redis_get                           13
-redis_set                           13
-redis_lpush                           13
-redis_lpop                           13
-redis_sadd                          12
+redis_get                           65
+redis_set                           64
+redis_lpush                           65
+redis_lpop                           65
+redis_sadd                          64
 scimark2                           30
 smallpt                          24
 sqlitebench                           170
@@ -151,8 +151,3 @@ x265                          17
 xsbench                          81
 xz                           81
 zstd                           11
-redis_get                           65
-redis_set                           64
-redis_lpush                          65
-redis_lpop                           65
-redis_sadd                           64
