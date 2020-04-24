@@ -156,3 +156,10 @@ redis_set               1780
 redis_lpush               1771
 redis_lpop               1772
 redis_sadd               1772
+mcperf_get               491
+mcperf_set               707
+mcperf_delete               508
+mcperf_add               707
+mcperf_replace               664
+mcperf_append               664
+mcperf_prepend               664

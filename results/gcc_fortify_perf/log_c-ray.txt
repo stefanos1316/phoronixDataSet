@@ -1,0 +1,18 @@
+c-ray-mt v1.1
+Rendering took: 188 seconds (188927 milliseconds)
+c-ray-mt v1.1
+Rendering took: 190 seconds (190125 milliseconds)
+c-ray-mt v1.1
+Rendering took: 188 seconds (188873 milliseconds)
+c-ray-mt v1.1
+Rendering took: 188 seconds (188710 milliseconds)
+c-ray-mt v1.1
+Rendering took: 188 seconds (188798 milliseconds)
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          8,843.06 Joules power/energy-pkg/                                             ( +-  0.06% )
+             95.17 Joules power/energy-ram/                                             ( +-  0.13% )
+
+           189.572 +- 0.250 seconds time elapsed  ( +-  0.13% )
+

@@ -15,6 +15,228 @@ taskScripts='scripts'
 mkdir gcc_tasks_test
 cd gcc_tasks_test
 
+echo "-------Downloading and installing smallpt"
+mkdir smallpt && cd smallpt
+wget http://www.phoronix-test-suite.com/benchmark-files/smallpt-1.tar.gz
+tar -xzvf smallpt-1.tar.gz && rm smallpt-1.tar.gz
+c++ -fopenmp -O3 ${SECURITY_FLAGS} smallpt.cpp -o smallpt
+cd ../
+
+echo "-------Downloading and installing scimark2"
+wget http://www.phoronix-test-suite.com/benchmark-files/scimark2_1c.zip
+unzip scimark2_1c.zip -d scimark2 && rm scimark2_1c.zip && cd scimark2
+cc -O3 -o scimark2 *.c -lm ${SECURITY_FLAGS}
+cd ../
+
+echo "-------Downloading and installing p7zip"
+echo "-------Downloading and installing tscp"
+mkdir tscp && cd tscp
+wget http://www.phoronix-test-suite.com/benchmark-files/tscp181_pts.tar.bz2
+tar -xjvf tscp181_pts.tar.bz2 && rm tscp181_pts.tar.bz2
+mv tscp181/* ./ && rm -rf tscp181
+cp ../../${taskScripts}/tscp_main.c ./main.c
+cc -O3 ${SECURITY_FLAGS} *.c -o tscp
+cd ../
+
+echo "-------Downloading and installing xz"
+mkdir xz && cd xz
+wget http://distfiles.macports.org/xz/xz-5.2.4.tar.bz2
+tar -xvf xz-5.2.4.tar.bz2 && rm xz-5.2.4.tar.bz2
+mv  xz-5.2.4/* ./ && rm -rf xz-5.2.4/
+CFLAGS="${SECURITY_FLAGS}" ./configure
+make -j $(nproc --all)
+echo "#!/bin/bash
+cp ../../../inputs/xz.txt tmp_xz.txt
+if [ -f \"tmp_xz.txt.xz\" ]; then
+	rm -f tmp_xz.txt.xz
+fi
+xz tmp_xz.txt" > xz
+chmod +x xz
+cd ../
+
+echo "-------Downloading and installing stream"
+mkdir stream && cd stream
+wget http://www.phoronix-test-suite.com/benchmark-files/stream-2013-01-17.tar.bz2
+tar -xjvf stream-2013-01-17.tar.bz2 && rm stream-2013-01-17.tar.bz2
+cc stream.c -DSTREAM_ARRAY_SIZE=100000000 -DNTIMES=100 -O3 ${SECURITY_FLAGS} -fopenmp -o stream
+cd ../
+
+echo "-------Downloading and installing tinymembench"
+mkdir tinymembench && cd tinymembench
+wget http://phoronix-test-suite.com/benchmark-files/tinymembench-20180528.zip
+unzip tinymembench-20180528.zip && rm tinymembench-20180528.zip
+mv tinymembench-master/* ./ && rm -rf tinymembench-master
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make
+cd ../
+
+echo "-------Downloading and installing t-test1"
+mkdir t-test1 && cd t-test1
+wget http://phoronix-test-suite.com/benchmark-files/t-test1c-20171.zip
+unzip t-test1c-20171.zip && rm t-test1c-20171.zip
+cc -pthread -O3 ${SECURITY_FLAGS} -o t-test1 t-test1.c
+cd ../
+
+echo "-------Downloading and installing sqlitebench"
+mkdir sqlitebench && cd sqlitebench
+wget  http://sqlite.org/2019/sqlite-autoconf-3300100.tar.gz
+tar -xzvf sqlite-autoconf-3300100.tar.gz && rm sqlite-autoconf-3300100.tar.gz
+mv sqlite-autoconf-3300100/* ./ && rm -rf sqlite-autoconf-3300100/
+wget http://www.phoronix-test-suite.com/benchmark-files/pts-sqlite-tests-1.tar.gz
+tar -xzvf pts-sqlite-tests-1.tar.gz && rm pts-sqlite-tests-1.tar.gz
+CFLAGS="${SECURITY_FLAGS}" ./configure --prefix=`pwd`
+make -j $(nproc --all)
+make install
+echo "#!/bin/sh
+rm benchmark.db
+bin/sqlite3 benchmark.db  \"CREATE TABLE pts1 ('I' SMALLINT NOT NULL, 'DT' TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 'F1' VARCHAR(4) NOT NULL, 'F2' VARCHAR(16) NOT NULL);\"
+cat sqlite-2500-insertions.txt | bin/sqlite3 benchmark.db" > sqlitebench
+chmod +x sqlitebench
+cd ../
+
+echo "-------Downloading and installing mcperf"
+mkdir mcperf && cd mcperf
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/twemperf/mcperf-0.1.1.tar.gz
+tar -xzvf mcperf-0.1.1.tar.gz && rm mcperf-0.1.1.tar.gz
+mv mcperf-0.1.1/* ./ && rm -rf mcperf-0.1.1
+CFLAGS="${SECURITY_FLAGS}" ./configure
+make
+echo "#!/bin/bash
+cd src/
+./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=\$1" > mcperf
+chmod +x mcperf
+cd ../
+
+echo "-------Downloading and installing lzbench"
+mkdir lzbench && cd lzbench
+wget http://www.phoronix-test-suite.com/benchmark-files/lzbench-20170808.zip
+unzip lzbench-20170808.zip && rm lzbench-20170808.zip
+mv lzbench/* ./ && rm -rf lzbench/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
+fi
+make
+mv lzbench lzbench-bin
+cp ../../../inputs/linux-5.3.tar.gz ./
+echo "#!/bin/bash
+./lzbench-bin -t10,10 -v \$1 ./linux-5.3.tar.gz" > lzbench
+chmod +x lzbench
+cd ../
+
+echo "-------Downloading and installing tungsten"
+mkdir tungsten && cd tungsten
+wget http://phoronix-test-suite.com/benchmark-files/tungsten-20190812.zip
+unzip tungsten-20190812.zip && rm tungsten-20190812.zip
+mv tungsten-master/* ./ && rm -rf tungsten-master
+./setup_builds.sh
+cd build/release
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' CMakeCache.txt
+fi
+make -j $(nproc --all)
+cd ../../
+echo "#!/bin/bash
+cd build/release
+./tungsten -t \$(nproc --all) ../../data/example-scenes/\$1/scene.json" > tungsten
+chmod +x tungsten
+cd ../
+
+echo "-------Downloading and installing dcraw"
+mkdir dcraw && cd dcraw
+wget http://www.phoronix-test-suite.com/benchmark-files/dcraw-test-1.tar.bz2
+tar -xjvf dcraw-test-1.tar.bz2 && rm dcraw-test-1.tar.bz2
+cc -o dcraw -O3 dcraw.c -lm -DNO_JPEG -DNO_LCMS ${SECURITY_FLAGS}
+cp DSC_5037.NEF DSC_5040.NEF
+cp DSC_5037.NEF DSC_5041.NEF
+cp DSC_5037.NEF DSC_5042.NEF
+cp DSC_5037.NEF DSC_5043.NEF
+cp DSC_5037.NEF DSC_5044.NEF
+cp DSC_5037.NEF DSC_5045.NEF
+cp DSC_5037.NEF DSC_5046.NEF
+cp DSC_5037.NEF DSC_5047.NEF
+cp DSC_5037.NEF DSC_5048.NEF
+cp DSC_5037.NEF DSC_5049.NEF
+cd ../
+
+echo "-------Downloading and installing BYTE"
+mkdir byte && cd byte
+wget http://www.phoronix-test-suite.com/benchmark-files/byte-benchmark-2.tar.gz
+tar -zxvf byte-benchmark-2.tar.gz && rm byte-benchmark-2.tar.gz
+mv  bm/* ./ && rm -rf bm/
+make clean
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-DTIME/-DTIME\ '"$toReplace"'/g' Makefile
+fi
+make
+mv Run byte
+cd ../
+
+echo "-------Downloading and installing mkl-dnn"
+mkdir mkl-dnn && cd mkl-dnn
+wget https://github.com/intel/mkl-dnn/archive/v1.1.tar.gz
+tar -xf v1.1.tar.gz && rm v1.1.tar.gz
+mv oneDNN-1.1/* ./ && rm -rf oneDNN-1.1/
+mkdir build && cd build
+CFLAGS="-O3 -march=native ${SECURITY_FLAGS}" CXXFLAGS="-O3 -march=native ${SECURITY_FLAGS}" \
+cmake -DCMAKE_BUILD_TYPE=Release MKLDNN_ARCH_OPT_FLAGS="-O3 -march=native ${SECURITY_FLAGS}" $CMAKE_OPTIONS ..
+make -j $(nproc --all)
+cd ../
+echo "#!/bin/bash
+cd build/tests/benchdnn
+./benchdnn --mode=p --\$2 --batch=inputs/\$2/\$1" > mkl-dnn
+chmod +x mkl-dnn
+cd ../
+
+echo "-------Downloading and installing fs-mark"
+mkdir fs-mark && cd fs-mark
+wget http://www.phoronix-test-suite.com/benchmark-files/fs_mark-3.3.tar.gz
+tar -xzvf fs_mark-3.3.tar.gz && rm fs_mark-3.3.tar.gz
+mv fs_mark-3.3/* ./ && rm -rf fs_mark-3.3/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+fi
+make -j $(nproc --all)
+echo "#!/bin/bash
+case \$1 in
+	(\"1000_Files_1MB_Size\")
+		getConfigurations=\"-s 1048576 -n 1000\";;
+	(\"1000_Files_1MB_Size_No_Sync_FSync\")
+		getConfigurations=\"-s 1048576 -n 1000 -S 0\";;
+	(\"5000_Files_1MB_Size_4_Threads\")
+		getConfigurations=\"-s 1048576 -n 5000 -t 4\";;
+	(\"4000_Files_32_Sub_Dirs_1MB_Size\")
+		getConfigurations=\"-s 1048576 -n 4000 -D 32\";;
+esac
+./fs_mark -d ./scratch/ \$getConfigurations" > fs-mark
+chmod +x fs-mark
+mkdir scratch
+cd ../
+
+echo "-------Downloading and installing cloverleaf"
+mkdir cloverleaf && cd cloverleaf
+wget http://phoronix-test-suite.com/benchmark-files/CloverLeaf_OpenMP-20181012.zip
+unzip CloverLeaf_OpenMP-20181012.zip && rm CloverLeaf_OpenMP-20181012.zip
+mv CloverLeaf_OpenMP-master/* ./ && rm -rf CloverLeaf_OpenMP-master/
+if [ ! -z "$SECURITY_FLAGS" ]; then
+    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
+    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
+fi
+COMPILER=GNU make
+cp InputDecks/clover_bm8192.in ../../../inputs
+echo "#!/bin/bash
+for i in {1..10}; do
+    ./clover_leaf InputDecks/clover_bm8192.in
+done" > cloverleaf
+chmod +x cloverleaf
+cd ../
+
 echo "-------Downloading and installing redis"
 mkdir redis && cd redis
 wget http://download.redis.io/releases/redis-5.0.5.tar.gz
@@ -28,8 +250,6 @@ echo "#!/bin/bash
 src/redis-benchmark -n 10000000 --csv \$1" > redis
 chmod +x redis 
 cd ../
-
-exit
 
 echo "-------Downloading and installing sysbench"
 mkdir sysbench && cd sysbench
@@ -106,25 +326,6 @@ esac
 ./iperf3 \$protocol -b 1000m  -t 30 -c 127.0.0.1 
 kill \$IPERF_SERVER_PID" > iperf
 chmod +x iperf
-cd ../
-
-echo "-------Downloading and installing tungsten"
-mkdir tungsten && cd tungsten
-wget http://phoronix-test-suite.com/benchmark-files/tungsten-20190812.zip
-unzip tungsten-20190812.zip && rm tungsten-20190812.zip
-mv tungsten-master/* ./ && rm -rf tungsten-master
-./setup_builds.sh
-cd build/release
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-O3/-O3\ '"$toReplace"'/g' CMakeCache.txt
-fi
-make -j $(nproc --all)
-cd ../../
-echo "#!/bin/bash
-cd build/release
-./tungsten -t \$(nproc --all) ../../data/example-scenes/\$1/scene.json" > tungsten
-chmod +x tungsten
 cd ../
 
 echo "-------Downloading and installing tiobench"
@@ -222,13 +423,6 @@ echo "#!/bin/sh
 chmod +x tjbench
 cd ../
 
-echo "-------Downloading and installing smallpt"
-mkdir smallpt && cd smallpt
-wget http://www.phoronix-test-suite.com/benchmark-files/smallpt-1.tar.gz
-tar -xzvf smallpt-1.tar.gz && rm smallpt-1.tar.gz
-c++ -fopenmp -O3 ${SECURITY_FLAGS} smallpt.cpp -o smallpt
-cd ../
-
 echo "-------Downloading and installing rocksdb"
 mkdir rocksdb && cd rocksdb
 git clone https://github.com/facebook/rocksdb
@@ -297,32 +491,6 @@ echo "#!/bin/bash
 chmod +x encode-mp3
 cd ../
 
-echo "-------Downloading and installing fs-mark"
-mkdir fs-mark && cd fs-mark
-wget http://www.phoronix-test-suite.com/benchmark-files/fs_mark-3.3.tar.gz
-tar -xzvf fs_mark-3.3.tar.gz && rm fs_mark-3.3.tar.gz
-mv fs_mark-3.3/* ./ && rm -rf fs_mark-3.3/
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
-fi
-make -j $(nproc --all)
-echo "#!/bin/bash
-case \$1 in
-	(\"1000_Files_1MB_Size\")
-		getConfigurations=\"-s 1048576 -n 1000\";;
-	(\"1000_Files_1MB_Size_No_Sync_FSync\")
-		getConfigurations=\"-s 1048576 -n 1000 -S 0\";;
-	(\"5000_Files_1MB_Size_4_Threads\")
-		getConfigurations=\"-s 1048576 -n 5000 -t 4\";;
-	(\"4000_Files_32_Sub_Dirs_1MB_Size\")
-		getConfigurations=\"-s 1048576 -n 4000 -D 32\";;
-esac
-./fs_mark -d ./scratch/ \$getConfigurations" > fs-mark
-chmod +x fs-mark
-mkdir scratch
-cd ../
-
 echo "-------Downloading and installing dbench"
 mkdir dbench && cd dbench
 wget http://samba.org/ftp/tridge/dbench/dbench-4.0.tar.gz
@@ -363,23 +531,6 @@ fi
 make linux
 cp iozone ../../
 cd ../../../
-
-echo "-------Downloading and installing sqlitebench"
-mkdir sqlitebench && cd sqlitebench
-wget  http://sqlite.org/2019/sqlite-autoconf-3300100.tar.gz
-tar -xzvf sqlite-autoconf-3300100.tar.gz && rm sqlite-autoconf-3300100.tar.gz
-mv sqlite-autoconf-3300100/* ./ && rm -rf sqlite-autoconf-3300100/
-wget http://www.phoronix-test-suite.com/benchmark-files/pts-sqlite-tests-1.tar.gz
-tar -xzvf pts-sqlite-tests-1.tar.gz && rm pts-sqlite-tests-1.tar.gz
-CFLAGS="${SECURITY_FLAGS}" ./configure --prefix=`pwd`
-make -j $(nproc --all)
-make install
-echo "#!/bin/sh
-rm benchmark.db
-bin/sqlite3 benchmark.db  \"CREATE TABLE pts1 ('I' SMALLINT NOT NULL, 'DT' TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 'F1' VARCHAR(4) NOT NULL, 'F2' VARCHAR(16) NOT NULL);\"
-cat sqlite-2500-insertions.txt | bin/sqlite3 benchmark.db" > sqlitebench
-chmod +x sqlitebench
-cd ../
 
 echo "-------Downloading and installing botan"
 mkdir botan && cd botan
@@ -425,25 +576,6 @@ make
 cp XSBench ../xsbench
 cd ../../
 
-echo "-------Downloading and installing tinymembench"
-mkdir tinymembench && cd tinymembench
-wget http://phoronix-test-suite.com/benchmark-files/tinymembench-20180528.zip
-unzip tinymembench-20180528.zip && rm tinymembench-20180528.zip
-mv tinymembench-master/* ./ && rm -rf tinymembench-master
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
-fi
-make
-cd ../
-
-echo "-------Downloading and installing t-test1"
-mkdir t-test1 && cd t-test1
-wget http://phoronix-test-suite.com/benchmark-files/t-test1c-20171.zip
-unzip t-test1c-20171.zip && rm t-test1c-20171.zip
-cc -pthread -O3 ${SECURITY_FLAGS} -o t-test1 t-test1.c
-cd ../
-
 echo "-------Downloading and installing swet"
 mkdir swet && cd swet
 wget http://www.phoronix-test-suite.com/benchmark-files/swet-1.5.16-src.tar.gz
@@ -457,65 +589,12 @@ fi
 make
 cd ../
 
-echo "-------Downloading and installing stream"
-mkdir stream && cd stream
-wget http://www.phoronix-test-suite.com/benchmark-files/stream-2013-01-17.tar.bz2
-tar -xjvf stream-2013-01-17.tar.bz2 && rm stream-2013-01-17.tar.bz2
-cc stream.c -DSTREAM_ARRAY_SIZE=100000000 -DNTIMES=100 -O3 ${SECURITY_FLAGS} -fopenmp -o stream
-cd ../
-
-echo "-------Downloading and installing mkl-dnn"
-mkdir mkl-dnn && cd mkl-dnn
-wget https://github.com/intel/mkl-dnn/archive/v1.1.tar.gz
-tar -xf v1.1.tar.gz && rm v1.1.tar.gz
-mv mkl-dnn-1.1/* ./ && rm -rf mkl-dnn-1.1/
-mkdir build && cd build
-CFLAGS="-O3 -march=native ${SECURITY_FLAGS}" CXXFLAGS="-O3 -march=native ${SECURITY_FLAGS}" \
-cmake -DCMAKE_BUILD_TYPE=Release MKLDNN_ARCH_OPT_FLAGS="-O3 -march=native ${SECURITY_FLAGS}" $CMAKE_OPTIONS ..
-make -j $(nproc --all)
-cd ../
-echo "#!/bin/bash
-cd build/tests/benchdnn
-./benchdnn --mode=p --\$2 --batch=inputs/\$2/\$1" > mkl-dnn
-chmod +x mkl-dnn
-cd ../
-
 echo "-------Downloading and installing mbw"
 mkdir mbw && cd mbw
 wget http://www.phoronix-test-suite.com/benchmark-files/mbw-20180908.tar.xz
 tar -xf mbw-20180908.tar.xz && rm mbw-20180908.tar.xz
 mv mbw/* ./ && rm -rf mbw
 cc ${SECURITY_FLAGS} -O3 -march=native -o mbw mbw.c
-cd ../
-
-echo "-------Downloading and installing mcperf"
-mkdir mcperf && cd mcperf
-wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/twemperf/mcperf-0.1.1.tar.gz
-tar -xzvf mcperf-0.1.1.tar.gz && rm mcperf-0.1.1.tar.gz
-mv mcperf-0.1.1/* ./ && rm -rf mcperf-0.1.1
-CFLAGS="${SECURITY_FLAGS}" ./configure
-make
-echo "#!/bin/bash
-cd src/
-./mcperf --linger=0 --call-rate=0 --num-calls=2000000 --conn-rate=0 --num-conns=1 --sizes=d5120 --method=\$1" > mcperf
-chmod +x mcperf
-cd ../
-
-echo "-------Downloading and installing lzbench"
-mkdir lzbench && cd lzbench
-wget http://www.phoronix-test-suite.com/benchmark-files/lzbench-20170808.zip
-unzip lzbench-20170808.zip && rm lzbench-20170808.zip
-mv lzbench/* ./ && rm -rf lzbench/
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
-fi
-make
-mv lzbench lzbench-bin
-cp ../../../inputs/linux-5.3.tar.gz ./
-echo "#!/bin/bash
-./lzbench-bin -t10,10 -v \$1 ./linux-5.3.tar.gz" > lzbench
-chmod +x lzbench
 cd ../
 
 echo "-------Downloading and installing m-queens"
@@ -596,24 +675,6 @@ cd ../
 echo "#!/bin/bash
 ./build/bench/benchmark run -P 8" > brlcad
 chmod +x brlcad
-cd ../
-
-echo "-------Downloading and installing cloverleaf"
-mkdir cloverleaf && cd cloverleaf
-wget http://phoronix-test-suite.com/benchmark-files/CloverLeaf_OpenMP-20181012.zip
-unzip CloverLeaf_OpenMP-20181012.zip && rm CloverLeaf_OpenMP-20181012.zip
-mv CloverLeaf_OpenMP-master/* ./ && rm -rf CloverLeaf_OpenMP-master/
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
-fi
-COMPILER=GNU make
-cp InputDecks/clover_bm8192.in ../../../inputs
-echo "#!/bin/bash
-for i in {1..10}; do
-    ./clover_leaf InputDecks/clover_bm8192.in
-done" > cloverleaf
-chmod +x cloverleaf
 cd ../
 
 echo "-------Downloading and installing c-ray"
@@ -729,23 +790,6 @@ cc -O3 gexpr.c -o gexpr -lm ${SECURITY_FLAGS}
 mv runbench ./gmpbench
 cd ../
 
-echo "-------Downloading and installing dcraw"
-mkdir dcraw && cd dcraw
-wget http://www.phoronix-test-suite.com/benchmark-files/dcraw-test-1.tar.bz2
-tar -xjvf dcraw-test-1.tar.bz2 && rm dcraw-test-1.tar.bz2
-cc -o dcraw -O3 dcraw.c -lm -DNO_JPEG -DNO_LCMS ${SECURITY_FLAGS}
-cp DSC_5037.NEF DSC_5040.NEF
-cp DSC_5037.NEF DSC_5041.NEF
-cp DSC_5037.NEF DSC_5042.NEF
-cp DSC_5037.NEF DSC_5043.NEF
-cp DSC_5037.NEF DSC_5044.NEF
-cp DSC_5037.NEF DSC_5045.NEF
-cp DSC_5037.NEF DSC_5046.NEF
-cp DSC_5037.NEF DSC_5047.NEF
-cp DSC_5037.NEF DSC_5048.NEF
-cp DSC_5037.NEF DSC_5049.NEF
-cd ../
-
 echo "-------Downloading and installing fhourstones"
 mkdir fhourstones && cd fhourstones
 wget http://www.phoronix-test-suite.com/benchmark-files/Fhourstones.tar.gz
@@ -759,43 +803,6 @@ make -j $(nproc --all)
 mv SearchGame fhourstones
 cd ../
 
-echo "-------Downloading and installing scimark2"
-wget http://www.phoronix-test-suite.com/benchmark-files/scimark2_1c.zip
-unzip scimark2_1c.zip -d scimark2 && rm scimark2_1c.zip && cd scimark2
-cc -O3 -o scimark2 *.c -lm ${SECURITY_FLAGS}
-cd ../
-
-echo "-------Downloading and installing xz"
-mkdir xz && cd xz
-wget http://distfiles.macports.org/xz/xz-5.2.4.tar.bz2
-tar -xvf xz-5.2.4.tar.bz2 && rm xz-5.2.4.tar.bz2
-mv  xz-5.2.4/* ./ && rm -rf xz-5.2.4/
-CFLAGS="${SECURITY_FLAGS}" ./configure
-make -j $(nproc --all)
-echo "#!/bin/bash
-cp ../../../inputs/xz.txt tmp_xz.txt
-if [ -f \"tmp_xz.txt.xz\" ]; then
-	rm -f tmp_xz.txt.xz
-fi
-xz tmp_xz.txt" > xz
-chmod +x xz
-cd ../
-
-echo "-------Downloading and installing BYTE"
-mkdir byte && cd byte
-wget http://www.phoronix-test-suite.com/benchmark-files/byte-benchmark-2.tar.gz
-tar -zxvf byte-benchmark-2.tar.gz && rm byte-benchmark-2.tar.gz
-mv  bm/* ./ && rm -rf bm/
-make clean
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-DTIME/-DTIME\ '"$toReplace"'/g' Makefile
-fi
-make
-mv Run byte
-cd ../
-
-echo "-------Downloading and installing p7zip"
 mkdir p7zip && cd p7zip
 wget http://ftp.osuosl.org/pub/blfs/conglomeration/p7zip/p7zip_16.02_src_all.tar.bz2
 tar -xjvf p7zip_16.02_src_all.tar.bz2 && rm p7zip_16.02_src_all.tar.bz2
@@ -822,18 +829,6 @@ rm -f linux-5.3.tar.gz.zst" > zstd
 chmod +x zstd
 cd ../
 
-echo "-------Downloading and installing tscp"
-mkdir tscp && cd tscp
-wget http://www.phoronix-test-suite.com/benchmark-files/tscp181_pts.tar.bz2
-tar -xjvf tscp181_pts.tar.bz2 && rm tscp181_pts.tar.bz2
-mv tscp181/* ./ && rm -rf tscp181
-cp ../../${taskScripts}/tscp_main.c ./main.c
-cc -O3 ${SECURITY_FLAGS} *.c -o tscp
-cd ../
-if [ ! -z "$SECURITY_FLAGS" ]; then
-    toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-O3/-O3\ '"$toReplace"'/g' Makefile
-fi
 echo "-------Downloading and installing stockfish"
 mkdir stockfish && cd stockfish
 wget http://www.phoronix-test-suite.com/benchmark-files/stockfish-9-src.zip

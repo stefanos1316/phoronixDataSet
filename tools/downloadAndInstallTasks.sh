@@ -952,7 +952,7 @@ echo "-------Downloading and installing mkl-dnn"
 mkdir mkl-dnn && cd mkl-dnn
 wget https://github.com/intel/mkl-dnn/archive/v1.1.tar.gz
 tar -xf v1.1.tar.gz && rm v1.1.tar.gz
-mv mkl-dnn-1.1/* ./ && rm -rf mkl-dnn-1.1/
+mv oneDNN-1.1/* ./ && rm -rf oneDNN-1.1/
 mkdir build && cd build
 CFLAGS="-O3 -march=native" CXXFLAGS="-O3 -march=native" cmake -DCMAKE_BUILD_TYPE=Release MKLDNN_ARCH_OPT_FLAGS="-O3 -march=native" $CMAKE_OPTIONS ..
 make -j $(nproc --all)

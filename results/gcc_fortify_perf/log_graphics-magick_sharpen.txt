@@ -1,0 +1,15 @@
+./graphics-magick: Interrupt
+./graphics-magick: Interrupt
+./graphics-magick: Interrupt
+Results: 8 threads 300 iter 8181.55s user 1208.844580s total 0.248 iter/s 0.037 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+Results: 8 threads 300 iter 8174.30s user 1211.095932s total 0.248 iter/s 0.037 iter/cpu
+./graphics-magick: 3: ./graphics-magick: output.miff: not found
+
+ Performance counter stats for 'system wide' (5 runs):
+
+         24,056.55 Joules power/energy-pkg/                                             ( +- 47.48% )
+            303.84 Joules power/energy-ram/                                             ( +- 47.46% )
+
+            572.23 +- 271.56 seconds time elapsed  ( +- 47.46% )
+

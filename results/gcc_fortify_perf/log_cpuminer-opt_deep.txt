@@ -1,0 +1,13 @@
+4090478
+4092702
+3946781
+3925967
+3946973
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,823.27 Joules power/energy-pkg/                                             ( +-  0.74% )
+             17.16 Joules power/energy-ram/                                             ( +-  0.53% )
+
+            34.103 +- 0.179 seconds time elapsed  ( +-  0.52% )
+

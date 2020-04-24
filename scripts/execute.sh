@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="gcc_all_perf"
+scenario="gcc_fortify_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/gcc_tasks_test"
@@ -140,7 +140,7 @@ tasks_with_graphics=( "openarenaG 800x600" "openarenaG 1024x768" "openarenaG 192
 	"indigobench supercar" "indigobench bedroom" "j2dbench all" "j2dbench images" "j2dbench graphics" "j2dbench text") 
 
 # For GCC-related tasks
-tasks_gccs=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" \
+tasks_gcc=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s 100" "blogbench read -d ./ -i 5" "blogbench write -d ./ -i 5" \
 		   "botan AES-256" "botan Blowfish" "botan CAST-256" "botan KASUMI" "botan Twofish" "brlcad run -P $(nproc --all)" \
 		   "byte register" "byte dhry2" "byte int" "byte float" "bzip2" "cloverleaf" "cpp-perf-bench stepanov_abstraction" "cpp-perf-bench stepanov_vector" \
 		   "cpp-perf-bench functionobjects" "cpp-perf-bench atol" "cpp-perf-bench ctype" "cpp-perf-bench mathlib" "cpp-perf-bench random_numbers" \
@@ -168,8 +168,6 @@ tasks_gccs=("aio-stress -s 5g -r 64k -t 3 temp" "aircrack-ng" "aobench" "blake2s
 		   "tinymembench" "tiobench write" "tiobench read" "tiobench random_write" "tiobench random_read" "tjbench" "tscp" "t-test1 5000" \
 		   "ttsiod-renderer" "tungsten hair" "tungsten water-caustic" "tungsten non-exponential" "tungsten volumetric-caustic" \
 		   "vpxenc" "x264" "x265" "xsbench -t 8 -s large -l 30000000" "xz" "zstd")
-
-tasks_gcc=("redis get" "redis set" "redis lpush" "redis lpop" "redis sadd")
 
 function startServers {
 	case $1 in
