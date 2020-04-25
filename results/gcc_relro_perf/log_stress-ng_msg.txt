@@ -1,0 +1,23 @@
+stress-ng: info:  [4179] defaulting to a 86400 second run per stressor
+stress-ng: info:  [4179] dispatching hogs: 8 msg
+stress-ng: info:  [4179] successful run completed in 22.03s
+stress-ng: info:  [4204] defaulting to a 86400 second run per stressor
+stress-ng: info:  [4204] dispatching hogs: 8 msg
+stress-ng: info:  [4204] successful run completed in 21.91s
+stress-ng: info:  [4229] defaulting to a 86400 second run per stressor
+stress-ng: info:  [4229] dispatching hogs: 8 msg
+stress-ng: info:  [4229] successful run completed in 21.92s
+stress-ng: info:  [4260] defaulting to a 86400 second run per stressor
+stress-ng: info:  [4260] dispatching hogs: 8 msg
+stress-ng: info:  [4260] successful run completed in 21.91s
+stress-ng: info:  [4277] defaulting to a 86400 second run per stressor
+stress-ng: info:  [4277] dispatching hogs: 8 msg
+stress-ng: info:  [4277] successful run completed in 21.88s
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            960.46 Joules power/energy-pkg/                                             ( +-  0.25% )
+             11.30 Joules power/energy-ram/                                             ( +-  0.17% )
+
+           21.9343 +- 0.0255 seconds time elapsed  ( +-  0.12% )
+

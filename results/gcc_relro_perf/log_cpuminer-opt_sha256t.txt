@@ -1,0 +1,13 @@
+33682324
+32518499
+33149746
+33157665
+32883708
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,686.83 Joules power/energy-pkg/                                             ( +-  0.39% )
+             15.55 Joules power/energy-ram/                                             ( +-  0.04% )
+
+           30.9844 +- 0.0149 seconds time elapsed  ( +-  0.05% )
+

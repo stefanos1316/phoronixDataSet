@@ -1,0 +1,58 @@
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+setting mode to  2
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            196.92 Joules power/energy-pkg/                                             ( +-  0.11% )
+             13.98 Joules power/energy-ram/                                             ( +-  0.13% )
+
+           9.75551 +- 0.00886 seconds time elapsed  ( +-  0.09% )
+

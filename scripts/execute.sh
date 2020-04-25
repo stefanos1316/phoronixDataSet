@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scenario="gcc_fortify_perf"
+scenario="gcc_relro_perf"
 mkdir -p ../results/${scenario}
 # Tasks location file from where you downloaded and installed executables
 taskDirectory="tools/gcc_tasks_test"

@@ -1,0 +1,9 @@
+rm: cannot remove 'benchmark.db': No such file or directory
+
+ Performance counter stats for 'system wide' (5 runs):
+
+          1,060.61 Joules power/energy-pkg/                                             ( +-  1.43% )
+             88.31 Joules power/energy-ram/                                             ( +-  1.45% )
+
+            173.57 +- 2.56 seconds time elapsed  ( +-  1.48% )
+
