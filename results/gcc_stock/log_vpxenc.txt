@@ -1,0 +1,12 @@
+Pass 1/1 frame  600/576   695278B   23954 ms 25.05 fps [ETA  0:00:00]    3697F    344F    964F    651F    834F    604F   3878F    347F    811F    721F    874F    600F   3859F    338F   1017F    511F    97Pass 1/1 frame  600/600   723534B    9647b/f  289413b/s   24977 ms (24.02 fps)
+Pass 1/1 frame  600/576   695278B   23762 ms 25.25 fps [ETA  0:00:00]    3697F    344F    964F    651F    834F    604F   3878F    347F    811F    721F    874F    600F   3859F    338F   1017F    511F    97Pass 1/1 frame  600/600   723534B    9647b/f  289413b/s   24772 ms (24.22 fps)
+Pass 1/1 frame  600/576   695278B   23856 ms 25.15 fps [ETA  0:00:00]    3697F    344F    964F    651F    834F    604F   3878F    347F    811F    721F    874F    600F   3859F    338F   1017F    511F    97Pass 1/1 frame  600/600   723534B    9647b/f  289413b/s   24873 ms (24.12 fps)
+Pass 1/1 frame  600/576   695278B   23915 ms 25.09 fps [ETA  0:00:00]    3697F    344F    964F    651F    834F    604F   3878F    347F    811F    721F    874F    600F   3859F    338F   1017F    511F    97Pass 1/1 frame  600/600   723534B    9647b/f  289413b/s   24931 ms (24.07 fps)
+Pass 1/1 frame  600/576   695278B   23817 ms 25.19 fps [ETA  0:00:00]    3697F    344F    964F    651F    834F    604F   3878F    347F    811F    721F    874F    600F   3859F    338F   1017F    511F    97Pass 1/1 frame  600/600   723534B    9647b/f  289413b/s   24838 ms (24.16 fps)
+
+ Performance counter stats for 'system wide' (5 runs):
+
+           1174,89 Joules power/energy-pkg/                                             ( +-  0,54% )
+             23,83 Joules power/energy-ram/                                             ( +-  2,78% )
+
+             26,27 +- 1,03 seconds time elapsed  ( +-  3,94% )

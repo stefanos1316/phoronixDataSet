@@ -1,6 +1,0 @@
-current
-=======
-
-relro -> all
-foritfy -> relro
-all -> fortify

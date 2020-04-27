@@ -1,0 +1,123 @@
+y4m [info]: 1920x1080p 0:0 @ 30/1 fps (cfr)
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile High, level 4.0, 4:2:0, 8-bit
+x264 [info]: frame I:3     Avg QP:21.97  size:123626                           
+x264 [info]: frame P:151   Avg QP:24.03  size: 38993
+x264 [info]: frame B:446   Avg QP:26.47  size:  6152
+x264 [info]: consecutive B-frames:  0.8%  0.0%  0.5% 98.7%
+x264 [info]: mb I  I16..4: 12.9% 69.0% 18.1%
+x264 [info]: mb P  I16..4:  0.4%  1.4%  0.2%  P16..4: 41.4% 20.0%  9.5%  0.0%  0.0%    skip:27.0%
+x264 [info]: mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 43.6%  1.2%  0.2%  direct: 0.7%  skip:54.3%  L0:36.9% L1:59.9% BI: 3.2%
+x264 [info]: 8x8 transform intra:68.7% inter:80.0%
+x264 [info]: coded y,uvDC,uvAC intra: 72.4% 62.8% 31.7% inter: 12.9% 7.6% 0.3%
+x264 [info]: i16 v,h,dc,p: 23% 67%  5%  5%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 44%  9%  3%  6%  4% 10%  4% 10%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 11% 44%  9%  4%  6%  5% 10%  3%  8%
+x264 [info]: i8c dc,h,v,p: 46% 41%  9%  5%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref P L0: 66.6% 19.9% 11.0%  2.6%
+x264 [info]: ref B L0: 96.6%  2.8%  0.5%
+x264 [info]: ref B L1: 98.4%  1.6%
+x264 [info]: kb/s:3600.96
+
+encoded 600 frames, 53.40 fps, 3600.96 kb/s
+y4m [info]: 1920x1080p 0:0 @ 30/1 fps (cfr)
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile High, level 4.0, 4:2:0, 8-bit
+x264 [info]: frame I:3     Avg QP:21.97  size:123626                           
+x264 [info]: frame P:151   Avg QP:24.03  size: 38993
+x264 [info]: frame B:446   Avg QP:26.47  size:  6152
+x264 [info]: consecutive B-frames:  0.8%  0.0%  0.5% 98.7%
+x264 [info]: mb I  I16..4: 12.9% 69.0% 18.1%
+x264 [info]: mb P  I16..4:  0.4%  1.4%  0.2%  P16..4: 41.4% 20.0%  9.5%  0.0%  0.0%    skip:27.0%
+x264 [info]: mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 43.6%  1.2%  0.2%  direct: 0.7%  skip:54.3%  L0:36.9% L1:59.9% BI: 3.2%
+x264 [info]: 8x8 transform intra:68.7% inter:80.0%
+x264 [info]: coded y,uvDC,uvAC intra: 72.4% 62.8% 31.7% inter: 12.9% 7.6% 0.3%
+x264 [info]: i16 v,h,dc,p: 23% 67%  5%  5%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 44%  9%  3%  6%  4% 10%  4% 10%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 11% 44%  9%  4%  6%  5% 10%  3%  8%
+x264 [info]: i8c dc,h,v,p: 46% 41%  9%  5%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref P L0: 66.6% 19.9% 11.0%  2.6%
+x264 [info]: ref B L0: 96.6%  2.8%  0.5%
+x264 [info]: ref B L1: 98.4%  1.6%
+x264 [info]: kb/s:3600.96
+
+encoded 600 frames, 53.10 fps, 3600.96 kb/s
+y4m [info]: 1920x1080p 0:0 @ 30/1 fps (cfr)
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile High, level 4.0, 4:2:0, 8-bit
+x264 [info]: frame I:3     Avg QP:21.97  size:123626                           
+x264 [info]: frame P:151   Avg QP:24.03  size: 38993
+x264 [info]: frame B:446   Avg QP:26.47  size:  6152
+x264 [info]: consecutive B-frames:  0.8%  0.0%  0.5% 98.7%
+x264 [info]: mb I  I16..4: 12.9% 69.0% 18.1%
+x264 [info]: mb P  I16..4:  0.4%  1.4%  0.2%  P16..4: 41.4% 20.0%  9.5%  0.0%  0.0%    skip:27.0%
+x264 [info]: mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 43.6%  1.2%  0.2%  direct: 0.7%  skip:54.3%  L0:36.9% L1:59.9% BI: 3.2%
+x264 [info]: 8x8 transform intra:68.7% inter:80.0%
+x264 [info]: coded y,uvDC,uvAC intra: 72.4% 62.8% 31.7% inter: 12.9% 7.6% 0.3%
+x264 [info]: i16 v,h,dc,p: 23% 67%  5%  5%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 44%  9%  3%  6%  4% 10%  4% 10%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 11% 44%  9%  4%  6%  5% 10%  3%  8%
+x264 [info]: i8c dc,h,v,p: 46% 41%  9%  5%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref P L0: 66.6% 19.9% 11.0%  2.6%
+x264 [info]: ref B L0: 96.6%  2.8%  0.5%
+x264 [info]: ref B L1: 98.4%  1.6%
+x264 [info]: kb/s:3600.96
+
+encoded 600 frames, 52.59 fps, 3600.96 kb/s
+y4m [info]: 1920x1080p 0:0 @ 30/1 fps (cfr)
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile High, level 4.0, 4:2:0, 8-bit
+x264 [info]: frame I:3     Avg QP:21.97  size:123626                           
+x264 [info]: frame P:151   Avg QP:24.03  size: 38993
+x264 [info]: frame B:446   Avg QP:26.47  size:  6152
+x264 [info]: consecutive B-frames:  0.8%  0.0%  0.5% 98.7%
+x264 [info]: mb I  I16..4: 12.9% 69.0% 18.1%
+x264 [info]: mb P  I16..4:  0.4%  1.4%  0.2%  P16..4: 41.4% 20.0%  9.5%  0.0%  0.0%    skip:27.0%
+x264 [info]: mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 43.6%  1.2%  0.2%  direct: 0.7%  skip:54.3%  L0:36.9% L1:59.9% BI: 3.2%
+x264 [info]: 8x8 transform intra:68.7% inter:80.0%
+x264 [info]: coded y,uvDC,uvAC intra: 72.4% 62.8% 31.7% inter: 12.9% 7.6% 0.3%
+x264 [info]: i16 v,h,dc,p: 23% 67%  5%  5%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 44%  9%  3%  6%  4% 10%  4% 10%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 11% 44%  9%  4%  6%  5% 10%  3%  8%
+x264 [info]: i8c dc,h,v,p: 46% 41%  9%  5%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref P L0: 66.6% 19.9% 11.0%  2.6%
+x264 [info]: ref B L0: 96.6%  2.8%  0.5%
+x264 [info]: ref B L1: 98.4%  1.6%
+x264 [info]: kb/s:3600.96
+
+encoded 600 frames, 52.74 fps, 3600.96 kb/s
+y4m [info]: 1920x1080p 0:0 @ 30/1 fps (cfr)
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile High, level 4.0, 4:2:0, 8-bit
+x264 [info]: frame I:3     Avg QP:21.97  size:123626                           
+x264 [info]: frame P:151   Avg QP:24.03  size: 38993
+x264 [info]: frame B:446   Avg QP:26.47  size:  6152
+x264 [info]: consecutive B-frames:  0.8%  0.0%  0.5% 98.7%
+x264 [info]: mb I  I16..4: 12.9% 69.0% 18.1%
+x264 [info]: mb P  I16..4:  0.4%  1.4%  0.2%  P16..4: 41.4% 20.0%  9.5%  0.0%  0.0%    skip:27.0%
+x264 [info]: mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 43.6%  1.2%  0.2%  direct: 0.7%  skip:54.3%  L0:36.9% L1:59.9% BI: 3.2%
+x264 [info]: 8x8 transform intra:68.7% inter:80.0%
+x264 [info]: coded y,uvDC,uvAC intra: 72.4% 62.8% 31.7% inter: 12.9% 7.6% 0.3%
+x264 [info]: i16 v,h,dc,p: 23% 67%  5%  5%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 44%  9%  3%  6%  4% 10%  4% 10%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 11% 44%  9%  4%  6%  5% 10%  3%  8%
+x264 [info]: i8c dc,h,v,p: 46% 41%  9%  5%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref P L0: 66.6% 19.9% 11.0%  2.6%
+x264 [info]: ref B L0: 96.6%  2.8%  0.5%
+x264 [info]: ref B L1: 98.4%  1.6%
+x264 [info]: kb/s:3600.96
+
+encoded 600 frames, 52.83 fps, 3600.96 kb/s
+
+ Performance counter stats for 'system wide' (5 runs):
+
+            644.85 Joules power/energy-pkg/                                             ( +-  0.32% )
+             15.13 Joules power/energy-ram/                                             ( +-  0.21% )
+
+           11.3447 +- 0.0308 seconds time elapsed  ( +-  0.27% )
+
