@@ -37,7 +37,7 @@ dbench_6               4957
 dbench_12               5045
 dbench_48               5178
 dcraw               429
-fs-mark_1000_Files_1MB_Size               285
+fs-mark_1000_Files_1MB_Size               193
 fs-mark_5000_Files_1MB_Size_4_Threads               2865
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size               1260
 graphics-magick_minify               2491
@@ -63,7 +63,7 @@ john-the-ripper_bcrypt               1535
 john-the-ripper_md5crypt               3331
 lzbench_-ezstd               12169
 lzbench_-ebrotli               10950
-lzbench_-elibdeflate               5117
+lzbench_-elibdeflate               5543
 lzbench_-exz               11334
 m-queens               2751
 mt-dgemm               11536
@@ -122,7 +122,7 @@ smallpt               1270
 sqlitebench               1148
 stockfish               833
 stress-ng_vecmath               871
-stress-ng_matrix               729
+stress-ng_matrix               766
 stress-ng_fork               1197
 stress-ng_msg               971
 stress-ng_sem               873

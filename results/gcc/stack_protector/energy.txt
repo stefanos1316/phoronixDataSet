@@ -37,7 +37,7 @@ dbench_6               4914
 dbench_12               4982
 dbench_48               5208
 dcraw               436
-fs-mark_1000_Files_1MB_Size               315
+fs-mark_1000_Files_1MB_Size               193
 fs-mark_5000_Files_1MB_Size_4_Threads               2809
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size               1267
 graphics-magick_minify               2642

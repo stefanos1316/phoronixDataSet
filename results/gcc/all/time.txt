@@ -37,7 +37,7 @@ dbench_6                        720
 dbench_12                        720
 dbench_48                         720
 dcraw                           24
-fs-mark_1000_Files_1MB_Size                           43
+fs-mark_1000_Files_1MB_Size                           30
 fs-mark_5000_Files_1MB_Size_4_Threads                           363
 fs-mark_4000_Files_32_Sub_Dirs_1MB_Size                           182
 graphics-magick_minify                           78
@@ -54,7 +54,7 @@ hint_float                           392
 hint_double                          289
 hmmer                          24
 hpcg                          278
-iozone_-s2096000                          122
+iozone_-s2096000                          116
 iozone_-s4096000                           282
 iozone_-s8126000                           637
 iperf_tcp                         33
@@ -122,7 +122,7 @@ smallpt                           25
 sqlitebench                           162
 stockfish                         38
 stress-ng_vecmath                         18
-stress-ng_matrix                           14
+stress-ng_matrix                           13
 stress-ng_fork                           29
 stress-ng_msg                          22
 stress-ng_sem                          20
