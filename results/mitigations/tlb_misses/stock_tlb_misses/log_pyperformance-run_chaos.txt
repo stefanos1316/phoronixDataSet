@@ -1,9 +1,0 @@
-INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_chaos.py --rigorous --output /tmp/tmp6gcofe_o`
-
- Performance counter stats for 'system wide':
-
-           4134534      dTLB-load-misses                                            
-           6035684      iTLB-load-misses                                            
-
-      22,237846895 seconds time elapsed
-

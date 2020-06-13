@@ -1,8 +1,0 @@
-
- Performance counter stats for 'system wide':
-
-           6449284      dTLB-load-misses                                            
-           1158285      iTLB-load-misses                                            
-
-      89,826751533 seconds time elapsed
-

@@ -1,8 +1,0 @@
-
- Performance counter stats for 'system wide' (5 runs):
-
-            412.92 Joules power/energy-pkg/                                             ( +-  0.74% )
-             32.95 Joules power/energy-ram/                                             ( +-  0.07% )
-
-           23.0942 +- 0.0263 seconds time elapsed  ( +-  0.11% )
-

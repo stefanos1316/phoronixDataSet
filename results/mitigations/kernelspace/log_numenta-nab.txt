@@ -1,5 +1,0 @@
-+ ./numenta-nab
-
-real	9m38,492s
-user	68m23,596s
-sys	0m16,667s

@@ -1,5 +1,0 @@
-+ ./tiobench random_write
-
-real	5m22,027s
-user	0m2,622s
-sys	0m21,713s

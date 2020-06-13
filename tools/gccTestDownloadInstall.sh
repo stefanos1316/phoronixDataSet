@@ -28,7 +28,6 @@ unzip scimark2_1c.zip -d scimark2 && rm scimark2_1c.zip && cd scimark2
 cc -O3 -o scimark2 *.c -lm ${SECURITY_FLAGS}
 cd ../
 
-echo "-------Downloading and installing p7zip"
 echo "-------Downloading and installing tscp"
 mkdir tscp && cd tscp
 wget http://www.phoronix-test-suite.com/benchmark-files/tscp181_pts.tar.bz2
@@ -252,10 +251,7 @@ chmod +x redis
 cd ../
 
 echo "-------Downloading and installing sysbench"
-mkdir sysbench && cd sysbench
-wget http://www.phoronix-test-suite.com/benchmark-files/sysbench-20180728.zip
-unzip sysbench-20180728.zip && rm sysbench-20180728.zip
-mv sysbench-master/* ./ && rm -rf sysbench-master/ 
+git clone https://github.com/akopytov/sysbench.git && cd sysbench 
 ./autogen.sh
 CFLAGS="${SECURITY_FLAGS}" ./configure  --without-mysql
 make -j $(nproc --all)
@@ -901,7 +897,7 @@ tar -xzvf bzip2-1.0.6.tar.gz && rm bzip2-1.0.6.tar.gz
 mv bzip2-1.0.6/* ./ && rm -rf bzip2-1.0.6
 if [ ! -z "$SECURITY_FLAGS" ]; then
     toReplace=`echo $SECURITY_FLAGS | sed  's/\ /\\\ /g'`
-    sed -i 's/-O2/-O2\ '"$toReplace"'/g' Makefile
+    sed -i 's/-O2/-O3\ '"$toReplace"'/g' Makefile
 fi
 make
 mv bzip2 bzip2-bin

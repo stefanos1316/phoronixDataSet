@@ -1,9 +1,0 @@
-join: /tmp/7421.dat:5: is not sorted: |  BYTE UNIX Benchmarks (Version 3.11)
-
- Performance counter stats for 'system wide':
-
-           4707582      dTLB-load-misses                                            
-           2536826      iTLB-load-misses                                            
-
-     122,838924366 seconds time elapsed
-

@@ -1,6 +1,0 @@
-+ ./rbenchmark
-Loading required package: Matrix
-
-real	0m27,174s
-user	0m49,964s
-sys	0m14,875s

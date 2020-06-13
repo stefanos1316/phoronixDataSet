@@ -1,9 +1,0 @@
-INFO:root:Running `/home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/venv/cpython3.6-941465504db0/bin/python -u /home/sgeorgiou/GitHub/phoronixDataSet/tools/tasks_test/pyperformance-run/pyperformance/benchmarks/bm_regex_compile.py --rigorous --output /tmp/tmp4yhcoq56`
-
- Performance counter stats for 'system wide':
-
-           7772471      dTLB-load-misses                                            
-          18563097      iTLB-load-misses                                            
-
-      36,292078992 seconds time elapsed
-

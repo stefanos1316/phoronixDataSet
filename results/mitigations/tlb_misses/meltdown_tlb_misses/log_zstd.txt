@@ -1,9 +1,0 @@
-Read : 0 / 160 MB ==>  0% Read : 0 / 160 MB ==>  0% Read : 0 / 160 MB ==> 100% Read : 2 / 160 MB ==> 100% Read : 4 / 160 MB ==> 100% Read : 6 / 160 MB ==> 100% Read : 9 / 160 MB ==> 100% Read : 12 / 160 MB ==> 100% Read : 15 / 160 MB ==> 100% Read : 20 / 160 MB ==> 100% Read : 25 / 160 MB ==> 100% Read : 30 / 160 MB ==> 100% Read : 34 / 160 MB ==> 100% Read : 39 / 160 MB ==> 100% Read : 43 / 160 MB ==> 100% Read : 47 / 160 MB ==> 100% Read : 52 / 160 MB ==> 99% Read : 56 / 160 MB ==> 99% Read : 61 / 160 MB ==> 99% Read : 65 / 160 MB ==> 99% Read : 69 / 160 MB ==> 99% Read : 74 / 160 MB ==> 99% Read : 78 / 160 MB ==> 99% Read : 82 / 160 MB ==> 99% Read : 87 / 160 MB ==> 99% Read : 91 / 160 MB ==> 99% Read : 96 / 160 MB ==> 99% Read : 100 / 160 MB ==> 99% Read : 104 / 160 MB ==> 99% Read : 109 / 160 MB ==> 99% Read : 113 / 160 MB ==> 99% Read : 117 / 160 MB ==> 99% Read : 122 / 160 MB ==> 99% Read : 126 / 160 MB ==> 99% Read : 131 / 160 MB ==> 99% Read : 135 / 160 MB ==> 99% Read : 139 / 160 MB ==> 99% Read : 143 / 160 MB ==> 99% Read : 146 / 160 MB ==> 99% Read : 148 / 160 MB ==> 99% Read : 150 / 160 MB ==> 99% Read : 152 / 160 MB ==> 99% Read : 154 / 160 MB ==> 99% Read : 156 / 160 MB ==> 99% Read : 157 / 160 MB ==> 99% Read : 159 / 160 MB ==> 99%                                                                                linux-5.3.tar.gz     : 99.14%   (168029263 => 166586285 bytes, linux-5.3.tar.gz.zst) 
-
- Performance counter stats for 'system wide':
-
-         449727391      dTLB-load-misses                                            
-            222865      iTLB-load-misses                                            
-
-      11,450229128 seconds time elapsed
-
