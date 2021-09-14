@@ -5,7 +5,8 @@
 # To generate all input data execute:
 	
 	$ cd tools
-	$ bash generateInputData.sh
+	$ bash generateBinaryData.sh
+	$ bash generateTaskData.sh
 
 # To download and install all tasks execute:
 	
